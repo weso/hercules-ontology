@@ -16,6 +16,15 @@ case class Directory(val directory: String) {
       List[File]()
     }
   }
+
+  /**
+   * 
+   * @param extension
+   * @return
+   */
+  def getFilesWithExtension(extension: String):List[File] = {
+    getFiles().filter(_.getName.endsWith(extension))
+  }
 }
 
 object AsioDirs {

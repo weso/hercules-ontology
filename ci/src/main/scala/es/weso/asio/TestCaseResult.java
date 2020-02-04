@@ -22,7 +22,7 @@ public class TestCaseResult {
     private final static String TEST_CASE_MESSAGE = "Test case: ";
 
     // If the test succeed.
-    private final static String TEST_CASE_OK = "[OK]\t";
+    private final static String TEST_CASE_OK = "[OK]\t\t";
 
     // If the test did not succeed.
     private final static String TEST_CASE_NOT_OK = "[NOT OK]\t";
