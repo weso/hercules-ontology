@@ -18,7 +18,7 @@ case class Directory(val directory: String) {
   }
 
   /**
-   * 
+   *
    * @param extension
    * @return
    */
