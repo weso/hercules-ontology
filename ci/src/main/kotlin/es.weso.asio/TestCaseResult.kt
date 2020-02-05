@@ -17,9 +17,9 @@ class TestCaseResult
         // NON-STATIC FIELDS
 
         // The name of the test.
-        private val name: String, // The result of the test.
-        private val result: Boolean, // The error message.
-        private val errorMsg: String = "") {
+        val name: String, // The result of the test.
+        val result: Boolean, // The error message.
+        val errorMsg: String = "") {
 
     override
             /**
