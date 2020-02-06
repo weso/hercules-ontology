@@ -15,19 +15,20 @@ public class OntologyTests {
     private final static String ONTOLOGY_DIR = "../ontology/";
     private final static String TESTS_DIR = "../tests/";
 
-    private Pipeline pipeline;
+    private Pipeline pipeline = new Pipeline(ONTOLOGY_DIR, TESTS_DIR, TESTS_DIR, TESTS_DIR);
 
     @BeforeAll
-    public void setUp() {
+    public static void setUp() {
 
     }
 
     @TestFactory
     public Collection<DynamicTest> generateTest() {
-        List<DynamicTest> tests = new ArrayList<DynamicTest>();
+        List<DynamicTest> tests = new ArrayList();
 
         for(TestCaseResult testResult : pipeline.execute()) {
-            tests.add(DynamicTest.dynamicTest(testResult.getName(), () -> assertEquals(testResult.getResult(), true)));
+            tests.add(DynamicTest.dynamicTest(testResult.getName(), () -> assertEquals(testResult.getResult(),
+                    true)));
             System.out.println(testResult);
         }
 
