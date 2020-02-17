@@ -9,6 +9,6 @@ jobs:
       - id: mirroring
         run: | 
           git clone --bare https://github.com/weso/hercules-ontology.git
-          cd old-repository.git
+          cd hercules-ontology.git
           git push --mirror https://github.com/HerculesCRUE/ib-hercules-sync.git
           
