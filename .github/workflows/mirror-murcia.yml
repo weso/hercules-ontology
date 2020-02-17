@@ -3,7 +3,7 @@ name: Mirror @ Murcia Organization
 on: [push, delete]
 
 jobs:
-  to_gitlab:
+  to_murcia:
     runs-on: ubuntu-18.04
     steps:                                              # <-- must use actions/checkout@v1 before mirroring!
     - uses: actions/checkout@v1
