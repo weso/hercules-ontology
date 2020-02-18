@@ -6,6 +6,7 @@ jobs:
   mirror:
     runs-on: ubuntu-18.04
     steps:
+    - name: mirror
       uses: wearerequired/git-mirror-action@master
       env:
         SSH_PRIVATE_KEY: ${{ secrets.IZERTIS_GITHUB_SSH_KEY }}
