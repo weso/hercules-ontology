@@ -6,21 +6,10 @@ jobs:
   mirror:
     runs-on: ubuntu-18.04
     steps:
-      - uses: actions/checkout@v1
-      - name: Setup SSH Keys
-        env:
-         SSH_AUTH_SOCK: /tmp/ssh_agent.sock
-        run: |
-          mkdir -p ~/.ssh
-          ssh-keyscan github.com >> ~/.ssh/known_hosts
-          ssh-agent -a $SSH_AUTH_SOCK > /dev/null
-          ssh-add - <<< "${{ secrets.SSH_PRIVATE_KEY }}"
-
-      - name: mirroring
-        env:
-          SSH_AUTH_SOCK: /tmp/ssh_agent.sock
-        run: |
-          git clone --bare https://github.com/weso/hercules-ontology.git
-          cd hercules-ontology.git
-          git push --mirror https://github.com/HerculesCRUE/ib-hercules-sync.git
-          
+    - name: mirror
+      uses: wearerequired/git-mirror-action@master
+      env:
+        SSH_PRIVATE_KEY: ${{ secrets.IZERTIS_GITHUB_SSH_KEY }}
+      with:
+        source-repo: 'git@github.com:weso/hercules-ontology.git'
+        destination-repo: 'git@github.com:HerculesCRUE/ib-hercules-ontology.git'
