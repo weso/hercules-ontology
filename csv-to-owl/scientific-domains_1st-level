@@ -1,0 +1,133 @@
+PREFIX project: <http://weso.es/tablines/project/scientificDomainss/>
+PREFIX my: <http://weso.es/tablines/project/scientificDomainss/resource/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dct: <http://purl.org/dc/terms/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX asioModules: <http://purl.org/asio/modules#> 
+PREFIX asio: <http://purl.org/asio/core#>
+PREFIX ontolex: <http://www.w3.org/ns/lemon/ontolex#>
+PREFIX provo: <http://www.w3.org/ns/prov#>
+
+
+FOR ?rowId IN rows FILTER get-row(?rowId)
+    MATCH [?domainCode,?scientificDomain,?anlabel,?astlabel,?calabel,?enlabel,?eslabel,?extlabel,?eulabel,?frlabel,?gllabel,?oclabel,?ptlabel,?esipa,?engbipa,?enusipa] IN horizontal 
+    
+  LET ?domainResource = resource(concat("SCIENTIFIC_DOMAIN_LEVEL_1_",replace(?domainCode,"-","_")),asioModules)
+  LET ?scientificDomainResource = resource(concat("SCIENTIFIC_DOMAIN_LEVEL_1_CODE_",replace(?domainCode,"-","_")),asioModules)
+
+    LET ?esLangLabel = setLangTag(?eslabel, "es")
+    LET ?astLangLabel = setLangTag(?astlabel, "ast")
+    LET ?caLangLabel = setLangTag(?calabel, "ca")
+    LET ?euLangLabel = setLangTag(?eulabel, "eu")
+    LET ?glLangLabel = setLangTag(?gllabel, "gl")
+    LET ?anLangLabel = setLangTag(?anlabel, "an")
+    LET ?ocLangLabel = setLangTag(?oclabel, "oc")
+    LET ?ptLangLabel = setLangTag(?ptlabel, "pt")
+    LET ?frLangLabel = setLangTag(?frlabel, "fr")
+    LET ?enLangLabel = setLangTag(?enlabel, "en")
+    LET ?extLangLabel = setLangTag(?extlabel, "ext")
+
+    LET ?esipaLangLabel = setLangTag(?esipa, "es")
+    LET ?engbipaLangLabel = setLangTag(?engbipa, "en")
+    LET ?enusipaLangLabel = setLangTag(?enusipa, "en")
+
+
+
+CONSTRUCT {
+  
+  asioModules:ESRegionList a asioModules:scientificAreas;
+                              rdfs:label "First-level scientific domains"@en ;
+                              skos:prefLabel "First-level scientific domains"@en ;
+                              rdfs:label "Áreas científicas de primer nivel"@es ;
+                              skos:prefLabel "Áreas científicas de primer nivel"@es ;
+                              rdfs:label "Dominis científics de primer nivell"@ca ;
+                              skos:prefLabel "Dominis científics de primer nivell"@ca ;
+                              rdfs:label "Áreas científicas de primeiro nivel"@gl ;
+                              skos:prefLabel "Áreas científicas de primeiro nivel"@gl ;
+                              rdfs:label "Árees científiques de primer nivel"@ast ;
+                              skos:prefLabel "Árees científiques de primer nivel"@ast ;
+                              rdfs:label "Áreas scientificas de primer libel"@an ;
+                              skos:prefLabel "Áreas scientificas de primer libel"@an ;
+                              rdfs:label "FIXME"@eu ;
+                              skos:prefLabel "FIXME"@eu ;
+                              rdfs:label "Áreas scientificas de primer nivel"@oc ;
+                              skos:prefLabel "Áreas scientificas de primer nivel"@oc ;
+                              rdfs:label "Domains scientifiques de premier niveau"@fr ;
+                              skos:prefLabel "Domains scientifiques de premier niveau"@fr ;
+                              rdfs:label "Áreas científicas de primeiro nível"@pt ;
+                              skos:prefLabel "Áreas científicas de primeiro nível"@pt ;
+                              rdfs:label "'a ɾe as θjen̪ 'ti fi kas"@es-ES-fonipa ;
+                              skos:prefLabel "'a ɾe as θjen̪ 'ti fi kas"@es-ES-fonipa ;
+                              ontolex:phoneticRep "'a ɾe as θjen̪ 'ti fi kas"@es-ES-fonipa ;
+                              rdfs:label "FIXME"@ca-CA-fonipa ;
+                              skos:prefLabel "FIXME"@ca-CA-fonipa ;
+                              ontolex:phoneticRep "FIXME"@ca-CA-fonipa ;
+                              rdfs:label "ˌsaɪənˈtɪfɪk ˈeərɪəz"@en-GB-fonipa ;
+                              skos:prefLabel "ˌsaɪənˈtɪfɪk ˈeərɪəz"@en-GB-fonipa ;
+                              ontolex:phoneticRep "ˌsaɪənˈtɪfɪk ˈeərɪəz"@en-GB-fonipa ;
+                              rdfs:label "ˌsaɪənˈtɪfɪk ˈɛriəz"@en-US-fonipa ;
+                              skos:prefLabel "ˌsaɪənˈtɪfɪk ˈɛriəz"@en-US-fonipa ;
+                              ontolex:phoneticRep "ˌsaɪənˈtɪfɪk ˈɛriəz"@en-US-fonipa .
+  
+  asioModules:ESDomainCodeList a asioModules:ScientificDomain;
+                                   rdfs:label "Codes for the first-level scientific domains"@en ;
+                                   skos:prefLabel "Codes for the first-level scientific domains"@en ;
+                                   rdfs:label "Códigos das áreas científicas de primeiro nível"@pt ;
+                                   skos:prefLabel "Códigos das áreas científicas de primeiro nível"@pt ;
+                                   rdfs:label "Códigos das áreas científicas de primeiro nivel"@gl ;
+                                   skos:prefLabel "Códigos das áreas científicas de primeiro nivel"@gl ;
+                                   rdfs:label "Códigos de las áreas científicas de primer nivel"@es ;
+                                   skos:prefLabel "Códigos de las áreas científicas de primer nivel"@es ;
+                                   rdfs:label "Códigos de les árees científiques de primer nivel"@ast ;
+                                   skos:prefLabel "Códigos de les árees científiques de primer nivel"@ast ;
+                                   rdfs:label "Codis dels dominis científics de primer nivell"@ca ;
+                                   skos:prefLabel "Codis dels dominis científics de primer nivell"@ca ;
+                                   rdfs:label "Codes des domains scientífiques de premier niveau"@fr ;
+                                   skos:prefLabel "Codes des domains scientífiques de premier niveau"@fr .
+}
+
+CONSTRUCT {
+  ?domainResource a skos:Concept;
+                  rdfs:label ?scientificDomain ;
+                  skos:prefLabel ?scientificDomain ; 
+                  skos:prefLabel ?esLangLabel ;
+                  skos:prefLabel ?astLangLabel ;
+                  skos:prefLabel ?caLangLabel ;
+                  skos:prefLabel ?euLangLabel ;
+                  skos:prefLabel ?glLangLabel ;
+                  skos:prefLabel ?anLangLabel ;
+                  skos:prefLabel ?enLangLabel ;
+                  skos:prefLabel ?ocLangLabel ;
+                  skos:prefLabel ?ptLangLabel ;
+                  skos:prefLabel ?extLangLabel ;
+                  skos:prefLabel ?frLangLabel ;
+                  skos:prefLabel ?esipaLangLabel ;
+                  skos:prefLabel ?engbipaLangLabel ;
+                  skos:prefLabel ?enusipaLangLabel ;
+                  ontolex:phoneticRep ?esipaLangLabel ;
+                  ontolex:phoneticRep ?engbipaLangLabel ;
+                  ontolex:phoneticRep ?enusipaLangLabel ;
+                  skos:inScheme domainModules:ScientificDomainList;
+                  asio:hasCode ?domainCodeResource ;
+                  skos:notation ?domainCode .
+  
+  ?domainCodeResource a skos:Concept;
+                  rdfs:label ?domainCode ;
+                  skos:prefLabel ?domainCode ; 
+                  skos:inScheme asioModules:ScientificDomainCodeList;
+                  asio:codeOf ?domainResource .
+}
+
+CONSTRUCT {
+
+  ?domainResource asio:hasCode ?domainCodeResource .
+
+  ?domainCodeResource a skos:Concept;
+                  rdfs:label ?Code ;
+                  skos:prefLabel ?Code ;
+                  skos:inScheme asioModules:ScientificDomainClassification;
+                  asio:codeOf ?domainResource .
+}

@@ -1,0 +1,260 @@
+PREFIX project: <http://weso.es/tablines/project/provincesES/>
+PREFIX my: <http://weso.es/tablines/project/provincesES/resource/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dct: <http://purl.org/dc/terms/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX asioModules: <http://purl.org/asio/modules#> 
+PREFIX asio: <http://purl.org/asio/core#>
+PREFIX euCountry:<http://publications.europa.eu/resource/authority/country/>
+PREFIX ontolex: <http://www.w3.org/ns/lemon/ontolex#>
+PREFIX provo: <http://www.w3.org/ns/prov#>
+PREFIX nuts: <http://nuts.geovocab.org/id/>
+
+
+FOR ?rowId IN rows FILTER get-row(?rowId)
+    MATCH [?provinceCode,?HASCCode,?province,?regionCode,?ISOCode,?nuts2,?nuts3,?eslabel,?astlabel,?calabel,?eulabel,?gllabel,?anlabel,?oclabel,?note_en,?INECode,?PCCode,?TGNCode,?ptlabel,?enlabel,?arlabel,?arlatlabel,?pop2011,?areakm2,?extlabel,?frlabel,?ipaeslabel,?ipacactlabel,?ipacavclabel,?ipaeupvlabel,?ipaeunclabel,?ipaastlabel] IN horizontal 
+    
+  WHEN not matches (?provinceCode,"") do
+  LET ?provinceResource = resource(concat("ES_DIVISION_LEVEL_2_",replace(?provinceCode,"[^a-zA-Z0-9]","_")),asioModules)
+  LET ?provinceCodeResource = resource(concat("ES_DIVISION_LEVEL_2_ISO_CODE_",replace(?provinceCode,"-","_")),asioModules)
+  LET ?regionResource = resource(concat("ES_DIVISION_LEVEL_1_",replace(?regionCode,"-","_")),asioModules)
+  LET ?provinceINECodeResource = resource(concat("ES_DIVISION_LEVEL_2_INE_CODE_",replace(?INECode,"-","_")),asioModules)
+  LET ?provinceHASCCodeResource = resource(concat("ES_DIVISION_LEVEL_1_HASC_CODE_",replace(?HASCCode,"-","_")),asioModules)
+  LET ?provincePCCodeResource = resource(concat("ES_DIVISION_LEVEL_2_POSTAL_CODE_",replace(?PCCode,"-","_")),asioModules) 
+  LET ?provinceTGNCodeResource = resource(concat("ES_DIVISION_LEVEL_2_TGN_CODE_",replace(?TGNCode,"-","_")),asioModules)
+    LET ?ISOResource = resource(?ISOCode,euCountry)
+  LET ?esLangLabel = setLangTag(?eslabel, "es")
+    LET ?astLangLabel = setLangTag(?astlabel, "ast")
+    LET ?extLangLabel = setLangTag(?extlabel, "ext")
+    LET ?caLangLabel = setLangTag(?calabel, "ca")
+    LET ?euLangLabel = setLangTag(?eulabel, "eu")
+    LET ?glLangLabel = setLangTag(?gllabel, "gl")
+    LET ?anLangLabel = setLangTag(?anlabel, "an")
+    LET ?arLangLabel = setLangTag(?arlabel, "ar")
+    LET ?frLangLabel = setLangTag(?frlabel, "fr")
+    LET ?arlatLangLabel = setLangTag(?arlatlabel, "ar-Latn")
+    LET ?ipaesLangLabel = setLangTag(?ipaeslabel, "es-ES-fonipa")
+    LET ?ocLangLabel = setLangTag(?oclabel, "oc")
+    LET ?ptLangLabel = setLangTag(?ptlabel, "pt")
+    LET ?enLangLabel = setLangTag(?enlabel, "en")
+    LET ?note_enLang = setLangTag(?note_en, "en")
+  LET ?nuts2Res = resource(?nuts2, nuts)
+  LET ?nuts3Res = resource(?nuts3, nuts)
+  LET ?ISOPublisher = resource("STANDARDIZATION_ORGANIZATION_ISO",asioModules)
+  LET ?INEESPublisher = resource("STANDARDIZATION_ORGANIZATION_INEES",asioModules)
+  LET ?HASCPublisher = resource("STANDARDIZATION_ORGANIZATION_HASC",asioModules)
+  LET ?EurostatPublisher = resource("STANDARDIZATION_ORGANIZATION_Eurostat",asioModules)
+    
+{
+    WHEN not matches(?ipacactlabel,"") DO
+    LET ?ipacactLangLabel = setLangTag(?ipacactlabel, "ca-ES-CT-fonipa")
+    ;
+    WHEN not matches(?ipacavclabel,"") DO
+    LET ?ipacavcLangLabel = setLangTag(?ipacavclabel, "ca-ES-VC-fonipa")
+    ;
+    WHEN not matches(?ipaeupvlabel,"") DO
+    LET ?ipaeupvLangLabel = setLangTag(?ipaeupvlabel, "eu-ES-PV-fonipa")
+    ;
+    WHEN not matches(?ipaeunclabel,"") DO
+    LET ?ipaeuncLangLabel = setLangTag(?ipaeunclabel, "eu-ES-NC-fonipa")
+    ;
+    WHEN not matches(?ipaastlabel,"") DO
+    LET ?ipaastLangLabel = setLangTag(?ipaastlabel, "ast-ES-AS-fonipa")
+}
+
+CONSTRUCT {
+  
+  asioModules:ESProvinceList a asioModules:Country;
+                              rdfs:label "Provinces of Spain"@en ;
+                              skos:prefLabel "Provinces of Spain"@en ;
+                              rdfs:label "Provincias de España"@es ;
+                              skos:prefLabel "Provincias de España"@es ;
+                              rdfs:label "Províncies d'Espanya"@ca ;
+                              skos:prefLabel "Províncies d'Espanya"@ca ;
+                              rdfs:label "Espainiako probintziak"@eu ;
+                              skos:prefLabel "Espainiako probintziak"@eu ;
+                              rdfs:label "Provincies d'España"@ast ;
+                              skos:prefLabel "Provincies d'España"@ast ;
+                              rdfs:label "Provincias d'Espanya"@an ;
+                              skos:prefLabel "Provincias d'Espanya"@an ;
+                              rdfs:label "Provinces d'Espagne"@fr ;
+                              skos:prefLabel "Provinces d'Espagne"@fr ;
+                              rdfs:label "Província d'Espanha"@oc ;
+                              skos:prefLabel "Província d'Espanha"@oc ;
+                              rdfs:label "Provincias de España"@gl ;
+                              skos:prefLabel "Provincias de España"@gl ;
+                              rdfs:label "pɾo 'βin θjas ðe es 'pa ɲa"@es-ES-fonipa ;
+                              skos:prefLabel "pɾo 'βin θjas ðe es 'pa ɲa"@es-ES-fonipa ;
+                              ontolex:phoneticRep "pɾo 'βin θjas ðe es 'pa ɲa"@es-ES-fonipa ;
+                              rdfs:label "pɾu 'βin sjəz ðəs 'pa ɲə"@ca-ES-fonipa ;
+                              skos:prefLabel "pɾu 'βin sjəz ðəs 'pa ɲə"@ca-ES-fonipa ;
+                              ontolex:phoneticRep "pɾu 'βin sjəz ðəs 'pa ɲə"@ca-ES-fonipa ;
+                              rdfs:label "مقاطعات إسبانيا"@ar ;
+                              skos:prefLabel "مقاطعات إسبانيا"@ar ;
+                              rdfs:label "mqạṭʿạt ạ̹sbạnyạ"@ar-Latn ;
+                              skos:prefLabel "mqạṭʿạt ạ̹sbạnyạ"@ar-Latn ;
+                              rdfs:label "Províncias da Espanha"@pt ;
+                              skos:prefLabel "Províncias da Espanha"@pt ;
+                              rdfs:label "Províncias d'España"@ext ;
+                              skos:prefLabel "Províncias d'España"@ext .
+  
+  asioModules:ESProvinceISOCodeList a asioModules:Country;
+                                   rdfs:label "ISO codes for the provinces of Spain"@en ;
+                                   skos:prefLabel "ISO codes for the provinces of Spain"@en ;
+                                   rdfs:label "Codis ISO de les províncies d'Espanya"@ca ;
+                                   skos:prefLabel "Codis ISO de les províncies d'Espanya"@ca ;
+                                   rdfs:label "Códigos ISO de las provincias de España"@es ;
+                                   skos:prefLabel "Códigos ISO de las provincias de España"@es ;
+                                   rdfs:label "Códigos ISO das provincias de España"@gl ;
+                                   skos:prefLabel "Códigos ISO das provincias de España"@gl ;
+                                   dct:publisher ?ISOPublisher .
+
+  asioModules:NUTS2CodeList a asioModules:Country;
+                                   rdfs:label "Nomenclature of Territorial Units for Statistics (NUTS) level 2 codes"@en ;
+                                   skos:prefLabel "Nomenclature of Territorial Units for Statistics (NUTS) level 2 codes"@en ;
+                                   dct:publisher ?EurostatPublisher .
+
+  asioModules:NUTS3CodeList a asioModules:Country;
+                                   rdfs:label "Nomenclature of Territorial Units for Statistics (NUTS) level 3 codes"@en ;
+                                   skos:prefLabel "Nomenclature of Territorial Units for Statistics (NUTS) level 3 codes"@en ;
+                                   dct:publisher ?EurostatPublisher .
+
+  asioModules:ESProvinceINECodeList a asioModules:Country;
+                                   rdfs:label "INE codes for the provinces of Spain"@en ;
+                                   skos:prefLabel "INE codes for the provinces of Spain"@en ;
+                                   rdfs:label "Códigos INE de las provincias de España"@es ;
+                                   skos:prefLabel "Códigos INE de las provincias de España"@es ;
+                                   rdfs:label "Codis INE de les províncies d'Espanya"@ca ;
+                                   skos:prefLabel "Codis INE de les províncies d'Espanya"@ca ;
+                                   dct:publisher ?INEESPublisher .
+
+  asioModules:ESProvinceHASCCodeList a asioModules:Country;
+                                   rdfs:label "Hierarchical administrative subdivision codes (HASC) for the provinces of Spain" ;
+                                   skos:prefLabel "Hierarchical administrative subdivision codes (HASC) for the provinces of Spain" ;
+                                   rdfs:label "Hierarchical administrative subdivision codes (HASC) for the provinces of Spain"@en ;
+                                   skos:prefLabel "Hierarchical administrative subdivision codes (HASC) for the provinces of Spain"@en ;
+                                   rdfs:label "Códigos HASC (Hierarchical administrative subdivision codes) de las provincias de España"@es ;
+                                   skos:prefLabel "Códigos HASC (Hierarchical administrative subdivision codes) de las provincias de España"@es ;
+                                   rdfs:label "Codis HASC (Hierarchical administrative subdivision codes) de les províncies d'Espanya"@ca ;
+                                   skos:prefLabel "Codis HASC (Hierarchical administrative subdivision codes) de les províncies d'Espanya"@ca ;
+                                   dct:publisher ?HASCPublisher .
+
+  asioModules:ESProvincePCCodeList a asioModules:Country;
+                                   rdfs:label "Postal code prefixes for the provinces of Spain"@en ;
+                                   skos:prefLabel "Postal code prefixes for the provinces of Spain"@en ;
+                                   rdfs:label "Postal code prefixes de las provincias de España"@es ;
+                                   skos:prefLabel "Postal code prefixes de las provincias de España"@es ;
+                                   rdfs:label "Postal code prefixes de les províncies d'Espanya"@ca ;
+                                   skos:prefLabel "Postal code prefixes de les províncies d'Espanya"@ca ;
+                                   dct:publisher ?INEESPublisher .
+
+  asioModules:ESProvinceTGNCodeList a asioModules:Country;
+                                   rdfs:label "TGN (Getty Thesaurus of Geographic Names) codes for the provinces of Spain"@en ;
+                                   skos:prefLabel "TGN (Getty Thesaurus of Geographic Names) codes for the provinces of Spain"@en ;
+                                   rdfs:label "Códigos TGN (Getty Thesaurus of Geographic Names) de las provincias de España"@es ;
+                                   skos:prefLabel "Códigos TGN (Getty Thesaurus of Geographic Names) de las provincias de España"@es ;
+                                   rdfs:label "Codis TGN (Getty Thesaurus of Geographic Names) de les províncies d'Espanya"@ca ;
+                                   skos:prefLabel "Codis TGN (Getty Thesaurus of Geographic Names) de les províncies  d'Espanya"@ca .
+}
+
+CONSTRUCT {
+  ?provinceResource a skos:Concept;
+                  rdfs:label ?province ;
+                  skos:prefLabel ?province ; 
+                  skos:prefLabel ?esLangLabel ;
+                  skos:prefLabel ?astLangLabel ;
+                  skos:prefLabel ?extLangLabel ;
+                  skos:prefLabel ?caLangLabel ;
+                  skos:prefLabel ?euLangLabel ;
+                  skos:prefLabel ?glLangLabel ;
+                  skos:prefLabel ?anLangLabel ;
+                  skos:prefLabel ?arLangLabel ;
+                  skos:prefLabel ?arlatLangLabel ;
+                  skos:prefLabel ?frLangLabel ;
+                  skos:prefLabel ?ocLangLabel ;
+                  skos:prefLabel ?ptLangLabel ;
+                  skos:prefLabel ?enLangLabel ;
+                  skos:prefLabel ?ipaesLangLabel ;
+                  ontolex:phoneticRep ?ipaesLangLabel ;
+                  skos:note ?note_enLang ;
+                  skos:inScheme asioModules:ESProvinceList;
+                  asio:hasCode ?provinceCodeResource ;
+                  asio:hasCode ?provinceINECodeResource ;
+                  asio:hasCode ?provinceTGNCodeResource ;
+                  asio:hasCode ?provincePCCodeResource ;
+                  asio:hasCode ?provinceHASCCodeResource ;
+                  skos:notation ?provinceCode ;
+                  skos:broader ?regionResource ;
+                  // skos:broader ?ISOResource ;
+                  asio:hasCode ?nuts3Res .
+
+  ?nuts3Res a skos:Concept;
+           asio:codeOf ?provinceResource ;
+           skos:inScheme asioModules:NUTS3CodeList ;
+           skos:broader ?nuts2Res .
+  
+  ?nuts2Res a skos:Concept;
+           skos:narrower ?nuts3Res ;
+           skos:inScheme asioModules:NUTS2CodeList .
+  
+  // ?ISOResource skos:narrower ?provinceResource .
+  ?regionResource skos:narrower ?provinceResource .
+  
+  ?provinceCodeResource a skos:Concept;
+                  rdfs:label ?provinceCode ;
+                  skos:prefLabel ?provinceCode ; 
+                  skos:inScheme asioModules:ESProvinceISOCodeList;
+                  asio:codeOf ?provinceResource .
+
+  ?provinceINECodeResource a skos:Concept;
+                  rdfs:label ?INECode ;
+                  skos:prefLabel ?INECode ; 
+                  skos:inScheme asioModules:ESProvinceINECodeList;
+                  asio:codeOf ?regionResource .
+
+  ?provinceHASCCodeResource a skos:Concept;
+                  rdfs:label ?HASCCode ;
+                  skos:prefLabel ?HASCCode ; 
+                  skos:inScheme asioModules:ESProvinceHASCCodeList;
+                  asio:codeOf ?regionResource .
+
+  ?provincePCCodeResource a skos:Concept;
+                  rdfs:label ?PCCode ;
+                  skos:prefLabel ?PCCode ; 
+                  skos:inScheme asioModules:ESProvincePCCodeList;
+                  asio:codeOf ?regionResource .
+
+  ?provinceTGNCodeResource a skos:Concept;
+                  rdfs:label ?TGNCode ;
+                  skos:prefLabel ?TGNCode ; 
+                  skos:inScheme asioModules:ESProvinceTGNCodeList;
+                  asio:codeOf ?regionResource .
+}
+
+CONSTRUCT {
+  ?provinceResource skos:prefLabel ?ipacactLangLabel ;
+                    ontolex:phoneticRep ?ipacactLangLabel .
+}
+
+CONSTRUCT {
+  ?provinceResource skos:prefLabel ?ipacavcLangLabel ;
+                    ontolex:phoneticRep ?ipacavcLangLabel .
+}
+
+CONSTRUCT {
+  ?provinceResource skos:prefLabel ?ipaeupvLangLabel ;
+                    ontolex:phoneticRep ?ipaeupvLangLabel .
+}
+
+CONSTRUCT {
+  ?provinceResource skos:prefLabel ?ipaeuncLangLabel ;
+                    ontolex:phoneticRep ?ipaeuncLangLabel .
+}
+
+CONSTRUCT {
+  ?provinceResource skos:prefLabel ?ipaastLangLabel ;
+                    ontolex:phoneticRep ?ipaastLangLabel .
+}
