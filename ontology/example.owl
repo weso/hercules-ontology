@@ -10,10 +10,9 @@
 
 ex:AdministrativePersonnel rdf:type owl:Class ;
                            rdfs:subClassOf  ex:HumanResource ;
-                           owl:disjointWith ex:ResearchPersonnel ,
-                                            <http://www.semanticweb.org/spitxa/ontologies/2020/1/asio-human-resource#Research&TeachingPersonnel> .
+                           owl:disjointWith ex:ChangedPersonnel ,
+                                            <http://www.semanticweb.org/spitxa/ontologies/2020/2/asio-human-resource#Research&TeachingPersonnel> .
 
 ex:HumanResource rdf:type owl:Class .
 
-ex:ResearchPersonnel rdf:type owl:Class ;
-                     rdfs:subClassOf ex:HumanResource .
+ex:ChangedPersonnel rdf:type owl:Class .
