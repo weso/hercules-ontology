@@ -1,0 +1,134 @@
+# baseURI: http://www.weso.es/ontologies/2020/1/asio/alignment/dcat
+# imports: http://purl.org/dc/dcmitype
+# imports: http://purl.org/vocommons/voaf
+# imports: http://www.weso.es/ontologies/2020/1/asio
+# imports: http://www.w3.org/1999/02/22-rdf-syntax-ns
+# imports: http://www.w3.org/2000/01/rdf-schema
+# imports: http://www.w3.org/2001/XMLSchema
+# imports: http://www.w3.org/2002/07/owl
+# imports: http://www.w3.org/2004/02/skos/core
+# imports: http://www.w3.org/2006/time
+# imports: http://www.w3.org/ns/dcat
+# imports: http://www.w3.org/ns/org
+# imports: http://www.w3.org/ns/prov
+# imports: http://xmlns.com/foaf/0.1/
+
+@prefix : <http://www.weso.es/ontologies/2020/1/asio/alignment/dcat> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dct: <http://purl.org/dc/dcmitype/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix organization: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix voaf: <http://purl.org/vocommons/voaf#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix cerif: <http://purl.org/cerif/>
+@prefix semcerif: <FIXME>
+@prefix frapo: <FIXME>
+@prefix vivo: <FIXME>
+@prefix bibo: <FIXME>
+@prefix DUL: <FIXME>
+@prefix modules: <http://www.weso.es/ontologies/2020/1/asio/modules>
+# add missing list of prefixes here
+@base <http://www.weso.es/ontologies/2020/1/asio/alignment/dcat> .
+
+<http://www.weso.es/ontologies/2020/1/asio/alignment/dcat>
+  rdf:type owl:Ontology ;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  dcterms:created "2020-02-28"^^xsd:date ;
+  dcterms:creator [
+      rdf:type foaf:Person ;
+      organization:hasMembership [
+          rdf:type organization:Membership ;
+          organization:memberDuring [
+              rdf:type time:Interval ;
+              time:hasBeginning [
+                  rdf:type time:Instant ;
+                  time:inXSDDateTimeStamp "2020-02-12T00:00:00+08:00"^^xsd:dateTimeStamp ;
+                ] ;
+            ] ;
+          organization:organization <https://www.uniovi.es> ;
+          organization:organization <http://www.weso.es> ;
+          organization:role [
+              rdf:type organization:Role ;
+              rdfs:label "Ontology engineer" ;
+            ] ;
+        ] ;
+      foaf:family_name "Rubiera Azcona" ;
+      foaf:firstName "Emilio" ;
+      foaf:mbox <mailto:emilio.rubiera.fuo@uniovi.es> ;
+      foaf:name "Emilio Rubiera Azcona" ;
+    ] ;
+  dcterms:contributor [
+      a foaf:Person ;
+      organization:memberOf <<http://www.weso.es> ;
+      foaf:family_name "Rubiera Azcona" ;
+      foaf:firstName "Emilio" ;
+      foaf:mbox <mailto:emilio.rubiera.fuo@uniovi.es> ;
+      foaf:name "Emilio Rubiera Azcona" ;
+      foaf:publications <http://orcid.org/FIXME> ;
+      foaf:workInfoHomepage <http://weso.es/Emilio-Rubiera> ;
+    ] ;
+    dcterms:contributor [
+      a foaf:Person ;
+      organization:memberOf <<http://www.weso.es> ;
+      foaf:family_name "Martín Fernández" ;
+      foaf:firstName "Sofía" ;
+      foaf:mbox <mailto:sofía.martín.fuo@uniovi.es> ;
+      foaf:name "Sofía Martín Fernández" ;
+      foaf:publications <http://orcid.org/FIXME> ;
+      foaf:workInfoHomepage <http://weso.es/Sofía-Martín> ;
+    ] ;
+  voaf:reliesOn <http://www.weso.es/ontologies/2020/1/asio> ;
+  voaf:reliesOn dcat: ;
+  rdfs:comment "A preliminary axiomatization of the alignment of ASIO with the W3C Data Catalog Vocabulary (DCAT) (revised edition)"@en ;
+  rdfs:label "ASIO-DCAT alignment graph" ;
+  owl:imports <http://purl.org/vocommons/voaf> ;
+  owl:imports <http://www.w3.org/2004/02/skos/core> ;
+  owl:imports <http://www.w3.org/2006/time> ;
+  owl:imports <http://www.w3.org/ns/org> ;
+  owl:imports dcat: ;
+  owl:imports foaf: ;
+  owl:versionInfo "3.5.0" ;
+.
+asio:Organization
+  owl:equivalentClass organization:Organization ;
+                      frapo:Organization ;
+                      foaf:Organization ;
+                      vivo:Organization ;
+                      swpo:Organization ;
+                      org:Organization ;
+                      DUL:Organization ;
+.
+asio:University
+  owl:equivalentClass organization:University ;
+                      frapo:University ;
+                      sio:University ;
+                      lgdo:University ;
+                      swpo:University ;
+                      vivo:University ;
+                      pext:University ;
+.
+jur:Jurisdiction
+  owl:equivalentClass dcterms:Jurisdiction ;
+.
+jur:Standard
+  owl:equivalentClass dcterms:Standard ;
+.
+
+loca:Location
+  owl:equivalentClass dcterms:Location ;
+.
+loca:Location
+  owl:equivalentClass prov:Location ;
+.
+ext:TimePeriod
+  owl:equivalentClass dcterms:PeriodOfTime ;
+.
+
+###  Generated by the OWL API (version 4.5.6.2020-02-12T00:27:41Z) https://github.com/owlcs/owlapi
