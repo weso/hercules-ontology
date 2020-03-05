@@ -5,6 +5,7 @@ Here you will find the development of the ontology for the Hercules project.
 
  - **ci:** Contains the source code used for the continuos integration of the ontology and the tests.
  - **src:** Contains the OWL files. This folder is being used by the Continuous Integration system to validate the ontology.
+ - **alignments:**.
  - **proposals:** Contains thew proposals for additions/deletions/modifications of the ontology.
  - **proposal-template:** Contains the template used to submit proposals via `pull requests`.
  - **releases:** Contains the different releases of the ontology with a relation of the proposals / featuresthat have been added.
