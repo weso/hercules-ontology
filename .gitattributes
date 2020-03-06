@@ -5,3 +5,5 @@
 *.css linguist-detectable=false
 *.html linguist-detectable=false
 *.js linguist-detectable=false
+*.java linguist-detectable=false
+*.kt linguist-detectable=false
