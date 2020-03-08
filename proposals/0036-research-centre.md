@@ -1,17 +1,13 @@
 # Research Centre
 
-* Name@es: [Centro de Investigación]() 
-* Name@en-us: [Research Center]()
-* Name@en-uk: [Research Centre]()
-* Short name: 
-* Domain: 
-* URI: 
+* Proposal: [HO-0036](0036-research-centre.md)
+* Name@es: Centro de Investigación
+* Name@en-us: Research Center
+* Name@en-uk: Research Centre
 * Status: **Awaiting Review**
 * Type: **Item**
-* Related to:
-* Source: 
 * Authors: [Emilio Rubiera](https://github.com/spitxa)
-* Review Manager:
+* Review Manager: TBD
 
 ## Introduction
 

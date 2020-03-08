@@ -1,17 +1,13 @@
 # Publication
 
-* Name@es: [Publicación]() 
-* Name@en-us: [Publication]()
-* Name@en-uk: [Publication]()
-* Short name: 
-* Domain: 
-* URI: 
+* Proposal: [HO-0041](0041-publication.md)
+* Name@es: Publicación
+* Name@en-us: Publication
+* Name@en-uk: Publication
 * Status: **Awaiting Review**
 * Type: **Item**
-* Related to:
-* Source: 
 * Authors: [Emilio Rubiera](https://github.com/spitxa)
-* Review Manager:
+* Review Manager: TBD
 
 ## Introduction
 

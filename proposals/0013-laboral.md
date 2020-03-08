@@ -1,17 +1,11 @@
 # Laboral
 
-* Name@es: [Laboral]()
-* Name@en-us:
-* Name@en-uk: 
-* Short name:  
-* Domain: 
-* URI: 
+* Proposal: [HO-0013](0013-laboral.md)
+* Name@es: Laboral
 * Status: **Rejected**
 * Type: **Item**
-* Related to:
-* Source: 
 * Authors: [Emilio Rubiera](https://github.com/spitxa)
-* Review Manager:
+* Review Manager: TBD
 
 ## Introduction
 

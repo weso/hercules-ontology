@@ -1,17 +1,11 @@
 # Becario Universitario
 
-* Name@es: [Becario Universitario]()
-* Name@en-us:
-* Name@en-uk:
-* Short name: 
-* Domain: 
-* URI: 
+* Proposal: [HO-0020](0020-becario-universitario.md)
+* Name@es: Becario Universitario
 * Status: **Awaiting Review**
 * Type: **Item**
-* Related to:
-* Source: 
 * Authors: [Emilio Rubiera](https://github.com/spitxa)
-* Review Manager:
+* Review Manager: TBD
 
 ## Introduction
 

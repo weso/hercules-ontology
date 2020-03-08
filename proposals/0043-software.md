@@ -1,17 +1,13 @@
 # Software
 
-* Name@es: [Software]() 
-* Name@en-us: [Software]()
-* Name@en-uk: [Software]()
-* Short name: 
-* Domain: 
-* URI: 
+* Proposal: [HO-0043](0043-software.md)
+* Name@es: Software
+* Name@en-us: Software
+* Name@en-uk: Software
 * Status: **Awaiting Review**
 * Type: **Item**
-* Related to:
-* Source: 
 * Authors: [Emilio Rubiera](https://github.com/spitxa)
-* Review Manager:
+* Review Manager: TBD
 
 ## Introduction
 

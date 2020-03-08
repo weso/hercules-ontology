@@ -1,17 +1,13 @@
 # Project Outcome
 
-* Name@es: [Resultado del proyecto]() 
-* Name@en-us: [Project Outcome]()
-* Name@en-uk: [Project Outcome]()
-* Short name: 
-* Domain: 
-* URI: 
+* Proposal: [HO-0039](0039-project-outcome.md)
+* Name@es: Resultado del proyecto
+* Name@en-us: Project Outcome
+* Name@en-uk: Project Outcome
 * Status: **Awaiting Review**
 * Type: **Item**
-* Related to:
-* Source: 
 * Authors: [Emilio Rubiera](https://github.com/spitxa)
-* Review Manager:
+* Review Manager: TBD
 
 ## Introduction
 

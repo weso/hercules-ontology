@@ -1,33 +1,17 @@
 # Academic Staff
 
-* Name@es: [Personal Docente e Investigador]()
-
-* Name@en-us: [Faculty]()
-
-* Name@en-uk: [Academic Staff]()
-
-* Short name: **PDI** 
-
-* Domain: 
-
-* URI: 
-
+* Proposal: [HO-0002](0002-academic-staff.md)
+* Name@es: Personal Docente e Investigador
+* Name@en-us: Faculty
+* Name@en-uk: Academic Staff
+* Short name: **PDI**
 * Status: **Awaiting Review**
-
 * Type: **Item**
-
-* Related to: 
-
-* Source: 
-
 * Authors: [Emilio Rubiera](https://github.com/spitxa)
-
-* Review Manager:
+* Review Manager: TBD
 
 ## Introduction
 
 
 
 ## Motivation
-
-  

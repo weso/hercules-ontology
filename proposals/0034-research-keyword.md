@@ -1,17 +1,12 @@
 # Research Keyword
 
-* Name@es:
-* Name@en-us: [Research Keyword]()
-* Name@en-uk: [Research Keyword]()
-* Short name: 
-* Domain: 
-* URI: 
+* Proposal: [HO-0034](0034-research-keyword.md)
+* Name@en-us: Research Keyword
+* Name@en-uk: Research Keyword
 * Status: **Awaiting Review**
 * Type: **Item**
-* Related to:
-* Source: 
 * Authors: [Emilio Rubiera](https://github.com/spitxa)
-* Review Manager:
+* Review Manager: TBD
 
 ## Introduction
 

@@ -1,17 +1,13 @@
 # Regional
 
-* Name@es: [Regional]() 
-* Name@en-us: [Regional]()
-* Name@en-uk: [Regional]()
-* Short name: 
-* Domain: 
-* URI: 
+* Proposal: [HO-0050](0050-regional.md)
+* Name@es: Regional
+* Name@en-us: Regional
+* Name@en-uk: Regional
 * Status: **Awaiting Review**
 * Type: **Item**
-* Related to:
-* Source: 
 * Authors: [Emilio Rubiera](https://github.com/spitxa)
-* Review Manager:
+* Review Manager: TBD
 
 ## Introduction
 

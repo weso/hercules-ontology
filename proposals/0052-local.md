@@ -1,17 +1,13 @@
 # Local
 
-* Name@es: [Local]() 
-* Name@en-us: [Local]()
-* Name@en-uk: [Local]()
-* Short name: 
-* Domain: 
-* URI: 
+* Proposal: [HO-0052](0052-local.md)
+* Name@es: Local
+* Name@en-us: Local
+* Name@en-uk: Local
 * Status: **Awaiting Review**
 * Type: **Item**
-* Related to:
-* Source: 
 * Authors: [Emilio Rubiera](https://github.com/spitxa)
-* Review Manager:
+* Review Manager: TBD
 
 ## Introduction
 

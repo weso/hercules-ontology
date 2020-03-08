@@ -1,17 +1,13 @@
 # Patent
 
-* Name@es: [Patente]() 
-* Name@en-us: [Patent]()
-* Name@en-uk: [Patent]()
-* Short name: 
-* Domain: 
-* URI: 
+* Proposal: [HO-0042](0042-patent.md)
+* Name@es: Patente
+* Name@en-us: Patent
+* Name@en-uk: Patent
 * Status: **Awaiting Review**
 * Type: **Item**
-* Related to:
-* Source: 
 * Authors: [Emilio Rubiera](https://github.com/spitxa)
-* Review Manager:
+* Review Manager: TBD
 
 ## Introduction
 

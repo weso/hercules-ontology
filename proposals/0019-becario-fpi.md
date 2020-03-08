@@ -1,17 +1,11 @@
 # Becario FPI
 
-* Name@es: [Becario FPI]()
-* Name@en-us:
-* Name@en-uk:
-* Short name: 
-* Domain: 
-* URI: 
+* Proposal: [HO-0019](0019-becario-fpi.md)
+* Name@es: Becario FPI
 * Status: **Awaiting Review**
 * Type: **Item**
-* Related to:
-* Source: 
 * Authors: [Emilio Rubiera](https://github.com/spitxa)
-* Review Manager:
+* Review Manager: TBD
 
 ## Introduction
 
