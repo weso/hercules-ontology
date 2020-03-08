@@ -1,17 +1,14 @@
 # Administrative staff
 
-* Name@es: [Personal Administrativo]()
-* Name@en-us: [Administrative staff]()
-* Name@en-uk: [Staff]()
+* Proposal: [HO-0026](0026-personal-administrativo.md)
+* Name@es: Personal Administrativo
+* Name@en-us: Administrative staff
+* Name@en-uk: Staff
 * Short name: **PAS**
-* Domain: 
-* URI: 
 * Status: **Awaiting Review**
 * Type: **Item**
-* Related to:
-* Source: 
 * Authors: [Emilio Rubiera](https://github.com/spitxa)
-* Review Manager:
+* Review Manager: TBD
 
 ## Introduction
 

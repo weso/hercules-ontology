@@ -1,17 +1,14 @@
 # Professor (Catedrático Universidad)
 
-* Name@es: [Catedrático de Universidad]()
-* Name@en-us: [Professor]()
-* Name@en-uk: [Professor]() 
+* Proposal: [HO-0005](0005-professor-catedratico-universidad.md)
+* Name@es: Catedrático de Universidad
+* Name@en-us: Professor
+* Name@en-uk: Professor
 * Short name:  **CU**
-* Domain: 
-* URI: 
 * Status: **Awaiting Review**
 * Type: **Item**
-* Related to:
-* Source: 
 * Authors:  [Emilio Rubiera](https://github.com/spitxa)
-* Review Manager:
+* Review Manager: TBD
 
 ## Introduction
 

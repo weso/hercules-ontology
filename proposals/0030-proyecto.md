@@ -1,17 +1,13 @@
 # Project
 
-* Name@es: [Proyecto]()
-* Name@en-us: [Project]()
-* Name@en-uk: [Project]()
-* Short name: 
-* Domain: 
-* URI: 
+* Proposal: [HO-0030](0030.md)
+* Name@es: Proyecto
+* Name@en-us: Project
+* Name@en-uk: Project
 * Status: **Awaiting Review**
 * Type: **Item**
-* Related to:
-* Source: 
 * Authors: [Emilio Rubiera](https://github.com/spitxa)
-* Review Manager:
+* Review Manager: TBD
 
 ## Introduction
 

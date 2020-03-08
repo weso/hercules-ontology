@@ -1,17 +1,13 @@
 # Researcher
 
-* Name@es: [Investigador]() 
-* Name@en-us: [Researcher]()
-* Name@en-uk: [Researcher]()
-* Short name: 
-* Domain: 
-* URI: 
+* Proposal: [HO-0038](0038-researcher.md)
+* Name@es: Investigador
+* Name@en-us: Researcher
+* Name@en-uk: Researcher
 * Status: **Awaiting Review**
 * Type: **Item**
-* Related to:
-* Source: 
 * Authors: [Emilio Rubiera](https://github.com/spitxa)
-* Review Manager:
+* Review Manager: TBD
 
 ## Introduction
 

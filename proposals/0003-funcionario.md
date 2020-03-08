@@ -1,21 +1,14 @@
 # Funcionario
 
-* Name@es: [Funcionario]() 
-* Name@en-us:
-* Name@en-uk:
-* Short name:  
-* Domain: 
-* URI: 
+* Proposal: [HO-0003](0003-funcionario.md)
+* Name@es: Funcionario
 * Status: **Rejected**
 * Type: **Item**
-* Related to:
-* Source: 
-* Authors:  [Emilio Rubiera](https://github.com/spitxa)
-* Review Manager:
+* Authors: [Emilio Rubiera](https://github.com/spitxa)
+* Review Manager: TBD
 
 ## Introduction
 
 
 
 ## Motivation
-

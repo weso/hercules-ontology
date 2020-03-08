@@ -1,17 +1,13 @@
 # Scientific Domain
 
-* Name@es: [Dominio Científico]()
-* Name@en-us: [Scientific Domain]()
-* Name@en-uk: [Scientific Domain]()
-* Short name: 
-* Domain: 
-* URI: 
+* Proposal: [HO-0032](0032-dominio-cientifico.md)
+* Name@es: Dominio Científico
+* Name@en-us: Scientific Domain
+* Name@en-uk: Scientific Domain
 * Status: **Awaiting Review**
 * Type: **Item**
-* Related to:
-* Source: 
 * Authors: [Emilio Rubiera](https://github.com/spitxa)
-* Review Manager:
+* Review Manager: TBD
 
 ## Introduction
 

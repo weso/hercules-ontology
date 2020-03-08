@@ -1,17 +1,14 @@
 # Tutor
 
-* Name@es: [Profesor Ayudante]()
-* Name@en-us: [Instructor]()
-* Name@en-uk: [Tutor]()
-* Short name:  **PA**
-* Domain: 
-* URI: 
+* Proposal: [HO-0014](0014-profesor-ayudante.md)
+* Name@es: Profesor Ayudante
+* Name@en-us: Instructor
+* Name@en-uk: Tutor
+* Short name: **PA**
 * Status: **Awaiting Review**
 * Type: **Item**
-* Related to:
-* Source: 
-* Authors:  [Emilio Rubiera](https://github.com/spitxa)
-* Review Manager: 
+* Authors: [Emilio Rubiera](https://github.com/spitxa)
+* Review Manager: TBD
 
 ## Introduction
 

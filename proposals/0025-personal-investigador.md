@@ -1,17 +1,13 @@
 # Research staff
 
-* Name@es: [Personal Investigador]()
-* Name@en-us: [Research staff]()
-* Name@en-uk: [Research staff]()
-* Short name: 
-* Domain: 
-* URI: 
+* Proposal: [HO-0025](0025-personal-investigador.md)
+* Name@es: Personal Investigador
+* Name@en-us: Research staff
+* Name@en-uk: Research staff
 * Status: **Awaiting Review**
 * Type: **Item**
-* Related to:
-* Source: 
 * Authors: [Emilio Rubiera](https://github.com/spitxa)
-* Review Manager:
+* Review Manager: TBD
 
 ## Introduction
 

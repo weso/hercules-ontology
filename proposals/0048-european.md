@@ -1,17 +1,13 @@
 # European
 
-* Name@es: [Europeo]() 
-* Name@en-us: [European]()
-* Name@en-uk: [European]()
-* Short name: 
-* Domain: 
-* URI: 
+* Proposal: [HO-0048](0048-european.md)
+* Name@es: Europeo
+* Name@en-us: European
+* Name@en-uk: European
 * Status: **Awaiting Review**
 * Type: **Item**
-* Related to:
-* Source: 
 * Authors: [Emilio Rubiera](https://github.com/spitxa)
-* Review Manager:
+* Review Manager: TBD
 
 ## Introduction
 

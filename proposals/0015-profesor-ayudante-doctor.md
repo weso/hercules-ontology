@@ -1,17 +1,14 @@
 # Lecturer (PA-D)
 
-* Name@es: [Profesor Ayudante Doctor]()
-* Name@en-us: [Assistant Professor]()
-* Name@en-uk: [Lecturer]()
+* Proposal: [HO-0015](0015-profesor-ayudante-doctor.md)
+* Name@es: Profesor Ayudante Doctor
+* Name@en-us: Assistant Professor
+* Name@en-uk: Lecturer
 * Short name: **PA-D**
-* Domain: 
-* URI: 
 * Status: **Awaiting Review**
 * Type: **Item**
-* Related to: 
-* Source: 
 * Authors: [Emilio Rubiera](https://github.com/spitxa)
-* Review Manager:
+* Review Manager: TBD
 
 ## Introduction
 

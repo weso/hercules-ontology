@@ -1,17 +1,11 @@
 # Becario Severo Ochoa
 
-* Name@es: [Becario Severo Ochoa]()
-* Name@en-us: 
-* Name@en-uk: 
-* Short name: 
-* Domain: 
-* URI: 
+* Proposal: [HO-0021](0021-becario-severo-ochoa.md)
+* Name@es: Becario Severo Ochoa
 * Status: **Awaiting Review**
 * Type: **Item**
-* Related to:
-* Source: 
 * Authors: [Emilio Rubiera](https://github.com/spitxa)
-* Review Manager:
+* Review Manager: TBD
 
 ## Introduction
 

@@ -1,17 +1,12 @@
 # Titular de Escuela Universitaria
 
-* Name@es: [Titular de Escuela Universitaria]()
-* Name@en-us:
-* Name@en-uk:
+* Proposal: [HO-0004](0004-titular-escuela-universitaria.md)
+* Name@es: Titular de Escuela Universitaria
 * Short name:  **TEU**
-* Domain: 
-* URI: 
 * Status: **Awaiting Review**
 * Type: **Item**
-* Related to:
-* Source: 
-* Authors:  [Emilio Rubiera](https://github.com/spitxa)
-* Review Manager:
+* Authors: [Emilio Rubiera](https://github.com/spitxa)
+* Review Manager: TBD
 
 ## Introduction
 

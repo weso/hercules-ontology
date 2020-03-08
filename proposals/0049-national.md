@@ -1,17 +1,13 @@
 # National
 
-* Name@es: [Nacional]() 
-* Name@en-us: [National]()
-* Name@en-uk: [National]()
-* Short name: 
-* Domain: 
-* URI: 
+* Proposal: [HO-0049](0049-national.md)
+* Name@es: Nacional
+* Name@en-us: National
+* Name@en-uk: National
 * Status: **Awaiting Review**
 * Type: **Item**
-* Related to:
-* Source: 
 * Authors: [Emilio Rubiera](https://github.com/spitxa)
-* Review Manager:
+* Review Manager: TBD
 
 ## Introduction
 
