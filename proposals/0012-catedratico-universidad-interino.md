@@ -1,17 +1,21 @@
 # Professor (Fixed-term Contract) Catedrático de Universidad Interino
 
-* Proposal: [HO-0012](0012-catedratico-universidad-interino.md)
-* Name@es: Catedrático de Universidad Interino
-* Name@en-us: Professor (Tenure Track)
-* Name@en-uk: Professor (Fixed-term Contract)
-* Short name: **CUI**
+* Name@es: [Catedrático de Universidad Interino]()
+* Name@en-us: [Professor (Tenure Track)]()
+* Name@en-uk: [Professor (Fixed-term Contract)]()
+* Short name:  **CUi**
+* Domain: 
+* URI: 
 * Status: **Awaiting Review**
 * Type: **Item**
+* Related to: 
+* Source: 
 * Authors: [Emilio Rubiera](https://github.com/spitxa)
-* Review Manager: TBD
+* Review Manager:
 
 ## Introduction
 
-
+Same concept described in [0005-professor-catedratico-universidad]() but under a temporary 
+contract [0007-interino](). 
 
 ## Motivation

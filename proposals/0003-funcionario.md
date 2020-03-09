@@ -1,14 +1,22 @@
 # Funcionario
 
-* Proposal: [HO-0003](0003-funcionario.md)
-* Name@es: Funcionario
+* Name@es: [Funcionario]() 
+* Name@en-us:
+* Name@en-uk:
+* Short name:  
+* Domain: 
+* URI: 
 * Status: **Rejected**
 * Type: **Item**
-* Authors: [Emilio Rubiera](https://github.com/spitxa)
-* Review Manager: TBD
+* Related to:
+* Source: 
+* Authors:  [Emilio Rubiera](https://github.com/spitxa)
+* Review Manager:
 
 ## Introduction
 
-
+Someone who provides professional services in an administration or public institution under a
+statutory relationship guided by administrative law. 
 
 ## Motivation
+

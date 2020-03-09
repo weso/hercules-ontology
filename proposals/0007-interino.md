@@ -1,16 +1,21 @@
 # Interino
 
-* Proposal: [HO-0007](0007-interino.md)
-* Name@es: Interino
-* Name@en-us: Tenure Track
-* Name@en-uk: Fixed-term Contract
+* Name@es: [Interino]()
+* Name@en-us: [Tenure Track]()
+* Name@en-uk: [Fixed-term Contract]()
+* Short name:  
+* Domain: 
+* URI: 
 * Status: **Rejected**
 * Type: **Item**
+* Related to:
+* Source: 
 * Authors: [Emilio Rubiera](https://github.com/spitxa)
-* Review Manager: TBD
+* Review Manager:
 
 ## Introduction
 
-
+Someone who is hired under a temporary contract. 
 
 ## Motivation
+
