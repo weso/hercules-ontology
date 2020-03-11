@@ -9,6 +9,6 @@
 
 ## Introduction
 
-
+Someone who provides professional services in an administration or public institution under a statutory relationship guided by administrative law. 
 
 ## Motivation

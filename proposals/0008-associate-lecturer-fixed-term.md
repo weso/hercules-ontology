@@ -12,6 +12,6 @@
 
 ## Introduction
 
-
+Professor hired under a temporary contract whose main job is outside University. 
 
 ## Motivation
