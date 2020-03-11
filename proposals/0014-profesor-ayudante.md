@@ -12,6 +12,6 @@
 
 ## Introduction
 
-
+A Tutor is someone hired by the University to finish research training and cooperate with lecturers. The contract is full-time, should not exceed four years and it cannot be extended.
 
 ## Motivation

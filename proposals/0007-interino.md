@@ -11,6 +11,6 @@
 
 ## Introduction
 
-
+Someone who is hired under a temporary contract.
 
 ## Motivation
