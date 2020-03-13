@@ -11,6 +11,6 @@
 
 ## Introduction
 
-
+Staff who provides technical support related to University duties. 
 
 ## Motivation
