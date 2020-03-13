@@ -12,6 +12,6 @@
 
 ## Introduction
 
-
+Extended piece of research and writing on a single subject chosen by the student, typically completed in the final year of a degree programme.
 
 ## Motivation
