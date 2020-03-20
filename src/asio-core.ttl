@@ -1,0 +1,1291 @@
+@prefix : <http://www.asio.es/asioontologies/asio#> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix asio: <http://www.asio.es/asioontologies/asio#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cerif: <http://purl.org/cerif/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix deo: <http://purl.org/spar/deo/> .
+@prefix doco: <http://purl.org/spar/doco/> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix frapo: <http://purl.org/cerif/frapo#> .
+@prefix humantechreadiness: <http://sweetontology.net/humanTechReadiness#> .
+@prefix modules: <http://www.asio.es/asioontologies/asio/modules#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pso: <http://purl.org/spar/pso/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ro: <http://purl.org/wf4ever/ro#> .
+@prefix semcerif: <http://eurocris.org/ontology/semcerif#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix timezone: <http://www.w3.org/2006/timezone#> .
+@prefix vivo: <http://vivoweb.org/ontology/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@base <http://www.asio.es/asioontologies/asio> .
+
+<http://www.asio.es/asioontologies/asio> rdf:type owl:Ontology ;
+                                         owl:versionIRI <http://www.asio.es/asioontologies/asio/0.0.1> ;
+                                         rdfs:label "ASIO core ontology" ;
+                                         dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;                                         .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.asio.es/asioontologies/asio#addresses
+asio:addresses rdf:type owl:ObjectProperty ;
+               rdfs:domain asio:ResearchContribution ;
+               rdfs:range asio:ResearchProblem ;
+               rdfs:label "addresses"@en .
+
+
+###  http://www.asio.es/asioontologies/asio#advises
+asio:advises rdf:type owl:ObjectProperty ;
+             owl:inverseOf asio:isAdvisedBy ;
+             rdfs:domain <http://www.asio.es/asioontologies/asio#Research&TeachingPersonnel> ;
+             rdfs:range asio:Student ;
+             rdfs:label "advises"@en .
+
+
+###  http://www.asio.es/asioontologies/asio#capital
+asio:capital rdf:type owl:ObjectProperty ;
+             rdfs:domain <http://www.w3.org/2004/02/skos/core#Concept> ;
+             rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
+             rdfs:comment "A property to indicate that a place is the official seat of government in a political entity."@en ;
+             rdfs:label "capital"@en .
+
+
+###  http://www.asio.es/asioontologies/asio#codeOf
+asio:codeOf rdf:type owl:ObjectProperty ;
+            owl:inverseOf asio:hasCode ;
+            rdfs:domain <http://www.w3.org/2004/02/skos/core#Concept> ;
+            rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
+            rdfs:label "code of"@en ;
+            rdfs:comment "A code is assigned to a concept."@en .
+
+
+###  http://www.asio.es/asioontologies/asio#country
+asio:country rdf:type owl:ObjectProperty ;
+             rdfs:domain <http://www.w3.org/2004/02/skos/core#Concept> ;
+             rdfs:range asio:Country ;
+             rdfs:label "country"@en, 
+                        "país"@es ;
+             rdfs:comment "This property indicates the nationality of a resource."@en .
+
+
+###  http://www.asio.es/asioontologies/asio#employs
+asio:employs rdf:type owl:ObjectProperty ;
+             rdfs:domain asio:ResearchContribution ;
+             rdfs:range asio:ResearchMethod ;
+             rdfs:label "employs"@en, "emplea"@es .
+
+
+###  http://www.asio.es/asioontologies/asio#funds
+asio:funds rdf:type owl:ObjectProperty ;
+           owl:inverseOf asio:isFundedBy ;
+           rdfs:label "funds"@en .
+
+
+###  http://www.asio.es/asioontologies/asio#geo-division
+asio:geo-division rdf:type owl:ObjectProperty ;
+                  rdfs:domain <http://www.w3.org/2004/02/skos/core#Concept> ;
+                  rdfs:range modules:GeopoliticalEntities ;
+                  rdfs:comment "A property to link a resource to a predefined geographical (or geopolitical) division."@en ;
+                  rdfs:label "geo-division"@en .
+
+
+###  http://www.asio.es/asioontologies/asio#hasCV
+asio:hasCV rdf:type owl:ObjectProperty ;
+           rdfs:domain foaf:Person ;
+           rdfs:range asio:CV ;
+           rdfs:label "has CV"@en .
+
+
+###  http://www.asio.es/asioontologies/asio#hasCode
+asio:hasCode rdf:type owl:ObjectProperty ;
+             rdfs:domain <http://www.w3.org/2004/02/skos/core#Concept> ;
+             rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
+             rdfs:comment "A concept can be asigned a code."@en ;
+             rdfs:label "has Code"@en .
+
+
+###  http://www.asio.es/asioontologies/asio#hasResearchContribution
+asio:hasResearchContribution rdf:type owl:ObjectProperty ;
+            rdfs:label "has research contribution"@en .
+
+
+###  http://www.asio.es/asioontologies/asio#hasResearchField
+asio:hasResearchField rdf:type owl:ObjectProperty ;
+            rdfs:label "has research field"@en .
+
+
+###  http://www.asio.es/asioontologies/asio#hasScientificDomain
+asio:hasScientificDomain rdf:type owl:ObjectProperty ;
+           rdfs:label "has scientific domain"@en .
+
+
+###  http://www.asio.es/asioontologies/asio#hasSealOfQuality
+asio:hasSealOfQuality rdf:type owl:ObjectProperty ;
+                      rdfs:range asio:ResearchInstitute ;
+                      rdfs:label "has seal of quality"@en .
+
+
+###  http://www.asio.es/asioontologies/asio#hasTRL
+asio:hasTRL rdf:type owl:ObjectProperty ;
+            rdfs:label "has TRL"@en .
+
+
+###  http://www.asio.es/asioontologies/asio#isAdvisedBy
+asio:isAdvisedBy rdf:type owl:ObjectProperty ;
+                 rdfs:label "is advised by"@en .
+
+
+###  http://www.asio.es/asioontologies/asio#isFundedBy
+asio:isFundedBy rdf:type owl:ObjectProperty ;
+                rdfs:label "is funded by"@en .
+
+
+###  http://www.asio.es/asioontologies/asio#participant
+asio:participant rdf:type owl:ObjectProperty ;
+                 rdfs:range foaf:Agent ;
+                 rdfs:label "participant"@en .
+
+
+###  http://www.asio.es/asioontologies/asio#requiredFor
+asio:requiredFor rdf:type owl:ObjectProperty ;
+                 rdfs:domain asio:AcademicPublication ;
+                 rdfs:range asio:AcademicDegree ;
+                 rdfs:label "requiredFor"@en .
+
+
+###  http://www.asio.es/asioontologies/asio#requires
+asio:requires rdf:type owl:ObjectProperty ;
+              rdfs:domain asio:AcademicDegree ;
+              rdfs:range asio:AcademicPublication ;
+              rdfs:label "requires"@en .
+
+
+###  http://www.asio.es/asioontologies/asio#researchesIn
+asio:researchesIn rdf:type owl:ObjectProperty ;
+                  rdfs:domain foaf:Agent ;
+                  rdfs:range modules:ScientificDomain ;
+                  rdfs:label "researches in"@en .
+
+
+###  http://www.asio.es/asioontologies/asio#spinsOffFrom
+asio:spinsOffFrom rdf:type owl:ObjectProperty ;
+                  rdfs:domain asio:Spinoff ;
+                  rdfs:label "spins of from"@en .
+
+
+###  http://www.asio.es/asioontologies/asio#utilizes
+asio:utilizes rdf:type owl:ObjectProperty ;
+              rdfs:domain asio:ResearchContribution ;
+              rdfs:range asio:ResearchMaterial;
+              rdfs:label "utilizes"@en .
+
+
+###  http://www.asio.es/asioontologies/asio#yields
+asio:yields rdf:type owl:ObjectProperty ;
+            rdfs:domain asio:ResearchContribution ;
+            rdfs:range asio:ResearchResult ;
+            rdfs:label "yields"@en .
+
+
+###  http://xmlns.com/foaf/0.1/member
+foaf:member rdf:type owl:ObjectProperty ;
+            rdfs:label "member"@en .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.asio.es/asioontologies/asio#projectEndDate
+asio:projectEndDate rdf:type owl:DatatypeProperty ;
+                    rdfs:domain foaf:Project ;
+                    rdfs:comment "The end date of the project."@en ;
+                    rdfs:label "project end date"@en, "fecha final proyecto"@es .
+
+
+###  http://www.asio.es/asioontologies/asio#projectKeyword
+asio:projectKeyword rdf:type owl:DatatypeProperty ;
+                    rdfs:domain foaf:Project ;
+                    rdfs:comment "A key word of the project."@en ;
+                    rdfs:label "project keyword"@en, "palabra clave"@es .
+
+
+###  http://www.asio.es/asioontologies/asio#projectObjective
+asio:projectObjective rdf:type owl:DatatypeProperty ;
+                      rdfs:domain foaf:Project ;
+                      rdfs:comment "A defined objective of the project."@en ;
+                      rdfs:label "project objective"@en, "objetivo de proyecto"@es .
+
+
+###  http://www.asio.es/asioontologies/asio#projectStartDate
+asio:projectStartDate rdf:type owl:DatatypeProperty ;
+                      rdfs:domain foaf:Project ;
+                      rdfs:comment "The start date of the project."@en ;
+                      rdfs:label "project start date"@en, "fecha inicio proyecto"@es .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://purl.org/cerif/frapo/FinancialEntity
+<http://purl.org/cerif/frapo/FinancialEntity> rdf:type owl:Class ;
+                                              rdfs:label "Ente financiero"@es ,
+                                                         "Ens financera"@ca-ad ,
+                                                         "Ens financera"@ca-es ,
+                                                         "Entité financière"@fr ,
+                                                         "Financial entity"@en ,
+                                                         "Ente financeiro"@pt ;
+                                              skos:prefLabel "Ente financiero"@es ,
+                                                         "Ens financera"@ca-ad ,
+                                                         "Ens financera"@ca-es ,
+                                                         "Entité financière"@fr ,
+                                                         "Financial entity"@en ,
+                                                         "Ente financeiro"@pt .
+
+
+###  http://purl.org/wf4ever/ro#ResearchObject
+ro:ResearchObject rdf:type owl:Class ;
+                  rdfs:comment "A research object aggregates a number of resources. A resource can be a workflow, web service, document, data item, data set, workflow run, software or a research object."@en ;
+                  rdfs:label "Objecte de recerca"@ca-ad ,
+                             "Objecte de recerca"@ca-es ,
+                             "Objet de recherche"@fr ,
+                             "Objeto de investigación"@es ,
+                             "Objeto de investigação"@pt ,
+                             "Research object"@en ;
+                  skos:prefLabel "Objecte de recerca"@ca-ad ,
+                             "Objecte de recerca"@ca-es ,
+                             "Objet de recherche"@fr ,
+                             "Objeto de investigación"@es ,
+                             "Objeto de investigação"@pt ,
+                             "Research object"@en .
+
+
+###  http://www.asio.es/asioontologies/asio#AcademicDegree
+asio:AcademicDegree rdf:type owl:Class ;
+                    rdfs:comment "A qualification awarded to students upon successful completion of a course of study in higher education."@en ;
+                    rdfs:label "Academic degree"@en ,
+                               "Grade universitaire"@fr ,
+                               "Grade universitaire"@fr-be ,
+                               "Grade universitaire"@fr-ca ,
+                               "Grade universitaire"@fr-ch ,
+                               "Grade universitaire"@fr-fr ,
+                               "Grao académico"@gl ,
+                               "Grau acadèmic"@ca-ad ,
+                               "Grau acadèmic"@ca-es ,
+                               "Grau académico"@pt-pt ,
+                               "Grau acadêmico"@pt-br ,
+                               "Título académico"@es-es ,
+                               "Unibertsitate-gradu"@eu ;
+                    skos:prefLabel "Academic degree"@en ,
+                               "Grade universitaire"@fr ,
+                               "Grade universitaire"@fr-be ,
+                               "Grade universitaire"@fr-ca ,
+                               "Grade universitaire"@fr-ch ,
+                               "Grade universitaire"@fr-fr ,
+                               "Grao académico"@gl ,
+                               "Grau acadèmic"@ca-ad ,
+                               "Grau acadèmic"@ca-es ,
+                               "Grau académico"@pt-pt ,
+                               "Grau acadêmico"@pt-br ,
+                               "Título académico"@es-es ,
+                               "Unibertsitate-gradu"@eu .
+
+
+###  http://www.asio.es/asioontologies/asio#AcademicPublication
+asio:AcademicPublication rdf:type owl:Class ;
+                         rdfs:subClassOf asio:Publication ;
+                         rdfs:label "Academic publication"@en,
+                                    "Publicació acadèmica"@ca-ad ,
+                                    "Publicació acadèmica"@ca-es ,
+                                    "Publicación académica"@es ,
+                                    "Publicación académica"@gl ,
+                                    "Publication académique"@fr ,
+                                    "Publicação acadêmica"@pt ;
+                         skos:prefLabel "Academic publication"@en,
+                                    "Publicació acadèmica"@ca-ad ,
+                                    "Publicació acadèmica"@ca-es ,
+                                    "Publicación académica"@es ,
+                                    "Publicación académica"@gl ,
+                                    "Publication académique"@fr ,
+                                    "Publicação acadêmica"@pt .
+
+
+###  http://www.asio.es/asioontologies/asio#AdministrativeEntity
+asio:AdministrativeEntity rdf:type owl:Class ;
+                          rdfs:subClassOf <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+                          rdfs:comment "This vertical module in ASIO models all the relevant administrative bodies (\"Administración Autonómica\") of Spain's Autonomous Communities (conserjerías, departamentos, secretarías) that might have a role (funding, participating) within the development of a given project. It is modeled hierarchically through the relevant administrative levels thereof."@en ;
+                          rdfs:label "Administrative entities"@en ,
+                                     "Entidades administrativas"@es ,
+                                     "Entidades administrativas"@pt ,
+                                     "Entitats administratives"@ca-ad ,
+                                     "Entitats administratives"@ca-es ,
+                                     "Entités administratives"@fr ;
+                          skos:prefLabel "Administrative entities"@en ,
+                                     "Entidades administrativas"@es ,
+                                     "Entidades administrativas"@pt ,
+                                     "Entitats administratives"@ca-ad ,
+                                     "Entitats administratives"@ca-es ,
+                                     "Entités administratives"@fr .
+
+
+###  http://www.asio.es/asioontologies/asio#AdministrativePersonnel
+asio:AdministrativePersonnel rdf:type owl:Class ;
+                             rdfs:subClassOf asio:HumanResource ;
+                             rdfs:comment "Personnel devoted to administrative tasks."@en ;
+                             rdfs:label "Administrative personnel"@en ,
+                                        "Personal administratiu"@ca-ad ,
+                                        "Personal administratiu"@ca-es ,
+                                        "Personal administrativo"@es ,
+                                        "Personnel administratif"@fr ,
+                                        "Pessoal administrativo"@pt ;
+                             skos:prefLabel "Administrative personnel"@en ,
+                                        "Personal administratiu"@ca-ad ,
+                                        "Personal administratiu"@ca-es ,
+                                        "Personal administrativo"@es ,
+                                        "Personnel administratif"@fr ,
+                                        "Pessoal administrativo"@pt .
+
+
+###  http://www.asio.es/asioontologies/asio#Article
+asio:Article rdf:type owl:Class ;
+             rdfs:subClassOf asio:ScientificPublication ;
+             rdfs:label "Article"@en ;
+             skos:prefLabel "Article"@en .
+
+
+###  http://www.asio.es/asioontologies/asio#BachelorsThesis
+asio:BachelorsThesis rdf:type owl:Class ;
+                     rdfs:subClassOf asio:Thesis ;
+                     owl:disjointWith asio:MastersThesis ,
+                                      asio:PhDThesis ;
+                     rdfs:comment "A thesis reporting a research project undertaken as part of an undergraduate course of education to receive a bachelor's degree."@en ;
+                     rdfs:label "Bachelor's thesis"@en ,
+                                "Trabayu de fin de grau"@ast ,
+                                "Mémoire de fin de licence"@fr ,
+                                "Trabajo de fin de grado"@es-es ,
+                                "Treball fi de bàtxelor"@ca-ad ,
+                                "Treball fi de grau"@ca-es ;
+                     skos:prefLabel "Bachelor's thesis"@en ,
+                                "Trabayu de fin de grau"@ast ,
+                                "Mémoire de fin de licence"@fr ,
+                                "Trabajo de fin de grado"@es-es ,
+                                "Gradu Amaierako Lana"@eu ,
+                                "Treball de fi de bàtxelor"@ca-ad ,
+                                "Traballo de fin de grao"@gl ,
+                                "Treball de fi de grau"@ca-es ;
+                      skos:altLabel "TFB"@ca-ad ,
+                                 "Treball de fi de carrera"@ca-es ,
+                                 "TFG"@ca-es ,
+                                 "TFG"@ast ,
+                                 "Honour's thesis"@en-CA ,
+                                 "Honour's thesis"@en-GB ,
+                                 "Honor's thesis"@en-US ,
+                                 "Trabajo de fin de carrera"@es ,
+                                 "TFG"@es ,
+                                 "GALa"@eu ,
+                                 "Traballo de fin de carreira"@gl ,
+                                 "TFG"@gl .
+
+
+###  http://www.asio.es/asioontologies/asio#BacherlorsDegree
+asio:BacherlorsDegree rdf:type owl:Class ;
+                      rdfs:subClassOf asio:AcademicDegree ;
+                      rdfs:comment "An undergraduate academic degree awarded by colleges and universities upon completion of a course of study lasting three to four years (depending on institution and academic discipline)."@en ;
+                      rdfs:label "Bachelor's degree"@en ,
+                                 "Licenciatura (pós-Bologna)"@pt-pt ,
+                                 "Títol de bàtxelor"@ca-ad ,
+                                 "Títol de grau"@ca-es ,
+                                 "Título de grado"@es ;
+                      skos:prefLabel "Bachelor's degree"@en ,
+                                 "Licenciatura (pós-Bologna)"@pt-pt ,
+                                 "Títol de bàtxelor"@ca-ad ,
+                                 "Títol de grau"@ca-es ,
+                                 "Título de grado"@es ;
+                      skos:altLabel "Bàtxelor"@ca-ad ,
+                                 "Grau"@ca-es ,
+                                 "Grado"@es ,
+                                 "Gradu"@eu ,
+                                 "Grao"@gl ,
+                                 "Grau"@pt .
+
+
+###  http://www.asio.es/asioontologies/asio#Book
+asio:Book rdf:type owl:Class ;
+          rdfs:subClassOf asio:ScientificPublication ;
+          rdfs:label "Book"@en ,
+                     "Libro"@es ,
+                     "Livre"@fr ,
+                     "Livro"@pt ,
+                     "Llibre"@ca-ad ,
+                     "Llibre"@ca-es ;
+          skos:prefLabel "Book"@en ,
+                     "Libro"@es ,
+                     "Livre"@fr ,
+                     "Livro"@pt ,
+                     "Llibre"@ca .
+
+
+###  http://www.asio.es/asioontologies/asio#Budget
+asio:Budget rdf:type owl:Class ;
+            rdfs:subClassOf <http://purl.org/cerif/frapo/FinancialEntity> ;
+            rdfs:comment "A financial plan for a defined period that may also include planned sales volumes and revenues, resource quantities, costs and expenses, assets, liabilities and cash flows."@en ;
+            rdfs:label "Budget"@en ,
+                       "Budget"@fr ,
+                       "Orzamento"@gl ,
+                       "Orçamento"@pt ,
+                       "Aurrekontu"@eu ,
+                       "Pressupost"@ca-ad ,
+                       "Pressupost"@ca-es ,
+                       "Presupuesto"@es ;
+            skos:prefLabel "Budget"@en ,
+                       "Budget"@fr ,
+                       "Orzamento"@gl ,
+                       "Orçamento"@pt ,
+                       "Aurrekontu"@eu ,
+                       "Pressupost"@ca-ad ,
+                       "Pressupost"@ca-es ,
+                       "Presupuesto"@es ;
+            skos:altLabel "Presupuesto"@gl .
+
+
+###  http://www.asio.es/asioontologies/asio#CV
+asio:CV rdf:type owl:Class ;
+        rdfs:comment "A document used and created by a person to present their background, skills and accomplishments."@en ;
+        rdfs:label "Currículum vitae"@en ,
+                   "Currículum vitae"@es ,
+                   "Curriculum vitae"@eu ,
+                   "Curriculum vitae"@fr ,
+                   "Curriculum vitae"@pt ,
+                   "Currículum vitae"@ca-AD ,
+                   "Currículum vitae"@ca-ES ,
+                   "Currículum vitae"@gl ;            
+        skos:prefLabel "Curriculum vitae"@en ,
+                   "Currículum vitae"@es ,
+                   "Curriculum vitae"@fr ,
+                   "Curriculum vitae"@pt ,
+                   "Currículum vitae"@ca ,
+                   "Currículum vitae"@es ;  
+        skos:altLabel "Resume"@en ,
+                   "Curriculum vitæ"@fr ,
+                   "Curriculum vitae"@ca ,
+                   "Currículum"@ca ,
+                   "Curriculum vitae"@es ,
+                   "Currículum"@es ,
+                   "Currículo"@es ,
+                   "Currículo"@gl ,
+                   "Curriculum vitæ"@pt ,
+                   "Currículo"@pt ,
+                   "Résumé"@en ,
+                   "CV"@en ,
+                   "CV"@ca ,
+                   "CV"@ca ,
+                   "CV"@es ,
+                   "CV"@eu ,
+                   "CV"@fr ,
+                   "CV"@gl ,
+                   "CV"@pt .
+
+
+###  http://www.asio.es/asioontologies/asio#Company
+asio:Company rdf:type owl:Class ;
+             rdfs:subClassOf foaf:Organization ;
+             owl:disjointWith asio:University ;
+             rdfs:comment "A corporation or business organization which makes goods (in a broad sense) in an organized manner and sells them to the public for profit."@en ,
+                          "Uma organização com personalidade jurídica, a qual dispõe dos médios necessários para a produção e obtenção de bens ou serviços destinados ao intercâmbio."@pt ,
+                          "Una organització amb personalitat jurídica, la qual disposa dels mitjans necessaris per a la producció i es dedica a combinar-los per obtenir béns o serveis destinats a l'intercanvi."@ca ,
+                          "Una organización con personalidad jurídica que dispone de los medios necesarios para la producción y se dedica a combinarlos para obtener bienes o servicios destinados al intercambio."@es ;
+             rdfs:label "Company"@en ,
+                        "Empresa"@ca-ad ,
+                        "Empresa"@ca-es ,
+                        "Empresa"@es ,
+                        "Empresa"@gl ,
+                        "Empresa"@pt ,
+                        "Entreprise"@fr ;
+             skos:prefLabel "Company"@en ,
+                        "Empresa"@ca-ad ,
+                        "Empresa"@ca-es ,
+                        "Empresa"@es ,
+                        "Empresa"@gl ,
+                        "Empresa"@pt ,
+                        "Entreprise"@fr .
+
+
+###  http://www.asio.es/asioontologies/asio#Contract
+asio:Contract rdf:type owl:Class ;
+              rdfs:subClassOf <http://purl.org/cerif/frapo/FinancialEntity> ;
+              rdfs:label "Contract"@en ,
+                         "Contracte"@ca-ad ,
+                         "Contracte"@ca-es ,
+                         "Contrat"@fr ,
+                         "Contrato"@es ,
+                         "Contrato"@gl ,
+                         "Contrato"@pt ;
+              skos:prefLabel "Contract"@en ,
+                         "Contracte"@ca-ad ,
+                         "Contracte"@ca-es ,
+                         "Contrat"@fr ,
+                         "Contrato"@es ,
+                         "Contrato"@gl ,
+                         "Contrato"@pt .
+
+
+###  http://www.asio.es/asioontologies/asio#Country
+asio:Country rdf:type owl:Class ;
+             rdfs:subClassOf modules:GeopoliticalEntities ;
+             rdfs:comment "A region legally identified as a distinct entity in political geography."@en ;
+             rdfs:label "Country"@en ,
+                        "Pays"@fr ,
+                        "País"@ca-ad ,
+                        "País"@ca-es ,
+                        "País"@es ,
+                        "Herrialde"@eu ,
+                        "País"@pt ;
+             skos:prefLabel "Country"@en ,
+                        "Pays"@fr ,
+                        "País"@ca-ad ,
+                        "País"@ca-es ,
+                        "País"@es ,
+                        "Herrialde"@eu ,
+                        "País"@gl ,
+                        "País"@pt .
+
+
+###  http://www.asio.es/asioontologies/asio#DoctoralDegree
+asio:DoctoralDegree rdf:type owl:Class ;
+                    rdfs:subClassOf asio:AcademicDegree ;
+                    rdfs:label "Doctorado"@es ,
+                               "Doctoral degree"@en ,
+                               "Doctorat"@ca-ad ,
+                               "Doctorat"@ca-es ,
+                               "Doctorat"@fr-be ,
+                               "Doctorat"@fr-ca ,
+                               "Doctorat"@fr-ch ,
+                               "Doctorat"@fr-fr ,
+                               "Doktorego"@eu ,
+                               "Doutoramento"@gl ,
+                               "Doutoramento"@pt ;
+                    skos:prefLabel "Doctorado"@es ,
+                               "Doctoral degree"@en ,
+                               "Doctorat"@ca-ad ,
+                               "Doctorat"@ca-es ,
+                               "Doctorat"@fr-be ,
+                               "Doctorat"@fr-ca ,
+                               "Doctorat"@fr-ch ,
+                               "Doctorat"@fr-fr ,
+                               "Doktorego"@eu ,
+                               "Doutoramento"@gl ,
+                               "Doutoramento"@pt ;
+                    skos:altLabel "Doctorate"@en ,
+                               "Doktoretza"@eu .
+
+
+###  http://www.asio.es/asioontologies/asio#EditedPublication
+asio:EditedPublication rdf:type owl:Class ;
+                       rdfs:subClassOf asio:ScientificPublication ;
+                       rdfs:label "Edited publication"@en .
+
+
+###  http://www.asio.es/asioontologies/asio#EmploymentContract
+asio:EmploymentContract rdf:type owl:Class ;
+                        rdfs:subClassOf asio:Contract ;
+                        rdfs:label "Contracte de treball"@ca-ad ,
+                                   "Contracte de treball"@ca-es ,
+                                   "Contrat de travail"@fr ,
+                                   "Contrato de trabajo"@es ,
+                                   "Contrato de trabalho"@pt ,
+                                   "Employment contract"@en ;
+                        skos:prefLabel "Contracte de treball"@ca-ad ,
+                                   "Contracte de treball"@ca-es ,
+                                   "Contrat de travail"@fr ,
+                                   "Contrato de trabajo"@es ,
+                                   "Contrato de trabalho"@pt ,
+                                   "Employment contract"@en .
+
+
+###  http://www.asio.es/asioontologies/asio#EuropeanProject
+asio:EuropeanProject rdf:type owl:Class ;
+                     rdfs:subClassOf foaf:Project ;
+                     rdfs:comment "A project developed and funded at the European level."@en ;
+                     rdfs:label "European project"@en ,
+                                "Projecte europeu"@ca-ad ,
+                                "Projecte europeu"@ca-es ,
+                                "Projet européen"@fr ,
+                                "Projeto europeu"@pt ,
+                                "Proyecto europeo"@es ;
+                     skos:prefLabel "European project"@en ,
+                                "Projecte europeu"@ca-ad ,
+                                "Projecte europeu"@ca-es ,
+                                "Projet européen"@fr ,
+                                "Projeto europeu"@pt ,
+                                "Proyecto europeo"@es .
+
+
+###  http://www.asio.es/asioontologies/asio#Funding
+asio:Funding rdf:type owl:Class ;
+             rdfs:subClassOf <http://purl.org/cerif/frapo/FinancialEntity> .
+
+
+###  http://www.asio.es/asioontologies/asio#FundingOrganization
+asio:FundingOrganization rdf:type owl:Class ;
+                         rdfs:subClassOf foaf:Organization;
+                         rdfs:label "Funding organization"@en .
+
+
+###  http://www.asio.es/asioontologies/asio#FundingProgramme
+asio:FundingProgramme rdf:type owl:Class ;
+                      rdfs:comment "A programme of related funded projects, typically established by a funding organization."@en ;
+                      rdfs:label "Funding programme"@en .
+
+
+###  http://www.asio.es/asioontologies/asio#GraduateStudent
+asio:GraduateStudent rdf:type owl:Class ;
+                     rdfs:subClassOf asio:Student ;
+                     rdfs:label "Graduate student"@en ;
+                     skos:prefLabel "Graduate student"@en .
+
+
+###  http://www.asio.es/asioontologies/asio#HumanResource
+asio:HumanResource rdf:type owl:Class ;
+                   rdfs:subClassOf foaf:Person ;
+                   rdfs:comment "A person who make up the workforce of an organization, industry, business sector or economy."@en ;
+                   rdfs:label "Human resource"@en ,
+                              "Recurs humà"@ca-ad ,
+                              "Recurs humà"@ca-es ,
+                              "Recurso humano"@es ,
+                              "Recurso humano"@gl ,
+                              "Recurso humano"@pt ,
+                              "Ressource humaine"@fr ;
+                   skos:prefLabel "Human resource"@en ,
+                              "Recurs humà"@ca-ad ,
+                              "Recurs humà"@ca-es ,
+                              "Recurso humano"@es ,
+                              "Recurso humano"@gl ,
+                              "Recurso humano"@pt ,
+                              "Ressource humaine"@fr .
+
+
+###  http://www.asio.es/asioontologies/asio#Manual
+asio:Manual rdf:type owl:Class ;
+            rdfs:subClassOf asio:ScientificPublication ;
+            rdfs:label "Manual"@en ;
+            skos:prefLabel "Manual"@en ;
+            skos:altLabel "Handbook"@en .
+
+
+###  http://www.asio.es/asioontologies/asio#MasterStudent
+asio:MasterStudent rdf:type owl:Class ;
+                   rdfs:subClassOf asio:GraduateStudent ;
+                   rdfs:label "Master student"@en ,
+                           "Estudiante de máster"@es ,
+                           "Estudiant de màster"@ca-ad ,
+                           "Estudiant de màster"@ca-es ,
+                           "Étudiant de maîtrise"@fr ,
+                           "Estudante de máster"@gl ,
+                           "Estudante de mestrado"@pt ;
+                   skos:prefLabel "Master student"@en ,
+                           "Estudiante de máster"@es ,
+                           "Estudiant de màster"@ca ,
+                           "Étudiant de maîtrise"@fr ,
+                           "Estudante de máster"@gl ,
+                           "Estudante de mestrado"@pt ;
+                   skos:altLabel "Estudante de mestrado"@gl ,
+                           "Estudiant de mestratge"@ca ,
+                           "Étudiant de master"@fr .
+
+
+###  http://www.asio.es/asioontologies/asio#MastersDegree
+asio:MastersDegree rdf:type owl:Class ;
+                   rdfs:subClassOf asio:AcademicDegree ;
+                   rdfs:label "Master's degree"@en ,
+                              "Magister Scientiae"@es-ve ,
+                              "Maîtrise universitaire"@fr-be ,
+                              "Maîtrise universitaire"@fr-ca ,
+                              "Maîtrise universitaire"@fr-ch ,
+                              "Maîtrise universitaire"@fr-fr ,
+                              "Mestrado"@pt-br ,
+                              "Mestrado"@pt-pt ,
+                              "Máster universitario"@gl ,
+                              "Máster universitario"@es-ES ,
+                              "Màster universitari"@ca-ad ,
+                              "Màster universitari"@ca-es ;
+                   skos:prefLabel "Master's degree"@en ,
+                              "Magister Scientiae"@es-ve ,
+                              "Maîtrise universitaire"@fr-be ,
+                              "Maîtrise universitaire"@fr-ca ,
+                              "Maîtrise universitaire"@fr-ch ,
+                              "Maîtrise universitaire"@fr-fr ,
+                              "Mestrado"@pt-br ,
+                              "Mestrado"@pt-pt ,
+                              "Máster universitario"@gl ,
+                              "Máster universitario"@es-ES ,
+                              "Màster universitari"@ca-ad ,
+                              "Màster universitari"@ca-es ;
+                   skos:altLabel "Mestrado universitario"@gl ,
+                              "Mestratge universitari"@ca-ad ,
+                              "Mestratge universitari"@ca-es .
+
+
+###  http://www.asio.es/asioontologies/asio#MastersThesis
+asio:MastersThesis rdf:type owl:Class ;
+                   rdfs:subClassOf asio:Thesis ;
+                   owl:disjointWith asio:PhDThesis ;
+                   rdfs:comment "A thesis reporting a research project undertaken as part of a second-cycle course of education to receive a master's degree."@en ;
+                   rdfs:label "Master's thesis"@en ,
+                              "Dissertação de mestrado"@pt-br ,
+                              "Dissertação de mestrado"@pt-pt ,
+                              "Mémoire de maîtrise"@fr-ca ,
+                              "Mémoire de maîtrise"@fr-fr ,
+                              "Traballo de fin de máster"@gl ,
+                              "Tese de mestrado"@pt-ao ,
+                              "Tesis de maestría"@es-ar ,
+                              "Tesis de maestría"@es-co ,
+                              "Tesis de maestría"@es-cu ,
+                              "Tesis de maestría"@es-mx ,
+                              "Traballo de fin de máster"@gl ,
+                              "Trabajo de fin de máster"@es-es ,
+                              "Treball de fi de màster"@ca-ad ,
+                              "Treball de fi de màster"@ca-es ;
+                   skos:prefLabel "Master's thesis"@en ,
+                              "Dissertação de mestrado"@pt-br ,
+                              "Dissertação de mestrado"@pt-pt ,
+                              "Mémoire de maîtrise"@fr-ca ,
+                              "Mémoire de maîtrise"@fr-fr ,
+                              "Traballo de fin de máster"@gl ,
+                              "Tese de mestrado"@pt-ao ,
+                              "Tesis de maestría"@es-ar ,
+                              "Tesis de maestría"@es-co ,
+                              "Tesis de maestría"@es-cu ,
+                              "Tesis de maestría"@es-mx ,
+                              "Trabajo de fin de máster"@es-es ,
+                              "Master Amaierako Lana"@eu ,
+                              "Treball de fi de màster"@ca-ad ,
+                              "Treball de fi de màster"@ca-es ;
+                   skos:altLabel "Traballo de fin de mestrado"@gl ,
+                              "TFM"@ca-ad ,
+                              "Treball de fi de master"@ca-ad ,
+                              "Treball de fi de master"@ca-es ,
+                              "TFM"@ca-ad ,
+                              "TFM"@ca-es ,
+                              "TFM"@es-es ,
+                              "Trabajo de fin de master"@es-es ,
+                              "MALa"@es-eu ,
+                              "TFM"@gl ,
+                              "Treball de fi de mestratge"@ca-ad ,
+                              "Treball de fi de mestratge"@ca-es .
+
+
+###  http://www.asio.es/asioontologies/asio#NationalProject
+asio:NationalProject rdf:type owl:Class ;
+                     rdfs:subClassOf foaf:Project ;
+                     rdfs:comment "A project developed and funded at the national level."@en ;
+                     rdfs:label "National project"@en ,
+                                "Projecte nacional"@ca-ad ,
+                                "Projecte nacional"@ca-es ,
+                                "Projet national"@fr ,
+                                "Projeto nacional"@pt ,
+                                "Proyecto regional"@es ;
+                     skos:prefLabel "National project"@en ,
+                                "Projecte nacional"@ca-ad ,
+                                "Projecte nacional"@ca-es ,
+                                "Projet national"@fr ,
+                                "Projeto nacional"@pt ,
+                                "Proyecto regional"@es .
+
+
+###  http://www.asio.es/asioontologies/asio#Patent
+asio:Patent rdf:type owl:Class ;
+            rdfs:comment "A form of intellectual property that gives its owner the legal right to exclude others from making, using, selling and importing an invention for a limited period of years, in exchange for publishing an enabling public disclosure of the invention."@en ;
+            rdfs:label "Patent"@en ,
+                       "Patent"@ca-ad ,
+                       "Patent"@ca-es ,
+                       "Patent"@fr ,
+                       "Patente"@es ,
+                       "Patente"@eu ,
+                       "Patente"@gl ,
+                       "Patente"@pt ;
+            skos:prefLabel "Patent"@en ,
+                       "Patent"@ca ,
+                       "Patent"@fr ,
+                       "Patente"@es ,
+                       "Patente"@eu ,
+                       "Patente"@gl ,
+                       "Patente"@pt .
+
+
+###  http://www.asio.es/asioontologies/asio#PeerReviewedArticle
+asio:PeerReviewedArticle rdf:type owl:Class ;
+                         rdfs:subClassOf asio:Article ;
+                         rdfs:label "Peer-reviewed article"@en .
+
+
+###  http://www.asio.es/asioontologies/asio#PhDStudent
+asio:PhDStudent rdf:type owl:Class ;
+                rdfs:subClassOf asio:GraduateStudent ;
+                rdfs:label "PhD student"@en ,
+                           "Estudiant de doctorat"@ca-ad ,
+                           "Estudiant de doctorat"@ca-es ,
+                           "Étudiant de doctorat"@fr ,
+                           "Estudiante de doutoramento"@gl ,
+                           "Estudante de doutoramento"@pt ,
+                           "Estudiante de doctorado"@es ;
+                skos:prefLabel "PhD student"@en ,
+                               "Estudiante de doctorado"@es ,
+                               "Estudiant de doctorat"@ca ,
+                               "Étudiant de doctorat"@fr ,
+                               "Estudiante de doutoramento"@gl ,
+                               "Estudante de doutoramento"@pt ,
+                               "Estudiante de doctorado"@es ;
+                skos:altLabel "Doctorando"@es ,
+                              "Doctorand"@ca ,
+                              "Doctorant"@fr ,
+                              "Doctorando"@gl ,
+                              "Doutorando"@pt ,
+                              "PhD candidate"@en .
+
+
+###  http://www.asio.es/asioontologies/asio#PhDThesis
+asio:PhDThesis rdf:type owl:Class ;
+               rdfs:subClassOf asio:Thesis ;
+               rdfs:comment "A thesis reporting a research project undertaken as part of an undergraduate course of education to receive a doctoral degree."@en ;
+               rdfs:label "Doctoral thesis"@en ,
+                          "Tese de doutoramento"@pt ,
+                          "Tesi doctoral"@ca-ad ,
+                          "Tesi doctoral"@ca-es ,
+                          "Tesis doctoral"@es ,
+                          "Doktore tesi"@eu ,
+                          "Tese doctoral"@gl ,
+                          "Thèse doctorale"@fr ;
+                skos:prefLabel "Doctoral thesis"@en ,
+                          "Tese de doutoramento"@pt ,
+                          "Tesi doctoral"@ca-ad ,
+                          "Tesi doctoral"@ca-es ,
+                          "Tesis doctoral"@es ,
+                          "Doktorego tesi"@eu ,
+                          "Tese doctoral"@gl ,
+                          "Thèse doctorale"@fr ;
+                skos:altLabel "Tese de doutoramento"@gl .
+
+
+###  http://www.asio.es/asioontologies/asio#ProjectBudget
+asio:ProjectBudget rdf:type owl:Class ;
+                   rdfs:subClassOf asio:Budget ;
+                   rdfs:comment "The budget established or devoted to a project."@en ;
+                   rdfs:label "Budget de projet"@fr ,
+                              "Orçamento de projeto"@pt ,
+                              "Pressupost de projecte"@ca-ad ,
+                              "Pressupost de projecte"@ca-es ,
+                              "Presupuesto de proyecto"@es ,
+                              "Project budget"@en ;
+                   skos:prefLabel "Budget de projet"@fr ,
+                              "Orçamento de projeto"@pt ,
+                              "Pressupost de projecte"@ca-ad ,
+                              "Pressupost de projecte"@ca-es ,
+                              "Presupuesto de proyecto"@es ,
+                              "Project budget"@en .
+
+
+###  http://www.asio.es/asioontologies/asio#Publication
+asio:Publication rdf:type owl:Class ;
+                 rdfs:comment "Content made available to the general public. In the case of ASIO, often scientific or academic contents published."@en ;
+                 rdfs:label "Publication"@en ,
+                            "Publicació"@ca-ad ,
+                            "Publicació"@ca-es ,
+                            "Publicación"@es ,
+                            "Publication"@fr ,
+                            "Publicación"@gl ,
+                            "Publicação"@pt ;
+                 skos:prefLabel "Publication"@en ,
+                            "Publicació"@ca-ad ,
+                            "Publicació"@ca-es ,
+                            "Publicación"@es ,
+                            "Publication"@fr ,
+                            "Publicación"@gl ,
+                            "Publicação"@pt .
+
+
+###  http://www.asio.es/asioontologies/asio#RegionalProject
+asio:RegionalProject rdf:type owl:Class ;
+                     rdfs:subClassOf foaf:Project ;
+                     rdfs:comment "A project developed and funded at the regional level."@en ;
+                     rdfs:label "Projecte regional"@ca-ad ,
+                                "Projecte regional"@ca-es ,
+                                "Projet régional"@fr ,
+                                "Projeto regional"@pt ,
+                                "Proyecto regional"@es ,
+                                "Regional project"@en ;
+                     skos:prefLabel "Projecte regional"@ca-ad ,
+                                "Projecte regional"@ca-es ,
+                                "Projet régional"@fr ,
+                                "Projeto regional"@pt ,
+                                "Proyecto regional"@es ,
+                                "Regional project"@en .
+
+
+###  http://www.asio.es/asioontologies/asio#ResearchContribution
+asio:ResearchContribution rdf:type owl:Class ;
+                          rdfs:label "Research contribution"@en .
+
+
+###  http://www.asio.es/asioontologies/asio#ResearchField
+asio:ResearchField rdf:type owl:Class ;
+                   rdfs:label "Research field"@en .
+
+
+###  http://www.asio.es/asioontologies/asio#ResearchGroup
+asio:ResearchGroup rdf:type owl:Class ;
+                   rdfs:subClassOf foaf:Group ;
+                   rdfs:comment "A group of researchers often from the same centre, specialised on the same subject, working together on the issue or topic."@en ;
+                   rdfs:label "Group de recherche"@fr ,
+                              "Grup d'investigació"@ca-es ,
+                              "Grup de recerca"@ca-ad ,
+                              "Grupo de investigación"@es ,
+                              "Grupo de investigação"@pt ,
+                              "Research group"@en ;
+                   skos:prefLabel "Group de recherche"@fr ,
+                              "Grup d'investigació"@ca-es ,
+                              "Grup de recerca"@ca-ad ,
+                              "Grupo de investigación"@es ,
+                              "Grupo de investigação"@pt ,
+                              "Research group"@en .
+
+
+###  http://www.asio.es/asioontologies/asio#ResearchInstitute
+asio:ResearchInstitute rdf:type owl:Class ;
+                       rdfs:subClassOf foaf:Organization ;
+                       rdfs:comment "An establishment founded for doing research."@en ;
+                       rdfs:label "Centre d'investigació"@ca-es ,
+                                  "Centre de recerca"@ca-ad ,
+                                  "Centro de investigación"@es ,
+                                  "Centre de recherche"@fr ,
+                                  "Centro de investigação"@pt ,
+                                  "Research institute"@en ;
+                       skos:prefLabel "Centre d'investigació"@ca-es ,
+                                  "Centre de recerca"@ca-ad ,
+                                  "Centro de investigación"@es ,
+                                  "Centre de recherche"@fr ,
+                                  "Centro de investigação"@pt ,
+                                  "Research institute"@en .
+
+
+###  http://www.asio.es/asioontologies/asio#ResearchMaterial
+asio:ResearchMaterial rdf:type owl:Class ;
+                      rdfs:label "Research material"@en ;
+                      skos:prefLabel "Research material"@en .
+
+
+###  http://www.asio.es/asioontologies/asio#ResearchMethod
+asio:ResearchMethod rdf:type owl:Class ;
+                    rdfs:label "Research method"@en ;
+                    skos:prefLabel "Research method"@en .
+
+
+###  http://www.asio.es/asioontologies/asio#ResearchPersonnel
+asio:ResearchPersonnel rdf:type owl:Class ;
+                       rdfs:subClassOf asio:HumanResource ;
+                       rdfs:comment "Personnel devoted to reasearching tasks."@en ;
+                       rdfs:label "Research Personnel"@en ,
+                                  "Personal de recerca"@ca-ad ,
+                                  "Personal investigador"@ca-es ,
+                                  "Personal investigador"@es ,
+                                  "Personnel rechercheur"@fr ,
+                                  "Pessoal investigador"@pt ;
+                       skos:prefLabel "Research Personnel"@en ,
+                                  "Personal de recerca"@ca-ad ,
+                                  "Personal investigador"@ca-es ,
+                                  "Personal investigador"@es ,
+                                  "Personnel rechercheur"@fr ,
+                                  "Pessoal investigador"@pt .
+
+
+###  http://www.asio.es/asioontologies/asio#ResearchProblem
+asio:ResearchProblem rdf:type owl:Class ;
+                     rdfs:label "Research problem"@en ;
+                     skos:prefLabel "Research problem"@en .
+
+
+###  http://www.asio.es/asioontologies/asio#ResearchResult
+asio:ResearchResult rdf:type owl:Class ;
+                    rdfs:label "Research result"@en ;
+                    skos:prefLabel "Research result"@en .
+
+
+###  http://www.asio.es/asioontologies/asio#SME
+asio:SME rdf:type owl:Class ;
+         rdfs:subClassOf asio:Company ;
+         rdfs:comment "A company whose personnel numbers fall below certain limits."@en ;
+         rdfs:label "Pequena e média empresa"@pt ,
+                    "Pequeña y mediana empresa"@es ,
+                    "Petita i mitjana empresa"@ca-ad ,
+                    "Petita i mitjana empresa"@ca-es ,
+                    "Petite ou moyenne entreprise"@fr ,
+                    "Small and medium-sized enterprise"@en ;
+         skos:prefLabel "Pequena e média empresa"@pt ,
+                    "Pequeña y mediana empresa"@es ,
+                    "Petita i mitjana empresa"@ca-ad ,
+                    "Petita i mitjana empresa"@ca-es ,
+                    "Petite ou moyenne entreprise"@fr ,
+                    "Small and medium-sized enterprise"@en .
+
+
+###  http://www.asio.es/asioontologies/asio#ScientificPublication
+asio:ScientificPublication rdf:type owl:Class ;
+                           rdfs:subClassOf asio:Publication ;
+                           rdfs:label "Publicació científica"@ca-ad ,
+                                      "Publicació científica"@ca-es ,
+                                      "Publicación científica"@es ,
+                                      "Publication scientifique"@fr ,
+                                      "Publicação científica"@pt ,
+                                      "Scientific publication"@en ;
+                           skos:prefLabel "Publicació científica"@ca-ad ,
+                                      "Publicació científica"@ca-es ,
+                                      "Publicación científica"@es ,
+                                      "Publication scientifique"@fr ,
+                                      "Publicação científica"@pt ,
+                                      "Scientific publication"@en .
+
+
+###  http://www.asio.es/asioontologies/asio#SealOfQuality
+asio:SealOfQuality rdf:type owl:Class ;
+                   rdfs:comment "A graphic mark indicating highest levels of quality in research, often measured in terms of relevant publications related to the researching activity."@en ;
+                   rdfs:label "Label qualité"@fr ,
+                              "Seal of quality"@en ,
+                              "Segell de qualitat"@ca-ad ,
+                              "Segell de qualitat"@ca-es ,
+                              "Sello de calidad"@es ,
+                              "Selo de qualidade"@pt ;
+                   skos:prefLabel "Label qualité"@fr ,
+                              "Seal of quality"@en ,
+                              "Segell de qualitat"@ca-ad ,
+                              "Segell de qualitat"@ca-es ,
+                              "Sello de calidad"@es ,
+                              "Selo de qualidade"@pt .
+
+
+###  http://www.asio.es/asioontologies/asio#ServiceContract
+asio:ServiceContract rdf:type owl:Class ;
+                     rdfs:subClassOf asio:Contract ;
+                     rdfs:label "Contracte de servei"@ca-es ,
+                                "Contrat de service"@fr ,
+                                "Contrato de servicio"@es ,
+                                "Contrato de serviço"@pt ,
+                                "Service contract"@en ;
+                     skos:prefLabel "Contracte de servei"@ca-es ,
+                                "Contrat de service"@fr ,
+                                "Contrato de servicio"@es ,
+                                "Contrato de serviço"@pt ,
+                                "Service contract"@en .
+
+
+###  http://www.asio.es/asioontologies/asio#SpainUniversityStaffing
+asio:SpainUniversityStaffing rdf:type owl:Class ;
+                             rdfs:subClassOf <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+                             rdfs:comment "This ASIO vertical module defines Spain's University staffing model encompassing all its specificities."@en ;
+                             rdfs:label "Spain's university staffing"@en ;
+                             skos:prefLabel "Spain's university staffing"@en .
+
+
+###  http://www.asio.es/asioontologies/asio#Spinoff
+asio:Spinoff rdf:type owl:Class ;
+             rdfs:subClassOf asio:Company ;
+             rdfs:comment "A division of a company or an organization that becomes an independent business with assets, employees, intellectual property, technology, or existing products taken from the parent company."@en ;
+             rdfs:label "Corporate spin-off"@en ,
+                        "Empresa derivada"@ca-ad ,
+                        "Empresa derivada"@ca-es ,
+                        "Spin-off enpresa"@eu ,
+                        "Empresa derivada"@pt ,
+                        "Société scindée"@fr ,
+                        "Empresa spin-off"@es ;
+             skos:prefLabel "Corporate spin-off"@en ,
+                        "Empresa derivada"@ca-ad ,
+                        "Empresa derivada"@ca-es ,
+                        "Spin-off enpresa"@eu ,
+                        "Empresa derivada"@pt ,
+                        "Société scindée"@fr ,
+                        "Empresa spin-off"@es .
+
+
+###  http://www.asio.es/asioontologies/asio#Student
+asio:Student rdf:type owl:Class ;
+             rdfs:subClassOf foaf:Person ;
+             rdfs:label "Estudante"@pt ,
+                        "Estudiant"@ca-ad ,
+                        "Estudiant"@ca-es ,
+                        "Estudiante"@es ,
+                        "Student"@en ,
+                        "Ikasle"@eu ,
+                        "Estudante"@gl ,
+                        "Étudiant"@fr ;
+             skos:prefLabel "Estudante"@pt ,
+                        "Estudiant"@ca-ad ,
+                        "Estudiant"@ca-es ,
+                        "Estudiante"@es ,
+                        "Estudante"@gl ,
+                        "Ikasle"@eu ,
+                        "Student"@en ,
+                        "Étudiant"@fr .
+
+
+###  http://www.asio.es/asioontologies/asio#TechnicalPersonnel
+asio:TechnicalPersonnel rdf:type owl:Class ;
+                        rdfs:subClassOf asio:HumanResource ;
+                        rdfs:comment "Personnel devoted to technical suport."@en ;
+                        rdfs:label "Personal tècnic"@ca-ad ,
+                                   "Personal tècnic"@ca-es ,
+                                   "Personal técnico"@es ,
+                                   "Personnel technique"@fr ,
+                                   "Pessoal técnico"@pt ,
+                                   "Technical personnel"@en ;
+                        skos:prefLabel "Personal tècnic"@ca-ad ,
+                                   "Personal tècnic"@ca-es ,
+                                   "Personal técnico"@es ,
+                                   "Personnel technique"@fr ,
+                                   "Pessoal técnico"@pt ,
+                                   "Technical personnel"@en .
+
+
+###  http://www.asio.es/asioontologies/asio#TechnicalReport
+asio:TechnicalReport rdf:type owl:Class ;
+                     rdfs:subClassOf asio:ScientificPublication ;
+                     rdfs:label "Technical report"@en ;
+                     skos:prefLabel "Technical report"@en .
+
+
+###  http://www.asio.es/asioontologies/asio#Thesis
+asio:Thesis rdf:type owl:Class ;
+            rdfs:subClassOf asio:AcademicPublication ;
+            rdfs:comment "Any kind of thesis (bachelor's, master's, PhD) produced to receive some sort of university degree."@en ;
+            rdfs:label "Thesis"@en ,
+                      "Tesi"@ca-AD ,
+                      "Tesi"@ca-ES ,
+                      "Tesis"@es ,
+                      "Tesi"@eu ,
+                      "Thèse"@fr ,
+                      "Tese"@gl ,
+                      "Tese"@pt ;
+            skos:prefLabel "Thesis"@en ,
+                      "Tesi"@ca-AD ,
+                      "Tesi"@ca-ES ,
+                      "Tesis"@es ,
+                      "Tesi"@eu ,
+                      "Thèse"@fr ,
+                      "Tese"@gl ,
+                      "Tese"@pt .
+
+
+###  http://www.asio.es/asioontologies/asio#UndergraduateStudent
+asio:UndergraduateStudent rdf:type owl:Class ;
+                          rdfs:subClassOf asio:Student ;
+                          rdfs:label "Undergraduate student"@en ;
+                          skos:prefLabel "Undergraduate student"@en .
+
+
+###  http://www.asio.es/asioontologies/asio#University
+asio:University rdf:type owl:Class ;
+                rdfs:subClassOf foaf:Organization ;
+                rdfs:comment "A centre at which higher education and research is conducted."@en ;
+                rdfs:label "Universidade"@pt ,
+                           "Universitat"@ca-ad ,
+                           "Universitat"@ca-es ,
+                           "University"@en ,
+                           "Unibertsitate"@eu ,
+                           "Universidade"@gl ,
+                           "Université"@fr ;
+                skos:prefLabel "Universidade"@pt ,
+                           "Universitat"@ca-ad ,
+                           "Universitat"@ca-es ,
+                           "University"@en ,
+                           "Unibertsitate"@eu ,
+                           "Universidade"@gl ,
+                           "Université"@fr .
+
+
+###  http://www.asio.es/asioontologies/asio#Research&TeachingPersonnel
+<http://www.asio.es/asioontologies/asio#Research&TeachingPersonnel> rdf:type owl:Class ;
+                                                                    rdfs:subClassOf asio:HumanResource ;
+                                                                    rdfs:comment "Personnel devoted to teaching and research tasks."@en ;
+                                                                    rdfs:label "Personal docent i investigador"@ca-ad ,
+                                                                               "Personal docent i investigador"@ca-es ,
+                                                                               "Personnel enseignant et chercheur"@fr ,
+                                                                               "Pessoal docente e investigador"@pt ,
+                                                                               "Teaching and research personnel"@en ,
+                                                                               "personal docente e investigador"@es ;
+                                                                    skos:prefLabel "Personal docent i investigador"@ca-ad ,
+                                                                               "Personal docent i investigador"@ca-es ,
+                                                                               "Personnel enseignant et chercheur"@fr ,
+                                                                               "Pessoal docente e investigador"@pt ,
+                                                                               "Teaching and research personnel"@en ,
+                                                                               "personal docente e investigador"@es .
+
+
+###  http://www.asio.es/asioontologies/asio/modules#GeopoliticalEntities
+modules:GeopoliticalEntities rdf:type owl:Class ;
+                             rdfs:subClassOf <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+                             rdfs:comment "This vertical module in ASIO models all the geopolitical/administrative levels (from municipalities, to provinces, regions, countries and European-level entities) that might have a role in the ontological architecture of the project. It is modeled hierarchically though relevant administrative levels potentially funding projects. In the Asio project the proof of concept is carried out with the whole administrative levels of Spain, Portugal, Andorra and France, in addition to the relevant European administrative entities."@en ;
+                             rdfs:label "Entidades geopolíticas"@es ,
+                                        "Entidades geopolíticas"@pt ,
+                                        "Entitats geopolítiques"@ca-ad ,
+                                        "Entitats geopolítiques"@ca-es ,
+                                        "Entités géopolitiques"@fr ,
+                                        "Geopolitical entities"@en .
+
+
+###  http://www.asio.es/asioontologies/asio/modules#ScientificDomain
+modules:ScientificDomain rdf:type owl:Class ;
+                         rdfs:subClassOf <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+                         rdfs:comment "This ASIO vertical module organizes hierarchically the scientific domains related to research projects as established by Spain's Agencia Estatal de Investigación, depending from the Ministerio de Economía y Competitividad."@en ;
+                         rdfs:label "Domaines scientifiques"@fr ,
+                                    "Dominis científics"@ca-ad ,
+                                    "Dominis científics"@ca-es ,
+                                    "Scientific domains"@en ,
+                                    "Áreas científicas"@es ,
+                                    "Áreas científicas"@pt ;
+                         skos:prefLabel "Domaines scientifiques"@fr ,
+                                    "Dominis científics"@ca-ad ,
+                                    "Dominis científics"@ca-es ,
+                                    "Scientific domains"@en ,
+                                    "Áreas científicas"@es ,
+                                    "Áreas científicas"@pt .
+
+
+###  http://www.w3.org/2004/02/skos/core#Concept
+<http://www.w3.org/2004/02/skos/core#Concept> rdf:type owl:Class .
+
+
+###  http://www.w3.org/2004/02/skos/core#ConceptScheme
+<http://www.w3.org/2004/02/skos/core#ConceptScheme> rdf:type owl:Class .
+
+
+###  http://xmlns.com/foaf/0.1/Agent
+foaf:Agent rdf:type owl:Class .
+
+
+###  http://xmlns.com/foaf/0.1/Group
+foaf:Group rdf:type owl:Class ;
+           rdfs:subClassOf foaf:Agent .
+
+
+###  http://xmlns.com/foaf/0.1/Organization
+foaf:Organization rdf:type owl:Class ;
+                  rdfs:subClassOf foaf:Agent .
+
+
+###  http://xmlns.com/foaf/0.1/Person
+foaf:Person rdf:type owl:Class ;
+            rdfs:subClassOf foaf:Agent .
+
+
+###  http://xmlns.com/foaf/0.1/Project
+foaf:Project rdf:type owl:Class ;
+             rdfs:comment "In ASIO, a temporary research endeavor undertaken to achieve defined objectives."@en .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
