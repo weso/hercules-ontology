@@ -20,7 +20,7 @@
 @prefix asio: <http://www.asio.es/asioontologies/asio#> .
 @prefix bbccore: <http://www.bbc.co.uk/ontologies/coreconcepts/> .
 @prefix bibo: <http://purl.org/ontology/bibo/> .
-@prefix bibtex: <http://purl.org/net/nknouf/ns/bibtex#> . 
+@prefix bibtex: <http://purl.org/net/nknouf/ns/bibtex#> .
 @prefix bio: <http://purl.org/vocab/bio/0.1/> .
 @prefix bf: <http://id.loc.gov/ontologies/bibframe/Publication> .
 @prefix cerif: <http://purl.org/cerif/> .
@@ -30,7 +30,7 @@
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix dct: <http://purl.org/dc/dcmitype/> .
-@prefix doap: <http://usefulinc.com/ns/doap#> . 
+@prefix doap: <http://usefulinc.com/ns/doap#> .
 @prefix dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
 @prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
 @prefix fabio: <http://purl.org/spar/fabio/> .
@@ -78,7 +78,7 @@ foaf:Organization
                       sio:SIO_000012 ,
                       ebucore:Organisation ,
                       bbccore:Organisation ,
-                      npg:Organization 
+                      npg:Organization
 .
 asio:University
   owl:equivalentClass org:University ,
@@ -99,14 +99,14 @@ foaf:Project
                       dbo:Project ,
                       vivo:Project ,
                       cerif:Project ,
-                      semcerif:Project 
+                      semcerif:Project
 .
 asio:ResearchInstitute
   owl:equivalentClass swpo:ResearchInstitute ,
                       frapo:ResearchInstitute ,
                       cerif:ResearchInstitute ,
                       semcerif:ResearchInstitute ,
-                      vivo:ResearchOrganization 
+                      vivo:ResearchOrganization
 .
 asio:Company
   owl:equivalentClass frapo:Company ,
@@ -118,19 +118,19 @@ asio:Company
                       semcerif:Company ,
                       poder:Company ,
                       pext:Company ,
-                      cv:Company 
+                      cv:Company
 .
 asio:Spinoff
-  owl:equivalentClass frapo:SpinOffCompany 
+  owl:equivalentClass frapo:SpinOffCompany
 .
 asio:SME
   owl:equivalentClass frapo:SME ,
                       cerif:SME ,
-                      semcerif:SME 
+                      semcerif:SME
 .
 asio:FundingOrganization
   owl:equivalentClass vivo:FundingOrganization ,
-                      frapo:FundingAgency 
+                      frapo:FundingAgency
 .
 asio:Contract
   owl:equivalentClass pc:Contract ,
@@ -139,13 +139,13 @@ asio:Contract
                       semcerif:Contract
 .
 asio:FundingProgramme
-  owl:equivalentClass frapo:FundingProgramme 
+  owl:equivalentClass frapo:FundingProgramme
 .
 asio:ResearchGroup
   owl:equivalentClass frapo:ResearchGroup ,
                       cerif:ResearchGroup ,
                       semcerif:ResearchGroup ,
-                      aiiso:ResearchGroup 
+                      aiiso:ResearchGroup
 .
 asio:Publication
   owl:equivalentClass swpo:Publication ,
@@ -157,14 +157,14 @@ asio:Publication
                       cogs:Publication ,
                       sio:SIO_000087 ,
                       npg:Publication ,
-                      bf:Publication 
+                      bf:Publication
 .
 asio:Thesis
   owl:equivalentClass bibo:Thesis ,
                       opus:Thesis ,
                       sio:SIO_000165 ,
                       swpo:Thesis ,
-                      fabio:Thesis 
+                      fabio:Thesis
                       #lib:Thesis ; to be checked&assured before uncommenting it
 .
 asio:MastersThesis
@@ -174,7 +174,7 @@ asio:MastersThesis
                       opus:Masters_Thesis ,
                       fabio:MastersThesis ,
                       swrc:MasterThesis ,
-                      bibtex:Mastersthesis 
+                      bibtex:Mastersthesis
 .
 asio:PhDThesis
   owl:equivalentClass swpo:PhDThesis ,
@@ -182,15 +182,15 @@ asio:PhDThesis
                       sio:SIO_000168 ,
                       opus:Doctoral_Dissertation ,
                       bibtex:Phdthesis ,
-                      swrc:PhDThesis 
+                      swrc:PhDThesis
 .
 asio:BachelorsThesis
   owl:equivalentClass fabio:BachelorsThesis ,
-                      sio:SIO_000166 
+                      sio:SIO_000166
 .
 asio:TechnicalReport
   owl:equivalentClass sio:TechnicalReport ,
-                      fabio:TechnicalReport 
+                      fabio:TechnicalReport
 .
 asio:Article
   owl:equivalentClass sio:SIO_000154 ,
@@ -203,14 +203,14 @@ asio:Article
                       opus:Article ,
                       orkg:Paper ,
                       npg:Article ,
-                      bibo:Article 
+                      bibo:Article
 .
 
 #fabio:JournalArticle & obo:IAO_0000013 are both specifically "journal article"
 
 asio:PeerReviewedArticle
   owl:equivalentClass sio:SIO_000102 ,
-                      swrc:Article 
+                      swrc:Article
 #swrc:Article & sio:SIO_00102  are both specifically "peer-reviewed article"
 .
 asio:Patent
@@ -221,58 +221,58 @@ asio:Patent
                       semcerif:Patent ,
                       fabio:Patent ,
                       pext:Patent ,
-                      sio:SIO_000153 
+                      sio:SIO_000153
 .
 asio:Funding
   owl:equivalentClass frapo:Funding ,
                       cerif:Funding ,
-                      semcerif:Funding 
+                      semcerif:Funding
 .
 asio:AcademicDegree
-  owl:equivalentClass vivo:AcademicDegree 
+  owl:equivalentClass vivo:AcademicDegree
 .
 asio:CV
   owl:equivalentClass cv:CV ,
                       dbo:Resume ,
                       cerif:CurriculumVitae ,
                       semcerif:CurriculumVitae ,
-                      acm:K.3.2.2 
+                      acm:K.3.2.2
 .
 asio:HumanResource
-  owl:equivalentClass fea:HumanResource 
+  owl:equivalentClass fea:HumanResource
 .
 asio:Student
   owl:equivalentClass swpo:Student ,
                       swrc:Student ,
                       vivo:Student ,
-                      sio:SIO_000405 
+                      sio:SIO_000405
 #                     teach:Student ,
-#                      akt:Student 
+#                      akt:Student
 .
 asio:UndergraduateStudent
-  owl:equivalentClass vivo:UndergraduateStudent 
+  owl:equivalentClass vivo:UndergraduateStudent
 .
 #asio:GraduateStudent
 #  owl:equivalentClass vivo:GraduateStudent ;
 #.
 asio:PhDStudent
-  owl:equivalentClass swrc:PhDStudent 
-#                      akt:PhD-Student 
+  owl:equivalentClass swrc:PhDStudent
+#                      akt:PhD-Student
 .
 asio:ResearchContribution
-  owl:equivalentClass orkg:ResearchContribution 
+  owl:equivalentClass orkg:ResearchContribution
 .
 asio:ResearchField
-  owl:equivalentClass orkg:ResearchField 
+  owl:equivalentClass orkg:ResearchField
 .
 asio:ResearchMaterial
-  owl:equivalentClass orkg:ResearchMaterial 
+  owl:equivalentClass orkg:ResearchMaterial
 .
 asio:ResearchMethod
-  owl:equivalentClass orkg:ResearchMethod 
+  owl:equivalentClass orkg:ResearchMethod
 .
 asio:ResearchProblem
-  owl:equivalentClass orkg:ResearchProblem 
+  owl:equivalentClass orkg:ResearchProblem
 .
 
 
@@ -281,22 +281,22 @@ asio:ResearchProblem
 
 asio:member
   owl:equivalentProperty foaf:member ,
-                      frapo:member 
+                      frapo:member
 .
 asio:hasCV
-  owl:equivalentProperty frapo:hasCurriculumVitae 
+  owl:equivalentProperty frapo:hasCurriculumVitae
 .
 asio:funds
-  owl:equivalentProperty frapo:funds 
+  owl:equivalentProperty frapo:funds
 .
 asio:isFundedBy
-  owl:equivalentProperty frapo:isFundedBy 
+  owl:equivalentProperty frapo:isFundedBy
 .
 asio:participant
-  owl:equivalentProperty bio:participant 
+  owl:equivalentProperty bio:participant
 .
 asio:participant
-  owl:equivalentProperty bio:participant 
+  owl:equivalentProperty bio:participant
 .
 asio:addresses
   owl:equivalentProperty orkg:addresses
