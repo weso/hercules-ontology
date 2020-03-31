@@ -1,8 +1,8 @@
 package es.weso.asio.ci
 
 import org.scalatest.flatspec.{AnyFlatSpec}
-
 import scala.io.Source
+import java.io.File
 
 /**
  * This class is the one that is executed from travis-ci. Its aim is to dynamically create test cases. The main algorithm
@@ -34,45 +34,85 @@ import scala.io.Source
 class ContinuousIntegrationLauncher extends AnyFlatSpec {
 
   // Lists of files that will be needed during the execution of the tests.
-  private final val ONTOLOGY_FILES      =   List[Source]()
-  private final val INSTANCE_FILES      =   List[Source]()
-  private final val SHAPE_EX_FILES      =   List[Source]()
-  private final val SHAPE_MAP_FILES     =   List[Source]()
-  private final val RES_SHAPE_MAP_FILES =   List[Source]()
+  private final var ONTOLOGY_FILES      =   List[Source]()
+  private final var INSTANCE_FILES      =   List[Source]()
+  private final var SHAPE_EX_FILES      =   List[Source]()
+  private final var SHAPE_MAP_FILES     =   List[Source]()
+  private final var RES_SHAPE_MAP_FILES =   List[Source]()
 
   /**
-   * TO DO...
+   * adding files to list from ../src
    */
   def populateOntologyFiles(): Unit = {
-    // TO DO...
+    val files = getListOfFiles("../src", ".ttl")
+    var list = List[Source]()
+    for (dir <- files){
+      println(dir)
+      list=list:+Source.fromFile(dir)
+    }
+    ONTOLOGY_FILES = list
   }
 
   /**
-   *
+   * adding files from /tests with .ttl extension
    */
   def populateInstanceFiles(): Unit = {
-    // TO DO...
+    val files = getListOfFiles("tests", ".ttl")
+    var list = List[Source]()
+    for (dir <- files){
+      println(dir)
+      list=list:+Source.fromFile(dir)
+    }
+    INSTANCE_FILES = list
   }
 
   /**
-   * TO DO...
+   * adding files from /tests with .shex extension
    */
   def populateShapeExFiles(): Unit = {
-    // TO DO...
+    val files = getListOfFiles("tests", ".shex")
+    var list = List[Source]()
+    for (dir <- files){
+      println(dir)
+      list=list:+Source.fromFile(dir)
+    }
+    SHAPE_EX_FILES = list
   }
 
   /**
-   * TO DO...
+   * adding files from /tests with .shapeMap extension
    */
   def populateShapeMapFiles(): Unit = {
-    // TO DO...
+    val files = getListOfFiles("tests", ".shapeMap")
+    var list = List[Source]()
+    for (dir <- files){
+      println(dir)
+      list=list:+Source.fromFile(dir)
+    }
+    SHAPE_MAP_FILES = list
   }
 
   /**
-   * TO DO...
+   * adding files from /tests with .resultShapeMap extension
    */
   def populateResShapeMapFiles(): Unit = {
-    // TO DO...
+    val files = getListOfFiles("tests", ".resultShapeMap")
+    var list = List[Source]()
+    for (dir <- files){
+      println(dir)
+      list=list:+Source.fromFile(dir)
+    }
+    RES_SHAPE_MAP_FILES = list
+  }
+
+  /**
+   * return list of paths of files in a specific directory and a specific extension
+   */
+  def getListOfFiles(dir: String, ext: String):List[String] = {
+    val d = new File(dir)
+    d.listFiles.
+    filter { f => f.isFile && (f.getName.endsWith(ext)) }.
+    map(_.getPath).toList
   }
 
 }
