@@ -42,7 +42,8 @@ class ContinuousIntegrationLauncher extends AnyFlatSpec {
 
   /**
    * appending ONTOLOGY_FILES list with `.ttl` files in the directory
-   * of the ontology based in '/src' of the root of the current repository
+   * of the ontology based in '/src' of the root of
+   * the current repository 'hercules-ontology'
    *
    */
   def populateOntologyFiles(): Unit = {
@@ -52,7 +53,7 @@ class ContinuousIntegrationLauncher extends AnyFlatSpec {
 
   /**
    * appending INSTANCE_FILES list with `.ttl` files
-   * in the tests folder of this project
+   * in the tests folder of this project 'ci'
    *
    */
   def populateInstanceFiles(): Unit = {
@@ -62,7 +63,7 @@ class ContinuousIntegrationLauncher extends AnyFlatSpec {
 
   /**
    * appending SHAPE_EX_FILES list with `.shex` files
-   * in the tests folder of this project
+   * in the tests folder of this project 'ci'
    */
   def populateShapeExFiles(): Unit = {
     val files = getListOfFiles("tests", ".shex")
@@ -71,7 +72,7 @@ class ContinuousIntegrationLauncher extends AnyFlatSpec {
 
   /**
    * appending SHAPE_MAP_FILES list with `.shapeMap` files
-   * in the tests folder of this project
+   * in the tests folder of this project 'ci'
    */
   def populateShapeMapFiles(): Unit = {
     val files = getListOfFiles("tests", ".shapeMap")
@@ -80,7 +81,7 @@ class ContinuousIntegrationLauncher extends AnyFlatSpec {
 
   /**
    * appending RES_SHAPE_MAP_FILES list with `.resultShapeMap` files
-   * in the tests folder of this project
+   * in the tests folder of this project 'ci'
    */
   def populateResShapeMapFiles(): Unit = {
     val files = getListOfFiles("tests", ".resultShapeMap")
