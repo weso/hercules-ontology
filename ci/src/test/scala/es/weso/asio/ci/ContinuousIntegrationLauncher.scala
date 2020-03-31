@@ -9,19 +9,19 @@ import java.io.File
  * followed by this class is the next one:
  *
  *  1. Create a list containing all the `.ttl` files in the directory of the ontology. The ontology is stored in the src
- *     directory that can be found in the root of the repository. (Do not confuse with the src folder of this project).
+ * directory that can be found in the root of the repository. (Do not confuse with the src folder of this project).
  *
  *  2. Create another list containing all the `.ttl` files in the tests directory. This is directory can be found from
- *     the root of the repo ci > tests.
+ * the root of the repo ci > tests.
  *
  *  3. Create another list containing all the `.shex` files in the tests directory. This is directory can be found from
- *     the root of the repo ci > tests.
+ * the root of the repo ci > tests.
  *
  *  4. Create another list containing all the `.shapeMap` files in the tests directory. This is directory can be found
- *     from the root of the repo ci > tests.
+ * from the root of the repo ci > tests.
  *
  *  5. Create another list containing all the `.resultShapeMap` files in the tests directory. This is directory can be found
- *     from the root of the repo ci > tests.
+ * from the root of the repo ci > tests.
  *
  *  6. Join all the files from the list created at (1) in to a single model. This will be our ontology graph.
  *
@@ -34,85 +34,89 @@ import java.io.File
 class ContinuousIntegrationLauncher extends AnyFlatSpec {
 
   // Lists of files that will be needed during the execution of the tests.
-  private final var ONTOLOGY_FILES      =   List[Source]()
-  private final var INSTANCE_FILES      =   List[Source]()
-  private final var SHAPE_EX_FILES      =   List[Source]()
-  private final var SHAPE_MAP_FILES     =   List[Source]()
-  private final var RES_SHAPE_MAP_FILES =   List[Source]()
+  private final val ONTOLOGY_FILES = List[Source]()
+  private final val INSTANCE_FILES = List[Source]()
+  private final val SHAPE_EX_FILES = List[Source]()
+  private final val SHAPE_MAP_FILES = List[Source]()
+  private final val RES_SHAPE_MAP_FILES = List[Source]()
 
   /**
-   * adding files to list from ../src
+   * appending ONTOLOGY_FILES list with `.ttl` files in the directory
+   * of the ontology based in '/src' of the root of the current repository
+   *
    */
   def populateOntologyFiles(): Unit = {
     val files = getListOfFiles("../src", ".ttl")
-    var list = List[Source]()
-    for (dir <- files){
-      println(dir)
-      list=list:+Source.fromFile(dir)
-    }
-    ONTOLOGY_FILES = list
+    appendList(ONTOLOGY_FILES, files)
   }
 
   /**
-   * adding files from /tests with .ttl extension
+   * appending INSTANCE_FILES list with `.ttl` files
+   * in the tests folder of this project
+   *
    */
   def populateInstanceFiles(): Unit = {
     val files = getListOfFiles("tests", ".ttl")
-    var list = List[Source]()
-    for (dir <- files){
-      println(dir)
-      list=list:+Source.fromFile(dir)
-    }
-    INSTANCE_FILES = list
+    appendList(INSTANCE_FILES, files)
   }
 
   /**
-   * adding files from /tests with .shex extension
+   * appending SHAPE_EX_FILES list with `.shex` files
+   * in the tests folder of this project
    */
   def populateShapeExFiles(): Unit = {
     val files = getListOfFiles("tests", ".shex")
-    var list = List[Source]()
-    for (dir <- files){
-      println(dir)
-      list=list:+Source.fromFile(dir)
-    }
-    SHAPE_EX_FILES = list
+    appendList(SHAPE_EX_FILES, files)
   }
 
   /**
-   * adding files from /tests with .shapeMap extension
+   * appending SHAPE_MAP_FILES list with `.shapeMap` files
+   * in the tests folder of this project
    */
   def populateShapeMapFiles(): Unit = {
     val files = getListOfFiles("tests", ".shapeMap")
-    var list = List[Source]()
-    for (dir <- files){
-      println(dir)
-      list=list:+Source.fromFile(dir)
-    }
-    SHAPE_MAP_FILES = list
+    appendList(SHAPE_MAP_FILES, files)
   }
 
   /**
-   * adding files from /tests with .resultShapeMap extension
+   * appending RES_SHAPE_MAP_FILES list with `.resultShapeMap` files
+   * in the tests folder of this project
    */
   def populateResShapeMapFiles(): Unit = {
     val files = getListOfFiles("tests", ".resultShapeMap")
-    var list = List[Source]()
-    for (dir <- files){
-      println(dir)
-      list=list:+Source.fromFile(dir)
-    }
-    RES_SHAPE_MAP_FILES = list
+    appendList(RES_SHAPE_MAP_FILES, files)
   }
 
   /**
-   * return list of paths of files in a specific directory and a specific extension
+   * gets the list of files in a specific directory with a specific extension
+   *
+   * @param directory     : a string with the directory with the files that we want to get
+   * @param fileExtension : a string with the extension of the files that we want to get
+   * @return List[String] of the files' path
    */
-  def getListOfFiles(dir: String, ext: String):List[String] = {
-    val d = new File(dir)
-    d.listFiles.
-    filter { f => f.isFile && (f.getName.endsWith(ext)) }.
-    map(_.getPath).toList
+  private def getListOfFiles(directory: String, fileExtension: String): List[String] = {
+    val directoryChosen = new File(directory)
+    //listing the files in the directory folder
+    directoryChosen.listFiles.
+      //applying the extension filter
+      filter { file => file.isFile && (file.getName.endsWith(fileExtension)) }.
+      //transforming the file paths to list
+      map(_.getPath).toList
+  }
+
+  /**
+   * appending the listChosen with the files passed in the parameters
+   *
+   * @param listChosen : the Source list that we want to append
+   * @param files      : the String List with the files that we want the listChosen to have
+   *
+   */
+  private def appendList(listChosen: List[Source], files: List[String]): Unit = {
+    //looping through the files
+    for (file <- files) {
+      //appending the list
+      listChosen appended Source.fromFile(file)
+    }
   }
 
 }
