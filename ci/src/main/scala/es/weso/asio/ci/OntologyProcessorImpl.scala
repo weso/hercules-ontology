@@ -4,9 +4,8 @@ import es.weso.rdf.rdf4j.RDFAsRDF4jModel
 import IO._
 import java.nio.file.{Files, Paths}
 import es.weso.utils.IOException._
-import es.weso.utils.IOUtils._
 
-class OntologyProcessorImpl extends OntologyProcessor {
+case class OntologyProcessorImpl() extends OntologyProcessor {
 
   private val emptyModel = RDFAsRDF4jModel.apply()
 
@@ -31,14 +30,15 @@ class OntologyProcessorImpl extends OntologyProcessor {
     else {
       //the list of ttl files are empty, so we return an empty model
       if (ontologySources.isEmpty) {
-        Right(emptyModel)
+        Right(emptyModel.unsafeRunSync())
+
       }
       else {
         //creating the final Model
-        val finalModel: RDFAsRDF4jModel = RDFAsRDF4jModel.apply()
+        val finalModel = RDFAsRDF4jModel.apply().unsafeRunSync()
         //looping through the ttl files and merging with the finalModel
-        for (fileSource <- ontologySources) {
-          finalModel.merge(RDFAsRDF4jModel.fromChars(fileSource.getLines().toString(), "TURTLE"))
+        for (fileSource <- ontologySources.tail) {
+          finalModel.merge(RDFAsRDF4jModel.fromChars(fileSource.getLines().mkString, "TURTLE").unsafeRunSync())
         }
         Right(finalModel)
       }
