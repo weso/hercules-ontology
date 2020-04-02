@@ -8,11 +8,11 @@ PREFIX foaf:   <http://xmlns.com/foaf/0.1/>
        schema:knows          :bob .
 
 :bob   schema:gender         schema:Male ;        # %* \Passes{:User} *)
-       schema:name           "Robert";            
+       schema:name           "Robert";
        schema:birthDate      "1980-03-10"^^xsd:date .
 
 :carol schema:name           "Carol" ;            # %* \Passes{:User} *)
-       schema:gender         "unspecified" ;  
+       schema:gender         "unspecified" ;
        foaf:name             "Carol" .
 
 :dave  schema:name           "Dave";         # %* \Fails{:User} *)
@@ -26,9 +26,9 @@ PREFIX foaf:   <http://xmlns.com/foaf/0.1/>
        schema:gender:        schema:Male .   # %* missing schema:name *)
 
 :grace schema:name           "Grace" ;       # %* \Fails{:User} *)
-       schema:gender         schema:Male ;   # 
+       schema:gender         schema:Male ;   #
        schema:knows          _:x .           # %* \_:x is not an IRI *)
 
 :harold schema:name         "Harold" ;    # %* \Fails{:User} *)
-        schema:gender       schema:Male ; 
+        schema:gender       schema:Male ;
         schema:knows        :grace .      # %* :grace does not conform to :User *)
