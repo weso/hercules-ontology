@@ -20,7 +20,6 @@ class DefaultOntologyProcessorTest extends AnyFunSuite with BeforeAndAfter with 
     //asserting that there was no exception
     assert(model.isLeft)
     inside(model) { case Left(e) =>
-      println(e.getMessage)
       assert(e.getMessage.equals("The ontology directory is not found"))
     }
   }
@@ -32,7 +31,6 @@ class DefaultOntologyProcessorTest extends AnyFunSuite with BeforeAndAfter with 
     //asserting that there was no exception
     assert(model.isLeft)
     inside(model) { case Left(e) =>
-      println(e.getMessage)
       assert(e.getMessage.equals("The ontology directory is not found"))
     }
   }
