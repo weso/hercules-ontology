@@ -1,13 +1,13 @@
 package es.weso.asio.ci
 
-import es.weso.rdf.rdf4j.RDFAsRDF4jModel
 import java.nio.file.{Files, Paths}
+
+import es.weso.rdf.rdf4j.RDFAsRDF4jModel
 import es.weso.utils.IOException._
+
 import scala.io.Source
 
-case class OntologyProcessorImpl(ontologySources: List[Source],
-                                 ontologySourcesPath: String)
-  extends OntologyProcessor {
+case class DefaultOntologyProcessor(ontologySources: List[Source], ontologySourcesPath: String) extends OntologyProcessor {
 
   private val emptyModel = RDFAsRDF4jModel.apply()
 
@@ -24,17 +24,16 @@ case class OntologyProcessorImpl(ontologySources: List[Source],
    * @return a right object with the model if no errors. A left value with the corresponding exception otherwise.
    */
   override def getOntologyModel: Either[Exception, RDFAsRDF4jModel] = {
-    //ontology directory does not exist
+
+    // If the ontology directory does not exist
     if (!Files.exists(Paths.get(ontologySourcesPath))) {
-      //throwing IOException
+      // throwing IOException
       Left(fromString("The ontology directory is not found"))
-    }
-    else {
+    } else {
       //the list of ttl files are empty, so we return an empty model
       if (ontologySources.isEmpty) {
         Right(emptyModel.unsafeRunSync())
-      }
-      else {
+      } else {
         //creating the final Model
         val finalModel = RDFAsRDF4jModel.fromChars(ontologySources.head.getLines().mkString, "TURTLE").unsafeRunSync()
         //looping through the ttl files and merging with the finalModel

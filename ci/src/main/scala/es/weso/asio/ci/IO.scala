@@ -29,7 +29,7 @@ object IO {
   /**
    * Updates the sources.
    */
-  def update():Unit = {
+  def update(): Unit = {
     ontologySources = getSourcesFromDirectoryWithExtension(ONTOLOGY_FILES_PATH, TURTLE_FILE_EXTENSION)
     instanceSources = getSourcesFromDirectoryWithExtension(TEST_FILES_PATH, TURTLE_FILE_EXTENSION)
     shapeExpSources = getSourcesFromDirectoryWithExtension(TEST_FILES_PATH, SHEX_FILE_EXTENSION)

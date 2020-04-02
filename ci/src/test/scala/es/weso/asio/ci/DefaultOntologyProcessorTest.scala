@@ -1,22 +1,21 @@
 package es.weso.asio.ci
 
-import org.scalatest.BeforeAndAfter
+import es.weso.asio.ci.IO._
 import org.scalatest.funsuite.AnyFunSuite
-import IO._
-import org.scalatest.Inside
+import org.scalatest.{BeforeAndAfter, Inside}
 
 import scala.io.Source
 
-class OntologyProcessorTest extends AnyFunSuite with BeforeAndAfter with Inside {
+class DefaultOntologyProcessorTest extends AnyFunSuite with BeforeAndAfter with Inside {
 
   var ontologyProcessor: OntologyProcessor = null
 
   before {
-    ontologyProcessor = OntologyProcessorImpl(ontologySources, ONTOLOGY_FILES_PATH)
+    ontologyProcessor = DefaultOntologyProcessor(ontologySources, ONTOLOGY_FILES_PATH)
   }
 
   test("Throwing exception when there's an non-existent directory") {
-    val ontologyProcessorNoDirectory = OntologyProcessorImpl(ontologySources, "../other")
+    val ontologyProcessorNoDirectory = DefaultOntologyProcessor(ontologySources, "../other")
     val model = ontologyProcessorNoDirectory.getOntologyModel
     //asserting that there was no exception
     assert(model.isLeft)
@@ -28,7 +27,7 @@ class OntologyProcessorTest extends AnyFunSuite with BeforeAndAfter with Inside 
 
   test("Empty ontology sources and non existent directory should throw an exception") {
     val emptyList = List[Source]()
-    val ontologyProcessorEmptyList = OntologyProcessorImpl(emptyList, "../other")
+    val ontologyProcessorEmptyList = DefaultOntologyProcessor(emptyList, "../other")
     val model = ontologyProcessorEmptyList.getOntologyModel
     //asserting that there was no exception
     assert(model.isLeft)
@@ -40,7 +39,7 @@ class OntologyProcessorTest extends AnyFunSuite with BeforeAndAfter with Inside 
 
   test("Empty ontology sources and should return empty model") {
     val emptyList = List[Source]()
-    val ontologyProcessorEmptyList = OntologyProcessorImpl(emptyList, ONTOLOGY_FILES_PATH)
+    val ontologyProcessorEmptyList = DefaultOntologyProcessor(emptyList, ONTOLOGY_FILES_PATH)
     val model = ontologyProcessorEmptyList.getOntologyModel
     //asserting that there was no exception and returning an empty model
     assert(model.isRight)
