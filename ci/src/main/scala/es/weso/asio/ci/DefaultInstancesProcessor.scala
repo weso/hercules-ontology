@@ -26,5 +26,4 @@ case class DefaultInstancesProcessor(instancesSources: List[Source], instancesSo
     modelUtil.mergeRDF4JModels(instancesSources, instancesSourcesPath
       , "The instances directory is not found", "TURTLE")
   }
-
 }

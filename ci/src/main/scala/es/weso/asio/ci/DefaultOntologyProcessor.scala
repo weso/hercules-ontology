@@ -1,10 +1,8 @@
 package es.weso.asio.ci
 
-import java.nio.file.{Files, Paths}
 
 import es.weso.asio.ci.utils.MergeRDF4JUtil
 import es.weso.rdf.rdf4j.RDFAsRDF4jModel
-import es.weso.utils.IOException._
 
 import scala.io.Source
 
