@@ -53,14 +53,13 @@ class DefaultInstanceProcessorTest extends AnyFunSuite with BeforeAndAfter with 
     assert(model.isRight)
     inside(model) { case Right(rightModel) =>
       //merging complete
-      assert(rightModel.serialize().unsafeRunSync().contains("alice"))
-      assert(rightModel.serialize().unsafeRunSync().contains("bob"))
-      assert(rightModel.serialize().unsafeRunSync().contains("carol"))
-      assert(rightModel.serialize().unsafeRunSync().contains("dave"))
-      assert(rightModel.serialize().unsafeRunSync().contains("emily"))
-      assert(rightModel.serialize().unsafeRunSync().contains("frank"))
-      assert(rightModel.serialize().unsafeRunSync().contains("grace"))
+      assert(rightModel.serialize().unsafeRunSync().contains("srv:A"))
+      assert(rightModel.serialize().unsafeRunSync().contains("srv:B"))
+      assert(rightModel.serialize().unsafeRunSync().contains("srv:C"))
+      assert(rightModel.serialize().unsafeRunSync().contains("log:statusCode"))
+      assert(rightModel.serialize().unsafeRunSync().contains("log:processedBy"))
+      assert(rightModel.serialize().unsafeRunSync().contains("log:processedAt"))
+      assert(rightModel.serialize().unsafeRunSync().contains("log:Transaction"))
     }
   }
-
 }
