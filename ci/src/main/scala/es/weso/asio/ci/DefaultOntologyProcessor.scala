@@ -1,15 +1,14 @@
 package es.weso.asio.ci
 
-import java.nio.file.{Files, Paths}
 
+import es.weso.asio.ci.utils.MergeRDF4JUtil
 import es.weso.rdf.rdf4j.RDFAsRDF4jModel
-import es.weso.utils.IOException._
 
 import scala.io.Source
 
 case class DefaultOntologyProcessor(ontologySources: List[Source], ontologySourcesPath: String) extends OntologyProcessor {
 
-  private val emptyModel = RDFAsRDF4jModel.apply()
+  private val modelUtil: MergeRDF4JUtil = new MergeRDF4JUtil()
 
   /**
    * By means of the IO object this method will get all the files in the ontology directory with turtle extension and
@@ -24,24 +23,7 @@ case class DefaultOntologyProcessor(ontologySources: List[Source], ontologySourc
    * @return a right object with the model if no errors. A left value with the corresponding exception otherwise.
    */
   override def getOntologyModel: Either[Exception, RDFAsRDF4jModel] = {
-
-    // If the ontology directory does not exist
-    if (!Files.exists(Paths.get(ontologySourcesPath))) {
-      // throwing IOException
-      Left(fromString("The ontology directory is not found"))
-    } else {
-      //the list of ttl files are empty, so we return an empty model
-      if (ontologySources.isEmpty) {
-        Right(emptyModel.unsafeRunSync())
-      } else {
-        //creating the final Model
-        val finalModel = RDFAsRDF4jModel.fromChars(ontologySources.head.getLines().mkString, "TURTLE").unsafeRunSync()
-        //looping through the ttl files and merging with the finalModel
-        for (fileSource <- ontologySources.tail) {
-          finalModel.merge(RDFAsRDF4jModel.fromChars(fileSource.getLines().mkString, "TURTLE").unsafeRunSync())
-        }
-        Right(finalModel)
-      }
-    }
+    modelUtil.mergeRDF4JModels(ontologySources, ontologySourcesPath
+      , "The ontology directory is not found", "TURTLE")
   }
 }
