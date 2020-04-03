@@ -18,6 +18,7 @@ scalaVersion := "2.13.1"
 // Simple RDF interface.
 libraryDependencies += "es.weso" %% "srdf" % "0.1.63"
 libraryDependencies += "es.weso" %% "srdf4j" % "0.1.63"
+libraryDependencies += "es.weso" %% "shex" % "0.1.58"
 
 // Scala test.
 libraryDependencies += "org.scalactic" %% "scalactic" % "3.1.1"
