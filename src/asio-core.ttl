@@ -587,6 +587,15 @@ asio:Company rdf:type owl:Class ;
                             "Entreprise"@fr .
 
 
+###  http://www.asio.es/asioontologies/asio#Context
+asio:Context rdf:type owl:Class ;
+             rdfs:comment "Contexts are similar to situations or state of affairs providing interpretation coordinates for profiles. In the most simple case, these coordinates are just geographical/spatial or temporal coordinates. The ASIO core ontology does not impose a fixed definition of context. It is deliberately wide in order to enable third-parties the adequation of the meaning of context according to their modeling needs and requirements."@en ;
+             rdfs:label "Context"@ca-es ,
+                        "Context"@en ,
+                        "Contexto"@es ,
+                        "Contexto"@pt .
+
+
 ###  http://www.asio.es/asioontologies/asio#Contract
 asio:Contract rdf:type owl:Class ;
               rdfs:subClassOf <http://purl.org/cerif/frapo/FinancialEntity> ;
@@ -940,6 +949,14 @@ asio:PhDThesis rdf:type owl:Class ;
                               "Thèse doctorale"@fr .
 
 
+###  http://www.asio.es/asioontologies/asio#Profile
+asio:Profile rdf:type owl:Class ;
+             rdfs:comment "A profile represents a particular person playing a given role. In the specialised literature it is also known as a \"qua-individual\". The ASIO core ontology extends the meaning of profile to capture \"person-as-role\", \"person-at-context\" and \"person-in-community\"."@en ,
+                          "Perfil"@ca-es ,
+                          "Perfil"@es ,
+                          "Profile"@en .
+
+
 ###  http://www.asio.es/asioontologies/asio#ProjectBudget
 asio:ProjectBudget rdf:type owl:Class ;
                    rdfs:subClassOf asio:Budget ;
@@ -1081,6 +1098,15 @@ asio:ResearchProblem rdf:type owl:Class ;
 asio:ResearchResult rdf:type owl:Class ;
                     rdfs:label "Research result"@en ;
                     skos:prefLabel "Research result"@en .
+
+
+###  http://www.asio.es/asioontologies/asio#Role
+asio:Role rdf:type owl:Class ;
+          rdfs:comment "A property that can be predicated of a person. In the ASIO ontologies, roles are reified as first order individuals and relations between roles and players are expressed by means of the wai:plays property. The ASIO core ontology does not impose any subclassification of roles. The concept is open to be refined according to domain or application requirements."@en ;
+          rdfs:label "Papel"@es ,
+                     "Papel"@pt ,
+                     "Papell"@ca-es ,
+                     "Role"@en .
 
 
 ###  http://www.asio.es/asioontologies/asio#SME
