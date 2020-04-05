@@ -11,7 +11,7 @@ import es.weso.utils.IOException.fromString
 import scala.io.Source
 
 /**
- * Util class that is in charge of merging RDF files of a certain extension and format
+ * Util class that is in charge of merging SHEX files of a certain extension and format
  * */
 class MergeShExUtil {
 
@@ -28,7 +28,7 @@ class MergeShExUtil {
    */
   def mergeShExModels(sourceFiles: List[Source], sourcePath: String,
                       exceptionMessage : String): Either[Exception, Schema] = {
-    // If the instances directory does not exist
+    // If the source directory does not exist
     if (!Files.exists(Paths.get(sourcePath))) {
       // throwing IOException
       Left(fromString(exceptionMessage))
