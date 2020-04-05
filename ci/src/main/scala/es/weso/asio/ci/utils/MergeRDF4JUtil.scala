@@ -31,7 +31,7 @@ class MergeRDF4JUtil {
       // throwing IOException
       Left(fromString(exceptionMessage))
     } else {
-      //the list of ttl files in the instances folder is empty, so we return an empty model
+      //the list of ttl files in the sources folder is empty, so we return an empty model
       if (sourceFiles.isEmpty) {
         Right(emptyModel.unsafeRunSync())
       } else {
