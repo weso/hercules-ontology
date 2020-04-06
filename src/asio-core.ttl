@@ -213,8 +213,11 @@ asio:requiredFor rdf:type owl:ObjectProperty ;
 
 ###  http://www.asio.es/asioontologies/asio#requires
 asio:requires rdf:type owl:ObjectProperty ;
-              rdfs:domain asio:AcademicDegree ;
-              rdfs:range asio:AcademicPublication ;
+              rdfs:domain asio:AcademicDegree ,
+                          asio:Role ;
+              rdfs:range asio:AcademicPublication ,
+                         asio:Role ;
+              rdfs:comment "This property relates roles and their requisites, i.e. other roles."@en ;
               rdfs:label "requires"@en .
 
 
@@ -223,6 +226,14 @@ asio:researchesIn rdf:type owl:ObjectProperty ;
                   rdfs:domain foaf:Agent ;
                   rdfs:range modules:ScientificDomain ;
                   rdfs:label "researches in"@en .
+
+
+###  http://www.asio.es/asioontologies/asio#specializes
+asio:specializes rdf:type owl:ObjectProperty ;
+                 rdfs:domain asio:Role ;
+                 rdfs:range asio:Role ;
+                 rdfs:comment "This property allows to express hierarchies of roles, through of role specialization: if role A specializes role B, and B specializes C, then role A specializes role C."@en ;
+                 rdfs:label "specializes"@en .
 
 
 ###  http://www.asio.es/asioontologies/asio#spinsOffFrom
