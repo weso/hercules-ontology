@@ -72,6 +72,14 @@ asio:advises rdf:type owl:ObjectProperty ;
              rdfs:label "advises"@en .
 
 
+###  http://www.asio.es/asioontologies/asio#atContext
+asio:atContext rdf:type owl:ObjectProperty ;
+               rdfs:domain asio:Profile ;
+               rdfs:range asio:Context ;
+               rdfs:comment "This property enables to relate a profile with a given context (geographical, temporal, spatial, social, etc.)."@en ;
+               rdfs:label "at context"@en .
+
+
 ###  http://www.asio.es/asioontologies/asio#authors
 asio:authors rdf:type owl:ObjectProperty ;
              owl:inverseOf asio:isAuthoredBy ;
@@ -200,6 +208,36 @@ asio:participant rdf:type owl:ObjectProperty ;
                  rdfs:label "participant"@en .
 
 
+###  http://www.asio.es/asioontologies/asio#participates
+asio:participates rdf:type owl:ObjectProperty ;
+                  rdfs:comment "This property encodes the participation relation between profiles and the communities they are member of."@en ;
+                  rdfs:label "participates"@en .
+
+
+###  http://www.asio.es/asioontologies/asio#personalizes
+asio:personalizes rdf:type owl:ObjectProperty ;
+                  rdfs:domain asio:Profile ;
+                  rdfs:range asio:Role ;
+                  rdfs:comment "A role is personalized by means of a profile, which wrap the role in the identity of the person behind the profile."@en ;
+                  rdfs:label "personalizes"@en .
+
+
+###  http://www.asio.es/asioontologies/asio#plays
+asio:plays rdf:type owl:ObjectProperty ;
+           rdfs:domain foaf:Agent ;
+           rdfs:range asio:Role ;
+           rdfs:comment "This property relates roles and their players, who can be any foaf:Agent (a person, a group, etc.)"@en ;
+           rdfs:label "plays"@en .
+
+
+###  http://www.asio.es/asioontologies/asio#profiles
+asio:profiles rdf:type owl:ObjectProperty ;
+              rdfs:domain foaf:Agent ;
+              rdfs:range asio:Profile ;
+              rdfs:comment "This property relates people and the featured profiles."@en ;
+              rdfs:label "profiles"@en .
+
+
 ###  http://www.asio.es/asioontologies/asio#publishedBy
 asio:publishedBy rdf:type owl:ObjectProperty .
 
@@ -275,6 +313,15 @@ foaf:member rdf:type owl:ObjectProperty ;
 #################################################################
 #    Data properties
 #################################################################
+
+###  http://www.asio.es/asioontologies/asio#isActive
+asio:isActive rdf:type owl:DatatypeProperty ;
+              rdfs:domain asio:Profile ;
+              rdfs:range xsd:boolean ;
+              rdfs:comment """This property allows to specify which is the user profile that is active, 
+given a interaction between two applications."""@en ;
+              rdfs:label "is active"@en .
+
 
 ###  http://www.asio.es/asioontologies/asio#projectEndDate
 asio:projectEndDate rdf:type owl:DatatypeProperty ;
@@ -1113,7 +1160,7 @@ asio:ResearchResult rdf:type owl:Class ;
 
 ###  http://www.asio.es/asioontologies/asio#Role
 asio:Role rdf:type owl:Class ;
-          rdfs:comment "A property that can be predicated of a person. In the ASIO ontologies, roles are reified as first order individuals and relations between roles and players are expressed by means of the wai:plays property. The ASIO core ontology does not impose any subclassification of roles. The concept is open to be refined according to domain or application requirements."@en ;
+          rdfs:comment "A condition/status/position that can be predicated of a person. In the ASIO core ontology, roles are reified as first order individuals and relations between roles and players are expressed by means of the asio:plays property. The ASIO core ontology does not impose any subclassification of roles. The concept is open to be refined according to domain or application requirements."@en ;
           rdfs:label "Papel"@es ,
                      "Papel"@pt ,
                      "Papell"@ca-es ,
