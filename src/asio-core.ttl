@@ -318,7 +318,7 @@ foaf:member rdf:type owl:ObjectProperty ;
 asio:isActive rdf:type owl:DatatypeProperty ;
               rdfs:domain asio:Profile ;
               rdfs:range xsd:boolean ;
-              rdfs:comment """This property allows to specify which is the user profile that is active, 
+              rdfs:comment """This property allows to specify which is the user profile that is active,
 given a interaction between two applications."""@en ;
               rdfs:label "is active"@en .
 
@@ -326,6 +326,7 @@ given a interaction between two applications."""@en ;
 ###  http://www.asio.es/asioontologies/asio#projectEndDate
 asio:projectEndDate rdf:type owl:DatatypeProperty ;
                     rdfs:domain foaf:Project ;
+                    rdfs:range xsd:date ;
                     rdfs:comment "The end date of the project."@en ;
                     rdfs:label "fecha final proyecto"@es ,
                                "project end date"@en .
@@ -334,6 +335,7 @@ asio:projectEndDate rdf:type owl:DatatypeProperty ;
 ###  http://www.asio.es/asioontologies/asio#projectKeyword
 asio:projectKeyword rdf:type owl:DatatypeProperty ;
                     rdfs:domain foaf:Project ;
+                    rdfs:range xsd:string ;
                     rdfs:comment "A key word of the project."@en ;
                     rdfs:label "palabra clave"@es ,
                                "project keyword"@en .
@@ -342,6 +344,7 @@ asio:projectKeyword rdf:type owl:DatatypeProperty ;
 ###  http://www.asio.es/asioontologies/asio#projectObjective
 asio:projectObjective rdf:type owl:DatatypeProperty ;
                       rdfs:domain foaf:Project ;
+                      rdfs:range xsd:string ;
                       rdfs:comment "A defined objective of the project."@en ;
                       rdfs:label "objetivo de proyecto"@es ,
                                  "project objective"@en .
@@ -350,6 +353,7 @@ asio:projectObjective rdf:type owl:DatatypeProperty ;
 ###  http://www.asio.es/asioontologies/asio#projectStartDate
 asio:projectStartDate rdf:type owl:DatatypeProperty ;
                       rdfs:domain foaf:Project ;
+                      rdfs:range xsd:date ;
                       rdfs:comment "The start date of the project."@en ;
                       rdfs:label "fecha inicio proyecto"@es ,
                                  "project start date"@en .
@@ -357,6 +361,7 @@ asio:projectStartDate rdf:type owl:DatatypeProperty ;
 
 ###  http://www.asio.es/asioontologies/asio#publicationDate
 asio:publicationDate rdf:type owl:DatatypeProperty ;
+                     rdfs:range xsd:date ;
                      rdfs:label "publication date"@en .
 
 
