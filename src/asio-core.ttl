@@ -818,23 +818,7 @@ asio:Manual rdf:type owl:Class ;
 
 ###  http://www.asio.es/asioontologies/asio#MasterStudent
 asio:MasterStudent rdf:type owl:Class ;
-                   rdfs:subClassOf asio:GraduateStudent ;
-                   rdfs:label "Estudante de mestrado"@pt ,
-                              "Estudante de máster"@gl ,
-                              "Estudiant de màster"@ca-ad ,
-                              "Estudiant de màster"@ca-es ,
-                              "Estudiante de máster"@es ,
-                              "Master student"@en ,
-                              "Étudiant de maîtrise"@fr ;
-                   skos:altLabel "Estudante de mestrado"@gl ,
-                                 "Estudiant de mestratge"@ca ,
-                                 "Étudiant de master"@fr ;
-                   skos:prefLabel "Estudante de mestrado"@pt ,
-                                  "Estudante de máster"@gl ,
-                                  "Estudiant de màster"@ca ,
-                                  "Estudiante de máster"@es ,
-                                  "Master student"@en ,
-                                  "Étudiant de maîtrise"@fr .
+                   rdfs:subClassOf asio:GraduateStudent .
 
 
 ###  http://www.asio.es/asioontologies/asio#MastersDegree
@@ -1264,23 +1248,7 @@ asio:Spinoff rdf:type owl:Class ;
 
 ###  http://www.asio.es/asioontologies/asio#Student
 asio:Student rdf:type owl:Class ;
-             rdfs:subClassOf foaf:Person ;
-             rdfs:label "Estudante"@gl ,
-                        "Estudante"@pt ,
-                        "Estudiant"@ca-ad ,
-                        "Estudiant"@ca-es ,
-                        "Estudiante"@es ,
-                        "Ikasle"@eu ,
-                        "Student"@en ,
-                        "Étudiant"@fr ;
-             skos:prefLabel "Estudante"@gl ,
-                            "Estudante"@pt ,
-                            "Estudiant"@ca-ad ,
-                            "Estudiant"@ca-es ,
-                            "Estudiante"@es ,
-                            "Ikasle"@eu ,
-                            "Student"@en ,
-                            "Étudiant"@fr .
+             rdfs:subClassOf foaf:Person .
 
 
 ###  http://www.asio.es/asioontologies/asio#TechnicalPersonnel
@@ -1332,9 +1300,7 @@ asio:Thesis rdf:type owl:Class ;
 
 ###  http://www.asio.es/asioontologies/asio#UndergraduateStudent
 asio:UndergraduateStudent rdf:type owl:Class ;
-                          rdfs:subClassOf asio:Student ;
-                          rdfs:label "Undergraduate student"@en ;
-                          skos:prefLabel "Undergraduate student"@en .
+                          rdfs:subClassOf asio:Student .
 
 
 ###  http://www.asio.es/asioontologies/asio#University
@@ -1453,6 +1419,11 @@ foaf:Project rdf:type owl:Class ;
 #################################################################
 #    Individuals
 #################################################################
+
+###  http://www.asio.es/asioontologies/asio#Administrative
+asio:Administrative rdf:type owl:NamedIndividual ,
+                             asio:Profile .
+
 
 ###  http://www.asio.es/asioontologies/asio#BasqueCentreForClimateChange
 asio:BasqueCentreForClimateChange rdf:type owl:NamedIndividual ,
@@ -1688,6 +1659,11 @@ asio:MasterInTransportAndLogisticsManagement rdf:type owl:NamedIndividual ,
                                                         "Master in Transport and Logistics Management"@en .
 
 
+###  http://www.asio.es/asioontologies/asio#MasterStudent
+asio:MasterStudent rdf:type owl:NamedIndividual ,
+                            asio:Profile .
+
+
 ###  http://www.asio.es/asioontologies/asio#MasterUniversitarioEnIngenieriaWeb
 asio:MasterUniversitarioEnIngenieriaWeb rdf:type owl:NamedIndividual ,
                                                  asio:MastersDegree ;
@@ -1748,10 +1724,20 @@ asio:PacoCalvoSPaper3 rdf:type owl:NamedIndividual ,
                       rdfs:label "What is it like to be a plant?"@en .
 
 
+###  http://www.asio.es/asioontologies/asio#PhDCandidate
+asio:PhDCandidate rdf:type owl:NamedIndividual ,
+                           asio:Profile .
+
+
 ###  http://www.asio.es/asioontologies/asio#PlantSignalingAndBehavior
 asio:PlantSignalingAndBehavior rdf:type owl:NamedIndividual ,
                                         asio:EditedPublication ;
                                rdfs:label "Plant Signaling and Behavior"@en .
+
+
+###  http://www.asio.es/asioontologies/asio#Researching
+asio:Researching rdf:type owl:NamedIndividual ,
+                          asio:Profile .
 
 
 ###  http://www.asio.es/asioontologies/asio#SE511855C2
@@ -1780,6 +1766,16 @@ asio:SeveroOchoaSealOfExcellence rdf:type owl:NamedIndividual ,
 asio:Synthese rdf:type owl:NamedIndividual ,
                        asio:EditedPublication ;
               rdfs:label "Synthese"@en .
+
+
+###  http://www.asio.es/asioontologies/asio#Teaching
+asio:Teaching rdf:type owl:NamedIndividual ,
+                       asio:Profile .
+
+
+###  http://www.asio.es/asioontologies/asio#TechnicalSupport
+asio:TechnicalSupport rdf:type owl:NamedIndividual ,
+                               asio:Profile .
 
 
 ###  http://www.asio.es/asioontologies/asio#Thesis1
@@ -1813,6 +1809,11 @@ asio:Thesis3 rdf:type owl:NamedIndividual ,
 asio:US5579430 rdf:type owl:NamedIndividual ,
                         asio:Patent ;
                rdfs:label "US 5579430"@en .
+
+
+###  http://www.asio.es/asioontologies/asio#UndergraduateStudent
+asio:UndergraduateStudent rdf:type owl:NamedIndividual ,
+                                   asio:Profile .
 
 
 ###  http://www.asio.es/asioontologies/asio#UniversityOfBarcelona
@@ -1897,6 +1898,32 @@ asio:WESO rdf:type owl:NamedIndividual ,
           foaf:member asio:JoseEmilioLabraGayo ;
           rdfs:label "Web Semantics Oviedo"@en ,
                      "Web Semántica Oviedo"@es .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+asio:MasterStudent skos:altLabel "Estudante de mestrado"@gl ;
+                   skos:prefLabel "Estudiante de máster"@es ;
+                   rdfs:label "Estudante de máster"@gl ;
+                   skos:altLabel "Estudiant de mestratge"@ca ;
+                   skos:prefLabel "Master student"@en ;
+                   rdfs:label "Master student"@en ;
+                   skos:prefLabel "Étudiant de maîtrise"@fr ;
+                   skos:altLabel "Étudiant de master"@fr ;
+                   rdfs:label "Estudiante de máster"@es ,
+                              "Estudante de mestrado"@pt ;
+                   skos:prefLabel "Estudiant de màster"@ca ;
+                   rdfs:label "Étudiant de maîtrise"@fr ,
+                              "Estudiant de màster"@ca-ad ;
+                   skos:prefLabel "Estudante de máster"@gl ,
+                                  "Estudante de mestrado"@pt ;
+                   rdfs:label "Estudiant de màster"@ca-es .
+
+
+asio:UndergraduateStudent skos:prefLabel "Undergraduate student"@en ;
+                          rdfs:label "Undergraduate student"@en .
 
 
 ###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
