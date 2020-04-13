@@ -1422,7 +1422,7 @@ foaf:Project rdf:type owl:Class ;
 
 ###  http://www.asio.es/asioontologies/asio#Administrative
 asio:Administrative rdf:type owl:NamedIndividual ,
-                             asio:Profile .
+                             asio:Role .
 
 
 ###  http://www.asio.es/asioontologies/asio#BasqueCentreForClimateChange
@@ -1661,7 +1661,7 @@ asio:MasterInTransportAndLogisticsManagement rdf:type owl:NamedIndividual ,
 
 ###  http://www.asio.es/asioontologies/asio#MasterStudent
 asio:MasterStudent rdf:type owl:NamedIndividual ,
-                            asio:Profile .
+                            asio:Role .
 
 
 ###  http://www.asio.es/asioontologies/asio#MasterUniversitarioEnIngenieriaWeb
@@ -1726,7 +1726,7 @@ asio:PacoCalvoSPaper3 rdf:type owl:NamedIndividual ,
 
 ###  http://www.asio.es/asioontologies/asio#PhDCandidate
 asio:PhDCandidate rdf:type owl:NamedIndividual ,
-                           asio:Profile .
+                           asio:Role .
 
 
 ###  http://www.asio.es/asioontologies/asio#PlantSignalingAndBehavior
@@ -1737,7 +1737,7 @@ asio:PlantSignalingAndBehavior rdf:type owl:NamedIndividual ,
 
 ###  http://www.asio.es/asioontologies/asio#Researching
 asio:Researching rdf:type owl:NamedIndividual ,
-                          asio:Profile .
+                          asio:Role .
 
 
 ###  http://www.asio.es/asioontologies/asio#SE511855C2
@@ -1770,12 +1770,12 @@ asio:Synthese rdf:type owl:NamedIndividual ,
 
 ###  http://www.asio.es/asioontologies/asio#Teaching
 asio:Teaching rdf:type owl:NamedIndividual ,
-                       asio:Profile .
+                       asio:Role .
 
 
 ###  http://www.asio.es/asioontologies/asio#TechnicalSupport
 asio:TechnicalSupport rdf:type owl:NamedIndividual ,
-                               asio:Profile .
+                               asio:Role .
 
 
 ###  http://www.asio.es/asioontologies/asio#Thesis1
@@ -1813,7 +1813,7 @@ asio:US5579430 rdf:type owl:NamedIndividual ,
 
 ###  http://www.asio.es/asioontologies/asio#UndergraduateStudent
 asio:UndergraduateStudent rdf:type owl:NamedIndividual ,
-                                   asio:Profile .
+                                   asio:Role .
 
 
 ###  http://www.asio.es/asioontologies/asio#UniversityOfBarcelona
