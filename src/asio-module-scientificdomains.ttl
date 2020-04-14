@@ -1,5 +1,5 @@
 @prefix foaf:    <http://xmlns.com/foaf/0.1/#> .
-@prefix emergel:  <http://purl.org/asio/core#> .
+@prefix asio:  <http://purl.org/asio/core#> .
 @prefix my:      <http://weso.es/tablines/project/scientificDomains/resource/> .
 @prefix asioModules:  <http://purl.org/asio/modules#> .
 @prefix project:  <http://weso.es/tablines/project/scientificDomains/> .
@@ -14,7 +14,7 @@
 asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_ICI
       a       skos:Concept ;
       rdfs:label "Ingeniería civil y arquitectura" ;
-      emergel:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_ICI ;
+      asio:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_ICI ;
       skos:broader asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_IYT ;
       skos:inScheme asioModules:ESscientificDomains2ndList ;
       skos:notation "ICI" ;
@@ -23,7 +23,7 @@ asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_ICI
 asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_ECO
       a       skos:Concept ;
       rdfs:label "Economía" ;
-      emergel:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_ECO ;
+      asio:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_ECO ;
       skos:broader asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_CSH ;
       skos:inScheme asioModules:ESscientificDomains2ndList ;
       skos:notation "ECO" ;
@@ -32,7 +32,7 @@ asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_ECO
 asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_TA
       a       skos:Concept ;
       rdfs:label "Ciencia y tecnología de alimentos" ;
-      emergel:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_TA ;
+      asio:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_TA ;
       skos:broader asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_CVS ;
       skos:inScheme asioModules:ESscientificDomains2ndList ;
       skos:notation "TA" ;
@@ -41,42 +41,42 @@ asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_TA
 asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_CODE_CB
       a       skos:Concept ;
       rdfs:label "CB" ;
-      emergel:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_CB ;
+      asio:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_CB ;
       skos:inScheme asioModules:ESDomainCode1stList ;
       skos:prefLabel "CB" .
 
 asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_HA
       a       skos:Concept ;
       rdfs:label "HA" ;
-      emergel:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_HA ;
+      asio:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_HA ;
       skos:inScheme asioModules:ESscientificDomains2ndCodeList ;
       skos:prefLabel "HA" .
 
 asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_QMC
       a       skos:Concept ;
       rdfs:label "QMC" ;
-      emergel:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_QMC ;
+      asio:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_QMC ;
       skos:inScheme asioModules:ESscientificDomains2ndCodeList ;
       skos:prefLabel "QMC" .
 
 asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_INF
       a       skos:Concept ;
       rdfs:label "INF" ;
-      emergel:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_INF ;
+      asio:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_INF ;
       skos:inScheme asioModules:ESscientificDomains2ndCodeList ;
       skos:prefLabel "INF" .
 
 asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_FFI
       a       skos:Concept ;
       rdfs:label "FFI" ;
-      emergel:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_FFI ;
+      asio:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_FFI ;
       skos:inScheme asioModules:ESscientificDomains2ndCodeList ;
       skos:prefLabel "FFI" .
 
 asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_EDUC
       a       skos:Concept ;
       rdfs:label "Ciencias de la educación" ;
-      emergel:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_EDUC ;
+      asio:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_EDUC ;
       skos:broader asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_CSH ;
       skos:inScheme asioModules:ESscientificDomains2ndList ;
       skos:notation "EDUC" ;
@@ -85,7 +85,7 @@ asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_EDUC
 asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_FI
       a       skos:Concept ;
       rdfs:label "FI" ;
-      emergel:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_FI ;
+      asio:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_FI ;
       skos:inScheme asioModules:ESscientificDomains2ndCodeList ;
       skos:prefLabel "FI" .
 
@@ -98,14 +98,14 @@ asioModules:ESDomainCode1stList
 asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_CODE_CSH
       a       skos:Concept ;
       rdfs:label "CSH" ;
-      emergel:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_CSH ;
+      asio:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_CSH ;
       skos:inScheme asioModules:ESDomainCode1stList ;
       skos:prefLabel "CSH" .
 
 asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_GAN
       a       skos:Concept ;
       rdfs:label "Ganadería y pesca" ;
-      emergel:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_GAN ;
+      asio:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_GAN ;
       skos:broader asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_CVS ;
       skos:inScheme asioModules:ESscientificDomains2ndList ;
       skos:notation "GAN" ;
@@ -114,21 +114,21 @@ asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_GAN
 asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_CS
       a       skos:Concept ;
       rdfs:label "CS" ;
-      emergel:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CS ;
+      asio:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CS ;
       skos:inScheme asioModules:ESscientificDomains2ndCodeList ;
       skos:prefLabel "CS" .
 
 asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_IEL
       a       skos:Concept ;
       rdfs:label "IEL" ;
-      emergel:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_IEL ;
+      asio:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_IEL ;
       skos:inScheme asioModules:ESscientificDomains2ndCodeList ;
       skos:prefLabel "IEL" .
 
 asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_MTM
       a       skos:Concept ;
       rdfs:label "Matemáticas " ;
-      emergel:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_MTM ;
+      asio:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_MTM ;
       skos:broader asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_CB ;
       skos:inScheme asioModules:ESscientificDomains2ndList ;
       skos:notation "MTM" ;
@@ -138,7 +138,7 @@ asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_MTM
 asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_IME
       a       skos:Concept ;
       rdfs:label "Ingeniería mecánica, naval y aeronáutica" ;
-      emergel:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_IME ;
+      asio:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_IME ;
       skos:broader asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_IYT ;
       skos:inScheme asioModules:ESscientificDomains2ndList ;
       skos:notation "IME" ;
@@ -147,7 +147,7 @@ asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_IME
 asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_
       a       skos:Concept ;
       rdfs:label "" ;
-      emergel:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_ ;
+      asio:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_ ;
       skos:broader asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_ ;
       skos:inScheme asioModules:ESscientificDomains2ndList ;
       skos:notation "" ;
@@ -156,7 +156,7 @@ asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_
 asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_TM
       a       skos:Concept ;
       rdfs:label "Ciencia y tecnología de materiales" ;
-      emergel:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_TM ;
+      asio:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_TM ;
       skos:broader asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_IYT ;
       skos:inScheme asioModules:ESscientificDomains2ndList ;
       skos:notation "TM" ;
@@ -165,14 +165,14 @@ asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_TM
 asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_BVAE
       a       skos:Concept ;
       rdfs:label "BVAE" ;
-      emergel:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_BVAE ;
+      asio:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_BVAE ;
       skos:inScheme asioModules:ESscientificDomains2ndCodeList ;
       skos:prefLabel "BVAE" .
 
 asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_EDUC
       a       skos:Concept ;
       rdfs:label "EDUC" ;
-      emergel:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_EDUC ;
+      asio:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_EDUC ;
       skos:inScheme asioModules:ESscientificDomains2ndCodeList ;
       skos:prefLabel "EDUC" .
 
@@ -185,14 +185,14 @@ asioModules:ESscientificDomains1stList
 asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_TA
       a       skos:Concept ;
       rdfs:label "TA" ;
-      emergel:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_TA ;
+      asio:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_TA ;
       skos:inScheme asioModules:ESscientificDomains2ndCodeList ;
       skos:prefLabel "TA" .
 
 asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_MCLI
       a       skos:Concept ;
       rdfs:label "Medicina clínica y epidemiología" ;
-      emergel:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_MCLI ;
+      asio:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_MCLI ;
       skos:broader asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_CVS ;
       skos:inScheme asioModules:ESscientificDomains2ndList ;
       skos:notation "MCLI" ;
@@ -202,7 +202,7 @@ asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_MCLI
 asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_INF
       a       skos:Concept ;
       rdfs:label "Ciencias de la computación y tecnología informática" ;
-      emergel:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_INF ;
+      asio:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_INF ;
       skos:broader asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_IYT ;
       skos:inScheme asioModules:ESscientificDomains2ndList ;
       skos:notation "INF" ;
@@ -211,7 +211,7 @@ asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_INF
 asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CS
       a       skos:Concept ;
       rdfs:label "Ciencias sociales" ;
-      emergel:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_CS ;
+      asio:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_CS ;
       skos:broader asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_CSH ;
       skos:inScheme asioModules:ESscientificDomains2ndList ;
       skos:notation "CS" ;
@@ -220,7 +220,7 @@ asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CS
 asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_ECO
       a       skos:Concept ;
       rdfs:label "ECO" ;
-      emergel:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_ECO ;
+      asio:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_ECO ;
       skos:inScheme asioModules:ESscientificDomains2ndCodeList ;
       skos:prefLabel "ECO" .
 
@@ -233,21 +233,21 @@ asioModules:ESscientificDomains2ndList
 asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_DER
       a       skos:Concept ;
       rdfs:label "DER" ;
-      emergel:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_DER ;
+      asio:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_DER ;
       skos:inScheme asioModules:ESscientificDomains2ndCodeList ;
       skos:prefLabel "DER" .
 
 asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_CT
       a       skos:Concept ;
       rdfs:label "CT" ;
-      emergel:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CT ;
+      asio:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CT ;
       skos:inScheme asioModules:ESscientificDomains2ndCodeList ;
       skos:prefLabel "CT" .
 
 asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_FFI
       a       skos:Concept ;
       rdfs:label "Filología y filosofía" ;
-      emergel:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_FFI ;
+      asio:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_FFI ;
       skos:broader asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_CSH ;
       skos:inScheme asioModules:ESscientificDomains2ndList ;
       skos:notation "FFI" ;
@@ -256,7 +256,7 @@ asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_FFI
 asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_CSH
       a       skos:Concept ;
       rdfs:label "Ciencias sociales y humanidades" ;
-      emergel:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_CODE_CSH ;
+      asio:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_CODE_CSH ;
       skos:inScheme asioModules:ESscientificDomains1stList ;
       skos:notation "CSH" ;
       skos:prefLabel "Sciencias socials e humanidatz"@an , "Ciències socials i humanitats"@ca , "Ciencies sociales y humanidaes"@ast , "Sciences sociales et humaines"@fr , "Social sciences and humanities"@en , "Gizarte zientziak eta giza zientziak"@eu , "θjen̪ θjas so 'θja les i w ma ni 'ða ðes"@es , "ˈsəʊʃəl ˈsaɪənsɪz ænd hju(ː)ˈmænɪtiz"@en , "Ciencias sociales y humanidades" , "Ciencias sociales y humanidades"@es , "Sciéncias socials"@oc , "Ciências sociais e humanidades"@pt , "Céncias socialis i humanidadis"@ext , "ˈsoʊʃəl ˈsaɪənsəz ænd hjuˈmænɪtiz"@en , "Ciencias sociais e humanidades"@gl ;
@@ -265,7 +265,7 @@ asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_CSH
 asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_COM
       a       skos:Concept ;
       rdfs:label "Tecnología electrónica y de las comunicaciones" ;
-      emergel:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_COM ;
+      asio:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_COM ;
       skos:broader asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_IYT ;
       skos:inScheme asioModules:ESscientificDomains2ndList ;
       skos:notation "COM" ;
@@ -274,21 +274,21 @@ asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_COM
 asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_MTM
       a       skos:Concept ;
       rdfs:label "MTM" ;
-      emergel:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_MTM ;
+      asio:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_MTM ;
       skos:inScheme asioModules:ESscientificDomains2ndCodeList ;
       skos:prefLabel "MTM" .
 
 asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_
       a       skos:Concept ;
       rdfs:label "" ;
-      emergel:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_ ;
+      asio:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_ ;
       skos:inScheme asioModules:ESscientificDomains2ndCodeList ;
       skos:prefLabel "" .
 
 asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_IYT
       a       skos:Concept ;
       rdfs:label "Ingenierías y tecnologías" ;
-      emergel:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_CODE_IYT ;
+      asio:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_CODE_IYT ;
       skos:inScheme asioModules:ESscientificDomains1stList ;
       skos:notation "IYT" ;
       skos:prefLabel "Ingenierías y tecnologías" , "Ingenierías y tecnologías"@es , "Inxeniería y tecnoloxíes"@ast , "Engenharia e tecnologias"@pt , "ˈɛnʤəˈnɪrɪŋ ænd tɛkˈnɑləʤiz"@en , "Enchinierías e tecnolochías"@an , "Enxeñaría e tecnoloxías"@gl , "ˌɛnʤɪˈnɪərɪŋ ænd tɛkˈnɒləʤiz"@en , "iŋ xe nje 'ɾi as i tek no lo 'xi as"@es , "Enginyeria i tecnologies"@ca , "Ingenierías i tecnologías"@ext , "Ingeniaritza eta teknologiak"@eu , "Engenhariás e tecnologias"@oc , "Engineering and technologies"@en , "Ingénierie et technologies"@fr ;
@@ -302,7 +302,7 @@ asioModules:ESscientificDomains2ndCodeList
 asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CT
       a       skos:Concept ;
       rdfs:label "Ciencias de la tierra " ;
-      emergel:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_CT ;
+      asio:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_CT ;
       skos:broader asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_CB ;
       skos:inScheme asioModules:ESscientificDomains2ndList ;
       skos:notation "CT" ;
@@ -312,7 +312,7 @@ asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CT
 asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_TQ
       a       skos:Concept ;
       rdfs:label "Tecnología química" ;
-      emergel:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_TQ ;
+      asio:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_TQ ;
       skos:broader asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_IYT ;
       skos:inScheme asioModules:ESscientificDomains2ndList ;
       skos:notation "TQ" ;
@@ -321,7 +321,7 @@ asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_TQ
 asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_IEL
       a       skos:Concept ;
       rdfs:label "Ingeniería eléctrica, electrónica y automática" ;
-      emergel:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_IEL ;
+      asio:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_IEL ;
       skos:broader asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_IYT ;
       skos:inScheme asioModules:ESscientificDomains2ndList ;
       skos:notation "IEL" ;
@@ -330,7 +330,7 @@ asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_IEL
 asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_BVAE
       a       skos:Concept ;
       rdfs:label "Biología vegetal, animal y ecología" ;
-      emergel:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_BVAE ;
+      asio:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_BVAE ;
       skos:broader asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_CVS ;
       skos:inScheme asioModules:ESscientificDomains2ndList ;
       skos:notation "BVAE" ;
@@ -339,56 +339,56 @@ asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_BVAE
 asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_MCLI
       a       skos:Concept ;
       rdfs:label "MCLI" ;
-      emergel:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_MCLI ;
+      asio:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_MCLI ;
       skos:inScheme asioModules:ESscientificDomains2ndCodeList ;
       skos:prefLabel "MCLI" .
 
 asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_AGR
       a       skos:Concept ;
       rdfs:label "AGR" ;
-      emergel:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_AGR ;
+      asio:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_AGR ;
       skos:inScheme asioModules:ESscientificDomains2ndCodeList ;
       skos:prefLabel "AGR" .
 
 asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_CODE_IYT
       a       skos:Concept ;
       rdfs:label "IYT" ;
-      emergel:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_IYT ;
+      asio:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_IYT ;
       skos:inScheme asioModules:ESDomainCode1stList ;
       skos:prefLabel "IYT" .
 
 asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_CODE_CVS
       a       skos:Concept ;
       rdfs:label "CVS" ;
-      emergel:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_CVS ;
+      asio:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_CVS ;
       skos:inScheme asioModules:ESDomainCode1stList ;
       skos:prefLabel "CVS" .
 
 asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_IME
       a       skos:Concept ;
       rdfs:label "IME" ;
-      emergel:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_IME ;
+      asio:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_IME ;
       skos:inScheme asioModules:ESscientificDomains2ndCodeList ;
       skos:prefLabel "IME" .
 
 asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_ICI
       a       skos:Concept ;
       rdfs:label "ICI" ;
-      emergel:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_ICI ;
+      asio:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_ICI ;
       skos:inScheme asioModules:ESscientificDomains2ndCodeList ;
       skos:prefLabel "ICI" .
 
 asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_COM
       a       skos:Concept ;
       rdfs:label "COM" ;
-      emergel:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_COM ;
+      asio:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_COM ;
       skos:inScheme asioModules:ESscientificDomains2ndCodeList ;
       skos:prefLabel "COM" .
 
 asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_HA
       a       skos:Concept ;
       rdfs:label "Historia y arte" ;
-      emergel:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_HA ;
+      asio:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_HA ;
       skos:broader asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_CSH ;
       skos:inScheme asioModules:ESscientificDomains2ndList ;
       skos:notation "HA" ;
@@ -397,7 +397,7 @@ asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_HA
 asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_BFS
       a       skos:Concept ;
       rdfs:label "Biología fundamental y de sistemas" ;
-      emergel:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_BFS ;
+      asio:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_BFS ;
       skos:broader asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_CVS ;
       skos:inScheme asioModules:ESscientificDomains2ndList ;
       skos:notation "BFS" ;
@@ -407,7 +407,7 @@ asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_BFS
 asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_CVS
       a       skos:Concept ;
       rdfs:label "Ciencias de la vida y de la salud" ;
-      emergel:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_CODE_CVS ;
+      asio:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_CODE_CVS ;
       skos:inScheme asioModules:ESscientificDomains1stList ;
       skos:notation "CVS" ;
       skos:prefLabel "Ciències de la vida i de la salut"@ca , "Ciencias de la vida y de la salud" , "Ciencias de la vida y de la salud"@es , "'θjen̪ θjaz ðe la 'βi ða i ðe la sa 'luð"@es , "Sciences de la vie et de la santé"@fr , "laɪf ænd hɛlθ ˈsaɪənsɪz"@en , "laɪf ænd hɛlθ ˈsaɪənsəz"@en , "Ciencies de la vida y de la salú"@ast , "Sciéncias de la vida e de la santat"@oc , "Bizi eta osasun zientziak"@eu , "Ciencias da vida e da saúde"@gl , "Sciencias d'a vida e d'a salut"@an , "Céncias de la vida i de la salú"@ext , "Life and health sciences"@en , "Ciências da vida e da saúde"@pt ;
@@ -416,21 +416,21 @@ asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_CVS
 asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_GAN
       a       skos:Concept ;
       rdfs:label "GAN" ;
-      emergel:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_GAN ;
+      asio:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_GAN ;
       skos:inScheme asioModules:ESscientificDomains2ndCodeList ;
       skos:prefLabel "GAN" .
 
 asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_BMED
       a       skos:Concept ;
       rdfs:label "BMED" ;
-      emergel:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_BMED ;
+      asio:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_BMED ;
       skos:inScheme asioModules:ESscientificDomains2ndCodeList ;
       skos:prefLabel "BMED" .
 
 asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_QMC
       a       skos:Concept ;
       rdfs:label "Química" ;
-      emergel:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_QMC ;
+      asio:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_QMC ;
       skos:broader asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_CB ;
       skos:inScheme asioModules:ESscientificDomains2ndList ;
       skos:notation "QMC" ;
@@ -440,21 +440,21 @@ asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_QMC
 asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_TM
       a       skos:Concept ;
       rdfs:label "TM" ;
-      emergel:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_TM ;
+      asio:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_TM ;
       skos:inScheme asioModules:ESscientificDomains2ndCodeList ;
       skos:prefLabel "TM" .
 
 asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_TQ
       a       skos:Concept ;
       rdfs:label "TQ" ;
-      emergel:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_TQ ;
+      asio:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_TQ ;
       skos:inScheme asioModules:ESscientificDomains2ndCodeList ;
       skos:prefLabel "TQ" .
 
 asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_CB
       a       skos:Concept ;
       rdfs:label "Ciencias básicas" ;
-      emergel:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_CODE_CB ;
+      asio:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_CODE_CB ;
       skos:inScheme asioModules:ESscientificDomains1stList ;
       skos:notation "CB" ;
       skos:prefLabel "Sciéncias fondamentalas"@oc , "Ciències bàsiques"@ca , "θjen̪ θjaz 'βa si kas"@es , "Oinarrizko zientziak"@eu , "Sciencias basicas"@an , "Ciencies básiques"@ast , "Ciencias básicas" , "Ciencias básicas"@es , "Ciencias básicas"@gl , "Sciences fondamentales"@fr , "Ciências básicas"@pt , "ˈbeɪsɪk ˈsaɪənsɪz"@en , "Basic sciences"@en , "Céncias básicas"@ext , "ˈbeɪsɪk ˈsaɪənsəz"@en ;
@@ -463,7 +463,7 @@ asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_CB
 asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_DER
       a       skos:Concept ;
       rdfs:label "Derecho" ;
-      emergel:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_DER ;
+      asio:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_DER ;
       skos:broader asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_CSH ;
       skos:inScheme asioModules:ESscientificDomains2ndList ;
       skos:notation "DER" ;
@@ -472,7 +472,7 @@ asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_DER
 asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_FI
       a       skos:Concept ;
       rdfs:label "Física y ciencias del espacio" ;
-      emergel:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_FI ;
+      asio:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_FI ;
       skos:broader asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_CB ;
       skos:inScheme asioModules:ESscientificDomains2ndList ;
       skos:notation "FI" ;
@@ -482,21 +482,21 @@ asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_FI
 asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_BFS
       a       skos:Concept ;
       rdfs:label "BFS" ;
-      emergel:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_BFS ;
+      asio:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_BFS ;
       skos:inScheme asioModules:ESscientificDomains2ndCodeList ;
       skos:prefLabel "BFS" .
 
 asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_PS
       a       skos:Concept ;
       rdfs:label "PS" ;
-      emergel:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_PS ;
+      asio:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_PS ;
       skos:inScheme asioModules:ESscientificDomains2ndCodeList ;
       skos:prefLabel "PS" .
 
 asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_AGR
       a       skos:Concept ;
       rdfs:label "Agricultura" ;
-      emergel:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_AGR ;
+      asio:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_AGR ;
       skos:broader asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_CVS ;
       skos:inScheme asioModules:ESscientificDomains2ndList ;
       skos:notation "AGR" ;
@@ -505,7 +505,7 @@ asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_AGR
 asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_PS
       a       skos:Concept ;
       rdfs:label "Psicología" ;
-      emergel:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_PS ;
+      asio:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_PS ;
       skos:broader asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_CSH ;
       skos:inScheme asioModules:ESscientificDomains2ndList ;
       skos:notation "PS" ;
@@ -514,7 +514,7 @@ asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_PS
 asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_BMED
       a       skos:Concept ;
       rdfs:label "Biomedicina" ;
-      emergel:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_BMED ;
+      asio:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_BMED ;
       skos:broader asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_CVS ;
       skos:inScheme asioModules:ESscientificDomains2ndList ;
       skos:notation "BMED" ;
