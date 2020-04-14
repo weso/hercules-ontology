@@ -1,0 +1,464 @@
+@prefix foaf:    <http://xmlns.com/foaf/0.1/#> .
+@prefix asio:  <http://purl.org/asio/core#> .
+@prefix my:      <http://weso.es/tablines/project/scientificDomainss/resource/> .
+@prefix asioModules:  <http://purl.org/asio/modules#> .
+@prefix project:  <http://weso.es/tablines/project/scientificDomainss/> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:    <http://www.w3.org/ns/dcat#> .
+@prefix dct:     <http://purl.org/dc/terms/> .
+@prefix ontolex:  <http://www.w3.org/ns/lemon/ontolex#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix provo:   <http://www.w3.org/ns/prov#> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+
+asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_ICI
+      a       skos:Concept ;
+      rdfs:label "Ingeniería civil y arquitectura" ;
+      asio:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_ICI ;
+      skos:broader asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_IYT ;
+      skos:inScheme asioModules:ESscientificDomains2ndList ;
+      skos:notation "ICI" ;
+      skos:note "Investigación fundamental y aplicada en los ámbitos de la Ingeniería Civil y la Arquitectura. Integra toda la investigación destinada a la mejor planificación, diseño, construcción, conservación y control de las infraestructuras civiles así como la relativa a las construcciones arquitectónicas, urbanismo y la ordenación del territorio."@en ;
+      skos:prefLabel "Ingeniería civil y arquitectura" , "Ingeniería civil y arquitectura"@es , "Civil Engineering and Architecture"@en , "Enxeñaría Civil e Arquitectura"@gl , "Génie civil et architecture"@fr , "Engenharia civil e arquitetura"@pt , "Inxeniería civil y arquitectura"@ast , "Enginyeria civil i arquitectura"@ca .
+
+asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_ECO
+      a       skos:Concept ;
+      rdfs:label "Economía" ;
+      asio:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_ECO ;
+      skos:broader asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_CSH ;
+      skos:inScheme asioModules:ESscientificDomains2ndList ;
+      skos:notation "ECO" ;
+      skos:note "Investigación sobre los fundamentos teóricos de la economía, el uso y desarrollo de métodos cuantitativos, y su aplicación empírica a problemas económicos muy diversos. Estudio del comportamiento de individuos, familias y empresas, su interrelación con las instituciones, determinadas por las diversas regulaciones locales, nacionales e internacionales, y sus consecuencias tanto a nivel individual como colectivo. Las disciplinas económicas abarcan la Teórica Económica (que se subdivide en Microeconomía y Macroeconomía), la Economía Financiera, la Economía de la Empresa, la Contabilidad, la Historia Económica y la Economía Cuantitativa, en sus vertientes de Econometría Teórica y Economía Aplicada."@en ;
+      skos:prefLabel "Économie"@fr , "Economy"@en , "Economía"@es , "Economía"@ast , "Economía"@gl , "Economía" , "Economia"@ca , "Economia"@pt .
+
+asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_TA
+      a       skos:Concept ;
+      rdfs:label "Ciencia y tecnología de alimentos" ;
+      asio:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_TA ;
+      skos:broader asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_CVS ;
+      skos:inScheme asioModules:ESscientificDomains2ndList ;
+      skos:notation "TA" ;
+      skos:note "Investigaciones enfocadas al estudio de la caracterización de la calidad de los alimentos incluyendo las bases físicas, químicas y bioquímicas; microbiología y biotecnología de los alimentos; obtención, biodisponibilidad y evaluación de ingredientes funcionales en alimentos; nutrigenómica; seguridad alimentaria; desarrollo de nuevos productos y procesos tecnológicos en la industria alimentaria y desarrollo de técnicas analíticas avanzadas."@en ;
+      skos:prefLabel "Ciencia e Tecnoloxía dos Alimentos"@gl , "Food Science and Technology"@en , "Ciência e tecnologia de alimentos"@pt , "Ciència i tecnologia d'aliments"@ca , "Science et technologie alimentaire"@fr , "Ciencia y tecnoloxía d'alimentos"@ast , "Ciencia y tecnología de alimentos" , "Ciencia y tecnología de alimentos"@es .
+
+asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_HA
+      a       skos:Concept ;
+      rdfs:label "HA" ;
+      asio:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_HA ;
+      skos:inScheme asioModules:ESscientificDomains2ndCodeList ;
+      skos:prefLabel "HA" .
+
+asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_INF
+      a       skos:Concept ;
+      rdfs:label "INF" ;
+      asio:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_INF ;
+      skos:inScheme asioModules:ESscientificDomains2ndCodeList ;
+      skos:prefLabel "INF" .
+
+asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_FFI
+      a       skos:Concept ;
+      rdfs:label "FFI" ;
+      asio:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_FFI ;
+      skos:inScheme asioModules:ESscientificDomains2ndCodeList ;
+      skos:prefLabel "FFI" .
+
+asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_EDUC
+      a       skos:Concept ;
+      rdfs:label "Ciencias de la educación" ;
+      asio:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_EDUC ;
+      skos:broader asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_CSH ;
+      skos:inScheme asioModules:ESscientificDomains2ndList ;
+      skos:notation "EDUC" ;
+      skos:note "Investigaciones relacionadas con la Didáctica en general así como con las didácticas específicas de las distintas materias educativas. También se incluyen las investigaciones sobre aspectos históricos, psicológicos y metodológicos de la educación. Las investigaciones, de carácter teórico y aplicado, incluyen diagnósticos de situaciones y procesos educativos así como análisis de intervenciones educativas y evaluaciones."@en ;
+      skos:prefLabel "Sciences de l'éducation"@fr , "Ciencies de la educación"@ast , "Ciències de l'educació"@ca , "Ciências da educação"@pt , "Ciencias da educación"@gl , "Ciencias de la educación" , "Ciencias de la educación"@es , "Education sciences"@en .
+
+<http://purl.org/asio/modules#ES_SCIENTIFIC_DOMAIN_LEVEL_2_QMC >
+      a       skos:Concept ;
+      rdfs:label "Química" ;
+      asio:hasCode <http://purl.org/asio/modules#ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_QMC > ;
+      skos:broader asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_CB ;
+      skos:inScheme asioModules:ESscientificDomains2ndList ;
+      skos:notation "QMC " ;
+      skos:note "Aborda, desde o nivel molecular ata o macroscópico, a investigación sobre a composición, estrutura, preparación e propiedades de substancias ou mostras naturais e sintéticas que as conteñen, as interaccións e transformacións que sofren, o seu mecanismo, a instrumentación para a súa análise e a metodoloxía experimental e/ou teórica requirida para o seu estudo."@gl , "Aborda, desde el nivel molecular al macroscópico, la investigación sobre la composición, estructura, preparación y propiedades de las substancias naturales y sintéticas o muestras que las contienen, las interacciones y transformaciones que experimentan, el mecanismo de las mismas, la instrumentación para su análisis y la metodología experimental y/o teórica requerida para su estudio."@en , "Aborda, des del nivell molecular al macroscòpic, la recerca sobre la composició, estructura, preparació i propietats de les substàncies naturals i sintètiques o mostres que les contenen, les interaccions i transformacions que experimenten, llur mecanisme, la instrumentació per a la seva anàlisi i la metodologia experimental i / o teòrica requerida per al seu estudi."@ca ;
+      skos:prefLabel "Chemistry"@en , "Química" , "Química"@es , "Química"@ast , "Química"@ca , "Química"@gl , "Química"@pt , "Chimie"@fr .
+
+asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_FI
+      a       skos:Concept ;
+      rdfs:label "FI" ;
+      asio:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_FI ;
+      skos:inScheme asioModules:ESscientificDomains2ndCodeList ;
+      skos:prefLabel "FI" .
+
+asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_GAN
+      a       skos:Concept ;
+      rdfs:label "Ganadería y pesca" ;
+      asio:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_GAN ;
+      skos:broader asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_CVS ;
+      skos:inScheme asioModules:ESscientificDomains2ndList ;
+      skos:notation "GAN" ;
+      skos:note "Las investigaciones relacionadas con la producción, las enfermedades y sus estrategias de prevención, la reproducción y la genética de especies animales de interés para la ganadería, la acuicultura y la fauna silvestre."@en ;
+      skos:prefLabel "Pecuária e pesca"@pt , "Ganadería y pesca" , "Ganadería y pesca"@es , "Ganadería y pesca"@ast , "Gandería e pesca"@gl , "Ramaderia i pesca"@ca , "Bétail et pêche"@fr , "Livestock and fishing"@en .
+
+asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_CS
+      a       skos:Concept ;
+      rdfs:label "CS" ;
+      asio:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CS ;
+      skos:inScheme asioModules:ESscientificDomains2ndCodeList ;
+      skos:prefLabel "CS" .
+
+asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_IEL
+      a       skos:Concept ;
+      rdfs:label "IEL" ;
+      asio:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_IEL ;
+      skos:inScheme asioModules:ESscientificDomains2ndCodeList ;
+      skos:prefLabel "IEL" .
+
+asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_MTM
+      a       skos:Concept ;
+      rdfs:label "Matemáticas " ;
+      asio:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_MTM ;
+      skos:broader asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_CB ;
+      skos:inScheme asioModules:ESscientificDomains2ndList ;
+      skos:notation "MTM" ;
+      skos:note "Investigación en Matemáticas, incluíndo álxebra, análise real, análise complexa, análise funcional, análise armónica, análise numérica, combinativa, ecuacións funcionais, educación matemática, estatísticas, física matemática, xeometría, historia matemática, lóxica matemática, investigación operacional, matemáticas Aplicada, Matemática Discreta, Optimización, Teoría de Control, Teoría de Probabilidades, Teoría de Números e Topoloxía."@gl , "Recerca en matemàtiques, incloent-hi Àlgebra, Anàlisi Real, Anàlisi Complex, Anàlisi Funcional, anàlisi harmònica, Anàlisi Numèric, Combinatòria, Equacions Funcionals, Educació Matemàtica, Estadística, Física Matemàtica, Geometria, Història de la Matemàtica, Lògica Matemàtica, Investigació Operativa, Matemàtica aplicada, Matemàtica Discreta, Optimització, Teoria de Control, Teoria de la Probabilitat, Teoria de Nombres i Topologia."@ca , "Investigación de las matemáticas, Incluyendo Álgebra, Análisis Real, Análisis Complejo, Análisis Funcional, Análisis Armónico, Análisis Numérico, Combinatoria, Ecuaciones Funcionales, Educación Matemática, Estadística, Física Matemática, Geometría, Historia de la Matemática, Lógica Matemática, Investigación Operativa, Matemática Aplicada, Matemática Discreta, Optimización, Teoría de Control, Teoría de la Probabilidad, Teoría de Números y Topología."@en ;
+      skos:prefLabel "Matemáticas " , "Matemáticas "@es , "Matemàtiques"@ca , "Matemática"@pt , "Matemáticas"@gl , "Mathématiques"@fr , "Mathematics"@en , "Matemáticas"@ast .
+
+asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_IME
+      a       skos:Concept ;
+      rdfs:label "Ingeniería mecánica, naval y aeronáutica" ;
+      asio:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_IME ;
+      skos:broader asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_IYT ;
+      skos:inScheme asioModules:ESscientificDomains2ndList ;
+      skos:notation "IME" ;
+      skos:note "Líneas de investigación, tanto fundamentales como aplicadas, en el ámbito de las Ingenierías Mecánica, Naval y Aeronáutica. Entre otras, cabe citar las siguientes: cinemática y dinámica de mecanismos y máquinas, dinámica vehicular, cálculo, construcción y ensayo de máquinas, control y gobierno de máquinas, mecatrónica, vibraciones, acústica, diseño de elementos mecánicos y vehículos, diseño mecánico mediante elementos finitos, mecánica de medios continuos, mecánica de fluidos, métodos numéricos en sólidos y fluidos, biomecánica, mecanobiología, fractura, fatiga, plasticidad, caracterización de materiales, mecánica estructural, procesos de fabricación (mecanizado, conformado plástico, fundición, etc.), ingeniería de fabricación, automatización de la producción, ingeniería de la calidad, metrología, diseño de buques, sistemas embarcados y aparejos, ingeniería nuclear, ingeniería aeroespacial, ingeniería del transporte, termodinámica, transporte de calor y masa, combustión, máquinas hidráulicas, máquinas y motores térmicos, ingeniería térmica, ingeniería termoenergética, termotecnia y energía."@en ;
+      skos:prefLabel "Mechanical, naval and aeronautical engineering"@en , "Ingeniería mecánica, naval y aeronáutica" , "Ingeniería mecánica, naval y aeronáutica"@es , "Enxeñaría mecánica, naval e aeronáutica"@gl , "Enginyeria mecànica, naval i aeronàutica"@ca , "Inxeniería mecánica, naval y aeronáutica"@ast , "Engenharia mecânica, naval e aeronáutica"@pt , "Génie mécanique, naval et aéronautique"@fr .
+
+asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_
+      a       skos:Concept ;
+      rdfs:label "" ;
+      asio:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_ ;
+      skos:broader asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_ ;
+      skos:inScheme asioModules:ESscientificDomains2ndList ;
+      skos:notation "" ;
+      skos:prefLabel ""@fr , "" , ""@es , ""@ast , ""@ca , ""@gl , ""@en , " "@pt .
+
+asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_TM
+      a       skos:Concept ;
+      rdfs:label "Ciencia y tecnología de materiales" ;
+      asio:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_TM ;
+      skos:broader asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_IYT ;
+      skos:inScheme asioModules:ESscientificDomains2ndList ;
+      skos:notation "TM" ;
+      skos:note "Campo multidisciplinar que incluye varias áreas de la ciencia y la ingeniería en torno a propiedades físicas macroscópicas de los materiales (relaciones estructura-propiedades y diseño de propiedades específicas) en cuanto a su aplicación en obras, máquinas, o productos necesarios o requeridos por la sociedad. Incluye elementos de la química y física, ingeniería química, mecánica, civil y eléctrica, así como la nanociencia y la nanotecnología en los aspectos relativos a nanoestructuras y nanomateriales. Materiales para la energía, eléctricos, magnéticos, estructurales, polímeros y biomateriales, cerámicos, de construcción, ópticos y fotónicos."@en ;
+      skos:prefLabel "Science et technologie des matériaux"@fr , "Ciència i tecnologia de materials"@ca , "Ciencia y tecnología de materiales" , "Ciencia y tecnología de materiales"@es , "Science and technology of materials"@en , "Ciencia y tecnoloxía de materiales"@ast , "Ciência e tecnologia de materiais"@pt , "Ciencia e tecnoloxía dos materiais"@gl .
+
+asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_BVAE
+      a       skos:Concept ;
+      rdfs:label "BVAE" ;
+      asio:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_BVAE ;
+      skos:inScheme asioModules:ESscientificDomains2ndCodeList ;
+      skos:prefLabel "BVAE" .
+
+asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_EDUC
+      a       skos:Concept ;
+      rdfs:label "EDUC" ;
+      asio:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_EDUC ;
+      skos:inScheme asioModules:ESscientificDomains2ndCodeList ;
+      skos:prefLabel "EDUC" .
+
+asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_TA
+      a       skos:Concept ;
+      rdfs:label "TA" ;
+      asio:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_TA ;
+      skos:inScheme asioModules:ESscientificDomains2ndCodeList ;
+      skos:prefLabel "TA" .
+
+asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_MCLI
+      a       skos:Concept ;
+      rdfs:label "Medicina clínica y epidemiología" ;
+      asio:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_MCLI ;
+      skos:broader asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_CVS ;
+      skos:inScheme asioModules:ESscientificDomains2ndList ;
+      skos:notation "MCLI" ;
+      skos:note "Engloba todos los estudios que tienen como objetivo un mejor conocimiento de la enfermedad, de sus mecanismos o de sus posibles tratamientos, cuando una parte significativa de los estudios se realiza en seres humanos. "@en , "Engloba tots els estudis que tenen com a objectiu un millor coneixement de la malaltia, dels seus mecanismes o dels seus possibles tractaments, quan una part significativa dels estudis es realitza en éssers humans."@ca , "Abarca todos os estudos que teñen como obxectivo un mellor coñecemento da enfermidade, os seus mecanismos ou os seus posibles tratamentos, cando unha parte significativa dos estudos se realizan en humanos."@gl ;
+      skos:prefLabel "Medicina Clínica e Epidemioloxía"@gl , "Medicina clínica e epidemiologia"@pt , "Medicina clínica y epidemiología" , "Medicina clínica y epidemiología"@es , "Médecine clinique et épidémiologie"@fr , "Medicina clínica y epidemioloxía"@ast , "Clinical medicine and epidemiology"@en , "Medicina clínica i epidemiologia"@ca .
+
+asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_INF
+      a       skos:Concept ;
+      rdfs:label "Ciencias de la computación y tecnología informática" ;
+      asio:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_INF ;
+      skos:broader asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_IYT ;
+      skos:inScheme asioModules:ESscientificDomains2ndList ;
+      skos:notation "INF" ;
+      skos:note "Investigaciones relacionadas con las ciencias de la Computación, la Ingeniería del Software, la Ingeniería de los Computadores, la Inteligencia Artificial, los Sistemas de Información, y las Tecnologías y Servicios Informáticos."@en ;
+      skos:prefLabel "Ciències de la computació i tecnologia informàtica"@ca , "Ciência da computação e tecnologia da computação"@pt , "Ciencias de la computación y tecnología informática" , "Ciencias de la computación y tecnología informática"@es , "Computer science and computer technology"@en , "Informática e tecnoloxía informática"@gl , "Informatique et technologie informatique"@fr , "Ciencies de la computación y tecnoloxía informática"@ast .
+
+asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_ECO
+      a       skos:Concept ;
+      rdfs:label "ECO" ;
+      asio:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_ECO ;
+      skos:inScheme asioModules:ESscientificDomains2ndCodeList ;
+      skos:prefLabel "ECO" .
+
+asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CS
+      a       skos:Concept ;
+      rdfs:label "Ciencias sociales" ;
+      asio:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_CS ;
+      skos:broader asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_CSH ;
+      skos:inScheme asioModules:ESscientificDomains2ndList ;
+      skos:notation "CS" ;
+      skos:note "Objetivos científicos relacionados las disciplinas de Análisis Geográfico Regional, Antropología Social, Biblioteconomía y Documentación, Ciencia Política y de la Administración, Comunicación Audiovisual y Publicidad, Geografía Humana, Historia del Pensamiento y de los Movimientos Sociales, Periodismo, Sociología, Trabajo Social y Servicios Sociales, y Urbanismo y Ordenación del Territorio. Existen otras disciplinas de Ciencias Sociales, como es el caso de la Economía, o Ciencias de la Educación, que cuentan con su área de evaluación propia con lo que no entrarían en esta área."@en ;
+      skos:prefLabel "Ciências sociais"@pt , "Ciencias sociais"@gl , "Sciences sociales"@fr , "Social Sciences"@en , "Ciències socials"@ca , "Ciencias sociales" , "Ciencias sociales"@es , "Ciencies sociales"@ast .
+
+asioModules:ESscientificDomains2ndList
+      a       asioModules:scientificDomains ;
+      rdfs:label "'a ɾe as θjen̪ 'ti fi kas"@es-ES-fonipa , "Áreas scientificas de segundo nivel"@an , "Second-level scientific domains"@en , "Áreas científicas de segundo nível"@pt , "Dominis científics de segon nivell"@ca , "Bigarren mailako arlo zientifikoak"@eu , "Domains scientifiques de deuxième niveau"@fr , "ˈsɛkənd ˈlɛvəl ˌsaɪənˈtɪfɪk doʊˈmeɪnz"@en-US-fonipa , "Áreas scientificas de segon nivel"@oc , "Árees científiques de segundu nivel"@ast , "duˈminis siənˈtifikz ðə səˈɣon niˈβeʎ"@ca-CA-fonipa , "ˈsɛkənd ˈlɛvl ˌsaɪənˈtɪfɪk dəʊˈmeɪnz"@en-GB-fonipa , "Áreas científicas de segundo nivel"@es , "Áreas científicas de segundo nivel"@gl ;
+      skos:prefLabel "'a ɾe as θjen̪ 'ti fi kas"@es-ES-fonipa , "Áreas scientificas de segundo nivel"@an , "Second-level scientific domains"@en , "Áreas científicas de segundo nível"@pt , "Dominis científics de segon nivell"@ca , "Bigarren mailako arlo zientifikoak"@eu , "Domains scientifiques de deuxième niveau"@fr , "ˈsɛkənd ˈlɛvəl ˌsaɪənˈtɪfɪk doʊˈmeɪnz"@en-US-fonipa , "Áreas scientificas de segon nivel"@oc , "Árees científiques de segundu nivel"@ast , "duˈminis siənˈtifikz ðə səˈɣon niˈβeʎ"@ca-CA-fonipa , "ˈsɛkənd ˈlɛvl ˌsaɪənˈtɪfɪk dəʊˈmeɪnz"@en-GB-fonipa , "Áreas científicas de segundo nivel"@gl , "Áreas científicas de segundo nivel"@es ;
+      ontolex:phoneticRep "'a ɾe as θjen̪ 'ti fi kas"@es-ES-fonipa , "ˈsɛkənd ˈlɛvəl ˌsaɪənˈtɪfɪk doʊˈmeɪnz"@en-US-fonipa , "duˈminis siənˈtifikz ðə səˈɣon niˈβeʎ"@ca-CA-fonipa , "ˈsɛkənd ˈlɛvl ˌsaɪənˈtɪfɪk dəʊˈmeɪnz"@en-GB-fonipa .
+
+asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_DER
+      a       skos:Concept ;
+      rdfs:label "DER" ;
+      asio:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_DER ;
+      skos:inScheme asioModules:ESscientificDomains2ndCodeList ;
+      skos:prefLabel "DER" .
+
+asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_FFI
+      a       skos:Concept ;
+      rdfs:label "Filología y filosofía" ;
+      asio:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_FFI ;
+      skos:broader asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_CSH ;
+      skos:inScheme asioModules:ESscientificDomains2ndList ;
+      skos:notation "FFI" ;
+      skos:note "Cubre dos ámbitos principales: la Filología y la Filosofía. El ámbito filológico comprende los estudios de Lengua y Literatura y sus relaciones con la cultura y la sociedad. Se incluyen tanto los trabajos que abordan estas disciplinas desde una perspectiva teórica o general como los que versan sobre lenguas o literaturas particulares de cualquier período histórico. También corresponden a esta subárea las investigaciones sobre Traducción e Interpretación, así como las que desarrollan aplicaciones y recursos tecnológicos relacionados con la lengua y la literatura. Por lo que respecta al ámbito de la Filosofía, sus investigaciones tratan de las cuestiones más generales del estudio de la realidad, de la posibilidad de nuestro conocimiento de ellas, de la constitución humana y el lugar del ser humano en el mundo, y de todas aquellas discusiones metodológicas y conceptuales de índole general que las ciencias particulares plantean."@en ;
+      skos:prefLabel "Filologia i filosofia"@ca , "Philology and philosophy"@en , "Philologie et philosophie"@fr , "Filologia e filosofia"@pt , "Filoloxía e filosofía"@gl , "Filoloxía y filosofía"@ast , "Filología y filosofía" , "Filología y filosofía"@es .
+
+asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_CT
+      a       skos:Concept ;
+      rdfs:label "CT" ;
+      asio:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CT ;
+      skos:inScheme asioModules:ESscientificDomains2ndCodeList ;
+      skos:prefLabel "CT" .
+
+asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_COM
+      a       skos:Concept ;
+      rdfs:label "Tecnología electrónica y de las comunicaciones" ;
+      asio:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_COM ;
+      skos:broader asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_IYT ;
+      skos:inScheme asioModules:ESscientificDomains2ndList ;
+      skos:notation "COM" ;
+      skos:note "Tiene carácter multidisciplinar y una clara orientación tecnológica, de investigación aplicada, para el desarrollo de nuevos productos, sistemas y servicios. Engloba todos los niveles de los sistemas electrónicos orientados a la transmisión y procesado de las señales, a las telecomunicaciones y al tratamiento de la información. En los primeros niveles: el desarrollo de dispositivos y circuitos integrados electrónicos para aplicaciones de comunicaciones, el tratamiento analógico y digital de señales para sistemas de telecomunicación, los componentes electromagnéticos tanto por medios guiados como por radio (antenas), y los subsistemas de radiofrecuencia y microondas para sistemas de radiocomunicaciones. En los niveles más altos: los sistemas complejos de modulaciones, de multiplexado de señales y la ingeniería telemática en el desarrollo de sistemas de telecomunicación y de tratamiento de la información, incluyendo los desarrollos software y los protocolos de comunicaciones."@en ;
+      skos:prefLabel "Tecnología electrónica y de las comunicaciones" , "Tecnología electrónica y de las comunicaciones"@es , "Technologie électronique et de communication"@fr , "Tecnologia eletrônica e de comunicações"@pt , "Tecnologia electrònica i de les comunicacions"@ca , "Electronic and communications technology"@en , "Tecnoloxía electrónica y de les comunicaciones"@ast , "Tecnoloxía electrónica e de comunicacións"@gl .
+
+asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_MTM
+      a       skos:Concept ;
+      rdfs:label "MTM" ;
+      asio:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_MTM ;
+      skos:inScheme asioModules:ESscientificDomains2ndCodeList ;
+      skos:prefLabel "MTM" .
+
+asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_
+      a       skos:Concept ;
+      rdfs:label "" ;
+      asio:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_ ;
+      skos:inScheme asioModules:ESscientificDomains2ndCodeList ;
+      skos:prefLabel "" .
+
+<http://purl.org/asio/modules#ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_QMC >
+      a       skos:Concept ;
+      rdfs:label "QMC " ;
+      asio:codeOf <http://purl.org/asio/modules#ES_SCIENTIFIC_DOMAIN_LEVEL_2_QMC > ;
+      skos:inScheme asioModules:ESscientificDomains2ndCodeList ;
+      skos:prefLabel "QMC " .
+
+asioModules:ESscientificDomains2ndCodeList
+      a       asioModules:scientificDomains ;
+      rdfs:label "Codes for the second-level scientific domains"@en , "Códigos das áreas científicas de segundo nível"@pt , "Códigos de les árees científiques de segundu nivel"@ast , "Códigos de las áreas científicas de segundo nivel"@es , "Codis dels dominis científics de segon nivell"@ca , "Códigos das áreas científicas de segundo nivel"@gl ;
+      skos:prefLabel "Codes for the second-level scientific domains"@en , "Códigos das áreas científicas de segundo nível"@pt , "Códigos de las áreas científicas de segundo nivel"@es , "Códigos de les árees científiques de segundu nivel"@ast , "Codis dels dominis científics de segon nivell"@ca , "Códigos das áreas científicas de segundo nivel"@gl .
+
+asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CT
+      a       skos:Concept ;
+      rdfs:label "Ciencias de la tierra " ;
+      asio:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_CT ;
+      skos:broader asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_CB ;
+      skos:inScheme asioModules:ESscientificDomains2ndList ;
+      skos:notation "CT" ;
+      skos:note "Investigación sobre o sistema terrestre, incluíndo a historia e evolución da biosfera, litosfera, hidrosfera e atmosfera, as súas interaccións, así como o seu estado actual e posible evolución futura. Área moi interdisciplinaria xa que integra diversas disciplinas básicas para o estudo de problemas complexos, tanto fundamentais como aplicados, que a Terra presenta a diferentes escalas espaciais e temporais. Inclúe Climatoloxía, Edafoloxía, Estratigrafía, Xeodesia, Xeofísica, Xeoloxía Estrutural, Xeomorfoloxía, Geoquímica, Hidroloxía, Meteoroloxía, Mineraloxía, Oceanografía, Paleontoloxía, Petrografía, Petroloxía, Sedimentoloxía, Sismoloxía, Tectonica ou Volcanoloxía."@gl , "Investigaciones sobre el sistema terrestre, incluyendo la historia y evolución de la biosfera, litosfera, hidrosfera y atmósfera, sus interacciones, así como su estado actual y posible evolución futura. Área muy interdisciplinar en tanto que integra diversas disciplinas básicas para el estudio de los problemas complejos, tanto fundamentales como aplicados, que presenta la Tierra a distintas escalas espaciales y temporales. Engloba la Climatología, Edafología, Estratigrafía, Geodesia, Geofísica, Geología Estructural, Geomorfología, Geoquímica, Hidrología, Meteorología, Mineralogía, Oceanografía, Paleontología, Petrografía, Petrología, Sedimentología, Sismología, Tectónica o Vulcanología."@en , "Recerca sobre el sistema terrestre, incloent la història i evolució de la biosfera, litosfera, hidrosfera i atmosfera, les seves interaccions, així com el seu estat actual i possible evolució futura. Àrea molt interdisciplinària en tant que integra diverses disciplines bàsiques per a l'estudi dels problemes complexos, tant fonamentals com aplicats, que presenta la Terra a diferents escales espacials i temporals. Engloba la Climatologia, Edafologia, Estratigrafia, Geodèsia, Geofísica, Geologia Estructural, Geomorfologia, Geoquímica, Hidrologia, Meteorologia, Mineralogia, Oceanografia, Paleontologia, Petrografía, Petrologia, Sedimentologia, Sismologia, Tectònica o Vulcanologia."@ca ;
+      skos:prefLabel "Ciencias da terra"@gl , "Ciències de la terra"@ca , "Ciências da terra"@pt , "Ciencies de la tierra"@ast , "Ciencias de la tierra " , "Ciencias de la tierra "@es , "Earth sciences"@en , "Sciences de la terre"@fr .
+
+asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_TQ
+      a       skos:Concept ;
+      rdfs:label "Tecnología química" ;
+      asio:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_TQ ;
+      skos:broader asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_IYT ;
+      skos:inScheme asioModules:ESscientificDomains2ndList ;
+      skos:notation "TQ" ;
+      skos:note "Investigación dirigida a la búsqueda de mejoras en la concepción o en el funcionamiento de las operaciones físicas, químicas o bioquímicas que componen los procesos industriales así como a la investigación de nuevos procesos alternativos. También incluye la I+D en tecnologías y procesos medioambientales dirigidos a disminuir la contaminación en origen o a paliar sus efectos. Todo ello utilizando criterios de sostenibilidad, es decir conjugando la viabilidad económica, social y medioambiental."@en ;
+      skos:prefLabel "Technologie chimique"@fr , "Tecnologia química"@pt , "Chemical technology"@en , "tecnologia química"@ca , "Tecnología química" , "Tecnología química"@es , "Tecnoloxía química"@ast , "Tecnoloxía química"@gl .
+
+asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_IEL
+      a       skos:Concept ;
+      rdfs:label "Ingeniería eléctrica, electrónica y automática" ;
+      asio:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_IEL ;
+      skos:broader asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_IYT ;
+      skos:inScheme asioModules:ESscientificDomains2ndList ;
+      skos:notation "IEL" ;
+      skos:note "Engloba los contenidos temáticos completos de las ingenierías eléctrica clásica y de control y, parcialmente, de la ingeniería electrónica. Dentro de la Ingeniería Eléctrica clásica se encuentran los temas de investigación ligados a diseño y uso de las máquinas eléctricas (generadores, transformadores y motores), a los procesos de generación transporte y distribución de energía eléctrica y a su gestión. La ingeniería del control incluye los temas ligados al modelado de sistemas, la aplicación de la teoría de control a los sistemas y el desarrollo y uso de dispositivos y equipos de control automático de procesos, industrial y domésticos (incluyendo robots y sistemas domóticos). Finalmente, la Ingeniería Electrónica incluye el desarrollo de dispositivos electrónicos, circuitos integrados y equipos y sistemas electrónicos de uso esencialmente industrial y doméstico, excluyendo los destinados a comunicaciones."@en ;
+      skos:prefLabel "Enxeñaría eléctrica, electrónica e automática"@gl , "Enginyeria elèctrica, electrònica i automàtica"@ca , "Génie électrique, électronique et automatique"@fr , "Inxeniería eléctrica, electrónica y automática"@ast , "Electrical, electronic and automatic engineering"@en , "Engenharia elétrica, eletrônica e automática"@pt , "Ingeniería eléctrica, electrónica y automática" , "Ingeniería eléctrica, electrónica y automática"@es .
+
+asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_BVAE
+      a       skos:Concept ;
+      rdfs:label "Biología vegetal, animal y ecología" ;
+      asio:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_BVAE ;
+      skos:broader asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_CVS ;
+      skos:inScheme asioModules:ESscientificDomains2ndList ;
+      skos:notation "BVAE" ;
+      skos:note "Investigación sobre la diversidad de los organismos vivos y cómo estos evolucionan e interaccionan en el marco de la biosfera. Se consideran los aspectos estructurales, funcionales y dinámicos a distintas escalas espacio-temporales de la biología de organismos y ecosistemas."@en ;
+      skos:prefLabel "Biología vegetal, animal y ecología" , "Biología vegetal, animal y ecología"@es , "Bioloxía vexetal, animal e ecolóxica"@gl , "Biologia vegetal, animal e ecológica"@pt , "Biologie végétale, animale et écologique"@fr , "Plant, animal and ecology biology"@en , "Bioloxía vexetal, animal y ecoloxía"@ast , "Biologia vegetal, animal i ecologia"@ca .
+
+asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_MCLI
+      a       skos:Concept ;
+      rdfs:label "MCLI" ;
+      asio:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_MCLI ;
+      skos:inScheme asioModules:ESscientificDomains2ndCodeList ;
+      skos:prefLabel "MCLI" .
+
+asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_AGR
+      a       skos:Concept ;
+      rdfs:label "AGR" ;
+      asio:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_AGR ;
+      skos:inScheme asioModules:ESscientificDomains2ndCodeList ;
+      skos:prefLabel "AGR" .
+
+asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_IME
+      a       skos:Concept ;
+      rdfs:label "IME" ;
+      asio:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_IME ;
+      skos:inScheme asioModules:ESscientificDomains2ndCodeList ;
+      skos:prefLabel "IME" .
+
+asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_ICI
+      a       skos:Concept ;
+      rdfs:label "ICI" ;
+      asio:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_ICI ;
+      skos:inScheme asioModules:ESscientificDomains2ndCodeList ;
+      skos:prefLabel "ICI" .
+
+asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_COM
+      a       skos:Concept ;
+      rdfs:label "COM" ;
+      asio:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_COM ;
+      skos:inScheme asioModules:ESscientificDomains2ndCodeList ;
+      skos:prefLabel "COM" .
+
+asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_HA
+      a       skos:Concept ;
+      rdfs:label "Historia y arte" ;
+      asio:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_HA ;
+      skos:broader asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_CSH ;
+      skos:inScheme asioModules:ESscientificDomains2ndList ;
+      skos:notation "HA" ;
+      skos:note "En el ámbito de Historia se incluyen todas las disciplinas por épocas –Prehistoria, Historia Antigua, Medieval, Moderna y Contemporánea- y especialidades –Historia de América, Historia de la Ciencia, Estudios árabes e islámicos y estudios hebreos y arameos-, junto con la arqueología y las Ciencias y técnicas historiográficas, la teoría de la Historia y la Historiografía. El ámbito de Arte reúne Historia del Arte, Estética y Teoría de las Artes, Historia de la Música, del Cine y de los medios audiovisuales, Composición arquitectónica, Urbanística y ordenación del territorio, Escultura, Pintura y Dibujo, así como las ciencias y técnicas relacionadas con la restauración y conservación del patrimonio artístico."@en ;
+      skos:prefLabel "Historia y arte" , "Historia y arte"@es , "Historia y arte"@ast , "Histoire et art"@fr , "Historia e arte"@gl , "História e arte"@pt , "Història i art"@ca , "History and art"@en .
+
+asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_BFS
+      a       skos:Concept ;
+      rdfs:label "Biología fundamental y de sistemas" ;
+      asio:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_BFS ;
+      skos:broader asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_CVS ;
+      skos:inScheme asioModules:ESscientificDomains2ndList ;
+      skos:notation "BFS" ;
+      skos:note "Investigación sobre os fundamentos da función biolóxica, a estrutura e as súas interrelacións, desde o nivel molecular ao do organismo e sen distinción do modelo de estudo biolóxico, salvo aquel que ten como finalidade principal mellorar a saúde humana."@gl , "Investigación sobre los fundamentos de la función biológica, estructura y sus interrelaciones, desde el nivel molecular al del organismo, y sin distinción del modelo biológico de estudio, a excepción de aquélla cuyo propósito principal sea mejorar la salud humana."@en , "Recerca sobre els fonaments de la funció biològica, estructura i les seves interrelacions, des del nivell molecular a el de l'organisme, i sense distinció de el model biològic d'estudi, a excepció d'aquella el propòsit principal del qual sigui millorar la salut humana."@ca ;
+      skos:prefLabel "Biologia fonamental i de sistemes"@ca , "Fundamentos e bioloxía dos sistemas"@gl , "Bioloxía fundamental y de sistemes"@ast , "Biologia fundamental e de sistemas"@pt , "Biología fundamental y de sistemas" , "Biología fundamental y de sistemas"@es , "Biologie fondamentale et systémique"@fr , "Fundamental and systems biology"@en .
+
+asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_GAN
+      a       skos:Concept ;
+      rdfs:label "GAN" ;
+      asio:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_GAN ;
+      skos:inScheme asioModules:ESscientificDomains2ndCodeList ;
+      skos:prefLabel "GAN" .
+
+asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_BMED
+      a       skos:Concept ;
+      rdfs:label "BMED" ;
+      asio:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_BMED ;
+      skos:inScheme asioModules:ESscientificDomains2ndCodeList ;
+      skos:prefLabel "BMED" .
+
+asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_TM
+      a       skos:Concept ;
+      rdfs:label "TM" ;
+      asio:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_TM ;
+      skos:inScheme asioModules:ESscientificDomains2ndCodeList ;
+      skos:prefLabel "TM" .
+
+asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_TQ
+      a       skos:Concept ;
+      rdfs:label "TQ" ;
+      asio:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_TQ ;
+      skos:inScheme asioModules:ESscientificDomains2ndCodeList ;
+      skos:prefLabel "TQ" .
+
+asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_DER
+      a       skos:Concept ;
+      rdfs:label "Derecho" ;
+      asio:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_DER ;
+      skos:broader asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_CSH ;
+      skos:inScheme asioModules:ESscientificDomains2ndList ;
+      skos:notation "DER" ;
+      skos:note "Integrada por la totalidad de sectores y disciplinas del ordenamiento jurídico, tanto desde una perspectiva nacional como internacional. Se incluyen las materias propias del Derecho Público (organización del Estado, acción administrativa, aspectos fiscales, penales y procesales) y las del Derecho Privado (la persona y su actuación jurídico-patrimonial, la familia y la herencia; el mercado, el consumo y la empresa), sin perjuicio de otras cuestiones, como la regulación jurídica del trabajo, a medio camino entre ambas categorías. Además, se incluyen aspectos relativos a la evolución histórica del Derecho (comprendiendo el Derecho Romano), así como los característicos de la visión teórica y filosófica del ordenamiento jurídico."@en ;
+      skos:prefLabel "Droit"@fr , "Dereito"@gl , "Dret"@ca , "Drechu"@ast , "Direito"@pt , "Law"@en , "Derecho" , "Derecho"@es .
+
+asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_FI
+      a       skos:Concept ;
+      rdfs:label "Física y ciencias del espacio" ;
+      asio:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_FI ;
+      skos:broader asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_CB ;
+      skos:inScheme asioModules:ESscientificDomains2ndList ;
+      skos:notation "FI" ;
+      skos:note "Junto con las áreas de conocimiento propias de la física moderna, como la Física Cuántica, Relatividad especial y general y sus diferentes aplicaciones a la estructura de la materia y del universo, se incluyen también tópicos como Biofísica, Óptica, Sistemas Complejos, fenómenos no-lineales, Nanotecnología, Computación Cuántica y otros."@en , "Juntament amb les àrees de coneixement pròpies de la física moderna, com la Física Quàntica, Relativitat especial i general i les seves diferents aplicacions a l'estructura de la matèria i de l'univers, s'inclouen també tòpics com Biofísica, Òptica, Sistemes Complexos, fenòmens no- lineals, Nanotecnologia, Computació Quàntica i altres."@ca , "Xunto ás áreas de coñecemento propias da física moderna, como a Física Cuántica, a Relatividade Especial e Xeral e as súas diferentes aplicacións á estrutura da materia e ao universo, tamén se inclúen temas como Biofísica, Óptica, Sistemas Complexos, non fenómenos. Lineal, Nanotecnoloxía, Informática cuántica e outros."@gl ;
+      skos:prefLabel "Physique et sciences spatiales"@fr , "Física e ciencias do espazo"@gl , "Physics and space sciences"@en , "Física i ciències de l'espai"@ca , "Física y ciencies del espaciu"@ast , "Física y ciencias del espacio" , "Física y ciencias del espacio"@es , "Física e ciências espaciais"@pt .
+
+asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_BFS
+      a       skos:Concept ;
+      rdfs:label "BFS" ;
+      asio:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_BFS ;
+      skos:inScheme asioModules:ESscientificDomains2ndCodeList ;
+      skos:prefLabel "BFS" .
+
+asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_PS
+      a       skos:Concept ;
+      rdfs:label "PS" ;
+      asio:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_PS ;
+      skos:inScheme asioModules:ESscientificDomains2ndCodeList ;
+      skos:prefLabel "PS" .
+
+asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_AGR
+      a       skos:Concept ;
+      rdfs:label "Agricultura" ;
+      asio:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_AGR ;
+      skos:broader asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_CVS ;
+      skos:inScheme asioModules:ESscientificDomains2ndList ;
+      skos:notation "AGR" ;
+      skos:note "Objetivos científicos relacionados con la fitotecnia, manejo de cultivos y gestión de los sistemas agroforestales, incluyendo la interacción suelo-planta, fisiología y productividad de cultivos, mejora genética de plantas, enfermedades, plagas y malherbología, así como otros del ámbito de la Economía y Política Agraria. Desde el punto de vista metodológico se incluyen aquellas aproximaciones de carácter convencional en el ámbito de la Ingeniería Agroforestal hasta las más recientes derivadas de la Biología Molecular, Bioinformática, Electrónica y Nanotecnologías, entre otras. Son objeto de estudio los cultivos herbáceos, leñosos y los sistemas forestales, pudiendo abordarse su estudio desde el nivel de los agrosistemas y las poblaciones hasta el nivel molecular."@en ;
+      skos:prefLabel "Agriculture"@fr , "farming"@en , "Agricultura"@gl , "Agricultura"@pt , "Agricultura" , "Agricultura"@es , "Agricultura"@ast , "Agricultura"@ca .
+
+asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_BMED
+      a       skos:Concept ;
+      rdfs:label "Biomedicina" ;
+      asio:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_BMED ;
+      skos:broader asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_CVS ;
+      skos:inScheme asioModules:ESscientificDomains2ndList ;
+      skos:notation "BMED" ;
+      skos:note "Investigación e estudo en Bioloxía Molecular, Celular, Xenética, Microbioloxía, Fisioloxía, Inmunoloxía e áreas relacionadas, con aplicacións ou interese na Biomedicina."@gl , "Investigación y estudio en Biología Molecular, Celular, Genética, Microbiología, Fisiología, Inmunología y áreas afines, con aplicaciones o interés en Biomedicina."@en , "Recerca i estudi en Biologia Molecular, Cel·lular, Genètica, Microbiologia, Fisiologia, Immunologia i àrees afins, amb aplicacions o interès en biomedicina."@ca ;
+      skos:prefLabel "Biomedicina" , "Biomedicina"@es , "Biomedicina"@ast , "Biomedicina"@gl , "Biomedicina"@pt , "Biomedicine"@en , "Biomédecine"@fr , "biomedicina"@ca .
+
+asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_PS
+      a       skos:Concept ;
+      rdfs:label "Psicología" ;
+      asio:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_PS ;
+      skos:broader asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_CSH ;
+      skos:inScheme asioModules:ESscientificDomains2ndList ;
+      skos:notation "PS" ;
+      skos:note "Abarca el estudio científico de los procesos de aprendizaje, cognitivos, emocionales, motivacionales, de personalidad, interpersonales y sociales en el ser humano, así como los métodos para su medición. El objetivo fundamental es comprender el papel de estos procesos, y sus bases neurofuncionales, en el comportamiento tanto individual como colectivo, y en su desarrollo desde la infancia hasta la vejez. El conocimiento derivado se aplica a diversos aspectos de la actividad humana como la familia, la educación, la actividad física y deportiva, las organizaciones, las relaciones laborales, y el derecho, así como a la prevención, diagnóstico y tratamiento de los problemas de salud."@en ;
+      skos:prefLabel "Psychologie"@fr , "Psicoloxía"@ast , "Psicoloxía"@gl , "Psychology"@en , "Psicologia"@ca , "Psicologia"@pt , "Psicología" , "Psicología"@es .
