@@ -15,7 +15,7 @@ asioModules:SCIENTIFIC_DOMAIN_LEVEL_1_IYT
       a       skos:Concept ;
       rdfs:label "Ingenierías y tecnologías" ;
       asio:hasCode asioModules:SCIENTIFIC_DOMAIN_LEVEL_1_CODE_IYT ;
-      skos:inScheme asioModules:ScientificDomainList ;
+      skos:inScheme asioModules:ESscientificDomains1stList ;
       skos:notation "IYT" ;
       skos:prefLabel "Ingenierías y tecnologías" , "Ingenierías y tecnologías"@es , "Engenharia e tecnologias"@pt , "Inxeniería y tecnoloxíes"@ast , "ˈɛnʤəˈnɪrɪŋ ænd tɛkˈnɑləʤiz"@en , "Enchinierías e tecnolochías"@an , "Enxeñaría e tecnoloxías"@gl , "ˌɛnʤɪˈnɪərɪŋ ænd tɛkˈnɒləʤiz"@en , "iŋ xe nje 'ɾi as i tek no lo 'xi as"@es , "Ingenierías i tecnologías"@ext , "Enginyeria i tecnologies"@ca , "Ingeniaritza eta teknologiak"@eu , "Engenhariás e tecnologias"@oc , "Engineering and technologies"@en , "Ingénierie et technologies"@fr ;
       ontolex:phoneticRep "ˈɛnʤəˈnɪrɪŋ ænd tɛkˈnɑləʤiz"@en , "ˌɛnʤɪˈnɪərɪŋ ænd tɛkˈnɒləʤiz"@en , "iŋ xe nje 'ɾi as i tek no lo 'xi as"@es .
@@ -24,20 +24,14 @@ asioModules:SCIENTIFIC_DOMAIN_LEVEL_1_CODE_CSH
       a       skos:Concept ;
       rdfs:label "CSH" ;
       asio:codeOf asioModules:SCIENTIFIC_DOMAIN_LEVEL_1_CSH ;
-      skos:inScheme asioModules:ScientificDomainClassification , asioModules:ScientificDomainCodeList ;
+      skos:inScheme asioModules:ESDomainCode1stList ;
       skos:prefLabel "CSH" .
-
-asioModules:ESRegionList
-      a       asioModules:scientificAreas ;
-      rdfs:label "Árees científiques de primer nivel"@ast , "Áreas scientificas de primer nivel"@oc , "Áreas científicas de primeiro nível"@pt , "Áreas científicas de primer nivel"@es , "fɜːst ˈlɛvl ˌsaɪənˈtɪfɪk ˈeərɪəz"@en-GB-fonipa , "fɜrst ˈlɛvəl ˌsaɪənˈtɪfɪk ˈɛriəz"@en-US-fonipa , "First-level scientific domains"@en , "Dominis científics de primer nivell"@ca , "'a ɾe as θjen̪ 'ti fi kas ðe pri 'mer ni 'βel"@es-ES-fonipa , "Domains scientifiques de premier niveau"@fr , "Áreas scientificas de primer libel"@an , "Áreas científicas de primeiro nivel"@gl , "FIXME"@ca-CA-fonipa , "FIXME"@eu ;
-      skos:prefLabel "Áreas scientificas de primer nivel"@oc , "Árees científiques de primer nivel"@ast , "Áreas científicas de primer nivel"@es , "Áreas científicas de primeiro nível"@pt , "fɜːst ˈlɛvl ˌsaɪənˈtɪfɪk ˈeərɪəz"@en-GB-fonipa , "fɜrst ˈlɛvəl ˌsaɪənˈtɪfɪk ˈɛriəz"@en-US-fonipa , "First-level scientific domains"@en , "Dominis científics de primer nivell"@ca , "'a ɾe as θjen̪ 'ti fi kas ðe pri 'mer ni 'βel"@es-ES-fonipa , "Áreas scientificas de primer libel"@an , "Domains scientifiques de premier niveau"@fr , "Áreas científicas de primeiro nivel"@gl , "FIXME"@ca-CA-fonipa , "FIXME"@eu ;
-      ontolex:phoneticRep "ˌsaɪənˈtɪfɪk ˈeərɪəz"@en-GB-fonipa , "'a ɾe as θjen̪ 'ti fi kas"@es-ES-fonipa , "fɜrst ˈlɛvəl ˌsaɪənˈtɪfɪk ˈɛriəz"@en-US-fonipa , "FIXME"@ca-CA-fonipa .
 
 asioModules:SCIENTIFIC_DOMAIN_LEVEL_1_CVS
       a       skos:Concept ;
       rdfs:label "Ciencias de la vida y de la salud" ;
       asio:hasCode asioModules:SCIENTIFIC_DOMAIN_LEVEL_1_CODE_CVS ;
-      skos:inScheme asioModules:ScientificDomainList ;
+      skos:inScheme asioModules:ESscientificDomains1stList ;
       skos:notation "CVS" ;
       skos:prefLabel "Ciències de la vida i de la salut"@ca , "Ciencias de la vida y de la salud" , "Ciencias de la vida y de la salud"@es , "Sciences de la vie et de la santé"@fr , "'θjen̪ θjaz ðe la 'βi ða i ðe la sa 'luð"@es , "laɪf ænd hɛlθ ˈsaɪənsɪz"@en , "laɪf ænd hɛlθ ˈsaɪənsəz"@en , "Ciencies de la vida y de la salú"@ast , "Sciéncias de la vida e de la santat"@oc , "Bizi eta osasun zientziak"@eu , "Ciencias da vida e da saúde"@gl , "Sciencias d'a vida e d'a salut"@an , "Céncias de la vida i de la salú"@ext , "Life and health sciences"@en , "Ciências da vida e da saúde"@pt ;
       ontolex:phoneticRep "'θjen̪ θjaz ðe la 'βi ða i ðe la sa 'luð"@es , "laɪf ænd hɛlθ ˈsaɪənsɪz"@en , "laɪf ænd hɛlθ ˈsaɪənsəz"@en .
@@ -46,27 +40,27 @@ asioModules:SCIENTIFIC_DOMAIN_LEVEL_1_CODE_CB
       a       skos:Concept ;
       rdfs:label "CB" ;
       asio:codeOf asioModules:SCIENTIFIC_DOMAIN_LEVEL_1_CB ;
-      skos:inScheme asioModules:ScientificDomainClassification , asioModules:ScientificDomainCodeList ;
+      skos:inScheme asioModules:ESDomainCode1stList ;
       skos:prefLabel "CB" .
-
-asioModules:ESDomainCodeList
-      a       asioModules:ScientificDomain ;
-      rdfs:label "Códigos de las áreas científicas de primer nivel"@es , "'ko ði γoz ðe las 'a ɾe as θjen̪ 'ti fi kas ðe pri 'mer ni 'βel"@es-ES-fonipa , "kəʊdz fɔː ðə fɜːst ˈlɛvl ˌsaɪənˈtɪfɪk dəʊˈmeɪnz"@en-GB-fonipa , "Códigos de les árees científiques de primer nivel"@ast , "Códigos das áreas científicas de primeiro nível"@pt , "Codes for the first-level scientific domains"@en , "Codes des domains scientífiques de premier niveau"@fr , "koʊdz fɔr ðə fɜrst ˈlɛvəl ˌsaɪənˈtɪfɪk doʊˈmeɪnz"@en-US-fonipa , "Códigos das áreas científicas de primeiro nivel"@gl , "Codis dels dominis científics de primer nivell"@ca ;
-      skos:prefLabel "Códigos de las áreas científicas de primer nivel"@es , "kəʊdz fɔː ðə fɜːst ˈlɛvl ˌsaɪənˈtɪfɪk dəʊˈmeɪnz"@en-GB-fonipa , "'ko ði γoz ðe las 'a ɾe as θjen̪ 'ti fi kas ðe pri 'mer ni 'βel"@es-ES-fonipa , "Códigos de les árees científiques de primer nivel"@ast , "Códigos das áreas científicas de primeiro nível"@pt , "Codes for the first-level scientific domains"@en , "Codes des domains scientífiques de premier niveau"@fr , "koʊdz fɔr ðə fɜrst ˈlɛvəl ˌsaɪənˈtɪfɪk doʊˈmeɪnz"@en-US-fonipa , "Codis dels dominis científics de primer nivell"@ca , "Códigos das áreas científicas de primeiro nivel"@gl ;
-      ontolex:phoneticRep "kəʊdz fɔː ðə fɜːst ˈlɛvl ˌsaɪənˈtɪfɪk dəʊˈmeɪnz"@en-GB-fonipa , "koʊdz fɔr ðə fɜrst ˈlɛvəl ˌsaɪənˈtɪfɪk doʊˈmeɪnz"@en-US-fonipa , "'ko ði γoz ðe las 'a ɾe as θjen̪ 'ti fi kas"@es-ES-fonipa .
 
 asioModules:SCIENTIFIC_DOMAIN_LEVEL_1_CODE_IYT
       a       skos:Concept ;
       rdfs:label "IYT" ;
       asio:codeOf asioModules:SCIENTIFIC_DOMAIN_LEVEL_1_IYT ;
-      skos:inScheme asioModules:ScientificDomainClassification , asioModules:ScientificDomainCodeList ;
+      skos:inScheme asioModules:ESDomainCode1stList ;
       skos:prefLabel "IYT" .
+
+asioModules:ESscientificDomains1stList
+      a       asioModules:scientificDomains ;
+      rdfs:label "Árees científiques de primer nivel"@ast , "Áreas scientificas de primer nivel"@oc , "Áreas científicas de primeiro nível"@pt , "Áreas científicas de primer nivel"@es , "fɜːst ˈlɛvl ˌsaɪənˈtɪfɪk ˈeərɪəz"@en-GB-fonipa , "fɜrst ˈlɛvəl ˌsaɪənˈtɪfɪk ˈɛriəz"@en-US-fonipa , "First-level scientific domains"@en , "Dominis científics de primer nivell"@ca , "'a ɾe as θjen̪ 'ti fi kas ðe pri 'mer ni 'βel"@es-ES-fonipa , "Domains scientifiques de premier niveau"@fr , "Áreas scientificas de primer libel"@an , "Áreas científicas de primeiro nivel"@gl , "FIXME"@ca-CA-fonipa , "FIXME"@eu ;
+      skos:prefLabel "Áreas scientificas de primer nivel"@oc , "Árees científiques de primer nivel"@ast , "Áreas científicas de primer nivel"@es , "Áreas científicas de primeiro nível"@pt , "fɜːst ˈlɛvl ˌsaɪənˈtɪfɪk ˈeərɪəz"@en-GB-fonipa , "fɜrst ˈlɛvəl ˌsaɪənˈtɪfɪk ˈɛriəz"@en-US-fonipa , "First-level scientific domains"@en , "Dominis científics de primer nivell"@ca , "'a ɾe as θjen̪ 'ti fi kas ðe pri 'mer ni 'βel"@es-ES-fonipa , "Domains scientifiques de premier niveau"@fr , "Áreas scientificas de primer libel"@an , "Áreas científicas de primeiro nivel"@gl , "FIXME"@ca-CA-fonipa , "FIXME"@eu ;
+      ontolex:phoneticRep "ˌsaɪənˈtɪfɪk ˈeərɪəz"@en-GB-fonipa , "'a ɾe as θjen̪ 'ti fi kas"@es-ES-fonipa , "fɜrst ˈlɛvəl ˌsaɪənˈtɪfɪk ˈɛriəz"@en-US-fonipa , "FIXME"@ca-CA-fonipa .
 
 asioModules:SCIENTIFIC_DOMAIN_LEVEL_1_CSH
       a       skos:Concept ;
       rdfs:label "Ciencias sociales y humanidades" ;
       asio:hasCode asioModules:SCIENTIFIC_DOMAIN_LEVEL_1_CODE_CSH ;
-      skos:inScheme asioModules:ScientificDomainList ;
+      skos:inScheme asioModules:ESscientificDomains1stList ;
       skos:notation "CSH" ;
       skos:prefLabel "Sciencias socials e humanidatz"@an , "Ciències socials i humanitats"@ca , "Ciencies sociales y humanidaes"@ast , "Sciences sociales et humaines"@fr , "Social sciences and humanities"@en , "Gizarte zientziak eta giza zientziak"@eu , "θjen̪ θjas so 'θja les i w ma ni 'ða ðes"@es , "ˈsəʊʃəl ˈsaɪənsɪz ænd hju(ː)ˈmænɪtiz"@en , "Ciencias sociales y humanidades"@es , "Ciencias sociales y humanidades" , "Sciéncias socials"@oc , "Ciências sociais e humanidades"@pt , "Céncias socialis i humanidadis"@ext , "ˈsoʊʃəl ˈsaɪənsəz ænd hjuˈmænɪtiz"@en , "Ciencias sociais e humanidades"@gl ;
       ontolex:phoneticRep "ˈsəʊʃəl ˈsaɪənsɪz ænd hju(ː)ˈmænɪtiz"@en , "ˈsoʊʃəl ˈsaɪənsəz ænd hjuˈmænɪtiz"@en , "θjen̪ θjas so 'θja les i w ma ni 'ða ðes"@es .
@@ -75,7 +69,7 @@ asioModules:SCIENTIFIC_DOMAIN_LEVEL_1_CB
       a       skos:Concept ;
       rdfs:label "Ciencias básicas" ;
       asio:hasCode asioModules:SCIENTIFIC_DOMAIN_LEVEL_1_CODE_CB ;
-      skos:inScheme asioModules:ScientificDomainList ;
+      skos:inScheme asioModules:ESscientificDomains1stList ;
       skos:notation "CB" ;
       skos:prefLabel "Sciéncias fondamentalas"@oc , "Ciències bàsiques"@ca , "θjen̪ θjaz 'βa si kas"@es , "Oinarrizko zientziak"@eu , "Sciencias basicas"@an , "Ciencies básiques"@ast , "Ciencias básicas" , "Ciencias básicas"@gl , "Ciencias básicas"@es , "Sciences fondamentales"@fr , "Ciências básicas"@pt , "ˈbeɪsɪk ˈsaɪənsɪz"@en , "Céncias básicas"@ext , "Basic sciences"@en , "ˈbeɪsɪk ˈsaɪənsəz"@en ;
       ontolex:phoneticRep "ˈbeɪsɪk ˈsaɪənsɪz"@en , "θjen̪ θjaz 'βa si kas"@es , "ˈbeɪsɪk ˈsaɪənsəz"@en .
@@ -84,5 +78,11 @@ asioModules:SCIENTIFIC_DOMAIN_LEVEL_1_CODE_CVS
       a       skos:Concept ;
       rdfs:label "CVS" ;
       asio:codeOf asioModules:SCIENTIFIC_DOMAIN_LEVEL_1_CVS ;
-      skos:inScheme asioModules:ScientificDomainClassification , asioModules:ScientificDomainCodeList ;
+      skos:inScheme asioModules:ESDomainCode1stList ;
       skos:prefLabel "CVS" .
+
+asioModules:ESDomainCode1stList
+      a       asioModules:ScientificDomain ;
+      rdfs:label "Códigos de las áreas científicas de primer nivel"@es , "kəʊdz fɔː ðə fɜːst ˈlɛvl ˌsaɪənˈtɪfɪk dəʊˈmeɪnz"@en-GB-fonipa , "'ko ði γoz ðe las 'a ɾe as θjen̪ 'ti fi kas ðe pri 'mer ni 'βel"@es-ES-fonipa , "Códigos de les árees científiques de primer nivel"@ast , "Códigos das áreas científicas de primeiro nível"@pt , "Codes for the first-level scientific domains"@en , "Codes des domains scientífiques de premier niveau"@fr , "koʊdz fɔr ðə fɜrst ˈlɛvəl ˌsaɪənˈtɪfɪk doʊˈmeɪnz"@en-US-fonipa , "Códigos das áreas científicas de primeiro nivel"@gl , "Codis dels dominis científics de primer nivell"@ca ;
+      skos:prefLabel "Códigos de las áreas científicas de primer nivel"@es , "'ko ði γoz ðe las 'a ɾe as θjen̪ 'ti fi kas ðe pri 'mer ni 'βel"@es-ES-fonipa , "kəʊdz fɔː ðə fɜːst ˈlɛvl ˌsaɪənˈtɪfɪk dəʊˈmeɪnz"@en-GB-fonipa , "Códigos de les árees científiques de primer nivel"@ast , "Códigos das áreas científicas de primeiro nível"@pt , "Codes for the first-level scientific domains"@en , "Codes des domains scientífiques de premier niveau"@fr , "koʊdz fɔr ðə fɜrst ˈlɛvəl ˌsaɪənˈtɪfɪk doʊˈmeɪnz"@en-US-fonipa , "Códigos das áreas científicas de primeiro nivel"@gl , "Codis dels dominis científics de primer nivell"@ca ;
+      ontolex:phoneticRep "kəʊdz fɔː ðə fɜːst ˈlɛvl ˌsaɪənˈtɪfɪk dəʊˈmeɪnz"@en-GB-fonipa , "koʊdz fɔr ðə fɜrst ˈlɛvəl ˌsaɪənˈtɪfɪk doʊˈmeɪnz"@en-US-fonipa , "'ko ði γoz ðe las 'a ɾe as θjen̪ 'ti fi kas"@es-ES-fonipa .
