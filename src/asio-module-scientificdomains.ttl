@@ -1,8 +1,8 @@
 @prefix foaf:    <http://xmlns.com/foaf/0.1/#> .
-@prefix asio:  <http://purl.org/asio/core#> .
-@prefix my:      <http://weso.es/tablines/project/scientificDomainss/resource/> .
+@prefix emergel:  <http://purl.org/asio/core#> .
+@prefix my:      <http://weso.es/tablines/project/scientificDomains/resource/> .
 @prefix asioModules:  <http://purl.org/asio/modules#> .
-@prefix project:  <http://weso.es/tablines/project/scientificDomainss/> .
+@prefix project:  <http://weso.es/tablines/project/scientificDomains/> .
 @prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix dcat:    <http://www.w3.org/ns/dcat#> .
 @prefix dct:     <http://purl.org/dc/terms/> .
@@ -14,7 +14,7 @@
 asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_ICI
       a       skos:Concept ;
       rdfs:label "Ingeniería civil y arquitectura" ;
-      asio:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_ICI ;
+      emergel:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_ICI ;
       skos:broader asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_IYT ;
       skos:inScheme asioModules:ESscientificDomains2ndList ;
       skos:notation "ICI" ;
@@ -23,95 +23,112 @@ asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_ICI
 asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_ECO
       a       skos:Concept ;
       rdfs:label "Economía" ;
-      asio:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_ECO ;
+      emergel:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_ECO ;
       skos:broader asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_CSH ;
       skos:inScheme asioModules:ESscientificDomains2ndList ;
       skos:notation "ECO" ;
-      skos:prefLabel "Économie"@fr , "Economy"@en , "Economía"@es , "Economía"@ast , "Economía"@gl , "Economía" , "Economia"@ca , "Economia"@pt .
+      skos:prefLabel "Économie"@fr , "Economy"@en , "Economía"@es , "Economía"@gl , "Economía" , "Economía"@ast , "Economia"@ca , "Economia"@pt .
 
 asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_TA
       a       skos:Concept ;
       rdfs:label "Ciencia y tecnología de alimentos" ;
-      asio:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_TA ;
+      emergel:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_TA ;
       skos:broader asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_CVS ;
       skos:inScheme asioModules:ESscientificDomains2ndList ;
       skos:notation "TA" ;
       skos:prefLabel "Ciencia e Tecnoloxía dos Alimentos"@gl , "Food Science and Technology"@en , "Ciência e tecnologia de alimentos"@pt , "Ciència i tecnologia d'aliments"@ca , "Science et technologie alimentaire"@fr , "Ciencia y tecnoloxía d'alimentos"@ast , "Ciencia y tecnología de alimentos" , "Ciencia y tecnología de alimentos"@es .
 
+asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_CODE_CB
+      a       skos:Concept ;
+      rdfs:label "CB" ;
+      emergel:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_CB ;
+      skos:inScheme asioModules:ESDomainCode1stList ;
+      skos:prefLabel "CB" .
+
 asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_HA
       a       skos:Concept ;
       rdfs:label "HA" ;
-      asio:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_HA ;
+      emergel:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_HA ;
       skos:inScheme asioModules:ESscientificDomains2ndCodeList ;
       skos:prefLabel "HA" .
+
+asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_QMC
+      a       skos:Concept ;
+      rdfs:label "QMC" ;
+      emergel:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_QMC ;
+      skos:inScheme asioModules:ESscientificDomains2ndCodeList ;
+      skos:prefLabel "QMC" .
 
 asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_INF
       a       skos:Concept ;
       rdfs:label "INF" ;
-      asio:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_INF ;
+      emergel:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_INF ;
       skos:inScheme asioModules:ESscientificDomains2ndCodeList ;
       skos:prefLabel "INF" .
 
 asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_FFI
       a       skos:Concept ;
       rdfs:label "FFI" ;
-      asio:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_FFI ;
+      emergel:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_FFI ;
       skos:inScheme asioModules:ESscientificDomains2ndCodeList ;
       skos:prefLabel "FFI" .
 
 asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_EDUC
       a       skos:Concept ;
       rdfs:label "Ciencias de la educación" ;
-      asio:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_EDUC ;
+      emergel:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_EDUC ;
       skos:broader asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_CSH ;
       skos:inScheme asioModules:ESscientificDomains2ndList ;
       skos:notation "EDUC" ;
       skos:prefLabel "Sciences de l'éducation"@fr , "Ciencies de la educación"@ast , "Ciències de l'educació"@ca , "Ciências da educação"@pt , "Ciencias da educación"@gl , "Ciencias de la educación" , "Ciencias de la educación"@es , "Education sciences"@en .
 
-<http://purl.org/asio/modules#ES_SCIENTIFIC_DOMAIN_LEVEL_2_QMC >
-      a       skos:Concept ;
-      rdfs:label "Química" ;
-      asio:hasCode <http://purl.org/asio/modules#ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_QMC > ;
-      skos:broader asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_CB ;
-      skos:inScheme asioModules:ESscientificDomains2ndList ;
-      skos:notation "QMC " ;
-      skos:note "It addresses, from the molecular to the macroscopic level, research on the composition, structure, preparation and properties of natural and synthetic substances or samples that contain them, the interactions and transformations they undergo, the mechanism thereof, the instrumentation for their analysis and the experimental and / or theoretical methodology required for its study."@en , "Aborda, desde o nivel molecular ata o macroscópico, a investigación sobre a composición, estrutura, preparación e propiedades de substancias ou mostras naturais e sintéticas que as conteñen, as interaccións e transformacións que sofren, o seu mecanismo, a instrumentación para a súa análise e a metodoloxía experimental e/ou teórica requirida para o seu estudo."@gl , "Aborda, des del nivell molecular al macroscòpic, la recerca sobre la composició, estructura, preparació i propietats de les substàncies naturals i sintètiques o mostres que les contenen, les interaccions i transformacions que experimenten, llur mecanisme, la instrumentació per a la seva anàlisi i la metodologia experimental i / o teòrica requerida per al seu estudi."@ca ;
-      skos:prefLabel "Chemistry"@en , "Química" , "Química"@es , "Química"@ast , "Química"@ca , "Química"@gl , "Química"@pt , "Chimie"@fr .
-
 asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_FI
       a       skos:Concept ;
       rdfs:label "FI" ;
-      asio:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_FI ;
+      emergel:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_FI ;
       skos:inScheme asioModules:ESscientificDomains2ndCodeList ;
       skos:prefLabel "FI" .
+
+asioModules:ESDomainCode1stList
+      a       asioModules:ScientificDomains ;
+      rdfs:label "Códigos de las áreas científicas de primer nivel"@es , "kəʊdz fɔː ðə fɜːst ˈlɛvl ˌsaɪənˈtɪfɪk dəʊˈmeɪnz"@en-GB-fonipa , "'ko ði γoz ðe las 'a ɾe as θjen̪ 'ti fi kas ðe pri 'mer ni 'βel"@es-ES-fonipa , "Códigos de les árees científiques de primer nivel"@ast , "Códigos das áreas científicas de primeiro nível"@pt , "Codes for the first-level scientific domains"@en , "Codes des domains scientífiques de premier niveau"@fr , "koʊdz fɔr ðə fɜrst ˈlɛvəl ˌsaɪənˈtɪfɪk doʊˈmeɪnz"@en-US-fonipa , "Códigos das áreas científicas de primeiro nivel"@gl , "Codis dels dominis científics de primer nivell"@ca ;
+      skos:prefLabel "Códigos de las áreas científicas de primer nivel"@es , "'ko ði γoz ðe las 'a ɾe as θjen̪ 'ti fi kas ðe pri 'mer ni 'βel"@es-ES-fonipa , "kəʊdz fɔː ðə fɜːst ˈlɛvl ˌsaɪənˈtɪfɪk dəʊˈmeɪnz"@en-GB-fonipa , "Códigos de les árees científiques de primer nivel"@ast , "Códigos das áreas científicas de primeiro nível"@pt , "Codes for the first-level scientific domains"@en , "Codes des domains scientífiques de premier niveau"@fr , "koʊdz fɔr ðə fɜrst ˈlɛvəl ˌsaɪənˈtɪfɪk doʊˈmeɪnz"@en-US-fonipa , "Códigos das áreas científicas de primeiro nivel"@gl , "Codis dels dominis científics de primer nivell"@ca ;
+      ontolex:phoneticRep "kəʊdz fɔː ðə fɜːst ˈlɛvl ˌsaɪənˈtɪfɪk dəʊˈmeɪnz"@en-GB-fonipa , "koʊdz fɔr ðə fɜrst ˈlɛvəl ˌsaɪənˈtɪfɪk doʊˈmeɪnz"@en-US-fonipa , "'ko ði γoz ðe las 'a ɾe as θjen̪ 'ti fi kas"@es-ES-fonipa .
+
+asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_CODE_CSH
+      a       skos:Concept ;
+      rdfs:label "CSH" ;
+      emergel:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_CSH ;
+      skos:inScheme asioModules:ESDomainCode1stList ;
+      skos:prefLabel "CSH" .
 
 asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_GAN
       a       skos:Concept ;
       rdfs:label "Ganadería y pesca" ;
-      asio:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_GAN ;
+      emergel:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_GAN ;
       skos:broader asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_CVS ;
       skos:inScheme asioModules:ESscientificDomains2ndList ;
       skos:notation "GAN" ;
-      skos:prefLabel "Pecuária e pesca"@pt , "Ganadería y pesca" , "Ganadería y pesca"@es , "Ganadería y pesca"@ast , "Gandería e pesca"@gl , "Ramaderia i pesca"@ca , "Bétail et pêche"@fr , "Livestock and fishing"@en .
+      skos:prefLabel "Pecuária e pesca"@pt , "Ganadería y pesca"@ast , "Ganadería y pesca" , "Ganadería y pesca"@es , "Gandería e pesca"@gl , "Ramaderia i pesca"@ca , "Bétail et pêche"@fr , "Livestock and fishing"@en .
 
 asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_CS
       a       skos:Concept ;
       rdfs:label "CS" ;
-      asio:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CS ;
+      emergel:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CS ;
       skos:inScheme asioModules:ESscientificDomains2ndCodeList ;
       skos:prefLabel "CS" .
 
 asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_IEL
       a       skos:Concept ;
       rdfs:label "IEL" ;
-      asio:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_IEL ;
+      emergel:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_IEL ;
       skos:inScheme asioModules:ESscientificDomains2ndCodeList ;
       skos:prefLabel "IEL" .
 
 asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_MTM
       a       skos:Concept ;
       rdfs:label "Matemáticas " ;
-      asio:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_MTM ;
+      emergel:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_MTM ;
       skos:broader asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_CB ;
       skos:inScheme asioModules:ESscientificDomains2ndList ;
       skos:notation "MTM" ;
@@ -121,7 +138,7 @@ asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_MTM
 asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_IME
       a       skos:Concept ;
       rdfs:label "Ingeniería mecánica, naval y aeronáutica" ;
-      asio:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_IME ;
+      emergel:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_IME ;
       skos:broader asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_IYT ;
       skos:inScheme asioModules:ESscientificDomains2ndList ;
       skos:notation "IME" ;
@@ -130,46 +147,52 @@ asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_IME
 asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_
       a       skos:Concept ;
       rdfs:label "" ;
-      asio:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_ ;
+      emergel:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_ ;
       skos:broader asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_ ;
       skos:inScheme asioModules:ESscientificDomains2ndList ;
       skos:notation "" ;
-      skos:prefLabel ""@fr , "" , ""@es , ""@ast , ""@ca , ""@gl , ""@en , " "@pt .
+      skos:prefLabel ""@ast , ""@fr , "" , ""@es , ""@ca , ""@gl , ""@en , " "@pt .
 
 asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_TM
       a       skos:Concept ;
       rdfs:label "Ciencia y tecnología de materiales" ;
-      asio:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_TM ;
+      emergel:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_TM ;
       skos:broader asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_IYT ;
       skos:inScheme asioModules:ESscientificDomains2ndList ;
       skos:notation "TM" ;
-      skos:prefLabel "Science et technologie des matériaux"@fr , "Ciència i tecnologia de materials"@ca , "Ciencia y tecnología de materiales" , "Ciencia y tecnología de materiales"@es , "Science and technology of materials"@en , "Ciencia y tecnoloxía de materiales"@ast , "Ciência e tecnologia de materiais"@pt , "Ciencia e tecnoloxía dos materiais"@gl .
+      skos:prefLabel "Science et technologie des matériaux"@fr , "Ciència i tecnologia de materials"@ca , "Ciencia y tecnología de materiales"@es , "Ciencia y tecnología de materiales" , "Science and technology of materials"@en , "Ciencia y tecnoloxía de materiales"@ast , "Ciência e tecnologia de materiais"@pt , "Ciencia e tecnoloxía dos materiais"@gl .
 
 asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_BVAE
       a       skos:Concept ;
       rdfs:label "BVAE" ;
-      asio:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_BVAE ;
+      emergel:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_BVAE ;
       skos:inScheme asioModules:ESscientificDomains2ndCodeList ;
       skos:prefLabel "BVAE" .
 
 asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_EDUC
       a       skos:Concept ;
       rdfs:label "EDUC" ;
-      asio:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_EDUC ;
+      emergel:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_EDUC ;
       skos:inScheme asioModules:ESscientificDomains2ndCodeList ;
       skos:prefLabel "EDUC" .
+
+asioModules:ESscientificDomains1stList
+      a       asioModules:ScientificDomains ;
+      rdfs:label "Árees científiques de primer nivel"@ast , "Áreas scientificas de primer nivel"@oc , "Goi mailako arlo zientifikoak"@eu , "Áreas científicas de primeiro nível"@pt , "Áreas científicas de primer nivel"@es , "First-level scientific domains"@en , "fɜrst ˈlɛvəl ˌsaɪənˈtɪfɪk doʊˈmeɪnz"@en-US-fonipa , "Dominis científics de primer nivell"@ca , "'a ɾe as θjen̪ 'ti fi kas ðe pri 'mer ni 'βel"@es-ES-fonipa , "Domains scientifiques de premier niveau"@fr , "Áreas scientificas de primer libel"@an , "Áreas científicas de primeiro nivel"@gl , "duˈminis siənˈtifikz ðə pɾiˈme niˈβeʎ"@ca-CA-fonipa , "fɜːst ˈlɛvl ˌsaɪənˈtɪfɪk dəʊˈmeɪnz"@en-GB-fonipa ;
+      skos:prefLabel "Áreas scientificas de primer nivel"@oc , "Árees científiques de primer nivel"@ast , "Áreas científicas de primer nivel"@es , "Áreas científicas de primeiro nível"@pt , "Goi mailako arlo zientifikoak"@eu , "First-level scientific domains"@en , "fɜrst ˈlɛvəl ˌsaɪənˈtɪfɪk doʊˈmeɪnz"@en-US-fonipa , "Dominis científics de primer nivell"@ca , "'a ɾe as θjen̪ 'ti fi kas ðe pri 'mer ni 'βel"@es-ES-fonipa , "Domains scientifiques de premier niveau"@fr , "Áreas scientificas de primer libel"@an , "Áreas científicas de primeiro nivel"@gl , "duˈminis siənˈtifikz ðə pɾiˈme niˈβeʎ"@ca-CA-fonipa , "fɜːst ˈlɛvl ˌsaɪənˈtɪfɪk dəʊˈmeɪnz"@en-GB-fonipa ;
+      ontolex:phoneticRep "ˌsaɪənˈtɪfɪk dəʊˈmeɪnz"@en-GB-fonipa , "'a ɾe as θjen̪ 'ti fi kas"@es-ES-fonipa , "fɜrst ˈlɛvəl ˌsaɪənˈtɪfɪk doʊˈmeɪnz"@en-US-fonipa , "duˈminis siənˈtifikz ðə pɾiˈme niˈβeʎ"@ca-CA-fonipa .
 
 asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_TA
       a       skos:Concept ;
       rdfs:label "TA" ;
-      asio:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_TA ;
+      emergel:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_TA ;
       skos:inScheme asioModules:ESscientificDomains2ndCodeList ;
       skos:prefLabel "TA" .
 
 asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_MCLI
       a       skos:Concept ;
       rdfs:label "Medicina clínica y epidemiología" ;
-      asio:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_MCLI ;
+      emergel:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_MCLI ;
       skos:broader asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_CVS ;
       skos:inScheme asioModules:ESscientificDomains2ndList ;
       skos:notation "MCLI" ;
@@ -179,61 +202,70 @@ asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_MCLI
 asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_INF
       a       skos:Concept ;
       rdfs:label "Ciencias de la computación y tecnología informática" ;
-      asio:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_INF ;
+      emergel:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_INF ;
       skos:broader asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_IYT ;
       skos:inScheme asioModules:ESscientificDomains2ndList ;
       skos:notation "INF" ;
-      skos:prefLabel "Ciències de la computació i tecnologia informàtica"@ca , "Ciência da computação e tecnologia da computação"@pt , "Ciencias de la computación y tecnología informática" , "Ciencias de la computación y tecnología informática"@es , "Computer science and computer technology"@en , "Informática e tecnoloxía informática"@gl , "Informatique et technologie informatique"@fr , "Ciencies de la computación y tecnoloxía informática"@ast .
-
-asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_ECO
-      a       skos:Concept ;
-      rdfs:label "ECO" ;
-      asio:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_ECO ;
-      skos:inScheme asioModules:ESscientificDomains2ndCodeList ;
-      skos:prefLabel "ECO" .
+      skos:prefLabel "Ciències de la computació i tecnologia informàtica"@ca , "Ciência da computação e tecnologia da computação"@pt , "Ciencias de la computación y tecnología informática"@es , "Ciencias de la computación y tecnología informática" , "Computer science and computer technology"@en , "Informática e tecnoloxía informática"@gl , "Informatique et technologie informatique"@fr , "Ciencies de la computación y tecnoloxía informática"@ast .
 
 asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CS
       a       skos:Concept ;
       rdfs:label "Ciencias sociales" ;
-      asio:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_CS ;
+      emergel:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_CS ;
       skos:broader asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_CSH ;
       skos:inScheme asioModules:ESscientificDomains2ndList ;
       skos:notation "CS" ;
       skos:prefLabel "Ciências sociais"@pt , "Ciencias sociais"@gl , "Sciences sociales"@fr , "Social Sciences"@en , "Ciències socials"@ca , "Ciencias sociales" , "Ciencias sociales"@es , "Ciencies sociales"@ast .
 
+asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_ECO
+      a       skos:Concept ;
+      rdfs:label "ECO" ;
+      emergel:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_ECO ;
+      skos:inScheme asioModules:ESscientificDomains2ndCodeList ;
+      skos:prefLabel "ECO" .
+
 asioModules:ESscientificDomains2ndList
       a       asioModules:scientificDomains ;
       rdfs:label "'a ɾe as θjen̪ 'ti fi kas"@es-ES-fonipa , "Áreas scientificas de segundo nivel"@an , "Second-level scientific domains"@en , "Áreas científicas de segundo nível"@pt , "Dominis científics de segon nivell"@ca , "Bigarren mailako arlo zientifikoak"@eu , "Domains scientifiques de deuxième niveau"@fr , "ˈsɛkənd ˈlɛvəl ˌsaɪənˈtɪfɪk doʊˈmeɪnz"@en-US-fonipa , "Áreas scientificas de segon nivel"@oc , "Árees científiques de segundu nivel"@ast , "duˈminis siənˈtifikz ðə səˈɣon niˈβeʎ"@ca-CA-fonipa , "ˈsɛkənd ˈlɛvl ˌsaɪənˈtɪfɪk dəʊˈmeɪnz"@en-GB-fonipa , "Áreas científicas de segundo nivel"@es , "Áreas científicas de segundo nivel"@gl ;
-      skos:prefLabel "'a ɾe as θjen̪ 'ti fi kas"@es-ES-fonipa , "Áreas scientificas de segundo nivel"@an , "Second-level scientific domains"@en , "Áreas científicas de segundo nível"@pt , "Dominis científics de segon nivell"@ca , "Bigarren mailako arlo zientifikoak"@eu , "Domains scientifiques de deuxième niveau"@fr , "ˈsɛkənd ˈlɛvəl ˌsaɪənˈtɪfɪk doʊˈmeɪnz"@en-US-fonipa , "Áreas scientificas de segon nivel"@oc , "Árees científiques de segundu nivel"@ast , "duˈminis siənˈtifikz ðə səˈɣon niˈβeʎ"@ca-CA-fonipa , "ˈsɛkənd ˈlɛvl ˌsaɪənˈtɪfɪk dəʊˈmeɪnz"@en-GB-fonipa , "Áreas científicas de segundo nivel"@gl , "Áreas científicas de segundo nivel"@es ;
+      skos:prefLabel "'a ɾe as θjen̪ 'ti fi kas"@es-ES-fonipa , "Áreas scientificas de segundo nivel"@an , "Second-level scientific domains"@en , "Áreas científicas de segundo nível"@pt , "Dominis científics de segon nivell"@ca , "Bigarren mailako arlo zientifikoak"@eu , "Domains scientifiques de deuxième niveau"@fr , "ˈsɛkənd ˈlɛvəl ˌsaɪənˈtɪfɪk doʊˈmeɪnz"@en-US-fonipa , "Áreas scientificas de segon nivel"@oc , "Árees científiques de segundu nivel"@ast , "duˈminis siənˈtifikz ðə səˈɣon niˈβeʎ"@ca-CA-fonipa , "ˈsɛkənd ˈlɛvl ˌsaɪənˈtɪfɪk dəʊˈmeɪnz"@en-GB-fonipa , "Áreas científicas de segundo nivel"@es , "Áreas científicas de segundo nivel"@gl ;
       ontolex:phoneticRep "'a ɾe as θjen̪ 'ti fi kas"@es-ES-fonipa , "ˈsɛkənd ˈlɛvəl ˌsaɪənˈtɪfɪk doʊˈmeɪnz"@en-US-fonipa , "duˈminis siənˈtifikz ðə səˈɣon niˈβeʎ"@ca-CA-fonipa , "ˈsɛkənd ˈlɛvl ˌsaɪənˈtɪfɪk dəʊˈmeɪnz"@en-GB-fonipa .
 
 asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_DER
       a       skos:Concept ;
       rdfs:label "DER" ;
-      asio:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_DER ;
+      emergel:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_DER ;
       skos:inScheme asioModules:ESscientificDomains2ndCodeList ;
       skos:prefLabel "DER" .
+
+asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_CT
+      a       skos:Concept ;
+      rdfs:label "CT" ;
+      emergel:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CT ;
+      skos:inScheme asioModules:ESscientificDomains2ndCodeList ;
+      skos:prefLabel "CT" .
 
 asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_FFI
       a       skos:Concept ;
       rdfs:label "Filología y filosofía" ;
-      asio:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_FFI ;
+      emergel:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_FFI ;
       skos:broader asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_CSH ;
       skos:inScheme asioModules:ESscientificDomains2ndList ;
       skos:notation "FFI" ;
       skos:prefLabel "Filologia i filosofia"@ca , "Philology and philosophy"@en , "Philologie et philosophie"@fr , "Filologia e filosofia"@pt , "Filoloxía e filosofía"@gl , "Filoloxía y filosofía"@ast , "Filología y filosofía" , "Filología y filosofía"@es .
 
-asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_CT
+asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_CSH
       a       skos:Concept ;
-      rdfs:label "CT" ;
-      asio:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CT ;
-      skos:inScheme asioModules:ESscientificDomains2ndCodeList ;
-      skos:prefLabel "CT" .
+      rdfs:label "Ciencias sociales y humanidades" ;
+      emergel:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_CODE_CSH ;
+      skos:inScheme asioModules:ESscientificDomains1stList ;
+      skos:notation "CSH" ;
+      skos:prefLabel "Sciencias socials e humanidatz"@an , "Ciències socials i humanitats"@ca , "Ciencies sociales y humanidaes"@ast , "Sciences sociales et humaines"@fr , "Social sciences and humanities"@en , "Gizarte zientziak eta giza zientziak"@eu , "θjen̪ θjas so 'θja les i w ma ni 'ða ðes"@es , "ˈsəʊʃəl ˈsaɪənsɪz ænd hju(ː)ˈmænɪtiz"@en , "Ciencias sociales y humanidades" , "Ciencias sociales y humanidades"@es , "Sciéncias socials"@oc , "Ciências sociais e humanidades"@pt , "Céncias socialis i humanidadis"@ext , "ˈsoʊʃəl ˈsaɪənsəz ænd hjuˈmænɪtiz"@en , "Ciencias sociais e humanidades"@gl ;
+      ontolex:phoneticRep "ˈsəʊʃəl ˈsaɪənsɪz ænd hju(ː)ˈmænɪtiz"@en , "ˈsoʊʃəl ˈsaɪənsəz ænd hjuˈmænɪtiz"@en , "θjen̪ θjas so 'θja les i w ma ni 'ða ðes"@es .
 
 asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_COM
       a       skos:Concept ;
       rdfs:label "Tecnología electrónica y de las comunicaciones" ;
-      asio:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_COM ;
+      emergel:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_COM ;
       skos:broader asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_IYT ;
       skos:inScheme asioModules:ESscientificDomains2ndList ;
       skos:notation "COM" ;
@@ -242,23 +274,25 @@ asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_COM
 asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_MTM
       a       skos:Concept ;
       rdfs:label "MTM" ;
-      asio:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_MTM ;
+      emergel:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_MTM ;
       skos:inScheme asioModules:ESscientificDomains2ndCodeList ;
       skos:prefLabel "MTM" .
 
 asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_
       a       skos:Concept ;
       rdfs:label "" ;
-      asio:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_ ;
+      emergel:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_ ;
       skos:inScheme asioModules:ESscientificDomains2ndCodeList ;
       skos:prefLabel "" .
 
-<http://purl.org/asio/modules#ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_QMC >
+asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_IYT
       a       skos:Concept ;
-      rdfs:label "QMC " ;
-      asio:codeOf <http://purl.org/asio/modules#ES_SCIENTIFIC_DOMAIN_LEVEL_2_QMC > ;
-      skos:inScheme asioModules:ESscientificDomains2ndCodeList ;
-      skos:prefLabel "QMC " .
+      rdfs:label "Ingenierías y tecnologías" ;
+      emergel:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_CODE_IYT ;
+      skos:inScheme asioModules:ESscientificDomains1stList ;
+      skos:notation "IYT" ;
+      skos:prefLabel "Ingenierías y tecnologías" , "Ingenierías y tecnologías"@es , "Inxeniería y tecnoloxíes"@ast , "Engenharia e tecnologias"@pt , "ˈɛnʤəˈnɪrɪŋ ænd tɛkˈnɑləʤiz"@en , "Enchinierías e tecnolochías"@an , "Enxeñaría e tecnoloxías"@gl , "ˌɛnʤɪˈnɪərɪŋ ænd tɛkˈnɒləʤiz"@en , "iŋ xe nje 'ɾi as i tek no lo 'xi as"@es , "Enginyeria i tecnologies"@ca , "Ingenierías i tecnologías"@ext , "Ingeniaritza eta teknologiak"@eu , "Engenhariás e tecnologias"@oc , "Engineering and technologies"@en , "Ingénierie et technologies"@fr ;
+      ontolex:phoneticRep "ˈɛnʤəˈnɪrɪŋ ænd tɛkˈnɑləʤiz"@en , "ˌɛnʤɪˈnɪərɪŋ ænd tɛkˈnɒləʤiz"@en , "iŋ xe nje 'ɾi as i tek no lo 'xi as"@es .
 
 asioModules:ESscientificDomains2ndCodeList
       a       asioModules:scientificDomains ;
@@ -268,7 +302,7 @@ asioModules:ESscientificDomains2ndCodeList
 asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CT
       a       skos:Concept ;
       rdfs:label "Ciencias de la tierra " ;
-      asio:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_CT ;
+      emergel:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_CT ;
       skos:broader asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_CB ;
       skos:inScheme asioModules:ESscientificDomains2ndList ;
       skos:notation "CT" ;
@@ -278,7 +312,7 @@ asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CT
 asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_TQ
       a       skos:Concept ;
       rdfs:label "Tecnología química" ;
-      asio:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_TQ ;
+      emergel:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_TQ ;
       skos:broader asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_IYT ;
       skos:inScheme asioModules:ESscientificDomains2ndList ;
       skos:notation "TQ" ;
@@ -287,7 +321,7 @@ asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_TQ
 asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_IEL
       a       skos:Concept ;
       rdfs:label "Ingeniería eléctrica, electrónica y automática" ;
-      asio:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_IEL ;
+      emergel:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_IEL ;
       skos:broader asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_IYT ;
       skos:inScheme asioModules:ESscientificDomains2ndList ;
       skos:notation "IEL" ;
@@ -296,7 +330,7 @@ asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_IEL
 asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_BVAE
       a       skos:Concept ;
       rdfs:label "Biología vegetal, animal y ecología" ;
-      asio:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_BVAE ;
+      emergel:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_BVAE ;
       skos:broader asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_CVS ;
       skos:inScheme asioModules:ESscientificDomains2ndList ;
       skos:notation "BVAE" ;
@@ -305,42 +339,56 @@ asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_BVAE
 asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_MCLI
       a       skos:Concept ;
       rdfs:label "MCLI" ;
-      asio:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_MCLI ;
+      emergel:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_MCLI ;
       skos:inScheme asioModules:ESscientificDomains2ndCodeList ;
       skos:prefLabel "MCLI" .
 
 asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_AGR
       a       skos:Concept ;
       rdfs:label "AGR" ;
-      asio:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_AGR ;
+      emergel:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_AGR ;
       skos:inScheme asioModules:ESscientificDomains2ndCodeList ;
       skos:prefLabel "AGR" .
+
+asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_CODE_IYT
+      a       skos:Concept ;
+      rdfs:label "IYT" ;
+      emergel:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_IYT ;
+      skos:inScheme asioModules:ESDomainCode1stList ;
+      skos:prefLabel "IYT" .
+
+asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_CODE_CVS
+      a       skos:Concept ;
+      rdfs:label "CVS" ;
+      emergel:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_CVS ;
+      skos:inScheme asioModules:ESDomainCode1stList ;
+      skos:prefLabel "CVS" .
 
 asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_IME
       a       skos:Concept ;
       rdfs:label "IME" ;
-      asio:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_IME ;
+      emergel:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_IME ;
       skos:inScheme asioModules:ESscientificDomains2ndCodeList ;
       skos:prefLabel "IME" .
 
 asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_ICI
       a       skos:Concept ;
       rdfs:label "ICI" ;
-      asio:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_ICI ;
+      emergel:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_ICI ;
       skos:inScheme asioModules:ESscientificDomains2ndCodeList ;
       skos:prefLabel "ICI" .
 
 asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_COM
       a       skos:Concept ;
       rdfs:label "COM" ;
-      asio:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_COM ;
+      emergel:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_COM ;
       skos:inScheme asioModules:ESscientificDomains2ndCodeList ;
       skos:prefLabel "COM" .
 
 asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_HA
       a       skos:Concept ;
       rdfs:label "Historia y arte" ;
-      asio:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_HA ;
+      emergel:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_HA ;
       skos:broader asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_CSH ;
       skos:inScheme asioModules:ESscientificDomains2ndList ;
       skos:notation "HA" ;
@@ -349,45 +397,73 @@ asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_HA
 asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_BFS
       a       skos:Concept ;
       rdfs:label "Biología fundamental y de sistemas" ;
-      asio:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_BFS ;
+      emergel:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_BFS ;
       skos:broader asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_CVS ;
       skos:inScheme asioModules:ESscientificDomains2ndList ;
       skos:notation "BFS" ;
       skos:note "Research on the fundamentals of biological function, structure and their interrelations, from the molecular level to that of the organism, and without distinction of the biological study model, except for the one whose main purpose is to improve human health."@en , "Investigación sobre os fundamentos da función biolóxica, a estrutura e as súas interrelacións, desde o nivel molecular ao do organismo e sen distinción do modelo de estudo biolóxico, salvo aquel que ten como finalidade principal mellorar a saúde humana."@gl , "Recerca sobre els fonaments de la funció biològica, estructura i les seves interrelacions, des del nivell molecular a el de l'organisme, i sense distinció de el model biològic d'estudi, a excepció d'aquella el propòsit principal del qual sigui millorar la salut humana."@ca ;
       skos:prefLabel "Biologia fonamental i de sistemes"@ca , "Fundamentos e bioloxía dos sistemas"@gl , "Bioloxía fundamental y de sistemes"@ast , "Biologia fundamental e de sistemas"@pt , "Biología fundamental y de sistemas" , "Biología fundamental y de sistemas"@es , "Biologie fondamentale et systémique"@fr , "Fundamental and systems biology"@en .
 
+asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_CVS
+      a       skos:Concept ;
+      rdfs:label "Ciencias de la vida y de la salud" ;
+      emergel:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_CODE_CVS ;
+      skos:inScheme asioModules:ESscientificDomains1stList ;
+      skos:notation "CVS" ;
+      skos:prefLabel "Ciències de la vida i de la salut"@ca , "Ciencias de la vida y de la salud" , "Ciencias de la vida y de la salud"@es , "'θjen̪ θjaz ðe la 'βi ða i ðe la sa 'luð"@es , "Sciences de la vie et de la santé"@fr , "laɪf ænd hɛlθ ˈsaɪənsɪz"@en , "laɪf ænd hɛlθ ˈsaɪənsəz"@en , "Ciencies de la vida y de la salú"@ast , "Sciéncias de la vida e de la santat"@oc , "Bizi eta osasun zientziak"@eu , "Ciencias da vida e da saúde"@gl , "Sciencias d'a vida e d'a salut"@an , "Céncias de la vida i de la salú"@ext , "Life and health sciences"@en , "Ciências da vida e da saúde"@pt ;
+      ontolex:phoneticRep "'θjen̪ θjaz ðe la 'βi ða i ðe la sa 'luð"@es , "laɪf ænd hɛlθ ˈsaɪənsɪz"@en , "laɪf ænd hɛlθ ˈsaɪənsəz"@en .
+
 asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_GAN
       a       skos:Concept ;
       rdfs:label "GAN" ;
-      asio:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_GAN ;
+      emergel:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_GAN ;
       skos:inScheme asioModules:ESscientificDomains2ndCodeList ;
       skos:prefLabel "GAN" .
 
 asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_BMED
       a       skos:Concept ;
       rdfs:label "BMED" ;
-      asio:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_BMED ;
+      emergel:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_BMED ;
       skos:inScheme asioModules:ESscientificDomains2ndCodeList ;
       skos:prefLabel "BMED" .
+
+asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_QMC
+      a       skos:Concept ;
+      rdfs:label "Química" ;
+      emergel:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_QMC ;
+      skos:broader asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_CB ;
+      skos:inScheme asioModules:ESscientificDomains2ndList ;
+      skos:notation "QMC" ;
+      skos:note "It addresses, from the molecular to the macroscopic level, research on the composition, structure, preparation and properties of natural and synthetic substances or samples that contain them, the interactions and transformations they undergo, the mechanism thereof, the instrumentation for their analysis and the experimental and / or theoretical methodology required for its study."@en , "Aborda, desde o nivel molecular ata o macroscópico, a investigación sobre a composición, estrutura, preparación e propiedades de substancias ou mostras naturais e sintéticas que as conteñen, as interaccións e transformacións que sofren, o seu mecanismo, a instrumentación para a súa análise e a metodoloxía experimental e/ou teórica requirida para o seu estudo."@gl , "Aborda, des del nivell molecular al macroscòpic, la recerca sobre la composició, estructura, preparació i propietats de les substàncies naturals i sintètiques o mostres que les contenen, les interaccions i transformacions que experimenten, llur mecanisme, la instrumentació per a la seva anàlisi i la metodologia experimental i / o teòrica requerida per al seu estudi."@ca ;
+      skos:prefLabel "Chemistry"@en , "Química" , "Química"@es , "Química"@ast , "Química"@ca , "Química"@gl , "Química"@pt , "Chimie"@fr .
 
 asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_TM
       a       skos:Concept ;
       rdfs:label "TM" ;
-      asio:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_TM ;
+      emergel:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_TM ;
       skos:inScheme asioModules:ESscientificDomains2ndCodeList ;
       skos:prefLabel "TM" .
 
 asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_TQ
       a       skos:Concept ;
       rdfs:label "TQ" ;
-      asio:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_TQ ;
+      emergel:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_TQ ;
       skos:inScheme asioModules:ESscientificDomains2ndCodeList ;
       skos:prefLabel "TQ" .
+
+asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_CB
+      a       skos:Concept ;
+      rdfs:label "Ciencias básicas" ;
+      emergel:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_CODE_CB ;
+      skos:inScheme asioModules:ESscientificDomains1stList ;
+      skos:notation "CB" ;
+      skos:prefLabel "Sciéncias fondamentalas"@oc , "Ciències bàsiques"@ca , "θjen̪ θjaz 'βa si kas"@es , "Oinarrizko zientziak"@eu , "Sciencias basicas"@an , "Ciencies básiques"@ast , "Ciencias básicas" , "Ciencias básicas"@es , "Ciencias básicas"@gl , "Sciences fondamentales"@fr , "Ciências básicas"@pt , "ˈbeɪsɪk ˈsaɪənsɪz"@en , "Basic sciences"@en , "Céncias básicas"@ext , "ˈbeɪsɪk ˈsaɪənsəz"@en ;
+      ontolex:phoneticRep "ˈbeɪsɪk ˈsaɪənsɪz"@en , "θjen̪ θjaz 'βa si kas"@es , "ˈbeɪsɪk ˈsaɪənsəz"@en .
 
 asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_DER
       a       skos:Concept ;
       rdfs:label "Derecho" ;
-      asio:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_DER ;
+      emergel:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_DER ;
       skos:broader asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_CSH ;
       skos:inScheme asioModules:ESscientificDomains2ndList ;
       skos:notation "DER" ;
@@ -396,7 +472,7 @@ asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_DER
 asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_FI
       a       skos:Concept ;
       rdfs:label "Física y ciencias del espacio" ;
-      asio:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_FI ;
+      emergel:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_FI ;
       skos:broader asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_CB ;
       skos:inScheme asioModules:ESscientificDomains2ndList ;
       skos:notation "FI" ;
@@ -406,41 +482,41 @@ asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_FI
 asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_BFS
       a       skos:Concept ;
       rdfs:label "BFS" ;
-      asio:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_BFS ;
+      emergel:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_BFS ;
       skos:inScheme asioModules:ESscientificDomains2ndCodeList ;
       skos:prefLabel "BFS" .
 
 asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_PS
       a       skos:Concept ;
       rdfs:label "PS" ;
-      asio:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_PS ;
+      emergel:codeOf asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_PS ;
       skos:inScheme asioModules:ESscientificDomains2ndCodeList ;
       skos:prefLabel "PS" .
 
 asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_AGR
       a       skos:Concept ;
       rdfs:label "Agricultura" ;
-      asio:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_AGR ;
+      emergel:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_AGR ;
       skos:broader asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_CVS ;
       skos:inScheme asioModules:ESscientificDomains2ndList ;
       skos:notation "AGR" ;
-      skos:prefLabel "Agriculture"@fr , "farming"@en , "Agricultura"@gl , "Agricultura"@pt , "Agricultura" , "Agricultura"@es , "Agricultura"@ast , "Agricultura"@ca .
+      skos:prefLabel "Agriculture"@fr , "farming"@en , "Agricultura"@pt , "Agricultura"@gl , "Agricultura" , "Agricultura"@es , "Agricultura"@ast , "Agricultura"@ca .
+
+asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_PS
+      a       skos:Concept ;
+      rdfs:label "Psicología" ;
+      emergel:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_PS ;
+      skos:broader asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_CSH ;
+      skos:inScheme asioModules:ESscientificDomains2ndList ;
+      skos:notation "PS" ;
+      skos:prefLabel "Psychologie"@fr , "Psicoloxía"@ast , "Psicoloxía"@gl , "Psychology"@en , "Psicologia"@ca , "Psicologia"@pt , "Psicología" , "Psicología"@es .
 
 asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_BMED
       a       skos:Concept ;
       rdfs:label "Biomedicina" ;
-      asio:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_BMED ;
+      emergel:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_BMED ;
       skos:broader asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_CVS ;
       skos:inScheme asioModules:ESscientificDomains2ndList ;
       skos:notation "BMED" ;
       skos:note "Investigación e estudo en Bioloxía Molecular, Celular, Xenética, Microbioloxía, Fisioloxía, Inmunoloxía e áreas relacionadas, con aplicacións ou interese na Biomedicina."@gl , "Research and study in Molecular, Cellular, Genetic Biology, Microbiology, Physiology, Immunology and related areas, with applications or interest in Biomedicine."@en , "Recerca i estudi en Biologia Molecular, Cel·lular, Genètica, Microbiologia, Fisiologia, Immunologia i àrees afins, amb aplicacions o interès en biomedicina."@ca ;
       skos:prefLabel "Biomedicina" , "Biomedicina"@es , "Biomedicina"@ast , "Biomedicina"@gl , "Biomedicina"@pt , "Biomedicine"@en , "Biomédecine"@fr , "biomedicina"@ca .
-
-asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_PS
-      a       skos:Concept ;
-      rdfs:label "Psicología" ;
-      asio:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_PS ;
-      skos:broader asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_CSH ;
-      skos:inScheme asioModules:ESscientificDomains2ndList ;
-      skos:notation "PS" ;
-      skos:prefLabel "Psychologie"@fr , "Psicoloxía"@ast , "Psicoloxía"@gl , "Psychology"@en , "Psicologia"@ca , "Psicologia"@pt , "Psicología" , "Psicología"@es .
