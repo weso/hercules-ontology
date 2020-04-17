@@ -1,0 +1,13 @@
+PREFIX wb: <http://hercules-demo.wiki.opencura.com/entity/>
+PREFIX wbt: <http://hercules-demo.wiki.opencura.com/prop/direct/>
+
+SELECT ?centreLabel (COUNT(?seal) AS ?numberOfSeals) WHERE {
+  ?centre wbt:P1 wb:Q2 ; # get entities of type ResearchInstitute
+          wbt:P2 ?seal . # with property hasSealOfQuality
+  SERVICE wikibase:label {
+    bd:serviceParam wikibase:language "es" .
+  }
+}
+GROUP BY ?centreLabel
+ORDER BY DESC(?numberOfSeals)
+LIMIT 10
