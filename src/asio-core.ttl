@@ -1411,7 +1411,7 @@ foaf:Project rdf:type owl:Class ;
 
 
 #################################################################
-#    Roles
+#    Individuals
 #################################################################
 
 ###  http://www.asio.es/asioontologies/asio#Administrative
