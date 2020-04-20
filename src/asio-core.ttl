@@ -175,6 +175,10 @@ asio:hasResearchField rdf:type owl:ObjectProperty ;
 
 ###  http://www.asio.es/asioontologies/asio#hasScientificDomain
 asio:hasScientificDomain rdf:type owl:ObjectProperty ;
+                         rdfs:domain asio:Patent ,
+                                     asio:Publication ,
+                                     foaf:Project ;
+                         rdfs:range skos:Concept ;
                          rdfs:label "has scientific domain"@en .
 
 
@@ -1906,11 +1910,11 @@ asio:MasterStudent skos:altLabel "Estudante de mestrado"@gl ;
                    rdfs:label "Master student"@en ;
                    skos:prefLabel "Étudiant de maîtrise"@fr ;
                    skos:altLabel "Étudiant de master"@fr ;
-                   rdfs:label "Estudiante de máster"@es ,
-                              "Estudante de mestrado"@pt ;
+                   rdfs:label "Estudante de mestrado"@pt ,
+                              "Estudiante de máster"@es ,
+                              "Étudiant de maîtrise"@fr ;
                    skos:prefLabel "Estudiant de màster"@ca ;
-                   rdfs:label "Étudiant de maîtrise"@fr ,
-                              "Estudiant de màster"@ca-ad ;
+                   rdfs:label "Estudiant de màster"@ca-ad ;
                    skos:prefLabel "Estudante de máster"@gl ,
                                   "Estudante de mestrado"@pt ;
                    rdfs:label "Estudiant de màster"@ca-es .
@@ -1930,11 +1934,11 @@ asio:PhDStudent skos:altLabel "Doutorando"@pt ;
                                "Estudante de doutoramento"@pt ;
                 rdfs:label "Estudiant de doctorat"@ca-es ;
                 skos:altLabel "Doctorando"@gl ;
-                rdfs:label "Estudiante de doctorado"@es ;
                 skos:prefLabel "Estudiant de doctorat"@ca ;
-                skos:altLabel "Doctorant"@fr ;
-                rdfs:label "Étudiant de doctorat"@fr ;
-                skos:altLabel "PhD candidate"@en .
+                rdfs:label "Estudiante de doctorado"@es ;
+                skos:altLabel "Doctorant"@fr ,
+                              "PhD candidate"@en ;
+                rdfs:label "Étudiant de doctorat"@fr .
 
 
 asio:UndergraduateStudent skos:prefLabel "Undergraduate student"@en ;
