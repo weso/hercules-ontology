@@ -7,7 +7,7 @@ from common import OUTPUT_FOLDER, try_create_dir
 ALIGNMENTS_FOLDER = 'alignments'
 SRC_FOLDER = 'src'
 
-MERGED_ONTOLOGY_FILE_NAME = 'merged_ontology'
+MERGED_ONTOLOGY_FILE_NAME = 'asio'
 
 FILE_OUTPUT_FORMATS = {
     '.ttl': 'turtle',
