@@ -1,15 +1,19 @@
-@prefix foaf:    <http://xmlns.com/foaf/0.1/#> .
 @prefix asio:  <http://purl.org/asio/core#> .
-@prefix my:      <http://weso.es/tablines/project/scientificDomainss/resource/> .
 @prefix asioModules:  <http://purl.org/asio/modules#> .
-@prefix project:  <http://weso.es/tablines/project/scientificDomainss/> .
-@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix dcat:    <http://www.w3.org/ns/dcat#> .
 @prefix dct:     <http://purl.org/dc/terms/> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/#> .
+@prefix my:      <http://weso.es/tablines/project/scientificDomainss/resource/> .
 @prefix ontolex:  <http://www.w3.org/ns/lemon/ontolex#> .
-@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix provo:   <http://www.w3.org/ns/prov#> .
+@prefix project:  <http://weso.es/tablines/project/scientificDomainss/> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <http://purl.org/asio/modules#>
   rdf:type owl:Ontology ;
@@ -28,18 +32,18 @@
   dct:language <http://id.loc.gov/vocabulary/iso639-1/pt>  ;
   dct:creator [
       rdf:type foaf:Person ;
-      organization:hasMembership [
-          rdf:type organization:Membership ;
-          organization:memberDuring [
+      org:hasMembership [
+          rdf:type org:Membership ;
+          org:memberDuring [
               rdf:type time:Interval ;
               time:hasBeginning [
                   rdf:type time:Instant ;
                   time:inXSDDateTimeStamp "2020-04-15T00:00:00+08:00"^^xsd:dateTimeStamp ;
                 ] ;
             ] ;
-          organization:organization <https://www.weso.es> ;
-          organization:role [
-              rdf:type organization:Role ;
+          org:organization <https://www.weso.es> ;
+          org:role [
+              rdf:type org:Role ;
               rdfs:label "Ontology engineer" ;
             ] ;
         ] ;
@@ -51,12 +55,12 @@
     ] ;
   dcterms:contributor [
       a foaf:Person ;
-      organization:memberOf <https://www.weso.es> ;
+      org:memberOf <https://www.weso.es> ;
       foaf:family_name "González Hevia" ;
       foaf:firstName "Alejandro" ;
       foaf:mbox <mailto:uo251513@uniovi.es> ;
       foaf:name "Alejandro González Hevia" ;
-      foaf:publications <https://orcid.org/FIXME> ;
+      foaf:publications <https://orcid.org/0000-0003-1394-5073> ;
       foaf:workInfoHomepage <http://www.weso.es/> ;
     ] ;
   voaf:reliesOn <http://purl.org/asio> ;
