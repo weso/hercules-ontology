@@ -1,0 +1,31 @@
+name: Build and Deploy Documentation
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  build-ontology:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions/setup-python@v1
+      with:
+        python-version: '3.7'
+        architecture: 'x64'
+
+    - name: Install dependencies
+      run: pip install rdflib rdflib-jsonld
+
+    - name: Merge ontology
+      run: python ./scripts/build_ontology.py
+
+    - name: Remove gitignore
+      run: rm .gitignore
+
+    - name: Deploy
+      uses: JamesIves/github-pages-deploy-action@releases/v3
+      with:
+        ACCESS_TOKEN: ${{ secrets.WESOBOT_ACCESS_TOKEN}}
+        BRANCH: gh-pages # The branch the action should deploy to.
+        FOLDER: build # The folder the action should deploy.
