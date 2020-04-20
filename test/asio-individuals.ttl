@@ -113,8 +113,9 @@ asioIndividuals:EURO-INFSealOfExcellence rdf:type owl:NamedIndividual ,
 
 
 ###  http://www.asio.es/asioinstances/asio#HernanSagasteguiChigne
-asioIndividuals:HernanSagasteguiChigne rdf:type owl:NamedIndividual ,
-                                     <http://www.asio.es/asioontologies/asio#Research&TeachingPersonnel> ;
+asioIndividuals:HernanSagasteguiChigne rdf:type owl:NamedIndividual ;
+                            asio:plays  asio:Researching ,
+                                        asio:Teaching ;
                             asio:authors asioIndividuals:Thesis2 ;
                             rdfs:label "Hernán Sagastegui Chigne"@en ,
                                        "Hernán Sagastegui Chigne"@es .
@@ -207,24 +208,27 @@ asioIndividuals:InstitutoMurcianoDeInvestigacionBiosanitaria rdf:type owl:NamedI
 
 
 ###  http://www.asio.es/asioinstances/asio#JoseAlbertoBenitezAndrades
-asioIndividuals:JoseAlbertoBenitezAndrades rdf:type owl:NamedIndividual ,
-                                         <http://www.asio.es/asioontologies/asio#Research&TeachingPersonnel> ;
+asioIndividuals:JoseAlbertoBenitezAndrades rdf:type owl:NamedIndividual ;
+                                asio:plays  asio:Researching ,
+                                            asio:Teaching ;
                                 asio:authors asioIndividuals:Thesis3 ;
                                 rdfs:label "Jose Alberto Benítez Andrades"@en ,
                                            "Jose Alberto Benítez Andrades"@es .
 
 
 ###  http://www.asio.es/asioinstances/asio#JoseEmilioLabraGayo
-asioIndividuals:JoseEmilioLabraGayo rdf:type owl:NamedIndividual ,
-                                  <http://www.asio.es/asioontologies/asio#Research&TeachingPersonnel> ;
+asioIndividuals:JoseEmilioLabraGayo rdf:type owl:NamedIndividual ;
+                         asio:plays  asio:Researching ,
+                                     asio:Teaching ;
                          asio:isMemberOf asioIndividuals:WESO ;
                          rdfs:label "José Emilio Labra Gayo"@en ,
                                     "José Emilio Labra Gayo"@es .
 
 
 ###  http://www.asio.es/asioinstances/asio#JoseMariaAlvarezRodriguez
-asioIndividuals:JoseMariaAlvarezRodriguez rdf:type owl:NamedIndividual ,
-                                        <http://www.asio.es/asioontologies/asio#Research&TeachingPersonnel> ;
+asioIndividuals:JoseMariaAlvarezRodriguez rdf:type owl:NamedIndividual ;
+                               asio:plays  asio:Researching ,
+                                           asio:Teaching ;
                                asio:authors asioIndividuals:Thesis1 ;
                                rdfs:label "Jose María Álvarez Rodríguez"@en ,
                                           "Jose María Álvarez Rodríguez"@es .
@@ -265,8 +269,9 @@ asioIndividuals:MinimalIntelligenceLab rdf:type owl:NamedIndividual ,
 
 
 ###  http://www.asio.es/asioinstances/asio#PacoCalvo
-asioIndividuals:PacoCalvo rdf:type owl:NamedIndividual ,
-                        <http://www.asio.es/asioontologies/asio#Research&TeachingPersonnel> ;
+asioIndividuals:PacoCalvo rdf:type owl:NamedIndividual ;
+                asio:plays  asio:Researching ,
+                            asio:Teaching ;
                asio:authors asioIndividuals:PacoCalvoSPaper1 ,
                             asioIndividuals:PacoCalvoSPaper2 ,
                             asioIndividuals:PacoCalvoSPaper3 ;
@@ -454,3 +459,70 @@ asioIndividuals:WESO rdf:type owl:NamedIndividual ,
           foaf:member asioIndividuals:JoseEmilioLabraGayo ;
           rdfs:label "Web Semantics Oviedo"@en ,
                      "Web Semántica Oviedo"@es .
+
+###  http://www.asio.es/asioinstances/asio#BegoñaCristinaPelayoGarciaBustelo
+asioIndividuals:BegoñaCristinaPelayoGarciaBustelo rdf:type owl:NamedIndividual ;
+                         asio:plays  asio:Researching ,
+                                     asio:Teaching ;
+                         asio:authors asioIndividuals:BegoñaCristinaPelayoPaper1 ,
+                                      asioIndividuals:BegoñaCristinaPelayoPaper2 ;
+                         rdfs:label "Begoña Cristina Pelayo García-Bustelo"@en ,
+                                    "Begoña Cristina Pelayo García-Bustelo"@es .
+
+###  http://www.asio.es/asioinstances/asio#MariaRitaSierraSanchez
+asioIndividuals:MariaRitaSierraSanchez rdf:type owl:NamedIndividual ;
+                         asio:plays  asio:Researching,
+                                     asio:Teaching ;
+                         asio:authors asioIndividuals:MariaRitaPaper1 ,
+                                      asioIndividuals:MariaRitaPaper2 ;
+                         rdfs:label "Maria Rita Sierra Sanchez"@en ,
+                                    "Maria Rita Sierra Sanchez"@es .
+
+###  http://www.asio.es/asioinstances/asio#MariaRitaPaper1
+asioIndividuals:MariaRitaPaper1 rdf:type owl:NamedIndividual ,
+                               asio:PeerReviewedArticle ;
+                      asio:isAuthoredBy asioIndividuals:MariaRitaSierraSanchez ;
+                      asio:publicationDate 2015 ;
+                      asio:publishedBy asioIndividuals:Springer;
+                      rdfs:comment "Mencía R., Sierra M.R., Varela R. (2015) Genetic Algorithm for the Job-Shop Scheduling with Skilled Operators. 
+                                    In: Ferrández Vicente J., Álvarez-Sánchez J., de la Paz López F., Toledo-Moreo F., Adeli H. (eds) Bioinspired Computation in 
+                                    Artificial Systems. IWINAC 2015. Lecture Notes in Computer Science, vol 9108. Springer, Cham"@en;
+                      rdfs:label "Genetic Algorithm for the Job-Shop Scheduling with Skilled Operators"@en;
+
+###  http://www.asio.es/asioinstances/asio#MariaRitaPaper2
+asioIndividuals:MariaRitaPaper2 rdf:type owl:NamedIndividual ,
+                               asio:PeerReviewedArticle ;
+                      asio:isAuthoredBy asioIndividuals:MariaRitaSierraSanchez ;
+                      asio:publicationDate 2015 ;
+                      rdfs:comment "Mencía, Carlos et al. ‘Solving the Job Shop Scheduling Problem with Operators by Depth-first Heuristic 
+                                    Search Enhanced with Global Pruning Rules’. 1 Jan. 2015 : 365 – 381."@en ;
+                      rdfs:label "Solving the Job Shop Scheduling Problem with Operators by Depth-first Heuristic 
+                                    Search Enhanced with Global Pruning Rules"@en .
+
+###  http://www.asio.es/asioinstances/asio#BegoñaCristinaPelayoPaper1
+asioIndividuals:BegoñaCristinaPelayoPaper1 rdf:type owl:NamedIndividual ,
+                               asio:PeerReviewedArticle ;
+                      asio:isAuthoredBy asioIndividuals:BegoñaCristinaPelayoGarciaBustelo ;
+                      asio:publishedBy asioIndividuals:Springer;
+                      asio:publicationDate 2010 ;
+                      rdfs:comment "Álvarez M.Á., G-Bustelo B.C.P., Sanjuán-Martínez O., Lovelle J.M.C. (2010) Bridging together Semantic Web and Model-Driven 
+                                    Engineering. In: de Leon F. de Carvalho A.P., Rodríguez-González S., De Paz Santana J.F., Rodríguez J.M.C. (eds) Distributed 
+                                    Computing and Artificial Intelligence. Advances in Intelligent and Soft Computing, vol 79. Springer, Berlin, Heidelberg"@en;
+                      rdfs:label "Bridging together Semantic Web and Model-Driven Engineering"@en;
+
+###  http://www.asio.es/asioinstances/asio#BegoñaCristinaPelayoPaper2
+asioIndividuals:BegoñaCristinaPelayoPaper2 rdf:type owl:NamedIndividual ,
+                               asio:PeerReviewedArticle ;
+                      asio:isAuthoredBy asioIndividuals:BegoñaCristinaPelayoGarciaBustelo ;
+                      asio:publishedBy asioIndividuals:Springer;
+                      asio:publicationDate 2010 ;
+                      rdfs:comment "Núñez V E.R., Martínez O.S., Lovelle J.M.C., García-Bustelo B.C.P. (2010) First Steps towards Implicit Feedback for 
+                                    Recommender Systems in Electronic Books. In: de Leon F. de Carvalho A.P., Rodríguez-González S., De Paz Santana J.F., 
+                                    Rodríguez J.M.C. (eds) Distributed Computing and Artificial Intelligence. Advances in Intelligent and Soft Computing, 
+                                    vol 79. Springer, Berlin, Heidelberg"@en ;
+                      rdfs:label "First Steps towards Implicit Feedback for Recommender Systems in Electronic Books"@en .
+
+###  http://www.asio.es/asioinstances/asio#Springer
+asioIndividuals:Springer rdf:type owl:NamedIndividual ,
+                       asio:EditedPublication ;
+              rdfs:label "Springer, Berlin, Heidelberg"@en .
