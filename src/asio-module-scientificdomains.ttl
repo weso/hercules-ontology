@@ -14,6 +14,7 @@
 @prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
 @prefix time: <http://www.w3.org/2006/time#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix voaf: <http://purl.org/vocommons/voaf#> .
 
 <http://purl.org/asio/modules#>
   rdf:type owl:Ontology ;
@@ -53,7 +54,7 @@
       foaf:name "Emilio Rubiera Azcona" ;
       foaf:publications <https://orcid.org/0000-0002-0292-9177> ;
     ] ;
-  dcterms:contributor [
+  dct:contributor [
       a foaf:Person ;
       org:memberOf <https://www.weso.es> ;
       foaf:family_name "González Hevia" ;
