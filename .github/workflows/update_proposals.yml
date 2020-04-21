@@ -17,7 +17,7 @@ jobs:
         repository: weso/shex-lite-proposals-manager
         token: ${{ secrets.WESOBOT_ACCESS_TOKEN}}
     - name: proposals-sync
-      uses: ./
+      uses: ./doc
       env:
         PROPOSAL_TYPE: "ontology"
       with:
