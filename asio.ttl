@@ -48,46 +48,10 @@
 @prefix voaf: <http://purl.org/vocommons/voaf#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-asioModules: a owl:Ontology ;
-    rdfs:label "ASIO ontology's vertical module on geopolitical, administrative subdivisions",
-        "ASIO ontology's vertical module on scientific domains" ;
-    dct1:contributor [ a foaf1:Person ;
-            org:memberOf <https://www.weso.es> ;
-            foaf1:family_name "González Hevia" ;
-            foaf1:firstName "Alejandro" ;
-            foaf1:mbox <mailto:uo251513@uniovi.es> ;
-            foaf1:name "Alejandro González Hevia" ;
-            foaf1:publications <https://orcid.org/0000-0003-1394-5073> ;
-            foaf1:workInfoHomepage <http://www.weso.es/> ] ;
-    dct1:created "2020-04-15"^^xsd:date,
-        "2020-04-21"^^xsd:date ;
+asioModules:GeoPolitic a owl:Ontology ;
+    rdfs:label "ASIO ontology's vertical module on geopolitical, administrative subdivisions" ;
+    dct1:created "2020-04-21"^^xsd:date ;
     dct1:creator [ a foaf1:Person ;
-            org:hasMembership [ a org:Membership ;
-                    org:memberDuring [ a time:Interval ;
-                            time:hasBeginning [ a time:Instant ;
-                                    time:inXSDDateTimeStamp "2020-04-15T00:00:00+08:00"^^xsd:dateTimeStamp ] ] ;
-                    org:organization <https://www.weso.es> ;
-                    org:role [ a org:Role ;
-                            rdfs:label "Ontology engineer" ] ] ;
-            foaf1:family_name "Rubiera Azcona" ;
-            foaf1:firstName "Emilio" ;
-            foaf1:mbox <mailto:uo38239@uniovi.es> ;
-            foaf1:name "Emilio Rubiera Azcona" ;
-            foaf1:publications <https://orcid.org/0000-0002-0292-9177> ],
-        [ a foaf1:Person ;
-            org:hasMembership [ a org:Membership ;
-                    org:memberDuring [ a time:Interval ;
-                            time:hasBeginning [ a time:Instant ;
-                                    time:inXSDDateTimeStamp "2020-04-15T00:00:00+08:00"^^xsd:dateTimeStamp ] ] ;
-                    org:organization <https://www.weso.es> ;
-                    org:role [ a org:Role ;
-                            rdfs:label "Ontology engineer" ] ] ;
-            foaf1:family_name "Rubiera Azcona" ;
-            foaf1:firstName "Emilio" ;
-            foaf1:mbox <mailto:uo38239@uniovi.es> ;
-            foaf1:name "Emilio Rubiera Azcona" ;
-            foaf1:publications <https://orcid.org/0000-0002-0292-9177> ],
-        [ a foaf1:Person ;
             org:hasMembership [ a org:Membership ;
                     org:memberDuring [ a time:Interval ;
                             time:hasBeginning [ a time:Instant ;
@@ -114,9 +78,48 @@ asioModules: a owl:Ontology ;
     dct1:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     voaf:reliesOn <http://purl.org/asio>,
         dcat: ;
-    rdfs:comment "A preliminary version of Andorra's, Portugal's and Spain's administrative geosubdivisions integrating a geopolitic vertical module belonging to the ASIO ontology."@en,
-        "A preliminary version of Spain's State Research Agency, subject areas vertical module belonging to the ASIO ontology. The data comes from a 1-star PDF file accessible at http://www.ciencia.gob.es/, which was transformed in 5-star linked data file (SKOS)."@en,
-        "A preliminary version of the scientific-domains vertical module belonging to the ASIO ontology. The data comes from a 1-star PDF file accessible at http://www.ciencia.gob.es/stfls/MICINN/Ayudas/PE_2013_2016/PE_Promocion_e_Incorporacion_Talento_y_su_Empleabilidad/FICHEROS/SE_Incorporacion/Ayudas_contratos_RYC_2016/Clasificacion_areas_cientificas_2016_AEI.pdf which was transformed in 5-star linked data file (SKOS)."@en ;
+    rdfs:comment "A preliminary version of Andorra's, Portugal's and Spain's administrative geosubdivisions integrating a geopolitic vertical module belonging to the ASIO ontology."@en ;
+    owl:imports <http://purl.org/asio>,
+        <http://purl.org/asioModules>,
+        <http://purl.org/vocommons/voaf>,
+        <http://www.w3.org/2004/02/skos/core>,
+        <http://www.w3.org/2006/time>,
+        dcat:,
+        <http://www.w3.org/ns/org>,
+        foaf1: ;
+    owl:versionInfo "1.0.0" .
+
+asioModules:SubjectAreas a owl:Ontology ;
+    rdfs:label "ASIO ontology's vertical module on scientific domains" ;
+    dct1:created "2020-04-21"^^xsd:date ;
+    dct1:creator [ a foaf1:Person ;
+            org:hasMembership [ a org:Membership ;
+                    org:memberDuring [ a time:Interval ;
+                            time:hasBeginning [ a time:Instant ;
+                                    time:inXSDDateTimeStamp "2020-04-15T00:00:00+08:00"^^xsd:dateTimeStamp ] ] ;
+                    org:organization <https://www.weso.es> ;
+                    org:role [ a org:Role ;
+                            rdfs:label "Ontology engineer" ] ] ;
+            foaf1:family_name "Rubiera Azcona" ;
+            foaf1:firstName "Emilio" ;
+            foaf1:mbox <mailto:uo38239@uniovi.es> ;
+            foaf1:name "Emilio Rubiera Azcona" ;
+            foaf1:publications <https://orcid.org/0000-0002-0292-9177> ] ;
+    dct1:language <http://id.loc.gov/vocabulary/iso639-1/an>,
+        <http://id.loc.gov/vocabulary/iso639-1/ca>,
+        <http://id.loc.gov/vocabulary/iso639-1/en>,
+        <http://id.loc.gov/vocabulary/iso639-1/es>,
+        <http://id.loc.gov/vocabulary/iso639-1/eu>,
+        <http://id.loc.gov/vocabulary/iso639-1/fr>,
+        <http://id.loc.gov/vocabulary/iso639-1/gl>,
+        <http://id.loc.gov/vocabulary/iso639-1/oc>,
+        <http://id.loc.gov/vocabulary/iso639-1/pt>,
+        <http://id.loc.gov/vocabulary/iso639-2/ast>,
+        <https://iso639-3.sil.org/code/ext> ;
+    dct1:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    voaf:reliesOn <http://purl.org/asio>,
+        dcat: ;
+    rdfs:comment "A preliminary version of Spain's State Research Agency, subject areas vertical module belonging to the ASIO ontology. The data comes from a 1-star PDF file accessible at http://www.ciencia.gob.es/, which was transformed in 5-star linked data file (SKOS)."@en ;
     owl:imports <http://purl.org/asio>,
         <http://purl.org/asioModules>,
         <http://purl.org/vocommons/voaf>,
@@ -6826,6 +6829,55 @@ asioModules:ISO_ALPHA_2_COUNTRY_CODE_EA a skos:Concept ;
         asioModules:ES_DIVISION_LEVEL_1_ES_ML ;
     skos:inScheme asioModules:ISOALPHA2CountryClassification ;
     skos:prefLabel "EA" .
+
+asioModules:ScientificDomains a owl:Ontology ;
+    rdfs:label "ASIO ontology's vertical module on scientific domains" ;
+    dct1:contributor [ a foaf1:Person ;
+            org:memberOf <https://www.weso.es> ;
+            foaf1:family_name "González Hevia" ;
+            foaf1:firstName "Alejandro" ;
+            foaf1:mbox <mailto:uo251513@uniovi.es> ;
+            foaf1:name "Alejandro González Hevia" ;
+            foaf1:publications <https://orcid.org/0000-0003-1394-5073> ;
+            foaf1:workInfoHomepage <http://www.weso.es/> ] ;
+    dct1:created "2020-04-15"^^xsd:date ;
+    dct1:creator [ a foaf1:Person ;
+            org:hasMembership [ a org:Membership ;
+                    org:memberDuring [ a time:Interval ;
+                            time:hasBeginning [ a time:Instant ;
+                                    time:inXSDDateTimeStamp "2020-04-15T00:00:00+08:00"^^xsd:dateTimeStamp ] ] ;
+                    org:organization <https://www.weso.es> ;
+                    org:role [ a org:Role ;
+                            rdfs:label "Ontology engineer" ] ] ;
+            foaf1:family_name "Rubiera Azcona" ;
+            foaf1:firstName "Emilio" ;
+            foaf1:mbox <mailto:uo38239@uniovi.es> ;
+            foaf1:name "Emilio Rubiera Azcona" ;
+            foaf1:publications <https://orcid.org/0000-0002-0292-9177> ] ;
+    dct1:language <http://id.loc.gov/vocabulary/iso639-1/an>,
+        <http://id.loc.gov/vocabulary/iso639-1/ca>,
+        <http://id.loc.gov/vocabulary/iso639-1/en>,
+        <http://id.loc.gov/vocabulary/iso639-1/es>,
+        <http://id.loc.gov/vocabulary/iso639-1/eu>,
+        <http://id.loc.gov/vocabulary/iso639-1/fr>,
+        <http://id.loc.gov/vocabulary/iso639-1/gl>,
+        <http://id.loc.gov/vocabulary/iso639-1/oc>,
+        <http://id.loc.gov/vocabulary/iso639-1/pt>,
+        <http://id.loc.gov/vocabulary/iso639-2/ast>,
+        <https://iso639-3.sil.org/code/ext> ;
+    dct1:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    voaf:reliesOn <http://purl.org/asio>,
+        dcat: ;
+    rdfs:comment "A preliminary version of the scientific-domains vertical module belonging to the ASIO ontology. The data comes from a 1-star PDF file accessible at http://www.ciencia.gob.es/stfls/MICINN/Ayudas/PE_2013_2016/PE_Promocion_e_Incorporacion_Talento_y_su_Empleabilidad/FICHEROS/SE_Incorporacion/Ayudas_contratos_RYC_2016/Clasificacion_areas_cientificas_2016_AEI.pdf which was transformed in 5-star linked data file (SKOS)."@en ;
+    owl:imports <http://purl.org/asio>,
+        <http://purl.org/asioModules>,
+        <http://purl.org/vocommons/voaf>,
+        <http://www.w3.org/2004/02/skos/core>,
+        <http://www.w3.org/2006/time>,
+        dcat:,
+        <http://www.w3.org/ns/org>,
+        foaf1: ;
+    owl:versionInfo "1.0.0" .
 
 asio:Company a owl:Class ;
     rdfs:label "Empresa"@ca-ad,
