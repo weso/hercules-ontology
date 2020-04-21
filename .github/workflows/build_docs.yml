@@ -1,7 +1,10 @@
 name: Build and Deploy Documentation
 
 on:
-  page_build
+  push:
+    branches: 
+      - 'gh-pages'
+  page_build:
 
 jobs:
   build-docs:
