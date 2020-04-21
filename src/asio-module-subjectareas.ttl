@@ -16,58 +16,6 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix voaf: <http://purl.org/vocommons/voaf#> .
 
-<http://purl.org/asio/modules#SubjectAreas>
-  rdf:type owl:Ontology ;
-  dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-  dct:created "2020-04-21"^^xsd:date ;
-  dct:language <http://id.loc.gov/vocabulary/iso639-1/an>  ;
-  dct:language <http://id.loc.gov/vocabulary/iso639-2/ast>  ;
-  dct:language <http://id.loc.gov/vocabulary/iso639-1/ca>  ;
-  dct:language <http://id.loc.gov/vocabulary/iso639-1/en>  ;
-  dct:language <http://id.loc.gov/vocabulary/iso639-1/es>  ;
-  dct:language <http://id.loc.gov/vocabulary/iso639-1/eu>  ;
-  dct:language <https://iso639-3.sil.org/code/ext>  ;
-  dct:language <http://id.loc.gov/vocabulary/iso639-1/fr>  ;
-  dct:language <http://id.loc.gov/vocabulary/iso639-1/gl>  ;
-  dct:language <http://id.loc.gov/vocabulary/iso639-1/oc>  ;
-  dct:language <http://id.loc.gov/vocabulary/iso639-1/pt>  ;
-  dct:creator [
-      rdf:type foaf:Person ;
-      org:hasMembership [
-          rdf:type org:Membership ;
-          org:memberDuring [
-              rdf:type time:Interval ;
-              time:hasBeginning [
-                  rdf:type time:Instant ;
-                  time:inXSDDateTimeStamp "2020-04-15T00:00:00+08:00"^^xsd:dateTimeStamp ;
-                ] ;
-            ] ;
-          org:organization <https://www.weso.es> ;
-          org:role [
-              rdf:type org:Role ;
-              rdfs:label "Ontology engineer" ;
-            ] ;
-        ] ;
-      foaf:family_name "Rubiera Azcona" ;
-      foaf:firstName "Emilio" ;
-      foaf:mbox <mailto:uo38239@uniovi.es> ;
-      foaf:name "Emilio Rubiera Azcona" ;
-      foaf:publications <https://orcid.org/0000-0002-0292-9177> ;
-    ] ;
-  voaf:reliesOn <http://purl.org/asio> ;
-  voaf:reliesOn dcat: ;
-  rdfs:comment "A preliminary version of Spain's State Research Agency, subject areas vertical module belonging to the ASIO ontology. The data comes from a 1-star PDF file accessible at http://www.ciencia.gob.es/, which was transformed in 5-star linked data file (SKOS)."@en ;
-  rdfs:label "ASIO ontology's vertical module on scientific domains" ;
-  owl:imports <http://purl.org/vocommons/voaf> ;
-  owl:imports <http://purl.org/asio> ;
-  owl:imports <http://purl.org/asioModules> ;
-  owl:imports <http://www.w3.org/2004/02/skos/core> ;
-  owl:imports <http://www.w3.org/2006/time> ;
-  owl:imports <http://www.w3.org/ns/org> ;
-  owl:imports dcat: ;
-  owl:imports foaf: ;
-  owl:versionInfo "1.0.0" ;
-.
 
 asioModules:ES_SUBJECT_AREA_LEVEL_1_CODE_CMIFQ
       a       skos:Concept ;
