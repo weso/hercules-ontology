@@ -22,10 +22,10 @@ jobs:
 
     - name: Remove gitignore
       run: rm .gitignore
-
+    
     - name: Deploy
-      uses: JamesIves/github-pages-deploy-action@releases/v3
+      uses: peaceiris/actions-gh-pages@v3
       with:
-        ACCESS_TOKEN: ${{ secrets.WESOBOT_ACCESS_TOKEN}}
-        BRANCH: gh-pages # The branch the action should deploy to.
-        FOLDER: build # The folder the action should deploy.
+        personal_token: ${{ secrets.WESOBOT_ACCESS_TOKEN}}
+        publish_dir: ./build # The folder the action should deploy.
+        keep_files: true
