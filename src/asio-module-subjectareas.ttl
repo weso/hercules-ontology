@@ -1,0 +1,130 @@
+@prefix asio:  <http://purl.org/asio/core#> .
+@prefix asioModules:  <http://purl.org/asio/modules#> .
+@prefix dcat:    <http://www.w3.org/ns/dcat#> .
+@prefix dct:     <http://purl.org/dc/terms/> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/#> .
+@prefix my:      <http://weso.es/tablines/project/scientificDomainss/resource/> .
+@prefix ontolex:  <http://www.w3.org/ns/lemon/ontolex#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix provo:   <http://www.w3.org/ns/prov#> .
+@prefix project:  <http://weso.es/tablines/project/scientificDomainss/> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix voaf: <http://purl.org/vocommons/voaf#> .
+
+<http://purl.org/asio/modules#>
+  rdf:type owl:Ontology ;
+  dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+  dct:created "2020-04-21"^^xsd:date ;
+  dct:language <http://id.loc.gov/vocabulary/iso639-1/an>  ;
+  dct:language <http://id.loc.gov/vocabulary/iso639-2/ast>  ;
+  dct:language <http://id.loc.gov/vocabulary/iso639-1/ca>  ;
+  dct:language <http://id.loc.gov/vocabulary/iso639-1/en>  ;
+  dct:language <http://id.loc.gov/vocabulary/iso639-1/es>  ;
+  dct:language <http://id.loc.gov/vocabulary/iso639-1/eu>  ;
+  dct:language <https://iso639-3.sil.org/code/ext>  ;
+  dct:language <http://id.loc.gov/vocabulary/iso639-1/fr>  ;
+  dct:language <http://id.loc.gov/vocabulary/iso639-1/gl>  ;
+  dct:language <http://id.loc.gov/vocabulary/iso639-1/oc>  ;
+  dct:language <http://id.loc.gov/vocabulary/iso639-1/pt>  ;
+  dct:creator [
+      rdf:type foaf:Person ;
+      org:hasMembership [
+          rdf:type org:Membership ;
+          org:memberDuring [
+              rdf:type time:Interval ;
+              time:hasBeginning [
+                  rdf:type time:Instant ;
+                  time:inXSDDateTimeStamp "2020-04-15T00:00:00+08:00"^^xsd:dateTimeStamp ;
+                ] ;
+            ] ;
+          org:organization <https://www.weso.es> ;
+          org:role [
+              rdf:type org:Role ;
+              rdfs:label "Ontology engineer" ;
+            ] ;
+        ] ;
+      foaf:family_name "Rubiera Azcona" ;
+      foaf:firstName "Emilio" ;
+      foaf:mbox <mailto:uo38239@uniovi.es> ;
+      foaf:name "Emilio Rubiera Azcona" ;
+      foaf:publications <https://orcid.org/0000-0002-0292-9177> ;
+    ] ;
+  voaf:reliesOn <http://purl.org/asio> ;
+  voaf:reliesOn dcat: ;
+  rdfs:comment "A preliminary version of Spain's State Research Agency, subject areas vertical module belonging to the ASIO ontology. The data comes from a 1-star PDF file accessible at http://www.ciencia.gob.es/, which was transformed in 5-star linked data file (SKOS)."@en ;
+  rdfs:label "ASIO ontology's vertical module on scientific domains" ;
+  owl:imports <http://purl.org/vocommons/voaf> ;
+  owl:imports <http://purl.org/asio> ;
+  owl:imports <http://purl.org/asioModules> ;
+  owl:imports <http://www.w3.org/2004/02/skos/core> ;
+  owl:imports <http://www.w3.org/2006/time> ;
+  owl:imports <http://www.w3.org/ns/org> ;
+  owl:imports dcat: ;
+  owl:imports foaf: ;
+  owl:versionInfo "1.0.0" ;
+.
+
+asioModules:ES_SUBJECT_AREA_LEVEL_1_CODE_CMIFQ
+      a       skos:Concept ;
+      rdfs:label "CMIFQ" ;
+      asio:codeOf asioModules:ES_SUBJECT_AREA_LEVEL_1_CMIFQ ;
+      skos:inScheme asioModules:ESSubjectCode1stList ;
+      skos:prefLabel "CMIFQ" .
+
+asioModules:ES_SUBJECT_AREA_LEVEL_1_CSH
+      a       skos:Concept ;
+      rdfs:label "Ciencias sociales y humanidades" ;
+      asio:hasCode asioModules:ES_SUBJECT_AREA_LEVEL_1_CODE_CSH ;
+      skos:inScheme asioModules:ESSubjectAreas1stList ;
+      skos:notation "CSH" ;
+      skos:prefLabel "Ciências sociais e humanas"@pt , "Sciencias socials y humanidatz"@an , "Ciències socials i humanitats"@ca , "Ciencies sociales y humanidaes"@ast , "siˈɛnsiəs susiˈaɫs i uˈmanəs"@ca , "Social sciences and humanities"@en , "Sciences sociales et humaines"@fr , "Gizarte zientziak eta giza zientziak"@eu , "ˈsəʊʃəl ˈsaɪənsɪz ænd hju(ː)ˈmænɪtiz"@en-GB , "Ciencias sociales y humanidades"@es , "Ciencias sociales y humanidades" , "ˈθjen̟θjas soˈθjales i wmaniˈðaðes"@es-ES , "Céncias socialis i humanidadis"@ext , "Sciéncias socials e humanas"@oc , "ˈsoʊʃəl ˈsaɪənsəz ænd hjuˈmænɪtiz"@en-US , "Ciencias sociais e humanidades"@gl ;
+      ontolex:phoneticRep "ˈsəʊʃəl ˈsaɪənsɪz ænd hju(ː)ˈmænɪtiz"@en-GB , "siˈɛnsiəs susiˈaɫs i uˈmanəs"@ca , "ˈθjen̟θjas soˈθjales i wmaniˈðaðes"@es-ES , "ˈsoʊʃəl ˈsaɪənsəz ænd hjuˈmænɪtiz"@en-US .
+
+asioModules:ESSubjectCode1stList
+      a       asioModules:subjectAreas ;
+      rdfs:label "ˈkoðiγoz ðe las ˈaɾeas teˈmatikas ðe priˈmer niˈβel ðe la aˈxenθja estaˈtal ðe imbestiɣ̞aˈθjon"@es-ES-fonipa , "Códigos das áreas temáticas de primeiro nivel da Axencia Estatal de Investigación (AEI)"@gl , "Codis dels dominis temàtics de primer nivell de l'Agència Estatal de Recerca (AEI)"@ca , "Códigos de las áreas temáticas de primer nivel de la Agencia Estatal de Investigación (AEI)"@es , "ˈkəʊdz fɔː ðə fɜːst ˈlɛvl ˈsʌbʤɪkt ˈeərɪəz ɒv speɪnz steɪt rɪˈsɜːʧ ˈeɪʤənsi"@en-GB-fonipa , "Códigos de les árees temátiques de primer nivel"@ast , "duˈminis təˈmatikz ðə pɾiˈme niˈβeʎ ðə ɫə ʒənˈsiə əstəˈtaɫ ðə rəˈsɛrkə"@ca-CA-fonipa , "Codes for the first-level subject areas of Spain's State Research Agency (AEI)"@en , "ˈkoʊdz fɔr ðə fɜrst ˈlɛvəl ˈsʌbʤɪkt ˈɛriəz ʌv speɪnz steɪt riˈsɜrʧ ˈeɪʤənsi"@en-US-fonipa , "Códigos das áreas temáticas de primeiro nível da Agência Estadual de Pesquisa Espanhola (AEI)"@pt , "Codes des domains thématiques de premier niveau de l'Agence Espagnole pour la Recherche (AEI)"@fr ;
+      skos:prefLabel "ˈkoðiγoz ðe las ˈaɾeas teˈmatikas ðe priˈmer niˈβel ðe la aˈxenθja estaˈtal ðe imbestiɣ̞aˈθjon"@es-ES-fonipa , "Códigos das áreas temáticas de primeiro nivel da Axencia Estatal de Investigación (AEI)"@gl , "Codis dels dominis temàtics de primer nivell de l'Agència Estatal de Recerca (AEI)"@ca , "Códigos de las áreas temáticas de primer nivel de la Agencia Estatal de Investigación (AEI)"@es , "Códigos de les árees temátiques de primer nivel"@ast , "ˈkəʊdz fɔː ðə fɜːst ˈlɛvl ˈsʌbʤɪkt ˈeərɪəz ɒv speɪnz steɪt rɪˈsɜːʧ ˈeɪʤənsi"@en-GB-fonipa , "duˈminis təˈmatikz ðə pɾiˈme niˈβeʎ ðə ɫə ʒənˈsiə əstəˈtaɫ ðə rəˈsɛrkə"@ca-CA-fonipa , "Codes for the first-level subject areas of Spain's State Research Agency (AEI)"@en , "ˈkoʊdz fɔr ðə fɜrst ˈlɛvəl ˈsʌbʤɪkt ˈɛriəz ʌv speɪnz steɪt riˈsɜrʧ ˈeɪʤənsi"@en-US-fonipa , "Códigos das áreas temáticas de primeiro nível da Agência Estadual de Pesquisa Espanhola (AEI)"@pt , "Codes des domains thématiques de premier niveau de l'Agence Espagnole pour la Recherche (AEI)"@fr ;
+      ontolex:phoneticRep "ˈkoðiγoz ðe las ˈaɾeas teˈmatikas ðe priˈmer niˈβel ðe la aˈxenθja estaˈtal ðe imbestiɣ̞aˈθjon"@es-ES-fonipa , "ˈkəʊdz fɔː ðə fɜːst ˈlɛvl ˈsʌbʤɪkt ˈeərɪəz ɒv speɪnz steɪt rɪˈsɜːʧ ˈeɪʤənsi"@en-GB-fonipa , "duˈminis təˈmatikz ðə pɾiˈme niˈβeʎ ðə ɫə ʒənˈsiə əstəˈtaɫ ðə rəˈsɛrkə"@ca-CA-fonipa , "ˈkoʊdz fɔr ðə fɜrst ˈlɛvəl ˈsʌbʤɪkt ˈɛriəz ʌv speɪnz steɪt riˈsɜrʧ ˈeɪʤənsi"@en-US-fonipa .
+
+asioModules:ES_SUBJECT_AREA_LEVEL_1_CMIFQ
+      a       skos:Concept ;
+      rdfs:label "Ciencias matemáticas, físicas, químicas e ingenierías" ;
+      asio:hasCode asioModules:ES_SUBJECT_AREA_LEVEL_1_CODE_CMIFQ ;
+      skos:inScheme asioModules:ESSubjectAreas1stList ;
+      skos:notation "CMIFQ" ;
+      skos:prefLabel "Mathematical, physical, chemical and engineering sciences"@en , "ˈθjenθjaz mateˈmatikas ˈfisikas ˈkimikas e iŋxenjeˈrias"@es-ES , "Ciências matemáticas, físicas, químicas e de engenharia"@pt , "Ciencias matemáticas, físicas, químicas e ingenierías"@es , "Ciencias matemáticas, físicas, químicas e ingenierías" , "Sciencias matematicas, fisicas, quimicas y inchenierías"@an , "Céncias i ingenierías"@ext , "ˌmæθəˈmætɪkəl, ˈfɪzɪkəl, ˈkɛməkəl ænd ˈɛnʤəˈnɪrɪŋ ˈsaɪənsəz"@en-US , "Ciencies matemátiques, físiques, químiques ya inxenieríes"@ast , "Matematika, fisika, kimika eta ingeniaritza zientziak"@eu , "Ciencias matemáticas, físicas, químicas e de enxeñaría"@gl , "Sciences mathématiques, physiques, chimiques et du génie"@fr , "Sciéncias matematicas, fisicas, quimicas e engenhariá"@oc , "ˌmæθɪˈmætɪkəl, ˈfɪzɪkəl, ˈkɛmɪkəl ænd ˌɛnʤɪˈnɪərɪŋ ˈsaɪənsɪz"@en-GB , "siˈɛnsiəs mətəˈmatikəs ˈfizikəs ˈkimikəz i əɲʒiɲəˈɾiəs"@ca , "Ciències matemàtiques, físiques, químiques i enginyeries"@ca ;
+      ontolex:phoneticRep "ˈθjenθjaz mateˈmatikas ˈfisikas ˈkimikas e iŋxenjeˈrias"@es-ES , "ˌmæθəˈmætɪkəl, ˈfɪzɪkəl, ˈkɛməkəl ænd ˈɛnʤəˈnɪrɪŋ ˈsaɪənsəz"@en-US , "ˌmæθɪˈmætɪkəl, ˈfɪzɪkəl, ˈkɛmɪkəl ænd ˌɛnʤɪˈnɪərɪŋ ˈsaɪənsɪz"@en-GB , "siˈɛnsiəs mətəˈmatikəs ˈfizikəs ˈkimikəz i əɲʒiɲəˈɾiəs"@ca .
+
+asioModules:ES_SUBJECT_AREA_LEVEL_1_CODE_CV
+      a       skos:Concept ;
+      rdfs:label "CV" ;
+      asio:codeOf asioModules:ES_SUBJECT_AREA_LEVEL_1_CV ;
+      skos:inScheme asioModules:ESSubjectCode1stList ;
+      skos:prefLabel "CV" .
+
+asioModules:ES_SUBJECT_AREA_LEVEL_1_CV
+      a       skos:Concept ;
+      rdfs:label "Ciencias de la vida" ;
+      asio:hasCode asioModules:ES_SUBJECT_AREA_LEVEL_1_CODE_CV ;
+      skos:inScheme asioModules:ESSubjectAreas1stList ;
+      skos:notation "CV" ;
+      skos:prefLabel "Sciéncias de la vida"@oc , "Life sciences"@en , "Ciencies de la vida"@ast , "Ciências da vida"@pt , "Céncias de la vida"@ext , "siˈɛnsiəs ðə ɫə ˈbiðə"@ca , "Sciences de la vie"@fr , "Sciencias d'a vida"@an , "Ciencias de la vida"@es , "Ciencias de la vida" , "laɪf ˈsaɪənsəz"@en-US , "Ciències de la vida"@ca , "ˈθjen̟θjaz ðe la ˈβ̞iða"@es-ES , "Ciencias da vida"@gl , "Bizi zientziak"@eu , "laɪf ˈsaɪənsɪz"@en-GB ;
+      ontolex:phoneticRep "siˈɛnsiəs ðə ɫə ˈbiðə"@ca , "laɪf ˈsaɪənsəz"@en-US , "ˈθjen̟θjaz ðe la ˈβ̞iða"@es-ES , "laɪf ˈsaɪənsɪz"@en-GB .
+
+asioModules:ES_SUBJECT_AREA_LEVEL_1_CODE_CSH
+      a       skos:Concept ;
+      rdfs:label "CSH" ;
+      asio:codeOf asioModules:ES_SUBJECT_AREA_LEVEL_1_CSH ;
+      skos:inScheme asioModules:ESSubjectCode1stList ;
+      skos:prefLabel "CSH" .
+
+asioModules:ESSubjectAreas1stList
+      a       asioModules:subjectAreas ;
+      rdfs:label "ˈaɾeas teˈmatikas ðe priˈmer niˈβel ðe la aˈxenθja estaˈtal ðe imbestiɣ̞aˈθjon"@es-ES-fonipa , "Dominis temàtics de primer nivell de l'Agència Estatal de Recerca (AEI)"@ca , "fɜrst ˈlɛvəl ˈsʌbʤɪkt ˈɛriə"@en-US-fonipa , "duˈminis təˈmatikz ðə pɾiˈme niˈβeʎ ðə ɫə ʒənˈsiə əstəˈtaɫ ðə rəˈsɛrkə"@ca-CA-fonipa , "Domains thématiques de premier niveau de l'Agence Espagnole pour la Recherche (AEI)"@fr , "Áreas temáticas de primer nivel de la Agencia Estatal de Investigación (AEI)"@es , "Áreas temáticas de primer libel d'a AEI"@an , "Árees temátiques de primer nivel de l'Axencia Estatal de Investigación (AEI)"@ast , "fɜːst ˈlɛvl ˈsʌbʤɪkt ˈeərɪəz"@en-GB-fonipa , "First-level subject areas of Spain's State Research Agency (AEI)"@en , "Áreas temáticas de primeiro nível"@pt , "Áreas tematicas de primièr nivel de l'AEI"@oc , "FIXME"@eu , "Áreas temáticas de primeiro nivel da Axencia Estatal de Investigación (AEI)"@gl ;
+      skos:prefLabel "ˈaɾeas teˈmatikas ðe priˈmer niˈβel ðe la aˈxenθja estaˈtal ðe imbestiɣ̞aˈθjon"@es-ES-fonipa , "Dominis temàtics de primer nivell de l'Agència Estatal de Recerca (AEI)"@ca , "duˈminis təˈmatikz ðə pɾiˈme niˈβeʎ ðə ɫə ʒənˈsiə əstəˈtaɫ ðə rəˈsɛrkə"@ca-CA-fonipa , "Domains thématiques de premier niveau de l'Agence Espagnole pour la Recherche (AEI)"@fr , "Áreas temáticas de primer nivel de la Agencia Estatal de Investigación (AEI)"@es , "Áreas temáticas de primer libel d'a AEI"@an , "fɜːst ˈlɛvl ˈsʌbʤɪkt ˈeərɪəz"@en-GB-fonipa , "Árees temátiques de primer nivel de l'Axencia Estatal de Investigación (AEI)"@ast , "First-level subject areas of Spain's State Research Agency (AEI)"@en , "Áreas temáticas de primeiro nível"@pt , "fɜrst ˈlɛvəl ˈsʌbʤɪkt ˈɛriəz"@en-US-fonipa , "Áreas tematicas de primièr nivel de l'AEI"@oc , "Áreas temáticas de primeiro nivel da Axencia Estatal de Investigación (AEI)"@gl , "FIXME"@eu ;
+      ontolex:phoneticRep "fɜːst ˈlɛvl ˈsʌbʤɪkt ˈeərɪəz"@en-GB-fonipa , "ˈaɾeas teˈmatikas ðe priˈmer niˈβel ðe la aˈxenθja estaˈtal ðe imbestiɣ̞aˈθjon"@es-ES-fonipa , "fɜrst ˈlɛvəl ˈsʌbʤɪkt ˈɛriə"@en-US-fonipa , "duˈminis təˈmatikz ðə pɾiˈme niˈβeʎ ðə ɫə ʒənˈsiə əstəˈtaɫ ðə rəˈsɛrkə"@ca-CA-fonipa .
