@@ -173,6 +173,14 @@ asio:hasResearchField rdf:type owl:ObjectProperty ;
                       rdfs:label "has research field"@en .
 
 
+###  http://www.asio.es/asioontologies/asio#hasResearchLine
+asio:hasResearchLine rdf:type owl:ObjectProperty ;
+                     rdfs:domain foaf:Organization ;
+                     rdfs:range skos:Concept ;
+                     rdfs:comment "a property linking organizations with scientific domains"@en ;
+                     rdfs:label "has research line"@en .
+
+
 ###  http://www.asio.es/asioontologies/asio#hasScientificDomain
 asio:hasScientificDomain rdf:type owl:ObjectProperty ;
                          rdfs:domain asio:Patent ,
@@ -1422,25 +1430,31 @@ foaf:Project rdf:type owl:Class ;
 asio:Administrative rdf:type owl:NamedIndividual ,
                              asio:Role .
 
+
 ###  http://www.asio.es/asioontologies/asio#MasterStudent
 asio:MasterStudent rdf:type owl:NamedIndividual ,
                             asio:Role .
+
 
 ###  http://www.asio.es/asioontologies/asio#PhDStudent
 asio:PhDStudent rdf:type owl:NamedIndividual ,
                          asio:Role .
 
+
 ###  http://www.asio.es/asioontologies/asio#Researching
 asio:Researching rdf:type owl:NamedIndividual ,
                           asio:Role .
+
 
 ###  http://www.asio.es/asioontologies/asio#Teaching
 asio:Teaching rdf:type owl:NamedIndividual ,
                        asio:Role .
 
+
 ###  http://www.asio.es/asioontologies/asio#TechnicalSupport
 asio:TechnicalSupport rdf:type owl:NamedIndividual ,
                                asio:Role .
+
 
 ###  http://www.asio.es/asioontologies/asio#UndergraduateStudent
 asio:UndergraduateStudent rdf:type owl:NamedIndividual ,
@@ -1461,21 +1475,21 @@ asio:MasterStudent skos:altLabel "Estudante de mestrado"@gl ;
                    skos:altLabel "Étudiant de master"@fr ;
                    rdfs:label "Estudante de mestrado"@pt ,
                               "Estudiante de máster"@es ,
+                              "Estudiant de màster"@ca-ad ,
                               "Étudiant de maîtrise"@fr ;
-                   skos:prefLabel "Estudiant de màster"@ca ;
-                   rdfs:label "Estudiant de màster"@ca-ad ;
-                   skos:prefLabel "Estudante de máster"@gl ,
+                   skos:prefLabel "Estudiant de màster"@ca ,
+                                  "Estudante de máster"@gl ,
                                   "Estudante de mestrado"@pt ;
                    rdfs:label "Estudiant de màster"@ca-es .
 
 
-asio:PhDStudent skos:altLabel "Doutorando"@pt ;
-                rdfs:label "Estudiant de doctorat"@ca-ad ;
-                skos:altLabel "Doctorand"@ca ;
-                rdfs:label "Estudiante de doutoramento"@gl ,
-                           "Estudante de doutoramento"@pt ,
-                           "PhD student"@en ;
+asio:PhDStudent skos:altLabel "Doutorando"@pt ,
+                              "Doctorand"@ca ;
+                rdfs:label "Estudiant de doctorat"@ca-ad ,
+                           "Estudiante de doutoramento"@gl ,
+                           "Estudante de doutoramento"@pt ;
                 skos:prefLabel "PhD student"@en ;
+                rdfs:label "PhD student"@en ;
                 skos:altLabel "Doctorando"@es ;
                 skos:prefLabel "Étudiant de doctorat"@fr ,
                                "Estudiante de doctorado"@es ,
@@ -1485,8 +1499,8 @@ asio:PhDStudent skos:altLabel "Doutorando"@pt ;
                 skos:altLabel "Doctorando"@gl ;
                 skos:prefLabel "Estudiant de doctorat"@ca ;
                 rdfs:label "Estudiante de doctorado"@es ;
-                skos:altLabel "Doctorant"@fr ,
-                              "PhD candidate"@en ;
+                skos:altLabel "PhD candidate"@en ,
+                              "Doctorant"@fr ;
                 rdfs:label "Étudiant de doctorat"@fr .
 
 
