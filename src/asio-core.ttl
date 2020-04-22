@@ -926,13 +926,13 @@ asio:NationalProject rdf:type owl:Class ;
                                 "Projecte nacional"@ca-es ,
                                 "Projet national"@fr ,
                                 "Projeto nacional"@pt ,
-                                "Proyecto regional"@es ;
+                                "Proyecto nacional"@es ;
                      skos:prefLabel "National project"@en ,
                                     "Projecte nacional"@ca-ad ,
                                     "Projecte nacional"@ca-es ,
                                     "Projet national"@fr ,
                                     "Projeto nacional"@pt ,
-                                    "Proyecto regional"@es .
+                                    "Proyecto nacional"@es .
 
 
 ###  http://www.asio.es/asioontologies/asio#Patent
