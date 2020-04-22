@@ -2,11 +2,11 @@
 PREFIX wb: <http://hercules-demo.wiki.opencura.com/entity/>
 PREFIX wbt: <http://hercules-demo.wiki.opencura.com/prop/direct/>
 
-SELECT ?phdThesesLabel ?authorLabel (year(?publicationDate) as ?publicationYear) ?publicationDate WHERE {
-  ?phdTheses wbt:P1 wb:Q74 ;       # get entities of type PhdThesis
-             wbt:P15 ?supervisor ;
-             wbt:P10 ?author .
-  OPTIONAL { ?phdTheses wbt:P14 ?publicationDate . }
+SELECT DISTINCT ?phdThesesLabel ?authorLabel (year(?publicationDate) as ?publicationYear) ?publicationDate WHERE {
+  ?thesis wbt:P1 [ wbt:P4 wb:Q73 ];       # get entities of type Thesis
+          wbt:P15 ?supervisor ;
+          wbt:P10 ?author .
+  OPTIONAL { ?thesis wbt:P14 ?publicationDate . }
   ?supervisor rdfs:label ?supervisorLabel .
   FILTER(?supervisorLabel = "José Emilio Labra Gayo"@es) # supervised by José Emilio Labra Gayo
   SERVICE wikibase:label {
