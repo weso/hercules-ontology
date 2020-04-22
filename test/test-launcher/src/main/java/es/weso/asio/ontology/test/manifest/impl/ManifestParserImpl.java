@@ -1,9 +1,11 @@
-package es.weso.asio.ontology;
+package es.weso.asio.ontology.test.manifest.impl;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 
 import com.google.gson.Gson;
+import es.weso.asio.ontology.test.TestCase;
+import es.weso.asio.ontology.test.manifest.ManifestParser;
 
 /**
  * The manifest parser reads a manifest file and extracts the array of test cases that it defines. It is composed by a
@@ -12,7 +14,7 @@ import com.google.gson.Gson;
  *
  * @author Pablo Menéndez Suárez
  */
-public class ManifestParser {
+public class ManifestParserImpl implements ManifestParser {
 
 	private final FileReader manifestFileReader;
 	private TestCase[] testCases = null; // Lazy initialization for saving memory.
@@ -25,7 +27,7 @@ public class ManifestParser {
 	 * @param manifestFilePath is the file path to the manifest file.
 	 * @throws FileNotFoundException if the manifest file path given does not exists.
 	 */
-	public ManifestParser(final String manifestFilePath) throws FileNotFoundException {
+	public ManifestParserImpl(final String manifestFilePath) throws FileNotFoundException {
 		this.manifestFileReader = new FileReader(manifestFilePath);
 	}
 
@@ -38,6 +40,7 @@ public class ManifestParser {
 	 *
 	 * @return
 	 */
+	@Override
 	public TestCase[] getTestCases() {
 
 		// Lazy initialization.
