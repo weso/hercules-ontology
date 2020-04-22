@@ -2,13 +2,13 @@ PREFIX wb: <http://hercules-demo.wiki.opencura.com/entity/>
 PREFIX wbt: <http://hercules-demo.wiki.opencura.com/prop/direct/>
 
 SELECT DISTINCT ?publicationLabel ?publisherLabel (year(?publicationDate) as ?publicationYear) WHERE {
-  ?author wbt:P1 wb:Q44 ;                # get entities of type Teaching and research personnel
+  ?author wbt:P1 wb:Q1 ;                 # get entities of type NamedIndividual
           wbt:P11 ?publication .         # with publications
-  ?publication wbt:P1 ?publicationType ;
-               wbt:P14 ?publicationDate ;
-               wbt:P9 ?publisher .
+  ?publication wbt:P1 ?publicationType .
   ?publicationType (wbt:P4)* wb:Q47 .    # publications that are subclasses of Publication (Q47)
   ?author rdfs:label ?authorLabel .
+  OPTIONAL { ?publication wbt:P14 ?publicationDate . }
+  OPTIONAL { ?publication wbt:P9 ?publisher . }
   FILTER(?authorLabel = "Paco Calvo"@es) # authored by Paco Calvo
   SERVICE wikibase:label {
     bd:serviceParam wikibase:language "[AUTO_LANGUAGE],es" .
