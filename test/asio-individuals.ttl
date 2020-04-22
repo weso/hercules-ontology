@@ -135,6 +135,7 @@ asioIndividuals:GuillermoFacundoColunga rdf:type owl:NamedIndividual ;
                                                    asio:Researching ;
                                         asio:isMemberOf asioIndividuals:WESO ;
                                         asio:authors asioIndividuals:Thesis5 ;
+                                        skos:altLabel "thewilly"@en ;
                                         rdfs:label "Guillermo Facundo Colunga"@en ,
                                                    "Guillermo Facundo Colunga"@es .
 
@@ -441,7 +442,7 @@ asioIndividuals:Thesis6 rdf:type owl:NamedIndividual ,
                                             "natural language" ,
                                             "text analysis" ,
                                             "machine learning" ;
-                        asio:label "Aplication of machine learning techniques for the analysis of user generated content in self-help forums"@es .
+                        asio:label "Application of machine learning techniques for the analysis of user generated content in self-help forums"@es .
 
 ###  http://www.asio.es/asioinstances/asio#US5579430
 asioIndividuals:US5579430 rdf:type owl:NamedIndividual ,
