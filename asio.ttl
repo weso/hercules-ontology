@@ -623,6 +623,12 @@ asio:hasResearchField a owl:ObjectProperty ;
     rdfs:label "has research field"@en ;
     owl:equivalentProperty orkg:hasResearchField .
 
+asio:hasResearchLine a owl:ObjectProperty ;
+    rdfs:label "has research line"@en ;
+    rdfs:comment "a property linking organizations with scientific domains"@en ;
+    rdfs:domain foaf:Organization ;
+    rdfs:range skos:Concept .
+
 asio:hasScientificDomain a owl:ObjectProperty ;
     rdfs:label "has scientific domain"@en ;
     rdfs:domain asio:Patent,
@@ -9034,21 +9040,6 @@ asio:ResearchContribution a owl:Class ;
 
 skos:ConceptScheme a owl:Class .
 
-foaf:Organization a owl:Class ;
-    rdfs:subClassOf foaf:Agent ;
-    owl:equivalentClass npg:Organization,
-        frapo:Organization,
-        aiiso:Organization,
-        cv:Organization,
-        sio:SIO_000012,
-        swpo:Organization,
-        doap:Organization,
-        vivo:Organization,
-        bbccore:Organisation,
-        ebucore:Organisation,
-        dul:Organization,
-        org:Organization .
-
 nuts:ES21 a skos:Concept ;
     asio1:codeOf asioModules:ES_DIVISION_LEVEL_1_ES_PV ;
     skos:broader nuts:ES2 ;
@@ -9629,6 +9620,21 @@ asio:ScientificPublication a owl:Class ;
         "Publicación científica"@es,
         "Publication scientifique"@fr,
         "Publicação científica"@pt .
+
+foaf:Organization a owl:Class ;
+    rdfs:subClassOf foaf:Agent ;
+    owl:equivalentClass npg:Organization,
+        frapo:Organization,
+        aiiso:Organization,
+        cv:Organization,
+        sio:SIO_000012,
+        swpo:Organization,
+        doap:Organization,
+        vivo:Organization,
+        bbccore:Organisation,
+        ebucore:Organisation,
+        dul:Organization,
+        org:Organization .
 
 nuts:ES11 a skos:Concept ;
     asio1:codeOf asioModules:ES_DIVISION_LEVEL_1_ES_GA ;
