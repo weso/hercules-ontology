@@ -5600,32 +5600,6 @@ asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_3_QMCQUSU a skos:Concept ;
         "Química supramolecular"@gl,
         "Química supramolecular"@pt .
 
-asioModules:ES_SUBJECT_AREA_LEVEL_1_CMIFQ a skos:Concept ;
-    rdfs:label "Ciencias matemáticas, físicas, químicas e ingenierías" ;
-    asio1:hasCode asioModules:ES_SUBJECT_AREA_LEVEL_1_CODE_CMIFQ ;
-    skos:inScheme asioModules:ESSubjectAreas1stList ;
-    skos:notation "CMIFQ" ;
-    skos:prefLabel "Ciencias matemáticas, físicas, químicas e ingenierías",
-        "Sciencias matematicas, fisicas, quimicas y inchenierías"@an,
-        "Ciencies matemátiques, físiques, químiques ya inxenieríes"@ast,
-        "Ciències matemàtiques, físiques, químiques i enginyeries"@ca,
-        "siˈɛnsiəs mətəˈmatikəs ˈfizikəs ˈkimikəz i əɲʒiɲəˈɾiəs"@ca,
-        "Mathematical, physical, chemical and engineering sciences"@en,
-        "ˌmæθɪˈmætɪkəl, ˈfɪzɪkəl, ˈkɛmɪkəl ænd ˌɛnʤɪˈnɪərɪŋ ˈsaɪənsɪz"@en-GB,
-        "ˌmæθəˈmætɪkəl, ˈfɪzɪkəl, ˈkɛməkəl ænd ˈɛnʤəˈnɪrɪŋ ˈsaɪənsəz"@en-US,
-        "Ciencias matemáticas, físicas, químicas e ingenierías"@es,
-        "ˈθjenθjaz mateˈmatikas ˈfisikas ˈkimikas e iŋxenjeˈrias"@es-ES,
-        "Matematika, fisika, kimika eta ingeniaritza zientziak"@eu,
-        "Céncias i ingenierías"@ext,
-        "Sciences mathématiques, physiques, chimiques et du génie"@fr,
-        "Ciencias matemáticas, físicas, químicas e de enxeñaría"@gl,
-        "Sciéncias matematicas, fisicas, quimicas e engenhariá"@oc,
-        "Ciências matemáticas, físicas, químicas e de engenharia"@pt ;
-    ontolex:phoneticRep "siˈɛnsiəs mətəˈmatikəs ˈfizikəs ˈkimikəz i əɲʒiɲəˈɾiəs"@ca,
-        "ˌmæθɪˈmætɪkəl, ˈfɪzɪkəl, ˈkɛmɪkəl ænd ˌɛnʤɪˈnɪərɪŋ ˈsaɪənsɪz"@en-GB,
-        "ˌmæθəˈmætɪkəl, ˈfɪzɪkəl, ˈkɛməkəl ænd ˈɛnʤəˈnɪrɪŋ ˈsaɪənsəz"@en-US,
-        "ˈθjenθjaz mateˈmatikas ˈfisikas ˈkimikas e iŋxenjeˈrias"@es-ES .
-
 asioModules:ES_SUBJECT_AREA_LEVEL_1_CODE_CMIFQ a skos:Concept ;
     rdfs:label "CMIFQ" ;
     asio1:codeOf asioModules:ES_SUBJECT_AREA_LEVEL_1_CMIFQ ;
@@ -5644,57 +5618,405 @@ asioModules:ES_SUBJECT_AREA_LEVEL_1_CODE_CV a skos:Concept ;
     skos:inScheme asioModules:ESSubjectCode1stList ;
     skos:prefLabel "CV" .
 
-asioModules:ES_SUBJECT_AREA_LEVEL_1_CSH a skos:Concept ;
-    rdfs:label "Ciencias sociales y humanidades" ;
-    asio1:hasCode asioModules:ES_SUBJECT_AREA_LEVEL_1_CODE_CSH ;
-    skos:inScheme asioModules:ESSubjectAreas1stList ;
-    skos:notation "CSH" ;
-    skos:prefLabel "Ciencias sociales y humanidades",
-        "Sciencias socials y humanidatz"@an,
-        "Ciencies sociales y humanidaes"@ast,
-        "Ciències socials i humanitats"@ca,
-        "siˈɛnsiəs susiˈaɫs i uˈmanəs"@ca,
-        "Social sciences and humanities"@en,
-        "ˈsəʊʃəl ˈsaɪənsɪz ænd hju(ː)ˈmænɪtiz"@en-GB,
-        "ˈsoʊʃəl ˈsaɪənsəz ænd hjuˈmænɪtiz"@en-US,
-        "Ciencias sociales y humanidades"@es,
-        "ˈθjen̟θjas soˈθjales i wmaniˈðaðes"@es-ES,
-        "Gizarte zientziak eta giza zientziak"@eu,
-        "Céncias socialis i humanidadis"@ext,
-        "Sciences sociales et humaines"@fr,
-        "Ciencias sociais e humanidades"@gl,
-        "Sciéncias socials e humanas"@oc,
-        "Ciências sociais e humanas"@pt ;
-    ontolex:phoneticRep "siˈɛnsiəs susiˈaɫs i uˈmanəs"@ca,
-        "ˈsəʊʃəl ˈsaɪənsɪz ænd hju(ː)ˈmænɪtiz"@en-GB,
-        "ˈsoʊʃəl ˈsaɪənsəz ænd hjuˈmænɪtiz"@en-US,
-        "ˈθjen̟θjas soˈθjales i wmaniˈðaðes"@es-ES .
+asioModules:ES_SUBJECT_AREA_LEVEL_2_BIO a skos:Concept ;
+    rdfs:label "Biociencias y biotecnología " ;
+    asio1:hasCode asioModules:ES_SUBJECT_AREA_LEVEL_2_CODE_BIO ;
+    skos:broader asioModules:ES_SUBJECT_AREA_LEVEL_1_CV ;
+    skos:inScheme asioModules:ESSubjectAreas2ndList ;
+    skos:notation "BIO" ;
+    skos:prefLabel "Biociencias y biotecnología ",
+        "Biociencies y biotecnoloxía"@ast,
+        "Biociències i biotecnologia"@ca,
+        "Biosciences and biotechnology"@en,
+        "Biociencias y biotecnología "@es,
+        "Biosciences et biotechnologie"@fr,
+        "Biociencias e biotecnoloxía"@gl,
+        "Biociências e biotecnologia"@pt .
 
-asioModules:ES_SUBJECT_AREA_LEVEL_1_CV a skos:Concept ;
-    rdfs:label "Ciencias de la vida" ;
-    asio1:hasCode asioModules:ES_SUBJECT_AREA_LEVEL_1_CODE_CV ;
-    skos:inScheme asioModules:ESSubjectAreas1stList ;
-    skos:notation "CV" ;
-    skos:prefLabel "Ciencias de la vida",
-        "Sciencias d'a vida"@an,
-        "Ciencies de la vida"@ast,
-        "Ciències de la vida"@ca,
-        "siˈɛnsiəs ðə ɫə ˈbiðə"@ca,
-        "Life sciences"@en,
-        "laɪf ˈsaɪənsɪz"@en-GB,
-        "laɪf ˈsaɪənsəz"@en-US,
-        "Ciencias de la vida"@es,
-        "ˈθjen̟θjaz ðe la ˈβ̞iða"@es-ES,
-        "Bizi zientziak"@eu,
-        "Céncias de la vida"@ext,
-        "Sciences de la vie"@fr,
-        "Ciencias da vida"@gl,
-        "Sciéncias de la vida"@oc,
-        "Ciências da vida"@pt ;
-    ontolex:phoneticRep "siˈɛnsiəs ðə ɫə ˈbiðə"@ca,
-        "laɪf ˈsaɪənsɪz"@en-GB,
-        "laɪf ˈsaɪənsəz"@en-US,
-        "ˈθjen̟θjaz ðe la ˈβ̞iða"@es-ES .
+asioModules:ES_SUBJECT_AREA_LEVEL_2_BME a skos:Concept ;
+    rdfs:label "Biomedicina " ;
+    asio1:hasCode asioModules:ES_SUBJECT_AREA_LEVEL_2_CODE_BME ;
+    skos:broader asioModules:ES_SUBJECT_AREA_LEVEL_1_CV ;
+    skos:inScheme asioModules:ESSubjectAreas2ndList ;
+    skos:notation "BME" ;
+    skos:prefLabel "Biomedicina ",
+        "Biomedecina "@an,
+        "Biomedicina "@ast,
+        "Biomedicina"@ca,
+        "Biomedicine"@en,
+        "Biomedicina "@es,
+        "Biomédecine"@fr,
+        "Biomedicina"@gl,
+        "Biomedicina"@pt .
+
+asioModules:ES_SUBJECT_AREA_LEVEL_2_CAA a skos:Concept ;
+    rdfs:label "Ciencias agrarias y agroalimentarias " ;
+    asio1:hasCode asioModules:ES_SUBJECT_AREA_LEVEL_2_CODE_CAA ;
+    skos:broader asioModules:ES_SUBJECT_AREA_LEVEL_1_CV ;
+    skos:inScheme asioModules:ESSubjectAreas2ndList ;
+    skos:notation "CAA" ;
+    skos:prefLabel "Ciencias agrarias y agroalimentarias ",
+        "Ciencies agraries y agroalimentarias "@ast,
+        "Ciències agràries i agroalimentàries"@ca,
+        "Agricultural and agri-food sciences"@en,
+        "Ciencias agrarias y agroalimentarias "@es,
+        "Sciences agronomiques et agroalimentaires"@fr,
+        "Ciencias agrícolas e agroalimentarias"@gl,
+        "Ciências agrícolas e agroalimentares"@pt .
+
+asioModules:ES_SUBJECT_AREA_LEVEL_2_CODE_BIO a skos:Concept ;
+    rdfs:label "BIO" ;
+    asio1:codeOf asioModules:ES_SUBJECT_AREA_LEVEL_2_BIO ;
+    skos:inScheme asioModules:ESSubjectCode2ndList ;
+    skos:prefLabel "BIO" .
+
+asioModules:ES_SUBJECT_AREA_LEVEL_2_CODE_BME a skos:Concept ;
+    rdfs:label "BME" ;
+    asio1:codeOf asioModules:ES_SUBJECT_AREA_LEVEL_2_BME ;
+    skos:inScheme asioModules:ESSubjectCode2ndList ;
+    skos:prefLabel "BME" .
+
+asioModules:ES_SUBJECT_AREA_LEVEL_2_CODE_CAA a skos:Concept ;
+    rdfs:label "CAA" ;
+    asio1:codeOf asioModules:ES_SUBJECT_AREA_LEVEL_2_CAA ;
+    skos:inScheme asioModules:ESSubjectCode2ndList ;
+    skos:prefLabel "CAA" .
+
+asioModules:ES_SUBJECT_AREA_LEVEL_2_CODE_CSO a skos:Concept ;
+    rdfs:label "CSO" ;
+    asio1:codeOf asioModules:ES_SUBJECT_AREA_LEVEL_2_CSO ;
+    skos:inScheme asioModules:ESSubjectCode2ndList ;
+    skos:prefLabel "CSO" .
+
+asioModules:ES_SUBJECT_AREA_LEVEL_2_CODE_CTM a skos:Concept ;
+    rdfs:label "CTM" ;
+    asio1:codeOf asioModules:ES_SUBJECT_AREA_LEVEL_2_CTM ;
+    skos:inScheme asioModules:ESSubjectCode2ndList ;
+    skos:prefLabel "CTM" .
+
+asioModules:ES_SUBJECT_AREA_LEVEL_2_CODE_CTQ a skos:Concept ;
+    rdfs:label "CTQ" ;
+    asio1:codeOf asioModules:ES_SUBJECT_AREA_LEVEL_2_CTQ ;
+    skos:inScheme asioModules:ESSubjectCode2ndList ;
+    skos:prefLabel "CTQ" .
+
+asioModules:ES_SUBJECT_AREA_LEVEL_2_CODE_DER a skos:Concept ;
+    rdfs:label "DER" ;
+    asio1:codeOf asioModules:ES_SUBJECT_AREA_LEVEL_2_DER ;
+    skos:inScheme asioModules:ESSubjectCode2ndList ;
+    skos:prefLabel "DER" .
+
+asioModules:ES_SUBJECT_AREA_LEVEL_2_CODE_ECO a skos:Concept ;
+    rdfs:label "ECO" ;
+    asio1:codeOf asioModules:ES_SUBJECT_AREA_LEVEL_2_ECO ;
+    skos:inScheme asioModules:ESSubjectCode2ndList ;
+    skos:prefLabel "ECO" .
+
+asioModules:ES_SUBJECT_AREA_LEVEL_2_CODE_EDU a skos:Concept ;
+    rdfs:label "EDU" ;
+    asio1:codeOf asioModules:ES_SUBJECT_AREA_LEVEL_2_EDU ;
+    skos:inScheme asioModules:ESSubjectCode2ndList ;
+    skos:prefLabel "EDU" .
+
+asioModules:ES_SUBJECT_AREA_LEVEL_2_CODE_EYT a skos:Concept ;
+    rdfs:label "EYT" ;
+    asio1:codeOf asioModules:ES_SUBJECT_AREA_LEVEL_2_EYT ;
+    skos:inScheme asioModules:ESSubjectCode2ndList ;
+    skos:prefLabel "EYT" .
+
+asioModules:ES_SUBJECT_AREA_LEVEL_2_CODE_FIS a skos:Concept ;
+    rdfs:label "FIS" ;
+    asio1:codeOf asioModules:ES_SUBJECT_AREA_LEVEL_2_FIS ;
+    skos:inScheme asioModules:ESSubjectCode2ndList ;
+    skos:prefLabel "FIS" .
+
+asioModules:ES_SUBJECT_AREA_LEVEL_2_CODE_FLA a skos:Concept ;
+    rdfs:label "FLA" ;
+    asio1:codeOf asioModules:ES_SUBJECT_AREA_LEVEL_2_FLA ;
+    skos:inScheme asioModules:ESSubjectCode2ndList ;
+    skos:prefLabel "FLA" .
+
+asioModules:ES_SUBJECT_AREA_LEVEL_2_CODE_MAT a skos:Concept ;
+    rdfs:label "MAT" ;
+    asio1:codeOf asioModules:ES_SUBJECT_AREA_LEVEL_2_MAT ;
+    skos:inScheme asioModules:ESSubjectCode2ndList ;
+    skos:prefLabel "MAT" .
+
+asioModules:ES_SUBJECT_AREA_LEVEL_2_CODE_MLP a skos:Concept ;
+    rdfs:label "MLP" ;
+    asio1:codeOf asioModules:ES_SUBJECT_AREA_LEVEL_2_MLP ;
+    skos:inScheme asioModules:ESSubjectCode2ndList ;
+    skos:prefLabel "MLP" .
+
+asioModules:ES_SUBJECT_AREA_LEVEL_2_CODE_MTM a skos:Concept ;
+    rdfs:label "MTM" ;
+    asio1:codeOf asioModules:ES_SUBJECT_AREA_LEVEL_2_MTM ;
+    skos:inScheme asioModules:ESSubjectCode2ndList ;
+    skos:prefLabel "MTM" .
+
+asioModules:ES_SUBJECT_AREA_LEVEL_2_CODE_PHA a skos:Concept ;
+    rdfs:label "PHA" ;
+    asio1:codeOf asioModules:ES_SUBJECT_AREA_LEVEL_2_PHA ;
+    skos:inScheme asioModules:ESSubjectCode2ndList ;
+    skos:prefLabel "PHA" .
+
+asioModules:ES_SUBJECT_AREA_LEVEL_2_CODE_PIN a skos:Concept ;
+    rdfs:label "PIN" ;
+    asio1:codeOf asioModules:ES_SUBJECT_AREA_LEVEL_2_PIN ;
+    skos:inScheme asioModules:ESSubjectCode2ndList ;
+    skos:prefLabel "PIN" .
+
+asioModules:ES_SUBJECT_AREA_LEVEL_2_CODE_PSI a skos:Concept ;
+    rdfs:label "PSI" ;
+    asio1:codeOf asioModules:ES_SUBJECT_AREA_LEVEL_2_PSI ;
+    skos:inScheme asioModules:ESSubjectCode2ndList ;
+    skos:prefLabel "PSI" .
+
+asioModules:ES_SUBJECT_AREA_LEVEL_2_CODE_TIC a skos:Concept ;
+    rdfs:label "TIC" ;
+    asio1:codeOf asioModules:ES_SUBJECT_AREA_LEVEL_2_TIC ;
+    skos:inScheme asioModules:ESSubjectCode2ndList ;
+    skos:prefLabel "TIC" .
+
+asioModules:ES_SUBJECT_AREA_LEVEL_2_CSO a skos:Concept ;
+    rdfs:label "Ciencias sociales " ;
+    asio1:hasCode asioModules:ES_SUBJECT_AREA_LEVEL_2_CODE_CSO ;
+    skos:broader asioModules:ES_SUBJECT_AREA_LEVEL_1_CSH ;
+    skos:inScheme asioModules:ESSubjectAreas2ndList ;
+    skos:notation "CSO" ;
+    skos:prefLabel "Ciencias sociales ",
+        "Ciencies sociales"@ast,
+        "Ciències socials"@ca,
+        "Social Sciences"@en,
+        "Ciencias sociales "@es,
+        "Sciences sociales"@fr,
+        "Ciencias sociais"@gl,
+        "Ciências Sociais"@pt .
+
+asioModules:ES_SUBJECT_AREA_LEVEL_2_CTM a skos:Concept ;
+    rdfs:label "Ciencias y tecnologías medioambientales " ;
+    asio1:hasCode asioModules:ES_SUBJECT_AREA_LEVEL_2_CODE_CTM ;
+    skos:broader asioModules:ES_SUBJECT_AREA_LEVEL_1_CV ;
+    skos:inScheme asioModules:ESSubjectAreas2ndList ;
+    skos:notation "CTM" ;
+    skos:prefLabel "Ciencias y tecnologías medioambientales ",
+        "Ciencies y tecnoloxíes medioambientales "@ast,
+        "Ciències i tecnologies mediambientals"@ca,
+        "Environmental science and technology"@en,
+        "Ciencias y tecnologías medioambientales "@es,
+        "Sciences et technologies de l'environnement"@fr,
+        "Ciencia e tecnoloxía ambiental"@gl,
+        "Ciência e tecnologia ambiental"@pt .
+
+asioModules:ES_SUBJECT_AREA_LEVEL_2_CTQ a skos:Concept ;
+    rdfs:label "Ciencias y tecnologías químicas" ;
+    asio1:hasCode asioModules:ES_SUBJECT_AREA_LEVEL_2_CODE_CTQ ;
+    skos:broader asioModules:ES_SUBJECT_AREA_LEVEL_1_CMIFQ ;
+    skos:inScheme asioModules:ESSubjectAreas2ndList ;
+    skos:notation "CTQ" ;
+    skos:prefLabel "Ciencias y tecnologías químicas",
+        "Ciencies y tecnoloxíes químiques"@ast,
+        "Ciències i tecnologies químiques"@ca,
+        "Chemical Sciences and Technologies"@en,
+        "Ciencias y tecnologías químicas"@es,
+        "Sciences et technologies chimiques"@fr,
+        "Ciencias e Tecnoloxías Químicas"@gl,
+        "Ciências e tecnologias químicas"@pt .
+
+asioModules:ES_SUBJECT_AREA_LEVEL_2_DER a skos:Concept ;
+    rdfs:label "Derecho " ;
+    asio1:hasCode asioModules:ES_SUBJECT_AREA_LEVEL_2_CODE_DER ;
+    skos:broader asioModules:ES_SUBJECT_AREA_LEVEL_1_CSH ;
+    skos:inScheme asioModules:ESSubjectAreas2ndList ;
+    skos:notation "DER" ;
+    skos:prefLabel "Derecho ",
+        "Drechu"@ast,
+        "Dret"@ca,
+        "Law"@en,
+        "Derecho "@es,
+        "Droit"@fr,
+        "Dereito"@gl,
+        "Direito"@pt .
+
+asioModules:ES_SUBJECT_AREA_LEVEL_2_ECO a skos:Concept ;
+    rdfs:label "Economía" ;
+    asio1:hasCode asioModules:ES_SUBJECT_AREA_LEVEL_2_CODE_ECO ;
+    skos:broader asioModules:ES_SUBJECT_AREA_LEVEL_1_CSH ;
+    skos:inScheme asioModules:ESSubjectAreas2ndList ;
+    skos:notation "ECO" ;
+    skos:prefLabel "Economía",
+        "Economía"@ast,
+        "Economia"@ca,
+        "Economy"@en,
+        "Economía"@es,
+        "Économie"@fr,
+        "Economía"@gl,
+        "Economia"@pt .
+
+asioModules:ES_SUBJECT_AREA_LEVEL_2_EDU a skos:Concept ;
+    rdfs:label "Ciencias de la educación" ;
+    asio1:hasCode asioModules:ES_SUBJECT_AREA_LEVEL_2_CODE_EDU ;
+    skos:broader asioModules:ES_SUBJECT_AREA_LEVEL_1_CSH ;
+    skos:inScheme asioModules:ESSubjectAreas2ndList ;
+    skos:notation "EDU" ;
+    skos:prefLabel "Ciencias de la educación",
+        "Ciencies de la educación"@ast,
+        "Ciències de l'educació"@ca,
+        "Education sciences"@en,
+        "Ciencias de la educación"@es,
+        "Sciences de l'éducation"@fr,
+        "Ciencias da educación"@gl,
+        "Ciências da Educação"@pt .
+
+asioModules:ES_SUBJECT_AREA_LEVEL_2_EYT a skos:Concept ;
+    rdfs:label "Energía y transporte" ;
+    asio1:hasCode asioModules:ES_SUBJECT_AREA_LEVEL_2_CODE_EYT ;
+    skos:broader asioModules:ES_SUBJECT_AREA_LEVEL_1_CMIFQ ;
+    skos:inScheme asioModules:ESSubjectAreas2ndList ;
+    skos:notation "EYT" ;
+    skos:prefLabel "Energía y transporte",
+        "Enerxía y tresporte"@ast,
+        "Energia i transport"@ca,
+        "Energy and transportation"@en,
+        "Energía y transporte"@es,
+        "Énergie et transports"@fr,
+        "Enerxía e transporte"@gl,
+        "Energia e transporte"@pt .
+
+asioModules:ES_SUBJECT_AREA_LEVEL_2_FIS a skos:Concept ;
+    rdfs:label "Ciencias físicas" ;
+    asio1:hasCode asioModules:ES_SUBJECT_AREA_LEVEL_2_CODE_FIS ;
+    skos:broader asioModules:ES_SUBJECT_AREA_LEVEL_1_CMIFQ ;
+    skos:inScheme asioModules:ESSubjectAreas2ndList ;
+    skos:notation "FIS" ;
+    skos:prefLabel "Ciencias físicas",
+        "Ciencies físiques"@ast,
+        "Ciències físiques"@ca,
+        "Physical sciences"@en,
+        "Ciencias físicas"@es,
+        "Sciences physiques"@fr,
+        "Ciencias físicas"@gl,
+        "Ciências físicas"@pt .
+
+asioModules:ES_SUBJECT_AREA_LEVEL_2_FLA a skos:Concept ;
+    rdfs:label "Cultura: filología, literatura y arte" ;
+    asio1:hasCode asioModules:ES_SUBJECT_AREA_LEVEL_2_CODE_FLA ;
+    skos:broader asioModules:ES_SUBJECT_AREA_LEVEL_1_CSH ;
+    skos:inScheme asioModules:ESSubjectAreas2ndList ;
+    skos:notation "FLA" ;
+    skos:prefLabel "Cultura: filología, literatura y arte",
+        "Cultura: filoloxía, lliteratura y arte"@ast,
+        "Cultura: filologia, literatura i art"@ca,
+        "Culture: Philology, Literature and Art"@en,
+        "Cultura: filología, literatura y arte"@es,
+        "Culture: philologie, littérature et art"@fr,
+        "Cultura: Filoloxía, Literatura e Arte"@gl,
+        "Cultura: Filologia, Literatura e Arte"@pt .
+
+asioModules:ES_SUBJECT_AREA_LEVEL_2_MAT a skos:Concept ;
+    rdfs:label "Ciencias y tecnologías de materiales" ;
+    asio1:hasCode asioModules:ES_SUBJECT_AREA_LEVEL_2_CODE_MAT ;
+    skos:broader asioModules:ES_SUBJECT_AREA_LEVEL_1_CMIFQ ;
+    skos:inScheme asioModules:ESSubjectAreas2ndList ;
+    skos:notation "MAT" ;
+    skos:prefLabel "Ciencias y tecnologías de materiales",
+        "Ciencies y tecnoloxíes de materiales"@ast,
+        "Ciències i tecnologies de materials"@ca,
+        "Materials science and technology"@en,
+        "Ciencias y tecnologías de materiales"@es,
+        "Science et technologie des matériaux"@fr,
+        "Ciencia e tecnoloxía dos materiais"@gl,
+        "Ciência e tecnologia de materiais"@pt .
+
+asioModules:ES_SUBJECT_AREA_LEVEL_2_MLP a skos:Concept ;
+    rdfs:label "Mente, lenguaje y pensamiento" ;
+    asio1:hasCode asioModules:ES_SUBJECT_AREA_LEVEL_2_CODE_MLP ;
+    skos:broader asioModules:ES_SUBJECT_AREA_LEVEL_1_CSH ;
+    skos:inScheme asioModules:ESSubjectAreas2ndList ;
+    skos:notation "MLP" ;
+    skos:prefLabel "Mente, lenguaje y pensamiento",
+        "Mente, llinguaxe y pensamiento"@ast,
+        "Ment, llenguatge i pensament"@ca,
+        "Mind, language and thought"@en,
+        "Mente, lenguaje y pensamiento"@es,
+        "Esprit, langage et pensée"@fr,
+        "Mente, linguaxe e pensamento"@gl,
+        "Mente, linguagem e pensamento"@pt .
+
+asioModules:ES_SUBJECT_AREA_LEVEL_2_MTM a skos:Concept ;
+    rdfs:label "Ciencias matemáticas" ;
+    asio1:hasCode asioModules:ES_SUBJECT_AREA_LEVEL_2_CODE_MTM ;
+    skos:broader asioModules:ES_SUBJECT_AREA_LEVEL_1_CMIFQ ;
+    skos:inScheme asioModules:ESSubjectAreas2ndList ;
+    skos:notation "MTM" ;
+    skos:prefLabel "Ciencias matemáticas",
+        "Ciencies matemátiques"@ast,
+        "Ciències matemàtiques"@ca,
+        "Mathematical Sciences"@en,
+        "Ciencias matemáticas"@es,
+        "Sciences mathématiques"@fr,
+        "Ciencias matemáticas"@gl,
+        "Ciências Matemáticas"@pt .
+
+asioModules:ES_SUBJECT_AREA_LEVEL_2_PHA a skos:Concept ;
+    rdfs:label "Estudios del pasado: historia y arqueología" ;
+    asio1:hasCode asioModules:ES_SUBJECT_AREA_LEVEL_2_CODE_PHA ;
+    skos:broader asioModules:ES_SUBJECT_AREA_LEVEL_1_CSH ;
+    skos:inScheme asioModules:ESSubjectAreas2ndList ;
+    skos:notation "PHA" ;
+    skos:prefLabel "Estudios del pasado: historia y arqueología",
+        "Estudiu del pasáu: hestoria y arqueoloxía"@ast,
+        "Estudis de el passat: història i arqueologia"@ca,
+        "Studies of the past: history and archeology"@en,
+        "Estudios del pasado: historia y arqueología"@es,
+        "Études du passé: histoire et archéologie"@fr,
+        "Estudos do pasado: historia e arqueoloxía"@gl,
+        "Estudos do passado: história e arqueologia"@pt .
+
+asioModules:ES_SUBJECT_AREA_LEVEL_2_PIN a skos:Concept ;
+    rdfs:label "Producción industrial, ingeniería civil e ingenierías para la sociedad" ;
+    asio1:hasCode asioModules:ES_SUBJECT_AREA_LEVEL_2_CODE_PIN ;
+    skos:broader asioModules:ES_SUBJECT_AREA_LEVEL_1_CMIFQ ;
+    skos:inScheme asioModules:ESSubjectAreas2ndList ;
+    skos:notation "PIN" ;
+    skos:prefLabel "Producción industrial, ingeniería civil e ingenierías para la sociedad",
+        "Producción industrial, inxeniería civil ya inxenieríes para la sociedá"@ast,
+        "Producció industrial, enginyeria civil i enginyeries per a la societat"@ca,
+        "Industrial production, civil engineering and engineering for society"@en,
+        "Producción industrial, ingeniería civil e ingenierías para la sociedad"@es,
+        "Production industrielle, génie civil et génie pour la société"@fr,
+        "Produción industrial, enxeñería civil e enxeñaría para a sociedade"@gl,
+        "Produção industrial, engenharia civil e engenharia para a sociedade"@pt .
+
+asioModules:ES_SUBJECT_AREA_LEVEL_2_PSI a skos:Concept ;
+    rdfs:label "Psicología" ;
+    asio1:hasCode asioModules:ES_SUBJECT_AREA_LEVEL_2_CODE_PSI ;
+    skos:broader asioModules:ES_SUBJECT_AREA_LEVEL_1_CSH ;
+    skos:inScheme asioModules:ESSubjectAreas2ndList ;
+    skos:notation "PSI" ;
+    skos:prefLabel "Psicología",
+        "Psicoloxía"@ast,
+        "Psicologia"@ca,
+        "Psychology"@en,
+        "Psicología"@es,
+        "Psychologie"@fr,
+        "Psicoloxía"@gl,
+        "Psicologia"@pt .
+
+asioModules:ES_SUBJECT_AREA_LEVEL_2_TIC a skos:Concept ;
+    rdfs:label "Tecnologías de la información y de las comunicaciones" ;
+    asio1:hasCode asioModules:ES_SUBJECT_AREA_LEVEL_2_CODE_TIC ;
+    skos:broader asioModules:ES_SUBJECT_AREA_LEVEL_1_CMIFQ ;
+    skos:inScheme asioModules:ESSubjectAreas2ndList ;
+    skos:notation "TIC" ;
+    skos:prefLabel "Tecnologías de la información y de las comunicaciones",
+        "Tecnoloxíes de la información y de les comunicaciones"@ast,
+        "Tecnologies de la informació i de les comunicacions"@ca,
+        "Information and communication technologies"@en,
+        "Tecnologías de la información y de las comunicaciones"@es,
+        "Technologies de l'information et de la communication"@fr,
+        "Tecnoloxías da información e comunicación"@gl,
+        "Tecnologias de informação e comunicação"@pt .
 
 asioModules:ISO_ALPHA_2_COUNTRY_CODE_IC a skos:Concept ;
     rdfs:label "IC" ;
@@ -8777,6 +9099,32 @@ asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_CB a skos:Concept ;
         "ˈbeɪsɪk ˈsaɪənsəz"@en-US,
         "θjen̪ θjaz 'βa si kas"@es .
 
+asioModules:ES_SUBJECT_AREA_LEVEL_1_CV a skos:Concept ;
+    rdfs:label "Ciencias de la vida" ;
+    asio1:hasCode asioModules:ES_SUBJECT_AREA_LEVEL_1_CODE_CV ;
+    skos:inScheme asioModules:ESSubjectAreas1stList ;
+    skos:notation "CV" ;
+    skos:prefLabel "Ciencias de la vida",
+        "Sciencias d'a vida"@an,
+        "Ciencies de la vida"@ast,
+        "Ciències de la vida"@ca,
+        "siˈɛnsiəs ðə ɫə ˈbiðə"@ca,
+        "Life sciences"@en,
+        "laɪf ˈsaɪənsɪz"@en-GB,
+        "laɪf ˈsaɪənsəz"@en-US,
+        "Ciencias de la vida"@es,
+        "ˈθjen̟θjaz ðe la ˈβ̞iða"@es-ES,
+        "Bizi zientziak"@eu,
+        "Céncias de la vida"@ext,
+        "Sciences de la vie"@fr,
+        "Ciencias da vida"@gl,
+        "Sciéncias de la vida"@oc,
+        "Ciências da vida"@pt ;
+    ontolex:phoneticRep "siˈɛnsiəs ðə ɫə ˈbiðə"@ca,
+        "laɪf ˈsaɪənsɪz"@en-GB,
+        "laɪf ˈsaɪənsəz"@en-US,
+        "ˈθjen̟θjaz ðe la ˈβ̞iða"@es-ES .
+
 asioModules:PT_DIVISION_LEVEL_1_PT_01 a skos:Concept ;
     rdfs:label "Aveiro (distrito)" ;
     asio1:hasCode asioModules:PT_DIVISION_LEVEL_1_FIPS_CODE_PO02,
@@ -9741,6 +10089,32 @@ asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_HA a skos:Concept ;
         "Historia e arte"@gl,
         "História e arte"@pt .
 
+asioModules:ES_SUBJECT_AREA_LEVEL_1_CMIFQ a skos:Concept ;
+    rdfs:label "Ciencias matemáticas, físicas, químicas e ingenierías" ;
+    asio1:hasCode asioModules:ES_SUBJECT_AREA_LEVEL_1_CODE_CMIFQ ;
+    skos:inScheme asioModules:ESSubjectAreas1stList ;
+    skos:notation "CMIFQ" ;
+    skos:prefLabel "Ciencias matemáticas, físicas, químicas e ingenierías",
+        "Sciencias matematicas, fisicas, quimicas y inchenierías"@an,
+        "Ciencies matemátiques, físiques, químiques ya inxenieríes"@ast,
+        "Ciències matemàtiques, físiques, químiques i enginyeries"@ca,
+        "siˈɛnsiəs mətəˈmatikəs ˈfizikəs ˈkimikəz i əɲʒiɲəˈɾiəs"@ca,
+        "Mathematical, physical, chemical and engineering sciences"@en,
+        "ˌmæθɪˈmætɪkəl, ˈfɪzɪkəl, ˈkɛmɪkəl ænd ˌɛnʤɪˈnɪərɪŋ ˈsaɪənsɪz"@en-GB,
+        "ˌmæθəˈmætɪkəl, ˈfɪzɪkəl, ˈkɛməkəl ænd ˈɛnʤəˈnɪrɪŋ ˈsaɪənsəz"@en-US,
+        "Ciencias matemáticas, físicas, químicas e ingenierías"@es,
+        "ˈθjenθjaz mateˈmatikas ˈfisikas ˈkimikas e iŋxenjeˈrias"@es-ES,
+        "Matematika, fisika, kimika eta ingeniaritza zientziak"@eu,
+        "Céncias i ingenierías"@ext,
+        "Sciences mathématiques, physiques, chimiques et du génie"@fr,
+        "Ciencias matemáticas, físicas, químicas e de enxeñaría"@gl,
+        "Sciéncias matematicas, fisicas, quimicas e engenhariá"@oc,
+        "Ciências matemáticas, físicas, químicas e de engenharia"@pt ;
+    ontolex:phoneticRep "siˈɛnsiəs mətəˈmatikəs ˈfizikəs ˈkimikəz i əɲʒiɲəˈɾiəs"@ca,
+        "ˌmæθɪˈmætɪkəl, ˈfɪzɪkəl, ˈkɛmɪkəl ænd ˌɛnʤɪˈnɪərɪŋ ˈsaɪənsɪz"@en-GB,
+        "ˌmæθəˈmætɪkəl, ˈfɪzɪkəl, ˈkɛməkəl ænd ˈɛnʤəˈnɪrɪŋ ˈsaɪənsəz"@en-US,
+        "ˈθjenθjaz mateˈmatikas ˈfisikas ˈkimikas e iŋxenjeˈrias"@es-ES .
+
 foaf:Project a owl:Class ;
     rdfs:comment "In ASIO, a temporary research endeavor undertaken to achieve defined objectives."@en ;
     owl:equivalentClass dbo:Project,
@@ -9784,6 +10158,32 @@ asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_MTM a skos:Concept ;
         "Mathématiques"@fr,
         "Matemáticas"@gl,
         "Matemática"@pt .
+
+asioModules:ES_SUBJECT_AREA_LEVEL_1_CSH a skos:Concept ;
+    rdfs:label "Ciencias sociales y humanidades" ;
+    asio1:hasCode asioModules:ES_SUBJECT_AREA_LEVEL_1_CODE_CSH ;
+    skos:inScheme asioModules:ESSubjectAreas1stList ;
+    skos:notation "CSH" ;
+    skos:prefLabel "Ciencias sociales y humanidades",
+        "Sciencias socials y humanidatz"@an,
+        "Ciencies sociales y humanidaes"@ast,
+        "Ciències socials i humanitats"@ca,
+        "siˈɛnsiəs susiˈaɫs i uˈmanəs"@ca,
+        "Social sciences and humanities"@en,
+        "ˈsəʊʃəl ˈsaɪənsɪz ænd hju(ː)ˈmænɪtiz"@en-GB,
+        "ˈsoʊʃəl ˈsaɪənsəz ænd hjuˈmænɪtiz"@en-US,
+        "Ciencias sociales y humanidades"@es,
+        "ˈθjen̟θjas soˈθjales i wmaniˈðaðes"@es-ES,
+        "Gizarte zientziak eta giza zientziak"@eu,
+        "Céncias socialis i humanidadis"@ext,
+        "Sciences sociales et humaines"@fr,
+        "Ciencias sociais e humanidades"@gl,
+        "Sciéncias socials e humanas"@oc,
+        "Ciências sociais e humanas"@pt ;
+    ontolex:phoneticRep "siˈɛnsiəs susiˈaɫs i uˈmanəs"@ca,
+        "ˈsəʊʃəl ˈsaɪənsɪz ænd hju(ː)ˈmænɪtiz"@en-GB,
+        "ˈsoʊʃəl ˈsaɪənsəz ænd hjuˈmænɪtiz"@en-US,
+        "ˈθjen̟θjas soˈθjales i wmaniˈðaðes"@es-ES .
 
 nuts:ES61 a skos:Concept ;
     asio1:codeOf asioModules:ES_DIVISION_LEVEL_1_ES_AN ;
@@ -10350,6 +10750,68 @@ asioModules:ESRegionTGNCodeList a asioModules:Country ;
     skos:prefLabel "Codis TGN (Getty Thesaurus of Geographic Names) de les comunitats autònomes d'Espanya"@ca,
         "TGN (Getty Thesaurus of Geographic Names) codes for the autonomous communities of Spain"@en,
         "Códigos TGN (Getty Thesaurus of Geographic Names) de las comunidades autónomas de España"@es .
+
+asioModules:ESSubjectAreas2ndList a asioModules:subjectAreas ;
+    rdfs:label "Áreas temáticas de segundo libel d'a AEI"@an,
+        "Árees temátiques de segundu nivel de l'Axencia Estatal de Investigación (AEI)"@ast,
+        "Dominis temàtics de segon nivell de l'Agència Estatal de Recerca (AEI)"@ca,
+        "duˈminis təˈmatikz ðə səˈɣon niˈβeʎ ðə ɫə ʒənˈsiə əstəˈtaɫ ðə rəˈsɛrkə"@ca-CA-fonipa,
+        "Second-level subject areas of Spain's State Research Agency (AEI)"@en,
+        "sɛkənd ˈlɛvl ˈsʌbʤɪkt ˈeərɪəz"@en-GB-fonipa,
+        "sɛkənd ˈlɛvəl ˈsʌbʤɪkt ˈɛriə"@en-US-fonipa,
+        "Áreas temáticas de segundo nivel de la Agencia Estatal de Investigación (AEI)"@es,
+        "ˈaɾeas teˈmatikas ðe seˈɣ̞un̟do niˈβel ðe la aˈxenθja estaˈtal ðe imbestiɣ̞aˈθjon"@es-ES-fonipa,
+        "FIXME"@eu,
+        "Domains thématiques de second niveau de l'Agence Espagnole pour la Recherche (AEI)"@fr,
+        "Áreas temáticas de segundo nivel da Axencia Estatal de Investigación (AEI)"@gl,
+        "Áreas tematicas de segond nivel de l'AEI"@oc,
+        "Áreas temáticas de segundo nível"@pt ;
+    skos:prefLabel "Áreas temáticas de segundo libel d'a AEI"@an,
+        "Árees temátiques de segundu nivel de l'Axencia Estatal de Investigación (AEI)"@ast,
+        "Dominis temàtics de segon nivell de l'Agència Estatal de Recerca (AEI)"@ca,
+        "duˈminis təˈmatikz ðə səˈɣon niˈβeʎ ðə ɫə ʒənˈsiə əstəˈtaɫ ðə rəˈsɛrkə"@ca-CA-fonipa,
+        "Second-level subject areas of Spain's State Research Agency (AEI)"@en,
+        "sɛkənd ˈlɛvl ˈsʌbʤɪkt ˈeərɪəz"@en-GB-fonipa,
+        "sɛkənd ˈlɛvəl ˈsʌbʤɪkt ˈɛriəz"@en-US-fonipa,
+        "Áreas temáticas de segundo nivel de la Agencia Estatal de Investigación (AEI)"@es,
+        "ˈaɾeas teˈmatikas ðe seˈɣ̞un̟do niˈβel ðe la aˈxenθja estaˈtal ðe imbestiɣ̞aˈθjon"@es-ES-fonipa,
+        "FIXME"@eu,
+        "Domains thématiques de second niveau de l'Agence Espagnole pour la Recherche (AEI)"@fr,
+        "Áreas temáticas de segundo nivel da Axencia Estatal de Investigación (AEI)"@gl,
+        "Áreas tematicas de segond nivel de l'AEI"@oc,
+        "Áreas temáticas de segundo nível"@pt ;
+    ontolex:phoneticRep "duˈminis təˈmatikz ðə səˈɣon niˈβeʎ ðə ɫə ʒənˈsiə əstəˈtaɫ ðə rəˈsɛrkə"@ca-CA-fonipa,
+        "sɛkənd ˈlɛvl ˈsʌbʤɪkt ˈeərɪəz"@en-GB-fonipa,
+        "sɛkənd ˈlɛvəl ˈsʌbʤɪkt ˈɛriə"@en-US-fonipa,
+        "ˈaɾeas teˈmatikas ðe seˈɣ̞un̟do niˈβel ðe la aˈxenθja estaˈtal ðe imbestiɣ̞aˈθjon"@es-ES-fonipa .
+
+asioModules:ESSubjectCode2ndList a asioModules:subjectAreas ;
+    rdfs:label "Códigos de les árees temátiques de segundu nivel"@ast,
+        "Codis dels dominis temàtics de segon nivell de l'Agència Estatal de Recerca (AEI)"@ca,
+        "duˈminis təˈmatikz ðə səˈɣon niˈβeʎ ðə ɫə ʒənˈsiə əstəˈtaɫ ðə rəˈsɛrkə"@ca-CA-fonipa,
+        "Codes for the second-level subject areas of Spain's State Research Agency (AEI)"@en,
+        "ˈkəʊdz fɔː ðə sɛkənd ˈlɛvl ˈsʌbʤɪkt ˈeərɪəz ɒv speɪnz steɪt rɪˈsɜːʧ ˈeɪʤənsi"@en-GB-fonipa,
+        "ˈkoʊdz fɔr ðə sɛkənd ˈlɛvəl ˈsʌbʤɪkt ˈɛriəz ʌv speɪnz steɪt riˈsɜrʧ ˈeɪʤənsi"@en-US-fonipa,
+        "Códigos de las áreas temáticas de segundo nivel de la Agencia Estatal de Investigación (AEI)"@es,
+        "ˈkoðiγoz ðe las ˈaɾeas teˈmatikas ðe seˈɣ̞un̟do niˈβel ðe la aˈxenθja estaˈtal ðe imbestiɣ̞aˈθjon"@es-ES-fonipa,
+        "Codes des domains thématiques de second niveau de l'Agence Espagnole pour la Recherche (AEI)"@fr,
+        "Códigos das áreas temáticas de segundo nivel da Axencia Estatal de Investigación (AEI)"@gl,
+        "Códigos das áreas temáticas de segundo nível da Agência Estadual de Pesquisa Espanhola (AEI)"@pt ;
+    skos:prefLabel "Códigos de les árees temátiques de segundu nivel"@ast,
+        "Codis dels dominis temàtics de segon nivell de l'Agència Estatal de Recerca (AEI)"@ca,
+        "duˈminis təˈmatikz ðə səˈɣon niˈβeʎ ðə ɫə ʒənˈsiə əstəˈtaɫ ðə rəˈsɛrkə"@ca-CA-fonipa,
+        "Codes for the second-level subject areas of Spain's State Research Agency (AEI)"@en,
+        "ˈkəʊdz fɔː ðə sɛkənd ˈlɛvl ˈsʌbʤɪkt ˈeərɪəz ɒv speɪnz steɪt rɪˈsɜːʧ ˈeɪʤənsi"@en-GB-fonipa,
+        "ˈkoʊdz fɔr ðə sɛkənd ˈlɛvəl ˈsʌbʤɪkt ˈɛriəz ʌv speɪnz steɪt riˈsɜrʧ ˈeɪʤənsi"@en-US-fonipa,
+        "Códigos de las áreas temáticas de segundo nivel de la Agencia Estatal de Investigación (AEI)"@es,
+        "ˈkoðiγoz ðe las ˈaɾeas teˈmatikas ðe seˈɣ̞un̟do niˈβel ðe la aˈxenθja estaˈtal ðe imbestiɣ̞aˈθjon"@es-ES-fonipa,
+        "Codes des domains thématiques de second niveau de l'Agence Espagnole pour la Recherche (AEI)"@fr,
+        "Códigos das áreas temáticas de segundo nivel da Axencia Estatal de Investigación (AEI)"@gl,
+        "Códigos das áreas temáticas de segundo nível da Agência Estadual de Pesquisa Espanhola (AEI)"@pt ;
+    ontolex:phoneticRep "duˈminis təˈmatikz ðə səˈɣon niˈβeʎ ðə ɫə ʒənˈsiə əstəˈtaɫ ðə rəˈsɛrkə"@ca-CA-fonipa,
+        "ˈkəʊdz fɔː ðə sɛkənd ˈlɛvl ˈsʌbʤɪkt ˈeərɪəz ɒv speɪnz steɪt rɪˈsɜːʧ ˈeɪʤənsi"@en-GB-fonipa,
+        "ˈkoʊdz fɔr ðə sɛkənd ˈlɛvəl ˈsʌbʤɪkt ˈɛriəz ʌv speɪnz steɪt riˈsɜrʧ ˈeɪʤənsi"@en-US-fonipa,
+        "ˈkoðiγoz ðe las ˈaɾeas teˈmatikas ðe seˈɣ̞un̟do niˈβel ðe la aˈxenθja estaˈtal ðe imbestiɣ̞aˈθjon"@es-ES-fonipa .
 
 asioModules:NUTS2CodeList a asioModules:Country ;
     rdfs:label "Nomenclature of Territorial Units for Statistics (NUTS) level 2 codes"@en ;
