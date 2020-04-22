@@ -10,6 +10,16 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+###  http://www.asio.es/asioinstances/asio#AlejandroGonzalezHevia
+asioIndividuals:AlejandroGonzalezHevia rdf:type owl:NamedIndividual ;
+                                       asio:plays asio:Researching ;
+                                       asio:isMemberOf asioIndividuals:WESO ;
+                                       asio:authors asioIndividuals:Thesis6 ;
+                                       skos:altLabel "Alejandro G. Hevia"@en ;
+                                       rdfs:label "Alejandro González Hevia"@en ,
+                                                  "Alejandro González Hevia"@es .
 
 ###  http://www.asio.es/asioinstances/asio#BasqueCentreForClimateChange
 asioIndividuals:BasqueCentreForClimateChange rdf:type owl:NamedIndividual ,
@@ -72,6 +82,14 @@ asioIndividuals:CentrosDeEstudiosMonetariosYFinancieros rdf:type owl:NamedIndivi
                                                         "Centros de Estudios Monetarios y Financieros"@es ;
                                              skos:altLabel "CEMFI"@es .
 
+###  http://www.asio.es/asioinstances/asio#DanielGayoAvello
+asioIndividuals:DanielGayoAvello rdf:type owl:NamedIndividual ;
+                                 asio:plays asio:Researching ,
+                                            asio:Teaching ;
+                                 asio:isMemberOf asioIndividuals:WESO ;
+                                 asio:supervised asio:Thesis6 ;
+                                 rdfs:label "Daniel Gayo-Avello"@en ,
+                                            "Daniel Gayo-Avello"@es .
 
 ###  http://www.asio.es/asioinstances/asio#DepartamentDeTecnologiesDeLaInformacioILesComunicacions
 asioIndividuals:DepartamentDeTecnologiesDeLaInformacioILesComunicacions rdf:type owl:NamedIndividual ,
@@ -110,6 +128,23 @@ asioIndividuals:EURO-INFSealOfExcellence rdf:type owl:NamedIndividual ,
                                        asio:SealOfQuality ;
                               rdfs:comment "EURO-INF Seal of Excellence"@en ;
                               rdfs:label "EURO-INF Seal of Excellence"@en .
+
+###  http://www.asio.es/asioinstances/asio#GuillermoFacundoColunga
+asioIndividuals:GuillermoFacundoColunga rdf:type owl:NamedIndividual ;
+                                        asio:plays asio:UndergraduateStudent ,
+                                                   asio:Researching ;
+                                        asio:isMemberOf asioIndividuals:WESO ;
+                                        asio:authors asioIndividuals:Thesis5 ;
+                                        rdfs:label "Guillermo Facundo Colunga"@en ,
+                                                   "Guillermo Facundo Colunga"@es .
+
+###  http://www.asio.es/asioinstances/asio#HerminioGarciaGonzalez
+asioIndividuals:HerminioGarciaGonzalez rdf:type owl:NamedIndividual ;
+                                       asio:plays asio:PhDStudent ;
+                                       asio:isMemberOf asioIndividuals:WESO ;
+                                       asio:authors asioIndividuals:Thesis4 ;
+                                       rdfs:label "Herminio García González"@en ,
+                                                  "Herminio García González"@es .
 
 
 ###  http://www.asio.es/asioinstances/asio#HernanSagasteguiChigne
@@ -218,6 +253,11 @@ asioIndividuals:JoseAlbertoBenitezAndrades rdf:type owl:NamedIndividual ,
 asioIndividuals:JoseEmilioLabraGayo rdf:type owl:NamedIndividual ,
                                   <http://www.asio.es/asioontologies/asio#Research&TeachingPersonnel> ;
                          asio:isMemberOf asioIndividuals:WESO ;
+                         asio:supervised asio:Thesis1 ,
+                                         asio:Thesis2 ,
+                                         asio:Thesis3 ,
+                                         asio:Thesis4 ,
+                                         asio:Thesis5 ;
                          rdfs:label "José Emilio Labra Gayo"@en ,
                                     "José Emilio Labra Gayo"@es .
 
@@ -365,6 +405,38 @@ asioIndividuals:Thesis3 rdf:type owl:NamedIndividual ,
              asio:publicationDate 2017 ;
              rdfs:label "Tecnologías Semánticas aplicadas al Análisis de Redes Sociales en el ámbito de la Salud"@es .
 
+###  http://www.asio.es/asioinstances/asio#Thesis4
+asioIndividuals:Thesis4 rdf:type owl:NamedIndividual ,
+                                 asio:MastersThesis ;
+                        asio:isAuthoredBy asioIndividuals:HerminioGarciaGonzalez ;
+                        asio:supervisedBy asioIndividuals:JoseEmilioLabraGayo ;
+                        asio:publicationDate "01-06-2016"^^xsd:date ;
+                        asio:projectKeyword "e-Learning" ,
+                                            "Web Semántica" ,
+                                            "efectividad didáctica" ,
+                                            "enriquecimiento semántico" ;
+                        rdfs:label "LODLearning: Enhancing e-Learning content by using Semantic Web technologies"@en .
+
+### http://www.asio.es/asioinstances/asio#Thesis5
+asioIndividuals:Thesis5 rdf:type owl:NamedIndividual ,
+                                 asio:BachelorsThesis ;
+                        asio:isAuthoredBy asioIndividuals:GuillermoFacundoColunga ;
+                        asio:supervisedBy asioIndividuals:JoseEmilioLabraGayo ;
+                        asio:publicationDate 2020 ;
+                        asio:label "Generación automática de modelo de dominio a través de un subconjunto de ShEx"@es .
+
+### http://www.asio.es/asioinstances/asio#Thesis6
+asioIndividuals:Thesis6 rdf:type owl:NamedIndividual ,
+                                 asio:BachelorsThesis ;
+                        asio:isAuthoredBy asioIndividuals:AlejandroGonzalezHevia ;
+                        asio:supervisedBy asioIndividuals:DanielGayoAvello ;
+                        asio:publicationDate "16-06-2019"^^xsd:date ;
+                        asio:projectKeyword "mental health" ,
+                                            "suicide prevention" ,
+                                            "natural language" ,
+                                            "text analysis" ,
+                                            "machine learning" ;
+                        asio:label "Aplication of machine learning techniques for the analysis of user generated content in self-help forums"@es .
 
 ###  http://www.asio.es/asioinstances/asio#US5579430
 asioIndividuals:US5579430 rdf:type owl:NamedIndividual ,
