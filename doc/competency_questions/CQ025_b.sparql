@@ -1,0 +1,17 @@
+#defaultView:Timeline
+PREFIX wb: <http://hercules-demo.wiki.opencura.com/entity/>
+PREFIX wbt: <http://hercules-demo.wiki.opencura.com/prop/direct/>
+
+SELECT DISTINCT ?supervisedProjectLabel ?authorLabel (year(?publicationDate) as ?publicationYear) ?publicationDate WHERE {
+  ?supervisor wbt:P1 wb:Q1 ;                             # get entities of type NamedIndividual
+              wbt:P16 ?supervisedProject .               # with supervised projects
+  ?supervisedProject wbt:P1 [ wbt:P4 wb:Q73 ];           # supervised projects must be subclasses of Thesis
+                     wbt:P15 ?supervisor ;
+                     wbt:P10 ?author .
+  OPTIONAL { ?supervisedProject wbt:P14 ?publicationDate . }
+  ?supervisor rdfs:label ?supervisorLabel .
+  FILTER(?supervisorLabel = "José Emilio Labra Gayo"@es) # supervised by José Emilio Labra Gayo
+  SERVICE wikibase:label {
+    bd:serviceParam wikibase:language "[AUTO_LANGUAGE],es" .
+  }
+}

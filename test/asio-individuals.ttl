@@ -10,6 +10,16 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+###  http://www.asio.es/asioinstances/asio#AlejandroGonzalezHevia
+asioIndividuals:AlejandroGonzalezHevia rdf:type owl:NamedIndividual ;
+                                       asio:plays asio:Researching ;
+                                       asio:isMemberOf asioIndividuals:WESO ;
+                                       asio:authors asioIndividuals:Thesis6 ;
+                                       skos:altLabel "Alejandro G. Hevia"@en ;
+                                       rdfs:label "Alejandro González Hevia"@en ,
+                                                  "Alejandro González Hevia"@es .
 
 ###  http://www.asio.es/asioinstances/asio#BasqueCentreForClimateChange
 asioIndividuals:BasqueCentreForClimateChange rdf:type owl:NamedIndividual ,
@@ -72,6 +82,14 @@ asioIndividuals:CentrosDeEstudiosMonetariosYFinancieros rdf:type owl:NamedIndivi
                                                         "Centros de Estudios Monetarios y Financieros"@es ;
                                              skos:altLabel "CEMFI"@es .
 
+###  http://www.asio.es/asioinstances/asio#DanielGayoAvello
+asioIndividuals:DanielGayoAvello rdf:type owl:NamedIndividual ;
+                                 asio:plays asio:Researching ,
+                                            asio:Teaching ;
+                                 asio:isMemberOf asioIndividuals:WESO ;
+                                 asio:supervised asio:Thesis6 ;
+                                 rdfs:label "Daniel Gayo-Avello"@en ,
+                                            "Daniel Gayo-Avello"@es .
 
 ###  http://www.asio.es/asioinstances/asio#DepartamentDeTecnologiesDeLaInformacioILesComunicacions
 asioIndividuals:DepartamentDeTecnologiesDeLaInformacioILesComunicacions rdf:type owl:NamedIndividual ,
@@ -110,6 +128,24 @@ asioIndividuals:EURO-INFSealOfExcellence rdf:type owl:NamedIndividual ,
                                        asio:SealOfQuality ;
                               rdfs:comment "EURO-INF Seal of Excellence"@en ;
                               rdfs:label "EURO-INF Seal of Excellence"@en .
+
+###  http://www.asio.es/asioinstances/asio#GuillermoFacundoColunga
+asioIndividuals:GuillermoFacundoColunga rdf:type owl:NamedIndividual ;
+                                        asio:plays asio:UndergraduateStudent ,
+                                                   asio:Researching ;
+                                        asio:isMemberOf asioIndividuals:WESO ;
+                                        asio:authors asioIndividuals:Thesis5 ;
+                                        skos:altLabel "thewilly"@en ;
+                                        rdfs:label "Guillermo Facundo Colunga"@en ,
+                                                   "Guillermo Facundo Colunga"@es .
+
+###  http://www.asio.es/asioinstances/asio#HerminioGarciaGonzalez
+asioIndividuals:HerminioGarciaGonzalez rdf:type owl:NamedIndividual ;
+                                       asio:plays asio:PhDStudent ;
+                                       asio:isMemberOf asioIndividuals:WESO ;
+                                       asio:authors asioIndividuals:Thesis4 ;
+                                       rdfs:label "Herminio García González"@en ,
+                                                  "Herminio García González"@es .
 
 
 ###  http://www.asio.es/asioinstances/asio#HernanSagasteguiChigne
@@ -221,6 +257,11 @@ asioIndividuals:JoseEmilioLabraGayo rdf:type owl:NamedIndividual ;
                          asio:plays  asio:Researching ,
                                      asio:Teaching ;
                          asio:isMemberOf asioIndividuals:WESO ;
+                         asio:supervised asio:Thesis1 ,
+                                         asio:Thesis2 ,
+                                         asio:Thesis3 ,
+                                         asio:Thesis4 ,
+                                         asio:Thesis5 ;
                          rdfs:label "José Emilio Labra Gayo"@en ,
                                     "José Emilio Labra Gayo"@es .
 
@@ -370,6 +411,38 @@ asioIndividuals:Thesis3 rdf:type owl:NamedIndividual ,
              asio:publicationDate 2017 ;
              rdfs:label "Tecnologías Semánticas aplicadas al Análisis de Redes Sociales en el ámbito de la Salud"@es .
 
+###  http://www.asio.es/asioinstances/asio#Thesis4
+asioIndividuals:Thesis4 rdf:type owl:NamedIndividual ,
+                                 asio:MastersThesis ;
+                        asio:isAuthoredBy asioIndividuals:HerminioGarciaGonzalez ;
+                        asio:supervisedBy asioIndividuals:JoseEmilioLabraGayo ;
+                        asio:publicationDate "01-06-2016"^^xsd:date ;
+                        asio:projectKeyword "e-Learning" ,
+                                            "Web Semántica" ,
+                                            "efectividad didáctica" ,
+                                            "enriquecimiento semántico" ;
+                        rdfs:label "LODLearning: Enhancing e-Learning content by using Semantic Web technologies"@en .
+
+### http://www.asio.es/asioinstances/asio#Thesis5
+asioIndividuals:Thesis5 rdf:type owl:NamedIndividual ,
+                                 asio:BachelorsThesis ;
+                        asio:isAuthoredBy asioIndividuals:GuillermoFacundoColunga ;
+                        asio:supervisedBy asioIndividuals:JoseEmilioLabraGayo ;
+                        asio:publicationDate 2020 ;
+                        asio:label "Automatic generation of multilanguage domain models through a subset of shape expressions"@en .
+
+### http://www.asio.es/asioinstances/asio#Thesis6
+asioIndividuals:Thesis6 rdf:type owl:NamedIndividual ,
+                                 asio:BachelorsThesis ;
+                        asio:isAuthoredBy asioIndividuals:AlejandroGonzalezHevia ;
+                        asio:supervisedBy asioIndividuals:DanielGayoAvello ;
+                        asio:publicationDate "16-06-2019"^^xsd:date ;
+                        asio:projectKeyword "mental health" ,
+                                            "suicide prevention" ,
+                                            "natural language" ,
+                                            "text analysis" ,
+                                            "machine learning" ;
+                        asio:label "Application of machine learning techniques for the analysis of user generated content in self-help forums"@es .
 
 ###  http://www.asio.es/asioinstances/asio#US5579430
 asioIndividuals:US5579430 rdf:type owl:NamedIndividual ,
@@ -484,8 +557,8 @@ asioIndividuals:MariaRitaPaper1 rdf:type owl:NamedIndividual ,
                       asio:isAuthoredBy asioIndividuals:MariaRitaSierraSanchez ;
                       asio:publicationDate 2015 ;
                       asio:publishedBy asioIndividuals:Springer;
-                      rdfs:comment """Mencía R., Sierra M.R., Varela R. (2015) Genetic Algorithm for the Job-Shop Scheduling with Skilled Operators. 
-                                    In: Ferrández Vicente J., Álvarez-Sánchez J., de la Paz López F., Toledo-Moreo F., Adeli H. (eds) Bioinspired Computation in 
+                      rdfs:comment """Mencía R., Sierra M.R., Varela R. (2015) Genetic Algorithm for the Job-Shop Scheduling with Skilled Operators.
+                                    In: Ferrández Vicente J., Álvarez-Sánchez J., de la Paz López F., Toledo-Moreo F., Adeli H. (eds) Bioinspired Computation in
                                     Artificial Systems. IWINAC 2015. Lecture Notes in Computer Science, vol 9108. Springer, Cham"""@en;
                       rdfs:label """Genetic Algorithm for the Job-Shop Scheduling with Skilled Operators"""@en .
 
@@ -494,9 +567,9 @@ asioIndividuals:MariaRitaPaper2 rdf:type owl:NamedIndividual ,
                                asio:PeerReviewedArticle ;
                       asio:isAuthoredBy asioIndividuals:MariaRitaSierraSanchez ;
                       asio:publicationDate 2015 ;
-                      rdfs:comment """Mencía, Carlos et al. ‘Solving the Job Shop Scheduling Problem with Operators by Depth-first Heuristic 
+                      rdfs:comment """Mencía, Carlos et al. ‘Solving the Job Shop Scheduling Problem with Operators by Depth-first Heuristic
                                     Search Enhanced with Global Pruning Rules’. 1 Jan. 2015 : 365 – 381."""@en ;
-                      rdfs:label """Solving the Job Shop Scheduling Problem with Operators by Depth-first Heuristic 
+                      rdfs:label """Solving the Job Shop Scheduling Problem with Operators by Depth-first Heuristic
                                     Search Enhanced with Global Pruning Rules"""@en .
 
 ###  http://www.asio.es/asioinstances/asio#BegoñaCristinaPelayoPaper1
@@ -505,8 +578,8 @@ asioIndividuals:BegoñaCristinaPelayoPaper1 rdf:type owl:NamedIndividual ,
                       asio:isAuthoredBy asioIndividuals:BegoñaCristinaPelayoGarciaBustelo ;
                       asio:publishedBy asioIndividuals:Springer;
                       asio:publicationDate 2010 ;
-                      rdfs:comment """Álvarez M.Á., G-Bustelo B.C.P., Sanjuán-Martínez O., Lovelle J.M.C. (2010) Bridging together Semantic Web and Model-Driven 
-                                    Engineering. In: de Leon F. de Carvalho A.P., Rodríguez-González S., De Paz Santana J.F., Rodríguez J.M.C. (eds) Distributed 
+                      rdfs:comment """Álvarez M.Á., G-Bustelo B.C.P., Sanjuán-Martínez O., Lovelle J.M.C. (2010) Bridging together Semantic Web and Model-Driven
+                                    Engineering. In: de Leon F. de Carvalho A.P., Rodríguez-González S., De Paz Santana J.F., Rodríguez J.M.C. (eds) Distributed
                                     Computing and Artificial Intelligence. Advances in Intelligent and Soft Computing, vol 79. Springer, Berlin, Heidelberg"""@en;
                       rdfs:label "Bridging together Semantic Web and Model-Driven Engineering"@en .
 
@@ -516,9 +589,9 @@ asioIndividuals:BegoñaCristinaPelayoPaper2 rdf:type owl:NamedIndividual ,
                       asio:isAuthoredBy asioIndividuals:BegoñaCristinaPelayoGarciaBustelo ;
                       asio:publishedBy asioIndividuals:Springer;
                       asio:publicationDate 2010 ;
-                      rdfs:comment """Núñez V E.R., Martínez O.S., Lovelle J.M.C., García-Bustelo B.C.P. (2010) First Steps towards Implicit Feedback for 
-                                    Recommender Systems in Electronic Books. In: de Leon F. de Carvalho A.P., Rodríguez-González S., De Paz Santana J.F., 
-                                    Rodríguez J.M.C. (eds) Distributed Computing and Artificial Intelligence. Advances in Intelligent and Soft Computing, 
+                      rdfs:comment """Núñez V E.R., Martínez O.S., Lovelle J.M.C., García-Bustelo B.C.P. (2010) First Steps towards Implicit Feedback for
+                                    Recommender Systems in Electronic Books. In: de Leon F. de Carvalho A.P., Rodríguez-González S., De Paz Santana J.F.,
+                                    Rodríguez J.M.C. (eds) Distributed Computing and Artificial Intelligence. Advances in Intelligent and Soft Computing,
                                     vol 79. Springer, Berlin, Heidelberg"""@en ;
                       rdfs:label """First Steps towards Implicit Feedback for Recommender Systems in Electronic Books"""@en .
 
