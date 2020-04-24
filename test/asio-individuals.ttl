@@ -320,7 +320,7 @@ asioIndividuals:MasterUniversitarioEnIngenieriaWeb rdf:type owl:NamedIndividual 
 ###  http://www.asio.es/asioinstances/asio#MinimalIntelligenceLab
 asioIndividuals:MinimalIntelligenceLab rdf:type owl:NamedIndividual ,
                                      asio:ResearchInstitute ;
-                            asio:hasResearchLine asioModules:ES_SUBJECT_AREA_LEVEL_3_CODE_FIL ;         
+                            asio:hasResearchLine asioModules:ES_SUBJECT_AREA_LEVEL_2_MLP ;         
                             foaf:member asioIndividuals:PacoCalvo ;
                             rdfs:label "Laboratorio de Inteligencia Mínima"@es ,
                                        "Minimal Intelligence Lab"@en ;
