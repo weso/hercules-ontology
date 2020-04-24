@@ -1,0 +1,2259 @@
+@prefix asio:  <http://purl.org/hercules/asio/core#> .
+@prefix asioModules:  <http://purl.org/hercules/asio/modules#> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/#> .
+@prefix my:      <http://weso.es/tablines/project/universities/resource/> .
+@prefix project:  <http://weso.es/tablines/project/universities/> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:    <http://www.w3.org/ns/dcat#> .
+@prefix dct:     <http://purl.org/dc/terms/> .
+@prefix ontolex:  <http://www.w3.org/ns/lemon/ontolex#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix provo:   <http://www.w3.org/ns/prov#> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+
+asioModules:ES_UNIVERSITY_VAT_NUMBER_Q8050013E
+      a       skos:Concept ;
+      rdfs:label "Q8050013E" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_064 ;
+      skos:inScheme asioModules:ESUniversityVATNumberList ;
+      skos:prefLabel "Q8050013E" .
+
+asioModules:ES_UNIVERSITY_CODE_074
+      a       skos:Concept ;
+      rdfs:label "074" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_074 ;
+      skos:inScheme asioModules:ESUniversityCodeList ;
+      skos:prefLabel "074" .
+
+<http://purl.org/hercules/asio/modules#ES_UNIVERSITY_072 >
+      a       skos:Concept ;
+      rdfs:label "Universitat Catòlica de València Sant Vicent Màrtir" ;
+      asio:geoDivision asioModules:ES_DIVISION_LEVEL_1_ES_VC , asioModules:ES_DIVISION_LEVEL_2_ES_V ;
+      asio:hasCode asioModules:ES_UNIVERSITY_VAT_NUMBER_G97025787 , <http://purl.org/hercules/asio/modules#ES_UNIVERSITY_CODE_072 > , asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_VALENCI11 ;
+      skos:inScheme asioModules:ESUniversityList , asioModules:UniversityList ;
+      skos:notation "UCV" , "072 " ;
+      skos:prefLabel "Universidad Católica de Valencia San Vicente Mártir"@es , "Valencia Catholic University Saint Vincent Martyr"@en , "Universitat Catòlica de València Sant Vicent Màrtir" , "Universitat Catòlica de València Sant Vicent Màrtir"@ca .
+
+asioModules:ES_UNIVERSITY_VAT_NUMBER_Q4818001B
+      a       skos:Concept ;
+      rdfs:label "Q4818001B" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_020 ;
+      skos:inScheme asioModules:ESUniversityVATNumberList ;
+      skos:prefLabel "Q4818001B" .
+
+asioModules:ES_UNIVERSITY_VAT_NUMBER_Q2818029G
+      a       skos:Concept ;
+      rdfs:label "Q2818029G" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_036 ;
+      skos:inScheme asioModules:ESUniversityVATNumberList ;
+      skos:prefLabel "Q2818029G" .
+
+asioModules:ES_UNIVERSITY_039
+      a       skos:Concept ;
+      rdfs:label "Universitat Politècnica de Catalunya" , "Universitat Pompeu Fabra" ;
+      asio:geoDivision asioModules:ES_DIVISION_LEVEL_2_ES_B , asioModules:ES_DIVISION_LEVEL_1_ES_CT ;
+      asio:hasCode asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_BARCELO03 , asioModules:ES_UNIVERSITY_VAT_NUMBER_Q5850017D , asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_BARCELO15 , asioModules:ES_UNIVERSITY_VAT_NUMBER_Q0818003F , asioModules:ES_UNIVERSITY_CODE_039 ;
+      skos:inScheme asioModules:ESUniversityList , asioModules:UniversityList ;
+      skos:notation "UPC" , "039" , "UPF" ;
+      skos:prefLabel "Pompeu Fabra Unibertsitatea"@eu , "Kataluniako Unibertsitate Politeknikoa"@eu , "Pompeu Fabra University"@en , "Universidad Politécnica de Cataluña"@es , "Universitat Politècnica de Catalunya"@ca , "Universitat Politècnica de Catalunya" , "Polytechnic University of Catalonia‎"@en , "Universitat Pompeu Fabra"@ca , "Universitat Pompeu Fabra" , "Universidade Pompeu Fabra"@gl , "Universidade Pompeu Fabra"@pt , "Universidade Politécnica da Catalunha"@pt , "Universidade Politécnica da Cataluña"@gl , "Universidad Pompeu Fabra"@es .
+
+asioModules:ES_UNIVERSITY_CODE_010
+      a       skos:Concept ;
+      rdfs:label "010" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_010 ;
+      skos:inScheme asioModules:ESUniversityCodeList ;
+      skos:prefLabel "010" .
+
+asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_CIUDAR01
+      a       skos:Concept ;
+      rdfs:label "E CIUDAR01" ;
+      asio:codeOf <http://purl.org/hercules/asio/modules#ES_UNIVERSITY_034 > ;
+      skos:inScheme asioModules:ESUniversityErasmusCodeList ;
+      skos:prefLabel "E CIUDAR01" .
+
+asioModules:ES_UNIVERSITY_064
+      a       skos:Concept ;
+      rdfs:label "Universidad Politécnica de Cartagena" ;
+      asio:geoDivision asioModules:ES_DIVISION_LEVEL_2_ES_UM , asioModules:ES_DIVISION_LEVEL_1_ES_MC ;
+      asio:hasCode asioModules:ES_UNIVERSITY_VAT_NUMBER_Q8050013E , asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_MURCIA04 , asioModules:ES_UNIVERSITY_CODE_064 ;
+      skos:inScheme asioModules:ESUniversityList , asioModules:UniversityList ;
+      skos:notation "064" , "UPCT" ;
+      skos:prefLabel "Universitat Politècnica de Cartagena"@ca , "Polytechnic University of Cartagena"@en , "Universidad Politécnica de Cartagena" , "Universidad Politécnica de Cartagena"@es .
+
+asioModules:ES_UNIVERSITY_VAT_NUMBER_Q7350006H
+      a       skos:Concept ;
+      rdfs:label "Q7350006H" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_050 ;
+      skos:inScheme asioModules:ESUniversityVATNumberList ;
+      skos:prefLabel "Q7350006H" .
+
+asioModules:ES_UNIVERSITY_011
+      a       skos:Concept ;
+      rdfs:label "Universidad de Málaga" ;
+      asio:geoDivision asioModules:ES_DIVISION_LEVEL_1_ES_AN , asioModules:ES_DIVISION_LEVEL_2_ES_MA ;
+      asio:hasCode asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_MALAGA01 , asioModules:ES_UNIVERSITY_VAT_NUMBER_Q2918001E , asioModules:ES_UNIVERSITY_CODE_011 ;
+      skos:inScheme asioModules:ESUniversityList , asioModules:UniversityList ;
+      skos:notation "UMA" , "011" ;
+      skos:prefLabel "Universidad de Málaga" , "Universidad de Málaga"@es , "Universitat de Màlaga"@ca , "University of Málaga"@en .
+
+asioModules:ES_UNIVERSITY_VAT_NUMBER_Q2803011B
+      a       skos:Concept ;
+      rdfs:label "Q2803011B" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_056 ;
+      skos:inScheme asioModules:ESUniversityVATNumberList ;
+      skos:prefLabel "Q2803011B" .
+
+asioModules:ES_UNIVERSITY_007
+      a       skos:Concept ;
+      rdfs:label "Universidade de Santiago de Compostela" ;
+      asio:geoDivision asioModules:ES_DIVISION_LEVEL_2_ES_PO , asioModules:ES_DIVISION_LEVEL_1_ES_GA ;
+      asio:hasCode asioModules:ES_UNIVERSITY_CODE_007 , asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_SANTIAG01 , asioModules:ES_UNIVERSITY_VAT_NUMBER_Q1518001A ;
+      skos:inScheme asioModules:ESUniversityList , asioModules:UniversityList ;
+      skos:notation "USC" , "007" ;
+      skos:prefLabel "Universidade de Santiago de Compostela" , "Universidade de Santiago de Compostela"@pt , "Universidade de Santiago de Compostela"@gl , "Universitat de Santiago de Compostela"@en , "Universitat de Santiago de Compostela"@ca , "Universidad de Santiago de Compostela"@es .
+
+asioModules:ES_UNIVERSITY_CODE_060
+      a       skos:Concept ;
+      rdfs:label "060" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_060 ;
+      skos:inScheme asioModules:ESUniversityCodeList ;
+      skos:prefLabel "060" .
+
+asioModules:ES_UNIVERSITY_050
+      a       skos:Concept ;
+      rdfs:label "Universidad de Jaén" ;
+      asio:geoDivision asioModules:ES_DIVISION_LEVEL_1_ES_AN , asioModules:ES_DIVISION_LEVEL_2_ES_J ;
+      asio:hasCode asioModules:ES_UNIVERSITY_VAT_NUMBER_Q7350006H , asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_JAEN01 , asioModules:ES_UNIVERSITY_CODE_050 ;
+      skos:inScheme asioModules:ESUniversityList , asioModules:UniversityList ;
+      skos:notation "UJA" , "050" ;
+      skos:prefLabel "Universidad de Jaén" , "Universidad de Jaén"@es , "University of Jaén"@en , "Universitat de Jaén"@ca .
+
+<http://purl.org/hercules/asio/modules#ES_UNIVERSITY_028 >
+      a       skos:Concept ;
+      rdfs:label "Universidad Nacional de Educación a Distancia" ;
+      asio:geoDivision asioModules:ES_DIVISION_LEVEL_1_ES_MD , asioModules:ES_DIVISION_LEVEL_2_ES_M ;
+      asio:hasCode asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_MADRID01 , <http://purl.org/hercules/asio/modules#ES_UNIVERSITY_CODE_028 > , asioModules:ES_UNIVERSITY_VAT_NUMBER_Q2818016D ;
+      skos:inScheme asioModules:ESUniversityList , asioModules:UniversityList ;
+      skos:notation "028 " , "UNED" ;
+      skos:prefLabel "Universidad Nacional de Educación a Distancia" , "Universidad Nacional de Educación a Distancia"@es , "Universitat Nacional de Educació a Distància"@ca , "National University of Distance Education‎"@en .
+
+asioModules:ES_UNIVERSITY_VAT_NUMBER_Q3150012G
+      a       skos:Concept ;
+      rdfs:label "Q3150012G" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_035 ;
+      skos:inScheme asioModules:ESUniversityVATNumberList ;
+      skos:prefLabel "Q3150012G" .
+
+asioModules:ES_UNIVERSITY_CODE_020
+      a       skos:Concept ;
+      rdfs:label "020" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_020 ;
+      skos:inScheme asioModules:ESUniversityCodeList ;
+      skos:prefLabel "020" .
+
+asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_VALENCI01
+      a       skos:Concept ;
+      rdfs:label "E VALENCI01" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_018 ;
+      skos:inScheme asioModules:ESUniversityErasmusCodeList ;
+      skos:prefLabel "E VALENCI01" .
+
+asioModules:ES_UNIVERSITY_CODE_001
+      a       skos:Concept ;
+      rdfs:label "001" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_001 ;
+      skos:inScheme asioModules:ESUniversityCodeList ;
+      skos:prefLabel "001" .
+
+asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_PALMA01
+      a       skos:Concept ;
+      rdfs:label "E PALMA01" ;
+      asio:codeOf <http://purl.org/hercules/asio/modules#ES_UNIVERSITY_003 > ;
+      skos:inScheme asioModules:ESUniversityErasmusCodeList ;
+      skos:prefLabel "E PALMA01" .
+
+asioModules:ES_UNIVERSITY_VAT_NUMBER_Q0332001G
+      a       skos:Concept ;
+      rdfs:label "Q0332001G" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_001 ;
+      skos:inScheme asioModules:ESUniversityVATNumberList ;
+      skos:prefLabel "Q0332001G" .
+
+asioModules:ES_UNIVERSITY_VAT_NUMBER_Q0968272E
+      a       skos:Concept ;
+      rdfs:label "Q0968272E" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_051 ;
+      skos:inScheme asioModules:ESUniversityVATNumberList ;
+      skos:prefLabel "Q0968272E" .
+
+asioModules:ES_UNIVERSITY_038
+      a       skos:Concept ;
+      rdfs:label "Universidade de Vigo" ;
+      asio:geoDivision asioModules:ES_DIVISION_LEVEL_2_ES_PO , asioModules:ES_DIVISION_LEVEL_1_ES_GA ;
+      asio:hasCode asioModules:ES_UNIVERSITY_VAT_NUMBER_Q8650002B , asioModules:ES_UNIVERSITY_CODE_038 , asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_VIGO01 ;
+      skos:inScheme asioModules:ESUniversityList , asioModules:UniversityList ;
+      skos:notation "038" , "UVI" ;
+      skos:prefLabel "Universidade de Vigo" , "Universidade de Vigo"@es , "Universidade de Vigo"@pt , "Universidade de Vigo"@gl , "Universitat de Vigo"@ca , "Universitat de Vigo"@en .
+
+asioModules:ES_UNIVERSITY_010
+      a       skos:Concept ;
+      rdfs:label "Universidad Complutense de Madrid" ;
+      asio:geoDivision asioModules:ES_DIVISION_LEVEL_1_ES_MD , asioModules:ES_DIVISION_LEVEL_2_ES_M ;
+      asio:hasCode asioModules:ES_UNIVERSITY_VAT_NUMBER_Q2818014I , asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_MADRID03 , asioModules:ES_UNIVERSITY_CODE_010 ;
+      skos:inScheme asioModules:ESUniversityList , asioModules:UniversityList ;
+      skos:notation "010" , "UCM" ;
+      skos:prefLabel "Universitat Complutense de Madrid"@ca , "Complutense University of Madrid"@en , "Universidad Complutense de Madrid" , "Universidad Complutense de Madrid"@es .
+
+asioModules:ES_UNIVERSITY_VAT_NUMBER_B97934467
+      a       skos:Concept ;
+      rdfs:label "B97934467" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_082 ;
+      skos:inScheme asioModules:ESUniversityVATNumberList ;
+      skos:prefLabel "B97934467" .
+
+asioModules:ES_UNIVERSITY_CODE_011
+      a       skos:Concept ;
+      rdfs:label "011" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_011 ;
+      skos:inScheme asioModules:ESUniversityCodeList ;
+      skos:prefLabel "011" .
+
+asioModules:ES_UNIVERSITY_CODE_031
+      a       skos:Concept ;
+      rdfs:label "031" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_031 ;
+      skos:inScheme asioModules:ESUniversityCodeList ;
+      skos:prefLabel "031" .
+
+asioModules:ES_UNIVERSITY_VAT_NUMBER_Q8650002B
+      a       skos:Concept ;
+      rdfs:label "Q8650002B" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_038 ;
+      skos:inScheme asioModules:ESUniversityVATNumberList ;
+      skos:prefLabel "Q8650002B" .
+
+asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_MADRID28
+      a       skos:Concept ;
+      rdfs:label "E MADRID28" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_068 ;
+      skos:inScheme asioModules:ESUniversityErasmusCodeList ;
+      skos:prefLabel "E MADRID28" .
+
+asioModules:ES_UNIVERSITY_065
+      a       skos:Concept ;
+      rdfs:label "Universidad Camilo José Cela" ;
+      asio:geoDivision asioModules:ES_DIVISION_LEVEL_1_ES_MD , asioModules:ES_DIVISION_LEVEL_2_ES_M ;
+      asio:hasCode asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_MADRID33 , asioModules:ES_UNIVERSITY_VAT_NUMBER_A79336947 , asioModules:ES_UNIVERSITY_CODE_065 ;
+      skos:inScheme asioModules:ESUniversityList , asioModules:UniversityList ;
+      skos:notation "065" , "UCJC" ;
+      skos:prefLabel "Universitat Camilo José Cela"@ca , "Universidad Camilo José Cela" , "Universidad Camilo José Cela"@es , "Camilo José Cela University"@en .
+
+asioModules:ES_UNIVERSITY_CODE_061
+      a       skos:Concept ;
+      rdfs:label "061" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_061 ;
+      skos:inScheme asioModules:ESUniversityCodeList ;
+      skos:prefLabel "061" .
+
+asioModules:ES_UNIVERSITY_051
+      a       skos:Concept ;
+      rdfs:label "Universidad de Burgos" ;
+      asio:geoDivision asioModules:ES_DIVISION_LEVEL_2_ES_BU , asioModules:ES_DIVISION_LEVEL_1_ES_CL ;
+      asio:hasCode asioModules:ES_UNIVERSITY_CODE_051 , asioModules:ES_UNIVERSITY_VAT_NUMBER_Q0968272E , asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_BURGOS01 ;
+      skos:inScheme asioModules:ESUniversityList , asioModules:UniversityList ;
+      skos:notation "UBU" , "051" ;
+      skos:prefLabel "Universitat de Burgos"@ca , "Universidad de Burgos" , "Universidad de Burgos"@es , "University of Burgos"@en .
+
+asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_LA-CORU01
+      a       skos:Concept ;
+      rdfs:label "E LA-CORU01" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_037 ;
+      skos:inScheme asioModules:ESUniversityErasmusCodeList ;
+      skos:prefLabel "E LA-CORU01" .
+
+asioModules:ES_UNIVERSITY_006
+      a       skos:Concept ;
+      rdfs:label "Universidad de Córdoba" ;
+      asio:geoDivision asioModules:ES_DIVISION_LEVEL_1_ES_AN , asioModules:ES_DIVISION_LEVEL_2_ES_CO ;
+      asio:hasCode asioModules:ES_UNIVERSITY_VAT_NUMBER_Q1418001B , asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_CORDOBA01 , asioModules:ES_UNIVERSITY_CODE_006 ;
+      skos:inScheme asioModules:ESUniversityList , asioModules:UniversityList ;
+      skos:notation "006" , "UCO" ;
+      skos:prefLabel "University of Córdoba"@en , "Universidad de Córdoba" , "Universidad de Córdoba"@es , "Universitat de Còrdova"@ca .
+
+asioModules:ES_UNIVERSITY_VAT_NUMBER_G63095848
+      a       skos:Concept ;
+      rdfs:label "G63095848" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_070 ;
+      skos:inScheme asioModules:ESUniversityVATNumberList ;
+      skos:prefLabel "G63095848" .
+
+asioModules:ES_UNIVERSITY_CODE_021
+      a       skos:Concept ;
+      rdfs:label "021" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_021 ;
+      skos:inScheme asioModules:ESUniversityCodeList ;
+      skos:prefLabel "021" .
+
+asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_MURCIA01
+      a       skos:Concept ;
+      rdfs:label "E MURCIA01" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_012 ;
+      skos:inScheme asioModules:ESUniversityErasmusCodeList ;
+      skos:prefLabel "E MURCIA01" .
+
+asioModules:ES_UNIVERSITY_VAT_NUMBER_Q6550005J
+      a       skos:Concept ;
+      rdfs:label "Q6550005J" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_037 ;
+      skos:inScheme asioModules:ESUniversityVATNumberList ;
+      skos:prefLabel "Q6550005J" .
+
+asioModules:ES_UNIVERSITY_VAT_NUMBER_R2800395B
+      a       skos:Concept ;
+      rdfs:label "R2800395B" ;
+      asio:codeOf <http://purl.org/hercules/asio/modules#ES_UNIVERSITY_033 > ;
+      skos:inScheme asioModules:ESUniversityVATNumberList ;
+      skos:prefLabel "R2800395B" .
+
+asioModules:ES_UNIVERSITY_CODE_012
+      a       skos:Concept ;
+      rdfs:label "012" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_012 ;
+      skos:inScheme asioModules:ESUniversityCodeList ;
+      skos:prefLabel "012" .
+
+asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_BARCELO15
+      a       skos:Concept ;
+      rdfs:label "E BARCELO15" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_039 ;
+      skos:inScheme asioModules:ESUniversityErasmusCodeList ;
+      skos:prefLabel "E BARCELO15" .
+
+asioModules:UniversityList
+      a       asioModules:Universities ;
+      rdfs:label "Univelsiais"@ext , "Unibertsitateak"@eu , "Universitats"@ca , "Universitats"@oc , "Universidaes"@ast , "Universidades"@pt , "Universidades"@es , "Universidades"@gl , "Universités"@fr , "Universities"@en , "Universidatz"@an ;
+      skos:prefLabel "Univelsiais"@ext , "Unibertsitateak"@eu , "Universitats"@ca , "Universitats"@oc , "Universidaes"@ast , "Universités"@fr , "Universidades"@es , "Universidades"@gl , "Universidades"@pt , "Universities"@en , "Universidatz"@an .
+
+asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_JAEN01
+      a       skos:Concept ;
+      rdfs:label "E JAEN01" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_050 ;
+      skos:inScheme asioModules:ESUniversityErasmusCodeList ;
+      skos:prefLabel "E JAEN01" .
+
+asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_LLEIDA01
+      a       skos:Concept ;
+      rdfs:label "E LLEIDA01" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_044 ;
+      skos:inScheme asioModules:ESUniversityErasmusCodeList ;
+      skos:prefLabel "E LLEIDA01" .
+
+asioModules:ES_UNIVERSITY_VAT_NUMBER_F20560991
+      a       skos:Concept ;
+      rdfs:label "F20560991" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_061 ;
+      skos:inScheme asioModules:ESUniversityVATNumberList ;
+      skos:prefLabel "F20560991" .
+
+asioModules:ES_UNIVERSITY_013
+      a       skos:Concept ;
+      rdfs:label "Universidá d'Uviéu" ;
+      asio:geoDivision asioModules:ES_DIVISION_LEVEL_1_ES_AS , asioModules:ES_DIVISION_LEVEL_2_ES_O ;
+      asio:hasCode asioModules:ES_UNIVERSITY_VAT_NUMBER_Q3318001I , asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_OVIEDO01 , asioModules:ES_UNIVERSITY_CODE_013 ;
+      skos:inScheme asioModules:ESUniversityList , asioModules:UniversityList ;
+      skos:notation "013" , "UOV" ;
+      skos:prefLabel "Universidad de Oviedo"@es , "University of Oviedo‎"@en , "Universitat d'Oviedo"@ca , "Universidá d'Uviéu" , "Universidá d'Uviéu"@ast .
+
+asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_GRANADA01
+      a       skos:Concept ;
+      rdfs:label "E GRANADA01" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_008 ;
+      skos:inScheme asioModules:ESUniversityErasmusCodeList ;
+      skos:prefLabel "E GRANADA01" .
+
+asioModules:ES_UNIVERSITY_009
+      a       skos:Concept ;
+      rdfs:label "Universidad de León" ;
+      asio:geoDivision asioModules:ES_DIVISION_LEVEL_2_ES_LE , asioModules:ES_DIVISION_LEVEL_1_ES_CL ;
+      asio:hasCode asioModules:ES_UNIVERSITY_VAT_NUMBER_Q2432001B , asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_LEON01 , asioModules:ES_UNIVERSITY_CODE_009 ;
+      skos:inScheme asioModules:ESUniversityList , asioModules:UniversityList ;
+      skos:notation "009" , "ULE" ;
+      skos:prefLabel "Universidad de León"@es , "Universidad de León" , "Universidá de Llión"@ast , "Universitat de León"@ca , "University of León"@en .
+
+asioModules:ES_UNIVERSITY_062
+      a       skos:Concept ;
+      rdfs:label "Universitat Internacional de Catalunya" ;
+      asio:geoDivision asioModules:ES_DIVISION_LEVEL_2_ES_B , asioModules:ES_DIVISION_LEVEL_1_ES_CT ;
+      asio:hasCode asioModules:ES_UNIVERSITY_VAT_NUMBER_G61737409 , asioModules:ES_UNIVERSITY_CODE_062 , asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_BARCELO_24 ;
+      skos:inScheme asioModules:ESUniversityList , asioModules:UniversityList ;
+      skos:notation "062" , "UIC" ;
+      skos:prefLabel "Universitat Internacional de Catalunha"@oc , "Universidad Internacional de Cataluña"@es , "Universidade Internacional da Cataluña"@gl , "International University of Catalonia"@en , "Kataluniako Nazioarteko Unibertsitatea"@eu , "Universitat Internacional de Catalunya" , "Universitat Internacional de Catalunya"@ca , "Universidade Internacional da Catalunha"@pt .
+
+<http://purl.org/hercules/asio/modules#ES_UNIVERSITY_026 >
+      a       skos:Concept ;
+      rdfs:label "Universidad de Las Palmas de Gran Canaria" ;
+      asio:geoDivision asioModules:ES_DIVISION_LEVEL_2_ES_GC , asioModules:ES_DIVISION_LEVEL_1_ES_CN ;
+      asio:hasCode <http://purl.org/hercules/asio/modules#ES_UNIVERSITY_CODE_026 > , asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_LAS-PAL01 , asioModules:ES_UNIVERSITY_VAT_NUMBER_Q3518001G ;
+      skos:inScheme asioModules:ESUniversityList , asioModules:UniversityList ;
+      skos:notation "UPGC" , "026 " ;
+      skos:prefLabel "Universitat de Las Palmas de Gran Canària"@ca , "University of Las Palmas of Gran Canaria"@en , "Universidad de Las Palmas de Gran Canaria"@es , "Universidad de Las Palmas de Gran Canaria" .
+
+<http://purl.org/hercules/asio/modules#ES_UNIVERSITY_CODE_033 >
+      a       skos:Concept ;
+      rdfs:label "033 " ;
+      asio:codeOf <http://purl.org/hercules/asio/modules#ES_UNIVERSITY_033 > ;
+      skos:inScheme asioModules:ESUniversityCodeList ;
+      skos:prefLabel "033 " .
+
+asioModules:ES_UNIVERSITY_VAT_NUMBER_Q4618001D
+      a       skos:Concept ;
+      rdfs:label "Q4618001D" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_018 ;
+      skos:inScheme asioModules:ESUniversityVATNumberList ;
+      skos:prefLabel "Q4618001D" .
+
+asioModules:ES_UNIVERSITY_CODE_032
+      a       skos:Concept ;
+      rdfs:label "032" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_032 ;
+      skos:inScheme asioModules:ESUniversityCodeList ;
+      skos:prefLabel "032" .
+
+<http://purl.org/hercules/asio/modules#ES_UNIVERSITY_CODE_034 >
+      a       skos:Concept ;
+      rdfs:label "034 " ;
+      asio:codeOf <http://purl.org/hercules/asio/modules#ES_UNIVERSITY_034 > ;
+      skos:inScheme asioModules:ESUniversityCodeList ;
+      skos:prefLabel "034 " .
+
+<http://purl.org/hercules/asio/modules#ES_UNIVERSITY_025 >
+      a       skos:Concept ;
+      rdfs:label "Universidad Politécnica de Madrid" ;
+      asio:geoDivision asioModules:ES_DIVISION_LEVEL_1_ES_MD , asioModules:ES_DIVISION_LEVEL_2_ES_M ;
+      asio:hasCode <http://purl.org/hercules/asio/modules#ES_UNIVERSITY_CODE_025 > , asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_MADRID05 , asioModules:ES_UNIVERSITY_VAT_NUMBER_Q2818015F ;
+      skos:inScheme asioModules:ESUniversityList , asioModules:UniversityList ;
+      skos:notation "UPM" , "025 " ;
+      skos:prefLabel "Universidad Politécnica de Madrid"@es , "Universidad Politécnica de Madrid" , "Universitat Politècnica de Madrid"@ca , "Polytechnic University of Madrid"@en .
+
+asioModules:ES_UNIVERSITY_052
+      a       skos:Concept ;
+      rdfs:label "Universidad Antonio de Nebrija" ;
+      asio:geoDivision asioModules:ES_DIVISION_LEVEL_1_ES_MD , asioModules:ES_DIVISION_LEVEL_2_ES_M ;
+      asio:hasCode asioModules:ES_UNIVERSITY_VAT_NUMBER_A78094158 , asioModules:ES_UNIVERSITY_CODE_052 , asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_MADRID12 ;
+      skos:inScheme asioModules:ESUniversityList , asioModules:UniversityList ;
+      skos:notation "UANE" , "052" ;
+      skos:prefLabel "Universitat Antonio de Nebrija"@ca , "Antonio de Nebrija University"@en , "Universidad Antonio de Nebrija" , "Universidad Antonio de Nebrija"@es .
+
+asioModules:ES_UNIVERSITY_023
+      a       skos:Concept ;
+      rdfs:label "Universidad Autónoma de Madrid" ;
+      asio:geoDivision asioModules:ES_DIVISION_LEVEL_1_ES_MD , asioModules:ES_DIVISION_LEVEL_2_ES_M ;
+      asio:hasCode asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_MADRID04 , asioModules:ES_UNIVERSITY_CODE_023 , asioModules:ES_UNIVERSITY_VAT_NUMBER_Q2818013A ;
+      skos:inScheme asioModules:ESUniversityList , asioModules:UniversityList ;
+      skos:notation "UAM" , "023" ;
+      skos:prefLabel "Universitat Autónoma de Madrid"@ca , "Universidad Autónoma de Madrid" , "Universidad Autónoma de Madrid"@es , "Autonomous University of Madrid"@en .
+
+asioModules:ESUniversityVATNumberList
+      a       asioModules:Universities ;
+      rdfs:label "Códigos CIF de les universidaes d'España"@ast , "Códigos CIF de las universidades de España"@es , "Còdis CIF de las universitats d'Espanha"@oc , "Códigus CIF delas univelsiais d'España"@ext , "Codis CIF de les universitats d'Espanya"@ca , "Codes CIF des universités d'Espagne"@fr , "Códigos CIF das universidades de España"@gl , "Espainiako unibertsitateak - CIF kodeak"@eu , "Codigos CIF d'as universidatz d'Espanya"@an , "Códigos CIF das universidades de Espanha"@pt , "VAT numbers (CIF) for the universities of Spain"@en ;
+      skos:prefLabel "Códigos CIF de les universidaes d'España"@ast , "Códigos CIF de las universidades de España"@es , "Códigus CIF delas univelsiais d'España"@ext , "Còdis CIF de las universitats d'Espanha"@oc , "Codis CIF de les universitats d'Espanya"@ca , "Codes CIF des universités d'Espagne"@fr , "Espainiako unibertsitateak - CIF kodeak"@eu , "Códigos CIF das universidades de España"@gl , "Codigos CIF d'as universidatz d'Espanya"@an , "Códigos CIF das universidades de Espanha"@pt , "VAT numbers (CIF) for the universities of Spain"@en .
+
+asioModules:ES_UNIVERSITY_VAT_NUMBER_A79122305
+      a       skos:Concept ;
+      rdfs:label "A79122305" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_053 ;
+      skos:inScheme asioModules:ESUniversityVATNumberList ;
+      skos:prefLabel "A79122305" .
+
+asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_BARCELO16
+      a       skos:Concept ;
+      rdfs:label "E BARCELO16" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_041 ;
+      skos:inScheme asioModules:ESUniversityErasmusCodeList ;
+      skos:prefLabel "E BARCELO16" .
+
+asioModules:ES_UNIVERSITY_CODE_013
+      a       skos:Concept ;
+      rdfs:label "013" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_013 ;
+      skos:inScheme asioModules:ESUniversityCodeList ;
+      skos:prefLabel "013" .
+
+<http://purl.org/hercules/asio/modules#ES_UNIVERSITY_CODE_003 >
+      a       skos:Concept ;
+      rdfs:label "003 " ;
+      asio:codeOf <http://purl.org/hercules/asio/modules#ES_UNIVERSITY_003 > ;
+      skos:inScheme asioModules:ESUniversityCodeList ;
+      skos:prefLabel "003 " .
+
+asioModules:ES_UNIVERSITY_008
+      a       skos:Concept ;
+      rdfs:label "Universidad de Granada" ;
+      asio:geoDivision asioModules:ES_DIVISION_LEVEL_2_ES_GR , asioModules:ES_DIVISION_LEVEL_1_ES_AN ;
+      asio:hasCode asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_GRANADA01 , asioModules:ES_UNIVERSITY_VAT_NUMBER_Q1818002F , asioModules:ES_UNIVERSITY_CODE_008 ;
+      skos:inScheme asioModules:ESUniversityList , asioModules:UniversityList ;
+      skos:notation "008" , "UGR" ;
+      skos:prefLabel "Universitat de Granada"@ca , "University of Granada"@en , "Universidade de Granada‎"@pt , "Universidade de Granada‎"@gl , "Universidad de Granada" , "Universidad de Granada"@es .
+
+asioModules:ES_UNIVERSITY_063
+      a       skos:Concept ;
+      rdfs:label "Universidad Internacional de Andalucía" ;
+      asio:geoDivision asioModules:ES_DIVISION_LEVEL_2_ES_SE , asioModules:ES_DIVISION_LEVEL_1_ES_AN ;
+      asio:hasCode asioModules:ES_UNIVERSITY_VAT_NUMBER_Q7350007F , asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_SEVILLA_05 , asioModules:ES_UNIVERSITY_CODE_063 ;
+      skos:inScheme asioModules:ESUniversityList , asioModules:UniversityList ;
+      skos:notation "063" , "UNIA" ;
+      skos:prefLabel "Internacional University of Andalucía"@en , "Universidad Internacional de Andalucía" , "Universidad Internacional de Andalucía"@es , "Universitat Internacional d'Andalusia"@ca .
+
+asioModules:ES_UNIVERSITY_012
+      a       skos:Concept ;
+      rdfs:label "Universidad de Murcia" ;
+      asio:geoDivision asioModules:ES_DIVISION_LEVEL_2_ES_UM , asioModules:ES_DIVISION_LEVEL_1_ES_MC ;
+      asio:hasCode asioModules:ES_UNIVERSITY_VAT_NUMBER_Q3018001B , asioModules:ES_UNIVERSITY_CODE_012 , asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_MURCIA01 ;
+      skos:inScheme asioModules:ESUniversityList , asioModules:UniversityList ;
+      skos:notation "012" , "UMU" ;
+      skos:prefLabel "Universitat de Múrcia"@ca , "University of Murcia"@en , "Universidad de Murcia" , "Universidad de Murcia"@es .
+
+asioModules:ES_UNIVERSITY_VAT_NUMBER_A79336947
+      a       skos:Concept ;
+      rdfs:label "A79336947" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_065 ;
+      skos:inScheme asioModules:ESUniversityVATNumberList ;
+      skos:prefLabel "A79336947" .
+
+asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_VALENCI02
+      a       skos:Concept ;
+      rdfs:label "E VALENCI02" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_027 ;
+      skos:inScheme asioModules:ESUniversityErasmusCodeList ;
+      skos:prefLabel "E VALENCI02" .
+
+asioModules:ES_UNIVERSITY_VAT_NUMBER_Q0818003F
+      a       skos:Concept ;
+      rdfs:label "Q0818003F" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_039 ;
+      skos:inScheme asioModules:ESUniversityVATNumberList ;
+      skos:prefLabel "Q0818003F" .
+
+asioModules:ES_UNIVERSITY_VAT_NUMBER_Q2918001E
+      a       skos:Concept ;
+      rdfs:label "Q2918001E" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_011 ;
+      skos:inScheme asioModules:ESUniversityVATNumberList ;
+      skos:prefLabel "Q2918001E" .
+
+asioModules:ES_UNIVERSITY_053
+      a       skos:Concept ;
+      rdfs:label "Universidad Europea de Madrid" ;
+      asio:geoDivision asioModules:ES_DIVISION_LEVEL_1_ES_MD , asioModules:ES_DIVISION_LEVEL_2_ES_M ;
+      asio:hasCode asioModules:ES_UNIVERSITY_CODE_053 , asioModules:ES_UNIVERSITY_VAT_NUMBER_A79122305 , asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_MADRID18 ;
+      skos:inScheme asioModules:ESUniversityList , asioModules:UniversityList ;
+      skos:notation "UEM" , "053" ;
+      skos:prefLabel "Universidad Europea de Madrid" , "Universidad Europea de Madrid"@es , "Universitat Europea de Madrid"@ca , "European University of Madrid"@en .
+
+asioModules:ES_UNIVERSITY_068
+      a       skos:Concept ;
+      rdfs:label "Universidad Francisco de Vitoria" ;
+      asio:geoDivision asioModules:ES_DIVISION_LEVEL_1_ES_MD , asioModules:ES_DIVISION_LEVEL_2_ES_M ;
+      asio:hasCode asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_MADRID28 , asioModules:ES_UNIVERSITY_VAT_NUMBER_G80480197 , asioModules:ES_UNIVERSITY_CODE_068 ;
+      skos:inScheme asioModules:ESUniversityList , asioModules:UniversityList ;
+      skos:notation "068" , "UFV" ;
+      skos:prefLabel "Universitat Francisco de Vitoria"@ca , "Francisco de Vitoria University"@en , "Universidad Francisco de Vitoria" , "Universidad Francisco de Vitoria"@es .
+
+asioModules:ES_UNIVERSITY_035
+      a       skos:Concept ;
+      rdfs:label "Universidad Pública de Navarra" ;
+      asio:geoDivision asioModules:ES_DIVISION_LEVEL_1_ES_NC , asioModules:ES_DIVISION_LEVEL_2_ES_NA ;
+      asio:hasCode asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_PAMPLON02 , asioModules:ES_UNIVERSITY_VAT_NUMBER_Q3150012G , asioModules:ES_UNIVERSITY_CODE_035 ;
+      skos:inScheme asioModules:ESUniversityList , asioModules:UniversityList ;
+      skos:notation "UPNA" , "035" ;
+      skos:prefLabel "Public University of Navarre"@en , "Universidad Pública de Navarra" , "Universidad Pública de Navarra"@es , "Universitat Pública de Navarra"@ca .
+
+asioModules:ES_UNIVERSITY_CODE_070
+      a       skos:Concept ;
+      rdfs:label "070" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_070 ;
+      skos:inScheme asioModules:ESUniversityCodeList ;
+      skos:prefLabel "070" .
+
+asioModules:ES_UNIVERSITY_VAT_NUMBER_G59069740
+      a       skos:Concept ;
+      rdfs:label "G59069740" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_041 ;
+      skos:inScheme asioModules:ESUniversityVATNumberList ;
+      skos:prefLabel "G59069740" .
+
+asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_MADRID05
+      a       skos:Concept ;
+      rdfs:label "E MADRID05" ;
+      asio:codeOf <http://purl.org/hercules/asio/modules#ES_UNIVERSITY_025 > ;
+      skos:inScheme asioModules:ESUniversityErasmusCodeList ;
+      skos:prefLabel "E MADRID05" .
+
+asioModules:ES_UNIVERSITY_074
+      a       skos:Concept ;
+      rdfs:label "Universidad a Distancia de Madrid" ;
+      asio:geoDivision asioModules:ES_DIVISION_LEVEL_1_ES_MD , asioModules:ES_DIVISION_LEVEL_2_ES_M ;
+      asio:hasCode asioModules:ES_UNIVERSITY_CODE_074 , asioModules:ES_UNIVERSITY_VAT_NUMBER_A81618894 ;
+      skos:inScheme asioModules:ESUniversityList , asioModules:UniversityList ;
+      skos:notation "UDIMA" , "074" ;
+      skos:prefLabel "Madrid's University of Distance Education"@en , "Universidad a Distancia de Madrid" , "Universidad a Distancia de Madrid"@es , "Universitat a Distancia de Madrid"@ca .
+
+asioModules:ES_UNIVERSITY_VAT_NUMBER_Q3818001D
+      a       skos:Concept ;
+      rdfs:label "Q3818001D" ;
+      asio:codeOf <http://purl.org/hercules/asio/modules#ES_UNIVERSITY_015 > ;
+      skos:inScheme asioModules:ESUniversityVATNumberList ;
+      skos:prefLabel "Q3818001D" .
+
+asioModules:ESUniversityCodeList
+      a       asioModules:Universities ;
+      rdfs:label "Codis de les universitats d'Espanya"@ca , "Codes for the universities of Spain"@en , "Códigos das universidades de España"@gl , "Códigos das universidades de Espanha"@pt , "Codes des universités d'Espagne"@fr , "Codigos d'as universidatz d'Espanya"@an , "Espainiako unibertsitateak - kodeak"@eu , "Còdis de las universitats d'Espanha"@oc , "Códigos de las universidades de España"@es , "Códigus delas univelsiais d'España"@ext , "Códigos de les universidaes d'España"@ast ;
+      skos:prefLabel "Codis de les universitats d'Espanya"@ca , "Códigos das universidades de España"@gl , "Codes for the universities of Spain"@en , "Códigos das universidades de Espanha"@pt , "Codes des universités d'Espagne"@fr , "Codigos d'as universidatz d'Espanya"@an , "Espainiako unibertsitateak - kodeak"@eu , "Còdis de las universitats d'Espanha"@oc , "Códigos de las universidades de España"@es , "Códigus delas univelsiais d'España"@ext , "Códigos de les universidaes d'España"@ast .
+
+asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_BARCELO02
+      a       skos:Concept ;
+      rdfs:label "E BARCELO02" ;
+      asio:codeOf <http://purl.org/hercules/asio/modules#ES_UNIVERSITY_022 > ;
+      skos:inScheme asioModules:ESUniversityErasmusCodeList ;
+      skos:prefLabel "E BARCELO02" .
+
+asioModules:ES_UNIVERSITY_049
+      a       skos:Concept ;
+      rdfs:label "Universidad de Huelva" ;
+      asio:geoDivision asioModules:ES_DIVISION_LEVEL_2_ES_H , asioModules:ES_DIVISION_LEVEL_1_ES_AN ;
+      asio:hasCode asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_HUELVA01 , asioModules:ES_UNIVERSITY_VAT_NUMBER_Q7150008F , asioModules:ES_UNIVERSITY_CODE_049 ;
+      skos:inScheme asioModules:ESUniversityList , asioModules:UniversityList ;
+      skos:notation "UHU" , "049" ;
+      skos:prefLabel "University of Huelva"@en , "Universitat d'Huelva"@ca , "Universidad de Huelva" , "Universidad de Huelva"@es .
+
+asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_ZARAGOZ_07
+      a       skos:Concept ;
+      rdfs:label "E ZARAGOZ 07" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_073 ;
+      skos:inScheme asioModules:ESUniversityErasmusCodeList ;
+      skos:prefLabel "E ZARAGOZ 07" .
+
+asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_BARCELO03
+      a       skos:Concept ;
+      rdfs:label "E BARCELO03" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_039 ;
+      skos:inScheme asioModules:ESUniversityErasmusCodeList ;
+      skos:prefLabel "E BARCELO03" .
+
+asioModules:ES_UNIVERSITY_054
+      a       skos:Concept ;
+      rdfs:label "Universitat Oberta de Catalunya" ;
+      asio:geoDivision asioModules:ES_DIVISION_LEVEL_2_ES_B , asioModules:ES_DIVISION_LEVEL_1_ES_CT ;
+      asio:hasCode asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_BARCELO21 , asioModules:ES_UNIVERSITY_CODE_054 , asioModules:ES_UNIVERSITY_VAT_NUMBER_G60667813 ;
+      skos:inScheme asioModules:ESUniversityList , asioModules:UniversityList ;
+      skos:notation "UOC" , "054" ;
+      skos:prefLabel "Kataluniako Unibertsitate Irekia"@eu , "Open University of Catalonia"@en , "Universidade Aberta da Cataluña"@gl , "Universidade Aberta da Catalunha"@pt , "Universitat Oberta de Catalunya" , "Universitat Oberta de Catalunya"@es , "Universitat Oberta de Catalunya"@ca .
+
+asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_HUELVA01
+      a       skos:Concept ;
+      rdfs:label "E HUELVA01" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_049 ;
+      skos:inScheme asioModules:ESUniversityErasmusCodeList ;
+      skos:prefLabel "E HUELVA01" .
+
+<http://purl.org/hercules/asio/modules#ES_UNIVERSITY_CODE_030 >
+      a       skos:Concept ;
+      rdfs:label "030 " ;
+      asio:codeOf <http://purl.org/hercules/asio/modules#ES_UNIVERSITY_030 > ;
+      skos:inScheme asioModules:ESUniversityCodeList ;
+      skos:prefLabel "030 " .
+
+asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_PAMPLON02
+      a       skos:Concept ;
+      rdfs:label "E PAMPLON02" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_035 ;
+      skos:inScheme asioModules:ESUniversityErasmusCodeList ;
+      skos:prefLabel "E PAMPLON02" .
+
+asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_MURCIA04
+      a       skos:Concept ;
+      rdfs:label "E MURCIA04" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_064 ;
+      skos:inScheme asioModules:ESUniversityErasmusCodeList ;
+      skos:prefLabel "E MURCIA04" .
+
+asioModules:ES_UNIVERSITY_029
+      a       skos:Concept ;
+      rdfs:label "Universidad de Alcalá" ;
+      asio:geoDivision asioModules:ES_DIVISION_LEVEL_1_ES_MD , asioModules:ES_DIVISION_LEVEL_2_ES_M ;
+      asio:hasCode asioModules:ES_UNIVERSITY_CODE_029 , asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_ALCAL-H01 , asioModules:ES_UNIVERSITY_VAT_NUMBER_Q2818018J ;
+      skos:inScheme asioModules:ESUniversityList , asioModules:UniversityList ;
+      skos:notation "029" , "UAH" ;
+      skos:prefLabel "Universitat d'Alcalá"@ca , "University of Alcalá"@en , "Universidad de Alcalá" , "Universidad de Alcalá"@es .
+
+asioModules:ES_UNIVERSITY_VAT_NUMBER_Q4618002B
+      a       skos:Concept ;
+      rdfs:label "Q4618002B" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_027 ;
+      skos:inScheme asioModules:ESUniversityVATNumberList ;
+      skos:prefLabel "Q4618002B" .
+
+asioModules:ES_UNIVERSITY_VAT_NUMBER_Q2432001B
+      a       skos:Concept ;
+      rdfs:label "Q2432001B" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_009 ;
+      skos:inScheme asioModules:ESUniversityVATNumberList ;
+      skos:prefLabel "Q2432001B" .
+
+asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_BARCELO_24
+      a       skos:Concept ;
+      rdfs:label "E BARCELO 24" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_062 ;
+      skos:inScheme asioModules:ESUniversityErasmusCodeList ;
+      skos:prefLabel "E BARCELO 24" .
+
+asioModules:ES_UNIVERSITY_CODE_064
+      a       skos:Concept ;
+      rdfs:label "064" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_064 ;
+      skos:inScheme asioModules:ESUniversityCodeList ;
+      skos:prefLabel "064" .
+
+asioModules:ES_UNIVERSITY_CODE_050
+      a       skos:Concept ;
+      rdfs:label "050" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_050 ;
+      skos:inScheme asioModules:ESUniversityCodeList ;
+      skos:prefLabel "050" .
+
+<http://purl.org/hercules/asio/modules#ES_UNIVERSITY_CODE_019 >
+      a       skos:Concept ;
+      rdfs:label "019 " ;
+      asio:codeOf <http://purl.org/hercules/asio/modules#ES_UNIVERSITY_019 > ;
+      skos:inScheme asioModules:ESUniversityCodeList ;
+      skos:prefLabel "019 " .
+
+asioModules:ES_UNIVERSITY_069
+      a       skos:Concept ;
+      rdfs:label "Universidad Europea Miguel de Cervantes" ;
+      asio:geoDivision asioModules:ES_DIVISION_LEVEL_2_ES_VA , asioModules:ES_DIVISION_LEVEL_1_ES_CL ;
+      asio:hasCode asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_VALLADO03 , asioModules:ES_UNIVERSITY_VAT_NUMBER_B47511431 , asioModules:ES_UNIVERSITY_CODE_069 ;
+      skos:inScheme asioModules:ESUniversityList , asioModules:UniversityList ;
+      skos:notation "UEMC" , "069" ;
+      skos:prefLabel "Universitat Europea Miguel de Cervantes"@ca , "Miguel de Cervantes European University"@en , "Universidad Europea Miguel de Cervantes" , "Universidad Europea Miguel de Cervantes"@es .
+
+<http://purl.org/hercules/asio/modules#ES_UNIVERSITY_CODE_025 >
+      a       skos:Concept ;
+      rdfs:label "025 " ;
+      asio:codeOf <http://purl.org/hercules/asio/modules#ES_UNIVERSITY_025 > ;
+      skos:inScheme asioModules:ESUniversityCodeList ;
+      skos:prefLabel "025 " .
+
+asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_MADRID04
+      a       skos:Concept ;
+      rdfs:label "E MADRID04" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_023 ;
+      skos:inScheme asioModules:ESUniversityErasmusCodeList ;
+      skos:prefLabel "E MADRID04" .
+
+asioModules:ES_UNIVERSITY_CODE_071
+      a       skos:Concept ;
+      rdfs:label "071" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_071 ;
+      skos:inScheme asioModules:ESUniversityCodeList ;
+      skos:prefLabel "071" .
+
+asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_CORDOBA01
+      a       skos:Concept ;
+      rdfs:label "E CORDOBA01" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_006 ;
+      skos:inScheme asioModules:ESUniversityErasmusCodeList ;
+      skos:prefLabel "E CORDOBA01" .
+
+asioModules:ES_UNIVERSITY_VAT_NUMBER_Q1518001A
+      a       skos:Concept ;
+      rdfs:label "Q1518001A" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_007 ;
+      skos:inScheme asioModules:ESUniversityVATNumberList ;
+      skos:prefLabel "Q1518001A" .
+
+asioModules:ES_UNIVERSITY_048
+      a       skos:Concept ;
+      rdfs:label "Universidad de Almería" ;
+      asio:geoDivision asioModules:ES_DIVISION_LEVEL_2_ES_AL , asioModules:ES_DIVISION_LEVEL_1_ES_AN ;
+      asio:hasCode asioModules:ES_UNIVERSITY_VAT_NUMBER_Q5450008G , asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_ALMERIA01 , asioModules:ES_UNIVERSITY_CODE_048 ;
+      skos:inScheme asioModules:ESUniversityList , asioModules:UniversityList ;
+      skos:notation "UAL" , "048" ;
+      skos:prefLabel "Universitat d'Almeria"@ca , "University of Almería"@en , "Universidad de Almería" , "Universidad de Almería"@es .
+
+asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_VIGO01
+      a       skos:Concept ;
+      rdfs:label "E VIGO01" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_038 ;
+      skos:inScheme asioModules:ESUniversityErasmusCodeList ;
+      skos:prefLabel "E VIGO01" .
+
+asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_GIRONA02
+      a       skos:Concept ;
+      rdfs:label "E GIRONA02" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_043 ;
+      skos:inScheme asioModules:ESUniversityErasmusCodeList ;
+      skos:prefLabel "E GIRONA02" .
+
+asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_MADRID18
+      a       skos:Concept ;
+      rdfs:label "E MADRID18" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_053 ;
+      skos:inScheme asioModules:ESUniversityErasmusCodeList ;
+      skos:prefLabel "E MADRID18" .
+
+asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_MURCIA05
+      a       skos:Concept ;
+      rdfs:label "E MURCIA05" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_066 ;
+      skos:inScheme asioModules:ESUniversityErasmusCodeList ;
+      skos:prefLabel "E MURCIA05" .
+
+asioModules:ES_UNIVERSITY_CODE_051
+      a       skos:Concept ;
+      rdfs:label "051" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_051 ;
+      skos:inScheme asioModules:ESUniversityCodeList ;
+      skos:prefLabel "051" .
+
+asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_PAMPLON01
+      a       skos:Concept ;
+      rdfs:label "E PAMPLON01" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_031 ;
+      skos:inScheme asioModules:ESUniversityErasmusCodeList ;
+      skos:prefLabel "E PAMPLON01" .
+
+asioModules:ES_UNIVERSITY_VAT_NUMBER_G80480197
+      a       skos:Concept ;
+      rdfs:label "G80480197" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_068 ;
+      skos:inScheme asioModules:ESUniversityVATNumberList ;
+      skos:prefLabel "G80480197" .
+
+asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_SEVILLA_05
+      a       skos:Concept ;
+      rdfs:label "E SEVILLA 05" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_063 ;
+      skos:inScheme asioModules:ESUniversityErasmusCodeList ;
+      skos:prefLabel "E SEVILLA 05" .
+
+asioModules:ES_UNIVERSITY_VAT_NUMBER_Q0818002H
+      a       skos:Concept ;
+      rdfs:label "Q0818002H" ;
+      asio:codeOf <http://purl.org/hercules/asio/modules#ES_UNIVERSITY_022 > ;
+      skos:inScheme asioModules:ESUniversityVATNumberList ;
+      skos:prefLabel "Q0818002H" .
+
+asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_SEVILLA03
+      a       skos:Concept ;
+      rdfs:label "E SEVILLA03" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_058 ;
+      skos:inScheme asioModules:ESUniversityErasmusCodeList ;
+      skos:prefLabel "E SEVILLA03" .
+
+asioModules:ES_UNIVERSITY_CODE_035
+      a       skos:Concept ;
+      rdfs:label "035" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_035 ;
+      skos:inScheme asioModules:ESUniversityCodeList ;
+      skos:prefLabel "035" .
+
+asioModules:ES_UNIVERSITY_CODE_065
+      a       skos:Concept ;
+      rdfs:label "065" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_065 ;
+      skos:inScheme asioModules:ESUniversityCodeList ;
+      skos:prefLabel "065" .
+
+asioModules:ES_UNIVERSITY_014
+      a       skos:Concept ;
+      rdfs:label "Universidad de Salamanca" ;
+      asio:geoDivision asioModules:ES_DIVISION_LEVEL_2_ES_SA , asioModules:ES_DIVISION_LEVEL_1_ES_CL ;
+      asio:hasCode asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_SALAMAN02 , asioModules:ES_UNIVERSITY_CODE_014 , asioModules:ES_UNIVERSITY_VAT_NUMBER_Q3718001E ;
+      skos:inScheme asioModules:ESUniversityList , asioModules:UniversityList ;
+      skos:notation "014" , "USAL" ;
+      skos:prefLabel "University of Salamanca‎"@en , "Universidad de Salamanca" , "Universidad de Salamanca"@es , "Universitat de Salamanca"@ca .
+
+asioModules:ES_UNIVERSITY_VAT_NUMBER_A78094158
+      a       skos:Concept ;
+      rdfs:label "A78094158" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_052 ;
+      skos:inScheme asioModules:ESUniversityVATNumberList ;
+      skos:prefLabel "A78094158" .
+
+asioModules:ES_UNIVERSITY_CODE_037
+      a       skos:Concept ;
+      rdfs:label "037" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_037 ;
+      skos:inScheme asioModules:ESUniversityCodeList ;
+      skos:prefLabel "037" .
+
+asioModules:ES_UNIVERSITY_VAT_NUMBER_Q1368009E
+      a       skos:Concept ;
+      rdfs:label "Q1368009E" ;
+      asio:codeOf <http://purl.org/hercules/asio/modules#ES_UNIVERSITY_034 > ;
+      skos:inScheme asioModules:ESUniversityVATNumberList ;
+      skos:prefLabel "Q1368009E" .
+
+asioModules:ES_UNIVERSITY_VAT_NUMBER_G60667813
+      a       skos:Concept ;
+      rdfs:label "G60667813" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_054 ;
+      skos:inScheme asioModules:ESUniversityVATNumberList ;
+      skos:prefLabel "G60667813" .
+
+asioModules:ES_UNIVERSITY_VAT_NUMBER_A81618894
+      a       skos:Concept ;
+      rdfs:label "A81618894" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_074 ;
+      skos:inScheme asioModules:ESUniversityVATNumberList ;
+      skos:prefLabel "A81618894" .
+
+asioModules:ES_UNIVERSITY_066
+      a       skos:Concept ;
+      rdfs:label "Universidad Católica San Antonio de Murcia" ;
+      asio:geoDivision asioModules:ES_DIVISION_LEVEL_2_ES_UM , asioModules:ES_DIVISION_LEVEL_1_ES_MC ;
+      asio:hasCode asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_MURCIA05 , asioModules:ES_UNIVERSITY_VAT_NUMBER_G30626303 , asioModules:ES_UNIVERSITY_CODE_066 ;
+      skos:inScheme asioModules:ESUniversityList , asioModules:UniversityList ;
+      skos:notation "066" , "UCAM" ;
+      skos:prefLabel "San Antonio Catholic University"@en , "Universitat Catòlica San Antonio de Murcia"@ca , "Universidad Católica San Antonio de Murcia" , "Universidad Católica San Antonio de Murcia"@es .
+
+asioModules:ES_UNIVERSITY_037
+      a       skos:Concept ;
+      rdfs:label "Universidade da Coruña" ;
+      asio:geoDivision asioModules:ES_DIVISION_LEVEL_2_ES_C , asioModules:ES_DIVISION_LEVEL_1_ES_GA ;
+      asio:hasCode asioModules:ES_UNIVERSITY_CODE_037 , asioModules:ES_UNIVERSITY_VAT_NUMBER_Q6550005J , asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_LA-CORU01 ;
+      skos:inScheme asioModules:ESUniversityList , asioModules:UniversityList ;
+      skos:notation "037" , "UDC" ;
+      skos:prefLabel "Universidad de A Coruña"@es , "University of A Coruña"@en , "Universitat de la Corunya"@ca , "Universidade da Coruña" , "Universidade da Coruña"@gl , "Universidade da Corunha"@pt .
+
+asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_MADRID17
+      a       skos:Concept ;
+      rdfs:label "E MADRID17" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_047 ;
+      skos:inScheme asioModules:ESUniversityErasmusCodeList ;
+      skos:prefLabel "E MADRID17" .
+
+asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_ALCAL-H01
+      a       skos:Concept ;
+      rdfs:label "E ALCAL-H01" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_029 ;
+      skos:inScheme asioModules:ESUniversityErasmusCodeList ;
+      skos:prefLabel "E ALCAL-H01" .
+
+asioModules:ES_UNIVERSITY_056
+      a       skos:Concept ;
+      rdfs:label "Universidad Rey Juan Carlos" ;
+      asio:geoDivision asioModules:ES_DIVISION_LEVEL_1_ES_MD , asioModules:ES_DIVISION_LEVEL_2_ES_M ;
+      asio:hasCode asioModules:ES_UNIVERSITY_VAT_NUMBER_Q2803011B , asioModules:ES_UNIVERSITY_CODE_056 , asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_MADRID26 ;
+      skos:inScheme asioModules:ESUniversityList , asioModules:UniversityList ;
+      skos:notation "URJC" , "056" ;
+      skos:prefLabel "Universidad Rey Juan Carlos" , "Universidad Rey Juan Carlos"@es , "King Juan Carlos University"@en , "Universitat Rey Juan Carlos"@ca .
+
+asioModules:ES_UNIVERSITY_047
+      a       skos:Concept ;
+      rdfs:label "Universidad Alfonso X El Sabio" ;
+      asio:geoDivision asioModules:ES_DIVISION_LEVEL_1_ES_MD , asioModules:ES_DIVISION_LEVEL_2_ES_M ;
+      asio:hasCode asioModules:ES_UNIVERSITY_VAT_NUMBER_A78518529 , asioModules:ES_UNIVERSITY_CODE_047 , asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_MADRID17 ;
+      skos:inScheme asioModules:ESUniversityList , asioModules:UniversityList ;
+      skos:notation "UAX" , "047" ;
+      skos:prefLabel "Universitat Alfonso X El Sabio"@ca , "Alfonso X El Sabio University"@en , "Universidad Alfonso X El Sabio" , "Universidad Alfonso X El Sabio"@es .
+
+asioModules:ES_UNIVERSITY_VAT_NUMBER_Q3718001E
+      a       skos:Concept ;
+      rdfs:label "Q3718001E" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_014 ;
+      skos:inScheme asioModules:ESUniversityVATNumberList ;
+      skos:prefLabel "Q3718001E" .
+
+asioModules:ES_UNIVERSITY_CODE_082
+      a       skos:Concept ;
+      rdfs:label "082" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_082 ;
+      skos:inScheme asioModules:ESUniversityCodeList ;
+      skos:prefLabel "082" .
+
+asioModules:ES_UNIVERSITY_VAT_NUMBER_Q5350015C
+      a       skos:Concept ;
+      rdfs:label "Q5350015C" ;
+      asio:codeOf <http://purl.org/hercules/asio/modules#ES_UNIVERSITY_055 > ;
+      skos:inScheme asioModules:ESUniversityVATNumberList ;
+      skos:prefLabel "Q5350015C" .
+
+asioModules:ES_UNIVERSITY_027
+      a       skos:Concept ;
+      rdfs:label "Universitat Politècnica de València" ;
+      asio:geoDivision asioModules:ES_DIVISION_LEVEL_1_ES_VC , asioModules:ES_DIVISION_LEVEL_2_ES_V ;
+      asio:hasCode asioModules:ES_UNIVERSITY_CODE_027 , asioModules:ES_UNIVERSITY_VAT_NUMBER_Q4618002B , asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_VALENCI02 ;
+      skos:inScheme asioModules:ESUniversityList , asioModules:UniversityList ;
+      skos:notation "UPV" , "027" ;
+      skos:prefLabel "Polytechnic University of Valencia‎"@en , "Universidad Politécnica de Valéncia"@es , "Universitat Politècnica de València" , "Universitat Politècnica de València"@ca .
+
+<http://purl.org/hercules/asio/modules#ES_UNIVERSITY_CODE_055 >
+      a       skos:Concept ;
+      rdfs:label "055 " ;
+      asio:codeOf <http://purl.org/hercules/asio/modules#ES_UNIVERSITY_055 > ;
+      skos:inScheme asioModules:ESUniversityCodeList ;
+      skos:prefLabel "055 " .
+
+asioModules:ES_UNIVERSITY_CODE_052
+      a       skos:Concept ;
+      rdfs:label "052" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_052 ;
+      skos:inScheme asioModules:ESUniversityCodeList ;
+      skos:prefLabel "052" .
+
+asioModules:ES_UNIVERSITY_VAT_NUMBER_Q7150008F
+      a       skos:Concept ;
+      rdfs:label "Q7150008F" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_049 ;
+      skos:inScheme asioModules:ESUniversityVATNumberList ;
+      skos:prefLabel "Q7150008F" .
+
+asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_BARCELO_31
+      a       skos:Concept ;
+      rdfs:label "E BARCELO 31" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_070 ;
+      skos:inScheme asioModules:ESUniversityErasmusCodeList ;
+      skos:prefLabel "E BARCELO 31" .
+
+asioModules:ES_UNIVERSITY_CODE_062
+      a       skos:Concept ;
+      rdfs:label "062" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_062 ;
+      skos:inScheme asioModules:ESUniversityCodeList ;
+      skos:prefLabel "062" .
+
+asioModules:ES_UNIVERSITY_VAT_NUMBER_Q7350007F
+      a       skos:Concept ;
+      rdfs:label "Q7350007F" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_063 ;
+      skos:inScheme asioModules:ESUniversityVATNumberList ;
+      skos:prefLabel "Q7350007F" .
+
+<http://purl.org/hercules/asio/modules#ES_UNIVERSITY_015 >
+      a       skos:Concept ;
+      rdfs:label "Universidad de La Laguna" ;
+      asio:geoDivision asioModules:ES_DIVISION_LEVEL_1_ES_CN , asioModules:ES_DIVISION_LEVEL_2_ES_TF ;
+      asio:hasCode asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_TENERIF01 , asioModules:ES_UNIVERSITY_VAT_NUMBER_Q3818001D , <http://purl.org/hercules/asio/modules#ES_UNIVERSITY_CODE_015 > ;
+      skos:inScheme asioModules:ESUniversityList , asioModules:UniversityList ;
+      skos:notation "ULL" , "015 " ;
+      skos:prefLabel "Universitat de la Laguna"@ca , "University of La Laguna"@en , "Universidad de La Laguna" , "Universidad de La Laguna"@es .
+
+asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_AVILA01
+      a       skos:Concept ;
+      rdfs:label "E AVILA01" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_059 ;
+      skos:inScheme asioModules:ESUniversityErasmusCodeList ;
+      skos:prefLabel "E AVILA01" .
+
+asioModules:ES_UNIVERSITY_VAT_NUMBER_Q2818015F
+      a       skos:Concept ;
+      rdfs:label "Q2818015F" ;
+      asio:codeOf <http://purl.org/hercules/asio/modules#ES_UNIVERSITY_025 > ;
+      skos:inScheme asioModules:ESUniversityVATNumberList ;
+      skos:prefLabel "Q2818015F" .
+
+asioModules:ES_UNIVERSITY_CODE_036
+      a       skos:Concept ;
+      rdfs:label "036" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_036 ;
+      skos:inScheme asioModules:ESUniversityCodeList ;
+      skos:prefLabel "036" .
+
+asioModules:ES_UNIVERSITY_017
+      a       skos:Concept ;
+      rdfs:label "Universidad de Sevilla" ;
+      asio:geoDivision asioModules:ES_DIVISION_LEVEL_2_ES_SE , asioModules:ES_DIVISION_LEVEL_1_ES_AN ;
+      asio:hasCode asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_SEVILLA01 , asioModules:ES_UNIVERSITY_VAT_NUMBER_Q4118001I , asioModules:ES_UNIVERSITY_CODE_017 ;
+      skos:inScheme asioModules:ESUniversityList , asioModules:UniversityList ;
+      skos:notation "017" , "USE" ;
+      skos:prefLabel "University of Sevilla"@en , "Universitat de Sevilla"@ca , "Universidad de Sevilla" , "Universidad de Sevilla"@es .
+
+asioModules:ES_UNIVERSITY_VAT_NUMBER_Q0618001B
+      a       skos:Concept ;
+      rdfs:label "Q0618001B" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_002 ;
+      skos:inScheme asioModules:ESUniversityVATNumberList ;
+      skos:prefLabel "Q0618001B" .
+
+asioModules:ES_UNIVERSITY_036
+      a       skos:Concept ;
+      rdfs:label "Universidad Carlos III de Madrid" ;
+      asio:geoDivision asioModules:ES_DIVISION_LEVEL_1_ES_MD , asioModules:ES_DIVISION_LEVEL_2_ES_M ;
+      asio:hasCode asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_MADRID14 , asioModules:ES_UNIVERSITY_VAT_NUMBER_Q2818029G , asioModules:ES_UNIVERSITY_CODE_036 ;
+      skos:inScheme asioModules:ESUniversityList , asioModules:UniversityList ;
+      skos:notation "036" , "UCAR" ;
+      skos:prefLabel "Charles III University of Madrid"@en , "Universitat Carlos III de Madrid"@ca , "Universidad Carlos III de Madrid" , "Universidad Carlos III de Madrid"@es .
+
+asioModules:ES_UNIVERSITY_VAT_NUMBER_G28423275
+      a       skos:Concept ;
+      rdfs:label "G28423275" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_067 , asioModules:ES_UNIVERSITY_046 ;
+      skos:inScheme asioModules:ESUniversityVATNumberList ;
+      skos:prefLabel "G28423275" .
+
+asioModules:ES_UNIVERSITY_067
+      a       skos:Concept ;
+      rdfs:label "Universitat Cardenal Herrera-CEU" ;
+      asio:geoDivision asioModules:ES_DIVISION_LEVEL_2_ES_V , asioModules:ES_DIVISION_LEVEL_1_ES_VC ;
+      asio:hasCode asioModules:ES_UNIVERSITY_VAT_NUMBER_G28423275 , asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_VALENCI08 , asioModules:ES_UNIVERSITY_CODE_067 ;
+      skos:inScheme asioModules:ESUniversityList , asioModules:UniversityList ;
+      skos:notation "067" , "UCH" ;
+      skos:prefLabel "CEU Cardinal Herrera University"@en , "Universidad Cardenal Herrera-CEU"@es , "Universitat Cardenal Herrera-CEU" , "Universitat Cardenal Herrera-CEU"@ca .
+
+asioModules:ES_UNIVERSITY_CODE_038
+      a       skos:Concept ;
+      rdfs:label "038" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_038 ;
+      skos:inScheme asioModules:ESUniversityCodeList ;
+      skos:prefLabel "038" .
+
+asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_BARCELO01
+      a       skos:Concept ;
+      rdfs:label "E BARCELO01" ;
+      asio:codeOf <http://purl.org/hercules/asio/modules#ES_UNIVERSITY_004 > ;
+      skos:inScheme asioModules:ESUniversityErasmusCodeList ;
+      skos:prefLabel "E BARCELO01" .
+
+asioModules:ES_UNIVERSITY_057
+      a       skos:Concept ;
+      rdfs:label "IE (Instituto de Empresa) Universidad" ;
+      asio:geoDivision asioModules:ES_DIVISION_LEVEL_2_ES_SG , asioModules:ES_DIVISION_LEVEL_1_ES_CL ;
+      asio:hasCode asioModules:ES_UNIVERSITY_CODE_057 , asioModules:ES_UNIVERSITY_VAT_NUMBER_G40155384 ;
+      skos:inScheme asioModules:ESUniversityList , asioModules:UniversityList ;
+      skos:notation "IE" , "057" ;
+      skos:prefLabel "IE University"@en , "IE (Instituto de Empresa) Universidad" , "IE (Instituto de Empresa) Universidad"@es , "IE (Instituto de Empresa) Universitat"@ca .
+
+asioModules:ES_UNIVERSITY_046
+      a       skos:Concept ;
+      rdfs:label "Universidad San Pablo - CEU" ;
+      asio:geoDivision asioModules:ES_DIVISION_LEVEL_1_ES_MD , asioModules:ES_DIVISION_LEVEL_2_ES_M ;
+      asio:hasCode asioModules:ES_UNIVERSITY_CODE_046 , asioModules:ES_UNIVERSITY_VAT_NUMBER_G28423275 , asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_MADRID21 ;
+      skos:inScheme asioModules:ESUniversityList , asioModules:UniversityList ;
+      skos:notation "UCEU" , "046" ;
+      skos:prefLabel "Universidad San Pablo - CEU" , "Universidad San Pablo - CEU"@es , "Universitat San Pablo - CEU"@ca , "CEU San Pablo University"@en .
+
+asioModules:ES_UNIVERSITY_CODE_073
+      a       skos:Concept ;
+      rdfs:label "073" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_073 ;
+      skos:inScheme asioModules:ESUniversityCodeList ;
+      skos:prefLabel "073" .
+
+asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_VIC01
+      a       skos:Concept ;
+      rdfs:label "E VIC01" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_060 ;
+      skos:inScheme asioModules:ESUniversityErasmusCodeList ;
+      skos:prefLabel "E VIC01" .
+
+asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_BARCELO21
+      a       skos:Concept ;
+      rdfs:label "E BARCELO21" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_054 ;
+      skos:inScheme asioModules:ESUniversityErasmusCodeList ;
+      skos:prefLabel "E BARCELO21" .
+
+<http://purl.org/hercules/asio/modules#ES_UNIVERSITY_CODE_004 >
+      a       skos:Concept ;
+      rdfs:label "004 " ;
+      asio:codeOf <http://purl.org/hercules/asio/modules#ES_UNIVERSITY_004 > ;
+      skos:inScheme asioModules:ESUniversityCodeList ;
+      skos:prefLabel "004 " .
+
+asioModules:ES_UNIVERSITY_CODE_053
+      a       skos:Concept ;
+      rdfs:label "053" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_053 ;
+      skos:inScheme asioModules:ESUniversityCodeList ;
+      skos:prefLabel "053" .
+
+asioModules:ES_UNIVERSITY_CODE_023
+      a       skos:Concept ;
+      rdfs:label "023" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_023 ;
+      skos:inScheme asioModules:ESUniversityCodeList ;
+      skos:prefLabel "023" .
+
+asioModules:ES_UNIVERSITY_CODE_063
+      a       skos:Concept ;
+      rdfs:label "063" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_063 ;
+      skos:inScheme asioModules:ESUniversityCodeList ;
+      skos:prefLabel "063" .
+
+asioModules:ES_UNIVERSITY_016
+      a       skos:Concept ;
+      rdfs:label "Universidad de Cantabria" ;
+      asio:geoDivision asioModules:ES_DIVISION_LEVEL_1_ES_CB , asioModules:ES_DIVISION_LEVEL_2_ES_S ;
+      asio:hasCode asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_SANTAND01 , asioModules:ES_UNIVERSITY_CODE_016 , asioModules:ES_UNIVERSITY_VAT_NUMBER_Q3918001C ;
+      skos:inScheme asioModules:ESUniversityList , asioModules:UniversityList ;
+      skos:notation "UCN" , "016" ;
+      skos:prefLabel "Universitat de Cantàbria"@ca , "University of Cantabria"@en , "Universidad de Cantabria" , "Universidad de Cantabria"@es .
+
+asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_MONDRAG01
+      a       skos:Concept ;
+      rdfs:label "E MONDRAG01" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_061 ;
+      skos:inScheme asioModules:ESUniversityErasmusCodeList ;
+      skos:prefLabel "E MONDRAG01" .
+
+asioModules:ES_UNIVERSITY_VAT_NUMBER_Q3018001B
+      a       skos:Concept ;
+      rdfs:label "Q3018001B" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_012 ;
+      skos:inScheme asioModules:ESUniversityVATNumberList ;
+      skos:prefLabel "Q3018001B" .
+
+asioModules:ES_UNIVERSITY_VAT_NUMBER_Q0818001J
+      a       skos:Concept ;
+      rdfs:label "Q0818001J" ;
+      asio:codeOf <http://purl.org/hercules/asio/modules#ES_UNIVERSITY_004 > ;
+      skos:inScheme asioModules:ESUniversityVATNumberList ;
+      skos:prefLabel "Q0818001J" .
+
+asioModules:ES_UNIVERSITY_VAT_NUMBER_Q1418001B
+      a       skos:Concept ;
+      rdfs:label "Q1418001B" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_006 ;
+      skos:inScheme asioModules:ESUniversityVATNumberList ;
+      skos:prefLabel "Q1418001B" .
+
+asioModules:ES_UNIVERSITY_031
+      a       skos:Concept ;
+      rdfs:label "Universidad de Navarra" ;
+      asio:geoDivision asioModules:ES_DIVISION_LEVEL_1_ES_NC , asioModules:ES_DIVISION_LEVEL_2_ES_NA ;
+      asio:hasCode asioModules:ES_UNIVERSITY_CODE_031 , asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_PAMPLON01 , asioModules:ES_UNIVERSITY_VAT_NUMBER_R3168001J ;
+      skos:inScheme asioModules:ESUniversityList , asioModules:UniversityList ;
+      skos:notation "031" , "UN" ;
+      skos:prefLabel "Universidad de Navarra"@es , "Universidad de Navarra" , "University of Navarre"@en , "Universitat de Navarra"@ca .
+
+asioModules:ES_UNIVERSITY_VAT_NUMBER_Q4718001C
+      a       skos:Concept ;
+      rdfs:label "Q4718001C" ;
+      asio:codeOf <http://purl.org/hercules/asio/modules#ES_UNIVERSITY_019 > ;
+      skos:inScheme asioModules:ESUniversityVATNumberList ;
+      skos:prefLabel "Q4718001C" .
+
+asioModules:ESUniversityList
+      a       asioModules:Universities ;
+      rdfs:label "Universidaes d'España"@ast , "Universitats d'Espanha"@oc , "Universities of Spain"@en , "Universidades de España"@es , "Universidades de España"@gl , "Universidades de Espanha"@pt , "Universitats d'Espanya"@ca , "Universidatz d'Espanya"@an , "Universités d'Espagne"@fr , "Univelsiais d'España"@ext , "Espainiako unibertsitateak"@eu ;
+      skos:prefLabel "Universidaes d'España"@ast , "Universitats d'Espanha"@oc , "Universities of Spain"@en , "Universidades de España"@es , "Universidades de España"@gl , "Universidades de Espanha"@pt , "Universitats d'Espanya"@ca , "Universidatz d'Espanya"@an , "Universités d'Espagne"@fr , "Univelsiais d'España"@ext , "Espainiako unibertsitateak"@eu .
+
+asioModules:ES_UNIVERSITY_018
+      a       skos:Concept ;
+      rdfs:label "Universitat de València" ;
+      asio:geoDivision asioModules:ES_DIVISION_LEVEL_1_ES_VC , asioModules:ES_DIVISION_LEVEL_2_ES_V ;
+      asio:hasCode asioModules:ES_UNIVERSITY_VAT_NUMBER_Q4618001D , asioModules:ES_UNIVERSITY_CODE_018 , asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_VALENCI01 ;
+      skos:inScheme asioModules:ESUniversityList , asioModules:UniversityList ;
+      skos:notation "018" , "UV" ;
+      skos:prefLabel "Universitat de València" , "Universitat de València"@es , "Universitat de València"@ca , "University of Valencia"@en .
+
+<http://purl.org/hercules/asio/modules#ES_UNIVERSITY_030 >
+      a       skos:Concept ;
+      rdfs:label "Universidad de Deusto" ;
+      asio:geoDivision asioModules:ES_DIVISION_LEVEL_2_ES_BI , asioModules:ES_DIVISION_LEVEL_1_ES_PV ;
+      asio:hasCode asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_BILBAO02 , <http://purl.org/hercules/asio/modules#ES_UNIVERSITY_CODE_030 > , asioModules:ES_UNIVERSITY_VAT_NUMBER_R4868004E ;
+      skos:inScheme asioModules:ESUniversityList , asioModules:UniversityList ;
+      skos:notation "UDE" , "030 " ;
+      skos:prefLabel "Universitat de Deusto"@ca , "University of Deusto"@en , "Universidad de Deusto" , "Universidad de Deusto"@es .
+
+asioModules:ES_UNIVERSITY_CODE_057
+      a       skos:Concept ;
+      rdfs:label "057" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_057 ;
+      skos:inScheme asioModules:ESUniversityCodeList ;
+      skos:prefLabel "057" .
+
+asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_SANTIAG01
+      a       skos:Concept ;
+      rdfs:label "E SANTIAG01" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_007 ;
+      skos:inScheme asioModules:ESUniversityErasmusCodeList ;
+      skos:prefLabel "E SANTIAG01" .
+
+asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_MADRID21
+      a       skos:Concept ;
+      rdfs:label "E MADRID21" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_046 ;
+      skos:inScheme asioModules:ESUniversityErasmusCodeList ;
+      skos:prefLabel "E MADRID21" .
+
+asioModules:ES_UNIVERSITY_CODE_009
+      a       skos:Concept ;
+      rdfs:label "009" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_009 ;
+      skos:inScheme asioModules:ESUniversityCodeList ;
+      skos:prefLabel "009" .
+
+asioModules:ES_UNIVERSITY_VAT_NUMBER_Q2818016D
+      a       skos:Concept ;
+      rdfs:label "Q2818016D" ;
+      asio:codeOf <http://purl.org/hercules/asio/modules#ES_UNIVERSITY_028 > ;
+      skos:inScheme asioModules:ESUniversityVATNumberList ;
+      skos:prefLabel "Q2818016D" .
+
+asioModules:ES_UNIVERSITY_CODE_043
+      a       skos:Concept ;
+      rdfs:label "043" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_043 ;
+      skos:inScheme asioModules:ESUniversityCodeList ;
+      skos:prefLabel "043" .
+
+asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_MADRID01
+      a       skos:Concept ;
+      rdfs:label "E MADRID01" ;
+      asio:codeOf <http://purl.org/hercules/asio/modules#ES_UNIVERSITY_028 > ;
+      skos:inScheme asioModules:ESUniversityErasmusCodeList ;
+      skos:prefLabel "E MADRID01" .
+
+asioModules:ES_UNIVERSITY_045
+      a       skos:Concept ;
+      rdfs:label "Universidad de La Rioja" ;
+      asio:geoDivision asioModules:ES_DIVISION_LEVEL_2_ES_LO , asioModules:ES_DIVISION_LEVEL_1_ES_RI ;
+      asio:hasCode asioModules:ES_UNIVERSITY_VAT_NUMBER_Q2618002F , asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_LOGRONO01 , asioModules:ES_UNIVERSITY_CODE_045 ;
+      skos:inScheme asioModules:ESUniversityList , asioModules:UniversityList ;
+      skos:notation "045" , "UR" ;
+      skos:prefLabel "Universidad de La Rioja" , "Universidad de La Rioja"@es , "Universitat de La Rioja"@en , "Universitat de La Rioja"@ca .
+
+asioModules:ES_UNIVERSITY_CODE_080
+      a       skos:Concept ;
+      rdfs:label "080" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_080 ;
+      skos:inScheme asioModules:ESUniversityCodeList ;
+      skos:prefLabel "080" .
+
+asioModules:ES_UNIVERSITY_CODE_029
+      a       skos:Concept ;
+      rdfs:label "029" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_029 ;
+      skos:inScheme asioModules:ESUniversityCodeList ;
+      skos:prefLabel "029" .
+
+asioModules:ES_UNIVERSITY_VAT_NUMBER_Q5450008G
+      a       skos:Concept ;
+      rdfs:label "Q5450008G" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_048 ;
+      skos:inScheme asioModules:ESUniversityVATNumberList ;
+      skos:prefLabel "Q5450008G" .
+
+asioModules:ES_UNIVERSITY_058
+      a       skos:Concept ;
+      rdfs:label "Universidad Pablo de Olavide" ;
+      asio:geoDivision asioModules:ES_DIVISION_LEVEL_2_ES_SE , asioModules:ES_DIVISION_LEVEL_1_ES_AN ;
+      asio:hasCode asioModules:ES_UNIVERSITY_CODE_058 , asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_SEVILLA03 , asioModules:ES_UNIVERSITY_VAT_NUMBER_Q9150016E ;
+      skos:inScheme asioModules:ESUniversityList , asioModules:UniversityList ;
+      skos:notation "UPO" , "058" ;
+      skos:prefLabel "Universitat Pablo de Olavide"@ca , "Pablo of Olavide University"@en , "Universidad Pablo de Olavide" , "Universidad Pablo de Olavide"@es .
+
+asioModules:ES_UNIVERSITY_VAT_NUMBER_G30626303
+      a       skos:Concept ;
+      rdfs:label "G30626303" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_066 ;
+      skos:inScheme asioModules:ESUniversityVATNumberList ;
+      skos:prefLabel "G30626303" .
+
+asioModules:ES_UNIVERSITY_CODE_039
+      a       skos:Concept ;
+      rdfs:label "039" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_039 ;
+      skos:inScheme asioModules:ESUniversityCodeList ;
+      skos:prefLabel "039" .
+
+<http://purl.org/hercules/asio/modules#ES_UNIVERSITY_033 >
+      a       skos:Concept ;
+      rdfs:label "Universidad Pontificia Comillas" ;
+      asio:geoDivision asioModules:ES_DIVISION_LEVEL_1_ES_MD , asioModules:ES_DIVISION_LEVEL_2_ES_M ;
+      asio:hasCode asioModules:ES_UNIVERSITY_VAT_NUMBER_R2800395B , <http://purl.org/hercules/asio/modules#ES_UNIVERSITY_CODE_033 > , asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_MADRID02 ;
+      skos:inScheme asioModules:ESUniversityList , asioModules:UniversityList ;
+      skos:notation "033 " , "COMILLAS" ;
+      skos:prefLabel "Universidad Pontificia Comillas" , "Universidad Pontificia Comillas"@es , "Comillas Pontifical University‎"@en , "Universitat Pontificia Comillas"@ca .
+
+asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_BADAJOZ01
+      a       skos:Concept ;
+      rdfs:label "E BADAJOZ01" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_002 ;
+      skos:inScheme asioModules:ESUniversityErasmusCodeList ;
+      skos:prefLabel "E BADAJOZ01" .
+
+asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_BILBAO01
+      a       skos:Concept ;
+      rdfs:label "E BILBAO01" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_020 ;
+      skos:inScheme asioModules:ESUniversityErasmusCodeList ;
+      skos:prefLabel "E BILBAO01" .
+
+asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_VALENCI08
+      a       skos:Concept ;
+      rdfs:label "E VALENCI08" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_067 ;
+      skos:inScheme asioModules:ESUniversityErasmusCodeList ;
+      skos:prefLabel "E VALENCI08" .
+
+asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_SANTAND01
+      a       skos:Concept ;
+      rdfs:label "E SANTAND01" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_016 ;
+      skos:inScheme asioModules:ESUniversityErasmusCodeList ;
+      skos:prefLabel "E SANTAND01" .
+
+asioModules:ES_UNIVERSITY_CODE_056
+      a       skos:Concept ;
+      rdfs:label "056" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_056 ;
+      skos:inScheme asioModules:ESUniversityCodeList ;
+      skos:prefLabel "056" .
+
+<http://purl.org/hercules/asio/modules#ES_UNIVERSITY_003 >
+      a       skos:Concept ;
+      rdfs:label "Universitat de las Illes Balears" ;
+      asio:geoDivision asioModules:ES_DIVISION_LEVEL_1_ES_IB , asioModules:ES_DIVISION_LEVEL_2_ES_PM ;
+      asio:hasCode asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_PALMA01 , <http://purl.org/hercules/asio/modules#ES_UNIVERSITY_CODE_003 > , asioModules:ES_UNIVERSITY_VAT_NUMBER_Q0718001A ;
+      skos:inScheme asioModules:ESUniversityList , asioModules:UniversityList ;
+      skos:notation "003 " , "UIB" ;
+      skos:prefLabel "University of the Balearic Islands"@en , "Universitat de les Illes Balears"@es , "Universitat de las Illes Balears" , "Universitat de las Illes Balears"@ca .
+
+asioModules:ES_UNIVERSITY_VAT_NUMBER_Q3518001G
+      a       skos:Concept ;
+      rdfs:label "Q3518001G" ;
+      asio:codeOf <http://purl.org/hercules/asio/modules#ES_UNIVERSITY_026 > ;
+      skos:inScheme asioModules:ESUniversityVATNumberList ;
+      skos:prefLabel "Q3518001G" .
+
+<http://purl.org/hercules/asio/modules#ES_UNIVERSITY_034 >
+      a       skos:Concept ;
+      rdfs:label "Universidad de Castilla-La Mancha" ;
+      asio:geoDivision asioModules:ES_DIVISION_LEVEL_2_ES_CR , asioModules:ES_DIVISION_LEVEL_1_ES_CM ;
+      asio:hasCode asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_CIUDAR01 , asioModules:ES_UNIVERSITY_VAT_NUMBER_Q1368009E , <http://purl.org/hercules/asio/modules#ES_UNIVERSITY_CODE_034 > ;
+      skos:inScheme asioModules:ESUniversityList , asioModules:UniversityList ;
+      skos:notation "034 " , "UCLM" ;
+      skos:prefLabel "Universidad de Castilla-La Mancha" , "Universidad de Castilla-La Mancha"@es , "University of Castilla-La Mancha"@en , "Universitat de Castella-la Manxa"@ca .
+
+asioModules:ES_UNIVERSITY_CODE_042
+      a       skos:Concept ;
+      rdfs:label "042" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_042 ;
+      skos:inScheme asioModules:ESUniversityCodeList ;
+      skos:prefLabel "042" .
+
+asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_MADRID14
+      a       skos:Concept ;
+      rdfs:label "E MADRID14" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_036 ;
+      skos:inScheme asioModules:ESUniversityErasmusCodeList ;
+      skos:prefLabel "E MADRID14" .
+
+asioModules:ES_UNIVERSITY_044
+      a       skos:Concept ;
+      rdfs:label "Universitat de Lleida" ;
+      asio:geoDivision asioModules:ES_DIVISION_LEVEL_1_ES_CT , asioModules:ES_DIVISION_LEVEL_2_ES_L ;
+      asio:hasCode asioModules:ES_UNIVERSITY_VAT_NUMBER_Q7550001G , asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_LLEIDA01 , asioModules:ES_UNIVERSITY_CODE_044 ;
+      skos:inScheme asioModules:ESUniversityList , asioModules:UniversityList ;
+      skos:notation "UDL" , "044" ;
+      skos:prefLabel "Universitat de Lleida"@ca , "Universitat de Lleida" , "Universitat de Lleida"@es , "Lleidako Unibertsitatea"@eu , "University of Lleida‎"@en , "Universidade de Lérida"@pt , "Universidade de Lérida"@gl , "Universitat de Lhèida"@oc .
+
+asioModules:ES_UNIVERSITY_082
+      a       skos:Concept ;
+      rdfs:label "Universidad Europea de Valencia" ;
+      asio:geoDivision asioModules:ES_DIVISION_LEVEL_1_ES_VC , asioModules:ES_DIVISION_LEVEL_2_ES_V ;
+      asio:hasCode asioModules:ES_UNIVERSITY_VAT_NUMBER_B97934467 , asioModules:ES_UNIVERSITY_CODE_082 ;
+      skos:inScheme asioModules:ESUniversityList , asioModules:UniversityList ;
+      skos:notation "082" , "UEV" ;
+      skos:prefLabel "Universitat Europea de València"@ca , "European University of Valencia"@en , "Universidad Europea de Valencia" , "Universidad Europea de Valencia"@es .
+
+asioModules:ES_UNIVERSITY_059
+      a       skos:Concept ;
+      rdfs:label "Universidad Católica Santa Teresa de Jesús de Ávila" ;
+      asio:geoDivision asioModules:ES_DIVISION_LEVEL_2_ES_AV , asioModules:ES_DIVISION_LEVEL_1_ES_CL ;
+      asio:hasCode asioModules:ES_UNIVERSITY_CODE_059 , asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_AVILA01 , asioModules:ES_UNIVERSITY_VAT_NUMBER_R0500336C ;
+      skos:inScheme asioModules:ESUniversityList , asioModules:UniversityList ;
+      skos:notation "059" , "UCAV" ;
+      skos:prefLabel "Universitat Catòlica Santa Teresa de Jesús d'Ávila"@ca , "Universidad Católica Santa Teresa de Jesús de Ávila" , "Universidad Católica Santa Teresa de Jesús de Ávila"@es , "Catholic University of Ávila"@en .
+
+asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_CASTELL01
+      a       skos:Concept ;
+      rdfs:label "E CASTELL01" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_040 ;
+      skos:inScheme asioModules:ESUniversityErasmusCodeList ;
+      skos:prefLabel "E CASTELL01" .
+
+asioModules:ES_UNIVERSITY_VAT_NUMBER_Q6750002E
+      a       skos:Concept ;
+      rdfs:label "Q6750002E" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_043 ;
+      skos:inScheme asioModules:ESUniversityVATNumberList ;
+      skos:prefLabel "Q6750002E" .
+
+<http://purl.org/hercules/asio/modules#ES_UNIVERSITY_019 >
+      a       skos:Concept ;
+      rdfs:label "Universidad de Valladolid" ;
+      asio:geoDivision asioModules:ES_DIVISION_LEVEL_2_ES_VA , asioModules:ES_DIVISION_LEVEL_1_ES_CL ;
+      asio:hasCode <http://purl.org/hercules/asio/modules#ES_UNIVERSITY_CODE_019 > , asioModules:ES_UNIVERSITY_VAT_NUMBER_Q4718001C , asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_VALLADO01 ;
+      skos:inScheme asioModules:ESUniversityList , asioModules:UniversityList ;
+      skos:notation "019 " , "UVA" ;
+      skos:prefLabel "Universitat de Valladolid"@ca , "University of Valladolid"@en , "Universidad de Valladolid" , "Universidad de Valladolid"@es .
+
+asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_SEVILLA01
+      a       skos:Concept ;
+      rdfs:label "E SEVILLA01" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_017 ;
+      skos:inScheme asioModules:ESUniversityErasmusCodeList ;
+      skos:prefLabel "E SEVILLA01" .
+
+asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_MADRID33
+      a       skos:Concept ;
+      rdfs:label "E MADRID33" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_065 ;
+      skos:inScheme asioModules:ESUniversityErasmusCodeList ;
+      skos:prefLabel "E MADRID33" .
+
+asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_BILBAO02
+      a       skos:Concept ;
+      rdfs:label "E BILBAO02" ;
+      asio:codeOf <http://purl.org/hercules/asio/modules#ES_UNIVERSITY_030 > ;
+      skos:inScheme asioModules:ESUniversityErasmusCodeList ;
+      skos:prefLabel "E BILBAO02" .
+
+asioModules:ES_UNIVERSITY_VAT_NUMBER_Q5018001G
+      a       skos:Concept ;
+      rdfs:label "Q5018001G" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_021 ;
+      skos:inScheme asioModules:ESUniversityVATNumberList ;
+      skos:prefLabel "Q5018001G" .
+
+asioModules:ES_UNIVERSITY_VAT_NUMBER_R3700047H
+      a       skos:Concept ;
+      rdfs:label "R3700047H" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_032 ;
+      skos:inScheme asioModules:ESUniversityVATNumberList ;
+      skos:prefLabel "R3700047H" .
+
+asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_MALAGA01
+      a       skos:Concept ;
+      rdfs:label "E MALAGA01" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_011 ;
+      skos:inScheme asioModules:ESUniversityErasmusCodeList ;
+      skos:prefLabel "E MALAGA01" .
+
+asioModules:ES_UNIVERSITY_CODE_007
+      a       skos:Concept ;
+      rdfs:label "007" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_007 ;
+      skos:inScheme asioModules:ESUniversityCodeList ;
+      skos:prefLabel "007" .
+
+asioModules:ES_UNIVERSITY_043
+      a       skos:Concept ;
+      rdfs:label "Universitat de Girona" ;
+      asio:geoDivision asioModules:ES_DIVISION_LEVEL_1_ES_CT , asioModules:ES_DIVISION_LEVEL_2_ES_GI ;
+      asio:hasCode asioModules:ES_UNIVERSITY_VAT_NUMBER_Q6750002E , asioModules:ES_UNIVERSITY_CODE_043 , asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_GIRONA02 ;
+      skos:inScheme asioModules:ESUniversityList , asioModules:UniversityList ;
+      skos:notation "UDG" , "043" ;
+      skos:prefLabel "Universidade de Girona"@pt , "Universidade de Girona"@gl , "University of Girona‎"@en , "Universidad de Girona"@es , "Universitat de Girona" , "Universitat de Girona"@ca , "Universitat de Girona"@oc , "Gironako Unibertsitatea"@eu .
+
+asioModules:ES_UNIVERSITY_CODE_045
+      a       skos:Concept ;
+      rdfs:label "045" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_045 ;
+      skos:inScheme asioModules:ESUniversityCodeList ;
+      skos:prefLabel "045" .
+
+asioModules:ES_UNIVERSITY_VAT_NUMBER_Q2818013A
+      a       skos:Concept ;
+      rdfs:label "Q2818013A" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_023 ;
+      skos:inScheme asioModules:ESUniversityVATNumberList ;
+      skos:prefLabel "Q2818013A" .
+
+<http://purl.org/hercules/asio/modules#ES_UNIVERSITY_CODE_015 >
+      a       skos:Concept ;
+      rdfs:label "015 " ;
+      asio:codeOf <http://purl.org/hercules/asio/modules#ES_UNIVERSITY_015 > ;
+      skos:inScheme asioModules:ESUniversityCodeList ;
+      skos:prefLabel "015 " .
+
+asioModules:ES_UNIVERSITY_CODE_027
+      a       skos:Concept ;
+      rdfs:label "027" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_027 ;
+      skos:inScheme asioModules:ESUniversityCodeList ;
+      skos:prefLabel "027" .
+
+asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_LOGRONO01
+      a       skos:Concept ;
+      rdfs:label "E LOGRONO01" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_045 ;
+      skos:inScheme asioModules:ESUniversityErasmusCodeList ;
+      skos:prefLabel "E LOGRONO01" .
+
+asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_MADRID03
+      a       skos:Concept ;
+      rdfs:label "E MADRID03" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_010 ;
+      skos:inScheme asioModules:ESUniversityErasmusCodeList ;
+      skos:prefLabel "E MADRID03" .
+
+asioModules:ES_UNIVERSITY_VAT_NUMBER_G58020124
+      a       skos:Concept ;
+      rdfs:label "G58020124" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_060 ;
+      skos:inScheme asioModules:ESUniversityVATNumberList ;
+      skos:prefLabel "G58020124" .
+
+asioModules:ES_UNIVERSITY_VAT_NUMBER_Q9150016E
+      a       skos:Concept ;
+      rdfs:label "Q9150016E" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_058 ;
+      skos:inScheme asioModules:ESUniversityVATNumberList ;
+      skos:prefLabel "Q9150016E" .
+
+asioModules:ES_UNIVERSITY_VAT_NUMBER_G61737409
+      a       skos:Concept ;
+      rdfs:label "G61737409" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_062 ;
+      skos:inScheme asioModules:ESUniversityVATNumberList ;
+      skos:prefLabel "G61737409" .
+
+asioModules:ES_UNIVERSITY_CODE_054
+      a       skos:Concept ;
+      rdfs:label "054" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_054 ;
+      skos:inScheme asioModules:ESUniversityCodeList ;
+      skos:prefLabel "054" .
+
+asioModules:ES_UNIVERSITY_032
+      a       skos:Concept ;
+      rdfs:label "Universidad Pontificia de Salamanca" ;
+      asio:geoDivision asioModules:ES_DIVISION_LEVEL_2_ES_SA , asioModules:ES_DIVISION_LEVEL_1_ES_CL ;
+      asio:hasCode asioModules:ES_UNIVERSITY_VAT_NUMBER_R3700047H , asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_SALAMAN01 , asioModules:ES_UNIVERSITY_CODE_032 ;
+      skos:inScheme asioModules:ESUniversityList , asioModules:UniversityList ;
+      skos:notation "032" , "UPSA" ;
+      skos:prefLabel "Pontifical University of Salamanca‎"@en , "Universitat Pontificia de Salamanca"@ca , "Universidad Pontificia de Salamanca" , "Universidad Pontificia de Salamanca"@es .
+
+asioModules:ES_UNIVERSITY_042
+      a       skos:Concept ;
+      rdfs:label "Universitat Rovira i Virgili" ;
+      asio:geoDivision asioModules:ES_DIVISION_LEVEL_1_ES_CT , asioModules:ES_DIVISION_LEVEL_2_ES_T ;
+      asio:hasCode asioModules:ES_UNIVERSITY_VAT_NUMBER_Q9350003A , asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_TARRAGO01 , asioModules:ES_UNIVERSITY_CODE_042 ;
+      skos:inScheme asioModules:ESUniversityList , asioModules:UniversityList ;
+      skos:notation "URV" , "042" ;
+      skos:prefLabel "Universidad Rovira i Virgili"@es , "Universidade Rovira i Virgili"@pt , "Universidade Rovira i Virgili"@gl , "Universitat Rovira i Virgili" , "Universitat Rovira i Virgili"@ca , "Universitat Rovira i Virgili"@oc , "Rovira i Virgili University"@en , "Rovira i Virgili Unibertsitatea"@eu .
+
+asioModules:ES_UNIVERSITY_VAT_NUMBER_Q2818022B
+      a       skos:Concept ;
+      rdfs:label "Q2818022B" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_071 ;
+      skos:inScheme asioModules:ESUniversityVATNumberList ;
+      skos:prefLabel "Q2818022B" .
+
+asioModules:ES_UNIVERSITY_CODE_008
+      a       skos:Concept ;
+      rdfs:label "008" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_008 ;
+      skos:inScheme asioModules:ESUniversityCodeList ;
+      skos:prefLabel "008" .
+
+asioModules:ES_UNIVERSITY_001
+      a       skos:Concept ;
+      rdfs:label "Universitat d'Alacant" ;
+      asio:geoDivision asioModules:ES_DIVISION_LEVEL_1_ES_VC , asioModules:ES_DIVISION_LEVEL_2_ES_A ;
+      asio:hasCode asioModules:ES_UNIVERSITY_CODE_001 , asioModules:ES_UNIVERSITY_VAT_NUMBER_Q0332001G , asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_ALICANT01 ;
+      skos:inScheme asioModules:ESUniversityList , asioModules:UniversityList ;
+      skos:notation "UA" , "001" ;
+      skos:prefLabel "University of Alicante"@en , "Universidad de Alicante"@es , "Universitat d'Alacant"@ca , "Universitat d'Alacant" .
+
+asioModules:ES_UNIVERSITY_VAT_NUMBER_B47511431
+      a       skos:Concept ;
+      rdfs:label "B47511431" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_069 ;
+      skos:inScheme asioModules:ESUniversityVATNumberList ;
+      skos:prefLabel "B47511431" .
+
+asioModules:ES_UNIVERSITY_CODE_044
+      a       skos:Concept ;
+      rdfs:label "044" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_044 ;
+      skos:inScheme asioModules:ESUniversityCodeList ;
+      skos:prefLabel "044" .
+
+asioModules:ES_UNIVERSITY_VAT_NUMBER_Q1818002F
+      a       skos:Concept ;
+      rdfs:label "Q1818002F" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_008 ;
+      skos:inScheme asioModules:ESUniversityVATNumberList ;
+      skos:prefLabel "Q1818002F" .
+
+asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_TARRAGO01
+      a       skos:Concept ;
+      rdfs:label "E TARRAGO01" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_042 ;
+      skos:inScheme asioModules:ESUniversityErasmusCodeList ;
+      skos:prefLabel "E TARRAGO01" .
+
+asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_ALMERIA01
+      a       skos:Concept ;
+      rdfs:label "E ALMERIA01" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_048 ;
+      skos:inScheme asioModules:ESUniversityErasmusCodeList ;
+      skos:prefLabel "E ALMERIA01" .
+
+asioModules:ES_UNIVERSITY_VAT_NUMBER_G99047672
+      a       skos:Concept ;
+      rdfs:label "G99047672" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_073 ;
+      skos:inScheme asioModules:ESUniversityVATNumberList ;
+      skos:prefLabel "G99047672" .
+
+asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_MADRID02
+      a       skos:Concept ;
+      rdfs:label "E MADRID02" ;
+      asio:codeOf <http://purl.org/hercules/asio/modules#ES_UNIVERSITY_033 > ;
+      skos:inScheme asioModules:ESUniversityErasmusCodeList ;
+      skos:prefLabel "E MADRID02" .
+
+asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_MADRID12
+      a       skos:Concept ;
+      rdfs:label "E MADRID12" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_052 ;
+      skos:inScheme asioModules:ESUniversityErasmusCodeList ;
+      skos:prefLabel "E MADRID12" .
+
+asioModules:ES_UNIVERSITY_VAT_NUMBER_R0500336C
+      a       skos:Concept ;
+      rdfs:label "R0500336C" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_059 ;
+      skos:inScheme asioModules:ESUniversityVATNumberList ;
+      skos:prefLabel "R0500336C" .
+
+asioModules:ES_UNIVERSITY_002
+      a       skos:Concept ;
+      rdfs:label "Universidad de Extremadura" ;
+      asio:geoDivision asioModules:ES_DIVISION_LEVEL_1_ES_EX , asioModules:ES_DIVISION_LEVEL_2_ES_BA ;
+      asio:hasCode asioModules:ES_UNIVERSITY_VAT_NUMBER_Q0618001B , asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_BADAJOZ01 , asioModules:ES_UNIVERSITY_CODE_002 ;
+      skos:inScheme asioModules:ESUniversityList , asioModules:UniversityList ;
+      skos:notation "UEX" , "002" ;
+      skos:prefLabel "Universidad de Extremadura"@es , "Universidad de Extremadura" , "Universitat d'Extremadura"@ca , "Universiá d'Estremaúra"@ext , "University of Extremadura‎"@en .
+
+asioModules:ES_UNIVERSITY_VAT_NUMBER_Q7550001G
+      a       skos:Concept ;
+      rdfs:label "Q7550001G" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_044 ;
+      skos:inScheme asioModules:ESUniversityVATNumberList ;
+      skos:prefLabel "Q7550001G" .
+
+asioModules:ES_UNIVERSITY_CODE_047
+      a       skos:Concept ;
+      rdfs:label "047" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_047 ;
+      skos:inScheme asioModules:ESUniversityCodeList ;
+      skos:prefLabel "047" .
+
+asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_SALAMAN02
+      a       skos:Concept ;
+      rdfs:label "E SALAMAN02" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_014 ;
+      skos:inScheme asioModules:ESUniversityErasmusCodeList ;
+      skos:prefLabel "E SALAMAN02" .
+
+asioModules:ES_UNIVERSITY_041
+      a       skos:Concept ;
+      rdfs:label "Universitat Ramón Llull" ;
+      asio:geoDivision asioModules:ES_DIVISION_LEVEL_2_ES_B , asioModules:ES_DIVISION_LEVEL_1_ES_CT ;
+      asio:hasCode asioModules:ES_UNIVERSITY_VAT_NUMBER_G59069740 , asioModules:ES_UNIVERSITY_CODE_041 , asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_BARCELO16 ;
+      skos:inScheme asioModules:ESUniversityList , asioModules:UniversityList ;
+      skos:notation "041" , "URLL" ;
+      skos:prefLabel "Universidade Ramon Llull"@pt , "Universidade Ramon Llull"@gl , "Ramon Llull Unibertsitatea"@eu , "Universitat Ramón Llull" , "Universitat Ramón Llull"@ca , "Universitat Ramón Llull"@oc , "Universidad Ramón Llull"@es , "Ramon Llull University"@en .
+
+asioModules:ES_UNIVERSITY_CODE_005
+      a       skos:Concept ;
+      rdfs:label "005" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_005 ;
+      skos:inScheme asioModules:ESUniversityCodeList ;
+      skos:prefLabel "005" .
+
+asioModules:ES_UNIVERSITY_073
+      a       skos:Concept ;
+      rdfs:label "Universidad San Jorge" ;
+      asio:geoDivision asioModules:ES_DIVISION_LEVEL_1_ES_AR , asioModules:ES_DIVISION_LEVEL_2_ES_Z ;
+      asio:hasCode asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_ZARAGOZ_07 , asioModules:ES_UNIVERSITY_VAT_NUMBER_G99047672 , asioModules:ES_UNIVERSITY_CODE_073 ;
+      skos:inScheme asioModules:ESUniversityList , asioModules:UniversityList ;
+      skos:notation "073" , "USJ" ;
+      skos:prefLabel "Universidat Sant Chorche"@an , "Universidad San Jorge" , "Universidad San Jorge"@es , "Universitat San Jorge"@ca , "San Jorge University"@en .
+
+asioModules:ES_UNIVERSITY_VAT_NUMBER_Q5850017D
+      a       skos:Concept ;
+      rdfs:label "Q5850017D" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_039 ;
+      skos:inScheme asioModules:ESUniversityVATNumberList ;
+      skos:prefLabel "Q5850017D" .
+
+asioModules:ES_UNIVERSITY_VAT_NUMBER_G97025787
+      a       skos:Concept ;
+      rdfs:label "G97025787" ;
+      asio:codeOf <http://purl.org/hercules/asio/modules#ES_UNIVERSITY_072 > ;
+      skos:inScheme asioModules:ESUniversityVATNumberList ;
+      skos:prefLabel "G97025787" .
+
+asioModules:ES_UNIVERSITY_CODE_014
+      a       skos:Concept ;
+      rdfs:label "014" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_014 ;
+      skos:inScheme asioModules:ESUniversityCodeList ;
+      skos:prefLabel "014" .
+
+asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_ZARAGOZ01
+      a       skos:Concept ;
+      rdfs:label "E ZARAGOZ01" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_021 ;
+      skos:inScheme asioModules:ESUniversityErasmusCodeList ;
+      skos:prefLabel "E ZARAGOZ01" .
+
+asioModules:ES_UNIVERSITY_CODE_067
+      a       skos:Concept ;
+      rdfs:label "067" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_067 ;
+      skos:inScheme asioModules:ESUniversityCodeList ;
+      skos:prefLabel "067" .
+
+asioModules:ES_UNIVERSITY_CODE_048
+      a       skos:Concept ;
+      rdfs:label "048" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_048 ;
+      skos:inScheme asioModules:ESUniversityCodeList ;
+      skos:prefLabel "048" .
+
+asioModules:ES_UNIVERSITY_021
+      a       skos:Concept ;
+      rdfs:label "Universidad de Zaragoza" ;
+      asio:geoDivision asioModules:ES_DIVISION_LEVEL_1_ES_AR , asioModules:ES_DIVISION_LEVEL_2_ES_Z ;
+      asio:hasCode asioModules:ES_UNIVERSITY_VAT_NUMBER_Q5018001G , asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_ZARAGOZ01 , asioModules:ES_UNIVERSITY_CODE_021 ;
+      skos:inScheme asioModules:ESUniversityList , asioModules:UniversityList ;
+      skos:notation "UZA" , "021" ;
+      skos:prefLabel "Universidat de Zaragoza"@an , "Universidad de Zaragoza" , "Universidad de Zaragoza"@es , "Universitat de Saragossa"@ca , "University of Zaragoza"@en .
+
+asioModules:ES_UNIVERSITY_CODE_046
+      a       skos:Concept ;
+      rdfs:label "046" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_046 ;
+      skos:inScheme asioModules:ESUniversityCodeList ;
+      skos:prefLabel "046" .
+
+<http://purl.org/hercules/asio/modules#ES_UNIVERSITY_CODE_026 >
+      a       skos:Concept ;
+      rdfs:label "026 " ;
+      asio:codeOf <http://purl.org/hercules/asio/modules#ES_UNIVERSITY_026 > ;
+      skos:inScheme asioModules:ESUniversityCodeList ;
+      skos:prefLabel "026 " .
+
+asioModules:ES_UNIVERSITY_VAT_NUMBER_Q9350003A
+      a       skos:Concept ;
+      rdfs:label "Q9350003A" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_042 ;
+      skos:inScheme asioModules:ESUniversityVATNumberList ;
+      skos:prefLabel "Q9350003A" .
+
+asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_SALAMAN01
+      a       skos:Concept ;
+      rdfs:label "E SALAMAN01" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_032 ;
+      skos:inScheme asioModules:ESUniversityErasmusCodeList ;
+      skos:prefLabel "E SALAMAN01" .
+
+asioModules:ES_UNIVERSITY_CODE_006
+      a       skos:Concept ;
+      rdfs:label "006" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_006 ;
+      skos:inScheme asioModules:ESUniversityCodeList ;
+      skos:prefLabel "006" .
+
+asioModules:ES_UNIVERSITY_040
+      a       skos:Concept ;
+      rdfs:label "Universitat Jaume I de Castelló" ;
+      asio:geoDivision asioModules:ES_DIVISION_LEVEL_1_ES_VC , asioModules:ES_DIVISION_LEVEL_2_ES_CS ;
+      asio:hasCode asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_CASTELL01 , asioModules:ES_UNIVERSITY_VAT_NUMBER_Q6250003H , asioModules:ES_UNIVERSITY_CODE_040 ;
+      skos:inScheme asioModules:ESUniversityList , asioModules:UniversityList ;
+      skos:notation "040" , "UJI" ;
+      skos:prefLabel "Universitat Jaume I de Castellón"@es , "Jaume I University"@en , "Universitat Jaume I de Castelló" , "Universitat Jaume I de Castelló"@ca .
+
+asioModules:ES_UNIVERSITY_CODE_016
+      a       skos:Concept ;
+      rdfs:label "016" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_016 ;
+      skos:inScheme asioModules:ESUniversityCodeList ;
+      skos:prefLabel "016" .
+
+<http://purl.org/hercules/asio/modules#ES_UNIVERSITY_CODE_022 >
+      a       skos:Concept ;
+      rdfs:label "022 " ;
+      asio:codeOf <http://purl.org/hercules/asio/modules#ES_UNIVERSITY_022 > ;
+      skos:inScheme asioModules:ESUniversityCodeList ;
+      skos:prefLabel "022 " .
+
+asioModules:ES_UNIVERSITY_VAT_NUMBER_Q4118001I
+      a       skos:Concept ;
+      rdfs:label "Q4118001I" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_017 ;
+      skos:inScheme asioModules:ESUniversityVATNumberList ;
+      skos:prefLabel "Q4118001I" .
+
+<http://purl.org/hercules/asio/modules#ES_UNIVERSITY_055 >
+      a       skos:Concept ;
+      rdfs:label "Universitat Miguel Hernández d'Elx" ;
+      asio:geoDivision asioModules:ES_DIVISION_LEVEL_1_ES_VC , asioModules:ES_DIVISION_LEVEL_2_ES_A ;
+      asio:hasCode asioModules:ES_UNIVERSITY_VAT_NUMBER_Q5350015C , <http://purl.org/hercules/asio/modules#ES_UNIVERSITY_CODE_055 > , asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_ELCHE01 ;
+      skos:inScheme asioModules:ESUniversityList , asioModules:UniversityList ;
+      skos:notation "UMH" , "055 " ;
+      skos:prefLabel "Miguel Hernández University of Elche"@en , "Universidad Miguel Hernández de Elche"@es , "Universitat Miguel Hernández d'Elx" , "Universitat Miguel Hernández d'Elx"@ca .
+
+<http://purl.org/hercules/asio/modules#ES_UNIVERSITY_004 >
+      a       skos:Concept ;
+      rdfs:label "Universitat de Barcelona" ;
+      asio:geoDivision asioModules:ES_DIVISION_LEVEL_2_ES_B , asioModules:ES_DIVISION_LEVEL_1_ES_CT ;
+      asio:hasCode asioModules:ES_UNIVERSITY_VAT_NUMBER_Q0818001J , <http://purl.org/hercules/asio/modules#ES_UNIVERSITY_CODE_004 > , asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_BARCELO01 ;
+      skos:inScheme asioModules:ESUniversityList , asioModules:UniversityList ;
+      skos:notation "004 " , "UBA" ;
+      skos:prefLabel "Universitat de Barcelona" , "Universitat de Barcelona"@ca , "Universitat de Barcelona"@oc , "Universidade de Barcelona"@pt , "Universidade de Barcelona"@gl , "Bartzelonako Unibertsitatea"@eu , "Université de Barcelone"@fr , "Universidad de Barcelona"@es , "Universidat de Barcelona"@an , "Universidá de Barcelona"@ast , "University of Barcelona"@en .
+
+asioModules:ES_UNIVERSITY_VAT_NUMBER_Q3318001I
+      a       skos:Concept ;
+      rdfs:label "Q3318001I" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_013 ;
+      skos:inScheme asioModules:ESUniversityVATNumberList ;
+      skos:prefLabel "Q3318001I" .
+
+<http://purl.org/hercules/asio/modules#ES_UNIVERSITY_CODE_072 >
+      a       skos:Concept ;
+      rdfs:label "072 " ;
+      asio:codeOf <http://purl.org/hercules/asio/modules#ES_UNIVERSITY_072 > ;
+      skos:inScheme asioModules:ESUniversityCodeList ;
+      skos:prefLabel "072 " .
+
+asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_VALLADO03
+      a       skos:Concept ;
+      rdfs:label "E VALLADO03" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_069 ;
+      skos:inScheme asioModules:ESUniversityErasmusCodeList ;
+      skos:prefLabel "E VALLADO03" .
+
+asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_TENERIF01
+      a       skos:Concept ;
+      rdfs:label "E TENERIF01" ;
+      asio:codeOf <http://purl.org/hercules/asio/modules#ES_UNIVERSITY_015 > ;
+      skos:inScheme asioModules:ESUniversityErasmusCodeList ;
+      skos:prefLabel "E TENERIF01" .
+
+asioModules:ES_UNIVERSITY_VAT_NUMBER_R3168001J
+      a       skos:Concept ;
+      rdfs:label "R3168001J" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_031 ;
+      skos:inScheme asioModules:ESUniversityVATNumberList ;
+      skos:prefLabel "R3168001J" .
+
+asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_LEON01
+      a       skos:Concept ;
+      rdfs:label "E LEON01" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_009 ;
+      skos:inScheme asioModules:ESUniversityErasmusCodeList ;
+      skos:prefLabel "E LEON01" .
+
+<http://purl.org/hercules/asio/modules#ES_UNIVERSITY_022 >
+      a       skos:Concept ;
+      rdfs:label "Universitat Autònoma de Barcelona" ;
+      asio:geoDivision asioModules:ES_DIVISION_LEVEL_2_ES_B , asioModules:ES_DIVISION_LEVEL_1_ES_CT ;
+      asio:hasCode <http://purl.org/hercules/asio/modules#ES_UNIVERSITY_CODE_022 > , asioModules:ES_UNIVERSITY_VAT_NUMBER_Q0818002H , asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_BARCELO02 ;
+      skos:inScheme asioModules:ESUniversityList , asioModules:UniversityList ;
+      skos:notation "UAB" , "022 " ;
+      skos:prefLabel "Universitat Autonoma de Barcelona"@oc , "Universitat Autònoma de Barcelona" , "Universitat Autònoma de Barcelona"@ca , "Universidad Autónoma de Barcelona"@es , "Bartzelonako Unibertsitate Autonomoa‎"@eu , "Autonomous University of Barcelona"@en , "Universidade Autônoma de Barcelona"@pt , "Universidade Autónoma de Barcelona"@gl .
+
+asioModules:ES_UNIVERSITY_CODE_066
+      a       skos:Concept ;
+      rdfs:label "066" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_066 ;
+      skos:inScheme asioModules:ESUniversityCodeList ;
+      skos:prefLabel "066" .
+
+asioModules:ES_UNIVERSITY_020
+      a       skos:Concept ;
+      rdfs:label "Euskal Herriko Unibertsitatea" ;
+      asio:geoDivision asioModules:ES_DIVISION_LEVEL_2_ES_BI , asioModules:ES_DIVISION_LEVEL_1_ES_PV ;
+      asio:hasCode asioModules:ES_UNIVERSITY_VAT_NUMBER_Q4818001B , asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_BILBAO01 , asioModules:ES_UNIVERSITY_CODE_020 ;
+      skos:inScheme asioModules:ESUniversityList , asioModules:UniversityList ;
+      skos:notation "UPV/EHU" , "020" ;
+      skos:prefLabel "University of the Basque Country"@en , "Universidad del País Vasco"@es , "Universitat del País Basc"@ca , "Euskal Herriko Unibertsitatea" , "Euskal Herriko Unibertsitatea"@eu .
+
+asioModules:ESUniversityErasmusCodeList
+      a       asioModules:Universities ;
+      rdfs:label "Códigos Erasmus das universidades de Espanha"@pt , "Codigos Erasmus d'as universidatz d'Espanya"@an , "Codes Erasmus for the universities of Spain"@en , "Còdis Erasmus de las universitats d'Espanha"@oc , "Códigus Erasmus delas univelsiais d'España"@ext , "Codis Erasmus de les universitats d'Espanya"@ca , "Espainiako unibertsitateak - Erasmus kodeak"@eu , "Códigos Erasmus das universidades de España"@gl , "Códigos Erasmus de les universidaes d'España"@ast , "Codes Erasmus des universités d'Espagne"@fr , "Códigos Erasmus de las universidades de España"@es ;
+      skos:prefLabel "Códigos Erasmus das universidades de Espanha"@pt , "Codigos Erasmus d'as universidatz d'Espanya"@an , "Codes Erasmus for the universities of Spain"@en , "Còdis Erasmus de las universitats d'Espanha"@oc , "Codis Erasmus de les universitats d'Espanya"@ca , "Códigus Erasmus delas univelsiais d'España"@ext , "Espainiako unibertsitateak - Erasmus kodeak"@eu , "Códigos Erasmus das universidades de España"@gl , "Códigos Erasmus de les universidaes d'España"@ast , "Codes Erasmus des universités d'Espagne"@fr , "Códigos Erasmus de las universidades de España"@es .
+
+asioModules:ES_UNIVERSITY_061
+      a       skos:Concept ;
+      rdfs:label "Mondragon Unibertsitatea" ;
+      asio:geoDivision asioModules:ES_DIVISION_LEVEL_2_ES_BI , asioModules:ES_DIVISION_LEVEL_1_ES_PV ;
+      asio:hasCode asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_MONDRAG01 , asioModules:ES_UNIVERSITY_CODE_061 , asioModules:ES_UNIVERSITY_VAT_NUMBER_F20560991 ;
+      skos:inScheme asioModules:ESUniversityList , asioModules:UniversityList ;
+      skos:notation "061" , "UMON" ;
+      skos:prefLabel "Universitat de Mondragon"@ca , "Mondragon Unibertsitatea" , "Mondragon Unibertsitatea"@eu , "Mondragon University"@en , "Universidad Mondragon Unibertsitatea"@es .
+
+<http://purl.org/hercules/asio/modules#ES_UNIVERSITY_CODE_028 >
+      a       skos:Concept ;
+      rdfs:label "028 " ;
+      asio:codeOf <http://purl.org/hercules/asio/modules#ES_UNIVERSITY_028 > ;
+      skos:inScheme asioModules:ESUniversityCodeList ;
+      skos:prefLabel "028 " .
+
+asioModules:ES_UNIVERSITY_CODE_041
+      a       skos:Concept ;
+      rdfs:label "041" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_041 ;
+      skos:inScheme asioModules:ESUniversityCodeList ;
+      skos:prefLabel "041" .
+
+asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_BURGOS01
+      a       skos:Concept ;
+      rdfs:label "E BURGOS01" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_051 ;
+      skos:inScheme asioModules:ESUniversityErasmusCodeList ;
+      skos:prefLabel "E BURGOS01" .
+
+asioModules:ES_UNIVERSITY_071
+      a       skos:Concept ;
+      rdfs:label "Universidad Internacional Menéndez Pelayo" ;
+      asio:geoDivision asioModules:ES_DIVISION_LEVEL_1_ES_MD , asioModules:ES_DIVISION_LEVEL_2_ES_M ;
+      asio:hasCode asioModules:ES_UNIVERSITY_CODE_071 , asioModules:ES_UNIVERSITY_VAT_NUMBER_Q2818022B ;
+      skos:inScheme asioModules:ESUniversityList , asioModules:UniversityList ;
+      skos:notation "071" , "UIMP" ;
+      skos:prefLabel "Universitat Internacional Menéndez Pelayo"@ca , "Universidad Internacional Menéndez Pelayo" , "Universidad Internacional Menéndez Pelayo"@es , "Menéndez Pelayo International University"@en .
+
+asioModules:ES_UNIVERSITY_CODE_017
+      a       skos:Concept ;
+      rdfs:label "017" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_017 ;
+      skos:inScheme asioModules:ESUniversityCodeList ;
+      skos:prefLabel "017" .
+
+asioModules:ES_UNIVERSITY_VAT_NUMBER_Q2818014I
+      a       skos:Concept ;
+      rdfs:label "Q2818014I" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_010 ;
+      skos:inScheme asioModules:ESUniversityVATNumberList ;
+      skos:prefLabel "Q2818014I" .
+
+asioModules:ES_UNIVERSITY_VAT_NUMBER_Q3918001C
+      a       skos:Concept ;
+      rdfs:label "Q3918001C" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_016 ;
+      skos:inScheme asioModules:ESUniversityVATNumberList ;
+      skos:prefLabel "Q3918001C" .
+
+asioModules:ES_UNIVERSITY_VAT_NUMBER_Q2818018J
+      a       skos:Concept ;
+      rdfs:label "Q2818018J" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_029 ;
+      skos:inScheme asioModules:ESUniversityVATNumberList ;
+      skos:prefLabel "Q2818018J" .
+
+asioModules:ES_UNIVERSITY_CODE_002
+      a       skos:Concept ;
+      rdfs:label "002" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_002 ;
+      skos:inScheme asioModules:ESUniversityCodeList ;
+      skos:prefLabel "002" .
+
+asioModules:ES_UNIVERSITY_CODE_069
+      a       skos:Concept ;
+      rdfs:label "069" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_069 ;
+      skos:inScheme asioModules:ESUniversityCodeList ;
+      skos:prefLabel "069" .
+
+asioModules:ES_UNIVERSITY_VAT_NUMBER_Q0718001A
+      a       skos:Concept ;
+      rdfs:label "Q0718001A" ;
+      asio:codeOf <http://purl.org/hercules/asio/modules#ES_UNIVERSITY_003 > ;
+      skos:inScheme asioModules:ESUniversityVATNumberList ;
+      skos:prefLabel "Q0718001A" .
+
+asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_CADIZ01
+      a       skos:Concept ;
+      rdfs:label "E CADIZ01" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_005 ;
+      skos:inScheme asioModules:ESUniversityErasmusCodeList ;
+      skos:prefLabel "E CADIZ01" .
+
+asioModules:ES_UNIVERSITY_005
+      a       skos:Concept ;
+      rdfs:label "Universidad de Cádiz" ;
+      asio:geoDivision asioModules:ES_DIVISION_LEVEL_2_ES_CA , asioModules:ES_DIVISION_LEVEL_1_ES_AN ;
+      asio:hasCode asioModules:ES_UNIVERSITY_VAT_NUMBER_Q1132001G , asioModules:ES_UNIVERSITY_CODE_005 , asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_CADIZ01 ;
+      skos:inScheme asioModules:ESUniversityList , asioModules:UniversityList ;
+      skos:notation "UCA" , "005" ;
+      skos:prefLabel "University of Cádiz"@en , "Universitat de Cadis"@ca , "Universidad de Cádiz" , "Universidad de Cádiz"@es .
+
+asioModules:ES_UNIVERSITY_VAT_NUMBER_A78518529
+      a       skos:Concept ;
+      rdfs:label "A78518529" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_047 ;
+      skos:inScheme asioModules:ESUniversityVATNumberList ;
+      skos:prefLabel "A78518529" .
+
+asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_OVIEDO01
+      a       skos:Concept ;
+      rdfs:label "E OVIEDO01" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_013 ;
+      skos:inScheme asioModules:ESUniversityErasmusCodeList ;
+      skos:prefLabel "E OVIEDO01" .
+
+asioModules:ES_UNIVERSITY_VAT_NUMBER_A09515412
+      a       skos:Concept ;
+      rdfs:label "A09515412" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_080 ;
+      skos:inScheme asioModules:ESUniversityVATNumberList ;
+      skos:prefLabel "A09515412" .
+
+asioModules:ES_UNIVERSITY_060
+      a       skos:Concept ;
+      rdfs:label "Universitat de Vic-Universitat Central de Catalunya" ;
+      asio:geoDivision asioModules:ES_DIVISION_LEVEL_2_ES_B , asioModules:ES_DIVISION_LEVEL_1_ES_CT ;
+      asio:hasCode asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_VIC01 , asioModules:ES_UNIVERSITY_CODE_060 , asioModules:ES_UNIVERSITY_VAT_NUMBER_G58020124 ;
+      skos:inScheme asioModules:ESUniversityList , asioModules:UniversityList ;
+      skos:notation "060" , "UVIC" ;
+      skos:prefLabel "Universitat de Vic-Universitat Central de Catalunya  "@ca , "University of Vic - Central University of Catalonia"@en , "Universitat de Vic-Universitat Central de Catalunya" , "Universidade de Vic-Universidade Central de Cataluña  "@gl , "Universidade de Vic-Universidade Central de Catalunha  "@pt , "Universidad de Vic-Universidad Central de Cataluña"@es , "Universitat de Vic-Universitat Central de Catalunha  "@oc .
+
+asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_VALENCI11
+      a       skos:Concept ;
+      rdfs:label "E VALENCI11" ;
+      asio:codeOf <http://purl.org/hercules/asio/modules#ES_UNIVERSITY_072 > ;
+      skos:inScheme asioModules:ESUniversityErasmusCodeList ;
+      skos:prefLabel "E VALENCI11" .
+
+asioModules:ES_UNIVERSITY_070
+      a       skos:Concept ;
+      rdfs:label "Universitat Abat Oliba CEU" ;
+      asio:geoDivision asioModules:ES_DIVISION_LEVEL_2_ES_B , asioModules:ES_DIVISION_LEVEL_1_ES_CT ;
+      asio:hasCode asioModules:ES_UNIVERSITY_CODE_070 , asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_BARCELO_31 , asioModules:ES_UNIVERSITY_VAT_NUMBER_G63095848 ;
+      skos:inScheme asioModules:ESUniversityList , asioModules:UniversityList ;
+      skos:notation "070" , "UAO" ;
+      skos:prefLabel "Abat Oliba CEU Unibertsitatea"@eu , "Abat Oliba CEU University"@en , "Universitat Abat Oliba CEU" , "Universitat Abat Oliba CEU"@es , "Universitat Abat Oliba CEU"@ca .
+
+asioModules:ES_UNIVERSITY_CODE_058
+      a       skos:Concept ;
+      rdfs:label "058" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_058 ;
+      skos:inScheme asioModules:ESUniversityCodeList ;
+      skos:prefLabel "058" .
+
+asioModules:ES_UNIVERSITY_VAT_NUMBER_G40155384
+      a       skos:Concept ;
+      rdfs:label "G40155384" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_057 ;
+      skos:inScheme asioModules:ESUniversityVATNumberList ;
+      skos:prefLabel "G40155384" .
+
+asioModules:ES_UNIVERSITY_CODE_040
+      a       skos:Concept ;
+      rdfs:label "040" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_040 ;
+      skos:inScheme asioModules:ESUniversityCodeList ;
+      skos:prefLabel "040" .
+
+asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_MADRID26
+      a       skos:Concept ;
+      rdfs:label "E MADRID26" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_056 ;
+      skos:inScheme asioModules:ESUniversityErasmusCodeList ;
+      skos:prefLabel "E MADRID26" .
+
+asioModules:ES_UNIVERSITY_VAT_NUMBER_R4868004E
+      a       skos:Concept ;
+      rdfs:label "R4868004E" ;
+      asio:codeOf <http://purl.org/hercules/asio/modules#ES_UNIVERSITY_030 > ;
+      skos:inScheme asioModules:ESUniversityVATNumberList ;
+      skos:prefLabel "R4868004E" .
+
+asioModules:ES_UNIVERSITY_CODE_018
+      a       skos:Concept ;
+      rdfs:label "018" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_018 ;
+      skos:inScheme asioModules:ESUniversityCodeList ;
+      skos:prefLabel "018" .
+
+asioModules:ES_UNIVERSITY_VAT_NUMBER_Q2618002F
+      a       skos:Concept ;
+      rdfs:label "Q2618002F" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_045 ;
+      skos:inScheme asioModules:ESUniversityVATNumberList ;
+      skos:prefLabel "Q2618002F" .
+
+asioModules:ES_UNIVERSITY_VAT_NUMBER_Q1132001G
+      a       skos:Concept ;
+      rdfs:label "Q1132001G" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_005 ;
+      skos:inScheme asioModules:ESUniversityVATNumberList ;
+      skos:prefLabel "Q1132001G" .
+
+asioModules:ES_UNIVERSITY_VAT_NUMBER_Q6250003H
+      a       skos:Concept ;
+      rdfs:label "Q6250003H" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_040 ;
+      skos:inScheme asioModules:ESUniversityVATNumberList ;
+      skos:prefLabel "Q6250003H" .
+
+asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_LAS-PAL01
+      a       skos:Concept ;
+      rdfs:label "E LAS-PAL01" ;
+      asio:codeOf <http://purl.org/hercules/asio/modules#ES_UNIVERSITY_026 > ;
+      skos:inScheme asioModules:ESUniversityErasmusCodeList ;
+      skos:prefLabel "E LAS-PAL01" .
+
+asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_ALICANT01
+      a       skos:Concept ;
+      rdfs:label "E ALICANT01" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_001 ;
+      skos:inScheme asioModules:ESUniversityErasmusCodeList ;
+      skos:prefLabel "E ALICANT01" .
+
+asioModules:ES_UNIVERSITY_CODE_059
+      a       skos:Concept ;
+      rdfs:label "059" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_059 ;
+      skos:inScheme asioModules:ESUniversityCodeList ;
+      skos:prefLabel "059" .
+
+asioModules:ES_UNIVERSITY_CODE_049
+      a       skos:Concept ;
+      rdfs:label "049" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_049 ;
+      skos:inScheme asioModules:ESUniversityCodeList ;
+      skos:prefLabel "049" .
+
+asioModules:ES_UNIVERSITY_080
+      a       skos:Concept ;
+      rdfs:label "Universidad Internacional Isabel I de Castilla" ;
+      asio:geoDivision asioModules:ES_DIVISION_LEVEL_2_ES_BU , asioModules:ES_DIVISION_LEVEL_1_ES_CL ;
+      asio:hasCode asioModules:ES_UNIVERSITY_CODE_080 , asioModules:ES_UNIVERSITY_VAT_NUMBER_A09515412 ;
+      skos:inScheme asioModules:ESUniversityList , asioModules:UniversityList ;
+      skos:notation "080" , "UII" ;
+      skos:prefLabel "Universitat Internacional Isabel I de Castilla"@ca , "Universidad Internacional Isabel I de Castilla" , "Universidad Internacional Isabel I de Castilla"@es , "Isabel I de Castilla International University"@en .
+
+asioModules:ES_UNIVERSITY_CODE_068
+      a       skos:Concept ;
+      rdfs:label "068" ;
+      asio:codeOf asioModules:ES_UNIVERSITY_068 ;
+      skos:inScheme asioModules:ESUniversityCodeList ;
+      skos:prefLabel "068" .
+
+asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_VALLADO01
+      a       skos:Concept ;
+      rdfs:label "E VALLADO01" ;
+      asio:codeOf <http://purl.org/hercules/asio/modules#ES_UNIVERSITY_019 > ;
+      skos:inScheme asioModules:ESUniversityErasmusCodeList ;
+      skos:prefLabel "E VALLADO01" .
+
+asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_ELCHE01
+      a       skos:Concept ;
+      rdfs:label "E ELCHE01" ;
+      asio:codeOf <http://purl.org/hercules/asio/modules#ES_UNIVERSITY_055 > ;
+      skos:inScheme asioModules:ESUniversityErasmusCodeList ;
+      skos:prefLabel "E ELCHE01" .
