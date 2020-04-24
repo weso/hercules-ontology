@@ -24,6 +24,7 @@ asioIndividuals:AlejandroGonzalezHevia rdf:type owl:NamedIndividual ;
 ###  http://www.asio.es/asioinstances/asio#BasqueCentreForClimateChange
 asioIndividuals:BasqueCentreForClimateChange rdf:type owl:NamedIndividual ,
                                            asio:ResearchInstitute ;
+                                  asio:hasResearchLine asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_3_CTCLIM ;
                                   asio:hasSealOfQuality asioIndividuals:SealOfQualityMariaDeMaeztu ;
                                   rdfs:label "Basque Centre for Climate Change"@en ,
                                              "Klima Aldaketa Ikergai"@eu ;
@@ -34,6 +35,7 @@ asioIndividuals:BasqueCentreForClimateChange rdf:type owl:NamedIndividual ,
 ###  http://www.asio.es/asioinstances/asio#CentreDeRecercaMatematica
 asioIndividuals:CentreDeRecercaMatematica rdf:type owl:NamedIndividual ,
                                         asio:ResearchInstitute ;
+                               asio:hasResearchLine asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_MTM ;
                                rdfs:label "Centre de recerca matemàtica"@ca-es ,
                                           "Centre for Research in Mathematics"@en .
 
@@ -41,6 +43,7 @@ asioIndividuals:CentreDeRecercaMatematica rdf:type owl:NamedIndividual ,
 ###  http://www.asio.es/asioinstances/asio#CentreDeRegulacioGenomica
 asioIndividuals:CentreDeRegulacioGenomica rdf:type owl:NamedIndividual ,
                                         asio:ResearchInstitute ;
+                               asio:hasResearchLine asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_3_BFSDNIG ;
                                asio:hasSealOfQuality asioIndividuals:SeveroOchoaSealOfExcellence ;
                                rdfs:label "Centre de Regulació Genòmica"@ca-es ,
                                           "Centre for Genomic Regulation"@en ,
@@ -51,6 +54,7 @@ asioIndividuals:CentreDeRegulacioGenomica rdf:type owl:NamedIndividual ,
 ###  http://www.asio.es/asioinstances/asio#CentreInternacionalDeMetodesNumericsALEnginyeria
 asioIndividuals:CentreInternacionalDeMetodesNumericsALEnginyeria rdf:type owl:NamedIndividual ,
                                                                asio:ResearchInstitute ;
+                                                      asio:hasResearchLine asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_3_MTMANAM ;
                                                       rdfs:label "Centre Internacional de Mètodes Numèrics a l'Enginyeria"@ca-es ,
                                                                  "International Centre for Numerical Methods in Engineering"@en ;
                                                       skos:altLabel "CIMNE"@ca-es ,
@@ -60,6 +64,7 @@ asioIndividuals:CentreInternacionalDeMetodesNumericsALEnginyeria rdf:type owl:Na
 ###  http://www.asio.es/asioinstances/asio#CentroDeInvestigacionYTecnologiaAgroalimentariaDeAragon
 asioIndividuals:CentroDeInvestigacionYTecnologiaAgroalimentariaDeAragon rdf:type owl:NamedIndividual ,
                                                                       asio:ResearchInstitute ;
+                                                             asio:hasResearchLine asioModules:ES_SUBJECT_AREA_LEVEL_2_CAA ;
                                                              rdfs:label "Agrifood Research and Technology Centre of Aragon"@en ,
                                                                         "Centro de Investigación y Tecnología Agroalimentaria de Aragón"@es ;
                                                              skos:altLabel "CITA"@es .
@@ -68,6 +73,7 @@ asioIndividuals:CentroDeInvestigacionYTecnologiaAgroalimentariaDeAragon rdf:type
 ###  http://www.asio.es/asioinstances/asio#CentroNacionalDeInvestigacionesCardiovasculares
 asioIndividuals:CentroNacionalDeInvestigacionesCardiovasculares rdf:type owl:NamedIndividual ,
                                                               asio:ResearchInstitute ;
+                                                     asio:hasResearchLine asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_3_BMEDPJHL ;
                                                      asio:hasSealOfQuality asioIndividuals:SeveroOchoaSealOfExcellence ;
                                                      rdfs:label "Centro Nacional de Investigaciones Cardiovasculares"@es ,
                                                                 "Spanish National Center for Cardiovascular Research"@en ;
@@ -77,6 +83,7 @@ asioIndividuals:CentroNacionalDeInvestigacionesCardiovasculares rdf:type owl:Nam
 ###  http://www.asio.es/asioinstances/asio#CentrosDeEstudiosMonetariosYFinancieros
 asioIndividuals:CentrosDeEstudiosMonetariosYFinancieros rdf:type owl:NamedIndividual ,
                                                       asio:ResearchInstitute ;
+                                             asio:hasResearchLine asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_ECO ;
                                              asio:hasSealOfQuality asioIndividuals:SealOfQualityMariaDeMaeztu ;
                                              rdfs:label "Center of Monetary and Financial Studies"@en ,
                                                         "Centros de Estudios Monetarios y Financieros"@es ;
@@ -94,6 +101,7 @@ asioIndividuals:DanielGayoAvello rdf:type owl:NamedIndividual ;
 ###  http://www.asio.es/asioinstances/asio#DepartamentDeTecnologiesDeLaInformacioILesComunicacions
 asioIndividuals:DepartamentDeTecnologiesDeLaInformacioILesComunicacions rdf:type owl:NamedIndividual ,
                                                                       asio:ResearchInstitute ;
+                                                             asio:hasResearchLine asioModules:ES_SUBJECT_AREA_LEVEL_2_TIC ;
                                                              asio:hasSealOfQuality asioIndividuals:SealOfQualityMariaDeMaeztu ;
                                                              rdfs:label "Departament de Tecnologies de la Informació i les Comunicacions"@ca-es ,
                                                                         "Departamento de Tecnologías de la Información y las Comunicaciones"@es ,
@@ -160,6 +168,7 @@ asioIndividuals:HernanSagasteguiChigne rdf:type owl:NamedIndividual ;
 ###  http://www.asio.es/asioinstances/asio#IMIDA
 asioIndividuals:IMIDA rdf:type owl:NamedIndividual ,
                     asio:ResearchInstitute ;
+           asio:hasResearchLine asioModules:ES_SUBJECT_AREA_LEVEL_2_CAA ;
            rdfs:label "Instituto Murciano de Investigación y Desarrollo Agrario y Alimenticio"@es ,
                       "Murcian Institute for Agrifood Research and Development"@en ;
            skos:altLabel "IMIDA"@es .
@@ -168,6 +177,7 @@ asioIndividuals:IMIDA rdf:type owl:NamedIndividual ,
 ###  http://www.asio.es/asioinstances/asio#IUIE
 asioIndividuals:IUIE rdf:type owl:NamedIndividual ,
                    asio:ResearchInstitute ;
+          asio:hasResearchLine asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_CVS ;
           rdfs:label "Instituto Universitario de Investigación en Envejecimiento"@es ,
                      "University Institute for Aging Research"@en ;
           skos:altLabel "IUIE"@es .
@@ -176,6 +186,7 @@ asioIndividuals:IUIE rdf:type owl:NamedIndividual ,
 ###  http://www.asio.es/asioinstances/asio#InstitutoDeAstrofisicaDeAndalucia
 asioIndividuals:InstitutoDeAstrofisicaDeAndalucia rdf:type owl:NamedIndividual ,
                                                 asio:ResearchInstitute ;
+                                       asio:hasResearchLine asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_3_CTASTR ;
                                        asio:hasSealOfQuality asioIndividuals:SeveroOchoaSealOfExcellence ;
                                        rdfs:label "Andalucia's Institute for Astrophysics"@en ,
                                                   "Instituto de Astrofísica de Andalucía"@es ;
@@ -186,6 +197,7 @@ asioIndividuals:InstitutoDeAstrofisicaDeAndalucia rdf:type owl:NamedIndividual ,
 ###  http://www.asio.es/asioinstances/asio#InstitutoDeAstrofisicaDeCanarias
 asioIndividuals:InstitutoDeAstrofisicaDeCanarias rdf:type owl:NamedIndividual ,
                                                asio:ResearchInstitute ;
+                                      asio:hasResearchLine asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_3_CTASTR ;
                                       asio:hasSealOfQuality asioIndividuals:SeveroOchoaSealOfExcellence ;
                                       rdfs:label "Canarian Astrophysical Institute"@en ,
                                                  "Instituto de Astrofísica de Canarias"@es ;
@@ -196,6 +208,7 @@ asioIndividuals:InstitutoDeAstrofisicaDeCanarias rdf:type owl:NamedIndividual ,
 ###  http://www.asio.es/asioinstances/asio#InstitutoDeFisicaTeorica
 asioIndividuals:InstitutoDeFisicaTeorica rdf:type owl:NamedIndividual ,
                                        asio:ResearchInstitute ;
+                              asio:hasResearchLine asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_3_CTFIST ;
                               asio:hasSealOfQuality asioIndividuals:SeveroOchoaSealOfExcellence ;
                               rdfs:label "Institute for Theoretical Physics"@en ,
                                          "Instituto de Física Teorica"@es ;
@@ -206,6 +219,7 @@ asioIndividuals:InstitutoDeFisicaTeorica rdf:type owl:NamedIndividual ,
 ###  http://www.asio.es/asioinstances/asio#InstitutoDeNeurocienciasDeAlicante
 asioIndividuals:InstitutoDeNeurocienciasDeAlicante rdf:type owl:NamedIndividual ,
                                                  asio:ResearchInstitute ;
+                                        asio:hasResearchLine asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_3_BMEDRCYB ;
                                         asio:hasSealOfQuality asioIndividuals:SeveroOchoaSealOfExcellence ;
                                         rdfs:label "Alacant's Institute of Neurosciences"@en ,
                                                    "Institut de Neurociències d'Alacant"@ca-es ,
@@ -216,6 +230,7 @@ asioIndividuals:InstitutoDeNeurocienciasDeAlicante rdf:type owl:NamedIndividual 
 ###  http://www.asio.es/asioinstances/asio#InstitutoDeProductosLacteosDeAsturias
 asioIndividuals:InstitutoDeProductosLacteosDeAsturias rdf:type owl:NamedIndividual ,
                                                     asio:ResearchInstitute ;
+                                           asio:hasResearchLine asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_TA ; 
                                            asio:hasPatent asioIndividuals:ES2270650 ,
                                                           asioIndividuals:ES2276597 ,
                                                           asioIndividuals:ES2326349B1 ;
@@ -228,6 +243,7 @@ asioIndividuals:InstitutoDeProductosLacteosDeAsturias rdf:type owl:NamedIndividu
 ###  http://www.asio.es/asioinstances/asio#InstitutoGallegoDeFisicaDeAltasEnergias
 asioIndividuals:InstitutoGallegoDeFisicaDeAltasEnergias rdf:type owl:NamedIndividual ,
                                                       asio:ResearchInstitute ;
+                                             asio:hasResearchLine asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_3_CTFISP ;
                                              asio:hasSealOfQuality asioIndividuals:SealOfQualityMariaDeMaeztu ;
                                              rdfs:label "Galician Institute of High Energies"@en ,
                                                         "Instituto Galego de Física de Altas Enerxías"@gl ,
@@ -239,6 +255,7 @@ asioIndividuals:InstitutoGallegoDeFisicaDeAltasEnergias rdf:type owl:NamedIndivi
 ###  http://www.asio.es/asioinstances/asio#InstitutoMurcianoDeInvestigacionBiosanitaria
 asioIndividuals:InstitutoMurcianoDeInvestigacionBiosanitaria rdf:type owl:NamedIndividual ,
                                                            asio:ResearchInstitute ;
+                                                  asio:hasResearchLine asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_BMED ;         
                                                   rdfs:label "Instituto Murciano de Investigación Biosanitaria"@es ;
                                                   skos:altLabel "IMIB"@es .
 
@@ -303,6 +320,7 @@ asioIndividuals:MasterUniversitarioEnIngenieriaWeb rdf:type owl:NamedIndividual 
 ###  http://www.asio.es/asioinstances/asio#MinimalIntelligenceLab
 asioIndividuals:MinimalIntelligenceLab rdf:type owl:NamedIndividual ,
                                      asio:ResearchInstitute ;
+                            asio:hasResearchLine asioModules:ES_SUBJECT_AREA_LEVEL_3_CODE_FIL ;         
                             foaf:member asioIndividuals:PacoCalvo ;
                             rdfs:label "Laboratorio de Inteligencia Mínima"@es ,
                                        "Minimal Intelligence Lab"@en ;
