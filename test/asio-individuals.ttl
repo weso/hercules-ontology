@@ -64,7 +64,7 @@ asioIndividuals:CentreInternacionalDeMetodesNumericsALEnginyeria rdf:type owl:Na
 ###  http://www.asio.es/asioinstances/asio#CentroDeInvestigacionYTecnologiaAgroalimentariaDeAragon
 asioIndividuals:CentroDeInvestigacionYTecnologiaAgroalimentariaDeAragon rdf:type owl:NamedIndividual ,
                                                                       asio:ResearchInstitute ;
-                                                             asio:hasResearchLine asioModules:ES_SUBJECT_AREA_LEVEL_2_CAA ;
+                                                             asio:hasResearchLine asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_TA ;
                                                              rdfs:label "Agrifood Research and Technology Centre of Aragon"@en ,
                                                                         "Centro de Investigación y Tecnología Agroalimentaria de Aragón"@es ;
                                                              skos:altLabel "CITA"@es .
@@ -101,7 +101,7 @@ asioIndividuals:DanielGayoAvello rdf:type owl:NamedIndividual ;
 ###  http://www.asio.es/asioinstances/asio#DepartamentDeTecnologiesDeLaInformacioILesComunicacions
 asioIndividuals:DepartamentDeTecnologiesDeLaInformacioILesComunicacions rdf:type owl:NamedIndividual ,
                                                                       asio:ResearchInstitute ;
-                                                             asio:hasResearchLine asioModules:ES_SUBJECT_AREA_LEVEL_2_TIC ;
+                                                             asio:hasResearchLine asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_COM ;
                                                              asio:hasSealOfQuality asioIndividuals:SealOfQualityMariaDeMaeztu ;
                                                              rdfs:label "Departament de Tecnologies de la Informació i les Comunicacions"@ca-es ,
                                                                         "Departamento de Tecnologías de la Información y las Comunicaciones"@es ,
@@ -168,7 +168,7 @@ asioIndividuals:HernanSagasteguiChigne rdf:type owl:NamedIndividual ;
 ###  http://www.asio.es/asioinstances/asio#IMIDA
 asioIndividuals:IMIDA rdf:type owl:NamedIndividual ,
                     asio:ResearchInstitute ;
-           asio:hasResearchLine asioModules:ES_SUBJECT_AREA_LEVEL_2_CAA ;
+           asio:hasResearchLine asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_TA ;
            rdfs:label "Instituto Murciano de Investigación y Desarrollo Agrario y Alimenticio"@es ,
                       "Murcian Institute for Agrifood Research and Development"@en ;
            skos:altLabel "IMIDA"@es .
@@ -230,7 +230,7 @@ asioIndividuals:InstitutoDeNeurocienciasDeAlicante rdf:type owl:NamedIndividual 
 ###  http://www.asio.es/asioinstances/asio#InstitutoDeProductosLacteosDeAsturias
 asioIndividuals:InstitutoDeProductosLacteosDeAsturias rdf:type owl:NamedIndividual ,
                                                     asio:ResearchInstitute ;
-                                           asio:hasResearchLine asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_TA ; 
+                                           asio:hasResearchLine asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_TA ;
                                            asio:hasPatent asioIndividuals:ES2270650 ,
                                                           asioIndividuals:ES2276597 ,
                                                           asioIndividuals:ES2326349B1 ;
@@ -255,7 +255,7 @@ asioIndividuals:InstitutoGallegoDeFisicaDeAltasEnergias rdf:type owl:NamedIndivi
 ###  http://www.asio.es/asioinstances/asio#InstitutoMurcianoDeInvestigacionBiosanitaria
 asioIndividuals:InstitutoMurcianoDeInvestigacionBiosanitaria rdf:type owl:NamedIndividual ,
                                                            asio:ResearchInstitute ;
-                                                  asio:hasResearchLine asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_BMED ;         
+                                                  asio:hasResearchLine asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_BMED ;
                                                   rdfs:label "Instituto Murciano de Investigación Biosanitaria"@es ;
                                                   skos:altLabel "IMIB"@es .
 
@@ -320,7 +320,7 @@ asioIndividuals:MasterUniversitarioEnIngenieriaWeb rdf:type owl:NamedIndividual 
 ###  http://www.asio.es/asioinstances/asio#MinimalIntelligenceLab
 asioIndividuals:MinimalIntelligenceLab rdf:type owl:NamedIndividual ,
                                      asio:ResearchInstitute ;
-                            asio:hasResearchLine asioModules:ES_SUBJECT_AREA_LEVEL_2_MLP ;         
+                            asio:hasResearchLine asioModules:ES_SUBJECT_AREA_LEVEL_2_MLP ;
                             foaf:member asioIndividuals:PacoCalvo ;
                             rdfs:label "Laboratorio de Inteligencia Mínima"@es ,
                                        "Minimal Intelligence Lab"@en ;
