@@ -1,0 +1,15 @@
+PREFIX wb: <http://hercules-demo.wiki.opencura.com/entity/>
+PREFIX wbt: <http://hercules-demo.wiki.opencura.com/prop/direct/>
+
+SELECT ?patentLabel ?patentDescription WHERE {
+  ?centre wbt:P1 wb:Q2 ; # get entities of type ResearchInstitute
+          wbt:P6 ?patent ; # with property hasPatent
+          rdfs:label ?centreLabel .
+  ?patent schema:description ?patentDescription .
+  FILTER(str(?centreLabel) = "Dairy Research Institute of Asturias" && # centre to be parameterized
+         lang(?patentDescription) = "[AUTO_LANGUAGE]")                 # get description in our default language
+  SERVICE wikibase:label {
+    bd:serviceParam wikibase:language "[AUTO_LANGUAGE],es" .
+  }
+}
+ORDER BY DESC(?patentLabel)
