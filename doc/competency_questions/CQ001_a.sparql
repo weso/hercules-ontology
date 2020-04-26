@@ -1,0 +1,14 @@
+PREFIX wb: <http://hercules-demo.wiki.opencura.com/entity/>
+PREFIX wbt: <http://hercules-demo.wiki.opencura.com/prop/direct/>
+
+SELECT ?centreLabel ?researchLineLabel WHERE {
+  ?centre wbt:P1 wb:Q2 ; # get entities of type ResearchInstitute
+          wbt:P21 ?researchLine . # with property hasResearchLine
+  ?researchLine wbt:P22 ?researchLineCode . # get code of researchLine
+  ?researchLineCode rdfs:label ?researchLineCodeLabel .
+  FILTER(?researchLineCodeLabel = "TA"@en)       # research line code to be parametrized
+  SERVICE wikibase:label {
+    bd:serviceParam wikibase:language "[AUTO_LANGUAGE],es" .
+  }
+}
+ORDER BY DESC(?centreLabel)
