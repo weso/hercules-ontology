@@ -80,6 +80,14 @@ asioIndividuals:CentroNacionalDeInvestigacionesCardiovasculares rdf:type owl:Nam
                                                                 "Spanish National Center for Cardiovascular Research"@en ;
                                                      skos:altLabel "CNIC"@es .
 
+asioIndividuals:IFTProject1 rdf:type owl:NamedIndividual ,
+                                      foaf:EuropeanProject ;
+                             asio:projectStartDate "2016-01-01"^^xsd:date ;
+                             asio:projectEndDate "2019-12-29"^^xsd:date ;
+                             asio:isFundedBy asioIndividuals:FundingProgramme1 ;
+                             rdfs:label "FPA2016-78022-P" ;
+                             rdfs:comment "Fenomenologia mas alla del modelo estandar e implicaciones cosmologicas en la era del LHC"@es .
+
 
 ###  http://www.asio.es/asioinstances/asio#CentrosDeEstudiosMonetariosYFinancieros
 asioIndividuals:CentrosDeEstudiosMonetariosYFinancieros rdf:type owl:NamedIndividual ,
@@ -137,6 +145,15 @@ asioIndividuals:EURO-INFSealOfExcellence rdf:type owl:NamedIndividual ,
                                        asio:SealOfQuality ;
                               rdfs:comment "EURO-INF Seal of Excellence"@en ;
                               rdfs:label "EURO-INF Seal of Excellence"@en .
+
+asioIndividuals:FEDER rdf:type owl:NamedIndividual ,
+                               asio:FundingOrganization ;
+                      rdfs:label "European Regional Development Fund"@en, "Fondo Europeo de Desarrollo Regional"@es ;
+                      skos:altLabel "ERDF"@en, "FEDER"@es .
+
+asioIndividuals:FundingProgramme1 rdf:type owl:NamedIndividual ,
+                                           asio:FundingProgramme ;
+                                  asio:funds asioIndividuals:IFTProject1 .
 
 ###  http://www.asio.es/asioinstances/asio#GuillermoFacundoColunga
 asioIndividuals:GuillermoFacundoColunga rdf:type owl:NamedIndividual ;
@@ -209,6 +226,7 @@ asioIndividuals:InstitutoDeAstrofisicaDeCanarias rdf:type owl:NamedIndividual ,
 ###  http://www.asio.es/asioinstances/asio#InstitutoDeFisicaTeorica
 asioIndividuals:InstitutoDeFisicaTeorica rdf:type owl:NamedIndividual ,
                                        asio:ResearchInstitute ;
+                              foaf:pastProject asioIndividuals:IFTProject1 ;
                               asio:hasResearchLine asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_3_CTFIST ;
                               asio:hasSealOfQuality asioIndividuals:SeveroOchoaSealOfExcellence ;
                               rdfs:label "Institute for Theoretical Physics"@en ,
