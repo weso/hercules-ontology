@@ -7,7 +7,7 @@ import com.google.gson.annotations.SerializedName;
  * against the tests will be thrown, the input shape map, which specifies the nodes that will be tested. And the output
  * expected shape map.
  *
- * @author Pablo Menéndez Suárez
+ * @author Pablo Menéndez
  */
 public class TestCase {
 
@@ -54,6 +54,7 @@ public class TestCase {
 		this.testShapeMapFilePath = testShapeMapFilePath;
 		this.expectedShapeMapFilePath = expectedShapeMapFilePath;
 	}
+	
 
 	/**
 	 * Gets name.
@@ -108,6 +109,16 @@ public class TestCase {
 	public String getExpectedShapeMapFilePath() {
 		return expectedShapeMapFilePath;
 	}
+	
+	
+	/**
+	 * Gets the necessary arguments for the validation as a String[]
+	 * @return validateArgs
+	 */
+	public String[] getValidateArgs() {
+		return new String[]{"-d",this.getDataFilePath(),"-s",this.getTestSchemaFilePath(),"-m",this.getTestShapeMapFilePath()};
+	}
+	
 
 	@Override
 	public String toString() {

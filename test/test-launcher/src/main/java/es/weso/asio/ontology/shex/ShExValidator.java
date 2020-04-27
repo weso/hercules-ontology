@@ -1,58 +1,58 @@
 package es.weso.asio.ontology.shex;
 
-import java.util.logging.Logger;
-
-import org.joda.time.Instant;
-import org.joda.time.Period;
-import org.joda.time.format.PeriodFormat;
+import java.io.FileWriter;
+import java.io.IOException;
 
 import cats.effect.IO;
-import es.weso.asio.ontology.Main;
+import es.weso.asio.ontology.test.TestCase;
 import es.weso.shapeMaps.ResultShapeMap;
 import es.weso.shexsjava.ArgsParser;
 import es.weso.shexsjava.Validate;
 
+/**
+ * 
+ * @author Pablo Menéndez
+ *
+ */
 public class ShExValidator {
-	
-	private boolean isVerbose = false;
-	
-	public void validate(String[] args) {
-		
-		Logger log = Logger.getLogger(Main.class.getName());
-		Instant start = Instant.now();
-		
-		ArgsParser options = new ArgsParser(args);
 
-		isVerbose = options.verbose;
+	/**
+	 * Receives an array with the necessary arguments and performs the validation
+	 * 
+	 * @param arguments needed for the validation: - String dataFormat - String
+	 *                  dataFile - String schemaFormat - String schemaFile - String
+	 *                  shapeMapFormat - String shapeMapFile
+	 * 
+	 */
+	public void validate(TestCase t) {
+
+		ArgsParser options = new ArgsParser(t.getValidateArgs());
 		Validate validator = new Validate();
-
-		verbose("Data: " + options.data + ". Schema: " + options.schema + ". ShapeMap: " + options.shapeMap);
 
 		IO<ResultShapeMap> validate = validator.validate(options.data, options.dataFormat, options.schema,
 				options.schemaFormat, options.shapeMap, options.shapeMapFormat);
 
 		try {
+			
 			ResultShapeMap result = validate.unsafeRunSync();
 			System.out.println(result.toJson().spaces2());
-		} catch (Exception e) {
+			writeResult(t,result.toJson().spaces2());
+
+		}catch (IOException e) {
+			System.out.println("Error when trying to write the result file");
+			System.out.println("Exception: " + e.getMessage());
+		}catch (Exception e) {
 			System.out.println("Exception: " + e.getMessage());
 		}
-		Instant end = Instant.now();
-		if (options.printTime)
-			printTime(start, end);
-	}
-	
-	
-	
-	private void verbose(String msg) {
-		if (isVerbose) {
-			System.out.println(msg);
-		}
+
 	}
 
-	private void printTime(Instant start, Instant end) {
-		Period timeElapsed = new Period(start, end);
-		System.out.println("Time elapsed " + PeriodFormat.getDefault().print(timeElapsed));
+	private void writeResult(TestCase t, String result) throws IOException {
+		
+		FileWriter file = new FileWriter(t.getExpectedShapeMapFilePath());
+		file.write(result);
+		file.close();
+		
 	}
-	
+
 }
