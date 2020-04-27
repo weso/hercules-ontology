@@ -24,9 +24,17 @@ public class RDFUtils {
 	 * @return
 	 */
 	public static String merge(String ontologyPath, String dataPath) {
-		RDFAsRDF4jModel finalModel = RDFAsRDF4jModel.fromChars(getData(ontologyPath), "TURTLE", null).unsafeRunSync();
-		finalModel.merge(RDFAsRDF4jModel.fromChars(getData(dataPath), "TURTLE", null).unsafeRunSync());
-		System.out.println(finalModel);
+		System.out.println("ontologyPath:" + ontologyPath);
+		System.out.println(getData(ontologyPath));
+
+		System.out.println("------------------------");
+		System.out.println("dataPath: " + dataPath);
+		System.out.println(getData(dataPath));
+
+//		RDFAsRDF4jModel finalModel = RDFAsRDF4jModel.fromChars(getData(ontologyPath), "TURTLE", null).unsafeRunSync();
+//		finalModel.merge(RDFAsRDF4jModel.fromChars(getData(dataPath), "TURTLE", null).unsafeRunSync());
+//		System.out.println(finalModel);
+
 
 		// Throws a nullpointer...
 
