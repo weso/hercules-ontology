@@ -1,0 +1,18 @@
+PREFIX wb: <http://hercules-demo.wiki.opencura.com/entity/>
+PREFIX wbt: <http://hercules-demo.wiki.opencura.com/prop/direct/>
+
+SELECT ?memberLabel WHERE {
+  ?org wbt:P21 ?researchLine ;                    # get entities with property hasResearchLine
+       wbt:P1 ?orgType ;
+       rdfs:label ?orgLabel .
+  ?researchLine wbt:P22 ?researchLineCode .       # get code of researchLine
+  ?researchLineCode rdfs:label ?researchLineCodeLabel .
+  FILTER(?orgType IN (wb:Q68, wb:Q2) &&           # organization is either research group or research institute
+         ?orgLabel = "Web Semantics Oviedo"@en && # name of organization to be parameterized
+         ?researchLineCodeLabel = "INF"@en)       # research line code to be parameterized 
+  ?org wbt:P13 ?member .  # get all members
+  SERVICE wikibase:label {
+    bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en,es" .
+  }
+}
+ORDER BY ASC(?memberLabel)
