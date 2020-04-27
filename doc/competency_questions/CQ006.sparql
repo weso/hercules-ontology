@@ -1,0 +1,28 @@
+PREFIX wb: <http://hercules-demo.wiki.opencura.com/entity/>
+PREFIX wbt: <http://hercules-demo.wiki.opencura.com/prop/direct/>
+
+SELECT DISTINCT ?memberLabel ?publicationLabel ?propLabel ?oLabel WHERE {
+  ?org wbt:P21 ?researchLine ;                                                        # get entities with property hasResearchLine
+       wbt:P1 ?orgType ;
+       rdfs:label ?orgLabel .
+  ?researchLine wbt:P22 ?researchLineCode .                                           # get code of researchLine
+  ?researchLineCode rdfs:label ?researchLineCodeLabel .
+  FILTER(?orgType IN (wb:Q68, wb:Q2) &&                                               # organization is either research group or research institute
+         ?orgLabel = "Web Semantics Oviedo"@en &&                                     # name of organization to be parameterized
+         ?researchLineCodeLabel = "INF"@en)                                           # research line code to be parameterized 
+
+  ?org wbt:P13 ?member .                                                              # get all members
+  ?member wbt:P11 ?publication ;                                                      # publications of members
+          wbt:P17 ?memberRole .                                                       # role of members
+  ?publication  wbt:P14 ?publicationDate ;                                            # get publication date
+                ?p ?o .                                                               # extract all predicates about the publication
+  ?prop wikibase:directClaim ?p .
+  FILTER(?memberRole IN (wb:Q44, wb:Q99, wb:Q100) &&                                  # filter members by role (in this case Researcher, Undergraduate Student or PhD student)
+         xsd:dateTime(?publicationDate) > xsd:dateTime("2014-05-23T00:00:00Z") &&
+         xsd:dateTime(?publicationDate) < xsd:dateTime("2020-01-01T00:00:00Z"))       # in the given time range (in this case from 2014 to 2020)
+
+  SERVICE wikibase:label {
+    bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en,es" .
+  }
+}
+ORDER BY ?memberLabel ?publicationLabel ?propLabel
