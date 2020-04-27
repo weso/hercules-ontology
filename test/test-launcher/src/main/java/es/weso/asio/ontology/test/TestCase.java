@@ -1,15 +1,8 @@
 package es.weso.asio.ontology.test;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.util.Scanner;
-
 import com.google.gson.annotations.SerializedName;
 
-import cats.effect.IO;
 import es.weso.asio.ontology.util.RDFUtils;
-import es.weso.rdf.RDFBuilder;
-import es.weso.rdf.rdf4j.RDFAsRDF4jModel;
 
 /**
  * This models a test case, which is composed of a name, the ontology that is being tested, the data to test, the schema

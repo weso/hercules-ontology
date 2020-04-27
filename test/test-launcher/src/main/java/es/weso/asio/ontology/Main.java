@@ -1,6 +1,5 @@
 package es.weso.asio.ontology;
 
-import java.io.FileNotFoundException;
 import java.io.IOException;
 
 import es.weso.asio.ontology.test.TestCase;

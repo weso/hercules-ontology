@@ -4,13 +4,20 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-import cats.effect.IO;
-import es.weso.rdf.RDFBuilder;
 import es.weso.rdf.rdf4j.RDFAsRDF4jModel;
 
+/**
+ * The RDFUtils defines a static class offering the merge method that allows to
+ * merge two different models in turtle into a single one. It also contains a
+ * private method called getData that extracts the content of a file.
+ * 
+ * @author Pablo Menéndez
+ *
+ */
 public class RDFUtils {
 
 	/**
+	 * INCOMPLETE
 	 * 
 	 * @param ontologyPath
 	 * @param dataPath
@@ -20,12 +27,18 @@ public class RDFUtils {
 		RDFAsRDF4jModel finalModel = RDFAsRDF4jModel.fromChars(getData(ontologyPath), "TURTLE", null).unsafeRunSync();
 		finalModel.merge(RDFAsRDF4jModel.fromChars(getData(dataPath), "TURTLE", null).unsafeRunSync());
 		System.out.println(finalModel);
+
+		// Throws a nullpointer...
+
+		// INCOMPLETE
 		return "";
 	}
 
 	/**
-	 * Gets the content data from a file. 
-	 * @param path of the file
+	 * Gets the content from a file. Receives a String that indicates the path of
+	 * the file.
+	 * 
+	 * @param path of the file as a String
 	 * @return Data as a String
 	 */
 	private static String getData(String path) {
@@ -38,7 +51,7 @@ public class RDFUtils {
 			}
 			myReader.close();
 		} catch (FileNotFoundException e) {
-			System.out.println("An error occurred.");
+			System.out.println("File not found at " + path);
 			e.printStackTrace();
 		}
 		return data;
