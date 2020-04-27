@@ -1,6 +1,15 @@
 package es.weso.asio.ontology.test;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
 import com.google.gson.annotations.SerializedName;
+
+import cats.effect.IO;
+import es.weso.asio.ontology.util.RDFUtils;
+import es.weso.rdf.RDFBuilder;
+import es.weso.rdf.rdf4j.RDFAsRDF4jModel;
 
 /**
  * This models a test case, which is composed of a name, the ontology that is being tested, the data to test, the schema
@@ -116,9 +125,8 @@ public class TestCase {
 	 * @return validateArgs
 	 */
 	public String[] getValidateArgs() {
-		return new String[]{"-d",this.getDataFilePath(),"-s",this.getTestSchemaFilePath(),"-m",this.getTestShapeMapFilePath()};
+		return new String[]{"-d",RDFUtils.merge(getOntologyFilePath(), getDataFilePath()),"-s",getTestSchemaFilePath(),"-m",getTestShapeMapFilePath()};
 	}
-	
 
 	@Override
 	public String toString() {
