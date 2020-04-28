@@ -32,6 +32,25 @@ asioIndividuals:BasqueCentreForClimateChange rdf:type owl:NamedIndividual ,
                                   skos:altLabel "BC3"@en ,
                                                 "BC3"@eu .
 
+###  http://www.asio.es/asioinstances/asio#CHANCE
+asioIndividuals:CHANCE rdf:type owl:NamedIndividual ,
+                            asio:Project ;
+                      asio:projectStartDate  “2019-01-13”^^xsd:date ;
+                      asio:projectEndDate  “2022-12-12”^^xsd:date ;
+                      asio:isFundedBy asioIndividuals:Horizon2020 ;      
+                      rdfs:comment "Climate cHange mitigAtioN poliCies and Equality: distributional implications for different socio-economic groups"@en ;      
+                      rdfs:label "CHANCE"@en ,
+                                 "CHANCE"@es  .     
+
+###  http://www.asio.es/asioinstances/asio#ALICE
+asioIndividuals:ALICE rdf:type owl:NamedIndividual ,
+                            asio:Project ;
+                      asio:projectStartDate  “2017-01-01”^^xsd:date ;
+                      asio:projectEndDate  “2020-12-31”^^xsd:date ;   
+                      asio:isFundedBy asioIndividuals:Horizon2020 ;
+                      rdfs:comment "AcceLerate Innovation in urban wastewater management for Climate changE"@en ;      
+                      rdfs:label "ALICE"@en ,
+                                 "ALICE"@es  . 
 
 ###  http://www.asio.es/asioinstances/asio#CentreDeRecercaMatematica
 asioIndividuals:CentreDeRecercaMatematica rdf:type owl:NamedIndividual ,
@@ -40,6 +59,13 @@ asioIndividuals:CentreDeRecercaMatematica rdf:type owl:NamedIndividual ,
                                rdfs:label "Centre de recerca matemàtica"@ca-es ,
                                           "Centre for Research in Mathematics"@en .
 
+###  http://www.asio.es/asioinstances/asio#IndustrialApplicationsOfMovingBoundaryProblems
+asioIndividuals:IndustrialApplicationsOfMovingBoundaryProblems rdf:type owl:NamedIndividual ,
+                            asio:Project ;
+                      asio:projectStartDate  “2010-04-01”^^xsd:date ;
+                      asio:projectEndDate  “2014-03-30”^^xsd:date ;      
+                      rdfs:comment "PIRG06-GA-2009-256417 Industrial Applications of Moving Boundary Problems"@en ;      
+                      rdfs:label "Industrial Applications Of Moving Boundary Problems"@en . 
 
 ###  http://www.asio.es/asioinstances/asio#CentreDeRegulacioGenomica
 asioIndividuals:CentreDeRegulacioGenomica rdf:type owl:NamedIndividual ,
@@ -51,6 +77,38 @@ asioIndividuals:CentreDeRegulacioGenomica rdf:type owl:NamedIndividual ,
                                           "Centro de Regulación Genómica"@es ;
                                skos:altLabel "CRG"@ca-es .
 
+###  http://www.asio.es/asioinstances/asio#EASIGenomics
+asioIndividuals:EASIGenomics rdf:type owl:NamedIndividual ,
+                            asio:Project ;
+                      asio:projectStartDate  “2019-02-01”^^xsd:date ;
+                      asio:projectEndDate  “2023-01-31”^^xsd:date ; 
+                      asio:isFundedBy asioIndividuals:Horizon2020 ;     
+                      rdfs:comment "EASI-Genomics provides easy and seamless access to cutting-edge DNA sequencing technologies to researchers from academia and industry​​​​​​​"@en ;      
+                      rdfs:label "EASI-Genomics"@en ,
+                                 "EASI-Genomics"@es .
+
+###  http://www.asio.es/asioinstances/asio#ChromDesign
+asioIndividuals:ChromDesign rdf:type owl:NamedIndividual ,
+                            asio:Project ;
+                      asio:projectStartDate  “2018-09-01”^^xsd:date ;
+                      asio:projectEndDate  “2022-08-31”^^xsd:date ; 
+                      asio:isFundedBy asioIndividuals:Horizon2020 ;     
+                      rdfs:comment "ChromDesign is an innovative and interdisciplinary network of 10 European academic and private institutions. Our aim is to characterise how 3D chromatin organisation affects gene regulation during cellular differentiation and in several human disorders.​​​​​​​"@en ;      
+                      rdfs:label "ChromDesign"@en ,
+                                 "ChromDesign"@es .
+
+###  http://www.asio.es/asioinstances/asio#Horizon2020
+asioIndividuals:Horizon2020 rdf:type owl:NamedIndividual ,
+                                asio:FundingProgramme ;
+                            asio:funds asioIndividuals:ChromDesign ,
+                                       asioIndividuals:EASIGenomics ,
+                                       asioIndividuals:ALICE ,
+                                       asioIndividuals:CHANCE ,
+                                       asioIndividuals:EdgeTwinsHPC ,
+                                       asioIndividuals:BATModel ;
+                            rdfs:comment "Horizon 2020 is the biggest EU Research and Innovation programme ever with nearly €80 billion of funding available over 7 years (2014 to 2020) – in addition to the private investment that this money will attract. It promises more breakthroughs, discoveries and world-firsts by taking great ideas from the lab to the market."@en ;
+                            rdfs:label "Horizon 2020"@en ,
+                                       "Horizon 2020"@es .
 
 ###  http://www.asio.es/asioinstances/asio#CentreInternacionalDeMetodesNumericsALEnginyeria
 asioIndividuals:CentreInternacionalDeMetodesNumericsALEnginyeria rdf:type owl:NamedIndividual ,
@@ -61,6 +119,33 @@ asioIndividuals:CentreInternacionalDeMetodesNumericsALEnginyeria rdf:type owl:Na
                                                       skos:altLabel "CIMNE"@ca-es ,
                                                                     "CIMNE"@en .
 
+###  http://www.asio.es/asioinstances/asio#EdgeTwinsHPC
+asioIndividuals:EdgeTwinsHPC rdf:type owl:NamedIndividual ,
+                            asio:Project ;
+                      asio:projectStartDate  “2020-06-01”^^xsd:date ;
+                      asio:projectEndDate  “2021-11-30”^^xsd:date ; 
+                      asio:isFundedBy asioIndividuals:Horizon2020 ;     
+                      rdfs:comment "Bringing Digital Twins to the Edge for mass Industry 4.0 applications​​​​​​​"@en ;      
+                      rdfs:label "EdgeTwins HPC"@en ,
+                                 "EdgeTwins HPC"@es .
+
+###  http://www.asio.es/asioinstances/asio#NICESHIP
+asioIndividuals:NICESHIP rdf:type owl:NamedIndividual ,
+                            asio:Project ;
+                      asio:projectStartDate  “2016-09-30”^^xsd:date ;
+                      asio:projectEndDate  “2019-10-01”^^xsd:date ; 
+                      asio:isFundedBy asioIndividuals:NICOP ;     
+                      rdfs:comment "Bringing Digital Twins to the Edge for mass Industry 4.0 applications​​​​​​​"@en ;      
+                      rdfs:label "EdgeTwins HPC"@en ,
+                                 "EdgeTwins HPC"@es .
+
+###  http://www.asio.es/asioinstances/asio#NICOP
+asioIndividuals:NICOP rdf:type owl:NamedIndividual ,
+                                asio:FundingProgramme ;
+                            asio:funds asioIndividuals:NICESHIP ;
+                            rdfs:comment "DOD – Office of Naval Research (ONR): Naval International Cooperative Opportunities (NICOP) in Science and Technology Program"@en ;
+                            rdfs:label "NICOP"@en ,
+                                       "NICOP"@es .
 
 ###  http://www.asio.es/asioinstances/asio#CentroDeInvestigacionYTecnologiaAgroalimentariaDeAragon
 asioIndividuals:CentroDeInvestigacionYTecnologiaAgroalimentariaDeAragon rdf:type owl:NamedIndividual ,
@@ -70,6 +155,15 @@ asioIndividuals:CentroDeInvestigacionYTecnologiaAgroalimentariaDeAragon rdf:type
                                                                         "Centro de Investigación y Tecnología Agroalimentaria de Aragón"@es ;
                                                              skos:altLabel "CITA"@es .
 
+###  http://www.asio.es/asioinstances/asio#BATModel
+asioIndividuals:BATModel rdf:type owl:NamedIndividual ,
+                            asio:Project ;
+                      asio:projectStartDate  “2020-09-01”^^xsd:date ;
+                      asio:projectEndDate  “2024-09-01”^^xsd:date ; 
+                      asio:isFundedBy asioIndividuals:Horizon2020 ;     
+                      rdfs:comment "Better Agri-food trade modelling for policy analysis​​​​​​​"@en ;      
+                      rdfs:label "BATModel"@en ,
+                                 "BATModel"@es .
 
 ###  http://www.asio.es/asioinstances/asio#CentroNacionalDeInvestigacionesCardiovasculares
 asioIndividuals:CentroNacionalDeInvestigacionesCardiovasculares rdf:type owl:NamedIndividual ,
@@ -80,6 +174,19 @@ asioIndividuals:CentroNacionalDeInvestigacionesCardiovasculares rdf:type owl:Nam
                                                                 "Spanish National Center for Cardiovascular Research"@en ;
                                                      skos:altLabel "CNIC"@es .
 
+###  http://www.asio.es/asioinstances/asio#Polypill
+asioIndividuals:Polypill rdf:type owl:NamedIndividual ,
+                            asio:Project ;
+                      rdfs:comment "FOCUS will help to determine the role that the polypill can play in cardiovascular disease prevention and will enable recommendations to be established for the better use of medication in patients with ischemic heart disease."@en ;      
+                      rdfs:label "Polypill/FOCUS"@en ,
+                                 "Polypill/FOCUS"@es .
+
+###  http://www.asio.es/asioinstances/asio#IMJOVEN
+asioIndividuals:IMJOVEN rdf:type owl:NamedIndividual ,
+                            asio:Project ;
+                      rdfs:comment "The IMJOVEN study is the Spanish counterpart of the VIRGO study, an NIH-sponsored investigation led by Harlan Krumholz of Yale University into the excess risk in young women with AMI."@en ;      
+                      rdfs:label "IMJOVEN"@en ,
+                                 "IMJOVEN"@es .
 
 ###  http://www.asio.es/asioinstances/asio#CentrosDeEstudiosMonetariosYFinancieros
 asioIndividuals:CentrosDeEstudiosMonetariosYFinancieros rdf:type owl:NamedIndividual ,
@@ -89,6 +196,23 @@ asioIndividuals:CentrosDeEstudiosMonetariosYFinancieros rdf:type owl:NamedIndivi
                                              rdfs:label "Center of Monetary and Financial Studies"@en ,
                                                         "Centros de Estudios Monetarios y Financieros"@es ;
                                              skos:altLabel "CEMFI"@es .
+
+###  http://www.asio.es/asioinstances/asio#SHARELeap
+asioIndividuals:SHARELeap rdf:type owl:NamedIndividual ,
+                            asio:Project ;
+                      asio:projectStartDate 2009 ;
+                      asio:projectEndDate 2010 ;
+                      rdfs:comment "SHARE_LEAP – Longitudinal Enhancement and Access Improvement of the SHARE Infrastructure."@en ;      
+                      rdfs:label "SHARE Leap"@en ,
+                                 "SHARE Leap"@es .
+
+###  http://www.asio.es/asioinstances/asio#CorporateFinanceAndBanking
+asioIndividuals:CorporateFinanceAndBanking rdf:type owl:NamedIndividual ,
+                            asio:Project ;
+                      asio:projectStartDate 2009 ;
+                      asio:projectEndDate 2011 ;      
+                      rdfs:comment "Corporate finance and banking under information and incentive problems. (Ministerio de Ciencia e Innovación, 2009-2011)"@en ;      
+                      rdfs:label "Corporate finance and banking under information and incentive problems. (Ministerio de Ciencia e Innovación, 2009-2011)"@en .                                
 
 ###  http://www.asio.es/asioinstances/asio#DanielGayoAvello
 asioIndividuals:DanielGayoAvello rdf:type owl:NamedIndividual ;
