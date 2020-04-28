@@ -1,6 +1,5 @@
 package es.weso.asio.ontology.validate;
 
-import com.google.gson.annotations.SerializedName;
 import es.weso.shapeMaps.ResultShapeMap;
 import es.weso.shapeMaps.ShapeMap;
 

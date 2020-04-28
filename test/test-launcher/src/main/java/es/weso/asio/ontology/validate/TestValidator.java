@@ -5,7 +5,6 @@ import java.io.IOException;
 
 import cats.effect.IO;
 import es.weso.asio.ontology.test.TestCase;
-import es.weso.shapeMaps.ResultShapeMap;
 import es.weso.shexsjava.Validate;
 
 /**
@@ -42,37 +41,16 @@ public class TestValidator {
 	public void validate(TestCase t) throws IOException {
 
 		// System.out.println(t);
-		IO<ResultValidation> validate = validator.validate(
-				t.getOntologyFilePath(),
-				t.getDataFilePath(),
-				t.getTestSchemaFilePath(),
-				t.getTestShapeMapFilePath(),
-				t.getExpectedShapeMapFilePath()
-		);
+		IO<ResultValidation> validate = validator.validate(t.getOntologyFilePath(), t.getDataFilePath(),
+				t.getTestSchemaFilePath(), t.getTestShapeMapFilePath(), t.getExpectedShapeMapFilePath());
 		try {
-			ResultValidation result= validate.unsafeRunSync();
+			ResultValidation result = validate.unsafeRunSync();
 			System.out.println("ResultShapeMap: " + result.getResultShapeMap().toJson().spaces2());
 			System.out.println("ExpectedShapeMap: " + result.getExpectedShapeMap().toJson().spaces2());
 			// writeResult(t, result.getResultShapeMap().toJson().spaces2());
 		} catch (Exception e) {
 			System.out.println("Test case: " + t.getName() + "Error from validation: " + e.getMessage());
 		}
-
-	}
-
-	/**
-	 * Receives a concrete TestCase and the result of the validation as a String and
-	 * writes the result into the corresponding output file based on the TestCase.
-	 * 
-	 * @param Testcase
-	 * @param Validation result shapeMap
-	 * @throws IOException if writing is not successful
-	 */
-	private void writeResult(TestCase t, String resultShapeMap) throws IOException {
-
-		FileWriter file = new FileWriter(t.getExpectedShapeMapFilePath());
-		file.write(resultShapeMap);
-		file.close();
 
 	}
 
