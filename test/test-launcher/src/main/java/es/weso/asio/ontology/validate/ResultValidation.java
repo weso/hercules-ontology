@@ -4,7 +4,7 @@ import es.weso.shapeMaps.ResultShapeMap;
 import es.weso.shapeMaps.ShapeMap;
 
 /**
- * 
+ * Saves the validation result and the expected result
  * @author Jose Emilio Labra Gayo
  *
  */

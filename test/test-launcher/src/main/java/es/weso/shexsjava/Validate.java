@@ -20,7 +20,7 @@ import es.weso.utils.eitherios.EitherIOUtils;
 import scala.Option;
 
 /**
- *
+ * Redefines shexsjava library (https://github.com/weso/shexsjava)
  * @author Jose Emilio Labra Gayo
  *
  */
