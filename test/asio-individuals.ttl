@@ -35,8 +35,8 @@ asioIndividuals:BasqueCentreForClimateChange rdf:type owl:NamedIndividual ,
 ###  http://www.asio.es/asioinstances/asio#CHANCE
 asioIndividuals:CHANCE rdf:type owl:NamedIndividual ,
                             asio:Project ;
-                      asio:projectStartDate  “2019-01-13”^^xsd:date ;
-                      asio:projectEndDate  “2022-12-12”^^xsd:date ;
+                      asio:projectStartDate “2019-01-13”^^xsd:date ;
+                      asio:projectEndDate “2022-12-12”^^xsd:date ;
                       asio:isFundedBy asioIndividuals:Horizon2020 ;      
                       rdfs:comment "Climate cHange mitigAtioN poliCies and Equality: distributional implications for different socio-economic groups"@en ;      
                       rdfs:label "CHANCE"@en ,
@@ -45,8 +45,8 @@ asioIndividuals:CHANCE rdf:type owl:NamedIndividual ,
 ###  http://www.asio.es/asioinstances/asio#ALICE
 asioIndividuals:ALICE rdf:type owl:NamedIndividual ,
                             asio:Project ;
-                      asio:projectStartDate  “2017-01-01”^^xsd:date ;
-                      asio:projectEndDate  “2020-12-31”^^xsd:date ;   
+                      asio:projectStartDate “2017-01-01”^^xsd:date ;
+                      asio:projectEndDate “2020-12-31”^^xsd:date ;   
                       asio:isFundedBy asioIndividuals:Horizon2020 ;
                       rdfs:comment "AcceLerate Innovation in urban wastewater management for Climate changE"@en ;      
                       rdfs:label "ALICE"@en ,
@@ -62,8 +62,8 @@ asioIndividuals:CentreDeRecercaMatematica rdf:type owl:NamedIndividual ,
 ###  http://www.asio.es/asioinstances/asio#IndustrialApplicationsOfMovingBoundaryProblems
 asioIndividuals:IndustrialApplicationsOfMovingBoundaryProblems rdf:type owl:NamedIndividual ,
                             asio:Project ;
-                      asio:projectStartDate  “2010-04-01”^^xsd:date ;
-                      asio:projectEndDate  “2014-03-30”^^xsd:date ;      
+                      asio:projectStartDate “2010-04-01”^^xsd:date ;
+                      asio:projectEndDate “2014-03-30”^^xsd:date ;      
                       rdfs:comment "PIRG06-GA-2009-256417 Industrial Applications of Moving Boundary Problems"@en ;      
                       rdfs:label "Industrial Applications Of Moving Boundary Problems"@en . 
 
@@ -80,8 +80,8 @@ asioIndividuals:CentreDeRegulacioGenomica rdf:type owl:NamedIndividual ,
 ###  http://www.asio.es/asioinstances/asio#EASIGenomics
 asioIndividuals:EASIGenomics rdf:type owl:NamedIndividual ,
                             asio:Project ;
-                      asio:projectStartDate  “2019-02-01”^^xsd:date ;
-                      asio:projectEndDate  “2023-01-31”^^xsd:date ; 
+                      asio:projectStartDate “2019-02-01”^^xsd:date ;
+                      asio:projectEndDate “2023-01-31”^^xsd:date ; 
                       asio:isFundedBy asioIndividuals:Horizon2020 ;     
                       rdfs:comment "EASI-Genomics provides easy and seamless access to cutting-edge DNA sequencing technologies to researchers from academia and industry​​​​​​​"@en ;      
                       rdfs:label "EASI-Genomics"@en ,
@@ -90,8 +90,8 @@ asioIndividuals:EASIGenomics rdf:type owl:NamedIndividual ,
 ###  http://www.asio.es/asioinstances/asio#ChromDesign
 asioIndividuals:ChromDesign rdf:type owl:NamedIndividual ,
                             asio:Project ;
-                      asio:projectStartDate  “2018-09-01”^^xsd:date ;
-                      asio:projectEndDate  “2022-08-31”^^xsd:date ; 
+                      asio:projectStartDate “2018-09-01”^^xsd:date ;
+                      asio:projectEndDate “2022-08-31”^^xsd:date ; 
                       asio:isFundedBy asioIndividuals:Horizon2020 ;     
                       rdfs:comment "ChromDesign is an innovative and interdisciplinary network of 10 European academic and private institutions. Our aim is to characterise how 3D chromatin organisation affects gene regulation during cellular differentiation and in several human disorders.​​​​​​​"@en ;      
                       rdfs:label "ChromDesign"@en ,
@@ -122,8 +122,8 @@ asioIndividuals:CentreInternacionalDeMetodesNumericsALEnginyeria rdf:type owl:Na
 ###  http://www.asio.es/asioinstances/asio#EdgeTwinsHPC
 asioIndividuals:EdgeTwinsHPC rdf:type owl:NamedIndividual ,
                             asio:Project ;
-                      asio:projectStartDate  “2020-06-01”^^xsd:date ;
-                      asio:projectEndDate  “2021-11-30”^^xsd:date ; 
+                      asio:projectStartDate “2020-06-01”^^xsd:date ;
+                      asio:projectEndDate “2021-11-30”^^xsd:date ; 
                       asio:isFundedBy asioIndividuals:Horizon2020 ;     
                       rdfs:comment "Bringing Digital Twins to the Edge for mass Industry 4.0 applications​​​​​​​"@en ;      
                       rdfs:label "EdgeTwins HPC"@en ,
@@ -132,8 +132,8 @@ asioIndividuals:EdgeTwinsHPC rdf:type owl:NamedIndividual ,
 ###  http://www.asio.es/asioinstances/asio#NICESHIP
 asioIndividuals:NICESHIP rdf:type owl:NamedIndividual ,
                             asio:Project ;
-                      asio:projectStartDate  “2016-09-30”^^xsd:date ;
-                      asio:projectEndDate  “2019-10-01”^^xsd:date ; 
+                      asio:projectStartDate “2016-09-30”^^xsd:date ;
+                      asio:projectEndDate “2019-10-01”^^xsd:date ; 
                       asio:isFundedBy asioIndividuals:NICOP ;     
                       rdfs:comment "Bringing Digital Twins to the Edge for mass Industry 4.0 applications​​​​​​​"@en ;      
                       rdfs:label "EdgeTwins HPC"@en ,
@@ -158,8 +158,8 @@ asioIndividuals:CentroDeInvestigacionYTecnologiaAgroalimentariaDeAragon rdf:type
 ###  http://www.asio.es/asioinstances/asio#BATModel
 asioIndividuals:BATModel rdf:type owl:NamedIndividual ,
                             asio:Project ;
-                      asio:projectStartDate  “2020-09-01”^^xsd:date ;
-                      asio:projectEndDate  “2024-09-01”^^xsd:date ; 
+                      asio:projectStartDate “2020-09-01”^^xsd:date ;
+                      asio:projectEndDate “2024-09-01”^^xsd:date ; 
                       asio:isFundedBy asioIndividuals:Horizon2020 ;     
                       rdfs:comment "Better Agri-food trade modelling for policy analysis​​​​​​​"@en ;      
                       rdfs:label "BATModel"@en ,
