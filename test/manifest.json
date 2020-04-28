@@ -6,5 +6,20 @@
     "schema": "../simple_schema.shex",
     "in_shape_map": "../in_simple.shapeMap",
     "out_shape_map": "../out_simple.shapeMap"
+  }, {
+    "test_name": "example2",
+    "ontology": "../simple_ontology.ttl",
+    "data": "../simple_example.ttl",
+    "schema": "../simple_schema.shex",
+    "in_shape_map": "../in_simple.shapeMap",
+    "out_shape_map": "../out_simple.shapeMap"
+  },
+ {
+    "test_name": "example3",
+    "ontology": "../simple_ontology.ttl",
+    "data": "../simple_example.ttl",
+    "schema": "../simple_schema.shex",
+    "in_shape_map": "../in_simple.shapeMap",
+    "out_shape_map": "../out_simple.shapeMap"
   }
 ]

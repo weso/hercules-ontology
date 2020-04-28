@@ -9,6 +9,7 @@ import java.util.stream.Stream;
 
 import com.google.gson.Gson;
 
+import es.weso.asio.ontology.test.ResultCase;
 import es.weso.asio.ontology.test.TestCase;
 import es.weso.asio.ontology.test.manifest.ManifestParser;
 import es.weso.asio.ontology.test.manifest.impl.ManifestParserImpl;
