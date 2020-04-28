@@ -1,5 +1,11 @@
 package es.weso.asio.ontology.test;
 
+/**
+ * Models a test case result. It is composed by a node, a node and a status.
+ * 
+ * @author Pablo Menéndez
+ *
+ */
 public class ResultCase {
 
 	private String node;

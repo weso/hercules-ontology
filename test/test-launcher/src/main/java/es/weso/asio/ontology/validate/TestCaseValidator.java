@@ -4,14 +4,31 @@ import cats.effect.IO;
 import es.weso.asio.ontology.test.TestCase;
 import es.weso.shexsjava.Validate;
 
+/**
+ * This class is composed by a method called validate that performs the
+ * validation for a concrete TestCase.
+ * 
+ * @author Pablo Menéndez
+ *
+ */
 public class TestCaseValidator {
 
 	private Validate validator;
 
+	/**
+	 * Default constructor. Initialize validator.
+	 */
 	public TestCaseValidator() {
 		this.validator = new Validate();
 	}
 
+	/**
+	 * Performs the validation of a concrete TestCase using shexsjava library.
+	 * Receives a Testcase
+	 * 
+	 * @param Testcase
+	 * @return Result of the validation
+	 */
 	public ResultValidation validate(TestCase t) {
 
 		ResultValidation result = null;
