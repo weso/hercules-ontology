@@ -1,6 +1,5 @@
 package es.weso.asio.ontology.validate;
 
-import java.io.FileWriter;
 import java.io.IOException;
 
 import cats.effect.IO;
