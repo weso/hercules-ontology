@@ -4,7 +4,9 @@ import es.weso.shapeMaps.ResultShapeMap;
 import es.weso.shapeMaps.ShapeMap;
 
 /**
- * Saves the validation result and the expected result
+ * Represents a object with the validation result shapeMap and the expected
+ * result shapeMap
+ * 
  * @author Jose Emilio Labra Gayo
  *
  */
