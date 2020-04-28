@@ -1,0 +1,10 @@
+[
+  {
+    "test_name": "example1",
+    "ontology": "../../src/asio-core.ttl",
+    "data": "../example_1.ttl",
+    "schema": "../schema_1.shex",
+    "in_shape_map": "../in_sm_1.shapeMap",
+    "out_shape_map": "../out_sm_1.shapeMap"
+  }
+]

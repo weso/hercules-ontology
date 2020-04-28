@@ -1,18 +1,25 @@
 [
   {
-    "test_name": "ss",
-    "ontology": "src/asio-core.ttl",
-    "data": "test/example_1.ttl",
-    "schema": "test/schema_1.shex",
-    "in_shape_map": "test/in_sm_1.shapemap",
-    "out_shape_map": "test/out_sm_1.shapemap"
+    "test_name": "example1",
+    "ontology": "../simple_ontology.ttl",
+    "data": "../simple_example.ttl",
+    "schema": "../simple_schema.shex",
+    "in_shape_map": "../in_simple.shapeMap",
+    "out_shape_map": "../out_simple.shapeMap"
+  }, {
+    "test_name": "example2",
+    "ontology": "../simple_ontology.ttl",
+    "data": "../simple_example.ttl",
+    "schema": "../simple_schema.shex",
+    "in_shape_map": "../in_simple.shapeMap",
+    "out_shape_map": "../out_simple.shapeMap"
   },
-  { 
-    "test_name": "sdfg",
-    "ontology": "src/asio-core.ttl",
-    "data": "test/example_2.ttl",
-    "schema": "test/schema_2.shex",
-    "in_shape_map": "test/in_sm_2.shapemap",
-    "out_shape_map": "test/out_sm_2.shapemap"
+ {
+    "test_name": "example3",
+    "ontology": "../simple_ontology.ttl",
+    "data": "../simple_example.ttl",
+    "schema": "../simple_schema.shex",
+    "in_shape_map": "../in_simple.shapeMap",
+    "out_shape_map": "../out_simple.shapeMap"
   }
 ]

@@ -1,0 +1,14 @@
+prefix :     <http://example.org/>
+prefix foaf: <http://xmlns.com/foaf/0.1/>
+prefix xsd:  <http://www.w3.org/2001/XMLSchema#>
+
+:john a :Teacher ;
+      foaf:name "John Smith" ;
+      foaf:mbox <mailto:john@example.org> .
+
+
+:mary a :Teacher ;
+      foaf:name 234 .  
+
+:pluto a :Dog ;
+       foaf:name "Pluto" .          

@@ -1,0 +1,16 @@
+[
+  {
+    "node" : "<http://example.org/x>",
+    "shape" : "<http://example.org/IssueShape>",
+    "status" : "conformant",
+    "appInfo" : "Shaclex",
+    "reason" : ":unassigned is equal to :unassigned"
+  },
+  {
+    "node" : "<http://example.org/john>",
+    "shape" : "<http://example.org/UserShape>",
+    "status" : "conformant",
+    "appInfo" : "Shaclex",
+    "reason" : "John Smith has datatype xsd:string\n<mailto:john@example.org> is an IRI"
+  }
+]
