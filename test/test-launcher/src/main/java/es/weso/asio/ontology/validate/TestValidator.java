@@ -6,7 +6,6 @@ import java.io.IOException;
 import cats.effect.IO;
 import es.weso.asio.ontology.test.TestCase;
 import es.weso.shapeMaps.ResultShapeMap;
-import es.weso.shexsjava.ArgsParser;
 import es.weso.shexsjava.Validate;
 
 /**
@@ -19,7 +18,7 @@ import es.weso.shexsjava.Validate;
  * @author Pablo Menéndez
  *
  */
-public class ShExValidator {
+public class TestValidator {
 
 	private Validate validator;
 
@@ -27,7 +26,7 @@ public class ShExValidator {
 	 * Default constructor for the ShExValidator. Creates the Validate instance of
 	 * the shexsjava library that will be used later to perform the validation.
 	 */
-	public ShExValidator() {
+	public TestValidator() {
 		this.validator = new Validate();
 	}
 
@@ -42,13 +41,22 @@ public class ShExValidator {
 	 */
 	public void validate(TestCase t) throws IOException {
 
-		ArgsParser options = new ArgsParser(t.getValidateArgs());
-
-		IO<ResultShapeMap> validate = validator.validate(options.data, options.dataFormat, options.schema,
-				options.schemaFormat, options.shapeMap, options.shapeMapFormat);
-
-		ResultShapeMap resultShapeMap = validate.unsafeRunSync();
-		writeResult(t, resultShapeMap.toJson().spaces2());
+		// System.out.println(t);
+		IO<ResultValidation> validate = validator.validate(
+				t.getOntologyFilePath(),
+				t.getDataFilePath(),
+				t.getTestSchemaFilePath(),
+				t.getTestShapeMapFilePath(),
+				t.getExpectedShapeMapFilePath()
+		);
+		try {
+			ResultValidation result= validate.unsafeRunSync();
+			System.out.println("ResultShapeMap: " + result.getResultShapeMap().toJson().spaces2());
+			System.out.println("ExpectedShapeMap: " + result.getExpectedShapeMap().toJson().spaces2());
+			// writeResult(t, result.getResultShapeMap().toJson().spaces2());
+		} catch (Exception e) {
+			System.out.println("Test case: " + t.getName() + "Error from validation: " + e.getMessage());
+		}
 
 	}
 
