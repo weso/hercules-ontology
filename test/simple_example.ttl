@@ -6,6 +6,7 @@ prefix xsd:  <http://www.w3.org/2001/XMLSchema#>
       foaf:name "John Smith" ;
       foaf:mbox <mailto:john@example.org> .
 
+
 :mary a :Teacher ;
       foaf:name 234 .  
 

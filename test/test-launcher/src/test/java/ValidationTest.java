@@ -1,26 +1,24 @@
-package es.weso.asio.ontology;
+import static org.junit.Assert.assertTrue;
 
-import java.io.IOException;
-import java.util.ArrayList;
+import java.io.FileNotFoundException;
 import java.util.Arrays;
 import java.util.List;
-import java.util.Optional;
-import java.util.stream.Stream;
+
+import org.junit.jupiter.api.Test;
 
 import com.google.gson.Gson;
 
+import es.weso.asio.ontology.ResultCase;
 import es.weso.asio.ontology.test.TestCase;
 import es.weso.asio.ontology.test.manifest.ManifestParser;
 import es.weso.asio.ontology.test.manifest.impl.ManifestParserImpl;
 import es.weso.asio.ontology.validate.ResultValidation;
 import es.weso.asio.ontology.validate.TestCaseValidator;
 
-/**
- * Just a mock class to test the implemented classes.
- */
-public class Main {
+class ValidationTest {
 
-	public static void main(String[] args) throws IOException {
+	@Test
+	void test() throws FileNotFoundException {
 		ManifestParser p = new ManifestParserImpl(ManifestParser.DEFAULT_MANIFEST_FILE_PATH);
 		TestCaseValidator v = new TestCaseValidator();
 
@@ -36,12 +34,10 @@ public class Main {
 			for (ResultCase e : expecteds) {
 				ResultCase res = results.stream().filter(r -> e.compareNode(r)).findFirst().get();
 
-				System.out.println(e.equals(res));
+				assertTrue(e.equals(res));
 
 			}
-
 		}
-
 	}
 
 }
