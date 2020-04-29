@@ -26,7 +26,7 @@ public class TestCaseValidator {
 	 * Performs the validation of a concrete TestCase using shexsjava library.
 	 * Receives a Testcase
 	 * 
-	 * @param Testcase
+	 * @param t
 	 * @return Result of the validation
 	 */
 	public ResultValidation validate(TestCase t) {

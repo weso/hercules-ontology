@@ -40,7 +40,7 @@ class ValidationTest {
 	 * expected result look for its pair in the result validation and checks if are
 	 * the same.
 	 * 
-	 * @param TestCase to validate
+	 * @param t to validate
 	 */
 	@ParameterizedTest
 	@MethodSource("validateProvider")
