@@ -1,0 +1,34 @@
+# This workflow will build a Java project with Maven
+# For more information see: https://help.github.com/actions/language-and-framework-guides/building-and-testing-java-with-maven
+
+# The root name of the workflow. On checks it is printed as <root_name>/<job_name>.
+name: Hercules CI
+
+on: [push, pull_request]
+
+jobs:
+  
+  # Test the ontology.
+  test:
+    
+    # The job name.
+    name: Test with Shape Expressions
+
+    # This job will run on a linux virtual machine.
+    runs-on: ubuntu-latest
+
+    # The steps are, first, checkout, then set java version to 11 and finally move to the tests forder and execute the tests.
+    steps:
+    - uses: actions/checkout@v2
+    
+    # Setting the java version.
+    - name: Set up JDK 11
+      uses: actions/setup-java@v1
+      with:
+        java-version: 11
+    
+    # Test with maven
+    - name: Test with Maven
+      run: |
+        cd test/test-launcher/
+        mvn test
