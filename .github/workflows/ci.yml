@@ -29,7 +29,7 @@ jobs:
     
     # Moving to the folder where the tests are located.
     - name: Move to tests folder
-      run: cd test/test-launcer/
+      run: cd test/test-launcher/
     
     # 
     - name: Test with Maven
