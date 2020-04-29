@@ -27,10 +27,8 @@ jobs:
       with:
         java-version: 11
     
-    # Moving to the folder where the tests are located.
-    - name: Move to tests folder
-      run: cd test/test-launcher/
-    
-    # 
+    # Test with maven
     - name: Test with Maven
-      run: mvn test
+      run: |
+        cd test/test-launcher/
+        mvn test
