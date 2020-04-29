@@ -383,7 +383,9 @@ asioIndividuals:FEDER rdf:type owl:NamedIndividual ,
                                        asioIndividuals:GravitySupergravitySuperstrings ,
                                        asioIndividuals:ArrestBlindness ,
                                        asioIndividuals:LacticBacteria ,
-                                       asioIndividuals:Chromatograph ;
+                                       asioIndividuals:Chromatograph ,
+                                       asioIndividuals:Intramuscular ,
+                                       asioIndividuals:VaginalProgesterone ;
                             rdfs:comment "The European Regional Development Fund (ERDF) aims to strengthen socio-economic cohesion within the European Union by correcting imbalances between its regions."@en ;
                             rdfs:label "European Regional Development Fund"@en ,
                                        "Fondo Europeo de Desarrollo Regional"@es .
