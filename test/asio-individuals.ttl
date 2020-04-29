@@ -34,7 +34,7 @@ asioIndividuals:BasqueCentreForClimateChange rdf:type owl:NamedIndividual ,
 
 ###  http://www.asio.es/asioinstances/asio#CHANCE
 asioIndividuals:CHANCE rdf:type owl:NamedIndividual ,
-                            asio:Project ;
+                            asio:EuropeanProject ;
                       asio:projectStartDate “2019-01-13”^^xsd:date ;
                       asio:projectEndDate “2022-12-12”^^xsd:date ;
                       asio:isFundedBy asioIndividuals:Horizon2020 ;      
@@ -44,7 +44,7 @@ asioIndividuals:CHANCE rdf:type owl:NamedIndividual ,
 
 ###  http://www.asio.es/asioinstances/asio#ALICE
 asioIndividuals:ALICE rdf:type owl:NamedIndividual ,
-                            asio:Project ;
+                            asio:EuropeanProject ;
                       asio:projectStartDate “2017-01-01”^^xsd:date ;
                       asio:projectEndDate “2020-12-31”^^xsd:date ;   
                       asio:isFundedBy asioIndividuals:Horizon2020 ;
@@ -79,7 +79,7 @@ asioIndividuals:CentreDeRegulacioGenomica rdf:type owl:NamedIndividual ,
 
 ###  http://www.asio.es/asioinstances/asio#EASIGenomics
 asioIndividuals:EASIGenomics rdf:type owl:NamedIndividual ,
-                            asio:Project ;
+                            asio:EuropeanProject ;
                       asio:projectStartDate “2019-02-01”^^xsd:date ;
                       asio:projectEndDate “2023-01-31”^^xsd:date ; 
                       asio:isFundedBy asioIndividuals:Horizon2020 ;     
@@ -89,7 +89,7 @@ asioIndividuals:EASIGenomics rdf:type owl:NamedIndividual ,
 
 ###  http://www.asio.es/asioinstances/asio#ChromDesign
 asioIndividuals:ChromDesign rdf:type owl:NamedIndividual ,
-                            asio:Project ;
+                            asio:EuropeanProject ;
                       asio:projectStartDate “2018-09-01”^^xsd:date ;
                       asio:projectEndDate “2022-08-31”^^xsd:date ; 
                       asio:isFundedBy asioIndividuals:Horizon2020 ;     
@@ -105,7 +105,9 @@ asioIndividuals:Horizon2020 rdf:type owl:NamedIndividual ,
                                        asioIndividuals:ALICE ,
                                        asioIndividuals:CHANCE ,
                                        asioIndividuals:EdgeTwinsHPC ,
-                                       asioIndividuals:BATModel ;
+                                       asioIndividuals:BATModel ,
+                                       asioIndividuals:Yoctosecond ,
+                                       asioIndividuals:SANDA ;
                             rdfs:comment "Horizon 2020 is the biggest EU Research and Innovation programme ever with nearly €80 billion of funding available over 7 years (2014 to 2020) – in addition to the private investment that this money will attract. It promises more breakthroughs, discoveries and world-firsts by taking great ideas from the lab to the market."@en ;
                             rdfs:label "Horizon 2020"@en ,
                                        "Horizon 2020"@es .
@@ -121,7 +123,7 @@ asioIndividuals:CentreInternacionalDeMetodesNumericsALEnginyeria rdf:type owl:Na
 
 ###  http://www.asio.es/asioinstances/asio#EdgeTwinsHPC
 asioIndividuals:EdgeTwinsHPC rdf:type owl:NamedIndividual ,
-                            asio:Project ;
+                            asio:EuropeanProject ;
                       asio:projectStartDate “2020-06-01”^^xsd:date ;
                       asio:projectEndDate “2021-11-30”^^xsd:date ; 
                       asio:isFundedBy asioIndividuals:Horizon2020 ;     
@@ -157,7 +159,7 @@ asioIndividuals:CentroDeInvestigacionYTecnologiaAgroalimentariaDeAragon rdf:type
 
 ###  http://www.asio.es/asioinstances/asio#BATModel
 asioIndividuals:BATModel rdf:type owl:NamedIndividual ,
-                            asio:Project ;
+                            asio:EuropeanProject ;
                       asio:projectStartDate “2020-09-01”^^xsd:date ;
                       asio:projectEndDate “2024-09-01”^^xsd:date ; 
                       asio:isFundedBy asioIndividuals:Horizon2020 ;     
@@ -298,6 +300,33 @@ asioIndividuals:IMIDA rdf:type owl:NamedIndividual ,
                       "Murcian Institute for Agrifood Research and Development"@en ;
            skos:altLabel "IMIDA"@es .
 
+###  http://www.asio.es/asioinstances/asio#LIFEAGREMSO3IL
+asioIndividuals:LIFEAGREMSO3IL rdf:type owl:NamedIndividual ,
+                                    asio:EuropeanProject ;
+                        asio:projectStartDate 2018 ;
+                        asio:projectEndDate 2022 ;   
+                        asio:isFundedBy asioIndividuals:LIFEProgramme ;         
+                        rdfs:comment "Life AgRemSO3il is a pilot project which will develop a new technology, with all associated techniques, for the agrochemical decontamination of agricultural farms' soils. "@en ;      
+                        rdfs:label "Life AgRemSO3il"@en ,
+                              "Life AgRemSO3il"@es .
+
+###  http://www.asio.es/asioinstances/asio#LIFEAQUEMFREE
+asioIndividuals:LIFEAQUEMFREE rdf:type owl:NamedIndividual ,
+                                    asio:EuropeanProject ;
+                        asio:projectStartDate 2014 ;
+                        asio:projectEndDate 2018 ;   
+                        asio:isFundedBy asioIndividuals:LIFEProgramme ;         
+                        rdfs:comment "In-Farm remediation by solar photocatalysis of agro-waste water with pesticides from remnants, cleaning and rinse."@en ;      
+                        rdfs:label "Life Aquemfree"@en ,
+                              "Life Aquemfree"@es .
+
+###  http://www.asio.es/asioinstances/asio#LIFEProgramme
+asioIndividuals:LIFEProgramme rdf:type owl:NamedIndividual ,
+                                asio:FundingProgramme ;
+                            asio:funds asioIndividuals:LIFEAGREMSO3IL ;
+                            rdfs:comment "The LIFE programme is the EU’s funding instrument for the environment and climate action created in 1992."@en ;
+                            rdfs:label "Life Programme"@en ,
+                                       "Life Programme"@es .
 
 ###  http://www.asio.es/asioinstances/asio#IUIE
 asioIndividuals:IUIE rdf:type owl:NamedIndividual ,
@@ -307,6 +336,14 @@ asioIndividuals:IUIE rdf:type owl:NamedIndividual ,
                      "University Institute for Aging Research"@en ;
           skos:altLabel "IUIE"@es .
 
+###  http://www.asio.es/asioinstances/asio#SmartFoods
+asioIndividuals:SmartFoods rdf:type owl:NamedIndividual ,
+                                    asio:Project ;
+                        asio:projectStartDate "2016-06-30"^^xsd:date ;
+                        asio:projectEndDate "2017-06-29"^^xsd:date ;           
+                        rdfs:comment "Smart foods to improve cognitive function and prevent the cognitive deteriorations in elderly people."@en ;      
+                        rdfs:label "SmartFoods"@en ,
+                              "SmartFoods"@es .
 
 ###  http://www.asio.es/asioinstances/asio#InstitutoDeAstrofisicaDeAndalucia
 asioIndividuals:InstitutoDeAstrofisicaDeAndalucia rdf:type owl:NamedIndividual ,
@@ -318,6 +355,38 @@ asioIndividuals:InstitutoDeAstrofisicaDeAndalucia rdf:type owl:NamedIndividual ,
                                        skos:altLabel "IAA"@en ,
                                                      "IAA"@es .
 
+###  http://www.asio.es/asioinstances/asio#FisicaOculta
+asioIndividuals:FisicaOculta rdf:type owl:NamedIndividual ,
+                                    asio:RegionalProject ;
+                        asio:projectStartDate "2019-01-01"^^xsd:date ;
+                        asio:projectEndDate "2022-12-31"^^xsd:date ;    
+                        asio:isFundedBy asioIndividuals:FEDER ;            
+                        rdfs:label "Hidden physics in the real-time evolution of gaseous nebulas around evolved low and intermediate mass stars"@en ,
+                              "Física oculta en la evolución en tiempo real de las nebulosas gaseosas en torno a estrellas evolucionadas de masa baja e intermedia"@es .
+
+###  http://www.asio.es/asioinstances/asio#Galatics
+asioIndividuals:Galatics rdf:type owl:NamedIndividual ,
+                                    asio:RegionalProject ;
+                        asio:projectStartDate "2019-01-01"^^xsd:date ;
+                        asio:projectEndDate "2022-12-31"^^xsd:date ;    
+                        asio:isFundedBy asioIndividuals:FEDER ;            
+                        rdfs:label "The galatics of the galaxy: massive stars, star cumulars and the galactic center."@en ,
+                              "Los galaticos de la galaxia: estrellas masivas, cumulos estelares y el centro galactico."@es .
+
+
+###  http://www.asio.es/asioinstances/asio#FEDER
+asioIndividuals:FEDER rdf:type owl:NamedIndividual ,
+                                asio:FundingProgramme ;
+                            asio:funds asioIndividuals:FisicaOculta ,
+                                       asioIndividuals:Galatics ,
+                                       asioIndividuals:NewAvenuesinParticlePhysics ,
+                                       asioIndividuals:GravitySupergravitySuperstrings ,
+                                       asioIndividuals:ArrestBlindness ,
+                                       asioIndividuals:LacticBacteria ,
+                                       asioIndividuals:Chromatograph ;
+                            rdfs:comment "The European Regional Development Fund (ERDF) aims to strengthen socio-economic cohesion within the European Union by correcting imbalances between its regions."@en ;
+                            rdfs:label "European Regional Development Fund"@en ,
+                                       "Fondo Europeo de Desarrollo Regional"@es .
 
 ###  http://www.asio.es/asioinstances/asio#InstitutoDeAstrofisicaDeCanarias
 asioIndividuals:InstitutoDeAstrofisicaDeCanarias rdf:type owl:NamedIndividual ,
@@ -329,6 +398,28 @@ asioIndividuals:InstitutoDeAstrofisicaDeCanarias rdf:type owl:NamedIndividual ,
                                       skos:altLabel "IAC"@en ,
                                                     "IAC"@es .
 
+###  http://www.asio.es/asioinstances/asio#Fulldome
+asioIndividuals:Fulldome rdf:type owl:NamedIndividual ,
+                                    asio:NationalProject ; 
+                        asio:isFundedBy asioIndividuals:FECYT ;   
+                        rdfs:comment "The objective of this project is the elaboration of graphic material for FULLDOME digital projectors (360 degrees / hemispherical) of sequences recorded at the Canary Observatories (Observatorio del Roque de Los Muchachos on La Palma and Observatorio del Teide in Tenerife)."@en ;         
+                        rdfs:label "FullDome"@en ,
+                              "FullDome"@es .
+
+###  http://www.asio.es/asioinstances/asio#PETER
+asioIndividuals:PETER rdf:type owl:NamedIndividual ,
+                                    asio:Project ; 
+                        asio:projectStartDate 2005 ;    
+                        rdfs:comment "Peter intends to familiarize the Spanish educational community with the scientific method and practice, while contributing to the spread of Astronomy and Astrophysics."@en ;         
+                        rdfs:label "Educational Project with Robotic Telescopes"@en ,
+                              "Proyecto Educativo con Telescopios Robóticos"@es .
+
+###  http://www.asio.es/asioinstances/asio#FECYT
+asioIndividuals:FECYT rdf:type owl:NamedIndividual ,
+                                asio:FundingProgramme ;
+                            asio:funds asioIndividuals:Fulldome ;
+                            rdfs:label "Spanish Foundation for Science and Technology"@en ,
+                                       "Fundación Española para la Ciencia y la Tecnología"@es .
 
 ###  http://www.asio.es/asioinstances/asio#InstitutoDeFisicaTeorica
 asioIndividuals:InstitutoDeFisicaTeorica rdf:type owl:NamedIndividual ,
@@ -340,6 +431,23 @@ asioIndividuals:InstitutoDeFisicaTeorica rdf:type owl:NamedIndividual ,
                               skos:altLabel "IFT"@en ,
                                             "IFT"@es .
 
+###  http://www.asio.es/asioinstances/asio#NewAvenuesinParticlePhysics
+asioIndividuals:NewAvenuesinParticlePhysics rdf:type owl:NamedIndividual ,
+                                    asio:RegionalProject ;
+                        asio:projectStartDate "2016-01-01"^^xsd:date ;
+                        asio:projectEndDate "2019-12-29"^^xsd:date ;    
+                        asio:isFundedBy asioIndividuals:FEDER ;            
+                        rdfs:label "New Avenues in Particle Physics"@en ,
+                              "Nuevas avenidas en Física de Partículas"@es .
+
+###  http://www.asio.es/asioinstances/asio#GravitySupergravitySuperstrings
+asioIndividuals:GravitySupergravitySuperstrings rdf:type owl:NamedIndividual ,
+                                    asio:RegionalProject ;
+                        asio:projectStartDate "2010-01-01"^^xsd:date ;
+                        asio:projectEndDate "2012-12-31"^^xsd:date ;    
+                        asio:isFundedBy asioIndividuals:FEDER ;            
+                        rdfs:label "Gravity, supergravity and superstrings"@en ,
+                              "Gravedad, supergravedad y supercuerdas"@es .
 
 ###  http://www.asio.es/asioinstances/asio#InstitutoDeNeurocienciasDeAlicante
 asioIndividuals:InstitutoDeNeurocienciasDeAlicante rdf:type owl:NamedIndividual ,
@@ -351,6 +459,27 @@ asioIndividuals:InstitutoDeNeurocienciasDeAlicante rdf:type owl:NamedIndividual 
                                                    "Instituto de Neurociencias de Alicante"@es ;
                                         skos:altLabel "IN"@es .
 
+
+###  http://www.asio.es/asioinstances/asio#ArrestBlindness
+asioIndividuals:ArrestBlindness rdf:type owl:NamedIndividual ,
+                                    asio:RegionalProject ;   
+                        asio:isFundedBy asioIndividuals:FEDER ;            
+                        rdfs:label "Arrest Blindness: Advanced Regenerative and Restorative Therapies to combat corneal blindness"@en .
+
+
+###  http://www.asio.es/asioinstances/asio#3DGenomeOrganization
+asioIndividuals:3DGenomeOrganization rdf:type owl:NamedIndividual ,
+                                    asio:Project ;   
+                        asio:isFundedBy asioIndividuals:HSFP ;            
+                        rdfs:label "3D Genome Organization and Transcription Regulation in Hippocampal Circuits"@en .
+
+###  http://www.asio.es/asioinstances/asio#HSFP
+asioIndividuals:HSFP rdf:type owl:NamedIndividual ,
+                                asio:FundingProgramme ;
+                            asio:funds asioIndividuals:3DGenomeOrganization ;
+                            rdfs:comment "The Human Frontier Science Program (HFSP) promotes international collaboration in basic research focused on the elucidation of the sophisticated and complex mechanisms of living organisms."@en ;
+                            rdfs:label "Human Frontier Science Program"@en ,
+                                       "Frontière humaine"@fr .
 
 ###  http://www.asio.es/asioinstances/asio#InstitutoDeProductosLacteosDeAsturias
 asioIndividuals:InstitutoDeProductosLacteosDeAsturias rdf:type owl:NamedIndividual ,
@@ -364,6 +493,19 @@ asioIndividuals:InstitutoDeProductosLacteosDeAsturias rdf:type owl:NamedIndividu
                                                          "IPLA"@es ,
                                                          "Instituto de Productos Lácteos de Asturias"@en .
 
+###  http://www.asio.es/asioinstances/asio#LacticBacteria
+asioIndividuals:LacticBacteria rdf:type owl:NamedIndividual ,
+                                    asio:RegionalProject ;   
+                        asio:isFundedBy asioIndividuals:FEDER ;            
+                        rdfs:label "Lactic bacteria in food and health"@en ,
+                                   "Bacterias lácticas en alimentación y salud"@es  .
+
+###  http://www.asio.es/asioinstances/asio#Chromatograph
+asioIndividuals:Chromatograph rdf:type owl:NamedIndividual ,
+                                    asio:RegionalProject ;   
+                        asio:isFundedBy asioIndividuals:FEDER ;            
+                        rdfs:label "Acquisition of a liquid chromatograph coupled to high resolution mass spectrometer with dual application in proteomics and metabolomics"@en ,
+                                   "Adquisición de un cromatógrafo de líquidos acoplado a espectrómetro de masas de alta resolución con aplicación dual en proteómica y metabolómica"@es  .
 
 ###  http://www.asio.es/asioinstances/asio#InstitutoGallegoDeFisicaDeAltasEnergias
 asioIndividuals:InstitutoGallegoDeFisicaDeAltasEnergias rdf:type owl:NamedIndividual ,
@@ -376,6 +518,21 @@ asioIndividuals:InstitutoGallegoDeFisicaDeAltasEnergias rdf:type owl:NamedIndivi
                                              skos:altLabel "IGFAE"@es ,
                                                            "IGFAE"@gl .
 
+###  http://www.asio.es/asioinstances/asio#Yoctosecond
+asioIndividuals:Yoctosecond rdf:type owl:NamedIndividual ,
+                                    asio:EuropeanProject ;
+                        asio:projectStartDate "2019-10-01"^^xsd:date ;
+                        asio:projectEndDate "2024-09-30"^^xsd:date ;    
+                        asio:isFundedBy asioIndividuals:Horizon2020 ;            
+                        rdfs:label "Yoctosecond imaging of QCD collectivity using jet observables"@en .
+
+###  http://www.asio.es/asioinstances/asio#SANDA
+asioIndividuals:SANDA rdf:type owl:NamedIndividual ,
+                                    asio:EuropeanProject ;
+                        asio:projectStartDate "2019-09-01"^^xsd:date ;
+                        asio:projectEndDate "2023-08-31"^^xsd:date ;    
+                        asio:isFundedBy asioIndividuals:Horizon2020 ;            
+                        rdfs:label "Supplying Accurate Nuclear Data for energy and non-energy Applications (SANDA)"@en .
 
 ###  http://www.asio.es/asioinstances/asio#InstitutoMurcianoDeInvestigacionBiosanitaria
 asioIndividuals:InstitutoMurcianoDeInvestigacionBiosanitaria rdf:type owl:NamedIndividual ,
@@ -384,6 +541,29 @@ asioIndividuals:InstitutoMurcianoDeInvestigacionBiosanitaria rdf:type owl:NamedI
                                                   rdfs:label "Instituto Murciano de Investigación Biosanitaria"@es ;
                                                   skos:altLabel "IMIB"@es .
 
+###  http://www.asio.es/asioinstances/asio#Intramuscular
+asioIndividuals:Intramuscular rdf:type owl:NamedIndividual ,
+                                    asio:RegionalProject ;
+                        asio:projectStartDate 2019 ;    
+                        asio:isFundedBy asioIndividuals:FEDER ,
+                                        asioIndividuals:InstitutoSaludCarlosIII ;            
+                        rdfs:label "Intramuscular injection of autologous mononuclear cells in ALS patients. A phase II clinical trial. PIC18/00015"@en .
+
+###  http://www.asio.es/asioinstances/asio#VaginalProgesterone
+asioIndividuals:VaginalProgesterone rdf:type owl:NamedIndividual ,
+                                    asio:RegionalProject ;
+                        asio:projectStartDate 2019 ;    
+                        asio:isFundedBy asioIndividuals:FEDER ,
+                                        asioIndividuals:InstitutoSaludCarlosIII ;            
+                        rdfs:label "Early vaginal progesterone for the prevention of spontaneous preterm birth in twins: A randomised, placebo controlled, double-blinded trial- EVENTS"@en .
+
+###  http://www.asio.es/asioinstances/asio#InstitutoSaludCarlosIII
+asioIndividuals:InstitutoSaludCarlosIII rdf:type owl:NamedIndividual ,
+                                asio:FundingOrganization ;
+                            asio:funds asioIndividuals:VaginalProgesterone ,
+                                       asioIndividuals:Intramuscular ;
+                            rdfs:label "Carlos III Health Institute"@en ,
+                                       "Instituto de Salud Carlos III"@es .
 
 ###  http://www.asio.es/asioinstances/asio#JoseAlbertoBenitezAndrades
 asioIndividuals:JoseAlbertoBenitezAndrades rdf:type owl:NamedIndividual ;
