@@ -68,22 +68,6 @@ asio:AdministrativeEntity a owl:Class ;
         "Entités administratives"@fr,
         "Entidades administrativas"@pt .
 
-asio:AdministrativePersonnel a owl:Class ;
-    rdfs:label "Personal administratiu"@ca-ad,
-        "Personal administratiu"@ca-es,
-        "Administrative personnel"@en,
-        "Personal administrativo"@es,
-        "Personnel administratif"@fr,
-        "Pessoal administrativo"@pt ;
-    rdfs:comment "Personnel devoted to administrative tasks."@en ;
-    rdfs:subClassOf asio:HumanResource ;
-    skos:prefLabel "Personal administratiu"@ca-ad,
-        "Personal administratiu"@ca-es,
-        "Administrative personnel"@en,
-        "Personal administrativo"@es,
-        "Personnel administratif"@fr,
-        "Pessoal administrativo"@pt .
-
 asio:BachelorsThesis a owl:Class ;
     rdfs:label "Trabayu de fin de grau"@ast,
         "Treball fi de bàtxelor"@ca-ad,
@@ -231,6 +215,8 @@ asio:FundingProgramme a owl:Class ;
     rdfs:comment "A programme of related funded projects, typically established by a funding organization."@en ;
     owl:equivalentClass frapo:FundingProgramme .
 
+asio:HumanResource owl:equivalentClass fea:HumanResource .
+
 asio:Manual a owl:Class ;
     rdfs:label "Manual"@en ;
     rdfs:subClassOf asio:ScientificPublication ;
@@ -238,25 +224,7 @@ asio:Manual a owl:Class ;
     skos:prefLabel "Manual"@en .
 
 asio:MasterStudent a asio:Role,
-        owl:Class,
-        owl:NamedIndividual ;
-    rdfs:label "Estudiant de màster"@ca-ad,
-        "Estudiant de màster"@ca-es,
-        "Master student"@en,
-        "Estudiante de máster"@es,
-        "Étudiant de maîtrise"@fr,
-        "Estudante de máster"@gl,
-        "Estudante de mestrado"@pt ;
-    rdfs:subClassOf asio:GraduateStudent ;
-    skos:altLabel "Estudiant de mestratge"@ca,
-        "Étudiant de master"@fr,
-        "Estudante de mestrado"@gl ;
-    skos:prefLabel "Estudiant de màster"@ca,
-        "Master student"@en,
-        "Estudiante de máster"@es,
-        "Étudiant de maîtrise"@fr,
-        "Estudante de máster"@gl,
-        "Estudante de mestrado"@pt .
+        owl:NamedIndividual .
 
 asio:MastersDegree a owl:Class ;
     rdfs:label "Màster universitari"@ca-ad,
@@ -311,29 +279,8 @@ asio:PeerReviewedArticle a owl:Class ;
         swrc:Article .
 
 asio:PhDStudent a asio:Role,
-        owl:Class,
         owl:NamedIndividual ;
-    rdfs:label "Estudiant de doctorat"@ca-ad,
-        "Estudiant de doctorat"@ca-es,
-        "PhD student"@en,
-        "Estudiante de doctorado"@es,
-        "Étudiant de doctorat"@fr,
-        "Estudiante de doutoramento"@gl,
-        "Estudante de doutoramento"@pt ;
-    rdfs:subClassOf asio:GraduateStudent ;
-    owl:equivalentClass swrc:PhDStudent ;
-    skos:altLabel "Doctorand"@ca,
-        "PhD candidate"@en,
-        "Doctorando"@es,
-        "Doctorant"@fr,
-        "Doctorando"@gl,
-        "Doutorando"@pt ;
-    skos:prefLabel "Estudiant de doctorat"@ca,
-        "PhD student"@en,
-        "Estudiante de doctorado"@es,
-        "Étudiant de doctorat"@fr,
-        "Estudiante de doutoramento"@gl,
-        "Estudante de doutoramento"@pt .
+    owl:equivalentClass swrc:PhDStudent .
 
 asio:ProjectBudget a owl:Class ;
     rdfs:label "Pressupost de projecte"@ca-ad,
@@ -394,22 +341,6 @@ asio:ResearchGroup a owl:Class ;
         "Group de recherche"@fr,
         "Grupo de investigação"@pt .
 
-asio:ResearchPersonnel a owl:Class ;
-    rdfs:label "Personal de recerca"@ca-ad,
-        "Personal investigador"@ca-es,
-        "Research Personnel"@en,
-        "Personal investigador"@es,
-        "Personnel rechercheur"@fr,
-        "Pessoal investigador"@pt ;
-    rdfs:comment "Personnel devoted to reasearching tasks."@en ;
-    rdfs:subClassOf asio:HumanResource ;
-    skos:prefLabel "Personal de recerca"@ca-ad,
-        "Personal investigador"@ca-es,
-        "Research Personnel"@en,
-        "Personal investigador"@es,
-        "Personnel rechercheur"@fr,
-        "Pessoal investigador"@pt .
-
 asio:Researching a asio:Role,
         owl:NamedIndividual .
 
@@ -466,24 +397,13 @@ asio:SpainUniversityStaffing a owl:Class ;
     rdfs:subClassOf skos:ConceptScheme ;
     skos:prefLabel "Spain's university staffing"@en .
 
+asio:Student owl:equivalentClass sio:SIO_000405,
+        swpo:Student,
+        swrc:Student,
+        vivo:Student .
+
 asio:Teaching a asio:Role,
         owl:NamedIndividual .
-
-asio:TechnicalPersonnel a owl:Class ;
-    rdfs:label "Personal tècnic"@ca-ad,
-        "Personal tècnic"@ca-es,
-        "Technical personnel"@en,
-        "Personal técnico"@es,
-        "Personnel technique"@fr,
-        "Pessoal técnico"@pt ;
-    rdfs:comment "Personnel devoted to technical suport."@en ;
-    rdfs:subClassOf asio:HumanResource ;
-    skos:prefLabel "Personal tècnic"@ca-ad,
-        "Personal tècnic"@ca-es,
-        "Technical personnel"@en,
-        "Personal técnico"@es,
-        "Personnel technique"@fr,
-        "Pessoal técnico"@pt .
 
 asio:TechnicalReport a owl:Class ;
     rdfs:label "Technical report"@en ;
@@ -496,12 +416,8 @@ asio:TechnicalSupport a asio:Role,
         owl:NamedIndividual .
 
 asio:UndergraduateStudent a asio:Role,
-        owl:Class,
         owl:NamedIndividual ;
-    rdfs:label "Undergraduate student"@en ;
-    rdfs:subClassOf asio:Student ;
-    owl:equivalentClass vivo:UndergraduateStudent ;
-    skos:prefLabel "Undergraduate student"@en .
+    owl:equivalentClass vivo:UndergraduateStudent .
 
 asio:UniversityDivision a owl:Class ;
     rdfs:label "Divisió d'universitat"@ca-ad,
@@ -522,8 +438,6 @@ asio:addresses a owl:ObjectProperty ;
 
 asio:advises a owl:ObjectProperty ;
     rdfs:label "advises"@en ;
-    rdfs:domain <http://purl.org/hercules/asio/core#Research&TeachingPersonnel> ;
-    rdfs:range asio:Student ;
     owl:inverseOf asio:isAdvisedBy .
 
 asio:atContext a owl:ObjectProperty ;
@@ -1499,22 +1413,6 @@ asio:MastersThesis a owl:Class ;
         "Tese de mestrado"@pt-ao,
         "Dissertação de mestrado"@pt-br,
         "Dissertação de mestrado"@pt-pt .
-
-<http://purl.org/hercules/asio/core#Research&TeachingPersonnel> a owl:Class ;
-    rdfs:label "Personal docent i investigador"@ca-ad,
-        "Personal docent i investigador"@ca-es,
-        "Teaching and research personnel"@en,
-        "personal docente e investigador"@es,
-        "Personnel enseignant et chercheur"@fr,
-        "Pessoal docente e investigador"@pt ;
-    rdfs:comment "Personnel devoted to teaching and research tasks."@en ;
-    rdfs:subClassOf asio:HumanResource ;
-    skos:prefLabel "Personal docent i investigador"@ca-ad,
-        "Personal docent i investigador"@ca-es,
-        "Teaching and research personnel"@en,
-        "personal docente e investigador"@es,
-        "Personnel enseignant et chercheur"@fr,
-        "Pessoal docente e investigador"@pt .
 
 asio:ResearchInstitute a owl:Class ;
     rdfs:label "Centre de recerca"@ca-ad,
@@ -8951,6 +8849,9 @@ asioModules:ScientificDomain a owl:Class ;
 foaf:Group a owl:Class ;
     rdfs:subClassOf foaf:Agent .
 
+foaf:Person a owl:Class ;
+    rdfs:subClassOf foaf:Agent .
+
 nuts:ES111 a skos:Concept ;
     asio:codeOf asioModules:ES_DIVISION_LEVEL_2_ES_C ;
     skos:broader nuts:ES11 ;
@@ -9263,11 +9164,6 @@ asio:Contract a owl:Class ;
         "Contrat"@fr,
         "Contrato"@gl,
         "Contrato"@pt .
-
-asio:GraduateStudent a owl:Class ;
-    rdfs:label "Graduate student"@en ;
-    rdfs:subClassOf asio:Student ;
-    skos:prefLabel "Graduate student"@en .
 
 asio:Patent a owl:Class ;
     rdfs:label "Patent"@ca-ad,
@@ -9654,13 +9550,6 @@ asio:Publication a owl:Class ;
         "Publication"@fr,
         "Publicación"@gl,
         "Publicação"@pt .
-
-asio:Student a owl:Class ;
-    rdfs:subClassOf foaf:Person ;
-    owl:equivalentClass sio:SIO_000405,
-        swpo:Student,
-        swrc:Student,
-        vivo:Student .
 
 asio:Thesis a owl:Class ;
     rdfs:label "Tesi"@ca-ad,
@@ -11460,9 +11349,6 @@ asioModules:ES_UNIVERSITY_073 a skos:Concept ;
 
 xsd:date a rdfs:Datatype .
 
-foaf:Person a owl:Class ;
-    rdfs:subClassOf foaf:Agent .
-
 nuts:ES2 a skos:Concept ;
     skos:inScheme asioModules:NUTS1CodeList ;
     skos:narrower nuts:ES21,
@@ -11490,25 +11376,6 @@ nuts:ES70 a skos:Concept ;
     skos:inScheme asioModules:NUTS2CodeList ;
     skos:narrower nuts:ES701,
         nuts:ES702 .
-
-asio:HumanResource a owl:Class ;
-    rdfs:label "Recurs humà"@ca-ad,
-        "Recurs humà"@ca-es,
-        "Human resource"@en,
-        "Recurso humano"@es,
-        "Ressource humaine"@fr,
-        "Recurso humano"@gl,
-        "Recurso humano"@pt ;
-    rdfs:comment "A person who make up the workforce of an organization, industry, business sector or economy."@en ;
-    rdfs:subClassOf foaf:Person ;
-    owl:equivalentClass fea:HumanResource ;
-    skos:prefLabel "Recurs humà"@ca-ad,
-        "Recurs humà"@ca-es,
-        "Human resource"@en,
-        "Recurso humano"@es,
-        "Ressource humaine"@fr,
-        "Recurso humano"@gl,
-        "Recurso humano"@pt .
 
 asio:Profile a owl:Class ;
     rdfs:comment "Perfil"@ca-es,
