@@ -552,8 +552,7 @@ asio:codeOf a owl:ObjectProperty ;
 asio:country a owl:ObjectProperty ;
     rdfs:label "country"@en,
         "país"@es ;
-    rdfs:comment "This property indicates the nationality of a resource."@en ;
-    rdfs:domain skos:Concept ;
+    rdfs:comment "This property indicates the nationality of a resource. The domain is not set so unpredicted resources within the ontology could be attached to countries."@en ;
     rdfs:range asio:Country .
 
 asio:employs a owl:ObjectProperty ;
@@ -592,10 +591,11 @@ asio:hasResearchField a owl:ObjectProperty ;
     rdfs:label "has research field"@en ;
     owl:equivalentProperty orkg:hasResearchField .
 
-asio:hasResearchLine a owl:ObjectProperty ;
+asio:hasResearchLine a owl:ObjectProperty,
+        owl:SymmetricProperty ;
     rdfs:label "has research line"@en ;
-    rdfs:comment "a property linking organizations with scientific domains"@en ;
-    rdfs:domain foaf:Organization ;
+    rdfs:comment "a property linking organizations or groups with scientific domains"@en ;
+    rdfs:domain foaf:Agent ;
     rdfs:range skos:Concept .
 
 asio:hasScientificDomain a owl:ObjectProperty ;
@@ -607,6 +607,7 @@ asio:hasScientificDomain a owl:ObjectProperty ;
 
 asio:hasSealOfQuality a owl:ObjectProperty ;
     rdfs:label "has seal of quality"@en ;
+    rdfs:domain foaf:Agent ;
     rdfs:range asio:ResearchInstitute .
 
 asio:hasTRL a owl:ObjectProperty ;
@@ -628,7 +629,8 @@ asio:member owl:equivalentProperty frapo:member,
 
 asio:participant a owl:ObjectProperty ;
     rdfs:label "participant"@en ;
-    rdfs:range foaf:Agent ;
+    rdfs:domain foaf:Agent ;
+    rdfs:range foaf:Project ;
     owl:equivalentProperty bio:participant .
 
 asio:participates a owl:ObjectProperty ;
@@ -12320,6 +12322,21 @@ asioModules:ESscientificDomains1stList a asioModules:ScientificDomains ;
 
 skos:ConceptScheme a owl:Class .
 
+foaf:Organization a owl:Class ;
+    rdfs:subClassOf foaf:Agent ;
+    owl:equivalentClass npg:Organization,
+        frapo:Organization,
+        aiiso:Organization,
+        cv:Organization,
+        sio:SIO_000012,
+        swpo:Organization,
+        doap:Organization,
+        vivo:Organization,
+        bbccore:Organisation,
+        ebucore:Organisation,
+        dul:Organization,
+        org:Organization .
+
 nuts:ES21 a skos:Concept ;
     asio:codeOf asioModules:ES_DIVISION_LEVEL_1_ES_PV ;
     skos:broader nuts:ES2 ;
@@ -13157,21 +13174,6 @@ asioModules:PT_DIVISION_LEVEL_1_PT_30 a skos:Concept ;
         "mɐˈdɐjrɐ"@pt-PT-fonipa ;
     ontolex:phoneticRep "mɐˈdɐjrɐ"@pt-PT-fonipa .
 
-foaf:Organization a owl:Class ;
-    rdfs:subClassOf foaf:Agent ;
-    owl:equivalentClass npg:Organization,
-        frapo:Organization,
-        aiiso:Organization,
-        cv:Organization,
-        sio:SIO_000012,
-        swpo:Organization,
-        doap:Organization,
-        vivo:Organization,
-        bbccore:Organisation,
-        ebucore:Organisation,
-        dul:Organization,
-        org:Organization .
-
 nuts:ES11 a skos:Concept ;
     asio:codeOf asioModules:ES_DIVISION_LEVEL_1_ES_GA ;
     skos:broader nuts:ES1 ;
@@ -13642,8 +13644,6 @@ asioModules:NUTS1CodeList a asioModules:Country ;
     dct1:publisher asioModules:STANDARDIZATION_ORGANIZATION_Eurostat ;
     skos:prefLabel "Nomenclature of Territorial Units for Statistics (NUTS) level 1 codes"@en .
 
-foaf:Agent a owl:Class .
-
 asioModules:ES_DIVISION_LEVEL_2_ES_V a skos:Concept ;
     rdfs:label "Valencia / València" ;
     asio:hasCode nuts:ES523,
@@ -13796,17 +13796,6 @@ asioModules:ES_SUBJECT_AREA_LEVEL_1_CMIFQ a skos:Concept ;
         "ˌmæθəˈmætɪkəl, ˈfɪzɪkəl, ˈkɛməkəl ænd ˈɛnʤəˈnɪrɪŋ ˈsaɪənsəz"@en-US,
         "ˈθjenθjaz mateˈmatikas ˈfisikas ˈkimikas e iŋxenjeˈrias"@es-ES .
 
-foaf:Project a owl:Class ;
-    rdfs:comment "In ASIO, a temporary research endeavor undertaken to achieve defined objectives."@en ;
-    owl:equivalentClass dbo:Project,
-        semcerif:Project,
-        cerif:Project,
-        frapo:Project,
-        doap:Project,
-        vivo:Project,
-        dul:Project,
-        org:Project .
-
 asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_FFI a skos:Concept ;
     rdfs:label "Filología y filosofía" ;
     asio:hasCode asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_CODE_FFI ;
@@ -13865,6 +13854,19 @@ asioModules:ES_SUBJECT_AREA_LEVEL_1_CSH a skos:Concept ;
         "ˈsəʊʃəl ˈsaɪənsɪz ænd hju(ː)ˈmænɪtiz"@en-GB,
         "ˈsoʊʃəl ˈsaɪənsəz ænd hjuˈmænɪtiz"@en-US,
         "ˈθjen̟θjas soˈθjales i wmaniˈðaðes"@es-ES .
+
+foaf:Agent a owl:Class .
+
+foaf:Project a owl:Class ;
+    rdfs:comment "In ASIO, a temporary research endeavor undertaken to achieve defined objectives."@en ;
+    owl:equivalentClass dbo:Project,
+        semcerif:Project,
+        cerif:Project,
+        frapo:Project,
+        doap:Project,
+        vivo:Project,
+        dul:Project,
+        org:Project .
 
 nuts:ES61 a skos:Concept ;
     asio:codeOf asioModules:ES_DIVISION_LEVEL_1_ES_AN ;
