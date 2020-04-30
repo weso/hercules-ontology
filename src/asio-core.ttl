@@ -28,9 +28,9 @@
 @base <http://purl.org/hercules/asio/core#> .
 
 <http://purl.org/hercules/asio/core#> rdf:type owl:Ontology ;
-                                          owl:versionIRI <http://purl.org/hercules/asio/core/0.0.1> ;
-                                          dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-                                          rdfs:label "ASIO core ontology" .
+                                       owl:versionIRI <http://purl.org/hercules/asio/core/0.0.1> ;
+                                       dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+                                       rdfs:label "ASIO core ontology" .
 
 #################################################################
 #    Annotation properties
@@ -113,9 +113,8 @@ asio:codeOf rdf:type owl:ObjectProperty ;
 
 ###  http://purl.org/hercules/asio/core#country
 asio:country rdf:type owl:ObjectProperty ;
-             rdfs:domain skos:Concept ;
              rdfs:range asio:Country ;
-             rdfs:comment "This property indicates the nationality of a resource."@en ;
+             rdfs:comment "This property indicates the nationality of a resource. The domain is not set so unpredicted resources within the ontology could be attached to countries."@en ;
              rdfs:label "country"@en ,
                         "país"@es .
 
@@ -174,10 +173,11 @@ asio:hasResearchField rdf:type owl:ObjectProperty ;
 
 
 ###  http://purl.org/hercules/asio/core#hasResearchLine
-asio:hasResearchLine rdf:type owl:ObjectProperty ;
-                     rdfs:domain foaf:Organization ;
+asio:hasResearchLine rdf:type owl:ObjectProperty ,
+                              owl:SymmetricProperty ;
+                     rdfs:domain foaf:Agent ;
                      rdfs:range skos:Concept ;
-                     rdfs:comment "a property linking organizations with scientific domains"@en ;
+                     rdfs:comment "a property linking organizations or groups with scientific domains"@en ;
                      rdfs:label "has research line"@en .
 
 
@@ -192,6 +192,7 @@ asio:hasScientificDomain rdf:type owl:ObjectProperty ;
 
 ###  http://purl.org/hercules/asio/core#hasSealOfQuality
 asio:hasSealOfQuality rdf:type owl:ObjectProperty ;
+                      rdfs:domain foaf:Agent ;
                       rdfs:range asio:ResearchInstitute ;
                       rdfs:label "has seal of quality"@en .
 
@@ -224,7 +225,8 @@ asio:isMemberOf rdf:type owl:ObjectProperty ;
 
 ###  http://purl.org/hercules/asio/core#participant
 asio:participant rdf:type owl:ObjectProperty ;
-                 rdfs:range foaf:Agent ;
+                 rdfs:domain foaf:Agent ;
+                 rdfs:range foaf:Project ;
                  rdfs:label "participant"@en .
 
 
@@ -403,23 +405,6 @@ asio:publicationDate rdf:type owl:DatatypeProperty ;
                                                              "Ente financiero"@es ,
                                                              "Entité financière"@fr ,
                                                              "Financial entity"@en .
-
-
-###  http://purl.org/wf4ever/ro#ResearchObject
-ro:ResearchObject rdf:type owl:Class ;
-                  rdfs:comment "A research object aggregates a number of resources. A resource can be a workflow, web service, document, data item, data set, workflow run, software or a research object."@en ;
-                  rdfs:label "Objecte de recerca"@ca-ad ,
-                             "Objecte de recerca"@ca-es ,
-                             "Objet de recherche"@fr ,
-                             "Objeto de investigación"@es ,
-                             "Objeto de investigação"@pt ,
-                             "Research object"@en ;
-                  skos:prefLabel "Objecte de recerca"@ca-ad ,
-                                 "Objecte de recerca"@ca-es ,
-                                 "Objet de recherche"@fr ,
-                                 "Objeto de investigación"@es ,
-                                 "Objeto de investigação"@pt ,
-                                 "Research object"@en .
 
 
 ###  http://purl.org/hercules/asio/core#AcademicDegree
@@ -1344,20 +1329,20 @@ asio:UniversityDivision rdf:type owl:Class ;
 
 ###  http://purl.org/hercules/asio/core#Research&TeachingPersonnel
 <http://purl.org/hercules/asio/core#Research&TeachingPersonnel> rdf:type owl:Class ;
-                                                                    rdfs:subClassOf asio:HumanResource ;
-                                                                    rdfs:comment "Personnel devoted to teaching and research tasks."@en ;
-                                                                    rdfs:label "Personal docent i investigador"@ca-ad ,
+                                                                rdfs:subClassOf asio:HumanResource ;
+                                                                rdfs:comment "Personnel devoted to teaching and research tasks."@en ;
+                                                                rdfs:label "Personal docent i investigador"@ca-ad ,
+                                                                           "Personal docent i investigador"@ca-es ,
+                                                                           "Personnel enseignant et chercheur"@fr ,
+                                                                           "Pessoal docente e investigador"@pt ,
+                                                                           "Teaching and research personnel"@en ,
+                                                                           "personal docente e investigador"@es ;
+                                                                skos:prefLabel "Personal docent i investigador"@ca-ad ,
                                                                                "Personal docent i investigador"@ca-es ,
                                                                                "Personnel enseignant et chercheur"@fr ,
                                                                                "Pessoal docente e investigador"@pt ,
                                                                                "Teaching and research personnel"@en ,
-                                                                               "personal docente e investigador"@es ;
-                                                                    skos:prefLabel "Personal docent i investigador"@ca-ad ,
-                                                                                   "Personal docent i investigador"@ca-es ,
-                                                                                   "Personnel enseignant et chercheur"@fr ,
-                                                                                   "Pessoal docente e investigador"@pt ,
-                                                                                   "Teaching and research personnel"@en ,
-                                                                                   "personal docente e investigador"@es .
+                                                                               "personal docente e investigador"@es .
 
 
 ###  http://purl.org/hercules/asio/modules#GeopoliticalEntities
@@ -1388,6 +1373,23 @@ modules:ScientificDomain rdf:type owl:Class ;
                                         "Scientific domains"@en ,
                                         "Áreas científicas"@es ,
                                         "Áreas científicas"@pt .
+
+
+###  http://purl.org/wf4ever/ro#ResearchObject
+ro:ResearchObject rdf:type owl:Class ;
+                  rdfs:comment "A research object aggregates a number of resources. A resource can be a workflow, web service, document, data item, data set, workflow run, software or a research object."@en ;
+                  rdfs:label "Objecte de recerca"@ca-ad ,
+                             "Objecte de recerca"@ca-es ,
+                             "Objet de recherche"@fr ,
+                             "Objeto de investigación"@es ,
+                             "Objeto de investigação"@pt ,
+                             "Research object"@en ;
+                  skos:prefLabel "Objecte de recerca"@ca-ad ,
+                                 "Objecte de recerca"@ca-es ,
+                                 "Objet de recherche"@fr ,
+                                 "Objeto de investigación"@es ,
+                                 "Objeto de investigação"@pt ,
+                                 "Research object"@en .
 
 
 ###  http://www.w3.org/2004/02/skos/core#Concept
@@ -1465,47 +1467,47 @@ asio:UndergraduateStudent rdf:type owl:NamedIndividual ,
 #    Annotations
 #################################################################
 
-asio:MasterStudent skos:altLabel "Estudante de mestrado"@gl ;
-                   skos:prefLabel "Estudiante de máster"@es ;
-                   rdfs:label "Estudante de máster"@gl ;
+asio:MasterStudent skos:prefLabel "Estudiante de máster"@es ;
+                   rdfs:label "Estudiant de màster"@ca-es ;
+                   skos:altLabel "Estudante de mestrado"@gl ;
+                   skos:prefLabel "Estudante de mestrado"@pt ;
                    skos:altLabel "Estudiant de mestratge"@ca ;
                    skos:prefLabel "Master student"@en ;
                    rdfs:label "Master student"@en ;
+                   skos:prefLabel "Estudante de máster"@gl ,
+                                  "Estudiant de màster"@ca ;
+                   rdfs:label "Estudiante de máster"@es ,
+                              "Estudante de mestrado"@pt ,
+                              "Étudiant de maîtrise"@fr ,
+                              "Estudiant de màster"@ca-ad ;
                    skos:prefLabel "Étudiant de maîtrise"@fr ;
                    skos:altLabel "Étudiant de master"@fr ;
-                   rdfs:label "Estudante de mestrado"@pt ,
-                              "Estudiante de máster"@es ,
-                              "Estudiant de màster"@ca-ad ,
-                              "Étudiant de maîtrise"@fr ;
-                   skos:prefLabel "Estudiant de màster"@ca ,
-                                  "Estudante de máster"@gl ,
-                                  "Estudante de mestrado"@pt ;
-                   rdfs:label "Estudiant de màster"@ca-es .
+                   rdfs:label "Estudante de máster"@gl .
 
 
-asio:PhDStudent skos:altLabel "Doutorando"@pt ,
-                              "Doctorand"@ca ;
-                rdfs:label "Estudiant de doctorat"@ca-ad ,
-                           "Estudiante de doutoramento"@gl ,
-                           "Estudante de doutoramento"@pt ;
-                skos:prefLabel "PhD student"@en ;
-                rdfs:label "PhD student"@en ;
-                skos:altLabel "Doctorando"@es ;
-                skos:prefLabel "Étudiant de doctorat"@fr ,
-                               "Estudiante de doctorado"@es ,
-                               "Estudiante de doutoramento"@gl ,
-                               "Estudante de doutoramento"@pt ;
+asio:PhDStudent skos:altLabel "Doutorando"@pt ;
+                rdfs:label "Estudiant de doctorat"@ca-ad ;
+                skos:altLabel "Doctorand"@ca ;
+                rdfs:label "Étudiant de doctorat"@fr ,
+                           "Estudiante de doutoramento"@gl ;
+                skos:altLabel "Doctorant"@fr ;
                 rdfs:label "Estudiant de doctorat"@ca-es ;
-                skos:altLabel "Doctorando"@gl ;
-                skos:prefLabel "Estudiant de doctorat"@ca ;
-                rdfs:label "Estudiante de doctorado"@es ;
+                skos:prefLabel "PhD student"@en ,
+                               "Estudiant de doctorat"@ca ;
+                rdfs:label "PhD student"@en ,
+                           "Estudante de doutoramento"@pt ;
+                skos:prefLabel "Estudante de doutoramento"@pt ,
+                               "Étudiant de doctorat"@fr ,
+                               "Estudiante de doctorado"@es ,
+                               "Estudiante de doutoramento"@gl ;
                 skos:altLabel "PhD candidate"@en ,
-                              "Doctorant"@fr ;
-                rdfs:label "Étudiant de doctorat"@fr .
+                              "Doctorando"@es ;
+                rdfs:label "Estudiante de doctorado"@es ;
+                skos:altLabel "Doctorando"@gl .
 
 
-asio:UndergraduateStudent skos:prefLabel "Undergraduate student"@en ;
-                          rdfs:label "Undergraduate student"@en .
+asio:UndergraduateStudent rdfs:label "Undergraduate student"@en ;
+                          skos:prefLabel "Undergraduate student"@en .
 
 
 ###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
