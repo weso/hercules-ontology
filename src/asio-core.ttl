@@ -75,8 +75,6 @@ asio:addresses rdf:type owl:ObjectProperty ;
 ###  http://purl.org/hercules/asio/core#advises
 asio:advises rdf:type owl:ObjectProperty ;
              owl:inverseOf asio:isAdvisedBy ;
-             rdfs:domain <http://purl.org/hercules/asio/core#Research&TeachingPersonnel> ;
-             rdfs:range asio:Student ;
              rdfs:label "advises"@en .
 
 
@@ -475,24 +473,6 @@ asio:AdministrativeEntity rdf:type owl:Class ;
                                          "Entités administratives"@fr .
 
 
-###  http://purl.org/hercules/asio/core#AdministrativePersonnel
-asio:AdministrativePersonnel rdf:type owl:Class ;
-                             rdfs:subClassOf asio:HumanResource ;
-                             rdfs:comment "Personnel devoted to administrative tasks."@en ;
-                             rdfs:label "Administrative personnel"@en ,
-                                        "Personal administratiu"@ca-ad ,
-                                        "Personal administratiu"@ca-es ,
-                                        "Personal administrativo"@es ,
-                                        "Personnel administratif"@fr ,
-                                        "Pessoal administrativo"@pt ;
-                             skos:prefLabel "Administrative personnel"@en ,
-                                            "Personal administratiu"@ca-ad ,
-                                            "Personal administratiu"@ca-es ,
-                                            "Personal administrativo"@es ,
-                                            "Personnel administratif"@fr ,
-                                            "Pessoal administrativo"@pt .
-
-
 ###  http://purl.org/hercules/asio/core#Article
 asio:Article rdf:type owl:Class ;
              rdfs:subClassOf asio:ScientificPublication ;
@@ -791,44 +771,12 @@ asio:FundingProgramme rdf:type owl:Class ;
                       rdfs:label "Funding programme"@en .
 
 
-###  http://purl.org/hercules/asio/core#GraduateStudent
-asio:GraduateStudent rdf:type owl:Class ;
-                     rdfs:subClassOf asio:Student ;
-                     rdfs:label "Graduate student"@en ;
-                     skos:prefLabel "Graduate student"@en .
-
-
-###  http://purl.org/hercules/asio/core#HumanResource
-asio:HumanResource rdf:type owl:Class ;
-                   rdfs:subClassOf foaf:Person ;
-                   rdfs:comment "A person who make up the workforce of an organization, industry, business sector or economy."@en ;
-                   rdfs:label "Human resource"@en ,
-                              "Recurs humà"@ca-ad ,
-                              "Recurs humà"@ca-es ,
-                              "Recurso humano"@es ,
-                              "Recurso humano"@gl ,
-                              "Recurso humano"@pt ,
-                              "Ressource humaine"@fr ;
-                   skos:prefLabel "Human resource"@en ,
-                                  "Recurs humà"@ca-ad ,
-                                  "Recurs humà"@ca-es ,
-                                  "Recurso humano"@es ,
-                                  "Recurso humano"@gl ,
-                                  "Recurso humano"@pt ,
-                                  "Ressource humaine"@fr .
-
-
 ###  http://purl.org/hercules/asio/core#Manual
 asio:Manual rdf:type owl:Class ;
             rdfs:subClassOf asio:ScientificPublication ;
             rdfs:label "Manual"@en ;
             skos:altLabel "Handbook"@en ;
             skos:prefLabel "Manual"@en .
-
-
-###  http://purl.org/hercules/asio/core#MasterStudent
-asio:MasterStudent rdf:type owl:Class ;
-                   rdfs:subClassOf asio:GraduateStudent .
 
 
 ###  http://purl.org/hercules/asio/core#MastersDegree
@@ -952,11 +900,6 @@ asio:Patent rdf:type owl:Class ;
 asio:PeerReviewedArticle rdf:type owl:Class ;
                          rdfs:subClassOf asio:Article ;
                          rdfs:label "Peer-reviewed article"@en .
-
-
-###  http://purl.org/hercules/asio/core#PhDStudent
-asio:PhDStudent rdf:type owl:Class ;
-                rdfs:subClassOf asio:GraduateStudent .
 
 
 ###  http://purl.org/hercules/asio/core#PhDThesis
@@ -1103,24 +1046,6 @@ asio:ResearchMethod rdf:type owl:Class ;
                     skos:prefLabel "Research method"@en .
 
 
-###  http://purl.org/hercules/asio/core#ResearchPersonnel
-asio:ResearchPersonnel rdf:type owl:Class ;
-                       rdfs:subClassOf asio:HumanResource ;
-                       rdfs:comment "Personnel devoted to reasearching tasks."@en ;
-                       rdfs:label "Personal de recerca"@ca-ad ,
-                                  "Personal investigador"@ca-es ,
-                                  "Personal investigador"@es ,
-                                  "Personnel rechercheur"@fr ,
-                                  "Pessoal investigador"@pt ,
-                                  "Research Personnel"@en ;
-                       skos:prefLabel "Personal de recerca"@ca-ad ,
-                                      "Personal investigador"@ca-es ,
-                                      "Personal investigador"@es ,
-                                      "Personnel rechercheur"@fr ,
-                                      "Pessoal investigador"@pt ,
-                                      "Research Personnel"@en .
-
-
 ###  http://purl.org/hercules/asio/core#ResearchProblem
 asio:ResearchProblem rdf:type owl:Class ;
                      rdfs:label "Research problem"@en ;
@@ -1237,29 +1162,6 @@ asio:Spinoff rdf:type owl:Class ;
                             "Spin-off enpresa"@eu .
 
 
-###  http://purl.org/hercules/asio/core#Student
-asio:Student rdf:type owl:Class ;
-             rdfs:subClassOf foaf:Person .
-
-
-###  http://purl.org/hercules/asio/core#TechnicalPersonnel
-asio:TechnicalPersonnel rdf:type owl:Class ;
-                        rdfs:subClassOf asio:HumanResource ;
-                        rdfs:comment "Personnel devoted to technical suport."@en ;
-                        rdfs:label "Personal tècnic"@ca-ad ,
-                                   "Personal tècnic"@ca-es ,
-                                   "Personal técnico"@es ,
-                                   "Personnel technique"@fr ,
-                                   "Pessoal técnico"@pt ,
-                                   "Technical personnel"@en ;
-                        skos:prefLabel "Personal tècnic"@ca-ad ,
-                                       "Personal tècnic"@ca-es ,
-                                       "Personal técnico"@es ,
-                                       "Personnel technique"@fr ,
-                                       "Pessoal técnico"@pt ,
-                                       "Technical personnel"@en .
-
-
 ###  http://purl.org/hercules/asio/core#TechnicalReport
 asio:TechnicalReport rdf:type owl:Class ;
                      rdfs:subClassOf asio:ScientificPublication ;
@@ -1287,11 +1189,6 @@ asio:Thesis rdf:type owl:Class ;
                            "Tesis"@es ,
                            "Thesis"@en ,
                            "Thèse"@fr .
-
-
-###  http://purl.org/hercules/asio/core#UndergraduateStudent
-asio:UndergraduateStudent rdf:type owl:Class ;
-                          rdfs:subClassOf asio:Student .
 
 
 ###  http://purl.org/hercules/asio/core#University
@@ -1325,24 +1222,6 @@ asio:UniversityDivision rdf:type owl:Class ;
                                    "División de universidade"@gl ,
                                    "Divisão de universidade"@pt ,
                                    "University division"@en .
-
-
-###  http://purl.org/hercules/asio/core#Research&TeachingPersonnel
-<http://purl.org/hercules/asio/core#Research&TeachingPersonnel> rdf:type owl:Class ;
-                                                                rdfs:subClassOf asio:HumanResource ;
-                                                                rdfs:comment "Personnel devoted to teaching and research tasks."@en ;
-                                                                rdfs:label "Personal docent i investigador"@ca-ad ,
-                                                                           "Personal docent i investigador"@ca-es ,
-                                                                           "Personnel enseignant et chercheur"@fr ,
-                                                                           "Pessoal docente e investigador"@pt ,
-                                                                           "Teaching and research personnel"@en ,
-                                                                           "personal docente e investigador"@es ;
-                                                                skos:prefLabel "Personal docent i investigador"@ca-ad ,
-                                                                               "Personal docent i investigador"@ca-es ,
-                                                                               "Personnel enseignant et chercheur"@fr ,
-                                                                               "Pessoal docente e investigador"@pt ,
-                                                                               "Teaching and research personnel"@en ,
-                                                                               "personal docente e investigador"@es .
 
 
 ###  http://purl.org/hercules/asio/modules#GeopoliticalEntities
@@ -1461,53 +1340,6 @@ asio:TechnicalSupport rdf:type owl:NamedIndividual ,
 ###  http://purl.org/hercules/asio/core#UndergraduateStudent
 asio:UndergraduateStudent rdf:type owl:NamedIndividual ,
                                    asio:Role .
-
-
-#################################################################
-#    Annotations
-#################################################################
-
-asio:MasterStudent skos:prefLabel "Estudiante de máster"@es ;
-                   rdfs:label "Estudiant de màster"@ca-es ;
-                   skos:altLabel "Estudante de mestrado"@gl ;
-                   skos:prefLabel "Estudante de mestrado"@pt ;
-                   skos:altLabel "Estudiant de mestratge"@ca ;
-                   skos:prefLabel "Master student"@en ;
-                   rdfs:label "Master student"@en ;
-                   skos:prefLabel "Estudante de máster"@gl ,
-                                  "Estudiant de màster"@ca ;
-                   rdfs:label "Estudiante de máster"@es ,
-                              "Estudante de mestrado"@pt ,
-                              "Étudiant de maîtrise"@fr ,
-                              "Estudiant de màster"@ca-ad ;
-                   skos:prefLabel "Étudiant de maîtrise"@fr ;
-                   skos:altLabel "Étudiant de master"@fr ;
-                   rdfs:label "Estudante de máster"@gl .
-
-
-asio:PhDStudent skos:altLabel "Doutorando"@pt ;
-                rdfs:label "Estudiant de doctorat"@ca-ad ;
-                skos:altLabel "Doctorand"@ca ;
-                rdfs:label "Étudiant de doctorat"@fr ,
-                           "Estudiante de doutoramento"@gl ;
-                skos:altLabel "Doctorant"@fr ;
-                rdfs:label "Estudiant de doctorat"@ca-es ;
-                skos:prefLabel "PhD student"@en ,
-                               "Estudiant de doctorat"@ca ;
-                rdfs:label "PhD student"@en ,
-                           "Estudante de doutoramento"@pt ;
-                skos:prefLabel "Estudante de doutoramento"@pt ,
-                               "Étudiant de doctorat"@fr ,
-                               "Estudiante de doctorado"@es ,
-                               "Estudiante de doutoramento"@gl ;
-                skos:altLabel "PhD candidate"@en ,
-                              "Doctorando"@es ;
-                rdfs:label "Estudiante de doctorado"@es ;
-                skos:altLabel "Doctorando"@gl .
-
-
-asio:UndergraduateStudent rdfs:label "Undergraduate student"@en ;
-                          skos:prefLabel "Undergraduate student"@en .
 
 
 ###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
