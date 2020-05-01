@@ -237,7 +237,7 @@ asioIndividuals:CorporateFinanceAndBanking rdf:type owl:NamedIndividual ,
                       asio:projectStartDate 2009 ;
                       asio:projectEndDate 2011 ;
                       asio:hasResearchField asioModules:ES_SUBJECT_AREA_LEVEL_2_ECO ;
-                      rdfs:comment "Corporate finance and banking under information and incentive problems. (Ministerio de Ciencia e Innovación, 2009-2011)"@en ;
+                      rdfs:comment "Corporate Finance and Banking"@en ;
                       rdfs:label "Corporate finance and banking under information and incentive problems. (Ministerio de Ciencia e Innovación, 2009-2011)"@en .
 
 ###  http://www.asio.es/asioinstances/asio#DanielGayoAvello
@@ -394,18 +394,20 @@ asioIndividuals:FisicaOculta rdf:type owl:NamedIndividual ,
                         asio:projectEndDate "2022-12-31"^^xsd:date ;
                         asio:isFundedBy asioIndividuals:FEDER ;
                         asio:hasResearchField asioModules:ES_SUBJECT_AREA_LEVEL_3_AYA ;
-                        rdfs:label "Hidden physics in the real-time evolution of gaseous nebulas around evolved low and intermediate mass stars"@en ,
-                              "Física oculta en la evolución en tiempo real de las nebulosas gaseosas en torno a estrellas evolucionadas de masa baja e intermedia"@es .
+                        rdfs:comment "Hidden physics in the real-time evolution of gaseous nebulas around evolved low and intermediate mass stars"@en ,
+                              "Física oculta en la evolución en tiempo real de las nebulosas gaseosas en torno a estrellas evolucionadas de masa baja e intermedia"@es ;
+                        rdfs:label "Hidden physics"@en , "Física oculta"@es .
 
 ###  http://www.asio.es/asioinstances/asio#Galatics
-asioIndividuals:Galatics rdf:type owl:NamedIndividual ,
+asioIndividuals:Galactics rdf:type owl:NamedIndividual ,
                                     asio:RegionalProject ;
                         asio:projectStartDate "2019-01-01"^^xsd:date ;
                         asio:projectEndDate "2022-12-31"^^xsd:date ;
                         asio:isFundedBy asioIndividuals:FEDER ;
                         asio:hasResearchField asioModules:ES_SUBJECT_AREA_LEVEL_3_AYA ;
-                        rdfs:label "The galatics of the galaxy: massive stars, star cumulars and the galactic center."@en ,
-                              "Los galaticos de la galaxia: estrellas masivas, cumulos estelares y el centro galactico."@es .
+                        rdfs:comment "The galactics of the galaxy: massive stars, star cumulars and the galactic center."@en ,
+                              "Los galacticos de la galaxia: estrellas masivas, cumulos estelares y el centro galactico."@es ;
+                        rdfs:label "Galactics"@en , "Galacticos"@es .
 
 
 ###  http://www.asio.es/asioinstances/asio#FEDER
@@ -421,6 +423,7 @@ asioIndividuals:FEDER rdf:type owl:NamedIndividual ,
                                        asioIndividuals:Intramuscular ,
                                        asioIndividuals:VaginalProgesterone ;
                             rdfs:comment "The European Regional Development Fund (ERDF) aims to strengthen socio-economic cohesion within the European Union by correcting imbalances between its regions."@en ;
+                            skos:altLabel "FEDER"@es , "ERDF"@en ;
                             rdfs:label "European Regional Development Fund"@en ,
                                        "Fondo Europeo de Desarrollo Regional"@es .
 
@@ -526,6 +529,7 @@ asioIndividuals:HSFP rdf:type owl:NamedIndividual ,
                                 asio:FundingProgramme ;
                             asio:funds asioIndividuals:3DGenomeOrganization ;
                             rdfs:comment "The Human Frontier Science Program (HFSP) promotes international collaboration in basic research focused on the elucidation of the sophisticated and complex mechanisms of living organisms."@en ;
+                            skos:altLabel "HFSP"@en ;
                             rdfs:label "Human Frontier Science Program"@en ,
                                        "Frontière humaine"@fr .
 
@@ -556,8 +560,9 @@ asioIndividuals:Chromatograph rdf:type owl:NamedIndividual ,
                                     asio:RegionalProject ;
                         asio:isFundedBy asioIndividuals:FEDER ;
                         asio:hasResearchField asioModules:ES_SUBJECT_AREA_LEVEL_3_ALI ;
-                        rdfs:label "Acquisition of a liquid chromatograph coupled to high resolution mass spectrometer with dual application in proteomics and metabolomics"@en ,
-                                   "Adquisición de un cromatógrafo de líquidos acoplado a espectrómetro de masas de alta resolución con aplicación dual en proteómica y metabolómica"@es  .
+                        rdfs:comment "Acquisition of a liquid chromatograph coupled to high resolution mass spectrometer with dual application in proteomics and metabolomics"@en ,
+                                   "Adquisición de un cromatógrafo de líquidos acoplado a espectrómetro de masas de alta resolución con aplicación dual en proteómica y metabolómica"@es  ;
+                        rdfs:label "Chromatograph"@en .
 
 ###  http://www.asio.es/asioinstances/asio#InstitutoGallegoDeFisicaDeAltasEnergias
 asioIndividuals:InstitutoGallegoDeFisicaDeAltasEnergias rdf:type owl:NamedIndividual ,
@@ -588,7 +593,8 @@ asioIndividuals:SANDA rdf:type owl:NamedIndividual ,
                         asio:projectEndDate "2023-08-31"^^xsd:date ;
                         asio:isFundedBy asioIndividuals:Horizon2020 ;
                         asio:hasResearchField asioModules:ES_SUBJECT_AREA_LEVEL_3_FFP ;
-                        rdfs:label "Supplying Accurate Nuclear Data for energy and non-energy Applications (SANDA)"@en .
+                        rdfs:label "Supplying Accurate Nuclear Data for energy and non-energy Applications"@en ;
+                        skos:altLabel "SANDA"@en .
 
 ###  http://www.asio.es/asioinstances/asio#InstitutoMurcianoDeInvestigacionBiosanitaria
 asioIndividuals:InstitutoMurcianoDeInvestigacionBiosanitaria rdf:type owl:NamedIndividual ,
@@ -596,7 +602,7 @@ asioIndividuals:InstitutoMurcianoDeInvestigacionBiosanitaria rdf:type owl:NamedI
                                                   asio:hasResearchLine asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_BMED ;
                                                   asio:participant asioIndividuals:Intramuscular ,
                                                                    asioIndividuals:VaginalProgesterone ;
-                                                  rdfs:label "Instituto Murciano de Investigación Biosanitaria"@es ;
+                                                  rdfs:label "Instituto Murciano de Investigación Biosanitaria"@es , "Murcian Institute for Biosanitary Research"@en ;
                                                   skos:altLabel "IMIB"@es .
 
 ###  http://www.asio.es/asioinstances/asio#Intramuscular
@@ -606,7 +612,8 @@ asioIndividuals:Intramuscular rdf:type owl:NamedIndividual ,
                         asio:isFundedBy asioIndividuals:FEDER ,
                                         asioIndividuals:InstitutoSaludCarlosIII ;
                         asio:hasResearchField asioModules:ES_SUBJECT_AREA_LEVEL_2_BME ;
-                        rdfs:label "Intramuscular injection of autologous mononuclear cells in ALS patients. A phase II clinical trial. PIC18/00015"@en .
+                        rdfs:comment "Intramuscular injection of autologous mononuclear cells in ALS patients. A phase II clinical trial. PIC18/00015"@en ;
+                        rdfs:label "Intramuscular"@en .
 
 ###  http://www.asio.es/asioinstances/asio#VaginalProgesterone
 asioIndividuals:VaginalProgesterone rdf:type owl:NamedIndividual ,
@@ -615,7 +622,8 @@ asioIndividuals:VaginalProgesterone rdf:type owl:NamedIndividual ,
                         asio:isFundedBy asioIndividuals:FEDER ,
                                         asioIndividuals:InstitutoSaludCarlosIII ;
                         asio:hasResearchField asioModules:ES_SUBJECT_AREA_LEVEL_2_BME ;
-                        rdfs:label "Early vaginal progesterone for the prevention of spontaneous preterm birth in twins: A randomised, placebo controlled, double-blinded trial- EVENTS"@en .
+                        rdfs:comment "Early vaginal progesterone for the prevention of spontaneous preterm birth in twins: A randomised, placebo controlled, double-blinded trial- EVENTS"@en ;
+                        rdfs:label "Vaginal Progesterone"@en .
 
 ###  http://www.asio.es/asioinstances/asio#InstitutoSaludCarlosIII
 asioIndividuals:InstitutoSaludCarlosIII rdf:type owl:NamedIndividual ,
