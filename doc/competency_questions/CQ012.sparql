@@ -1,0 +1,17 @@
+PREFIX wb: <http://hercules-demo.wiki.opencura.com/entity/>
+PREFIX wbt: <http://hercules-demo.wiki.opencura.com/prop/direct/>
+
+SELECT ?centreLabel (COUNT(DISTINCT(?project)) / COUNT(DISTINCT(?allProjects)) AS ?percentageOfProjects) WHERE {
+  ?centre wbt:P1 wb:Q2 ;                                               # get entities of type ResearchInstitute
+          rdfs:label ?centreLabel .
+  FILTER(str(?centreLabel) = "Galician Institute of High Energies" &&
+         lang(?centreLabel) = "en")                                    # centre to be parameterized
+  ?centre wbt:P27 ?project .                                           # get projects of this institute
+  ?project wbt:P1 wb:Q155 .                                            # that are european
+
+  ?allProjects wbt:P1 wb:Q155 .                                        # get all european projects
+  SERVICE wikibase:label {
+    bd:serviceParam wikibase:language "en,es" .
+  }
+}
+GROUP BY ?centreLabel
