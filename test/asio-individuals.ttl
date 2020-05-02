@@ -820,7 +820,7 @@ asioIndividuals:Thesis5 rdf:type owl:NamedIndividual ,
                         asio:isAuthoredBy asioIndividuals:GuillermoFacundoColunga ;
                         asio:supervisedBy asioIndividuals:JoseEmilioLabraGayo ;
                         asio:publicationDate 2020 ;
-                        asio:label "Automatic generation of multilanguage domain models through a subset of shape expressions"@en .
+                        rdfs:label "Automatic generation of multilanguage domain models through a subset of shape expressions"@en .
 
 ### http://www.asio.es/asioinstances/asio#Thesis6
 asioIndividuals:Thesis6 rdf:type owl:NamedIndividual ,
@@ -833,7 +833,7 @@ asioIndividuals:Thesis6 rdf:type owl:NamedIndividual ,
                                             "natural language" ,
                                             "text analysis" ,
                                             "machine learning" ;
-                        asio:label "Application of machine learning techniques for the analysis of user generated content in self-help forums"@es .
+                        rdfs:label "Application of machine learning techniques for the analysis of user generated content in self-help forums"@es .
 
 ###  http://www.asio.es/asioinstances/asio#US5579430
 asioIndividuals:US5579430 rdf:type owl:NamedIndividual ,

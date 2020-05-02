@@ -1,0 +1,16 @@
+PREFIX wb: <http://hercules-demo.wiki.opencura.com/entity/>
+PREFIX wbt: <http://hercules-demo.wiki.opencura.com/prop/direct/>
+
+SELECT ?researchFieldLevel1Label ?startYear (COUNT(?project) as ?numberOfProjects)  WHERE {
+  ?project wbt:P1 ?projectType ;    # get all projects
+           wbt:P28 ?startDate  ;    # with a start date
+           wbt:P32 ?researchField . # and research field
+  ?researchField wbt:P23* ?researchFieldLevel1 .
+  ?researchFieldLevel1 wbt:P24 wb:Q162 .  # get Level 1 Subject Area from the project
+  FILTER(?projectType IN (wb:Q94, wb:Q155, wb:Q156, wb:Q157)) # regional, national, european and standard projects
+  SERVICE wikibase:label {
+    bd:serviceParam wikibase:language "en,es" .
+  }
+}
+GROUP BY (YEAR(?startDate) AS ?startYear) ?researchFieldLevel1Label
+ORDER BY DESC(?startYear) DESC(?numberOfProjects)
