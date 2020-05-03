@@ -217,6 +217,15 @@ asio:FundingProgramme a owl:Class ;
 
 asio:HumanResource owl:equivalentClass fea:HumanResource .
 
+asio:InternationalProject a owl:Class ;
+    rdfs:label "Projecte internacional"@ca-es,
+        "International project"@en,
+        "Proyecto internacional"@es,
+        "Projet international"@fr,
+        "Projeto internacional"@pt ;
+    rdfs:comment "A consortium project integrated by partners from diverse countries beyond the scope of the European Union."@en ;
+    rdfs:subClassOf foaf:Project .
+
 asio:Manual a owl:Class ;
     rdfs:label "Manual"@en ;
     rdfs:subClassOf asio:ScientificPublication ;
@@ -505,8 +514,7 @@ asio:hasResearchField a owl:ObjectProperty ;
     rdfs:label "has research field"@en ;
     owl:equivalentProperty orkg:hasResearchField .
 
-asio:hasResearchLine a owl:ObjectProperty,
-        owl:SymmetricProperty ;
+asio:hasResearchLine a owl:ObjectProperty ;
     rdfs:label "has research line"@en ;
     rdfs:comment "a property linking organizations or groups with scientific domains"@en ;
     rdfs:domain foaf:Agent ;
@@ -13724,17 +13732,6 @@ asioModules:ES_SUBJECT_AREA_LEVEL_1_CSH a skos:Concept ;
 
 foaf:Agent a owl:Class .
 
-foaf:Project a owl:Class ;
-    rdfs:comment "In ASIO, a temporary research endeavor undertaken to achieve defined objectives."@en ;
-    owl:equivalentClass dbo:Project,
-        semcerif:Project,
-        cerif:Project,
-        frapo:Project,
-        doap:Project,
-        vivo:Project,
-        dul:Project,
-        org:Project .
-
 nuts:ES61 a skos:Concept ;
     asio:codeOf asioModules:ES_DIVISION_LEVEL_1_ES_AN ;
     skos:broader nuts:ES6 ;
@@ -13747,6 +13744,17 @@ nuts:ES61 a skos:Concept ;
         nuts:ES616,
         nuts:ES617,
         nuts:ES618 .
+
+foaf:Project a owl:Class ;
+    rdfs:comment "In ASIO, a temporary research endeavor undertaken to achieve defined objectives."@en ;
+    owl:equivalentClass dbo:Project,
+        semcerif:Project,
+        cerif:Project,
+        frapo:Project,
+        doap:Project,
+        vivo:Project,
+        dul:Project,
+        org:Project .
 
 nuts:ES41 a skos:Concept ;
     asio:codeOf asioModules:ES_DIVISION_LEVEL_1_ES_CL ;
