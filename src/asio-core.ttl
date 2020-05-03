@@ -257,6 +257,13 @@ asio:profiles rdf:type owl:ObjectProperty ;
               rdfs:label "profiles"@en .
 
 
+###  http://purl.org/hercules/asio/core#projectOutcome
+asio:projectOutcome rdf:type owl:ObjectProperty ;
+                    rdfs:domain foaf:Project ;
+                    rdfs:comment "a property to link a project to any outcome obtained within its endeavour, including publications, patents, products, prototypes, etc. The domain of this property is obviously the class foaf:Project but the range is left open so to encompass unforeseen project outcomes."@en ;
+                    rdfs:label "project outcome"@en .
+
+
 ###  http://purl.org/hercules/asio/core#publishedBy
 asio:publishedBy rdf:type owl:ObjectProperty .
 
