@@ -1,0 +1,15 @@
+PREFIX wb: <http://hercules-demo.wiki.opencura.com/entity/>
+PREFIX wbt: <http://hercules-demo.wiki.opencura.com/prop/direct/>
+
+SELECT ?researcherLabel ?projectLabel ?projectDescription ?authoredWorkLabel ?authoredWorkDescription WHERE {
+  ?researcher wbt:P1 wb:Q1 ; # get named individuals
+              wbt:P17 wb:Q44 ;  # which play role Researching
+              rdfs:label ?researcherLabel .
+  FILTER(?researcherLabel = "Pedro Diez Mejia"@en) # person to be parametrized
+  ?researcher wbt:P11 ?authoredWork . # get authored work of the researcher
+  ?project wbt:P33 ?authoredWork .    # which is the outcome of a project
+  SERVICE wikibase:label {
+    bd:serviceParam wikibase:language "en,es" .
+  }
+}
+ORDER BY ?projectLabel ?projectOutcomeLabel
