@@ -128,6 +128,7 @@ asioIndividuals:CentreInternacionalDeMetodesNumericsALEnginyeria rdf:type owl:Na
                                                       asio:hasResearchLine asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_3_MTMANAM ;
                                                       asio:participant asioIndividuals:EdgeTwinsHPC,
                                                                        asioIndividuals:NICESHIP ;
+                                                      asio:member asioIndividuals:PedroDiez ;
                                                       rdfs:label "Centre Internacional de Mètodes Numèrics a l'Enginyeria"@ca-es ,
                                                                  "International Centre for Numerical Methods in Engineering"@en ;
                                                       skos:altLabel "CIMNE"@ca-es ,
@@ -151,6 +152,7 @@ asioIndividuals:NICESHIP rdf:type owl:NamedIndividual ,
                       asio:projectEndDate "2019-10-01"^^xsd:date ;
                       asio:isFundedBy asioIndividuals:NICOP ;
                       asio:hasResearchField asioModules:ES_SUBJECT_AREA_LEVEL_3_FFP ;
+                      asio:projectOutcome asioIndividuals:PedroDiezPaper1 ;
                       rdfs:comment "Development of new Lagrangian computational methods for ice-ship interaction problems"@en ;
                       rdfs:label "NICE-SHIP"@en ,
                                  "NICE-SHIP"@es .
@@ -551,6 +553,7 @@ asioIndividuals:InstitutoDeProductosLacteosDeAsturias rdf:type owl:NamedIndividu
 asioIndividuals:LacticBacteria rdf:type owl:NamedIndividual ,
                                     asio:RegionalProject ;
                         asio:isFundedBy asioIndividuals:FEDER ;
+                        asio:projectOutcome asioIndividuals:ES2270650 ;
                         asio:hasResearchField asioModules:ES_SUBJECT_AREA_LEVEL_3_ALI ;
                         rdfs:label "Lactic bacteria in food and health"@en ,
                                    "Bacterias lácticas en alimentación y salud"@es  .
@@ -559,6 +562,7 @@ asioIndividuals:LacticBacteria rdf:type owl:NamedIndividual ,
 asioIndividuals:Chromatograph rdf:type owl:NamedIndividual ,
                                     asio:RegionalProject ;
                         asio:isFundedBy asioIndividuals:FEDER ;
+                        asio:projectOutcome asioIndividuals:ES2326349B1 ;
                         asio:hasResearchField asioModules:ES_SUBJECT_AREA_LEVEL_3_ALI ;
                         rdfs:comment "Acquisition of a liquid chromatograph coupled to high resolution mass spectrometer with dual application in proteomics and metabolomics"@en ,
                                    "Adquisición de un cromatógrafo de líquidos acoplado a espectrómetro de masas de alta resolución con aplicación dual en proteómica y metabolómica"@es  ;
@@ -940,6 +944,21 @@ asioIndividuals:BegoñaCristinaPelayoGarciaBustelo rdf:type owl:NamedIndividual 
                                       asioIndividuals:BegoñaCristinaPelayoPaper2 ;
                          rdfs:label "Begoña Cristina Pelayo García-Bustelo"@en ,
                                     "Begoña Cristina Pelayo García-Bustelo"@es .
+
+asioIndividuals:PedroDiez rdf:type owl:NamedIndividual ;
+                          asio:plays asio:Researching ,
+                                     asio:Teaching ;
+                          asio:authors asioIndividuals:PedroDiezPaper1 ;
+                          asio:isMemberOf asioIndividuals:CentreInternacionalDeMetodesNumericsALEnginyeria ;
+                          rdfs:label "Pedro Díez Mejía"@en,
+                                     "Pedro Díez Mejía"@es .
+
+asioIndividuals:PedroDiezPaper1 rdf:type owl:NamedIndividual ,
+                                         asio:PeerReviewedArticle ;
+                                asio:isAuthoredBy asioIndividuals:PedroDiez ;
+                                asio:publicationDate "29-02-2020"^^xsd:date ;
+                                rdfs:comment """This article gathers the outcomes of the second ECCOMAS CM3 Conference series on transport, which addressed the main challenges and opportunities that computation and big data represent for transport and mobility in the automotive, logistics, aeronautics and marine-maritime fields. Through a series of plenary lectures and mini-forums with lectures followed by question-and-answer sessions, the conference explored potential solutions and innovations to improve transport and mobility in surface and air applications."""@en ;
+                                rdfs:label "Computation and Big Data for Transport: Digital Innovations in Surface and Air Transport Systems"@en .
 
 ###  http://www.asio.es/asioinstances/asio#MariaRitaSierraSanchez
 asioIndividuals:MariaRitaSierraSanchez rdf:type owl:NamedIndividual ;
