@@ -2,7 +2,7 @@ name: Build and Deploy Documentation
 
 on:
   push:
-    branches: 
+    branches:
       - 'gh-pages'
   page_build:
 
@@ -29,6 +29,23 @@ jobs:
 
     - name: Remove gitignore
       run: rm .gitignore
+
+    - name: Get current time
+      uses: 1466587594/get-current-time@v1
+      id: current-time
+      with:
+        format: YYYY-MM-DD
+        utcOffset: "+08:00"
+
+    - name: Store version using current date
+      env:
+        F_TIME: "${{ steps.current-time.outputs.formattedTime }}"
+      run: |
+        git checkout gh-pages
+        cp -an current/. build/current/
+        cd build
+        mkdir $F_TIME
+        cp -a current/. $F_TIME/
 
     - name: Deploy
       uses: JamesIves/github-pages-deploy-action@releases/v3
