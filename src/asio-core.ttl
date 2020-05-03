@@ -765,6 +765,11 @@ asio:Funding rdf:type owl:Class ;
              rdfs:subClassOf <http://purl.org/cerif/frapo/FinancialEntity> .
 
 
+###  http://purl.org/hercules/asio/core#FundingAgency
+asio:FundingAgency rdf:type owl:Class ;
+                   rdfs:label "Funding agency"@en .
+
+
 ###  http://purl.org/hercules/asio/core#FundingOrganization
 asio:FundingOrganization rdf:type owl:Class ;
                          rdfs:subClassOf foaf:Organization ;
@@ -775,6 +780,13 @@ asio:FundingOrganization rdf:type owl:Class ;
 asio:FundingProgramme rdf:type owl:Class ;
                       rdfs:comment "A programme of related funded projects, typically established by a funding organization."@en ;
                       rdfs:label "Funding programme"@en .
+
+
+###  http://purl.org/hercules/asio/core#Grant
+asio:Grant rdf:type owl:Class ;
+           rdfs:subClassOf asio:Funding ;
+           rdfs:comment "A financial award provided by a funding organisation for a particular project or purpose, usually awarded on the basis of a competitive application."@en ;
+           rdfs:label "Grant"@en .
 
 
 ###  http://purl.org/hercules/asio/core#InternationalProject
