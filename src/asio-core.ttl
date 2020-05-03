@@ -171,8 +171,7 @@ asio:hasResearchField rdf:type owl:ObjectProperty ;
 
 
 ###  http://purl.org/hercules/asio/core#hasResearchLine
-asio:hasResearchLine rdf:type owl:ObjectProperty ,
-                              owl:SymmetricProperty ;
+asio:hasResearchLine rdf:type owl:ObjectProperty ;
                      rdfs:domain foaf:Agent ;
                      rdfs:range skos:Concept ;
                      rdfs:comment "a property linking organizations or groups with scientific domains"@en ;
@@ -769,6 +768,17 @@ asio:FundingOrganization rdf:type owl:Class ;
 asio:FundingProgramme rdf:type owl:Class ;
                       rdfs:comment "A programme of related funded projects, typically established by a funding organization."@en ;
                       rdfs:label "Funding programme"@en .
+
+
+###  http://purl.org/hercules/asio/core#InternationalProject
+asio:InternationalProject rdf:type owl:Class ;
+                          rdfs:subClassOf foaf:Project ;
+                          rdfs:comment "A consortium project integrated by partners from diverse countries beyond the scope of the European Union."@en ;
+                          rdfs:label "International project"@en ,
+                                     "Projecte internacional"@ca-es ,
+                                     "Projet international"@fr ,
+                                     "Projeto internacional"@pt ,
+                                     "Proyecto internacional"@es .
 
 
 ###  http://purl.org/hercules/asio/core#Manual
