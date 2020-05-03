@@ -598,6 +598,11 @@ asio:projectObjective a owl:DatatypeProperty ;
     rdfs:domain foaf:Project ;
     rdfs:range xsd:string .
 
+asio:projectOutcome a owl:ObjectProperty ;
+    rdfs:label "project outcome"@en ;
+    rdfs:comment "a property to link a project to any outcome obtained within its endeavour, including publications, patents, products, prototypes, etc. The domain of this property is obviously the class foaf:Project but the range is left open so to encompass unforeseen project outcomes."@en ;
+    rdfs:domain foaf:Project .
+
 asio:projectStartDate a owl:DatatypeProperty ;
     rdfs:label "project start date"@en,
         "fecha inicio proyecto"@es ;
@@ -13745,17 +13750,6 @@ nuts:ES61 a skos:Concept ;
         nuts:ES617,
         nuts:ES618 .
 
-foaf:Project a owl:Class ;
-    rdfs:comment "In ASIO, a temporary research endeavor undertaken to achieve defined objectives."@en ;
-    owl:equivalentClass dbo:Project,
-        semcerif:Project,
-        cerif:Project,
-        frapo:Project,
-        doap:Project,
-        vivo:Project,
-        dul:Project,
-        org:Project .
-
 nuts:ES41 a skos:Concept ;
     asio:codeOf asioModules:ES_DIVISION_LEVEL_1_ES_CL ;
     skos:broader nuts:ES4 ;
@@ -13787,6 +13781,17 @@ asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_MCLI a skos:Concept ;
         "Médecine clinique et épidémiologie"@fr,
         "Medicina Clínica e Epidemioloxía"@gl,
         "Medicina clínica e epidemiologia"@pt .
+
+foaf:Project a owl:Class ;
+    rdfs:comment "In ASIO, a temporary research endeavor undertaken to achieve defined objectives."@en ;
+    owl:equivalentClass dbo:Project,
+        semcerif:Project,
+        cerif:Project,
+        frapo:Project,
+        doap:Project,
+        vivo:Project,
+        dul:Project,
+        org:Project .
 
 asioModules:ES_DIVISION_LEVEL_2_ES_B a skos:Concept ;
     rdfs:label "Barcelona" ;
