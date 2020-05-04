@@ -128,6 +128,7 @@ asio:employs rdf:type owl:ObjectProperty ;
 ###  http://purl.org/hercules/asio/core#funds
 asio:funds rdf:type owl:ObjectProperty ;
            owl:inverseOf asio:isFundedBy ;
+           rdfs:domain foaf:Agent ;
            rdfs:label "funds"@en .
 
 
@@ -137,6 +138,14 @@ asio:geo-division rdf:type owl:ObjectProperty ;
                   rdfs:range modules:GeopoliticalEntities ;
                   rdfs:comment "A property to link a resource to a predefined geographical (or geopolitical) division."@en ;
                   rdfs:label "geo-division"@en .
+
+
+###  http://purl.org/hercules/asio/core#h-index
+asio:h-index rdf:type owl:ObjectProperty ;
+             rdfs:domain foaf:Person ;
+             rdfs:range asio:QualifiedValue ;
+             rdfs:label "A property to express the h-index of an author."@en ,
+                        "h-index"@en .
 
 
 ###  http://purl.org/hercules/asio/core#hasCV
@@ -180,9 +189,6 @@ asio:hasResearchLine rdf:type owl:ObjectProperty ;
 
 ###  http://purl.org/hercules/asio/core#hasScientificDomain
 asio:hasScientificDomain rdf:type owl:ObjectProperty ;
-                         rdfs:domain asio:Patent ,
-                                     asio:Publication ,
-                                     foaf:Project ;
                          rdfs:range skos:Concept ;
                          rdfs:label "has scientific domain"@en .
 
@@ -197,6 +203,14 @@ asio:hasSealOfQuality rdf:type owl:ObjectProperty ;
 ###  http://purl.org/hercules/asio/core#hasTRL
 asio:hasTRL rdf:type owl:ObjectProperty ;
             rdfs:label "has TRL"@en .
+
+
+###  http://purl.org/hercules/asio/core#i10-index
+asio:i10-index rdf:type owl:ObjectProperty ;
+               rdfs:domain foaf:Person ;
+               rdfs:range asio:QualifiedValue ;
+               rdfs:comment "A property to express the i10-index of an author."@en ;
+               rdfs:label "i10-index"@en .
 
 
 ###  http://purl.org/hercules/asio/core#isAdvisedBy
@@ -331,6 +345,12 @@ asio:yields rdf:type owl:ObjectProperty ;
             rdfs:label "yields"@en .
 
 
+###  http://www.w3.org/ns/prov#wasDerivedFrom
+<http://www.w3.org/ns/prov#wasDerivedFrom> rdf:type owl:ObjectProperty ;
+                                           rdfs:comment "A derivation is a transformation of an entity into another, an update of an entity resulting in a new one, or the construction of a new entity based on a pre-existing entity."@en ;
+                                           rdfs:label "was derived from"@en .
+
+
 ###  http://xmlns.com/foaf/0.1/member
 foaf:member rdf:type owl:ObjectProperty ;
             rdfs:label "member"@en .
@@ -339,6 +359,24 @@ foaf:member rdf:type owl:ObjectProperty ;
 #################################################################
 #    Data properties
 #################################################################
+
+###  http://purl.org/hercules/asio/core#hasDOI
+asio:hasDOI rdf:type owl:DatatypeProperty ;
+            rdfs:domain asio:Publication ;
+            rdfs:range xsd:string .
+
+
+###  http://purl.org/hercules/asio/core#hasORCID
+asio:hasORCID rdf:type owl:DatatypeProperty ;
+              rdfs:domain foaf:Person ;
+              rdfs:range xsd:string .
+
+
+###  http://purl.org/hercules/asio/core#hasResearcherID
+asio:hasResearcherID rdf:type owl:DatatypeProperty ;
+                     rdfs:domain foaf:Person ;
+                     rdfs:range xsd:string .
+
 
 ###  http://purl.org/hercules/asio/core#isActive
 asio:isActive rdf:type owl:DatatypeProperty ;
@@ -349,6 +387,13 @@ given a interaction between two applications."""@en ;
               rdfs:label "is active"@en .
 
 
+###  http://purl.org/hercules/asio/core#projectAcronym
+asio:projectAcronym rdf:type owl:DatatypeProperty ;
+                    rdfs:domain foaf:Project ;
+                    rdfs:range xsd:string ;
+                    rdfs:label "project acronym"@en .
+
+
 ###  http://purl.org/hercules/asio/core#projectEndDate
 asio:projectEndDate rdf:type owl:DatatypeProperty ;
                     rdfs:domain foaf:Project ;
@@ -356,6 +401,13 @@ asio:projectEndDate rdf:type owl:DatatypeProperty ;
                     rdfs:comment "The end date of the project."@en ;
                     rdfs:label "fecha final proyecto"@es ,
                                "project end date"@en .
+
+
+###  http://purl.org/hercules/asio/core#projectID
+asio:projectID rdf:type owl:DatatypeProperty ;
+               rdfs:domain foaf:Project ;
+               rdfs:range xsd:integer ;
+               rdfs:label "project ID"@en .
 
 
 ###  http://purl.org/hercules/asio/core#projectKeyword
@@ -997,6 +1049,12 @@ asio:Publication rdf:type owl:Class ;
                                 "Publication"@en ,
                                 "Publication"@fr ,
                                 "Publicação"@pt .
+
+
+###  http://purl.org/hercules/asio/core#QualifiedValue
+asio:QualifiedValue rdf:type owl:Class ;
+                    rdfs:comment "A class to represent a qualified value as used in Wikibase."@en ;
+                    rdfs:label "Qualified value"@en .
 
 
 ###  http://purl.org/hercules/asio/core#RegionalProject
