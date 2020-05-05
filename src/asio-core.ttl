@@ -81,6 +81,14 @@ asio:advises rdf:type owl:ObjectProperty ;
              rdfs:label "advises"@en .
 
 
+###  http://purl.org/hercules/asio/core#associatedWith
+asio:associatedWith rdf:type owl:ObjectProperty ,
+                             owl:SymmetricProperty ;
+                    rdfs:domain foaf:Agent ;
+                    rdfs:range foaf:Agent ;
+                    rdfs:comment "an organisation (i.e. university) is associated with another organsiation (i.e. research institute)."@en .
+
+
 ###  http://purl.org/hercules/asio/core#atContext
 asio:atContext rdf:type owl:ObjectProperty ;
                rdfs:domain asio:Profile ;
