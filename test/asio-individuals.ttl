@@ -25,6 +25,7 @@ asioIndividuals:AlejandroGonzalezHevia rdf:type owl:NamedIndividual ;
 ###  http://www.asio.es/asioinstances/asio#BasqueCentreForClimateChange
 asioIndividuals:BasqueCentreForClimateChange rdf:type owl:NamedIndividual ,
                                            asio:ResearchInstitute ;
+                                  asio:associatedWith asioModules:ES_UNIVERSITY_020 ;
                                   asio:hasResearchLine asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_3_CTCLIM ;
                                   asio:hasSealOfQuality asioIndividuals:SealOfQualityMariaDeMaeztu ;
                                   asio:participant asioIndividuals:CHANCE ,
@@ -59,6 +60,7 @@ asioIndividuals:ALICE rdf:type owl:NamedIndividual ,
 ###  http://www.asio.es/asioinstances/asio#CentreDeRecercaMatematica
 asioIndividuals:CentreDeRecercaMatematica rdf:type owl:NamedIndividual ,
                                         asio:ResearchInstitute ;
+                               asio:associatedWith asioModules:ES_UNIVERSITY_022 ;
                                asio:hasResearchLine asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_MTM ;
                                asio:participant asioIndividuals:IndustrialApplicationsOfMovingBoundaryProblems ;
                                rdfs:label "Centre de recerca matemàtica"@ca-es ,
@@ -80,6 +82,7 @@ asioIndividuals:CentreDeRegulacioGenomica rdf:type owl:NamedIndividual ,
                                asio:hasSealOfQuality asioIndividuals:SeveroOchoaSealOfExcellence ;
                                asio:participant asioIndividuals:ChromDesign ,
                                                 asioIndividuals:EASIGenomics ;
+                               asio:associatedWith asioModules:ES_UNIVERSITY_039 ;
                                rdfs:label "Centre de Regulació Genòmica"@ca-es ,
                                           "Centre for Genomic Regulation"@en ,
                                           "Centro de Regulación Genómica"@es ;
@@ -129,6 +132,7 @@ asioIndividuals:CentreInternacionalDeMetodesNumericsALEnginyeria rdf:type owl:Na
                                                       asio:participant asioIndividuals:EdgeTwinsHPC,
                                                                        asioIndividuals:NICESHIP ;
                                                       asio:member asioIndividuals:PedroDiez ;
+                                                      asio:associatedWith asioModules:ES_UNIVERSITY_024 ;
                                                       rdfs:label "Centre Internacional de Mètodes Numèrics a l'Enginyeria"@ca-es ,
                                                                  "International Centre for Numerical Methods in Engineering"@en ;
                                                       skos:altLabel "CIMNE"@ca-es ,
@@ -363,6 +367,7 @@ asioIndividuals:IUIE rdf:type owl:NamedIndividual ,
                    asio:ResearchInstitute ;
           asio:hasResearchLine asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_1_CVS ;
           asio:participants asioIndividuals:SmartFoods ;
+          asio:associatedWith asioModules:ES_UNIVERSITY_012 ;
           rdfs:label "Instituto Universitario de Investigación en Envejecimiento"@es ,
                      "University Institute for Aging Research"@en ;
           skos:altLabel "IUIE"@es .
@@ -434,6 +439,7 @@ asioIndividuals:InstitutoDeAstrofisicaDeCanarias rdf:type owl:NamedIndividual ,
                                                asio:ResearchInstitute ;
                                       asio:hasResearchLine asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_3_CTASTR ;
                                       asio:hasSealOfQuality asioIndividuals:SeveroOchoaSealOfExcellence ;
+                                      asio:associatedWith asioModules:ES_UNIVERSITY_015 ;
                                       asio:participant asioIndividuals:Fulldome ,
                                                        asioIndividuals:PETER ;
                                       rdfs:label "Canarian Astrophysical Institute"@en ,
@@ -471,6 +477,7 @@ asioIndividuals:InstitutoDeFisicaTeorica rdf:type owl:NamedIndividual ,
                                        asio:ResearchInstitute ;
                               asio:hasResearchLine asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_3_CTFIST ;
                               asio:hasSealOfQuality asioIndividuals:SeveroOchoaSealOfExcellence ;
+                              asio:associatedWith asioModules:ES_UNIVERSITY_023 ;
                               asio:participant asioIndividuals:NewAvenuesinParticlePhysics ,
                                                asioIndividuals:GravitySupergravitySuperstrings ;
                               rdfs:label "Institute for Theoretical Physics"@en ,
@@ -503,6 +510,7 @@ asioIndividuals:InstitutoDeNeurocienciasDeAlicante rdf:type owl:NamedIndividual 
                                                  asio:ResearchInstitute ;
                                         asio:hasResearchLine asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_3_BMEDRCYB ;
                                         asio:hasSealOfQuality asioIndividuals:SeveroOchoaSealOfExcellence ;
+                                        asio:associatedWith asioModules:ES_UNIVERSITY_055 ;
                                         asio:participant asioIndividuals:ArrestBlindness ,
                                                          asioIndividuals:3DGenomeOrganization ;
                                         rdfs:label "Alacant's Institute of Neurosciences"@en ,
@@ -604,6 +612,7 @@ asioIndividuals:SANDA rdf:type owl:NamedIndividual ,
 asioIndividuals:InstitutoMurcianoDeInvestigacionBiosanitaria rdf:type owl:NamedIndividual ,
                                                            asio:ResearchInstitute ;
                                                   asio:hasResearchLine asioModules:ES_SCIENTIFIC_DOMAIN_LEVEL_2_BMED ;
+                                                  asio:associatedWith asioModules:ES_UNIVERSITY_012 ;
                                                   asio:participant asioIndividuals:Intramuscular ,
                                                                    asioIndividuals:VaginalProgesterone ;
                                                   rdfs:label "Instituto Murciano de Investigación Biosanitaria"@es , "Murcian Institute for Biosanitary Research"@en ;
@@ -651,11 +660,11 @@ asioIndividuals:JoseEmilioLabraGayo rdf:type owl:NamedIndividual ;
                          asio:plays  asio:Researching ,
                                      asio:Teaching ;
                          asio:isMemberOf asioIndividuals:WESO ;
-                         asio:supervised asio:Thesis1 ,
-                                         asio:Thesis2 ,
-                                         asio:Thesis3 ,
-                                         asio:Thesis4 ,
-                                         asio:Thesis5 ;
+                         asio:supervised asioIndividuals:Thesis1 ,
+                                         asioIndividuals:Thesis2 ,
+                                         asioIndividuals:Thesis3 ,
+                                         asioIndividuals:Thesis4 ,
+                                         asioIndividuals:Thesis5 ;
                          rdfs:label "José Emilio Labra Gayo"@en ,
                                     "José Emilio Labra Gayo"@es .
 
@@ -697,6 +706,7 @@ asioIndividuals:MasterUniversitarioEnIngenieriaWeb rdf:type owl:NamedIndividual 
 ###  http://www.asio.es/asioinstances/asio#MinimalIntelligenceLab
 asioIndividuals:MinimalIntelligenceLab rdf:type owl:NamedIndividual ,
                                      asio:ResearchInstitute ;
+                            asio:associatedWith asioModules:ES_UNIVERSITY_012 ;
                             asio:hasResearchLine asioModules:ES_SUBJECT_AREA_LEVEL_2_MLP ;
                             foaf:member asioIndividuals:PacoCalvo ;
                             rdfs:label "Laboratorio de Inteligencia Mínima"@es ,
@@ -721,7 +731,7 @@ asioIndividuals:PacoCalvoSPaper1 rdf:type owl:NamedIndividual ,
                                asio:PeerReviewedArticle ;
                       asio:isAuthoredBy asioIndividuals:PacoCalvo ;
                       asio:publishedBy asioIndividuals:PlantSignalingAndBehavior ;
-                      asio:publicationDate 2007 ;
+                      asio:publicationDate "2007"^^xsd:date ;
                       rdfs:comment "Calvo P. (2007). The quest for cognition in plant neurobiology. Plant Signaling and Behavior 2, 208– 211."@en ;
                       rdfs:label "The quest for cognition in plant neurobiology"@en .
 
@@ -731,7 +741,7 @@ asioIndividuals:PacoCalvoSPaper2 rdf:type owl:NamedIndividual ,
                                asio:PeerReviewedArticle ;
                       asio:isAuthoredBy asioIndividuals:PacoCalvo ;
                       asio:publishedBy asioIndividuals:Synthese ;
-                      asio:publicationDate 2016 ;
+                      asio:publicationDate "2016"^^xsd:date ;
                       rdfs:comment "Calvo P. (2016). The philosophy of plant neurobiology: a manifesto. Synthese 193, 1323–1343."@en ;
                       rdfs:label "The philosophy of plant neurobiology: a manifesto."@en .
 
@@ -741,7 +751,7 @@ asioIndividuals:PacoCalvoSPaper3 rdf:type owl:NamedIndividual ,
                                asio:PeerReviewedArticle ;
                       asio:isAuthoredBy asioIndividuals:PacoCalvo ;
                       asio:publishedBy asioIndividuals:JournalOfConsciousnessStudies ;
-                      asio:publicationDate 2017 ;
+                      asio:publicationDate "2017"^^xsd:date ;
                       rdfs:comment "Calvo, P. (2017) What is it like to be a plant? Journal of Consciousness Studies."@en ;
                       rdfs:label "What is it like to be a plant?"@en .
 
@@ -785,7 +795,7 @@ asioIndividuals:Thesis1 rdf:type owl:NamedIndividual ,
                       asio:PhDThesis ;
              asio:isAuthoredBy asioIndividuals:JoseMariaAlvarezRodriguez ;
              asio:supervisedBy asioIndividuals:JoseEmilioLabraGayo ;
-             asio:publicationDate 2012 ;
+             asio:publicationDate "2012"^^xsd:date ;
              rdfs:label "Métodos semánticos de reutilización de datos abiertos enlazados en las licitaciones públicas"@es .
 
 
@@ -794,7 +804,7 @@ asioIndividuals:Thesis2 rdf:type owl:NamedIndividual ,
                       asio:PhDThesis ;
              asio:isAuthoredBy asioIndividuals:HernanSagasteguiChigne ;
              asio:supervisedBy asioIndividuals:JoseEmilioLabraGayo ;
-             asio:publicationDate 2015 ;
+             asio:publicationDate "2015"^^xsd:date ;
              rdfs:label "Desarrollo de Tecnologías Colaborativas para Entornos virtuales de apoyo al aprendizaje"@es .
 
 
@@ -803,7 +813,7 @@ asioIndividuals:Thesis3 rdf:type owl:NamedIndividual ,
                       asio:PhDThesis ;
              asio:isAuthoredBy asioIndividuals:JoseAlbertoBenitezAndrades ;
              asio:supervisedBy asioIndividuals:JoseEmilioLabraGayo ;
-             asio:publicationDate 2017 ;
+             asio:publicationDate "2017"^^xsd:date ;
              rdfs:label "Tecnologías Semánticas aplicadas al Análisis de Redes Sociales en el ámbito de la Salud"@es .
 
 ###  http://www.asio.es/asioinstances/asio#Thesis4
@@ -823,7 +833,7 @@ asioIndividuals:Thesis5 rdf:type owl:NamedIndividual ,
                                  asio:BachelorsThesis ;
                         asio:isAuthoredBy asioIndividuals:GuillermoFacundoColunga ;
                         asio:supervisedBy asioIndividuals:JoseEmilioLabraGayo ;
-                        asio:publicationDate 2020 ;
+                        asio:publicationDate "2020"^^xsd:date ;
                         rdfs:label "Automatic generation of multilanguage domain models through a subset of shape expressions"@en .
 
 ### http://www.asio.es/asioinstances/asio#Thesis6
@@ -973,7 +983,7 @@ asioIndividuals:MariaRitaSierraSanchez rdf:type owl:NamedIndividual ;
 asioIndividuals:MariaRitaPaper1 rdf:type owl:NamedIndividual ,
                                asio:PeerReviewedArticle ;
                       asio:isAuthoredBy asioIndividuals:MariaRitaSierraSanchez ;
-                      asio:publicationDate 2015 ;
+                      asio:publicationDate "2015"^^xsd:date ;
                       asio:publishedBy asioIndividuals:Springer;
                       rdfs:comment """Mencía R., Sierra M.R., Varela R. (2015) Genetic Algorithm for the Job-Shop Scheduling with Skilled Operators.
                                     In: Ferrández Vicente J., Álvarez-Sánchez J., de la Paz López F., Toledo-Moreo F., Adeli H. (eds) Bioinspired Computation in
@@ -984,7 +994,7 @@ asioIndividuals:MariaRitaPaper1 rdf:type owl:NamedIndividual ,
 asioIndividuals:MariaRitaPaper2 rdf:type owl:NamedIndividual ,
                                asio:PeerReviewedArticle ;
                       asio:isAuthoredBy asioIndividuals:MariaRitaSierraSanchez ;
-                      asio:publicationDate 2015 ;
+                      asio:publicationDate "2015"^^xsd:date ;
                       rdfs:comment """Mencía, Carlos et al. ‘Solving the Job Shop Scheduling Problem with Operators by Depth-first Heuristic
                                     Search Enhanced with Global Pruning Rules’. 1 Jan. 2015 : 365 – 381."""@en ;
                       rdfs:label """Solving the Job Shop Scheduling Problem with Operators by Depth-first Heuristic
@@ -995,7 +1005,7 @@ asioIndividuals:BegoñaCristinaPelayoPaper1 rdf:type owl:NamedIndividual ,
                                asio:PeerReviewedArticle ;
                       asio:isAuthoredBy asioIndividuals:BegoñaCristinaPelayoGarciaBustelo ;
                       asio:publishedBy asioIndividuals:Springer;
-                      asio:publicationDate 2010 ;
+                      asio:publicationDate "2010"^^xsd:date ;
                       rdfs:comment """Álvarez M.Á., G-Bustelo B.C.P., Sanjuán-Martínez O., Lovelle J.M.C. (2010) Bridging together Semantic Web and Model-Driven
                                     Engineering. In: de Leon F. de Carvalho A.P., Rodríguez-González S., De Paz Santana J.F., Rodríguez J.M.C. (eds) Distributed
                                     Computing and Artificial Intelligence. Advances in Intelligent and Soft Computing, vol 79. Springer, Berlin, Heidelberg"""@en;
@@ -1006,7 +1016,7 @@ asioIndividuals:BegoñaCristinaPelayoPaper2 rdf:type owl:NamedIndividual ,
                                asio:PeerReviewedArticle ;
                       asio:isAuthoredBy asioIndividuals:BegoñaCristinaPelayoGarciaBustelo ;
                       asio:publishedBy asioIndividuals:Springer;
-                      asio:publicationDate 2010 ;
+                      asio:publicationDate "2010"^^xsd:date ;
                       rdfs:comment """Núñez V E.R., Martínez O.S., Lovelle J.M.C., García-Bustelo B.C.P. (2010) First Steps towards Implicit Feedback for
                                     Recommender Systems in Electronic Books. In: de Leon F. de Carvalho A.P., Rodríguez-González S., De Paz Santana J.F.,
                                     Rodríguez J.M.C. (eds) Distributed Computing and Artificial Intelligence. Advances in Intelligent and Soft Computing,
