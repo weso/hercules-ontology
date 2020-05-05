@@ -163,12 +163,12 @@ asio:funds rdf:type owl:ObjectProperty ;
            rdfs:label "funds"@en .
 
 
-###  http://purl.org/hercules/asio/core#geo-division
-asio:geo-division rdf:type owl:ObjectProperty ;
-                  rdfs:domain skos:Concept ;
-                  rdfs:range modules:GeopoliticalEntities ;
-                  rdfs:comment "A property to link a resource to a predefined geographical (or geopolitical) division."@en ;
-                  rdfs:label "geo-division"@en .
+###  http://purl.org/hercules/asio/core#geoDivision
+asio:geoDivision rdf:type owl:ObjectProperty ;
+                 rdfs:domain skos:Concept ;
+                 rdfs:range modules:GeopoliticalEntities ;
+                 rdfs:comment "A property to link a resource to a predefined geographical (or geopolitical) division."@en ;
+                 rdfs:label "geodivision"@en .
 
 
 ###  http://purl.org/hercules/asio/core#h-index
