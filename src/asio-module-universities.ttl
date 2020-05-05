@@ -72,7 +72,7 @@ asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_CIUDAR01
 asioModules:ES_UNIVERSITY_064
       a       skos:Concept ;
       rdfs:label "Universidad Politécnica de Cartagena" ;
-      asio:geoDivision asioModules:ES_DIVISION_LEVEL_2_ES_UM , asioModules:ES_DIVISION_LEVEL_1_ES_MC ;
+      asio:geoDivision asioModules:ES_DIVISION_LEVEL_2_ES_MU , asioModules:ES_DIVISION_LEVEL_1_ES_MC ;
       asio:hasCode asioModules:ES_UNIVERSITY_VAT_NUMBER_Q8050013E , asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_MURCIA04 , asioModules:ES_UNIVERSITY_CODE_064 ;
       skos:inScheme asioModules:ESUniversityList , asioModules:UniversityList ;
       skos:notation "064" , "UPCT" ;
@@ -475,7 +475,7 @@ asioModules:ES_UNIVERSITY_063
 asioModules:ES_UNIVERSITY_012
       a       skos:Concept ;
       rdfs:label "Universidad de Murcia" ;
-      asio:geoDivision asioModules:ES_DIVISION_LEVEL_2_ES_UM , asioModules:ES_DIVISION_LEVEL_1_ES_MC ;
+      asio:geoDivision asioModules:ES_DIVISION_LEVEL_2_ES_MU , asioModules:ES_DIVISION_LEVEL_1_ES_MC ;
       asio:hasCode asioModules:ES_UNIVERSITY_VAT_NUMBER_Q3018001B , asioModules:ES_UNIVERSITY_CODE_012 , asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_MURCIA01 ;
       skos:inScheme asioModules:ESUniversityList , asioModules:UniversityList ;
       skos:notation "012" , "UMU" ;
@@ -946,7 +946,7 @@ asioModules:ES_UNIVERSITY_VAT_NUMBER_A81618894
 asioModules:ES_UNIVERSITY_066
       a       skos:Concept ;
       rdfs:label "Universidad Católica San Antonio de Murcia" ;
-      asio:geoDivision asioModules:ES_DIVISION_LEVEL_2_ES_UM , asioModules:ES_DIVISION_LEVEL_1_ES_MC ;
+      asio:geoDivision asioModules:ES_DIVISION_LEVEL_2_ES_MU , asioModules:ES_DIVISION_LEVEL_1_ES_MC ;
       asio:hasCode asioModules:ES_UNIVERSITY_ERASMUS_CODE_E_MURCIA05 , asioModules:ES_UNIVERSITY_VAT_NUMBER_G30626303 , asioModules:ES_UNIVERSITY_CODE_066 ;
       skos:inScheme asioModules:ESUniversityList , asioModules:UniversityList ;
       skos:notation "066" , "UCAM" ;
