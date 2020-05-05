@@ -62,7 +62,10 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  http://purl.org/hercules/asio/core#Publishes
 asio:Publishes rdf:type owl:ObjectProperty ;
-               owl:inverseOf asio:publishedBy .
+               owl:inverseOf asio:publishedBy ;
+               rdfs:domain foaf:Agent ;
+               rdfs:range asio:Publication ;
+               rdfs:label "publishes"@en .
 
 
 ###  http://purl.org/hercules/asio/core#addresses
@@ -89,6 +92,8 @@ asio:atContext rdf:type owl:ObjectProperty ;
 ###  http://purl.org/hercules/asio/core#authors
 asio:authors rdf:type owl:ObjectProperty ;
              owl:inverseOf asio:isAuthoredBy ;
+             rdfs:domain foaf:Agent ;
+             rdfs:range asio:Publication ;
              rdfs:label "authors"@en .
 
 
@@ -100,6 +105,15 @@ asio:capital rdf:type owl:ObjectProperty ;
              rdfs:label "capital"@en .
 
 
+###  http://purl.org/hercules/asio/core#coadvises
+asio:coadvises rdf:type owl:ObjectProperty ;
+               owl:inverseOf asio:isCoadvisedBy ;
+               rdfs:domain foaf:Person ;
+               rdfs:range asio:AcademicPublication ;
+               rdfs:label "A person cod-avises an academic publication (bachelor thesis, master thesis or doctoral thesis)"@en ,
+                          "co-advises"@en .
+
+
 ###  http://purl.org/hercules/asio/core#codeOf
 asio:codeOf rdf:type owl:ObjectProperty ;
             owl:inverseOf asio:hasCode ;
@@ -107,6 +121,15 @@ asio:codeOf rdf:type owl:ObjectProperty ;
             rdfs:range skos:Concept ;
             rdfs:comment "A code is assigned to a concept."@en ;
             rdfs:label "code of"@en .
+
+
+###  http://purl.org/hercules/asio/core#coordinatedBy
+asio:coordinatedBy rdf:type owl:ObjectProperty ;
+                   owl:inverseOf asio:projectCoordinator ;
+                   rdfs:domain foaf:Project ;
+                   rdfs:range foaf:Agent ;
+                   rdfs:comment "coordinated by"@en ,
+                                "inverse property of 'project coordinator'"@en .
 
 
 ###  http://purl.org/hercules/asio/core#country
@@ -223,6 +246,13 @@ asio:isAuthoredBy rdf:type owl:ObjectProperty ;
                   rdfs:label "is authored by"@en .
 
 
+###  http://purl.org/hercules/asio/core#isCoadvisedBy
+asio:isCoadvisedBy rdf:type owl:ObjectProperty ;
+                   rdfs:domain asio:AcademicPublication ;
+                   rdfs:range foaf:Person ;
+                   rdfs:label "is co-advised by"@en .
+
+
 ###  http://purl.org/hercules/asio/core#isFundedBy
 asio:isFundedBy rdf:type owl:ObjectProperty ;
                 rdfs:label "is funded by"@en .
@@ -271,6 +301,14 @@ asio:profiles rdf:type owl:ObjectProperty ;
               rdfs:label "profiles"@en .
 
 
+###  http://purl.org/hercules/asio/core#projectCoordinator
+asio:projectCoordinator rdf:type owl:ObjectProperty ;
+                        rdfs:domain foaf:Agent ;
+                        rdfs:range foaf:Project ;
+                        rdfs:comment "A property to link an agent (person or organisation) with a project in the role of coordinator."@en ;
+                        rdfs:label "project coordinator"@en .
+
+
 ###  http://purl.org/hercules/asio/core#projectOutcome
 asio:projectOutcome rdf:type owl:ObjectProperty ;
                     rdfs:domain foaf:Project ;
@@ -279,14 +317,17 @@ asio:projectOutcome rdf:type owl:ObjectProperty ;
 
 
 ###  http://purl.org/hercules/asio/core#publishedBy
-asio:publishedBy rdf:type owl:ObjectProperty .
+asio:publishedBy rdf:type owl:ObjectProperty ;
+                 rdfs:domain asio:Publication ;
+                 rdfs:range foaf:Agent ;
+                 rdfs:label "published by"@en .
 
 
 ###  http://purl.org/hercules/asio/core#requiredFor
 asio:requiredFor rdf:type owl:ObjectProperty ;
                  rdfs:domain asio:AcademicPublication ;
                  rdfs:range asio:AcademicDegree ;
-                 rdfs:label "requiredFor"@en .
+                 rdfs:label "required for"@en .
 
 
 ###  http://purl.org/hercules/asio/core#requires
