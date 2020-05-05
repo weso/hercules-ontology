@@ -42,13 +42,6 @@ asioIndividuals:CHANCE rdf:type owl:NamedIndividual ,
                       asio:projectEndDate "2022-12-12"^^xsd:date ;
                       asio:isFundedBy asioIndividuals:Horizon2020 ;
                       asio:hasResearchField asioModules:ES_SUBJECT_AREA_LEVEL_2_CTM ;
-                      asio:projectObjective """MULTIPLE will develop cost-effective multimodal monitoring solutions with a breakthrough impact on production quality and efficiency. It will bring cutting-edge OLED-based sensors, snapshot hyperspectral filters and dual-aperture imaging to deliver cost-effective spectrometers and camera cores in a broad VIS/SWIR range, complemented with cost effective laser-based chemometric sensors in the MWIR. On top of these sensors, MULTIPLE will develop novel multimodal monitoring systems that will be IoT native, by combining them with cloud, big data, and deep learning for agile development and orchestration of complex AI-based models to optimize production improving EU manufacturing competitiveness.
-To develop cost-effective HSI SWIR (0.9-1.7 µm) camera cores ready for volume production.
-To develop a compact and cost-effective dual-aperture HSI imager combining snapshot CMOS and InGaAs hyperspectral sensors based on mosaic filters covering the whole VIS/SWIR range (0.4-1.7 µm).
-To develop novel cost-effective spectrometer solutions for highly specific chemometric analysis in an extended VIS/MWIR range (0.4-3.5 µm wavelength), based on innovative OLED sensors and laser-based spectroscopy.
-To develop embedded deep models for regression, classification and RT control. It will guarantee onsite and online measurements and classification of different types of categories with high flexibility, accuracy, and reliability.
-To develop an integral and scalable approach to process monitoring, quality assurance, and process optimization through the orchestration of photonic monitoring systems under an IoT native approach. The aim is to leverage SoA cloud and big data technologies to create new services and microservices enhancing decision support tools.
-To demonstrate MUTLIPLE in 3 manufacturing scenarios: steelworking, woodworking and food"""@en ;
                       rdfs:comment "Climate cHange mitigAtioN poliCies and Equality: distributional implications for different socio-economic groups"@en ;
                       rdfs:label "CHANCE"@en ,
                                  "CHANCE"@es  .
@@ -60,13 +53,6 @@ asioIndividuals:ALICE rdf:type owl:NamedIndividual ,
                       asio:projectEndDate "2020-12-31"^^xsd:date ;
                       asio:isFundedBy asioIndividuals:Horizon2020 ;
                       asio:hasResearchField asioModules:ES_SUBJECT_AREA_LEVEL_2_CTM ;
-                      asio:projectObjective """The global demand for dairy products is expected to surge by 36% over the next decade in a manner that is progressively insatiable by existing technologies. The dairy industry relies on bovine reproduction, yet cow fertility is declining and the exact causes are not fully understood. It is clear, however, that the quality of bovine oocytes is decreasing.
-
-In mammals, the ovarian reserve of oocytes stored within quiescent primordial follicles is non-renewable. Oocyte develop and mature within distinctive follicular microenvironments under tightly regulated molecular and physical conditions. Similarly, preimplantation embryo development is supported within a specialized microenvironment that is surrounded by the zona pellucida and insulated from external soluble and mechanical inputs. Characterizing and understanding these environments and how they affect reproductive processes is a key toward improving assisted reproductive technologies in bovine species.
-
-Our premise is that molecular characterization of endocrine and paracrine signalling pathways must be complemented with understanding the mechanical regulation of reproductive biology. This premise is supported by recent finding showing that physical stresses and the mechanical compliance of the extracellular surroundings serve as potent regulators of cell fates in regeneration processes, development, and disease.
-
-I propose to employ a biophysical and computational toolbox to study the mechanobiology of reproduction with application to bovine embryo-based technologies. By mimicking the mechanical properties of the ovarian cortical niche, which I will characterize using freshly derived ovaries, I will design an in vitro system for supporting follicle growth. Mechanical profiling of the entire developmental course from oocyte maturation to preimplantation embryogenesis will generate mechanistic insights into the physical regulation of reproductive processes."""@en ;
                       rdfs:comment "AcceLerate Innovation in urban wastewater management for Climate changE"@en ;
                       rdfs:label "ALICE"@en ,
                                  "ALICE"@es  .
@@ -86,7 +72,6 @@ asioIndividuals:IndustrialApplicationsOfMovingBoundaryProblems rdf:type owl:Name
                       asio:projectStartDate "2010-04-01"^^xsd:date ;
                       asio:projectEndDate "2014-03-30"^^xsd:date ;
                       asio:hasResearchField asioModules:ES_SUBJECT_AREA_LEVEL_3_MTM ;
-                      asio:projectObjective "Moving boundary problems will be studied in the context of two practically important settings: melting of ice in gas flow channels of Proton Exchange Membrane Fuel Cells and plaque build-up in arteries (atherosclerosis). The problems are related in that they involve a liquid layer flowing past the moving solid boundary. As well as being mathematically challenging they also all have immediate and important applications. During the project mathematical models will be developed and analysed for each of these problems. The work will begin with simple one-dimensional models. Approximate analytical solutions will be sought and compared, when possible, against existing exact and numerical solutions. The methods will then be extended to deal with the more complex two and three dimensional formulations where exact solutions are not available. This problem is complicated by the fluid flow which must be coupled to the thermal problem."@en ;
                       rdfs:comment "PIRG06-GA-2009-256417 Industrial Applications of Moving Boundary Problems"@en ;
                       rdfs:label "Industrial Applications Of Moving Boundary Problems"@en .
 
@@ -110,9 +95,6 @@ asioIndividuals:EASIGenomics rdf:type owl:NamedIndividual ,
                       asio:projectEndDate "2023-01-31"^^xsd:date ;
                       asio:isFundedBy asioIndividuals:Horizon2020 ;
                       asio:hasResearchField asioIndividuals:ES_SUBJECT_AREA_LEVEL_3_BMC ;
-                      asio:projectObjective """Next-generation sequencing (NGS) has taken modern research by storm and consequently is one of the most important tools of modern biological and biomedical research. However, the high cost of instrumentation and reagents, the multifaceted expertise required for correct use and the legal and ethical issues hamper access to NGS technologies for many researchers. EASI-Genomics addresses those challenges by unifying the major European genome centers that provide external access to their facilities. The mission of EASI-Genomics is to facilitate access to cutting-edge DNA sequencing technologies to researchers from both academia and industry, within a framework that ensures compliance with ethical and legal requirements, as well as FAIR and secure data management. EASI-Genomics will provide fully funded access to more than 150 transnational access projects, selected through public calls and a rigorous, fair and transparent peer-review process.
-                      Each funded study will be supported from design, through sequencing, to data analysis. EASI-Genomics will provide more than 100 Tb of sequence and more than 25,000 hours of bioinformatic, analytical and data management support to the user community. As outlined in the call, EASI-Genomics will provide access to advanced methods that go beyond what is commercially available. The focus will be on more complex procedures involving short-reads, long-reads, in situ sequencing and single-cell analysis.
-                      Complex integrative projects and projects on non-human samples will also be highlighted. Finally, EASI-Genomics will support the wider NGS community to improve their quality control processes by offering open inter-laboratory comparisons allowing them to obtain ISO certification and accreditation in line with many of the EASI-Genomic partners. The EASI-Genomics project aims to build a community of practice, which leverages advanced sequencing technologies beyond country and sector borders to tackle global challenges in science."""@en ;
                       rdfs:comment "EASI-Genomics provides easy and seamless access to cutting-edge DNA sequencing technologies to researchers from academia and industry​​​​​​​"@en ;
                       rdfs:label "EASI-Genomics"@en ,
                                  "EASI-Genomics"@es .
@@ -124,9 +106,6 @@ asioIndividuals:ChromDesign rdf:type owl:NamedIndividual ,
                       asio:projectEndDate "2022-08-31"^^xsd:date ;
                       asio:isFundedBy asioIndividuals:Horizon2020 ;
                       asio:hasResearchField asioIndividuals:ES_SUBJECT_AREA_LEVEL_3_MTM ;
-                      asio:projectObjective """ChromDesign is an innovative and interdisciplinary network of 10 European academic and private institutions that will characterize how 3D chromatin organization affects gene regulation during cellular differentiation and in several human disorders. We will train 13 Early Stage Researchers (ESR), equipping them with the skills, knowledge, expertise, and enthusiasm necessary to develop successful future careers in the biomedical field (in academia or the private sector). Together with European experts in chromatin biology, 3D genomics, and research design, these ESRs will work towards the goal of identifying novel alterations in chromatin topology responsible for cellular malfunctions to: i) develop new diagnostic tools, ii) effectively communicate research results through specific toolkits; and iii) identify novel therapeutic targets with the potential to be exploited as treatments.
-Alteration of gene regulation occurs naturally during aging and underlies several human diseases. Its better characterization requires a deeper understanding of the spatial organization of the genome. We will investigate how the genome organizes in 3D over time, and how the 3D organization is related to gene regulation in health and disease. We will use and develop technologies in imaging, cell biology, genomics, and computational modelling and will focus on translating our results into clinical applications. ESRs will thereby receive training with state-of-the-art technologies in distinct research areas and in modules with theoretical and hands-on sessions on transferable skills: entrepreneurship, management, communication, and outreach.
-ChromDesign comprises 6 work packages: WP1–4 address the 4 main areas of chromatin biology and 3D genomics; WP5 applies the knowledge obtained from WPs1–4 into translational research; WP6 develops (with a dedicated ESR) a set of design toolkits for communicating results to scientists, the public, and schools; and WP7 ensures quality training for ESRs."""@en ;
                       rdfs:comment "ChromDesign is an innovative and interdisciplinary network of 10 European academic and private institutions. Our aim is to characterise how 3D chromatin organisation affects gene regulation during cellular differentiation and in several human disorders.​​​​​​​"@en ;
                       rdfs:label "ChromDesign"@en ,
                                  "ChromDesign"@es .
@@ -166,13 +145,6 @@ asioIndividuals:EdgeTwinsHPC rdf:type owl:NamedIndividual ,
                       asio:projectEndDate "2021-11-30"^^xsd:date ;
                       asio:isFundedBy asioIndividuals:Horizon2020 ;
                       asio:hasResearchField asioModules:ES_SUBJECT_AREA_LEVEL_2_PIN ;
-                      asio:projectObjective """Digital twins, along with the Internet of Things and Edge computing , are expected to play a decisive role in the next decade’s industrial markets (Industry 4.0) enabling dramatic improvements in complex systems design and operation. However, this technology has not been yet widely implemented, since it requires the collaboration of experts in multiple fields and costly computational tools.
-
-The EdgeTwins HPC project brings a different approach that will extend digital twins to new market segments and users (i.e. SMEs). It aims to develop an open-source software tool (builder) to produce digital twins that run on the Edge. That is, they are installed on the physical asset they represent, and operate in very constrained compute environments. This approach will enable a new breed of novel real-time applications, from autonomous vehicles to small devices.
-
-The main objective of this FET Innovation Launchpad project is to evaluate the business feasibility of an open-source Digital Twin builder software for Edge applications and develop and test a demonstrator (alpha) for one or more use cases identified in the market analysis.
-
-To do so, the participants will leverage on the high-performance computing software stemming of the ExaQute FET Proactive project. These assets will allow, using Reduced Order Modelling techniques, to model complex 4D simulations to later extract the essential features of the solution so that similar results can be obtained at a vastly reduced computational cost."""@en ;
                       rdfs:comment "Bringing Digital Twins to the Edge for mass Industry 4.0 applications​​​​​​​"@en ;
                       rdfs:label "EdgeTwins HPC"@en ,
                                  "EdgeTwins HPC"@es .
@@ -213,8 +185,6 @@ asioIndividuals:BATModel rdf:type owl:NamedIndividual ,
                       asio:projectEndDate "2024-09-01"^^xsd:date ;
                       asio:isFundedBy asioIndividuals:Horizon2020 ;
                       asio:hasResearchField asioModules:ES_SUBJECT_AREA_LEVEL_2_CAA ;
-                      asio:projectObjective """The International Food Policy Research Institute’s International Model for Policy Analysis of Agricultural Commodities and Trade (IMPACT) supports analysis of long-term challenges and opportunities for food, agriculture, and natural resources at global and regional scales. IMPACT is continually being updated and improved to better inform the choices that decisionmakers face today. This document describes the latest version of the model.
-                      IMPACT version 3 expands the geographic and commodity scope of the model in response to desires expressed by researchers and policymakers to address more complex questions involving climate change, food security, and economic development into the future. IMPACT 3 is an integrated modeling system that links information from climate models (Earth System Models), crop simulation models (for example, Decision Support System for Agrotechnology Transfer), and water models linked to a core global, partial equilibrium, multimarket model focused on the agriculture sector. This model system supports longer-term scenario analysis through the integration of these multidisciplinary modules to provide researchers and policymakers with a flexible tool to assess and compare the potential effects of changes in biophysical systems, socioeconomic trends, technologies, and policies."""@en ;
                       rdfs:comment "Better Agri-food trade modelling for policy analysis​​​​​​​"@en ;
                       rdfs:label "BATModel"@en ,
                                  "BATModel"@es .
@@ -234,7 +204,6 @@ asioIndividuals:CentroNacionalDeInvestigacionesCardiovasculares rdf:type owl:Nam
 asioIndividuals:Polypill rdf:type owl:NamedIndividual ,
                             asio:Project ;
                       asio:hasResearchField asioModules:ES_SUBJECT_AREA_LEVEL_1_CV ;
-                      asio:projectOutcome """The prevention of cardiovascular disease is hindered by several factors, including wide variability in the pattern of prescription among physicians, limited access to expensive drugs in emerging countries, and poor adherence to medication. The use of fixed dose drug combinations (polypill) has been recommended to improve accessibility and adherence to treatment. The CNIC, working in a private-public partnership with Ferrer International, has devised a fixed dose combination for secondary prevention. The CNIC-Ferrer polypill project is led by Valentín Fuster and is coordinated by the Translational Research Platform."""@en ;
                       rdfs:comment "FOCUS will help to determine the role that the polypill can play in cardiovascular disease prevention and will enable recommendations to be established for the better use of medication in patients with ischemic heart disease."@en ;
                       rdfs:label "Polypill/FOCUS"@en ,
                                  "Polypill/FOCUS"@es .
@@ -370,7 +339,6 @@ asioIndividuals:LIFEAGREMSO3IL rdf:type owl:NamedIndividual ,
                         asio:projectEndDate 2022 ;
                         asio:isFundedBy asioIndividuals:LIFEProgramme ;
                         asio:hasResearchField asioModules:ES_SUBJECT_AREA_LEVEL_3_AYF ;
-                        asio:projectObjective "The pilot project LIFE AgRemSO3il aims at developing and tuning at farm scale a new technology and its associated techniques for the agrochemical remediation of farm soils by combining solarization and ozonation in situ. Thus, the innovation involves technological applications (new equipment) and the methods used (advanced oxidation processes as ozonation and H2O2; or solarization)."@en ;
                         rdfs:comment "Life AgRemSO3il is a pilot project which will develop a new technology, with all associated techniques, for the agrochemical decontamination of agricultural farms' soils. "@en ;
                         rdfs:label "Life AgRemSO3il"@en ,
                               "Life AgRemSO3il"@es .
@@ -382,7 +350,6 @@ asioIndividuals:LIFEAQUEMFREE rdf:type owl:NamedIndividual ,
                         asio:projectEndDate 2018 ;
                         asio:isFundedBy asioIndividuals:LIFEProgramme ;
                         asio:hasResearchField asioModules:ES_SUBJECT_AREA_LEVEL_3_AYF ;
-                        asio:projectObjective "Development of a system to decontaminate water from washing of containers and phytosanitary treatments equipment by solar photocatalysis."@en ;
                         rdfs:comment "In-Farm remediation by solar photocatalysis of agro-waste water with pesticides from remnants, cleaning and rinse."@en ;
                         rdfs:label "Life Aquemfree"@en ,
                               "Life Aquemfree"@es .
@@ -494,7 +461,6 @@ asioIndividuals:PETER rdf:type owl:NamedIndividual ,
                                     asio:Project ;
                         asio:projectStartDate 2005 ;
                         asio:hasResearchField asioModules:ES_SUBJECT_AREA_LEVEL_3_AYA ;
-                        asio:projectObjective """One of the main aims of PETeR is the training of teachers in Astronomical subjects, and in the use of robotic telescopes as tools so that the students can develop their scientific and technical abilities via guided research projects. During the last five years the coordinator of the project Nayra Rodríguez Eugenio has trained over 300 teachers from the whole of Spain and also from other countries. Now, given the situation of confinement in which we are placed, PETeR training will be carried out online."""@en ;
                         rdfs:comment "Peter intends to familiarize the Spanish educational community with the scientific method and practice, while contributing to the spread of Astronomy and Astrophysics."@en ;
                         rdfs:label "Educational Project with Robotic Telescopes"@en ,
                               "Proyecto Educativo con Telescopios Robóticos"@es .
@@ -629,11 +595,6 @@ asioIndividuals:Yoctosecond rdf:type owl:NamedIndividual ,
                         asio:projectStartDate "2019-10-01"^^xsd:date ;
                         asio:projectEndDate "2024-09-30"^^xsd:date ;
                         asio:isFundedBy asioIndividuals:Horizon2020 ;
-                        asio:projectObjective """QCD is the only sector of the Standard Model where the exploration of the first levels of complexity, built from fundamental interactions at the quantum level, is experimentally feasible. An outstanding example is the thermalised state of QCD matter formed when heavy atomic nuclei are smashed in particle colliders. Systematic experimental studies, carried out in the last two decades, overwhelmingly support the picture of a deconfined state of matter, which behaves as a nearly perfect fluid, formed in a very short time, less than 5 yoctoseconds.
-
-                        The mechanism that so efficiently brings the initial out-of-equilibrium state into a thermalised system is, however, largely unknown. Most surprisingly, LHC experiments have found that collisions of small systems, i.e. proton-proton or proton-lead, seem to indicate the presence of a tiny drop of this fluid in events with a large number of produced particles. These systems have sizes of 1 fm or less, or time-scales of less than 3 ys. To add to the puzzle, jet quenching, the modifications of jet properties due to interactions with the medium, has not been observed in these small systems, while jet quenching and thermalisation are expected to be controlled by the same dynamics.
-
-                        Present experimental tools have limited sensitivity to the actual process of thermalisation. To solve these long-standing questions we propose, as a completely novel strategy, using jet observables to directly access the first yoctoseconds of the collision. This strategy needs developments well beyond the state-of-the-art in three subjects: i) novel theoretical descriptions of the initial stages of the collision — the first 5 ys; ii) jet quenching theory for yoctosecond precision, with new techniques to couple the jet to the surrounding matter and novel parton shower evolution; and iii) jet quenching tools for the 2020’s, where completely novel jet observables will be devised with a focus on determining the initial stages of the collision."""@en ;
                         asio:hasResearchField asioModules:ES_SUBJECT_AREA_LEVEL_3_FFP ;
                         rdfs:label "Yoctosecond imaging of QCD collectivity using jet observables"@en .
 
@@ -644,10 +605,6 @@ asioIndividuals:SANDA rdf:type owl:NamedIndividual ,
                         asio:projectEndDate "2023-08-31"^^xsd:date ;
                         asio:isFundedBy asioIndividuals:Horizon2020 ;
                         asio:hasResearchField asioModules:ES_SUBJECT_AREA_LEVEL_3_FFP ;
-                        asio:projectObjective """The project will include experimental measurements of new or improved quality data, evaluation, validation and dissemination of the data to produce libraries that can be used by safety authorities, research institutions, the nuclear energy industry, health organizations, other non-energy applications and the EU society at large. The project will also include in smaller fraction support to detector development, facility setups and samples fabrication to prepare important measurements and validations that are not possible in the time framework of the present proposal but that will be required in near future for the safe and efficient use of nuclear technologies.
-The selection of topics, isotopes, reactions, measurements, experiments and evaluation has been made taking into account the relevance, expected impact and priorities of the resulting data according to the NEA/OECD and IAEA high priority lists and committees as well as the experience of the participants and of previous EU proposals with large participation of the partners for the present proposal (CHANDA, ANDES,…). The impact has been evaluated from the perspective of a safe, efficient and competitive use of nuclear technologies.
-In comparison with previous projects, the present proposal proposes to concentrate more efforts on delivering actual results than in the preparation for the future, by enhancing the support to evaluations, validations and actual measurements. Also special attention has been paid to make sure that the topics included cover the non-energy application requiring nuclear data as well as it will cover the needs of the nuclear energy sector.
-Respecting those principles, the proposal has also tried to be as inclusive to the different EU research groups and countries as possible maintaining the manageability of the project, its efficiency and the maximum quality and relevance of the action and involved partners."""@en ;
                         rdfs:label "Supplying Accurate Nuclear Data for energy and non-energy Applications"@en ;
                         skos:altLabel "SANDA"@en .
 
