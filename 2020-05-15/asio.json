@@ -1,0 +1,6381 @@
+[
+  {
+    "@id": "http://purl.org/hercules/asio/core#FundingProgramme",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A programme of related funded projects, typically established by a funding organization."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Funding programme"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "http://purl.org/cerif/frapo/FundingProgramme"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#ResearchMethod",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Research method"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "http://orkg.org/core#ResearchMethod"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Research method"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#patentStatus",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://purl.org/hercules/asio/core#Patent"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "patent status"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://purl.org/hercules/asio/core#Status"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/NET/c4dm/event.owl#Event",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "An arbitrary classification of a space/time region, by a\ncognitive agent. An event may have actively participating agents,\npassive factors, products, and a location in space/time."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Event"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#Book",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "fr",
+        "@value": "Livre"
+      },
+      {
+        "@language": "pt",
+        "@value": "Livro"
+      },
+      {
+        "@language": "ca-es",
+        "@value": "Llibre"
+      },
+      {
+        "@language": "es",
+        "@value": "Libro"
+      },
+      {
+        "@language": "en",
+        "@value": "Book"
+      },
+      {
+        "@language": "ca-ad",
+        "@value": "Llibre"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://purl.org/hercules/asio/core#ScientificPublication"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "ca",
+        "@value": "Llibre"
+      },
+      {
+        "@language": "es",
+        "@value": "Libro"
+      },
+      {
+        "@language": "fr",
+        "@value": "Livre"
+      },
+      {
+        "@language": "en",
+        "@value": "Book"
+      },
+      {
+        "@language": "pt",
+        "@value": "Livro"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/dc/terms/license",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#terminated",
+    "@type": [
+      "http://purl.org/hercules/asio/core#Status",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Terminated"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/dc/elements/1.1/contributor",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#authorCitation",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A property to link the number of citations to a given author."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://xmlns.com/foaf/0.1/Person"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "author citations"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://purl.org/hercules/asio/core#QualifiedValue"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#publishedBy",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://purl.org/hercules/asio/core#Publication"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "published by"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://xmlns.com/foaf/0.1/Agent"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#Manual",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Manual"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://purl.org/hercules/asio/core#ScientificPublication"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel": [
+      {
+        "@language": "en",
+        "@value": "Handbook"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Manual"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#ResearchContribution",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Research contribution"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "http://orkg.org/core#ResearchContribution"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#SealOfQuality",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A graphic mark indicating highest levels of quality in research, often measured in terms of relevant publications related to the researching activity."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "es",
+        "@value": "Sello de calidad"
+      },
+      {
+        "@language": "pt",
+        "@value": "Selo de qualidade"
+      },
+      {
+        "@language": "ca-ad",
+        "@value": "Segell de qualitat"
+      },
+      {
+        "@language": "ca-es",
+        "@value": "Segell de qualitat"
+      },
+      {
+        "@language": "en",
+        "@value": "Seal of quality"
+      },
+      {
+        "@language": "fr",
+        "@value": "Label qualité"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "fr",
+        "@value": "Label qualité"
+      },
+      {
+        "@language": "pt",
+        "@value": "Selo de qualidade"
+      },
+      {
+        "@language": "es",
+        "@value": "Sello de calidad"
+      },
+      {
+        "@language": "ca-es",
+        "@value": "Segell de qualitat"
+      },
+      {
+        "@language": "ca-ad",
+        "@value": "Segell de qualitat"
+      },
+      {
+        "@language": "en",
+        "@value": "Seal of quality"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#hasPatent",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "has patent"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://purl.org/hercules/asio/core#Patent"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#projectBudget",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://xmlns.com/foaf/0.1/Project"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#decimal"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#cancelled",
+    "@type": [
+      "http://purl.org/hercules/asio/core#Status",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Cancelled"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#isCoauthoredBy",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://purl.org/hercules/asio/core#Publication"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "is co-authored by"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://xmlns.com/foaf/0.1/Agent"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#mainResearcherParticipant",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A person is the main researcher in a given project."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://xmlns.com/foaf/0.1/Person"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "main researcher participant"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://xmlns.com/foaf/0.1/Project"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/dc/elements/1.1/creator",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#coauthors",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://xmlns.com/foaf/0.1/Agent"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "co-authors"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://purl.org/hercules/asio/core#Publication"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#ServiceContract",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "ca-es",
+        "@value": "Contracte de servei"
+      },
+      {
+        "@language": "es",
+        "@value": "Contrato de servicio"
+      },
+      {
+        "@language": "pt",
+        "@value": "Contrato de serviço"
+      },
+      {
+        "@language": "fr",
+        "@value": "Contrat de service"
+      },
+      {
+        "@language": "en",
+        "@value": "Service contract"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://purl.org/hercules/asio/core#Contract"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "pt",
+        "@value": "Contrato de serviço"
+      },
+      {
+        "@language": "ca-es",
+        "@value": "Contracte de servei"
+      },
+      {
+        "@language": "fr",
+        "@value": "Contrat de service"
+      },
+      {
+        "@language": "en",
+        "@value": "Service contract"
+      },
+      {
+        "@language": "es",
+        "@value": "Contrato de servicio"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#authors",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://xmlns.com/foaf/0.1/Agent"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "authors"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://purl.org/hercules/asio/core#Publication"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://purl.org/hercules/asio/core#isAuthoredBy"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/2004/02/skos/core#altLabel",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#Workshop",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A seminar, discussion group, or the like, that emphasizes zxchange of ideas and the demonstration and application of techniques, skills, etc. [Source: http://purl.org/ontology/bibo/Workshop]"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Workshop"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://purl.org/NET/c4dm/event.owl#Event"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#requiredFor",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://purl.org/hercules/asio/core#AcademicPublication"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "required for"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://purl.org/hercules/asio/core#AcademicDegree"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#profiles",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "This property relates people and the featured profiles."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://xmlns.com/foaf/0.1/Agent"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "profiles"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://purl.org/hercules/asio/core#Profile"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#hasCode",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A concept can be asigned a code."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "has Code"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#awards",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "http://www.w3.org/2002/07/owl#InverseFunctionalProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "An object property linking an agent to something the agent awards, for example linking a funding agency to a grant, a university to a degree, or an organization to a prize. [source: cerif/frapo]"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://xmlns.com/foaf/0.1/Agent"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "awards"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://purl.org/hercules/asio/core#isAwardedBy"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#AcademicDegree",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A qualification awarded to students upon successful completion of a course of study in higher education."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "ca-es",
+        "@value": "Grau acadèmic"
+      },
+      {
+        "@language": "pt-br",
+        "@value": "Grau acadêmico"
+      },
+      {
+        "@language": "fr-ca",
+        "@value": "Grade universitaire"
+      },
+      {
+        "@language": "pt-pt",
+        "@value": "Grau académico"
+      },
+      {
+        "@language": "fr",
+        "@value": "Grade universitaire"
+      },
+      {
+        "@language": "eu",
+        "@value": "Unibertsitate-gradu"
+      },
+      {
+        "@language": "ca-ad",
+        "@value": "Grau acadèmic"
+      },
+      {
+        "@language": "fr-fr",
+        "@value": "Grade universitaire"
+      },
+      {
+        "@language": "fr-ch",
+        "@value": "Grade universitaire"
+      },
+      {
+        "@language": "en",
+        "@value": "Academic degree"
+      },
+      {
+        "@language": "fr-be",
+        "@value": "Grade universitaire"
+      },
+      {
+        "@language": "es-es",
+        "@value": "Título académico"
+      },
+      {
+        "@language": "gl",
+        "@value": "Grao académico"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "http://vivoweb.org/ontology/core#AcademicDegree"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "es-es",
+        "@value": "Título académico"
+      },
+      {
+        "@language": "fr-be",
+        "@value": "Grade universitaire"
+      },
+      {
+        "@language": "gl",
+        "@value": "Grao académico"
+      },
+      {
+        "@language": "ca-es",
+        "@value": "Grau acadèmic"
+      },
+      {
+        "@language": "pt-br",
+        "@value": "Grau acadêmico"
+      },
+      {
+        "@language": "pt-pt",
+        "@value": "Grau académico"
+      },
+      {
+        "@language": "eu",
+        "@value": "Unibertsitate-gradu"
+      },
+      {
+        "@language": "fr-fr",
+        "@value": "Grade universitaire"
+      },
+      {
+        "@language": "fr-ca",
+        "@value": "Grade universitaire"
+      },
+      {
+        "@language": "fr",
+        "@value": "Grade universitaire"
+      },
+      {
+        "@language": "fr-ch",
+        "@value": "Grade universitaire"
+      },
+      {
+        "@language": "ca-ad",
+        "@value": "Grau acadèmic"
+      },
+      {
+        "@language": "en",
+        "@value": "Academic degree"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#EventOrganiser",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://purl.org/hercules/asio/core#Role"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A role of organising cientific events, such as conferences, workshops, etc."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Event organiser"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#projectStatus",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://xmlns.com/foaf/0.1/Project"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "project status"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://purl.org/hercules/asio/core#Status"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#addresses",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://purl.org/hercules/asio/core#ResearchContribution"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "addresses"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://purl.org/hercules/asio/core#ResearchProblem"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "http://orkg.org/core#addresses"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#SME",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A company whose personnel numbers fall below certain limits."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "ca-es",
+        "@value": "Petita i mitjana empresa"
+      },
+      {
+        "@language": "en",
+        "@value": "Small and medium-sized enterprise"
+      },
+      {
+        "@language": "pt",
+        "@value": "Pequena e média empresa"
+      },
+      {
+        "@language": "es",
+        "@value": "Pequeña y mediana empresa"
+      },
+      {
+        "@language": "ca-ad",
+        "@value": "Petita i mitjana empresa"
+      },
+      {
+        "@language": "fr",
+        "@value": "Petite ou moyenne entreprise"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://purl.org/hercules/asio/core#Company"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "http://eurocris.org/ontology/semcerif#SME"
+      },
+      {
+        "@id": "http://purl.org/cerif/frapo/SME"
+      },
+      {
+        "@id": "http://purl.org/cerif/SME"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Small and medium-sized enterprise"
+      },
+      {
+        "@language": "es",
+        "@value": "Pequeña y mediana empresa"
+      },
+      {
+        "@language": "ca-ad",
+        "@value": "Petita i mitjana empresa"
+      },
+      {
+        "@language": "pt",
+        "@value": "Pequena e média empresa"
+      },
+      {
+        "@language": "fr",
+        "@value": "Petite ou moyenne entreprise"
+      },
+      {
+        "@language": "ca-es",
+        "@value": "Petita i mitjana empresa"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#atContext",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "This property enables to relate a profile with a given context (geographical, temporal, spatial, social, etc.)."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://purl.org/hercules/asio/core#Profile"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "at context"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://purl.org/hercules/asio/core#Context"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/cerif/frapo/FinancialEntity",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "es",
+        "@value": "Ente financiero"
+      },
+      {
+        "@language": "ca-ad",
+        "@value": "Ens financera"
+      },
+      {
+        "@language": "fr",
+        "@value": "Entité financière"
+      },
+      {
+        "@language": "ca-es",
+        "@value": "Ens financera"
+      },
+      {
+        "@language": "en",
+        "@value": "Financial entity"
+      },
+      {
+        "@language": "pt",
+        "@value": "Ente financeiro"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "ca-es",
+        "@value": "Ens financera"
+      },
+      {
+        "@language": "es",
+        "@value": "Ente financiero"
+      },
+      {
+        "@language": "fr",
+        "@value": "Entité financière"
+      },
+      {
+        "@language": "en",
+        "@value": "Financial entity"
+      },
+      {
+        "@language": "ca-ad",
+        "@value": "Ens financera"
+      },
+      {
+        "@language": "pt",
+        "@value": "Ente financeiro"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#Company",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "es",
+        "@value": "Una organización con personalidad jurídica que dispone de los medios necesarios para la producción y se dedica a combinarlos para obtener bienes o servicios destinados al intercambio."
+      },
+      {
+        "@language": "en",
+        "@value": "A corporation or business organization which makes goods (in a broad sense) in an organized manner and sells them to the public for profit."
+      },
+      {
+        "@language": "pt",
+        "@value": "Uma organização com personalidade jurídica, a qual dispõe dos médios necessários para a produção e obtenção de bens ou serviços destinados ao intercâmbio."
+      },
+      {
+        "@language": "ca",
+        "@value": "Una organització amb personalitat jurídica, la qual disposa dels mitjans necessaris per a la producció i es dedica a combinar-los per obtenir béns o serveis destinats a l'intercanvi."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "ca-es",
+        "@value": "Empresa"
+      },
+      {
+        "@language": "es",
+        "@value": "Empresa"
+      },
+      {
+        "@language": "gl",
+        "@value": "Empresa"
+      },
+      {
+        "@language": "fr",
+        "@value": "Entreprise"
+      },
+      {
+        "@language": "ca-ad",
+        "@value": "Empresa"
+      },
+      {
+        "@language": "pt",
+        "@value": "Empresa"
+      },
+      {
+        "@language": "en",
+        "@value": "Company"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://xmlns.com/foaf/0.1/Organization"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#disjointWith": [
+      {
+        "@id": "http://purl.org/hercules/asio/core#University"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "http://purl.org/cerif/frapo/Company"
+      },
+      {
+        "@id": "http://eurocris.org/ontology/semcerif#Company"
+      },
+      {
+        "@id": "http://rdfs.org/resume-rdf/cv.rdfs#Company"
+      },
+      {
+        "@id": "http://dev.poderopedia.com/vocab/Company"
+      },
+      {
+        "@id": "http://vocab.data.gov/def/fea#Company"
+      },
+      {
+        "@id": "http://purl.org/cerif/Company"
+      },
+      {
+        "@id": "http://vivoweb.org/ontology/core#Company"
+      },
+      {
+        "@id": "http://dbpedia.org/ontology/Company"
+      },
+      {
+        "@id": "http://www.ontotext.com/proton/protonext#Company"
+      },
+      {
+        "@id": "http://sw-portal.deri.org/ontologies/swportal#Company"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "es",
+        "@value": "Empresa"
+      },
+      {
+        "@language": "ca-ad",
+        "@value": "Empresa"
+      },
+      {
+        "@language": "pt",
+        "@value": "Empresa"
+      },
+      {
+        "@language": "fr",
+        "@value": "Entreprise"
+      },
+      {
+        "@language": "en",
+        "@value": "Company"
+      },
+      {
+        "@language": "ca-es",
+        "@value": "Empresa"
+      },
+      {
+        "@language": "gl",
+        "@value": "Empresa"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#Researching",
+    "@type": [
+      "http://purl.org/hercules/asio/core#Role",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#Country",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A region legally identified as a distinct entity in political geography."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "es",
+        "@value": "País"
+      },
+      {
+        "@language": "eu",
+        "@value": "Herrialde"
+      },
+      {
+        "@language": "ca-es",
+        "@value": "País"
+      },
+      {
+        "@language": "en",
+        "@value": "Country"
+      },
+      {
+        "@language": "ca-ad",
+        "@value": "País"
+      },
+      {
+        "@language": "pt",
+        "@value": "País"
+      },
+      {
+        "@language": "fr",
+        "@value": "Pays"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://purl.org/hercules/asio/modules#GeopoliticalEntities"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "gl",
+        "@value": "País"
+      },
+      {
+        "@language": "en",
+        "@value": "Country"
+      },
+      {
+        "@language": "pt",
+        "@value": "País"
+      },
+      {
+        "@language": "ca-es",
+        "@value": "País"
+      },
+      {
+        "@language": "ca-ad",
+        "@value": "País"
+      },
+      {
+        "@language": "eu",
+        "@value": "Herrialde"
+      },
+      {
+        "@language": "fr",
+        "@value": "Pays"
+      },
+      {
+        "@language": "es",
+        "@value": "País"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#plays",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "This property relates roles and their players, who can be any foaf:Agent (a person, a group, etc.)"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://xmlns.com/foaf/0.1/Agent"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "plays"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://purl.org/hercules/asio/core#Role"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/prov#wasDerivedFrom",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A derivation is a transformation of an entity into another, an update of an entity resulting in a new one, or the construction of a new entity based on a pre-existing entity."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "was derived from"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#hasTRL",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A prototype has a given technology readiness level"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://purl.org/hercules/asio/core#Prototype"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "has TRL"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#hasORCID",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://xmlns.com/foaf/0.1/Person"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "has ORCID"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#projectKeyword",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A key word of the project."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://xmlns.com/foaf/0.1/Project"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "es",
+        "@value": "palabra clave"
+      },
+      {
+        "@language": "en",
+        "@value": "project keyword"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#geoDivision",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A property to link a resource to a predefined geographical (or geopolitical) division."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "geodivision"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://purl.org/hercules/asio/modules#GeopoliticalEntities"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#isAuthoredBy",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "is authored by"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#isGrantedWith",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A person is granted with a stipend for researching."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://xmlns.com/foaf/0.1/Person"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "is granted with"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://purl.org/hercules/asio/core#Grant"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#projectObjective",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A defined objective of the project."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://xmlns.com/foaf/0.1/Project"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "project objective"
+      },
+      {
+        "@language": "es",
+        "@value": "objetivo de proyecto"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#PASfuncionario",
+    "@type": [
+      "http://purl.org/hercules/asio/core#Role",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "ca-ad",
+        "@value": "PAS funcionari"
+      },
+      {
+        "@language": "gl",
+        "@value": "PAS funcionario"
+      },
+      {
+        "@language": "ast",
+        "@value": "PAS funcionariu"
+      },
+      {
+        "@language": "es",
+        "@value": "PAS funcionario"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#Product",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A product as outcome of a project."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Product"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#personalizes",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A role is personalized by means of a profile, which wrap the role in the identity of the person behind the profile."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://purl.org/hercules/asio/core#Profile"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "personalizes"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://purl.org/hercules/asio/core#Role"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#ResearchField",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Research field"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "http://orkg.org/core#ResearchField"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#isMemberOf",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "is member of"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://xmlns.com/foaf/0.1/member"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#SpainUniversityStaffing",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "This ASIO vertical module defines Spain's University staffing model encompassing all its specificities."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Spain's university staffing"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core#ConceptScheme"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Spain's university staffing"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#MastersThesis",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A thesis reporting a research project undertaken as part of a second-cycle course of education to receive a master's degree."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "fr-fr",
+        "@value": "Mémoire de maîtrise"
+      },
+      {
+        "@language": "gl",
+        "@value": "Traballo de fin de máster"
+      },
+      {
+        "@language": "pt-ao",
+        "@value": "Tese de mestrado"
+      },
+      {
+        "@language": "es-es",
+        "@value": "Trabajo de fin de máster"
+      },
+      {
+        "@language": "fr-ca",
+        "@value": "Mémoire de maîtrise"
+      },
+      {
+        "@language": "ca-ad",
+        "@value": "Treball de fi de màster"
+      },
+      {
+        "@language": "en",
+        "@value": "Master's thesis"
+      },
+      {
+        "@language": "es-mx",
+        "@value": "Tesis de maestría"
+      },
+      {
+        "@language": "es-cu",
+        "@value": "Tesis de maestría"
+      },
+      {
+        "@language": "ca-es",
+        "@value": "Treball de fi de màster"
+      },
+      {
+        "@language": "es-co",
+        "@value": "Tesis de maestría"
+      },
+      {
+        "@language": "pt-br",
+        "@value": "Dissertação de mestrado"
+      },
+      {
+        "@language": "pt-pt",
+        "@value": "Dissertação de mestrado"
+      },
+      {
+        "@language": "es-ar",
+        "@value": "Tesis de maestría"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://purl.org/hercules/asio/core#Thesis"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#disjointWith": [
+      {
+        "@id": "http://purl.org/hercules/asio/core#PhDThesis"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "http://purl.org/net/nknouf/ns/bibtex#Mastersthesis"
+      },
+      {
+        "@id": "http://sw-portal.deri.org/ontologies/swportal#MasterThesis"
+      },
+      {
+        "@id": "http://swrc.ontoware.org/ontology#MasterThesis"
+      },
+      {
+        "@id": "http://lsdis.cs.uga.edu/projects/semdis/opus#Masters_Thesis"
+      },
+      {
+        "@id": "http://semanticscience.org/resource/SIO_000167"
+      },
+      {
+        "@id": "http://purl.org/spar/fabio/MastersThesis"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel": [
+      {
+        "@language": "ca-es",
+        "@value": "TFM"
+      },
+      {
+        "@language": "ca-es",
+        "@value": "Treball de fi de master"
+      },
+      {
+        "@language": "gl",
+        "@value": "Traballo de fin de mestrado"
+      },
+      {
+        "@language": "ca-ad",
+        "@value": "TFM"
+      },
+      {
+        "@language": "es-es",
+        "@value": "TFM"
+      },
+      {
+        "@language": "ca-es",
+        "@value": "Treball de fi de mestratge"
+      },
+      {
+        "@language": "es-eu",
+        "@value": "MALa"
+      },
+      {
+        "@language": "ca-ad",
+        "@value": "Treball de fi de master"
+      },
+      {
+        "@language": "ca-ad",
+        "@value": "Treball de fi de mestratge"
+      },
+      {
+        "@language": "es-es",
+        "@value": "Trabajo de fin de master"
+      },
+      {
+        "@language": "gl",
+        "@value": "TFM"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "fr-ca",
+        "@value": "Mémoire de maîtrise"
+      },
+      {
+        "@language": "ca-ad",
+        "@value": "Treball de fi de màster"
+      },
+      {
+        "@language": "eu",
+        "@value": "Master Amaierako Lana"
+      },
+      {
+        "@language": "fr-fr",
+        "@value": "Mémoire de maîtrise"
+      },
+      {
+        "@language": "pt-ao",
+        "@value": "Tese de mestrado"
+      },
+      {
+        "@language": "en",
+        "@value": "Master's thesis"
+      },
+      {
+        "@language": "gl",
+        "@value": "Traballo de fin de máster"
+      },
+      {
+        "@language": "pt-br",
+        "@value": "Dissertação de mestrado"
+      },
+      {
+        "@language": "es-mx",
+        "@value": "Tesis de maestría"
+      },
+      {
+        "@language": "es-cu",
+        "@value": "Tesis de maestría"
+      },
+      {
+        "@language": "ca-es",
+        "@value": "Treball de fi de màster"
+      },
+      {
+        "@language": "pt-pt",
+        "@value": "Dissertação de mestrado"
+      },
+      {
+        "@language": "es-ar",
+        "@value": "Tesis de maestría"
+      },
+      {
+        "@language": "es-es",
+        "@value": "Trabajo de fin de máster"
+      },
+      {
+        "@language": "es-co",
+        "@value": "Tesis de maestría"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#hasSealOfQuality",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://xmlns.com/foaf/0.1/Agent"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "has seal of quality"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://purl.org/hercules/asio/core#ResearchInstitute"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#Administrative",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://purl.org/hercules/asio/core#Role"
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#FundingOrganization",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Funding organization"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://xmlns.com/foaf/0.1/Organization"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "http://vivoweb.org/ontology/core#FundingOrganization"
+      },
+      {
+        "@id": "http://purl.org/cerif/frapo/FundingAgency"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#projectID",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://xmlns.com/foaf/0.1/Project"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "project ID"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#employs",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://purl.org/hercules/asio/core#ResearchContribution"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "es",
+        "@value": "emplea"
+      },
+      {
+        "@language": "en",
+        "@value": "employs"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://purl.org/hercules/asio/core#ResearchMethod"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "http://orkg.org/core#employs"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#NationalProject",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A project developed and funded at the national level."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "es",
+        "@value": "Proyecto nacional"
+      },
+      {
+        "@language": "en",
+        "@value": "National project"
+      },
+      {
+        "@language": "fr",
+        "@value": "Projet national"
+      },
+      {
+        "@language": "ca-es",
+        "@value": "Projecte nacional"
+      },
+      {
+        "@language": "pt",
+        "@value": "Projeto nacional"
+      },
+      {
+        "@language": "ca-ad",
+        "@value": "Projecte nacional"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://xmlns.com/foaf/0.1/Project"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "es",
+        "@value": "Proyecto nacional"
+      },
+      {
+        "@language": "fr",
+        "@value": "Projet national"
+      },
+      {
+        "@language": "pt",
+        "@value": "Projeto nacional"
+      },
+      {
+        "@language": "ca-es",
+        "@value": "Projecte nacional"
+      },
+      {
+        "@language": "en",
+        "@value": "National project"
+      },
+      {
+        "@language": "ca-ad",
+        "@value": "Projecte nacional"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#MastersDegree",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "ca-ad",
+        "@value": "Màster universitari"
+      },
+      {
+        "@language": "ca-es",
+        "@value": "Màster universitari"
+      },
+      {
+        "@language": "fr-be",
+        "@value": "Maîtrise universitaire"
+      },
+      {
+        "@language": "pt-pt",
+        "@value": "Mestrado"
+      },
+      {
+        "@language": "es-ve",
+        "@value": "Magister Scientiae"
+      },
+      {
+        "@language": "fr-ch",
+        "@value": "Maîtrise universitaire"
+      },
+      {
+        "@language": "pt-br",
+        "@value": "Mestrado"
+      },
+      {
+        "@language": "es-es",
+        "@value": "Máster universitario"
+      },
+      {
+        "@language": "en",
+        "@value": "Master's degree"
+      },
+      {
+        "@language": "fr-fr",
+        "@value": "Maîtrise universitaire"
+      },
+      {
+        "@language": "gl",
+        "@value": "Máster universitario"
+      },
+      {
+        "@language": "fr-ca",
+        "@value": "Maîtrise universitaire"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://purl.org/hercules/asio/core#AcademicDegree"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel": [
+      {
+        "@language": "ca-es",
+        "@value": "Mestratge universitari"
+      },
+      {
+        "@language": "gl",
+        "@value": "Mestrado universitario"
+      },
+      {
+        "@language": "ca-ad",
+        "@value": "Mestratge universitari"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "es-ve",
+        "@value": "Magister Scientiae"
+      },
+      {
+        "@language": "fr-ch",
+        "@value": "Maîtrise universitaire"
+      },
+      {
+        "@language": "fr-fr",
+        "@value": "Maîtrise universitaire"
+      },
+      {
+        "@language": "gl",
+        "@value": "Máster universitario"
+      },
+      {
+        "@language": "fr-ca",
+        "@value": "Maîtrise universitaire"
+      },
+      {
+        "@language": "en",
+        "@value": "Master's degree"
+      },
+      {
+        "@language": "fr-be",
+        "@value": "Maîtrise universitaire"
+      },
+      {
+        "@language": "pt-pt",
+        "@value": "Mestrado"
+      },
+      {
+        "@language": "ca-ad",
+        "@value": "Màster universitari"
+      },
+      {
+        "@language": "pt-br",
+        "@value": "Mestrado"
+      },
+      {
+        "@language": "ca-es",
+        "@value": "Màster universitari"
+      },
+      {
+        "@language": "es-es",
+        "@value": "Máster universitario"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#RegionalProject",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A project developed and funded at the regional level."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "ca-ad",
+        "@value": "Projecte regional"
+      },
+      {
+        "@language": "es",
+        "@value": "Proyecto regional"
+      },
+      {
+        "@language": "en",
+        "@value": "Regional project"
+      },
+      {
+        "@language": "fr",
+        "@value": "Projet régional"
+      },
+      {
+        "@language": "ca-es",
+        "@value": "Projecte regional"
+      },
+      {
+        "@language": "pt",
+        "@value": "Projeto regional"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://xmlns.com/foaf/0.1/Project"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "pt",
+        "@value": "Projeto regional"
+      },
+      {
+        "@language": "ca-ad",
+        "@value": "Projecte regional"
+      },
+      {
+        "@language": "fr",
+        "@value": "Projet régional"
+      },
+      {
+        "@language": "es",
+        "@value": "Proyecto regional"
+      },
+      {
+        "@language": "en",
+        "@value": "Regional project"
+      },
+      {
+        "@language": "ca-es",
+        "@value": "Projecte regional"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#TechnicalReport",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Technical report"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://purl.org/hercules/asio/core#ScientificPublication"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "http://semanticscience.org/resource/TechnicalReport"
+      },
+      {
+        "@id": "http://purl.org/spar/fabio/TechnicalReport"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Technical report"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#PhDStudent",
+    "@type": [
+      "http://purl.org/hercules/asio/core#Role",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#hasCV",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://xmlns.com/foaf/0.1/Person"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "has CV"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://purl.org/hercules/asio/core#CV"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "http://purl.org/cerif/frapo/hasCurriculumVitae"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#hasResearchField",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "has research field"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "http://orkg.org/core#hasResearchField"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#unfunded",
+    "@type": [
+      "http://purl.org/hercules/asio/core#Status",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Unfunded"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#Funding",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://purl.org/cerif/frapo/FinancialEntity"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "http://purl.org/cerif/frapo/Funding"
+      },
+      {
+        "@id": "http://eurocris.org/ontology/semcerif#Funding"
+      },
+      {
+        "@id": "http://purl.org/cerif/Funding"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#AdministrativeEntity",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "This vertical module in ASIO models all the relevant administrative bodies (\"Administración Autonómica\") of Spain's Autonomous Communities (conserjerías, departamentos, secretarías) that might have a role (funding, participating) within the development of a given project. It is modeled hierarchically through the relevant administrative levels thereof."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "pt",
+        "@value": "Entidades administrativas"
+      },
+      {
+        "@language": "en",
+        "@value": "Administrative entities"
+      },
+      {
+        "@language": "ca-ad",
+        "@value": "Entitats administratives"
+      },
+      {
+        "@language": "es",
+        "@value": "Entidades administrativas"
+      },
+      {
+        "@language": "ca-es",
+        "@value": "Entitats administratives"
+      },
+      {
+        "@language": "fr",
+        "@value": "Entités administratives"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core#ConceptScheme"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "ca-ad",
+        "@value": "Entitats administratives"
+      },
+      {
+        "@language": "ca-es",
+        "@value": "Entitats administratives"
+      },
+      {
+        "@language": "fr",
+        "@value": "Entités administratives"
+      },
+      {
+        "@language": "en",
+        "@value": "Administrative entities"
+      },
+      {
+        "@language": "es",
+        "@value": "Entidades administrativas"
+      },
+      {
+        "@language": "pt",
+        "@value": "Entidades administrativas"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#PASlaboral",
+    "@type": [
+      "http://purl.org/hercules/asio/core#Role",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "ca-ad",
+        "@value": "PAS laboral"
+      },
+      {
+        "@language": "es",
+        "@value": "PAS laboral"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#isAwardedBy",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#FunctionalProperty",
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "is awarded by"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://xmlns.com/foaf/0.1/Agent"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#AcademicPublication",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "ca-ad",
+        "@value": "Publicació acadèmica"
+      },
+      {
+        "@language": "ca-es",
+        "@value": "Publicació acadèmica"
+      },
+      {
+        "@language": "pt",
+        "@value": "Publicação acadêmica"
+      },
+      {
+        "@language": "en",
+        "@value": "Academic publication"
+      },
+      {
+        "@language": "fr",
+        "@value": "Publication académique"
+      },
+      {
+        "@language": "es",
+        "@value": "Publicación académica"
+      },
+      {
+        "@language": "gl",
+        "@value": "Publicación académica"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://purl.org/hercules/asio/core#Publication"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "es",
+        "@value": "Publicación académica"
+      },
+      {
+        "@language": "ca-ad",
+        "@value": "Publicació acadèmica"
+      },
+      {
+        "@language": "gl",
+        "@value": "Publicación académica"
+      },
+      {
+        "@language": "ca-es",
+        "@value": "Publicació acadèmica"
+      },
+      {
+        "@language": "fr",
+        "@value": "Publication académique"
+      },
+      {
+        "@language": "pt",
+        "@value": "Publicação acadêmica"
+      },
+      {
+        "@language": "en",
+        "@value": "Academic publication"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#coadvises",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A person co-advises an academic publication (bachelor thesis, master thesis or doctoral thesis)."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://xmlns.com/foaf/0.1/Person"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "co-advises"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://purl.org/hercules/asio/core#AcademicPublication"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#projectAcronym",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://xmlns.com/foaf/0.1/Project"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "project acronym"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#Budget",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A financial plan for a defined period that may also include planned sales volumes and revenues, resource quantities, costs and expenses, assets, liabilities and cash flows."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "gl",
+        "@value": "Orzamento"
+      },
+      {
+        "@language": "es",
+        "@value": "Presupuesto"
+      },
+      {
+        "@language": "fr",
+        "@value": "Budget"
+      },
+      {
+        "@language": "en",
+        "@value": "Budget"
+      },
+      {
+        "@language": "eu",
+        "@value": "Aurrekontu"
+      },
+      {
+        "@language": "ca-ad",
+        "@value": "Pressupost"
+      },
+      {
+        "@language": "ca-es",
+        "@value": "Pressupost"
+      },
+      {
+        "@language": "pt",
+        "@value": "Orçamento"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://purl.org/cerif/frapo/FinancialEntity"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel": [
+      {
+        "@language": "gl",
+        "@value": "Presupuesto"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Budget"
+      },
+      {
+        "@language": "ca-ad",
+        "@value": "Pressupost"
+      },
+      {
+        "@language": "pt",
+        "@value": "Orçamento"
+      },
+      {
+        "@language": "ca-es",
+        "@value": "Pressupost"
+      },
+      {
+        "@language": "gl",
+        "@value": "Orzamento"
+      },
+      {
+        "@language": "es",
+        "@value": "Presupuesto"
+      },
+      {
+        "@language": "fr",
+        "@value": "Budget"
+      },
+      {
+        "@language": "eu",
+        "@value": "Aurrekontu"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#TechnicalSupport",
+    "@type": [
+      "http://purl.org/hercules/asio/core#Role",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#patentAssistantExaminer",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://xmlns.com/foaf/0.1/Person"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "patent assistant examiner"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://purl.org/hercules/asio/core#Patent"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#hasResearcherID",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://xmlns.com/foaf/0.1/Person"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "has Researcher ID"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#Context",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Contexts are similar to situations or state of affairs providing interpretation coordinates for profiles. In the most simple case, these coordinates are just geographical/spatial or temporal coordinates. The ASIO core ontology does not impose a fixed definition of context. It is deliberately wide in order to enable third-parties the adequation of the meaning of context according to their modeling needs and requirements."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "es",
+        "@value": "Contexto"
+      },
+      {
+        "@language": "en",
+        "@value": "Context"
+      },
+      {
+        "@language": "pt",
+        "@value": "Contexto"
+      },
+      {
+        "@language": "ca-es",
+        "@value": "Context"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#UniversityDivision",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A division within a university (school, faculty, etc.)"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "ca-ad",
+        "@value": "Divisió d'universitat"
+      },
+      {
+        "@language": "gl",
+        "@value": "División de universidade"
+      },
+      {
+        "@language": "es",
+        "@value": "División de universidad"
+      },
+      {
+        "@language": "fr",
+        "@value": "Division d'université"
+      },
+      {
+        "@language": "en",
+        "@value": "University division"
+      },
+      {
+        "@language": "ca-es",
+        "@value": "Divisió d'universitat"
+      },
+      {
+        "@language": "pt",
+        "@value": "Divisão de universidade"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://purl.org/hercules/asio/core#University"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#Patent",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A form of intellectual property that gives its owner the legal right to exclude others from making, using, selling and importing an invention for a limited period of years, in exchange for publishing an enabling public disclosure of the invention."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "gl",
+        "@value": "Patente"
+      },
+      {
+        "@language": "ca-ad",
+        "@value": "Patent"
+      },
+      {
+        "@language": "es",
+        "@value": "Patente"
+      },
+      {
+        "@language": "fr",
+        "@value": "Patent"
+      },
+      {
+        "@language": "eu",
+        "@value": "Patente"
+      },
+      {
+        "@language": "pt",
+        "@value": "Patente"
+      },
+      {
+        "@language": "en",
+        "@value": "Patent"
+      },
+      {
+        "@language": "ca-es",
+        "@value": "Patent"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "http://sw-portal.deri.org/ontologies/swportal#Patent"
+      },
+      {
+        "@id": "http://vivoweb.org/ontology/core#Patent"
+      },
+      {
+        "@id": "http://www.ontotext.com/proton/protonext#Patent"
+      },
+      {
+        "@id": "http://semanticscience.org/resource/SIO_000153"
+      },
+      {
+        "@id": "http://purl.org/spar/fabio/Patent"
+      },
+      {
+        "@id": "http://purl.org/ontology/bibo/Patent"
+      },
+      {
+        "@id": "http://purl.org/cerif/Patent"
+      },
+      {
+        "@id": "http://eurocris.org/ontology/semcerif#Patent"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Patent"
+      },
+      {
+        "@language": "eu",
+        "@value": "Patente"
+      },
+      {
+        "@language": "pt",
+        "@value": "Patente"
+      },
+      {
+        "@language": "ca",
+        "@value": "Patent"
+      },
+      {
+        "@language": "gl",
+        "@value": "Patente"
+      },
+      {
+        "@language": "es",
+        "@value": "Patente"
+      },
+      {
+        "@language": "fr",
+        "@value": "Patent"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#ProjectBudget",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The budget established or devoted to a project."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "ca-es",
+        "@value": "Pressupost de projecte"
+      },
+      {
+        "@language": "ca-ad",
+        "@value": "Pressupost de projecte"
+      },
+      {
+        "@language": "es",
+        "@value": "Presupuesto de proyecto"
+      },
+      {
+        "@language": "pt",
+        "@value": "Orçamento de projeto"
+      },
+      {
+        "@language": "fr",
+        "@value": "Budget de projet"
+      },
+      {
+        "@language": "en",
+        "@value": "Project budget"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://purl.org/hercules/asio/core#Budget"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "pt",
+        "@value": "Orçamento de projeto"
+      },
+      {
+        "@language": "fr",
+        "@value": "Budget de projet"
+      },
+      {
+        "@language": "ca-ad",
+        "@value": "Pressupost de projecte"
+      },
+      {
+        "@language": "es",
+        "@value": "Presupuesto de proyecto"
+      },
+      {
+        "@language": "ca-es",
+        "@value": "Pressupost de projecte"
+      },
+      {
+        "@language": "en",
+        "@value": "Project budget"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#utilizes",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://purl.org/hercules/asio/core#ResearchContribution"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "utilizes"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://purl.org/hercules/asio/core#ResearchMaterial"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "http://orkg.org/core#utilizes"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#h-index",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://xmlns.com/foaf/0.1/Person"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "h-index"
+      },
+      {
+        "@language": "en",
+        "@value": "A property to express the h-index of an author."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://purl.org/hercules/asio/core#QualifiedValue"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#isCompetitive",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://xmlns.com/foaf/0.1/Project"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "is competitive"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#boolean"
+      }
+    ]
+  },
+  {
+    "@id": "http://xmlns.com/foaf/0.1/Person",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://xmlns.com/foaf/0.1/Agent"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#projectCoordinator",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A property to link an agent (person or organisation) with a project in the role of coordinator."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://xmlns.com/foaf/0.1/Agent"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "project coordinator"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://xmlns.com/foaf/0.1/Project"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#TitularUniversidad",
+    "@type": [
+      "http://purl.org/hercules/asio/core#Role",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "es",
+        "@value": "Profesor titular de universidad"
+      },
+      {
+        "@language": "ast",
+        "@value": "Profesor titular d'universidá"
+      },
+      {
+        "@language": "ca-ad",
+        "@value": "Professor titular d'universitat"
+      },
+      {
+        "@language": "gl",
+        "@value": "Profesor titular de universidade"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#Spinoff",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A division of a company or an organization that becomes an independent business with assets, employees, intellectual property, technology, or existing products taken from the parent company."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "es",
+        "@value": "Empresa spin-off"
+      },
+      {
+        "@language": "eu",
+        "@value": "Spin-off enpresa"
+      },
+      {
+        "@language": "ca-es",
+        "@value": "Empresa derivada"
+      },
+      {
+        "@language": "pt",
+        "@value": "Empresa derivada"
+      },
+      {
+        "@language": "ca-ad",
+        "@value": "Empresa derivada"
+      },
+      {
+        "@language": "en",
+        "@value": "Corporate spin-off"
+      },
+      {
+        "@language": "fr",
+        "@value": "Société scindée"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://purl.org/hercules/asio/core#Company"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "http://purl.org/cerif/frapo/SpinOffCompany"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "pt",
+        "@value": "Empresa derivada"
+      },
+      {
+        "@language": "ca-ad",
+        "@value": "Empresa derivada"
+      },
+      {
+        "@language": "en",
+        "@value": "Corporate spin-off"
+      },
+      {
+        "@language": "es",
+        "@value": "Empresa spin-off"
+      },
+      {
+        "@language": "fr",
+        "@value": "Société scindée"
+      },
+      {
+        "@language": "eu",
+        "@value": "Spin-off enpresa"
+      },
+      {
+        "@language": "ca-es",
+        "@value": "Empresa derivada"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#patentAssignee",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://purl.org/hercules/asio/core#Patent"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "patent assignee"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://xmlns.com/foaf/0.1/Organization"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#CV",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A document used and created by a person to present their background, skills and accomplishments."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "pt",
+        "@value": "Curriculum vitae"
+      },
+      {
+        "@language": "es",
+        "@value": "Currículum vitae"
+      },
+      {
+        "@language": "ca-ad",
+        "@value": "Currículum vitae"
+      },
+      {
+        "@language": "fr",
+        "@value": "Curriculum vitae"
+      },
+      {
+        "@language": "eu",
+        "@value": "Curriculum vitae"
+      },
+      {
+        "@language": "en",
+        "@value": "Currículum vitae"
+      },
+      {
+        "@language": "ca-es",
+        "@value": "Currículum vitae"
+      },
+      {
+        "@language": "gl",
+        "@value": "Currículum vitae"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "http://rdfs.org/resume-rdf/cv.rdfs#CV"
+      },
+      {
+        "@id": "http://purl.org/cerif/CurriculumVitae"
+      },
+      {
+        "@id": "http://acm.rkbexplorer.com/ontologies/acm#K.3.2.2"
+      },
+      {
+        "@id": "http://eurocris.org/ontology/semcerif#CurriculumVitae"
+      },
+      {
+        "@id": "http://dbpedia.org/ontology/Resume"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel": [
+      {
+        "@language": "eu",
+        "@value": "CV"
+      },
+      {
+        "@language": "fr",
+        "@value": "CV"
+      },
+      {
+        "@language": "en",
+        "@value": "Résumé"
+      },
+      {
+        "@language": "pt",
+        "@value": "Currículo"
+      },
+      {
+        "@language": "es",
+        "@value": "Currículo"
+      },
+      {
+        "@language": "pt",
+        "@value": "Curriculum vitæ"
+      },
+      {
+        "@language": "pt",
+        "@value": "CV"
+      },
+      {
+        "@language": "ca",
+        "@value": "Curriculum vitae"
+      },
+      {
+        "@language": "fr",
+        "@value": "Curriculum vitæ"
+      },
+      {
+        "@language": "gl",
+        "@value": "CV"
+      },
+      {
+        "@language": "gl",
+        "@value": "Currículo"
+      },
+      {
+        "@language": "ca",
+        "@value": "Currículum"
+      },
+      {
+        "@language": "es",
+        "@value": "Currículum"
+      },
+      {
+        "@language": "es",
+        "@value": "CV"
+      },
+      {
+        "@language": "en",
+        "@value": "Resume"
+      },
+      {
+        "@language": "ca",
+        "@value": "CV"
+      },
+      {
+        "@language": "es",
+        "@value": "Curriculum vitae"
+      },
+      {
+        "@language": "en",
+        "@value": "CV"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "pt",
+        "@value": "Curriculum vitae"
+      },
+      {
+        "@language": "en",
+        "@value": "Curriculum vitae"
+      },
+      {
+        "@language": "ca",
+        "@value": "Currículum vitae"
+      },
+      {
+        "@language": "fr",
+        "@value": "Curriculum vitae"
+      },
+      {
+        "@language": "es",
+        "@value": "Currículum vitae"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#ResearchResult",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Research result"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Research result"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#Conference",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A meeting for consultation or discussion. [Source: http://purl.org/ontology/bibo/Conference]"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Conference"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://purl.org/NET/c4dm/event.owl#Event"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#awardedWith",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://purl.org/hercules/asio/core#Publication"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "awarded with"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ]
+  },
+  {
+    "@id": "http://xmlns.com/foaf/0.1/Group",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://xmlns.com/foaf/0.1/Agent"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#UndergraduateStudent",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://purl.org/hercules/asio/core#Role"
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#funded",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://purl.org/hercules/asio/core#Status"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Funded"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#University",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A centre at which higher education and research is conducted."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "eu",
+        "@value": "Unibertsitate"
+      },
+      {
+        "@language": "gl",
+        "@value": "Universidade"
+      },
+      {
+        "@language": "ca-es",
+        "@value": "Universitat"
+      },
+      {
+        "@language": "pt",
+        "@value": "Universidade"
+      },
+      {
+        "@language": "fr",
+        "@value": "Université"
+      },
+      {
+        "@language": "ca-ad",
+        "@value": "Universitat"
+      },
+      {
+        "@language": "en",
+        "@value": "University"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://xmlns.com/foaf/0.1/Organization"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "http://vivoweb.org/ontology/core#University"
+      },
+      {
+        "@id": "http://semanticscience.org/resource/SIO_000290"
+      },
+      {
+        "@id": "http://dbpedia.org/ontology/University"
+      },
+      {
+        "@id": "http://sw-portal.deri.org/ontologies/swportal#University"
+      },
+      {
+        "@id": "http://semanticscience.org/resource/University"
+      },
+      {
+        "@id": "http://purl.org/cerif/frapo/University"
+      },
+      {
+        "@id": "http://www.ontotext.com/proton/protonext#University"
+      },
+      {
+        "@id": "http://www.w3.org/ns/org#University"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "fr",
+        "@value": "Université"
+      },
+      {
+        "@language": "ca-es",
+        "@value": "Universitat"
+      },
+      {
+        "@language": "pt",
+        "@value": "Universidade"
+      },
+      {
+        "@language": "en",
+        "@value": "University"
+      },
+      {
+        "@language": "ca-ad",
+        "@value": "Universitat"
+      },
+      {
+        "@language": "gl",
+        "@value": "Universidade"
+      },
+      {
+        "@language": "eu",
+        "@value": "Unibertsitate"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#hasResearchContribution",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "has research contribution"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "http://orkg.org/core#hasResearchContribution"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#patentExpirationDate",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://purl.org/hercules/asio/core#Patent"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "patent expiration date"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#date"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#accepted",
+    "@type": [
+      "http://purl.org/hercules/asio/core#Status",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Accepted"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#patentInventor",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://purl.org/hercules/asio/core#Patent"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "patent inventor"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://xmlns.com/foaf/0.1/Person"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#hasDOI",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://purl.org/hercules/asio/core#Publication"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "has DOI"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#Role",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A condition/status/position that can be predicated of a person. In the ASIO core ontology, roles are reified as first order individuals and relations between roles and players are expressed by means of the asio:plays property. The ASIO core ontology does not impose any subclassification of roles. The concept is open to be refined according to domain or application requirements."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Role"
+      },
+      {
+        "@language": "pt",
+        "@value": "Papel"
+      },
+      {
+        "@language": "ca-es",
+        "@value": "Papell"
+      },
+      {
+        "@language": "es",
+        "@value": "Papel"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#EditedPublication",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Edited publication"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://purl.org/hercules/asio/core#ScientificPublication"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#yields",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://purl.org/hercules/asio/core#ResearchContribution"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "yields"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://purl.org/hercules/asio/core#ResearchResult"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "http://orkg.org/core#yields"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#isActive",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "This property allows to specify which is the user profile that is active,\ngiven a interaction between two applications."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://purl.org/hercules/asio/core#Profile"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "is active"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#boolean"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/dc/elements/1.1/description",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#requires",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "This property relates roles and their requisites, i.e. other roles."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://purl.org/hercules/asio/core#AcademicDegree"
+      },
+      {
+        "@id": "http://purl.org/hercules/asio/core#Role"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "requires"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://purl.org/hercules/asio/core#Role"
+      },
+      {
+        "@id": "http://purl.org/hercules/asio/core#AcademicPublication"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#codeOf",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A code is assigned to a concept."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "code of"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://purl.org/hercules/asio/core#hasCode"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#ResearchMaterial",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Research material"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "http://orkg.org/core#ResearchMaterial"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Research material"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#rejected",
+    "@type": [
+      "http://purl.org/hercules/asio/core#Status",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Rejected"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#projectOutcome",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "a property to link a project to any outcome obtained within its endeavour, including publications, patents, products, prototypes, etc. The domain of this property is obviously the class foaf:Project but the range is left open so to encompass unforeseen project outcomes."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://xmlns.com/foaf/0.1/Project"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "project outcome"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/modules#ScientificDomain",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "This ASIO vertical module organizes hierarchically the scientific domains related to research projects as established by Spain's Agencia Estatal de Investigación, depending from the Ministerio de Economía y Competitividad."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "ca-ad",
+        "@value": "Dominis científics"
+      },
+      {
+        "@language": "fr",
+        "@value": "Domaines scientifiques"
+      },
+      {
+        "@language": "en",
+        "@value": "Scientific domains"
+      },
+      {
+        "@language": "es",
+        "@value": "Áreas científicas"
+      },
+      {
+        "@language": "pt",
+        "@value": "Áreas científicas"
+      },
+      {
+        "@language": "ca-es",
+        "@value": "Dominis científics"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core#ConceptScheme"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Scientific domains"
+      },
+      {
+        "@language": "ca-es",
+        "@value": "Dominis científics"
+      },
+      {
+        "@language": "pt",
+        "@value": "Áreas científicas"
+      },
+      {
+        "@language": "ca-ad",
+        "@value": "Dominis científics"
+      },
+      {
+        "@language": "es",
+        "@value": "Áreas científicas"
+      },
+      {
+        "@language": "fr",
+        "@value": "Domaines scientifiques"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#patentCountry",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://purl.org/hercules/asio/core#Patent"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "patent country"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://purl.org/hercules/asio/core#Country"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#coadvisedBy",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "An academic publication (bachelor thesis, master thesis or doctoral thesis) is co-advised by an advisor."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://purl.org/hercules/asio/core#AcademicPublication"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "co-advised by"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://xmlns.com/foaf/0.1/Person"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#EuropeanProject",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A project developed and funded at the European level."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "pt",
+        "@value": "Projeto europeu"
+      },
+      {
+        "@language": "ca-ad",
+        "@value": "Projecte europeu"
+      },
+      {
+        "@language": "fr",
+        "@value": "Projet européen"
+      },
+      {
+        "@language": "en",
+        "@value": "European project"
+      },
+      {
+        "@language": "ca-es",
+        "@value": "Projecte europeu"
+      },
+      {
+        "@language": "es",
+        "@value": "Proyecto europeo"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://xmlns.com/foaf/0.1/Project"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "European project"
+      },
+      {
+        "@language": "fr",
+        "@value": "Projet européen"
+      },
+      {
+        "@language": "es",
+        "@value": "Proyecto europeo"
+      },
+      {
+        "@language": "pt",
+        "@value": "Projeto europeu"
+      },
+      {
+        "@language": "ca-es",
+        "@value": "Projecte europeu"
+      },
+      {
+        "@language": "ca-ad",
+        "@value": "Projecte europeu"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#researchesIn",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://xmlns.com/foaf/0.1/Agent"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "researches in"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://purl.org/hercules/asio/modules#ScientificDomain"
+      }
+    ]
+  },
+  {
+    "@id": "http://xmlns.com/foaf/0.1/member",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://xmlns.com/foaf/0.1/Group"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "member"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://xmlns.com/foaf/0.1/Agent"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#Publishes",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://xmlns.com/foaf/0.1/Agent"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "publishes"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://purl.org/hercules/asio/core#Publication"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://purl.org/hercules/asio/core#publishedBy"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#MasterStudent",
+    "@type": [
+      "http://purl.org/hercules/asio/core#Role",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#projectStartDate",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The start date of the project."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://xmlns.com/foaf/0.1/Project"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "es",
+        "@value": "fecha inicio proyecto"
+      },
+      {
+        "@language": "en",
+        "@value": "project start date"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#date"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#companyFounder",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://xmlns.com/foaf/0.1/Person"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "company founder"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://purl.org/hercules/asio/core#Company"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#Article",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Article"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://purl.org/hercules/asio/core#ScientificPublication"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "http://orkg.org/core#Paper"
+      },
+      {
+        "@id": "http://purl.org/spar/fabio/Article"
+      },
+      {
+        "@id": "http://sw-portal.deri.org/ontologies/swportal#Article"
+      },
+      {
+        "@id": "http://purl.org/ontology/bibo/AcademicArticle"
+      },
+      {
+        "@id": "http://www.ontotext.com/proton/protonext#Article"
+      },
+      {
+        "@id": "http://purl.org/net/nknouf/ns/bibtex#Article"
+      },
+      {
+        "@id": "http://purl.org/ontology/bibo/Article"
+      },
+      {
+        "@id": "http://ns.nature.com/terms/Article"
+      },
+      {
+        "@id": "http://semanticscience.org/resource/SIO_000154"
+      },
+      {
+        "@id": "http://lsdis.cs.uga.edu/projects/semdis/opus#Article"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Article"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#patentDate",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://purl.org/hercules/asio/core#Patent"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "date of patent"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#date"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#isAdvisedBy",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "is advised by"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#InternalProject",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Internal project"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://xmlns.com/foaf/0.1/Project"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#Teaching",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://purl.org/hercules/asio/core#Role"
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Ontology"
+    ],
+    "http://purl.org/dc/elements/1.1/contributor": [
+      {
+        "@value": "José Emilio Labra Gayo"
+      },
+      {
+        "@value": "Alejandro González Hevia"
+      }
+    ],
+    "http://purl.org/dc/elements/1.1/creator": [
+      {
+        "@value": "Emilio Rubiera Azcona"
+      }
+    ],
+    "http://purl.org/dc/elements/1.1/description": [
+      {
+        "@value": "FIXME"
+      }
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "The ASIO ontology"
+      }
+    ],
+    "http://purl.org/dc/terms/license": [
+      {
+        "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#versionIRI": [
+      {
+        "@id": "http://purl.org/hercules/asio/core/0.0.1"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#versionInfo": [
+      {
+        "@value": "0.0.1"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/2001/XMLSchema#date",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Datatype"
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#ResearchGroup",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A group of researchers often from the same centre, specialised on the same subject, working together on the issue or topic."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "ca-ad",
+        "@value": "Grup de recerca"
+      },
+      {
+        "@language": "fr",
+        "@value": "Group de recherche"
+      },
+      {
+        "@language": "ca-es",
+        "@value": "Grup d'investigació"
+      },
+      {
+        "@language": "es",
+        "@value": "Grupo de investigación"
+      },
+      {
+        "@language": "pt",
+        "@value": "Grupo de investigação"
+      },
+      {
+        "@language": "en",
+        "@value": "Research group"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://xmlns.com/foaf/0.1/Group"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "http://eurocris.org/ontology/semcerif#ResearchGroup"
+      },
+      {
+        "@id": "http://purl.org/cerif/ResearchGroup"
+      },
+      {
+        "@id": "http://purl.org/vocab/aiiso/schema#ResearchGroup"
+      },
+      {
+        "@id": "http://purl.org/cerif/frapo/ResearchGroup"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "pt",
+        "@value": "Grupo de investigação"
+      },
+      {
+        "@language": "en",
+        "@value": "Research group"
+      },
+      {
+        "@language": "ca-ad",
+        "@value": "Grup de recerca"
+      },
+      {
+        "@language": "fr",
+        "@value": "Group de recherche"
+      },
+      {
+        "@language": "ca-es",
+        "@value": "Grup d'investigació"
+      },
+      {
+        "@language": "es",
+        "@value": "Grupo de investigación"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#hasResearchLine",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "a property linking organizations or groups with scientific domains"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://xmlns.com/foaf/0.1/Agent"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "has research line"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+      }
+    ]
+  },
+  {
+    "@id": "http://xmlns.com/foaf/0.1/Project",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "In ASIO, a temporary research endeavor undertaken to achieve defined objectives."
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "http://dbpedia.org/ontology/Project"
+      },
+      {
+        "@id": "http://purl.org/cerif/Project"
+      },
+      {
+        "@id": "http://purl.org/cerif/frapo/Project"
+      },
+      {
+        "@id": "http://usefulinc.com/ns/doap#Project"
+      },
+      {
+        "@id": "http://vivoweb.org/ontology/core#Project"
+      },
+      {
+        "@id": "http://www.w3.org/ns/org#Project"
+      },
+      {
+        "@id": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Project"
+      },
+      {
+        "@id": "http://eurocris.org/ontology/semcerif#Project"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#qualifiedvaluation",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A given value linked to a given date (point in time) within a qualified value."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://purl.org/hercules/asio/core#QualifiedValue"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "qualified valuation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#specializes",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "This property allows to express hierarchies of roles, through of role specialization: if role A specializes role B, and B specializes C, then role A specializes role C."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://purl.org/hercules/asio/core#Role"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "specializes"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://purl.org/hercules/asio/core#Role"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#InternationalProject",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A consortium project integrated by partners from diverse countries beyond the scope of the European Union."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "es",
+        "@value": "Proyecto internacional"
+      },
+      {
+        "@language": "fr",
+        "@value": "Projet international"
+      },
+      {
+        "@language": "en",
+        "@value": "International project"
+      },
+      {
+        "@language": "ca-es",
+        "@value": "Projecte internacional"
+      },
+      {
+        "@language": "pt",
+        "@value": "Projeto internacional"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://xmlns.com/foaf/0.1/Project"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#EmploymentContract",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "ca-ad",
+        "@value": "Contracte de treball"
+      },
+      {
+        "@language": "pt",
+        "@value": "Contrato de trabalho"
+      },
+      {
+        "@language": "es",
+        "@value": "Contrato de trabajo"
+      },
+      {
+        "@language": "en",
+        "@value": "Employment contract"
+      },
+      {
+        "@language": "ca-es",
+        "@value": "Contracte de treball"
+      },
+      {
+        "@language": "fr",
+        "@value": "Contrat de travail"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://purl.org/hercules/asio/core#Contract"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "ca-es",
+        "@value": "Contracte de treball"
+      },
+      {
+        "@language": "fr",
+        "@value": "Contrat de travail"
+      },
+      {
+        "@language": "en",
+        "@value": "Employment contract"
+      },
+      {
+        "@language": "ca-ad",
+        "@value": "Contracte de treball"
+      },
+      {
+        "@language": "es",
+        "@value": "Contrato de trabajo"
+      },
+      {
+        "@language": "pt",
+        "@value": "Contrato de trabalho"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#Grant",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A financial award provided by a funding organisation for a particular project or purpose, usually awarded on the basis of a competitive application."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Grant"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://purl.org/hercules/asio/core#Funding"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#qualifieddate",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A given date (point in time) linked to a given value within a qualified value."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://purl.org/hercules/asio/core#QualifiedValue"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "qualified date"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#date"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#isFundedBy",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "is funded by"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "http://purl.org/cerif/frapo/isFundedBy"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#projectEndDate",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The end date of the project."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://xmlns.com/foaf/0.1/Project"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "project end date"
+      },
+      {
+        "@language": "es",
+        "@value": "fecha final proyecto"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#date"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#spinsOffFrom",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://purl.org/hercules/asio/core#Spinoff"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "spins of from"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#Thesis",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Any kind of thesis (bachelor's, master's, PhD) produced to receive some sort of university degree."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "ca-ad",
+        "@value": "Tesi"
+      },
+      {
+        "@language": "pt",
+        "@value": "Tese"
+      },
+      {
+        "@language": "es",
+        "@value": "Tesis"
+      },
+      {
+        "@language": "fr",
+        "@value": "Thèse"
+      },
+      {
+        "@language": "ca-es",
+        "@value": "Tesi"
+      },
+      {
+        "@language": "eu",
+        "@value": "Tesi"
+      },
+      {
+        "@language": "gl",
+        "@value": "Tese"
+      },
+      {
+        "@language": "en",
+        "@value": "Thesis"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://purl.org/hercules/asio/core#AcademicPublication"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "http://sw-portal.deri.org/ontologies/swportal#Thesis"
+      },
+      {
+        "@id": "http://semanticscience.org/resource/SIO_000165"
+      },
+      {
+        "@id": "http://purl.org/spar/fabio/Thesis"
+      },
+      {
+        "@id": "http://lsdis.cs.uga.edu/projects/semdis/opus#Thesis"
+      },
+      {
+        "@id": "http://purl.org/ontology/bibo/Thesis"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "es",
+        "@value": "Tesis"
+      },
+      {
+        "@language": "eu",
+        "@value": "Tesi"
+      },
+      {
+        "@language": "ca-es",
+        "@value": "Tesi"
+      },
+      {
+        "@language": "gl",
+        "@value": "Tese"
+      },
+      {
+        "@language": "pt",
+        "@value": "Tese"
+      },
+      {
+        "@language": "en",
+        "@value": "Thesis"
+      },
+      {
+        "@language": "ca-ad",
+        "@value": "Tesi"
+      },
+      {
+        "@language": "fr",
+        "@value": "Thèse"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#capital",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A property to indicate that a place is the official seat of government in a political entity."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "capital"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#advises",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://xmlns.com/foaf/0.1/Person"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "advises"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://purl.org/hercules/asio/core#AcademicPublication"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://purl.org/hercules/asio/core#isAdvisedBy"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#publicationDate",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "publication date"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#date"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#participates",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "This property encodes the participation relation between profiles and the communities they are member of."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "participates"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#associatedWith",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#SymmetricProperty",
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "an organisation (i.e. university) is associated with another organsiation (i.e. research institute)."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://xmlns.com/foaf/0.1/Agent"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "associated with"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://xmlns.com/foaf/0.1/Agent"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#signed",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://purl.org/hercules/asio/core#Status"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Signed"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#country",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "This property indicates the nationality of a resource. The domain is not set so unpredicted resources within the ontology could be attached to countries."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "country"
+      },
+      {
+        "@language": "es",
+        "@value": "país"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://purl.org/hercules/asio/core#Country"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#closed",
+    "@type": [
+      "http://purl.org/hercules/asio/core#Status",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Closed"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#PhDThesis",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A thesis reporting a research project undertaken as part of an undergraduate course of education to receive a doctoral degree."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Doctoral thesis"
+      },
+      {
+        "@language": "ca-es",
+        "@value": "Tesi doctoral"
+      },
+      {
+        "@language": "gl",
+        "@value": "Tese doctoral"
+      },
+      {
+        "@language": "ca-ad",
+        "@value": "Tesi doctoral"
+      },
+      {
+        "@language": "es",
+        "@value": "Tesis doctoral"
+      },
+      {
+        "@language": "fr",
+        "@value": "Thèse doctorale"
+      },
+      {
+        "@language": "pt",
+        "@value": "Tese de doutoramento"
+      },
+      {
+        "@language": "eu",
+        "@value": "Doktore tesi"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://purl.org/hercules/asio/core#Thesis"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "http://purl.org/net/nknouf/ns/bibtex#Phdthesis"
+      },
+      {
+        "@id": "http://lsdis.cs.uga.edu/projects/semdis/opus#Doctoral_Dissertation"
+      },
+      {
+        "@id": "http://swrc.ontoware.org/ontology#PhDThesis"
+      },
+      {
+        "@id": "http://semanticscience.org/resource/SIO_000168"
+      },
+      {
+        "@id": "http://sw-portal.deri.org/ontologies/swportal#PhDThesis"
+      },
+      {
+        "@id": "http://purl.org/spar/fabio/DoctoralThesis"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel": [
+      {
+        "@language": "gl",
+        "@value": "Tese de doutoramento"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "gl",
+        "@value": "Tese doctoral"
+      },
+      {
+        "@language": "es",
+        "@value": "Tesis doctoral"
+      },
+      {
+        "@language": "fr",
+        "@value": "Thèse doctorale"
+      },
+      {
+        "@language": "pt",
+        "@value": "Tese de doutoramento"
+      },
+      {
+        "@language": "en",
+        "@value": "Doctoral thesis"
+      },
+      {
+        "@language": "eu",
+        "@value": "Doktorego tesi"
+      },
+      {
+        "@language": "ca-es",
+        "@value": "Tesi doctoral"
+      },
+      {
+        "@language": "ca-ad",
+        "@value": "Tesi doctoral"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#BachelorsThesis",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A thesis reporting a research project undertaken as part of an undergraduate course of education to receive a bachelor's degree."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "ca-ad",
+        "@value": "Treball fi de bàtxelor"
+      },
+      {
+        "@language": "ca-es",
+        "@value": "Treball fi de grau"
+      },
+      {
+        "@language": "ast",
+        "@value": "Trabayu de fin de grau"
+      },
+      {
+        "@language": "es-es",
+        "@value": "Trabajo de fin de grado"
+      },
+      {
+        "@language": "en",
+        "@value": "Bachelor's thesis"
+      },
+      {
+        "@language": "fr",
+        "@value": "Mémoire de fin de licence"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://purl.org/hercules/asio/core#Thesis"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#disjointWith": [
+      {
+        "@id": "http://purl.org/hercules/asio/core#PhDThesis"
+      },
+      {
+        "@id": "http://purl.org/hercules/asio/core#MastersThesis"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "http://purl.org/spar/fabio/BachelorsThesis"
+      },
+      {
+        "@id": "http://semanticscience.org/resource/SIO_000166"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel": [
+      {
+        "@language": "en-ca",
+        "@value": "Honour's thesis"
+      },
+      {
+        "@language": "es",
+        "@value": "Trabajo de fin de carrera"
+      },
+      {
+        "@language": "gl",
+        "@value": "Traballo de fin de carreira"
+      },
+      {
+        "@language": "en-us",
+        "@value": "Honor's thesis"
+      },
+      {
+        "@language": "ca-es",
+        "@value": "TFG"
+      },
+      {
+        "@language": "gl",
+        "@value": "TFG"
+      },
+      {
+        "@language": "ca-es",
+        "@value": "Treball de fi de carrera"
+      },
+      {
+        "@language": "ca-ad",
+        "@value": "TFB"
+      },
+      {
+        "@language": "eu",
+        "@value": "GALa"
+      },
+      {
+        "@language": "es",
+        "@value": "TFG"
+      },
+      {
+        "@language": "ast",
+        "@value": "TFG"
+      },
+      {
+        "@language": "en-gb",
+        "@value": "Honour's thesis"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "es-es",
+        "@value": "Trabajo de fin de grado"
+      },
+      {
+        "@language": "gl",
+        "@value": "Traballo de fin de grao"
+      },
+      {
+        "@language": "eu",
+        "@value": "Gradu Amaierako Lana"
+      },
+      {
+        "@language": "ca-es",
+        "@value": "Treball de fi de grau"
+      },
+      {
+        "@language": "en",
+        "@value": "Bachelor's thesis"
+      },
+      {
+        "@language": "ast",
+        "@value": "Trabayu de fin de grau"
+      },
+      {
+        "@language": "fr",
+        "@value": "Mémoire de fin de licence"
+      },
+      {
+        "@language": "ca-ad",
+        "@value": "Treball de fi de bàtxelor"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#i10-index",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A property to express the i10-index of an author."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://xmlns.com/foaf/0.1/Person"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "i10-index"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://purl.org/hercules/asio/core#QualifiedValue"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#Contract",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "pt",
+        "@value": "Contrato"
+      },
+      {
+        "@language": "gl",
+        "@value": "Contrato"
+      },
+      {
+        "@language": "es",
+        "@value": "Contrato"
+      },
+      {
+        "@language": "en",
+        "@value": "Contract"
+      },
+      {
+        "@language": "ca-es",
+        "@value": "Contracte"
+      },
+      {
+        "@language": "ca-ad",
+        "@value": "Contracte"
+      },
+      {
+        "@language": "fr",
+        "@value": "Contrat"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://purl.org/cerif/frapo/FinancialEntity"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "http://purl.org/cerif/Contract"
+      },
+      {
+        "@id": "http://purl.org/cerif/frapo/Contract"
+      },
+      {
+        "@id": "http://eurocris.org/ontology/semcerif#Contract"
+      },
+      {
+        "@id": "http://purl.org/procurement/public-contracts#Contract"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "ca-ad",
+        "@value": "Contracte"
+      },
+      {
+        "@language": "ca-es",
+        "@value": "Contracte"
+      },
+      {
+        "@language": "pt",
+        "@value": "Contrato"
+      },
+      {
+        "@language": "fr",
+        "@value": "Contrat"
+      },
+      {
+        "@language": "gl",
+        "@value": "Contrato"
+      },
+      {
+        "@language": "en",
+        "@value": "Contract"
+      },
+      {
+        "@language": "es",
+        "@value": "Contrato"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#funds",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://xmlns.com/foaf/0.1/Agent"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "funds"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "http://purl.org/cerif/frapo/funds"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://purl.org/hercules/asio/core#isFundedBy"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#Status",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "http://purl.org/wf4ever/ro#ResearchObject",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A research object aggregates a number of resources. A resource can be a workflow, web service, document, data item, data set, workflow run, software or a research object."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "ca-ad",
+        "@value": "Objecte de recerca"
+      },
+      {
+        "@language": "ca-es",
+        "@value": "Objecte de recerca"
+      },
+      {
+        "@language": "pt",
+        "@value": "Objeto de investigação"
+      },
+      {
+        "@language": "es",
+        "@value": "Objeto de investigación"
+      },
+      {
+        "@language": "en",
+        "@value": "Research object"
+      },
+      {
+        "@language": "fr",
+        "@value": "Objet de recherche"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Research object"
+      },
+      {
+        "@language": "ca-ad",
+        "@value": "Objecte de recerca"
+      },
+      {
+        "@language": "ca-es",
+        "@value": "Objecte de recerca"
+      },
+      {
+        "@language": "pt",
+        "@value": "Objeto de investigação"
+      },
+      {
+        "@language": "fr",
+        "@value": "Objet de recherche"
+      },
+      {
+        "@language": "es",
+        "@value": "Objeto de investigación"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#Prototype",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A product prototype"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Prototype"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://purl.org/hercules/asio/core#Product"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#student",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A person studies or studied in a university."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://xmlns.com/foaf/0.1/Person"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "student"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://purl.org/hercules/asio/core#University"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#patentPrimaryExaminer",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://xmlns.com/foaf/0.1/Person"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "patent primary examiner"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://purl.org/hercules/asio/core#Patent"
+      }
+    ]
+  },
+  {
+    "@id": "http://xmlns.com/foaf/0.1/Organization",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://xmlns.com/foaf/0.1/Agent"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "http://rdfs.org/resume-rdf/cv.rdfs#Organization"
+      },
+      {
+        "@id": "http://usefulinc.com/ns/doap#Organization"
+      },
+      {
+        "@id": "http://purl.org/vocab/aiiso/schema#Organization"
+      },
+      {
+        "@id": "http://vivoweb.org/ontology/core#Organization"
+      },
+      {
+        "@id": "http://purl.org/cerif/frapo/Organization"
+      },
+      {
+        "@id": "http://www.w3.org/ns/org#Organization"
+      },
+      {
+        "@id": "http://semanticscience.org/resource/SIO_000012"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#FundingAgency",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Funding agency"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#Profile",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "es",
+        "@value": "Perfil"
+      },
+      {
+        "@language": "en",
+        "@value": "Profile"
+      },
+      {
+        "@language": "en",
+        "@value": "A profile represents a particular person playing a given role. In the specialised literature it is also known as a \"qua-individual\". The ASIO core ontology extends the meaning of profile to capture \"person-as-role\", \"person-at-context\" and \"person-in-community\"."
+      },
+      {
+        "@language": "ca-es",
+        "@value": "Perfil"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#ScientificPublication",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "fr",
+        "@value": "Publication scientifique"
+      },
+      {
+        "@language": "ca-ad",
+        "@value": "Publicació científica"
+      },
+      {
+        "@language": "es",
+        "@value": "Publicación científica"
+      },
+      {
+        "@language": "pt",
+        "@value": "Publicação científica"
+      },
+      {
+        "@language": "ca-es",
+        "@value": "Publicació científica"
+      },
+      {
+        "@language": "en",
+        "@value": "Scientific publication"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://purl.org/hercules/asio/core#Publication"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "ca-es",
+        "@value": "Publicació científica"
+      },
+      {
+        "@language": "pt",
+        "@value": "Publicação científica"
+      },
+      {
+        "@language": "fr",
+        "@value": "Publication scientifique"
+      },
+      {
+        "@language": "en",
+        "@value": "Scientific publication"
+      },
+      {
+        "@language": "ca-ad",
+        "@value": "Publicació científica"
+      },
+      {
+        "@language": "es",
+        "@value": "Publicación científica"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#CatedraticoUniversidad",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://purl.org/hercules/asio/core#Role"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "es",
+        "@value": "Catedrático de universidad"
+      },
+      {
+        "@language": "ca-ad",
+        "@value": "Catedràtic d'universitat"
+      },
+      {
+        "@language": "ast",
+        "@value": "Catedráticu d'universidá"
+      },
+      {
+        "@language": "gl",
+        "@value": "Catedrático de universidade"
+      }
+    ]
+  },
+  {
+    "@id": "http://xmlns.com/foaf/0.1/Agent",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#ResearchInstitute",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "An establishment founded for doing research."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "pt",
+        "@value": "Centro de investigação"
+      },
+      {
+        "@language": "fr",
+        "@value": "Centre de recherche"
+      },
+      {
+        "@language": "ca-ad",
+        "@value": "Centre de recerca"
+      },
+      {
+        "@language": "es",
+        "@value": "Centro de investigación"
+      },
+      {
+        "@language": "en",
+        "@value": "Research institute"
+      },
+      {
+        "@language": "ca-es",
+        "@value": "Centre d'investigació"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://xmlns.com/foaf/0.1/Organization"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "http://vivoweb.org/ontology/core#ResearchOrganization"
+      },
+      {
+        "@id": "http://eurocris.org/ontology/semcerif#ResearchInstitute"
+      },
+      {
+        "@id": "http://purl.org/cerif/ResearchInstitute"
+      },
+      {
+        "@id": "http://sw-portal.deri.org/ontologies/swportal#ResearchInstitute"
+      },
+      {
+        "@id": "http://purl.org/cerif/frapo/ResearchInstitute"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "es",
+        "@value": "Centro de investigación"
+      },
+      {
+        "@language": "ca-es",
+        "@value": "Centre d'investigació"
+      },
+      {
+        "@language": "pt",
+        "@value": "Centro de investigação"
+      },
+      {
+        "@language": "ca-ad",
+        "@value": "Centre de recerca"
+      },
+      {
+        "@language": "fr",
+        "@value": "Centre de recherche"
+      },
+      {
+        "@language": "en",
+        "@value": "Research institute"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#CatedraticoEscuelaUniversitaria",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://purl.org/hercules/asio/core#Role"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "gl",
+        "@value": "Catedrático de escola universitaria"
+      },
+      {
+        "@language": "ca-ad",
+        "@value": "Catedràtic d'escola universitària"
+      },
+      {
+        "@language": "es",
+        "@value": "Catedrático de escuela universitaria"
+      },
+      {
+        "@language": "ast",
+        "@value": "Catedráticu d'escuela universitaria"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#PeerReviewedArticle",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Peer-reviewed article"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://purl.org/hercules/asio/core#Article"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "http://swrc.ontoware.org/ontology#Article"
+      },
+      {
+        "@id": "http://semanticscience.org/resource/SIO_000102"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#publicationCitation",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "a property to link a given publication to the number of citations."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://purl.org/hercules/asio/core#Publication"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "publication citations"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://purl.org/hercules/asio/core#QualifiedValue"
+      }
+    ]
+  },
+  {
+    "@id": "https://www.w3.org/TR/prov-o/#wasDerivedFrom",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#ResearchProblem",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Research problem"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "http://orkg.org/core#ResearchProblem"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Research problem"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#participant",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://xmlns.com/foaf/0.1/Agent"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "participant"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "http://purl.org/vocab/bio/0.1/participant"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/modules#GeopoliticalEntities",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "This vertical module in ASIO models all the geopolitical/administrative levels (from municipalities, to provinces, regions, countries and European-level entities) that might have a role in the ontological architecture of the project. It is modeled hierarchically though relevant administrative levels potentially funding projects. In the Asio project the proof of concept is carried out with the whole administrative levels of Spain, Portugal, Andorra and France, in addition to the relevant European administrative entities."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "pt",
+        "@value": "Entidades geopolíticas"
+      },
+      {
+        "@language": "es",
+        "@value": "Entidades geopolíticas"
+      },
+      {
+        "@language": "en",
+        "@value": "Geopolitical entities"
+      },
+      {
+        "@language": "ca-es",
+        "@value": "Entitats geopolítiques"
+      },
+      {
+        "@language": "fr",
+        "@value": "Entités géopolitiques"
+      },
+      {
+        "@language": "ca-ad",
+        "@value": "Entitats geopolítiques"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core#ConceptScheme"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#coordinatedBy",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "inverse property of 'project coordinator'"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://xmlns.com/foaf/0.1/Project"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "coordinated by"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://xmlns.com/foaf/0.1/Agent"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://purl.org/hercules/asio/core#projectCoordinator"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/2004/02/skos/core#Concept",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#Publication",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Content made available to the general public. In the case of ASIO, often scientific or academic contents published."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "fr",
+        "@value": "Publication"
+      },
+      {
+        "@language": "gl",
+        "@value": "Publicación"
+      },
+      {
+        "@language": "en",
+        "@value": "Publication"
+      },
+      {
+        "@language": "pt",
+        "@value": "Publicação"
+      },
+      {
+        "@language": "es",
+        "@value": "Publicación"
+      },
+      {
+        "@language": "ca-es",
+        "@value": "Publicació"
+      },
+      {
+        "@language": "ca-ad",
+        "@value": "Publicació"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "http://ontologies.smile.deri.ie/pdo#Publication"
+      },
+      {
+        "@id": "http://linkedscience.org/lsc/ns#Publication"
+      },
+      {
+        "@id": "http://semanticscience.org/resource/SIO_000087"
+      },
+      {
+        "@id": "http://sw-portal.deri.org/ontologies/swportal#Publication"
+      },
+      {
+        "@id": "http://vocab.deri.ie/cogs#Publication"
+      },
+      {
+        "@id": "http://ns.nature.com/terms/Publication"
+      },
+      {
+        "@id": "http://eurocris.org/ontology/semcerif#Publication"
+      },
+      {
+        "@id": "http://id.loc.gov/ontologies/bibframe/PublicationPublication"
+      },
+      {
+        "@id": "http://purl.org/cerif/Publication"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "ca-es",
+        "@value": "Publicació"
+      },
+      {
+        "@language": "ca-ad",
+        "@value": "Publicació"
+      },
+      {
+        "@language": "fr",
+        "@value": "Publication"
+      },
+      {
+        "@language": "es",
+        "@value": "Publicación"
+      },
+      {
+        "@language": "pt",
+        "@value": "Publicação"
+      },
+      {
+        "@language": "en",
+        "@value": "Publication"
+      },
+      {
+        "@language": "gl",
+        "@value": "Publicación"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#DoctoralDegree",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "gl",
+        "@value": "Doutoramento"
+      },
+      {
+        "@language": "fr-be",
+        "@value": "Doctorat"
+      },
+      {
+        "@language": "ca-es",
+        "@value": "Doctorat"
+      },
+      {
+        "@language": "fr-fr",
+        "@value": "Doctorat"
+      },
+      {
+        "@language": "ca-ad",
+        "@value": "Doctorat"
+      },
+      {
+        "@language": "pt",
+        "@value": "Doutoramento"
+      },
+      {
+        "@language": "es",
+        "@value": "Doctorado"
+      },
+      {
+        "@language": "eu",
+        "@value": "Doktorego"
+      },
+      {
+        "@language": "fr-ch",
+        "@value": "Doctorat"
+      },
+      {
+        "@language": "en",
+        "@value": "Doctoral degree"
+      },
+      {
+        "@language": "fr-ca",
+        "@value": "Doctorat"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://purl.org/hercules/asio/core#AcademicDegree"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel": [
+      {
+        "@language": "eu",
+        "@value": "Doktoretza"
+      },
+      {
+        "@language": "en",
+        "@value": "Doctorate"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "fr-fr",
+        "@value": "Doctorat"
+      },
+      {
+        "@language": "eu",
+        "@value": "Doktorego"
+      },
+      {
+        "@language": "ca-ad",
+        "@value": "Doctorat"
+      },
+      {
+        "@language": "fr-ch",
+        "@value": "Doctorat"
+      },
+      {
+        "@language": "fr-ca",
+        "@value": "Doctorat"
+      },
+      {
+        "@language": "gl",
+        "@value": "Doutoramento"
+      },
+      {
+        "@language": "en",
+        "@value": "Doctoral degree"
+      },
+      {
+        "@language": "ca-es",
+        "@value": "Doctorat"
+      },
+      {
+        "@language": "fr-be",
+        "@value": "Doctorat"
+      },
+      {
+        "@language": "pt",
+        "@value": "Doutoramento"
+      },
+      {
+        "@language": "es",
+        "@value": "Doctorado"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#hasScientificDomain",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "has scientific domain"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/dc/elements/1.1/title",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#QualifiedValue",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A class to represent a qualified value as used in Wikibase."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Qualified value"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/hercules/asio/core#BacherlorsDegree",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "An undergraduate academic degree awarded by colleges and universities upon completion of a course of study lasting three to four years (depending on institution and academic discipline)."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "ca-es",
+        "@value": "Títol de grau"
+      },
+      {
+        "@language": "ca-ad",
+        "@value": "Títol de bàtxelor"
+      },
+      {
+        "@language": "en",
+        "@value": "Bachelor's degree"
+      },
+      {
+        "@language": "pt-pt",
+        "@value": "Licenciatura (pós-Bologna)"
+      },
+      {
+        "@language": "es",
+        "@value": "Título de grado"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://purl.org/hercules/asio/core#AcademicDegree"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel": [
+      {
+        "@language": "pt",
+        "@value": "Grau"
+      },
+      {
+        "@language": "es",
+        "@value": "Grado"
+      },
+      {
+        "@language": "ca-es",
+        "@value": "Grau"
+      },
+      {
+        "@language": "gl",
+        "@value": "Grao"
+      },
+      {
+        "@language": "eu",
+        "@value": "Gradu"
+      },
+      {
+        "@language": "ca-ad",
+        "@value": "Bàtxelor"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "ca-ad",
+        "@value": "Títol de bàtxelor"
+      },
+      {
+        "@language": "ca-es",
+        "@value": "Títol de grau"
+      },
+      {
+        "@language": "pt-pt",
+        "@value": "Licenciatura (pós-Bologna)"
+      },
+      {
+        "@language": "es",
+        "@value": "Título de grado"
+      },
+      {
+        "@language": "en",
+        "@value": "Bachelor's degree"
+      }
+    ]
+  }
+]
