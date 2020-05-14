@@ -1,0 +1,1724 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:dct1="http://purl.org/dc/terms/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Agent">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#atContext">
+    <rdfs:range rdf:resource="http://purl.org/hercules/asio/core#Context"/>
+    <rdfs:domain rdf:resource="http://purl.org/hercules/asio/core#Profile"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:comment xml:lang="en">This property enables to relate a profile with a given context (geographical, temporal, spatial, social, etc.).</rdfs:comment>
+    <rdfs:label xml:lang="en">at context</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#TechnicalSupport">
+    <rdf:type rdf:resource="http://purl.org/hercules/asio/core#Role"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#projectAcronym">
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Project"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">project acronym</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#codeOf">
+    <rdfs:comment xml:lang="en">A code is assigned to a concept.</rdfs:comment>
+    <rdfs:label xml:lang="en">code of</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <owl:inverseOf rdf:resource="http://purl.org/hercules/asio/core#hasCode"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#NationalProject">
+    <rdfs:label xml:lang="es">Proyecto nacional</rdfs:label>
+    <rdfs:label xml:lang="en">National project</rdfs:label>
+    <rdfs:label xml:lang="fr">Projet national</rdfs:label>
+    <skos:prefLabel xml:lang="es">Proyecto nacional</skos:prefLabel>
+    <rdfs:label xml:lang="ca-es">Projecte nacional</rdfs:label>
+    <skos:prefLabel xml:lang="fr">Projet national</skos:prefLabel>
+    <rdfs:label xml:lang="pt">Projeto nacional</rdfs:label>
+    <skos:prefLabel xml:lang="pt">Projeto nacional</skos:prefLabel>
+    <skos:prefLabel xml:lang="ca-es">Projecte nacional</skos:prefLabel>
+    <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Project"/>
+    <rdfs:label xml:lang="ca-ad">Projecte nacional</rdfs:label>
+    <rdfs:comment xml:lang="en">A project developed and funded at the national level.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <skos:prefLabel xml:lang="en">National project</skos:prefLabel>
+    <skos:prefLabel xml:lang="ca-ad">Projecte nacional</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#hasTRL">
+    <rdfs:domain rdf:resource="http://purl.org/hercules/asio/core#Prototype"/>
+    <rdfs:comment xml:lang="en">A prototype has a given technology readiness level</rdfs:comment>
+    <rdfs:label xml:lang="en">has TRL</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#qualifiedvaluation">
+    <rdfs:domain rdf:resource="http://purl.org/hercules/asio/core#QualifiedValue"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label xml:lang="en">qualified valuation</rdfs:label>
+    <rdfs:comment xml:lang="en">A given value linked to a given date (point in time) within a qualified value.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#Book">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="fr">Livre</rdfs:label>
+    <skos:prefLabel xml:lang="ca">Llibre</skos:prefLabel>
+    <rdfs:label xml:lang="pt">Livro</rdfs:label>
+    <rdfs:label xml:lang="ca-es">Llibre</rdfs:label>
+    <rdfs:label xml:lang="es">Libro</rdfs:label>
+    <skos:prefLabel xml:lang="es">Libro</skos:prefLabel>
+    <rdfs:label xml:lang="en">Book</rdfs:label>
+    <rdfs:label xml:lang="ca-ad">Llibre</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.org/hercules/asio/core#ScientificPublication"/>
+    <skos:prefLabel xml:lang="fr">Livre</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Book</skos:prefLabel>
+    <skos:prefLabel xml:lang="pt">Livro</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#InternationalProject">
+    <rdfs:label xml:lang="es">Proyecto internacional</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Project"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="fr">Projet international</rdfs:label>
+    <rdfs:comment xml:lang="en">A consortium project integrated by partners from diverse countries beyond the scope of the European Union.</rdfs:comment>
+    <rdfs:label xml:lang="en">International project</rdfs:label>
+    <rdfs:label xml:lang="ca-es">Projecte internacional</rdfs:label>
+    <rdfs:label xml:lang="pt">Projeto internacional</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/modules#ScientificDomain">
+    <rdfs:label xml:lang="ca-ad">Dominis científics</rdfs:label>
+    <skos:prefLabel xml:lang="en">Scientific domains</skos:prefLabel>
+    <skos:prefLabel xml:lang="ca-es">Dominis científics</skos:prefLabel>
+    <skos:prefLabel xml:lang="pt">Áreas científicas</skos:prefLabel>
+    <rdfs:label xml:lang="fr">Domaines scientifiques</rdfs:label>
+    <rdfs:label xml:lang="en">Scientific domains</rdfs:label>
+    <skos:prefLabel xml:lang="ca-ad">Dominis científics</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Áreas científicas</skos:prefLabel>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    <rdfs:label xml:lang="es">Áreas científicas</rdfs:label>
+    <rdfs:comment xml:lang="en">This ASIO vertical module organizes hierarchically the scientific domains related to research projects as established by Spain's Agencia Estatal de Investigación, depending from the Ministerio de Economía y Competitividad.</rdfs:comment>
+    <rdfs:label xml:lang="pt">Áreas científicas</rdfs:label>
+    <rdfs:label xml:lang="ca-es">Dominis científics</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <skos:prefLabel xml:lang="fr">Domaines scientifiques</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#Country">
+    <skos:prefLabel xml:lang="gl">País</skos:prefLabel>
+    <rdfs:comment xml:lang="en">A region legally identified as a distinct entity in political geography.</rdfs:comment>
+    <rdfs:label xml:lang="es">País</rdfs:label>
+    <skos:prefLabel xml:lang="en">Country</skos:prefLabel>
+    <skos:prefLabel xml:lang="pt">País</skos:prefLabel>
+    <rdfs:label xml:lang="eu">Herrialde</rdfs:label>
+    <rdfs:label xml:lang="ca-es">País</rdfs:label>
+    <rdfs:label xml:lang="en">Country</rdfs:label>
+    <rdfs:label xml:lang="ca-ad">País</rdfs:label>
+    <skos:prefLabel xml:lang="ca-es">País</skos:prefLabel>
+    <rdfs:subClassOf rdf:resource="http://purl.org/hercules/asio/modules#GeopoliticalEntities"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <skos:prefLabel xml:lang="ca-ad">País</skos:prefLabel>
+    <rdfs:label xml:lang="pt">País</rdfs:label>
+    <rdfs:label xml:lang="fr">Pays</rdfs:label>
+    <skos:prefLabel xml:lang="eu">Herrialde</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Pays</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">País</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#ResearchGroup">
+    <rdfs:label xml:lang="ca-ad">Grup de recerca</rdfs:label>
+    <owl:equivalentClass rdf:resource="http://eurocris.org/ontology/semcerif#ResearchGroup"/>
+    <rdfs:label xml:lang="fr">Group de recherche</rdfs:label>
+    <owl:equivalentClass rdf:resource="http://purl.org/cerif/ResearchGroup"/>
+    <rdfs:label xml:lang="ca-es">Grup d'investigació</rdfs:label>
+    <owl:equivalentClass rdf:resource="http://purl.org/vocab/aiiso/schema#ResearchGroup"/>
+    <skos:prefLabel xml:lang="pt">Grupo de investigação</skos:prefLabel>
+    <rdfs:comment xml:lang="en">A group of researchers often from the same centre, specialised on the same subject, working together on the issue or topic.</rdfs:comment>
+    <skos:prefLabel xml:lang="en">Research group</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="es">Grupo de investigación</rdfs:label>
+    <skos:prefLabel xml:lang="ca-ad">Grup de recerca</skos:prefLabel>
+    <rdfs:label xml:lang="pt">Grupo de investigação</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Group"/>
+    <skos:prefLabel xml:lang="fr">Group de recherche</skos:prefLabel>
+    <skos:prefLabel xml:lang="ca-es">Grup d'investigació</skos:prefLabel>
+    <rdfs:label xml:lang="en">Research group</rdfs:label>
+    <skos:prefLabel xml:lang="es">Grupo de investigación</skos:prefLabel>
+    <owl:equivalentClass rdf:resource="http://purl.org/cerif/frapo/ResearchGroup"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#associatedWith">
+    <rdfs:label xml:lang="en">associated with</rdfs:label>
+    <rdfs:comment xml:lang="en">an organisation (i.e. university) is associated with another organsiation (i.e. research institute).</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#qualifieddate">
+    <rdfs:comment xml:lang="en">A given date (point in time) linked to a given value within a qualified value.</rdfs:comment>
+    <rdfs:label xml:lang="en">qualified date</rdfs:label>
+    <rdfs:domain rdf:resource="http://purl.org/hercules/asio/core#QualifiedValue"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#Company">
+    <skos:prefLabel xml:lang="es">Empresa</skos:prefLabel>
+    <rdfs:label xml:lang="ca-es">Empresa</rdfs:label>
+    <skos:prefLabel xml:lang="ca-ad">Empresa</skos:prefLabel>
+    <owl:equivalentClass rdf:resource="http://purl.org/cerif/frapo/Company"/>
+    <owl:equivalentClass rdf:resource="http://eurocris.org/ontology/semcerif#Company"/>
+    <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+    <skos:prefLabel xml:lang="pt">Empresa</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Entreprise</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Company</skos:prefLabel>
+    <owl:equivalentClass rdf:resource="http://rdfs.org/resume-rdf/cv.rdfs#Company"/>
+    <rdfs:comment xml:lang="es">Una organización con personalidad jurídica que dispone de los medios necesarios para la producción y se dedica a combinarlos para obtener bienes o servicios destinados al intercambio.</rdfs:comment>
+    <rdfs:label xml:lang="es">Empresa</rdfs:label>
+    <owl:equivalentClass rdf:resource="http://dev.poderopedia.com/vocab/Company"/>
+    <rdfs:label xml:lang="gl">Empresa</rdfs:label>
+    <owl:equivalentClass rdf:resource="http://vocab.data.gov/def/fea#Company"/>
+    <rdfs:comment xml:lang="en">A corporation or business organization which makes goods (in a broad sense) in an organized manner and sells them to the public for profit.</rdfs:comment>
+    <skos:prefLabel xml:lang="ca-es">Empresa</skos:prefLabel>
+    <owl:equivalentClass rdf:resource="http://purl.org/cerif/Company"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:equivalentClass rdf:resource="http://vivoweb.org/ontology/core#Company"/>
+    <owl:equivalentClass rdf:resource="http://dbpedia.org/ontology/Company"/>
+    <owl:disjointWith rdf:resource="http://purl.org/hercules/asio/core#University"/>
+    <rdfs:label xml:lang="fr">Entreprise</rdfs:label>
+    <owl:equivalentClass rdf:resource="http://www.ontotext.com/proton/protonext#Company"/>
+    <rdfs:label xml:lang="ca-ad">Empresa</rdfs:label>
+    <owl:equivalentClass rdf:resource="http://sw-portal.deri.org/ontologies/swportal#Company"/>
+    <rdfs:label xml:lang="pt">Empresa</rdfs:label>
+    <rdfs:comment xml:lang="pt">Uma organização com personalidade jurídica, a qual dispõe dos médios necessários para a produção e obtenção de bens ou serviços destinados ao intercâmbio.</rdfs:comment>
+    <skos:prefLabel xml:lang="gl">Empresa</skos:prefLabel>
+    <rdfs:label xml:lang="en">Company</rdfs:label>
+    <rdfs:comment xml:lang="ca">Una organització amb personalitat jurídica, la qual disposa dels mitjans necessaris per a la producció i es dedica a combinar-los per obtenir béns o serveis destinats a l'intercanvi.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#Publication">
+    <skos:prefLabel xml:lang="ca-es">Publicació</skos:prefLabel>
+    <owl:equivalentClass rdf:resource="http://ontologies.smile.deri.ie/pdo#Publication"/>
+    <rdfs:label xml:lang="fr">Publication</rdfs:label>
+    <skos:prefLabel xml:lang="ca-ad">Publicació</skos:prefLabel>
+    <rdfs:label xml:lang="gl">Publicación</rdfs:label>
+    <rdfs:label xml:lang="en">Publication</rdfs:label>
+    <owl:equivalentClass rdf:resource="http://linkedscience.org/lsc/ns#Publication"/>
+    <rdfs:comment xml:lang="en">Content made available to the general public. In the case of ASIO, often scientific or academic contents published.</rdfs:comment>
+    <owl:equivalentClass rdf:resource="http://semanticscience.org/resource/SIO_000087"/>
+    <rdfs:label xml:lang="pt">Publicação</rdfs:label>
+    <rdfs:label xml:lang="es">Publicación</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:equivalentClass rdf:resource="http://sw-portal.deri.org/ontologies/swportal#Publication"/>
+    <rdfs:label xml:lang="ca-es">Publicació</rdfs:label>
+    <rdfs:label xml:lang="ca-ad">Publicació</rdfs:label>
+    <owl:equivalentClass rdf:resource="http://vocab.deri.ie/cogs#Publication"/>
+    <owl:equivalentClass rdf:resource="http://ns.nature.com/terms/Publication"/>
+    <skos:prefLabel xml:lang="fr">Publication</skos:prefLabel>
+    <owl:equivalentClass rdf:resource="http://eurocris.org/ontology/semcerif#Publication"/>
+    <skos:prefLabel xml:lang="es">Publicación</skos:prefLabel>
+    <skos:prefLabel xml:lang="pt">Publicação</skos:prefLabel>
+    <owl:equivalentClass rdf:resource="http://id.loc.gov/ontologies/bibframe/PublicationPublication"/>
+    <skos:prefLabel xml:lang="en">Publication</skos:prefLabel>
+    <skos:prefLabel xml:lang="gl">Publicación</skos:prefLabel>
+    <owl:equivalentClass rdf:resource="http://purl.org/cerif/Publication"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#Profile">
+    <rdfs:comment xml:lang="es">Perfil</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">Profile</rdfs:comment>
+    <rdfs:comment xml:lang="en">A profile represents a particular person playing a given role. In the specialised literature it is also known as a "qua-individual". The ASIO core ontology extends the meaning of profile to capture "person-as-role", "person-at-context" and "person-in-community".</rdfs:comment>
+    <rdfs:comment xml:lang="ca-es">Perfil</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#authorCitation">
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">author citations</rdfs:label>
+    <rdfs:comment xml:lang="en">A property to link the number of citations to a given author.</rdfs:comment>
+    <rdfs:range rdf:resource="http://purl.org/hercules/asio/core#QualifiedValue"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#PhDThesis">
+    <rdfs:label xml:lang="en">Doctoral thesis</rdfs:label>
+    <skos:prefLabel xml:lang="gl">Tese doctoral</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Tesis doctoral</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Thèse doctorale</skos:prefLabel>
+    <owl:equivalentClass rdf:resource="http://purl.org/net/nknouf/ns/bibtex#Phdthesis"/>
+    <rdfs:label xml:lang="ca-es">Tesi doctoral</rdfs:label>
+    <rdfs:comment xml:lang="en">A thesis reporting a research project undertaken as part of an undergraduate course of education to receive a doctoral degree.</rdfs:comment>
+    <skos:prefLabel xml:lang="pt">Tese de doutoramento</skos:prefLabel>
+    <rdfs:subClassOf rdf:resource="http://purl.org/hercules/asio/core#Thesis"/>
+    <skos:prefLabel xml:lang="en">Doctoral thesis</skos:prefLabel>
+    <skos:altLabel xml:lang="gl">Tese de doutoramento</skos:altLabel>
+    <rdfs:label xml:lang="gl">Tese doctoral</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="ca-ad">Tesi doctoral</rdfs:label>
+    <rdfs:label xml:lang="es">Tesis doctoral</rdfs:label>
+    <skos:prefLabel xml:lang="eu">Doktorego tesi</skos:prefLabel>
+    <owl:equivalentClass rdf:resource="http://lsdis.cs.uga.edu/projects/semdis/opus#Doctoral_Dissertation"/>
+    <skos:prefLabel xml:lang="ca-es">Tesi doctoral</skos:prefLabel>
+    <owl:equivalentClass rdf:resource="http://swrc.ontoware.org/ontology#PhDThesis"/>
+    <owl:equivalentClass rdf:resource="http://semanticscience.org/resource/SIO_000168"/>
+    <rdfs:label xml:lang="fr">Thèse doctorale</rdfs:label>
+    <owl:equivalentClass rdf:resource="http://sw-portal.deri.org/ontologies/swportal#PhDThesis"/>
+    <skos:prefLabel xml:lang="ca-ad">Tesi doctoral</skos:prefLabel>
+    <owl:equivalentClass rdf:resource="http://purl.org/spar/fabio/DoctoralThesis"/>
+    <rdfs:label xml:lang="pt">Tese de doutoramento</rdfs:label>
+    <rdfs:label xml:lang="eu">Doktore tesi</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#awards">
+    <rdfs:comment xml:lang="en">An object property linking an agent to something the agent awards, for example linking a funding agency to a grant, a university to a degree, or an organization to a prize. [source: cerif/frapo]</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <owl:inverseOf rdf:resource="http://purl.org/hercules/asio/core#isAwardedBy"/>
+    <rdfs:label xml:lang="en">awards</rdfs:label>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#Thesis">
+    <owl:equivalentClass rdf:resource="http://sw-portal.deri.org/ontologies/swportal#Thesis"/>
+    <skos:prefLabel xml:lang="es">Tesis</skos:prefLabel>
+    <skos:prefLabel xml:lang="eu">Tesi</skos:prefLabel>
+    <owl:equivalentClass rdf:resource="http://semanticscience.org/resource/SIO_000165"/>
+    <skos:prefLabel xml:lang="ca-es">Tesi</skos:prefLabel>
+    <owl:equivalentClass rdf:resource="http://purl.org/spar/fabio/Thesis"/>
+    <rdfs:label xml:lang="ca-ad">Tesi</rdfs:label>
+    <rdfs:label xml:lang="pt">Tese</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:equivalentClass rdf:resource="http://lsdis.cs.uga.edu/projects/semdis/opus#Thesis"/>
+    <rdfs:label xml:lang="es">Tesis</rdfs:label>
+    <rdfs:label xml:lang="fr">Thèse</rdfs:label>
+    <rdfs:comment xml:lang="en">Any kind of thesis (bachelor's, master's, PhD) produced to receive some sort of university degree.</rdfs:comment>
+    <rdfs:label xml:lang="ca-es">Tesi</rdfs:label>
+    <skos:prefLabel xml:lang="gl">Tese</skos:prefLabel>
+    <skos:prefLabel xml:lang="pt">Tese</skos:prefLabel>
+    <rdfs:subClassOf rdf:resource="http://purl.org/hercules/asio/core#AcademicPublication"/>
+    <skos:prefLabel xml:lang="en">Thesis</skos:prefLabel>
+    <rdfs:label xml:lang="eu">Tesi</rdfs:label>
+    <skos:prefLabel xml:lang="ca-ad">Tesi</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Thèse</skos:prefLabel>
+    <owl:equivalentClass rdf:resource="http://purl.org/ontology/bibo/Thesis"/>
+    <rdfs:label xml:lang="gl">Tese</rdfs:label>
+    <rdfs:label xml:lang="en">Thesis</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#companyFounder">
+    <rdfs:label xml:lang="en">company founder</rdfs:label>
+    <rdfs:range rdf:resource="http://purl.org/hercules/asio/core#Company"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#CV">
+    <skos:prefLabel xml:lang="pt">Curriculum vitae</skos:prefLabel>
+    <skos:altLabel xml:lang="eu">CV</skos:altLabel>
+    <skos:altLabel xml:lang="fr">CV</skos:altLabel>
+    <skos:altLabel xml:lang="en">Résumé</skos:altLabel>
+    <owl:equivalentClass rdf:resource="http://rdfs.org/resume-rdf/cv.rdfs#CV"/>
+    <owl:equivalentClass rdf:resource="http://purl.org/cerif/CurriculumVitae"/>
+    <rdfs:label xml:lang="pt">Curriculum vitae</rdfs:label>
+    <rdfs:comment xml:lang="en">A document used and created by a person to present their background, skills and accomplishments.</rdfs:comment>
+    <rdfs:label xml:lang="es">Currículum vitae</rdfs:label>
+    <skos:prefLabel xml:lang="en">Curriculum vitae</skos:prefLabel>
+    <skos:altLabel xml:lang="pt">Currículo</skos:altLabel>
+    <rdfs:label xml:lang="ca-ad">Currículum vitae</rdfs:label>
+    <skos:altLabel xml:lang="es">Currículo</skos:altLabel>
+    <skos:altLabel xml:lang="pt">Curriculum vitæ</skos:altLabel>
+    <owl:equivalentClass rdf:resource="http://acm.rkbexplorer.com/ontologies/acm#K.3.2.2"/>
+    <skos:altLabel xml:lang="pt">CV</skos:altLabel>
+    <skos:altLabel xml:lang="ca">Curriculum vitae</skos:altLabel>
+    <rdfs:label xml:lang="fr">Curriculum vitae</rdfs:label>
+    <skos:altLabel xml:lang="fr">Curriculum vitæ</skos:altLabel>
+    <skos:altLabel xml:lang="gl">CV</skos:altLabel>
+    <rdfs:label xml:lang="eu">Curriculum vitae</rdfs:label>
+    <rdfs:label xml:lang="en">Currículum vitae</rdfs:label>
+    <skos:prefLabel xml:lang="ca">Currículum vitae</skos:prefLabel>
+    <owl:equivalentClass rdf:resource="http://eurocris.org/ontology/semcerif#CurriculumVitae"/>
+    <skos:altLabel xml:lang="gl">Currículo</skos:altLabel>
+    <owl:equivalentClass rdf:resource="http://dbpedia.org/ontology/Resume"/>
+    <rdfs:label xml:lang="ca-es">Currículum vitae</rdfs:label>
+    <skos:altLabel xml:lang="ca">Currículum</skos:altLabel>
+    <skos:prefLabel xml:lang="fr">Curriculum vitae</skos:prefLabel>
+    <skos:altLabel xml:lang="es">Currículum</skos:altLabel>
+    <skos:altLabel xml:lang="es">CV</skos:altLabel>
+    <skos:altLabel xml:lang="en">Resume</skos:altLabel>
+    <skos:altLabel xml:lang="ca">CV</skos:altLabel>
+    <rdfs:label xml:lang="gl">Currículum vitae</rdfs:label>
+    <skos:altLabel xml:lang="es">Curriculum vitae</skos:altLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <skos:prefLabel xml:lang="es">Currículum vitae</skos:prefLabel>
+    <skos:altLabel xml:lang="en">CV</skos:altLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#coadvisedBy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">co-advised by</rdfs:label>
+    <rdfs:domain rdf:resource="http://purl.org/hercules/asio/core#AcademicPublication"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:comment xml:lang="en">An academic publication (bachelor thesis, master thesis or doctoral thesis) is co-advised by an advisor.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#SealOfQuality">
+    <rdfs:label xml:lang="es">Sello de calidad</rdfs:label>
+    <rdfs:comment xml:lang="en">A graphic mark indicating highest levels of quality in research, often measured in terms of relevant publications related to the researching activity.</rdfs:comment>
+    <skos:prefLabel xml:lang="fr">Label qualité</skos:prefLabel>
+    <skos:prefLabel xml:lang="pt">Selo de qualidade</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Sello de calidad</skos:prefLabel>
+    <skos:prefLabel xml:lang="ca-es">Segell de qualitat</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="pt">Selo de qualidade</rdfs:label>
+    <rdfs:label xml:lang="ca-ad">Segell de qualitat</rdfs:label>
+    <rdfs:label xml:lang="ca-es">Segell de qualitat</rdfs:label>
+    <rdfs:label xml:lang="en">Seal of quality</rdfs:label>
+    <skos:prefLabel xml:lang="ca-ad">Segell de qualitat</skos:prefLabel>
+    <rdfs:label xml:lang="fr">Label qualité</rdfs:label>
+    <skos:prefLabel xml:lang="en">Seal of quality</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#AdministrativeEntity">
+    <skos:prefLabel xml:lang="ca-ad">Entitats administratives</skos:prefLabel>
+    <rdfs:label xml:lang="pt">Entidades administrativas</rdfs:label>
+    <rdfs:label xml:lang="en">Administrative entities</rdfs:label>
+    <skos:prefLabel xml:lang="ca-es">Entitats administratives</skos:prefLabel>
+    <rdfs:comment xml:lang="en">This vertical module in ASIO models all the relevant administrative bodies ("Administración Autonómica") of Spain's Autonomous Communities (conserjerías, departamentos, secretarías) that might have a role (funding, participating) within the development of a given project. It is modeled hierarchically through the relevant administrative levels thereof.</rdfs:comment>
+    <rdfs:label xml:lang="ca-ad">Entitats administratives</rdfs:label>
+    <skos:prefLabel xml:lang="fr">Entités administratives</skos:prefLabel>
+    <rdfs:label xml:lang="es">Entidades administrativas</rdfs:label>
+    <skos:prefLabel xml:lang="en">Administrative entities</skos:prefLabel>
+    <rdfs:label xml:lang="ca-es">Entitats administratives</rdfs:label>
+    <rdfs:label xml:lang="fr">Entités administratives</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    <skos:prefLabel xml:lang="es">Entidades administrativas</skos:prefLabel>
+    <skos:prefLabel xml:lang="pt">Entidades administrativas</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <dc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FIXME</dc:description>
+    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.0.1</owl:versionInfo>
+    <dc:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The ASIO ontology</dc:title>
+    <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">José Emilio Labra Gayo</dc:contributor>
+    <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Emilio Rubiera Azcona</dc:creator>
+    <owl:versionIRI rdf:resource="http://purl.org/hercules/asio/core/0.0.1"/>
+    <dct1:license rdf:resource="https://creativecommons.org/publicdomain/zero/1.0/"/>
+    <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alejandro González Hevia</dc:contributor>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#isAdvisedBy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">is advised by</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#DoctoralDegree">
+    <skos:prefLabel xml:lang="fr-fr">Doctorat</skos:prefLabel>
+    <rdfs:label xml:lang="gl">Doutoramento</rdfs:label>
+    <skos:prefLabel xml:lang="eu">Doktorego</skos:prefLabel>
+    <skos:prefLabel xml:lang="ca-ad">Doctorat</skos:prefLabel>
+    <rdfs:subClassOf rdf:resource="http://purl.org/hercules/asio/core#AcademicDegree"/>
+    <skos:prefLabel xml:lang="fr-ch">Doctorat</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr-ca">Doctorat</skos:prefLabel>
+    <rdfs:label xml:lang="fr-be">Doctorat</rdfs:label>
+    <skos:altLabel xml:lang="eu">Doktoretza</skos:altLabel>
+    <rdfs:label xml:lang="ca-es">Doctorat</rdfs:label>
+    <rdfs:label xml:lang="fr-fr">Doctorat</rdfs:label>
+    <skos:prefLabel xml:lang="gl">Doutoramento</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Doctoral degree</skos:prefLabel>
+    <rdfs:label xml:lang="ca-ad">Doctorat</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <skos:prefLabel xml:lang="ca-es">Doctorat</skos:prefLabel>
+    <rdfs:label xml:lang="pt">Doutoramento</rdfs:label>
+    <rdfs:label xml:lang="es">Doctorado</rdfs:label>
+    <skos:prefLabel xml:lang="fr-be">Doctorat</skos:prefLabel>
+    <rdfs:label xml:lang="eu">Doktorego</rdfs:label>
+    <rdfs:label xml:lang="fr-ch">Doctorat</rdfs:label>
+    <rdfs:label xml:lang="en">Doctoral degree</rdfs:label>
+    <rdfs:label xml:lang="fr-ca">Doctorat</rdfs:label>
+    <skos:altLabel xml:lang="en">Doctorate</skos:altLabel>
+    <skos:prefLabel xml:lang="pt">Doutoramento</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Doctorado</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/cerif/frapo/FinancialEntity">
+    <rdfs:label xml:lang="es">Ente financiero</rdfs:label>
+    <rdfs:label xml:lang="ca-ad">Ens financera</rdfs:label>
+    <skos:prefLabel xml:lang="ca-es">Ens financera</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Ente financiero</skos:prefLabel>
+    <rdfs:label xml:lang="fr">Entité financière</rdfs:label>
+    <rdfs:label xml:lang="ca-es">Ens financera</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">Financial entity</rdfs:label>
+    <rdfs:label xml:lang="pt">Ente financeiro</rdfs:label>
+    <skos:prefLabel xml:lang="fr">Entité financière</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Financial entity</skos:prefLabel>
+    <skos:prefLabel xml:lang="ca-ad">Ens financera</skos:prefLabel>
+    <skos:prefLabel xml:lang="pt">Ente financeiro</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#hasResearchContribution">
+    <rdfs:label xml:lang="en">has research contribution</rdfs:label>
+    <owl:equivalentProperty rdf:resource="http://orkg.org/core#hasResearchContribution"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#spinsOffFrom">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">spins of from</rdfs:label>
+    <rdfs:domain rdf:resource="http://purl.org/hercules/asio/core#Spinoff"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#InternalProject">
+    <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Project"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">Internal project</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#patentExpirationDate">
+    <rdfs:label xml:lang="en">patent expiration date</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    <rdfs:domain rdf:resource="http://purl.org/hercules/asio/core#Patent"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#UniversityDivision">
+    <rdfs:label xml:lang="ca-ad">Divisió d'universitat</rdfs:label>
+    <rdfs:comment xml:lang="en">A division within a university (school, faculty, etc.)</rdfs:comment>
+    <rdfs:label xml:lang="gl">División de universidade</rdfs:label>
+    <rdfs:label xml:lang="es">División de universidad</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="fr">Division d'université</rdfs:label>
+    <rdfs:label xml:lang="en">University division</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.org/hercules/asio/core#University"/>
+    <rdfs:label xml:lang="ca-es">Divisió d'universitat</rdfs:label>
+    <rdfs:label xml:lang="pt">Divisão de universidade</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#Product">
+    <rdfs:label xml:lang="en">Product</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">A product as outcome of a project.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#University">
+    <owl:equivalentClass rdf:resource="http://vivoweb.org/ontology/core#University"/>
+    <owl:equivalentClass rdf:resource="http://semanticscience.org/resource/SIO_000290"/>
+    <owl:equivalentClass rdf:resource="http://dbpedia.org/ontology/University"/>
+    <skos:prefLabel xml:lang="fr">Université</skos:prefLabel>
+    <rdfs:label xml:lang="eu">Unibertsitate</rdfs:label>
+    <skos:prefLabel xml:lang="ca-es">Universitat</skos:prefLabel>
+    <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+    <skos:prefLabel xml:lang="pt">Universidade</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">University</skos:prefLabel>
+    <rdfs:label xml:lang="gl">Universidade</rdfs:label>
+    <skos:prefLabel xml:lang="ca-ad">Universitat</skos:prefLabel>
+    <rdfs:label xml:lang="ca-es">Universitat</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">A centre at which higher education and research is conducted.</rdfs:comment>
+    <rdfs:label xml:lang="pt">Universidade</rdfs:label>
+    <owl:equivalentClass rdf:resource="http://sw-portal.deri.org/ontologies/swportal#University"/>
+    <owl:equivalentClass rdf:resource="http://semanticscience.org/resource/University"/>
+    <owl:equivalentClass rdf:resource="http://purl.org/cerif/frapo/University"/>
+    <rdfs:label xml:lang="fr">Université</rdfs:label>
+    <owl:equivalentClass rdf:resource="http://www.ontotext.com/proton/protonext#University"/>
+    <skos:prefLabel xml:lang="gl">Universidade</skos:prefLabel>
+    <owl:equivalentClass rdf:resource="http://www.w3.org/ns/org#University"/>
+    <skos:prefLabel xml:lang="eu">Unibertsitate</skos:prefLabel>
+    <rdfs:label xml:lang="ca-ad">Universitat</rdfs:label>
+    <rdfs:label xml:lang="en">University</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#SME">
+    <skos:prefLabel xml:lang="en">Small and medium-sized enterprise</skos:prefLabel>
+    <rdfs:label xml:lang="ca-es">Petita i mitjana empresa</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">A company whose personnel numbers fall below certain limits.</rdfs:comment>
+    <skos:prefLabel xml:lang="es">Pequeña y mediana empresa</skos:prefLabel>
+    <skos:prefLabel xml:lang="ca-ad">Petita i mitjana empresa</skos:prefLabel>
+    <rdfs:subClassOf rdf:resource="http://purl.org/hercules/asio/core#Company"/>
+    <owl:equivalentClass rdf:resource="http://eurocris.org/ontology/semcerif#SME"/>
+    <rdfs:label xml:lang="en">Small and medium-sized enterprise</rdfs:label>
+    <skos:prefLabel xml:lang="pt">Pequena e média empresa</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Petite ou moyenne entreprise</skos:prefLabel>
+    <rdfs:label xml:lang="pt">Pequena e média empresa</rdfs:label>
+    <skos:prefLabel xml:lang="ca-es">Petita i mitjana empresa</skos:prefLabel>
+    <rdfs:label xml:lang="es">Pequeña y mediana empresa</rdfs:label>
+    <owl:equivalentClass rdf:resource="http://purl.org/cerif/frapo/SME"/>
+    <rdfs:label xml:lang="ca-ad">Petita i mitjana empresa</rdfs:label>
+    <rdfs:label xml:lang="fr">Petite ou moyenne entreprise</rdfs:label>
+    <owl:equivalentClass rdf:resource="http://purl.org/cerif/SME"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#BachelorsThesis">
+    <skos:altLabel xml:lang="en-ca">Honour's thesis</skos:altLabel>
+    <owl:disjointWith rdf:resource="http://purl.org/hercules/asio/core#PhDThesis"/>
+    <skos:altLabel xml:lang="es">Trabajo de fin de carrera</skos:altLabel>
+    <skos:altLabel xml:lang="gl">Traballo de fin de carreira</skos:altLabel>
+    <rdfs:label xml:lang="ca-ad">Treball fi de bàtxelor</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <skos:prefLabel xml:lang="es-es">Trabajo de fin de grado</skos:prefLabel>
+    <owl:disjointWith rdf:resource="http://purl.org/hercules/asio/core#MastersThesis"/>
+    <rdfs:comment xml:lang="en">A thesis reporting a research project undertaken as part of an undergraduate course of education to receive a bachelor's degree.</rdfs:comment>
+    <skos:altLabel xml:lang="en-us">Honor's thesis</skos:altLabel>
+    <rdfs:label xml:lang="ca-es">Treball fi de grau</rdfs:label>
+    <skos:prefLabel xml:lang="gl">Traballo de fin de grao</skos:prefLabel>
+    <skos:prefLabel xml:lang="eu">Gradu Amaierako Lana</skos:prefLabel>
+    <rdfs:label xml:lang="ast">Trabayu de fin de grau</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.org/hercules/asio/core#Thesis"/>
+    <rdfs:label xml:lang="es-es">Trabajo de fin de grado</rdfs:label>
+    <skos:prefLabel xml:lang="ca-es">Treball de fi de grau</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Bachelor's thesis</skos:prefLabel>
+    <skos:prefLabel xml:lang="ast">Trabayu de fin de grau</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Mémoire de fin de licence</skos:prefLabel>
+    <rdfs:label xml:lang="en">Bachelor's thesis</rdfs:label>
+    <skos:altLabel xml:lang="ca-es">TFG</skos:altLabel>
+    <skos:altLabel xml:lang="gl">TFG</skos:altLabel>
+    <skos:altLabel xml:lang="ca-es">Treball de fi de carrera</skos:altLabel>
+    <owl:equivalentClass rdf:resource="http://purl.org/spar/fabio/BachelorsThesis"/>
+    <owl:equivalentClass rdf:resource="http://semanticscience.org/resource/SIO_000166"/>
+    <skos:prefLabel xml:lang="ca-ad">Treball de fi de bàtxelor</skos:prefLabel>
+    <rdfs:label xml:lang="fr">Mémoire de fin de licence</rdfs:label>
+    <skos:altLabel xml:lang="ca-ad">TFB</skos:altLabel>
+    <skos:altLabel xml:lang="eu">GALa</skos:altLabel>
+    <skos:altLabel xml:lang="es">TFG</skos:altLabel>
+    <skos:altLabel xml:lang="ast">TFG</skos:altLabel>
+    <skos:altLabel xml:lang="en-gb">Honour's thesis</skos:altLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#MastersThesis">
+    <owl:equivalentClass rdf:resource="http://purl.org/net/nknouf/ns/bibtex#Mastersthesis"/>
+    <rdfs:label xml:lang="fr-fr">Mémoire de maîtrise</rdfs:label>
+    <rdfs:label xml:lang="gl">Traballo de fin de máster</rdfs:label>
+    <skos:altLabel xml:lang="ca-es">TFM</skos:altLabel>
+    <rdfs:label xml:lang="pt-ao">Tese de mestrado</rdfs:label>
+    <skos:prefLabel xml:lang="fr-ca">Mémoire de maîtrise</skos:prefLabel>
+    <rdfs:label xml:lang="es-es">Trabajo de fin de máster</rdfs:label>
+    <skos:prefLabel xml:lang="ca-ad">Treball de fi de màster</skos:prefLabel>
+    <owl:disjointWith rdf:resource="http://purl.org/hercules/asio/core#PhDThesis"/>
+    <skos:prefLabel xml:lang="eu">Master Amaierako Lana</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr-fr">Mémoire de maîtrise</skos:prefLabel>
+    <skos:altLabel xml:lang="ca-es">Treball de fi de master</skos:altLabel>
+    <skos:altLabel xml:lang="gl">Traballo de fin de mestrado</skos:altLabel>
+    <rdfs:label xml:lang="fr-ca">Mémoire de maîtrise</rdfs:label>
+    <skos:prefLabel xml:lang="pt-ao">Tese de mestrado</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Master's thesis</skos:prefLabel>
+    <skos:prefLabel xml:lang="gl">Traballo de fin de máster</skos:prefLabel>
+    <owl:equivalentClass rdf:resource="http://sw-portal.deri.org/ontologies/swportal#MasterThesis"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/hercules/asio/core#Thesis"/>
+    <owl:equivalentClass rdf:resource="http://swrc.ontoware.org/ontology#MasterThesis"/>
+    <skos:altLabel xml:lang="ca-ad">TFM</skos:altLabel>
+    <skos:altLabel xml:lang="es-es">TFM</skos:altLabel>
+    <rdfs:label xml:lang="ca-ad">Treball de fi de màster</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <skos:altLabel xml:lang="ca-es">Treball de fi de mestratge</skos:altLabel>
+    <skos:prefLabel xml:lang="pt-br">Dissertação de mestrado</skos:prefLabel>
+    <skos:prefLabel xml:lang="es-mx">Tesis de maestría</skos:prefLabel>
+    <skos:prefLabel xml:lang="es-cu">Tesis de maestría</skos:prefLabel>
+    <skos:altLabel xml:lang="es-eu">MALa</skos:altLabel>
+    <skos:prefLabel xml:lang="ca-es">Treball de fi de màster</skos:prefLabel>
+    <skos:altLabel xml:lang="ca-ad">Treball de fi de master</skos:altLabel>
+    <rdfs:label xml:lang="en">Master's thesis</rdfs:label>
+    <skos:altLabel xml:lang="ca-ad">Treball de fi de mestratge</skos:altLabel>
+    <skos:prefLabel xml:lang="pt-pt">Dissertação de mestrado</skos:prefLabel>
+    <skos:prefLabel xml:lang="es-ar">Tesis de maestría</skos:prefLabel>
+    <owl:equivalentClass rdf:resource="http://lsdis.cs.uga.edu/projects/semdis/opus#Masters_Thesis"/>
+    <rdfs:label xml:lang="es-mx">Tesis de maestría</rdfs:label>
+    <rdfs:label xml:lang="es-cu">Tesis de maestría</rdfs:label>
+    <rdfs:label xml:lang="ca-es">Treball de fi de màster</rdfs:label>
+    <rdfs:label xml:lang="es-co">Tesis de maestría</rdfs:label>
+    <rdfs:label xml:lang="pt-br">Dissertação de mestrado</rdfs:label>
+    <skos:prefLabel xml:lang="es-es">Trabajo de fin de máster</skos:prefLabel>
+    <owl:equivalentClass rdf:resource="http://semanticscience.org/resource/SIO_000167"/>
+    <rdfs:label xml:lang="pt-pt">Dissertação de mestrado</rdfs:label>
+    <rdfs:label xml:lang="es-ar">Tesis de maestría</rdfs:label>
+    <skos:altLabel xml:lang="es-es">Trabajo de fin de master</skos:altLabel>
+    <skos:altLabel xml:lang="gl">TFM</skos:altLabel>
+    <owl:equivalentClass rdf:resource="http://purl.org/spar/fabio/MastersThesis"/>
+    <skos:prefLabel xml:lang="es-co">Tesis de maestría</skos:prefLabel>
+    <rdfs:comment xml:lang="en">A thesis reporting a research project undertaken as part of a second-cycle course of education to receive a master's degree.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#hasResearcherID">
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label xml:lang="en">has Researcher ID</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#AcademicPublication">
+    <skos:prefLabel xml:lang="es">Publicación académica</skos:prefLabel>
+    <rdfs:label xml:lang="ca-ad">Publicació acadèmica</rdfs:label>
+    <rdfs:label xml:lang="ca-es">Publicació acadèmica</rdfs:label>
+    <rdfs:label xml:lang="pt">Publicação acadêmica</rdfs:label>
+    <rdfs:label xml:lang="en">Academic publication</rdfs:label>
+    <rdfs:label xml:lang="fr">Publication académique</rdfs:label>
+    <rdfs:label xml:lang="es">Publicación académica</rdfs:label>
+    <skos:prefLabel xml:lang="ca-ad">Publicació acadèmica</skos:prefLabel>
+    <skos:prefLabel xml:lang="gl">Publicación académica</skos:prefLabel>
+    <skos:prefLabel xml:lang="ca-es">Publicació acadèmica</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Publication académique</skos:prefLabel>
+    <rdfs:subClassOf rdf:resource="http://purl.org/hercules/asio/core#Publication"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="gl">Publicación académica</rdfs:label>
+    <skos:prefLabel xml:lang="pt">Publicação acadêmica</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Academic publication</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#accepted">
+    <rdf:type rdf:resource="http://purl.org/hercules/asio/core#Status"/>
+    <rdfs:label xml:lang="en">Accepted</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Project">
+    <owl:equivalentClass rdf:resource="http://dbpedia.org/ontology/Project"/>
+    <owl:equivalentClass rdf:resource="http://purl.org/cerif/Project"/>
+    <owl:equivalentClass rdf:resource="http://purl.org/cerif/frapo/Project"/>
+    <owl:equivalentClass rdf:resource="http://usefulinc.com/ns/doap#Project"/>
+    <owl:equivalentClass rdf:resource="http://vivoweb.org/ontology/core#Project"/>
+    <owl:equivalentClass rdf:resource="http://www.w3.org/ns/org#Project"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">In ASIO, a temporary research endeavor undertaken to achieve defined objectives.</rdfs:comment>
+    <owl:equivalentClass rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Project"/>
+    <owl:equivalentClass rdf:resource="http://eurocris.org/ontology/semcerif#Project"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#ResearchProblem">
+    <skos:prefLabel xml:lang="en">Research problem</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">Research problem</rdfs:label>
+    <owl:equivalentClass rdf:resource="http://orkg.org/core#ResearchProblem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#TitularUniversidad">
+    <rdfs:label xml:lang="es">Profesor titular de universidad</rdfs:label>
+    <rdf:type rdf:resource="http://purl.org/hercules/asio/core#Role"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="ast">Profesor titular d'universidá</rdfs:label>
+    <rdfs:label xml:lang="ca-ad">Professor titular d'universitat</rdfs:label>
+    <rdfs:label xml:lang="gl">Profesor titular de universidade</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#ResearchResult">
+    <rdfs:label xml:lang="en">Research result</rdfs:label>
+    <skos:prefLabel xml:lang="en">Research result</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#Administrative">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://purl.org/hercules/asio/core#Role"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#Spinoff">
+    <skos:prefLabel xml:lang="pt">Empresa derivada</skos:prefLabel>
+    <rdfs:label xml:lang="es">Empresa spin-off</rdfs:label>
+    <rdfs:label xml:lang="eu">Spin-off enpresa</rdfs:label>
+    <skos:prefLabel xml:lang="ca-ad">Empresa derivada</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <skos:prefLabel xml:lang="en">Corporate spin-off</skos:prefLabel>
+    <rdfs:label xml:lang="ca-es">Empresa derivada</rdfs:label>
+    <rdfs:label xml:lang="pt">Empresa derivada</rdfs:label>
+    <skos:prefLabel xml:lang="es">Empresa spin-off</skos:prefLabel>
+    <rdfs:label xml:lang="ca-ad">Empresa derivada</rdfs:label>
+    <skos:prefLabel xml:lang="fr">Société scindée</skos:prefLabel>
+    <owl:equivalentClass rdf:resource="http://purl.org/cerif/frapo/SpinOffCompany"/>
+    <skos:prefLabel xml:lang="eu">Spin-off enpresa</skos:prefLabel>
+    <rdfs:comment xml:lang="en">A division of a company or an organization that becomes an independent business with assets, employees, intellectual property, technology, or existing products taken from the parent company.</rdfs:comment>
+    <rdfs:label xml:lang="en">Corporate spin-off</rdfs:label>
+    <skos:prefLabel xml:lang="ca-es">Empresa derivada</skos:prefLabel>
+    <rdfs:label xml:lang="fr">Société scindée</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.org/hercules/asio/core#Company"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#terminated">
+    <rdf:type rdf:resource="http://purl.org/hercules/asio/core#Status"/>
+    <rdfs:label xml:lang="en">Terminated</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/wf4ever/ro#ResearchObject">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <skos:prefLabel xml:lang="en">Research object</skos:prefLabel>
+    <skos:prefLabel xml:lang="ca-ad">Objecte de recerca</skos:prefLabel>
+    <skos:prefLabel xml:lang="ca-es">Objecte de recerca</skos:prefLabel>
+    <skos:prefLabel xml:lang="pt">Objeto de investigação</skos:prefLabel>
+    <rdfs:label xml:lang="ca-ad">Objecte de recerca</rdfs:label>
+    <rdfs:comment xml:lang="en">A research object aggregates a number of resources. A resource can be a workflow, web service, document, data item, data set, workflow run, software or a research object.</rdfs:comment>
+    <rdfs:label xml:lang="ca-es">Objecte de recerca</rdfs:label>
+    <rdfs:label xml:lang="pt">Objeto de investigação</rdfs:label>
+    <skos:prefLabel xml:lang="fr">Objet de recherche</skos:prefLabel>
+    <rdfs:label xml:lang="es">Objeto de investigación</rdfs:label>
+    <skos:prefLabel xml:lang="es">Objeto de investigación</skos:prefLabel>
+    <rdfs:label xml:lang="en">Research object</rdfs:label>
+    <rdfs:label xml:lang="fr">Objet de recherche</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#plays">
+    <rdfs:comment xml:lang="en">This property relates roles and their players, who can be any foaf:Agent (a person, a group, etc.)</rdfs:comment>
+    <rdfs:range rdf:resource="http://purl.org/hercules/asio/core#Role"/>
+    <rdfs:label xml:lang="en">plays</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#h-index">
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:range rdf:resource="http://purl.org/hercules/asio/core#QualifiedValue"/>
+    <rdfs:label xml:lang="en">h-index</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">A property to express the h-index of an author.</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#ResearchContribution">
+    <rdfs:label xml:lang="en">Research contribution</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:equivalentClass rdf:resource="http://orkg.org/core#ResearchContribution"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#patentPrimaryExaminer">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">patent primary examiner</rdfs:label>
+    <rdfs:range rdf:resource="http://purl.org/hercules/asio/core#Patent"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#addresses">
+    <owl:equivalentProperty rdf:resource="http://orkg.org/core#addresses"/>
+    <rdfs:label xml:lang="en">addresses</rdfs:label>
+    <rdfs:range rdf:resource="http://purl.org/hercules/asio/core#ResearchProblem"/>
+    <rdfs:domain rdf:resource="http://purl.org/hercules/asio/core#ResearchContribution"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#BacherlorsDegree">
+    <rdfs:subClassOf rdf:resource="http://purl.org/hercules/asio/core#AcademicDegree"/>
+    <rdfs:label xml:lang="ca-es">Títol de grau</rdfs:label>
+    <skos:altLabel xml:lang="pt">Grau</skos:altLabel>
+    <skos:altLabel xml:lang="es">Grado</skos:altLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="ca-ad">Títol de bàtxelor</rdfs:label>
+    <skos:prefLabel xml:lang="ca-ad">Títol de bàtxelor</skos:prefLabel>
+    <rdfs:label xml:lang="en">Bachelor's degree</rdfs:label>
+    <skos:prefLabel xml:lang="ca-es">Títol de grau</skos:prefLabel>
+    <skos:altLabel xml:lang="ca-es">Grau</skos:altLabel>
+    <rdfs:comment xml:lang="en">An undergraduate academic degree awarded by colleges and universities upon completion of a course of study lasting three to four years (depending on institution and academic discipline).</rdfs:comment>
+    <rdfs:label xml:lang="pt-pt">Licenciatura (pós-Bologna)</rdfs:label>
+    <rdfs:label xml:lang="es">Título de grado</rdfs:label>
+    <skos:altLabel xml:lang="gl">Grao</skos:altLabel>
+    <skos:prefLabel xml:lang="pt-pt">Licenciatura (pós-Bologna)</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Título de grado</skos:prefLabel>
+    <skos:altLabel xml:lang="eu">Gradu</skos:altLabel>
+    <skos:prefLabel xml:lang="en">Bachelor's degree</skos:prefLabel>
+    <skos:altLabel xml:lang="ca-ad">Bàtxelor</skos:altLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#EuropeanProject">
+    <rdfs:label xml:lang="pt">Projeto europeu</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Project"/>
+    <rdfs:label xml:lang="ca-ad">Projecte europeu</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="fr">Projet européen</rdfs:label>
+    <rdfs:comment xml:lang="en">A project developed and funded at the European level.</rdfs:comment>
+    <rdfs:label xml:lang="en">European project</rdfs:label>
+    <skos:prefLabel xml:lang="en">European project</skos:prefLabel>
+    <rdfs:label xml:lang="ca-es">Projecte europeu</rdfs:label>
+    <rdfs:label xml:lang="es">Proyecto europeo</rdfs:label>
+    <skos:prefLabel xml:lang="fr">Projet européen</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Proyecto europeo</skos:prefLabel>
+    <skos:prefLabel xml:lang="pt">Projeto europeu</skos:prefLabel>
+    <skos:prefLabel xml:lang="ca-es">Projecte europeu</skos:prefLabel>
+    <skos:prefLabel xml:lang="ca-ad">Projecte europeu</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#patentDate">
+    <rdfs:label xml:lang="en">date of patent</rdfs:label>
+    <rdfs:domain rdf:resource="http://purl.org/hercules/asio/core#Patent"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#projectStartDate">
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Project"/>
+    <rdfs:label xml:lang="es">fecha inicio proyecto</rdfs:label>
+    <rdfs:label xml:lang="en">project start date</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    <rdfs:comment xml:lang="en">The start date of the project.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#advises">
+    <rdfs:range rdf:resource="http://purl.org/hercules/asio/core#AcademicPublication"/>
+    <owl:inverseOf rdf:resource="http://purl.org/hercules/asio/core#isAdvisedBy"/>
+    <rdfs:label xml:lang="en">advises</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#publishedBy">
+    <rdfs:domain rdf:resource="http://purl.org/hercules/asio/core#Publication"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    <rdfs:label xml:lang="en">published by</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#awardedWith">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label xml:lang="en">awarded with</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://purl.org/hercules/asio/core#Publication"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#isCompetitive">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Project"/>
+    <rdfs:label xml:lang="en">is competitive</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#Budget">
+    <rdfs:label xml:lang="gl">Orzamento</rdfs:label>
+    <rdfs:label xml:lang="es">Presupuesto</rdfs:label>
+    <rdfs:label xml:lang="fr">Budget</rdfs:label>
+    <skos:prefLabel xml:lang="en">Budget</skos:prefLabel>
+    <rdfs:subClassOf rdf:resource="http://purl.org/cerif/frapo/FinancialEntity"/>
+    <skos:prefLabel xml:lang="ca-ad">Pressupost</skos:prefLabel>
+    <skos:prefLabel xml:lang="pt">Orçamento</skos:prefLabel>
+    <skos:prefLabel xml:lang="ca-es">Pressupost</skos:prefLabel>
+    <skos:prefLabel xml:lang="gl">Orzamento</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Presupuesto</skos:prefLabel>
+    <rdfs:label xml:lang="en">Budget</rdfs:label>
+    <rdfs:label xml:lang="eu">Aurrekontu</rdfs:label>
+    <rdfs:label xml:lang="ca-ad">Pressupost</rdfs:label>
+    <skos:altLabel xml:lang="gl">Presupuesto</skos:altLabel>
+    <rdfs:label xml:lang="ca-es">Pressupost</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <skos:prefLabel xml:lang="fr">Budget</skos:prefLabel>
+    <rdfs:label xml:lang="pt">Orçamento</rdfs:label>
+    <rdfs:comment xml:lang="en">A financial plan for a defined period that may also include planned sales volumes and revenues, resource quantities, costs and expenses, assets, liabilities and cash flows.</rdfs:comment>
+    <skos:prefLabel xml:lang="eu">Aurrekontu</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#AcademicDegree">
+    <rdfs:label xml:lang="ca-es">Grau acadèmic</rdfs:label>
+    <rdfs:comment xml:lang="en">A qualification awarded to students upon successful completion of a course of study in higher education.</rdfs:comment>
+    <rdfs:label xml:lang="pt-br">Grau acadêmico</rdfs:label>
+    <rdfs:label xml:lang="fr-ca">Grade universitaire</rdfs:label>
+    <rdfs:label xml:lang="pt-pt">Grau académico</rdfs:label>
+    <skos:prefLabel xml:lang="es-es">Título académico</skos:prefLabel>
+    <rdfs:label xml:lang="fr">Grade universitaire</rdfs:label>
+    <skos:prefLabel xml:lang="fr-be">Grade universitaire</skos:prefLabel>
+    <skos:prefLabel xml:lang="gl">Grao académico</skos:prefLabel>
+    <skos:prefLabel xml:lang="ca-es">Grau acadèmic</skos:prefLabel>
+    <rdfs:label xml:lang="eu">Unibertsitate-gradu</rdfs:label>
+    <rdfs:label xml:lang="ca-ad">Grau acadèmic</rdfs:label>
+    <rdfs:label xml:lang="fr-fr">Grade universitaire</rdfs:label>
+    <owl:equivalentClass rdf:resource="http://vivoweb.org/ontology/core#AcademicDegree"/>
+    <skos:prefLabel xml:lang="pt-br">Grau acadêmico</skos:prefLabel>
+    <rdfs:label xml:lang="fr-ch">Grade universitaire</rdfs:label>
+    <skos:prefLabel xml:lang="pt-pt">Grau académico</skos:prefLabel>
+    <rdfs:label xml:lang="en">Academic degree</rdfs:label>
+    <rdfs:label xml:lang="fr-be">Grade universitaire</rdfs:label>
+    <skos:prefLabel xml:lang="eu">Unibertsitate-gradu</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr-fr">Grade universitaire</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr-ca">Grade universitaire</skos:prefLabel>
+    <rdfs:label xml:lang="es-es">Título académico</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="gl">Grao académico</rdfs:label>
+    <skos:prefLabel xml:lang="fr">Grade universitaire</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr-ch">Grade universitaire</skos:prefLabel>
+    <skos:prefLabel xml:lang="ca-ad">Grau acadèmic</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Academic degree</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#FundingAgency">
+    <rdfs:label xml:lang="en">Funding agency</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#unfunded">
+    <rdf:type rdf:resource="http://purl.org/hercules/asio/core#Status"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="en">Unfunded</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#Teaching">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://purl.org/hercules/asio/core#Role"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#projectCoordinator">
+    <rdfs:comment xml:lang="en">A property to link an agent (person or organisation) with a project in the role of coordinator.</rdfs:comment>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Project"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">project coordinator</rdfs:label>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#Patent">
+    <owl:equivalentClass rdf:resource="http://sw-portal.deri.org/ontologies/swportal#Patent"/>
+    <rdfs:label xml:lang="gl">Patente</rdfs:label>
+    <owl:equivalentClass rdf:resource="http://vivoweb.org/ontology/core#Patent"/>
+    <owl:equivalentClass rdf:resource="http://www.ontotext.com/proton/protonext#Patent"/>
+    <rdfs:label xml:lang="ca-ad">Patent</rdfs:label>
+    <skos:prefLabel xml:lang="en">Patent</skos:prefLabel>
+    <skos:prefLabel xml:lang="eu">Patente</skos:prefLabel>
+    <owl:equivalentClass rdf:resource="http://semanticscience.org/resource/SIO_000153"/>
+    <rdfs:comment xml:lang="en">A form of intellectual property that gives its owner the legal right to exclude others from making, using, selling and importing an invention for a limited period of years, in exchange for publishing an enabling public disclosure of the invention.</rdfs:comment>
+    <owl:equivalentClass rdf:resource="http://purl.org/spar/fabio/Patent"/>
+    <skos:prefLabel xml:lang="pt">Patente</skos:prefLabel>
+    <owl:equivalentClass rdf:resource="http://purl.org/ontology/bibo/Patent"/>
+    <rdfs:label xml:lang="es">Patente</rdfs:label>
+    <rdfs:label xml:lang="fr">Patent</rdfs:label>
+    <rdfs:label xml:lang="eu">Patente</rdfs:label>
+    <skos:prefLabel xml:lang="ca">Patent</skos:prefLabel>
+    <skos:prefLabel xml:lang="gl">Patente</skos:prefLabel>
+    <owl:equivalentClass rdf:resource="http://purl.org/cerif/Patent"/>
+    <skos:prefLabel xml:lang="es">Patente</skos:prefLabel>
+    <rdfs:label xml:lang="pt">Patente</rdfs:label>
+    <rdfs:label xml:lang="en">Patent</rdfs:label>
+    <owl:equivalentClass rdf:resource="http://eurocris.org/ontology/semcerif#Patent"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <skos:prefLabel xml:lang="fr">Patent</skos:prefLabel>
+    <rdfs:label xml:lang="ca-es">Patent</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#ServiceContract">
+    <rdfs:label xml:lang="ca-es">Contracte de servei</rdfs:label>
+    <skos:prefLabel xml:lang="pt">Contrato de serviço</skos:prefLabel>
+    <skos:prefLabel xml:lang="ca-es">Contracte de servei</skos:prefLabel>
+    <rdfs:label xml:lang="es">Contrato de servicio</rdfs:label>
+    <rdfs:label xml:lang="pt">Contrato de serviço</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.org/hercules/asio/core#Contract"/>
+    <skos:prefLabel xml:lang="fr">Contrat de service</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Service contract</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="fr">Contrat de service</rdfs:label>
+    <skos:prefLabel xml:lang="es">Contrato de servicio</skos:prefLabel>
+    <rdfs:label xml:lang="en">Service contract</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#patentInventor">
+    <rdfs:domain rdf:resource="http://purl.org/hercules/asio/core#Patent"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:label xml:lang="en">patent inventor</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#isAwardedBy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:label xml:lang="en">is awarded by</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#authors">
+    <rdfs:label xml:lang="en">authors</rdfs:label>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    <owl:inverseOf rdf:resource="http://purl.org/hercules/asio/core#isAuthoredBy"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="http://purl.org/hercules/asio/core#Publication"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#hasResearchLine">
+    <rdfs:label xml:lang="en">has research line</rdfs:label>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:comment xml:lang="en">a property linking organizations or groups with scientific domains</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#EmploymentContract">
+    <rdfs:label xml:lang="ca-ad">Contracte de treball</rdfs:label>
+    <skos:prefLabel xml:lang="ca-es">Contracte de treball</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <skos:prefLabel xml:lang="fr">Contrat de travail</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Employment contract</skos:prefLabel>
+    <rdfs:label xml:lang="pt">Contrato de trabalho</rdfs:label>
+    <skos:prefLabel xml:lang="ca-ad">Contracte de treball</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Contrato de trabajo</skos:prefLabel>
+    <skos:prefLabel xml:lang="pt">Contrato de trabalho</skos:prefLabel>
+    <rdfs:label xml:lang="es">Contrato de trabajo</rdfs:label>
+    <rdfs:label xml:lang="en">Employment contract</rdfs:label>
+    <rdfs:label xml:lang="ca-es">Contracte de treball</rdfs:label>
+    <rdfs:label xml:lang="fr">Contrat de travail</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.org/hercules/asio/core#Contract"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#Manual">
+    <skos:altLabel xml:lang="en">Handbook</skos:altLabel>
+    <rdfs:subClassOf rdf:resource="http://purl.org/hercules/asio/core#ScientificPublication"/>
+    <rdfs:label xml:lang="en">Manual</rdfs:label>
+    <skos:prefLabel xml:lang="en">Manual</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Organization">
+    <owl:equivalentClass rdf:resource="http://rdfs.org/resume-rdf/cv.rdfs#Organization"/>
+    <owl:equivalentClass rdf:resource="http://usefulinc.com/ns/doap#Organization"/>
+    <owl:equivalentClass rdf:resource="http://purl.org/vocab/aiiso/schema#Organization"/>
+    <owl:equivalentClass rdf:resource="http://vivoweb.org/ontology/core#Organization"/>
+    <owl:equivalentClass rdf:resource="http://purl.org/cerif/frapo/Organization"/>
+    <owl:equivalentClass rdf:resource="http://www.w3.org/ns/org#Organization"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    <owl:equivalentClass rdf:resource="http://semanticscience.org/resource/SIO_000012"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#hasCode">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">has Code</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:comment xml:lang="en">A concept can be asigned a code.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#MastersDegree">
+    <skos:prefLabel xml:lang="es-ve">Magister Scientiae</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr-ch">Maîtrise universitaire</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr-fr">Maîtrise universitaire</skos:prefLabel>
+    <skos:prefLabel xml:lang="gl">Máster universitario</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr-ca">Maîtrise universitaire</skos:prefLabel>
+    <rdfs:label xml:lang="ca-ad">Màster universitari</rdfs:label>
+    <rdfs:label xml:lang="ca-es">Màster universitari</rdfs:label>
+    <rdfs:label xml:lang="fr-be">Maîtrise universitaire</rdfs:label>
+    <skos:prefLabel xml:lang="en">Master's degree</skos:prefLabel>
+    <rdfs:label xml:lang="pt-pt">Mestrado</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="es-ve">Magister Scientiae</rdfs:label>
+    <rdfs:label xml:lang="fr-ch">Maîtrise universitaire</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.org/hercules/asio/core#AcademicDegree"/>
+    <rdfs:label xml:lang="pt-br">Mestrado</rdfs:label>
+    <skos:altLabel xml:lang="ca-es">Mestratge universitari</skos:altLabel>
+    <rdfs:label xml:lang="es-es">Máster universitario</rdfs:label>
+    <skos:altLabel xml:lang="gl">Mestrado universitario</skos:altLabel>
+    <skos:prefLabel xml:lang="fr-be">Maîtrise universitaire</skos:prefLabel>
+    <rdfs:label xml:lang="en">Master's degree</rdfs:label>
+    <skos:prefLabel xml:lang="pt-pt">Mestrado</skos:prefLabel>
+    <rdfs:label xml:lang="fr-fr">Maîtrise universitaire</rdfs:label>
+    <rdfs:label xml:lang="gl">Máster universitario</rdfs:label>
+    <rdfs:label xml:lang="fr-ca">Maîtrise universitaire</rdfs:label>
+    <skos:prefLabel xml:lang="ca-ad">Màster universitari</skos:prefLabel>
+    <skos:prefLabel xml:lang="pt-br">Mestrado</skos:prefLabel>
+    <skos:prefLabel xml:lang="ca-es">Màster universitari</skos:prefLabel>
+    <skos:altLabel xml:lang="ca-ad">Mestratge universitari</skos:altLabel>
+    <skos:prefLabel xml:lang="es-es">Máster universitario</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#personalizes">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://purl.org/hercules/asio/core#Profile"/>
+    <rdfs:label xml:lang="en">personalizes</rdfs:label>
+    <rdfs:range rdf:resource="http://purl.org/hercules/asio/core#Role"/>
+    <rdfs:comment xml:lang="en">A role is personalized by means of a profile, which wrap the role in the identity of the person behind the profile.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#student">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:label xml:lang="en">student</rdfs:label>
+    <rdfs:comment xml:lang="en">A person studies or studied in a university.</rdfs:comment>
+    <rdfs:range rdf:resource="http://purl.org/hercules/asio/core#University"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#employs">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://purl.org/hercules/asio/core#ResearchContribution"/>
+    <rdfs:label xml:lang="es">emplea</rdfs:label>
+    <rdfs:label xml:lang="en">employs</rdfs:label>
+    <rdfs:range rdf:resource="http://purl.org/hercules/asio/core#ResearchMethod"/>
+    <owl:equivalentProperty rdf:resource="http://orkg.org/core#employs"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#QualifiedValue">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">Qualified value</rdfs:label>
+    <rdfs:comment xml:lang="en">A class to represent a qualified value as used in Wikibase.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#ResearchInstitute">
+    <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+    <rdfs:comment xml:lang="en">An establishment founded for doing research.</rdfs:comment>
+    <owl:equivalentClass rdf:resource="http://vivoweb.org/ontology/core#ResearchOrganization"/>
+    <skos:prefLabel xml:lang="es">Centro de investigación</skos:prefLabel>
+    <rdfs:label xml:lang="pt">Centro de investigação</rdfs:label>
+    <rdfs:label xml:lang="fr">Centre de recherche</rdfs:label>
+    <owl:equivalentClass rdf:resource="http://eurocris.org/ontology/semcerif#ResearchInstitute"/>
+    <rdfs:label xml:lang="ca-ad">Centre de recerca</rdfs:label>
+    <skos:prefLabel xml:lang="ca-es">Centre d'investigació</skos:prefLabel>
+    <owl:equivalentClass rdf:resource="http://purl.org/cerif/ResearchInstitute"/>
+    <rdfs:label xml:lang="es">Centro de investigación</rdfs:label>
+    <rdfs:label xml:lang="en">Research institute</rdfs:label>
+    <skos:prefLabel xml:lang="pt">Centro de investigação</skos:prefLabel>
+    <skos:prefLabel xml:lang="ca-ad">Centre de recerca</skos:prefLabel>
+    <owl:equivalentClass rdf:resource="http://sw-portal.deri.org/ontologies/swportal#ResearchInstitute"/>
+    <rdfs:label xml:lang="ca-es">Centre d'investigació</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <skos:prefLabel xml:lang="fr">Centre de recherche</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Research institute</skos:prefLabel>
+    <owl:equivalentClass rdf:resource="http://purl.org/cerif/frapo/ResearchInstitute"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#researchesIn">
+    <rdfs:range rdf:resource="http://purl.org/hercules/asio/modules#ScientificDomain"/>
+    <rdfs:label xml:lang="en">researches in</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#projectBudget">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Project"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#participant">
+    <owl:equivalentProperty rdf:resource="http://purl.org/vocab/bio/0.1/participant"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    <rdfs:label xml:lang="en">participant</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#EditedPublication">
+    <rdfs:label xml:lang="en">Edited publication</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/hercules/asio/core#ScientificPublication"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#ScientificPublication">
+    <rdfs:subClassOf rdf:resource="http://purl.org/hercules/asio/core#Publication"/>
+    <skos:prefLabel xml:lang="ca-es">Publicació científica</skos:prefLabel>
+    <skos:prefLabel xml:lang="pt">Publicação científica</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Publication scientifique</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Scientific publication</skos:prefLabel>
+    <rdfs:label xml:lang="fr">Publication scientifique</rdfs:label>
+    <rdfs:label xml:lang="ca-ad">Publicació científica</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="es">Publicación científica</rdfs:label>
+    <skos:prefLabel xml:lang="ca-ad">Publicació científica</skos:prefLabel>
+    <rdfs:label xml:lang="pt">Publicação científica</rdfs:label>
+    <rdfs:label xml:lang="ca-es">Publicació científica</rdfs:label>
+    <skos:prefLabel xml:lang="es">Publicación científica</skos:prefLabel>
+    <rdfs:label xml:lang="en">Scientific publication</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#hasSealOfQuality">
+    <rdfs:range rdf:resource="http://purl.org/hercules/asio/core#ResearchInstitute"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">has seal of quality</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#Conference">
+    <rdfs:label xml:lang="en">Conference</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">A meeting for consultation or discussion. [Source: http://purl.org/ontology/bibo/Conference]</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://purl.org/NET/c4dm/event.owl#Event"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#specializes">
+    <rdfs:range rdf:resource="http://purl.org/hercules/asio/core#Role"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">specializes</rdfs:label>
+    <rdfs:comment xml:lang="en">This property allows to express hierarchies of roles, through of role specialization: if role A specializes role B, and B specializes C, then role A specializes role C.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://purl.org/hercules/asio/core#Role"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#rejected">
+    <rdfs:label xml:lang="en">Rejected</rdfs:label>
+    <rdf:type rdf:resource="http://purl.org/hercules/asio/core#Status"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#Researching">
+    <rdf:type rdf:resource="http://purl.org/hercules/asio/core#Role"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#hasCV">
+    <owl:equivalentProperty rdf:resource="http://purl.org/cerif/frapo/hasCurriculumVitae"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="http://purl.org/hercules/asio/core#CV"/>
+    <rdfs:label xml:lang="en">has CV</rdfs:label>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#mainResearcherParticipant">
+    <rdfs:comment xml:lang="en">A person is the main researcher in a given project.</rdfs:comment>
+    <rdfs:label xml:lang="en">main researcher participant</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Project"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#projectStatus">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">project status</rdfs:label>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Project"/>
+    <rdfs:range rdf:resource="http://purl.org/hercules/asio/core#Status"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#isGrantedWith">
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:label xml:lang="en">is granted with</rdfs:label>
+    <rdfs:range rdf:resource="http://purl.org/hercules/asio/core#Grant"/>
+    <rdfs:comment xml:lang="en">A person is granted with a stipend for researching.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#hasORCID">
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:label xml:lang="en">has ORCID</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#coordinatedBy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:comment xml:lang="en">inverse property of 'project coordinator'</rdfs:comment>
+    <rdfs:label xml:lang="en">coordinated by</rdfs:label>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    <owl:inverseOf rdf:resource="http://purl.org/hercules/asio/core#projectCoordinator"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Project"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#hasDOI">
+    <rdfs:label xml:lang="en">has DOI</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://purl.org/hercules/asio/core#Publication"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#projectEndDate">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">The end date of the project.</rdfs:comment>
+    <rdfs:label xml:lang="en">project end date</rdfs:label>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Project"/>
+    <rdfs:label xml:lang="es">fecha final proyecto</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#Role">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">Role</rdfs:label>
+    <rdfs:label xml:lang="pt">Papel</rdfs:label>
+    <rdfs:label xml:lang="ca-es">Papell</rdfs:label>
+    <rdfs:comment xml:lang="en">A condition/status/position that can be predicated of a person. In the ASIO core ontology, roles are reified as first order individuals and relations between roles and players are expressed by means of the asio:plays property. The ASIO core ontology does not impose any subclassification of roles. The concept is open to be refined according to domain or application requirements.</rdfs:comment>
+    <rdfs:label xml:lang="es">Papel</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#PASlaboral">
+    <rdf:type rdf:resource="http://purl.org/hercules/asio/core#Role"/>
+    <rdfs:label xml:lang="ca-ad">PAS laboral</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="es">PAS laboral</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#projectKeyword">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label xml:lang="es">palabra clave</rdfs:label>
+    <rdfs:label xml:lang="en">project keyword</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">A key word of the project.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Project"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#RegionalProject">
+    <skos:prefLabel xml:lang="pt">Projeto regional</skos:prefLabel>
+    <rdfs:label xml:lang="ca-ad">Projecte regional</rdfs:label>
+    <rdfs:label xml:lang="es">Proyecto regional</rdfs:label>
+    <rdfs:label xml:lang="en">Regional project</rdfs:label>
+    <skos:prefLabel xml:lang="ca-ad">Projecte regional</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Projet régional</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Proyecto regional</skos:prefLabel>
+    <rdfs:label xml:lang="fr">Projet régional</rdfs:label>
+    <rdfs:label xml:lang="ca-es">Projecte regional</rdfs:label>
+    <skos:prefLabel xml:lang="en">Regional project</skos:prefLabel>
+    <skos:prefLabel xml:lang="ca-es">Projecte regional</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="pt">Projeto regional</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Project"/>
+    <rdfs:comment xml:lang="en">A project developed and funded at the regional level.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#patentAssignee">
+    <rdfs:label xml:lang="en">patent assignee</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://purl.org/hercules/asio/core#Patent"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#FundingProgramme">
+    <rdfs:label xml:lang="en">Funding programme</rdfs:label>
+    <owl:equivalentClass rdf:resource="http://purl.org/cerif/frapo/FundingProgramme"/>
+    <rdfs:comment xml:lang="en">A programme of related funded projects, typically established by a funding organization.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#projectObjective">
+    <rdfs:comment xml:lang="en">A defined objective of the project.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">project objective</rdfs:label>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Project"/>
+    <rdfs:label xml:lang="es">objetivo de proyecto</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#coauthors">
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    <rdfs:range rdf:resource="http://purl.org/hercules/asio/core#Publication"/>
+    <rdfs:label xml:lang="en">co-authors</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#ResearchField">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">Research field</rdfs:label>
+    <owl:equivalentClass rdf:resource="http://orkg.org/core#ResearchField"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#isCoauthoredBy">
+    <rdfs:domain rdf:resource="http://purl.org/hercules/asio/core#Publication"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    <rdfs:label xml:lang="en">is co-authored by</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#capital">
+    <rdfs:comment xml:lang="en">A property to indicate that a place is the official seat of government in a political entity.</rdfs:comment>
+    <rdfs:label xml:lang="en">capital</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#PASfuncionario">
+    <rdfs:label xml:lang="ca-ad">PAS funcionari</rdfs:label>
+    <rdfs:label xml:lang="gl">PAS funcionario</rdfs:label>
+    <rdf:type rdf:resource="http://purl.org/hercules/asio/core#Role"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="ast">PAS funcionariu</rdfs:label>
+    <rdfs:label xml:lang="es">PAS funcionario</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#Context">
+    <rdfs:label xml:lang="es">Contexto</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">Context</rdfs:label>
+    <rdfs:label xml:lang="pt">Contexto</rdfs:label>
+    <rdfs:comment xml:lang="en">Contexts are similar to situations or state of affairs providing interpretation coordinates for profiles. In the most simple case, these coordinates are just geographical/spatial or temporal coordinates. The ASIO core ontology does not impose a fixed definition of context. It is deliberately wide in order to enable third-parties the adequation of the meaning of context according to their modeling needs and requirements.</rdfs:comment>
+    <rdfs:label xml:lang="ca-es">Context</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#Contract">
+    <rdfs:label xml:lang="pt">Contrato</rdfs:label>
+    <rdfs:label xml:lang="gl">Contrato</rdfs:label>
+    <owl:equivalentClass rdf:resource="http://purl.org/cerif/Contract"/>
+    <skos:prefLabel xml:lang="ca-ad">Contracte</skos:prefLabel>
+    <rdfs:label xml:lang="es">Contrato</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.org/cerif/frapo/FinancialEntity"/>
+    <owl:equivalentClass rdf:resource="http://purl.org/cerif/frapo/Contract"/>
+    <skos:prefLabel xml:lang="ca-es">Contracte</skos:prefLabel>
+    <rdfs:label xml:lang="en">Contract</rdfs:label>
+    <skos:prefLabel xml:lang="pt">Contrato</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">Contrat</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:equivalentClass rdf:resource="http://eurocris.org/ontology/semcerif#Contract"/>
+    <owl:equivalentClass rdf:resource="http://purl.org/procurement/public-contracts#Contract"/>
+    <skos:prefLabel xml:lang="gl">Contrato</skos:prefLabel>
+    <rdfs:label xml:lang="ca-es">Contracte</rdfs:label>
+    <skos:prefLabel xml:lang="en">Contract</skos:prefLabel>
+    <rdfs:label xml:lang="ca-ad">Contracte</rdfs:label>
+    <skos:prefLabel xml:lang="es">Contrato</skos:prefLabel>
+    <rdfs:label xml:lang="fr">Contrat</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#Publishes">
+    <owl:inverseOf rdf:resource="http://purl.org/hercules/asio/core#publishedBy"/>
+    <rdfs:label xml:lang="en">publishes</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    <rdfs:range rdf:resource="http://purl.org/hercules/asio/core#Publication"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#signed">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://purl.org/hercules/asio/core#Status"/>
+    <rdfs:label xml:lang="en">Signed</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#FundingOrganization">
+    <rdfs:label xml:lang="en">Funding organization</rdfs:label>
+    <owl:equivalentClass rdf:resource="http://vivoweb.org/ontology/core#FundingOrganization"/>
+    <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+    <owl:equivalentClass rdf:resource="http://purl.org/cerif/frapo/FundingAgency"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#i10-index">
+    <rdfs:label xml:lang="en">i10-index</rdfs:label>
+    <rdfs:range rdf:resource="http://purl.org/hercules/asio/core#QualifiedValue"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:comment xml:lang="en">A property to express the i10-index of an author.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#ResearchMethod">
+    <owl:equivalentClass rdf:resource="http://orkg.org/core#ResearchMethod"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">Research method</rdfs:label>
+    <skos:prefLabel xml:lang="en">Research method</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#TechnicalReport">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/hercules/asio/core#ScientificPublication"/>
+    <rdfs:label xml:lang="en">Technical report</rdfs:label>
+    <skos:prefLabel xml:lang="en">Technical report</skos:prefLabel>
+    <owl:equivalentClass rdf:resource="http://semanticscience.org/resource/TechnicalReport"/>
+    <owl:equivalentClass rdf:resource="http://purl.org/spar/fabio/TechnicalReport"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#Prototype">
+    <rdfs:label xml:lang="en">Prototype</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/hercules/asio/core#Product"/>
+    <rdfs:comment xml:lang="en">A product prototype</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#UndergraduateStudent">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://purl.org/hercules/asio/core#Role"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#isMemberOf">
+    <owl:inverseOf rdf:resource="http://xmlns.com/foaf/0.1/member"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">is member of</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#SpainUniversityStaffing">
+    <rdfs:comment xml:lang="en">This ASIO vertical module defines Spain's University staffing model encompassing all its specificities.</rdfs:comment>
+    <skos:prefLabel xml:lang="en">Spain's university staffing</skos:prefLabel>
+    <rdfs:label xml:lang="en">Spain's university staffing</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#CatedraticoUniversidad">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="es">Catedrático de universidad</rdfs:label>
+    <rdfs:label xml:lang="ca-ad">Catedràtic d'universitat</rdfs:label>
+    <rdfs:label xml:lang="ast">Catedráticu d'universidá</rdfs:label>
+    <rdfs:label xml:lang="gl">Catedrático de universidade</rdfs:label>
+    <rdf:type rdf:resource="http://purl.org/hercules/asio/core#Role"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#coadvises">
+    <rdfs:range rdf:resource="http://purl.org/hercules/asio/core#AcademicPublication"/>
+    <rdfs:comment xml:lang="en">A person co-advises an academic publication (bachelor thesis, master thesis or doctoral thesis).</rdfs:comment>
+    <rdfs:label xml:lang="en">co-advises</rdfs:label>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#MasterStudent">
+    <rdf:type rdf:resource="http://purl.org/hercules/asio/core#Role"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#patentCountry">
+    <rdfs:range rdf:resource="http://purl.org/hercules/asio/core#Country"/>
+    <rdfs:label xml:lang="en">patent country</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://purl.org/hercules/asio/core#Patent"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#funded">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="en">Funded</rdfs:label>
+    <rdf:type rdf:resource="http://purl.org/hercules/asio/core#Status"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#utilizes">
+    <rdfs:range rdf:resource="http://purl.org/hercules/asio/core#ResearchMaterial"/>
+    <rdfs:domain rdf:resource="http://purl.org/hercules/asio/core#ResearchContribution"/>
+    <owl:equivalentProperty rdf:resource="http://orkg.org/core#utilizes"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">utilizes</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#Funding">
+    <owl:equivalentClass rdf:resource="http://purl.org/cerif/frapo/Funding"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/cerif/frapo/FinancialEntity"/>
+    <owl:equivalentClass rdf:resource="http://eurocris.org/ontology/semcerif#Funding"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:equivalentClass rdf:resource="http://purl.org/cerif/Funding"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#funds">
+    <rdfs:label xml:lang="en">funds</rdfs:label>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <owl:inverseOf rdf:resource="http://purl.org/hercules/asio/core#isFundedBy"/>
+    <owl:equivalentProperty rdf:resource="http://purl.org/cerif/frapo/funds"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#profiles">
+    <rdfs:label xml:lang="en">profiles</rdfs:label>
+    <rdfs:range rdf:resource="http://purl.org/hercules/asio/core#Profile"/>
+    <rdfs:comment xml:lang="en">This property relates people and the featured profiles.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#ResearchMaterial">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">Research material</rdfs:label>
+    <skos:prefLabel xml:lang="en">Research material</skos:prefLabel>
+    <owl:equivalentClass rdf:resource="http://orkg.org/core#ResearchMaterial"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#hasPatent">
+    <rdfs:range rdf:resource="http://purl.org/hercules/asio/core#Patent"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">has patent</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#country">
+    <rdfs:comment xml:lang="en">This property indicates the nationality of a resource. The domain is not set so unpredicted resources within the ontology could be attached to countries.</rdfs:comment>
+    <rdfs:range rdf:resource="http://purl.org/hercules/asio/core#Country"/>
+    <rdfs:label xml:lang="en">country</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="es">país</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Person">
+    <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#Article">
+    <owl:equivalentClass rdf:resource="http://orkg.org/core#Paper"/>
+    <owl:equivalentClass rdf:resource="http://purl.org/spar/fabio/Article"/>
+    <owl:equivalentClass rdf:resource="http://sw-portal.deri.org/ontologies/swportal#Article"/>
+    <owl:equivalentClass rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
+    <owl:equivalentClass rdf:resource="http://www.ontotext.com/proton/protonext#Article"/>
+    <rdfs:label xml:lang="en">Article</rdfs:label>
+    <owl:equivalentClass rdf:resource="http://purl.org/net/nknouf/ns/bibtex#Article"/>
+    <owl:equivalentClass rdf:resource="http://purl.org/ontology/bibo/Article"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/hercules/asio/core#ScientificPublication"/>
+    <owl:equivalentClass rdf:resource="http://ns.nature.com/terms/Article"/>
+    <skos:prefLabel xml:lang="en">Article</skos:prefLabel>
+    <owl:equivalentClass rdf:resource="http://semanticscience.org/resource/SIO_000154"/>
+    <owl:equivalentClass rdf:resource="http://lsdis.cs.uga.edu/projects/semdis/opus#Article"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#publicationDate">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">publication date</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#Grant">
+    <rdfs:label xml:lang="en">Grant</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">A financial award provided by a funding organisation for a particular project or purpose, usually awarded on the basis of a competitive application.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://purl.org/hercules/asio/core#Funding"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#ProjectBudget">
+    <skos:prefLabel xml:lang="pt">Orçamento de projeto</skos:prefLabel>
+    <rdfs:label xml:lang="ca-es">Pressupost de projecte</rdfs:label>
+    <rdfs:comment xml:lang="en">The budget established or devoted to a project.</rdfs:comment>
+    <rdfs:label xml:lang="ca-ad">Pressupost de projecte</rdfs:label>
+    <rdfs:label xml:lang="es">Presupuesto de proyecto</rdfs:label>
+    <rdfs:label xml:lang="pt">Orçamento de projeto</rdfs:label>
+    <skos:prefLabel xml:lang="fr">Budget de projet</skos:prefLabel>
+    <skos:prefLabel xml:lang="ca-ad">Pressupost de projecte</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">Presupuesto de proyecto</skos:prefLabel>
+    <rdfs:subClassOf rdf:resource="http://purl.org/hercules/asio/core#Budget"/>
+    <rdfs:label xml:lang="fr">Budget de projet</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">Project budget</rdfs:label>
+    <skos:prefLabel xml:lang="ca-es">Pressupost de projecte</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Project budget</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#CatedraticoEscuelaUniversitaria">
+    <rdfs:label xml:lang="gl">Catedrático de escola universitaria</rdfs:label>
+    <rdfs:label xml:lang="ca-ad">Catedràtic d'escola universitària</rdfs:label>
+    <rdfs:label xml:lang="es">Catedrático de escuela universitaria</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="ast">Catedráticu d'escuela universitaria</rdfs:label>
+    <rdf:type rdf:resource="http://purl.org/hercules/asio/core#Role"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#PeerReviewedArticle">
+    <owl:equivalentClass rdf:resource="http://swrc.ontoware.org/ontology#Article"/>
+    <owl:equivalentClass rdf:resource="http://semanticscience.org/resource/SIO_000102"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/hercules/asio/core#Article"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">Peer-reviewed article</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#projectID">
+    <rdfs:label xml:lang="en">project ID</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Project"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#isFundedBy">
+    <owl:equivalentProperty rdf:resource="http://purl.org/cerif/frapo/isFundedBy"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">is funded by</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#hasResearchField">
+    <rdfs:label xml:lang="en">has research field</rdfs:label>
+    <owl:equivalentProperty rdf:resource="http://orkg.org/core#hasResearchField"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#Workshop">
+    <rdfs:comment xml:lang="en">A seminar, discussion group, or the like, that emphasizes zxchange of ideas and the demonstration and application of techniques, skills, etc. [Source: http://purl.org/ontology/bibo/Workshop]</rdfs:comment>
+    <rdfs:label xml:lang="en">Workshop</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/NET/c4dm/event.owl#Event"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#isAuthoredBy">
+    <rdfs:label xml:lang="en">is authored by</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#geoDivision">
+    <rdfs:label xml:lang="en">geodivision</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:comment xml:lang="en">A property to link a resource to a predefined geographical (or geopolitical) division.</rdfs:comment>
+    <rdfs:range rdf:resource="http://purl.org/hercules/asio/modules#GeopoliticalEntities"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#Status">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#requires">
+    <rdfs:domain rdf:resource="http://purl.org/hercules/asio/core#AcademicDegree"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:comment xml:lang="en">This property relates roles and their requisites, i.e. other roles.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://purl.org/hercules/asio/core#Role"/>
+    <rdfs:range rdf:resource="http://purl.org/hercules/asio/core#Role"/>
+    <rdfs:range rdf:resource="http://purl.org/hercules/asio/core#AcademicPublication"/>
+    <rdfs:label xml:lang="en">requires</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#publicationCitation">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">publication citations</rdfs:label>
+    <rdfs:domain rdf:resource="http://purl.org/hercules/asio/core#Publication"/>
+    <rdfs:comment xml:lang="en">a property to link a given publication to the number of citations.</rdfs:comment>
+    <rdfs:range rdf:resource="http://purl.org/hercules/asio/core#QualifiedValue"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#yields">
+    <rdfs:label xml:lang="en">yields</rdfs:label>
+    <rdfs:domain rdf:resource="http://purl.org/hercules/asio/core#ResearchContribution"/>
+    <rdfs:range rdf:resource="http://purl.org/hercules/asio/core#ResearchResult"/>
+    <owl:equivalentProperty rdf:resource="http://orkg.org/core#yields"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#isActive">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:domain rdf:resource="http://purl.org/hercules/asio/core#Profile"/>
+    <rdfs:label xml:lang="en">is active</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">This property allows to specify which is the user profile that is active,
+given a interaction between two applications.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#patentAssistantExaminer">
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:range rdf:resource="http://purl.org/hercules/asio/core#Patent"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">patent assistant examiner</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#projectOutcome">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">project outcome</rdfs:label>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Project"/>
+    <rdfs:comment xml:lang="en">a property to link a project to any outcome obtained within its endeavour, including publications, patents, products, prototypes, etc. The domain of this property is obviously the class foaf:Project but the range is left open so to encompass unforeseen project outcomes.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#cancelled">
+    <rdfs:label xml:lang="en">Cancelled</rdfs:label>
+    <rdf:type rdf:resource="http://purl.org/hercules/asio/core#Status"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/member">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Group"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    <rdfs:label xml:lang="en">member</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#EventOrganiser">
+    <rdfs:comment xml:lang="en">A role of organising cientific events, such as conferences, workshops, etc.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="en">Event organiser</rdfs:label>
+    <rdf:type rdf:resource="http://purl.org/hercules/asio/core#Role"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#hasScientificDomain">
+    <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:label xml:lang="en">has scientific domain</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/modules#GeopoliticalEntities">
+    <rdfs:label xml:lang="pt">Entidades geopolíticas</rdfs:label>
+    <rdfs:label xml:lang="es">Entidades geopolíticas</rdfs:label>
+    <rdfs:label xml:lang="en">Geopolitical entities</rdfs:label>
+    <rdfs:label xml:lang="ca-es">Entitats geopolítiques</rdfs:label>
+    <rdfs:comment xml:lang="en">This vertical module in ASIO models all the geopolitical/administrative levels (from municipalities, to provinces, regions, countries and European-level entities) that might have a role in the ontological architecture of the project. It is modeled hierarchically though relevant administrative levels potentially funding projects. In the Asio project the proof of concept is carried out with the whole administrative levels of Spain, Portugal, Andorra and France, in addition to the relevant European administrative entities.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="fr">Entités géopolitiques</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    <rdfs:label xml:lang="ca-ad">Entitats geopolítiques</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#patentStatus">
+    <rdfs:domain rdf:resource="http://purl.org/hercules/asio/core#Patent"/>
+    <rdfs:label xml:lang="en">patent status</rdfs:label>
+    <rdfs:range rdf:resource="http://purl.org/hercules/asio/core#Status"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#PhDStudent">
+    <rdf:type rdf:resource="http://purl.org/hercules/asio/core#Role"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#closed">
+    <rdf:type rdf:resource="http://purl.org/hercules/asio/core#Status"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="en">Closed</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/ns/prov#wasDerivedFrom">
+    <rdfs:comment xml:lang="en">A derivation is a transformation of an entity into another, an update of an entity resulting in a new one, or the construction of a new entity based on a pre-existing entity.</rdfs:comment>
+    <rdfs:label xml:lang="en">was derived from</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/license">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#ConceptScheme">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Group">
+    <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/title">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#participates">
+    <rdfs:comment xml:lang="en">This property encodes the participation relation between profiles and the communities they are member of.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">participates</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#date">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/hercules/asio/core#requiredFor">
+    <rdfs:range rdf:resource="http://purl.org/hercules/asio/core#AcademicDegree"/>
+    <rdfs:domain rdf:resource="http://purl.org/hercules/asio/core#AcademicPublication"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">required for</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/contributor">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/NET/c4dm/event.owl#Event">
+    <rdfs:label xml:lang="en">Event</rdfs:label>
+    <rdfs:comment xml:lang="en">An arbitrary classification of a space/time region, by a
+cognitive agent. An event may have actively participating agents,
+passive factors, products, and a location in space/time.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#altLabel">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/description">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/creator">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.w3.org/TR/prov-o/#wasDerivedFrom">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+</rdf:RDF>
