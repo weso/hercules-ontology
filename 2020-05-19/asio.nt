@@ -1,0 +1,1342 @@
+<http://xmlns.com/foaf/0.1/Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/hercules/asio/core#atContext> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/hercules/asio/core#Profile> .
+<http://purl.org/hercules/asio/core#TechnicalSupport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/hercules/asio/core#Role> .
+<http://purl.org/hercules/asio/core#projectAcronym> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/hercules/asio/core#codeOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://purl.org/hercules/asio/core#NationalProject> <http://www.w3.org/2000/01/rdf-schema#label> "Projecte nacional"@ca-ad .
+<http://purl.org/hercules/asio/core#hasTRL> <http://www.w3.org/2000/01/rdf-schema#comment> "A prototype has a given technology readiness level"@en .
+<http://purl.org/hercules/asio/core#qualifiedvaluation> <http://www.w3.org/2000/01/rdf-schema#label> "qualified valuation"@en .
+<http://purl.org/hercules/asio/core#Book> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/hercules/asio/core#ScientificPublication> .
+<http://purl.org/hercules/asio/core#InternationalProject> <http://www.w3.org/2000/01/rdf-schema#label> "Projeto internacional"@pt .
+<http://purl.org/hercules/asio/modules#ScientificDomain> <http://www.w3.org/2004/02/skos/core#prefLabel> "Scientific domains"@en .
+<http://purl.org/hercules/asio/core#Country> <http://www.w3.org/2000/01/rdf-schema#label> "Pa\u00EDs"@ca-ad .
+<http://purl.org/hercules/asio/core#ResearchGroup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/hercules/asio/core#associatedWith> <http://www.w3.org/2000/01/rdf-schema#label> "associated with"@en .
+<http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/hercules/asio/core#qualifieddate> <http://www.w3.org/2000/01/rdf-schema#comment> "A given date (point in time) linked to a given value within a qualified value."@en .
+<http://purl.org/hercules/asio/core#Company> <http://www.w3.org/2002/07/owl#disjointWith> <http://purl.org/hercules/asio/core#University> .
+<http://purl.org/hercules/asio/core#Country> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/hercules/asio/core#Publication> <http://www.w3.org/2004/02/skos/core#prefLabel> "Publication"@fr .
+<http://purl.org/hercules/asio/core#Profile> <http://www.w3.org/2000/01/rdf-schema#comment> "Perfil"@es .
+<http://purl.org/hercules/asio/core#authorCitation> <http://www.w3.org/2000/01/rdf-schema#label> "author citations"@en .
+<http://purl.org/hercules/asio/core#PhDThesis> <http://www.w3.org/2002/07/owl#equivalentClass> <http://purl.org/spar/fabio/DoctoralThesis> .
+<http://purl.org/hercules/asio/core#awards> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Agent> .
+<http://purl.org/hercules/asio/core#Thesis> <http://www.w3.org/2000/01/rdf-schema#label> "Tese"@gl .
+<http://purl.org/hercules/asio/core#companyFounder> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Person> .
+<http://purl.org/hercules/asio/core#CV> <http://www.w3.org/2000/01/rdf-schema#label> "Curriculum vitae"@fr .
+<http://purl.org/hercules/asio/core#coadvisedBy> <http://www.w3.org/2000/01/rdf-schema#label> "co-advised by"@en .
+<http://purl.org/hercules/asio/core#SealOfQuality> <http://www.w3.org/2000/01/rdf-schema#comment> "A graphic mark indicating highest levels of quality in research, often measured in terms of relevant publications related to the researching activity."@en .
+<http://purl.org/hercules/asio/core#AdministrativeEntity> <http://www.w3.org/2000/01/rdf-schema#label> "Administrative entities"@en .
+<http://purl.org/hercules/asio/core#> <http://www.w3.org/2002/07/owl#versionIRI> <http://purl.org/hercules/asio/core/0.0.1> .
+<http://purl.org/hercules/asio/core#isAdvisedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/hercules/asio/core#DoctoralDegree> <http://www.w3.org/2000/01/rdf-schema#label> "Doctorat"@fr-fr .
+<http://purl.org/cerif/frapo/FinancialEntity> <http://www.w3.org/2004/02/skos/core#prefLabel> "Ente financeiro"@pt .
+<http://purl.org/hercules/asio/core#hasResearchContribution> <http://www.w3.org/2000/01/rdf-schema#label> "has research contribution"@en .
+<http://purl.org/hercules/asio/core#PhDThesis> <http://www.w3.org/2002/07/owl#equivalentClass> <http://swrc.ontoware.org/ontology#PhDThesis> .
+<http://purl.org/hercules/asio/modules#ScientificDomain> <http://www.w3.org/2000/01/rdf-schema#label> "Domaines scientifiques"@fr .
+<http://purl.org/hercules/asio/core#hasTRL> <http://www.w3.org/2000/01/rdf-schema#label> "has TRL"@en .
+<http://purl.org/hercules/asio/core#spinsOffFrom> <http://www.w3.org/2000/01/rdf-schema#label> "spins of from"@en .
+<http://purl.org/hercules/asio/core#qualifiedvaluation> <http://www.w3.org/2000/01/rdf-schema#comment> "A given value linked to a given date (point in time) within a qualified value."@en .
+<http://purl.org/hercules/asio/core#InternalProject> <http://www.w3.org/2000/01/rdf-schema#label> "Internal project"@en .
+<http://purl.org/hercules/asio/core#InternalProject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/hercules/asio/core#patentExpirationDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
+<http://purl.org/hercules/asio/core#UniversityDivision> <http://www.w3.org/2000/01/rdf-schema#label> "Division d'universit\u00E9"@fr .
+<http://purl.org/hercules/asio/core#Product> <http://www.w3.org/2000/01/rdf-schema#comment> "A product as outcome of a project."@en .
+<http://purl.org/hercules/asio/core#CV> <http://www.w3.org/2004/02/skos/core#prefLabel> "Curr\u00EDculum vitae"@es .
+<http://purl.org/hercules/asio/core#University> <http://www.w3.org/2002/07/owl#equivalentClass> <http://www.ontotext.com/proton/protonext#University> .
+<http://purl.org/hercules/asio/core#University> <http://www.w3.org/2002/07/owl#equivalentClass> <http://www.w3.org/ns/org#University> .
+<http://purl.org/hercules/asio/core#SME> <http://www.w3.org/2000/01/rdf-schema#label> "Pequena e m\u00E9dia empresa"@pt .
+<http://purl.org/hercules/asio/core#BachelorsThesis> <http://www.w3.org/2002/07/owl#disjointWith> <http://purl.org/hercules/asio/core#PhDThesis> .
+<http://purl.org/hercules/asio/core#coadvisedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "An academic publication (bachelor thesis, master thesis or doctoral thesis) is co-advised by an advisor."@en .
+<http://purl.org/hercules/asio/core#MastersThesis> <http://www.w3.org/2004/02/skos/core#altLabel> "TFM"@ca-es .
+<http://purl.org/hercules/asio/core#hasResearcherID> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Person> .
+<http://purl.org/hercules/asio/core#AcademicPublication> <http://www.w3.org/2000/01/rdf-schema#label> "Academic publication"@en .
+<http://purl.org/hercules/asio/core#accepted> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/hercules/asio/core#Status> .
+<http://purl.org/hercules/asio/core#PhDThesis> <http://www.w3.org/2004/02/skos/core#prefLabel> "Doctoral thesis"@en .
+<http://xmlns.com/foaf/0.1/Project> <http://www.w3.org/2002/07/owl#equivalentClass> <http://eurocris.org/ontology/semcerif#Project> .
+<http://purl.org/hercules/asio/core#ResearchProblem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/hercules/asio/core#Book> <http://www.w3.org/2004/02/skos/core#prefLabel> "Book"@en .
+<http://purl.org/hercules/asio/core#TitularUniversidad> <http://www.w3.org/2000/01/rdf-schema#label> "Professor titular d'universitat"@ca-ad .
+<http://purl.org/hercules/asio/core#ResearchResult> <http://www.w3.org/2000/01/rdf-schema#label> "Research result"@en .
+<http://purl.org/hercules/asio/core#Administrative> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/hercules/asio/core#Spinoff> <http://www.w3.org/2002/07/owl#equivalentClass> <http://purl.org/cerif/frapo/SpinOffCompany> .
+<http://purl.org/hercules/asio/core#AdministrativeEntity> <http://www.w3.org/2004/02/skos/core#prefLabel> "Administrative entities"@en .
+<http://purl.org/hercules/asio/core#terminated> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/hercules/asio/core#Thesis> <http://www.w3.org/2000/01/rdf-schema#label> "Thesis"@en .
+<http://purl.org/wf4ever/ro#ResearchObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/hercules/asio/core#plays> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/hercules/asio/core#Role> .
+<http://purl.org/hercules/asio/core#h-index> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/hercules/asio/core#QualifiedValue> .
+<http://purl.org/hercules/asio/core#ResearchContribution> <http://www.w3.org/2000/01/rdf-schema#label> "Research contribution"@en .
+<http://purl.org/hercules/asio/core#patentPrimaryExaminer> <http://www.w3.org/2000/01/rdf-schema#label> "patent primary examiner"@en .
+<http://purl.org/wf4ever/ro#ResearchObject> <http://www.w3.org/2000/01/rdf-schema#label> "Objecte de recerca"@ca-ad .
+<http://purl.org/hercules/asio/core#BachelorsThesis> <http://www.w3.org/2004/02/skos/core#altLabel> "TFG"@ca-es .
+<http://purl.org/hercules/asio/core#Company> <http://www.w3.org/2000/01/rdf-schema#label> "Empresa"@es .
+<http://purl.org/hercules/asio/core#UniversityDivision> <http://www.w3.org/2000/01/rdf-schema#label> "Divisi\u00F3 d'universitat"@ca-es .
+<http://purl.org/hercules/asio/core#addresses> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/hercules/asio/core#> <http://purl.org/dc/elements/1.1/contributor> "Alejandro Gonz\u00E1lez Hevia"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://purl.org/hercules/asio/core#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://purl.org/hercules/asio/core#BacherlorsDegree> <http://www.w3.org/2000/01/rdf-schema#label> "Licenciatura (p\u00F3s-Bologna)"@pt-pt .
+<http://purl.org/hercules/asio/core#Company> <http://www.w3.org/2002/07/owl#equivalentClass> <http://vivoweb.org/ontology/core#Company> .
+<http://purl.org/hercules/asio/core#EuropeanProject> <http://www.w3.org/2000/01/rdf-schema#label> "Projecte europeu"@ca-ad .
+<http://purl.org/hercules/asio/core#patentDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
+<http://purl.org/hercules/asio/core#ResearchGroup> <http://www.w3.org/2000/01/rdf-schema#label> "Grupo de investiga\u00E7\u00E3o"@pt .
+<http://purl.org/hercules/asio/core#projectStartDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/hercules/asio/core#advises> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/hercules/asio/core#AcademicPublication> .
+<http://purl.org/hercules/asio/core#publishedBy> <http://www.w3.org/2000/01/rdf-schema#label> "published by"@en .
+<http://purl.org/hercules/asio/core#awardedWith> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://purl.org/hercules/asio/core#accepted> <http://www.w3.org/2000/01/rdf-schema#label> "Accepted"@en .
+<http://purl.org/hercules/asio/core#isCompetitive> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Project> .
+<http://purl.org/hercules/asio/core#Budget> <http://www.w3.org/2000/01/rdf-schema#label> "Orzamento"@gl .
+<http://purl.org/hercules/asio/core#NationalProject> <http://www.w3.org/2000/01/rdf-schema#label> "Projet national"@fr .
+<http://purl.org/hercules/asio/core#EuropeanProject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/hercules/asio/core#AcademicDegree> <http://www.w3.org/2000/01/rdf-schema#comment> "A qualification awarded to students upon successful completion of a course of study in higher education."@en .
+<http://purl.org/hercules/asio/core#BacherlorsDegree> <http://www.w3.org/2000/01/rdf-schema#label> "T\u00EDtol de b\u00E0txelor"@ca-ad .
+<http://purl.org/hercules/asio/core#FundingAgency> <http://www.w3.org/2000/01/rdf-schema#label> "Funding agency"@en .
+<http://purl.org/hercules/asio/core#unfunded> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/hercules/asio/core#Teaching> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/hercules/asio/core#Role> .
+<http://purl.org/hercules/asio/core#AcademicPublication> <http://www.w3.org/2000/01/rdf-schema#label> "Publica\u00E7\u00E3o acad\u00EAmica"@pt .
+<http://purl.org/hercules/asio/core#projectCoordinator> <http://www.w3.org/2000/01/rdf-schema#range> <http://xmlns.com/foaf/0.1/Project> .
+<http://purl.org/hercules/asio/core#Patent> <http://www.w3.org/2002/07/owl#equivalentClass> <http://purl.org/spar/fabio/Patent> .
+<http://purl.org/hercules/asio/core#ServiceContract> <http://www.w3.org/2004/02/skos/core#prefLabel> "Contrato de servicio"@es .
+<http://purl.org/hercules/asio/core#EuropeanProject> <http://www.w3.org/2004/02/skos/core#prefLabel> "Projeto europeu"@pt .
+<http://purl.org/hercules/asio/core#patentInventor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/hercules/asio/core#Patent> .
+<http://purl.org/hercules/asio/core#isAwardedBy> <http://www.w3.org/2000/01/rdf-schema#label> "is awarded by"@en .
+<http://purl.org/hercules/asio/core#authors> <http://www.w3.org/2000/01/rdf-schema#label> "authors"@en .
+<http://purl.org/hercules/asio/core#hasResearchLine> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Agent> .
+<http://purl.org/hercules/asio/core#EmploymentContract> <http://www.w3.org/2004/02/skos/core#prefLabel> "Contrat de travail"@fr .
+<http://purl.org/hercules/asio/core#University> <http://www.w3.org/2002/07/owl#equivalentClass> <http://sw-portal.deri.org/ontologies/swportal#University> .
+<http://purl.org/hercules/asio/core#University> <http://www.w3.org/2002/07/owl#equivalentClass> <http://purl.org/cerif/frapo/University> .
+<http://purl.org/hercules/asio/core#Manual> <http://www.w3.org/2000/01/rdf-schema#label> "Manual"@en .
+<http://purl.org/hercules/asio/core#hasTRL> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/hercules/asio/core#Prototype> .
+<http://purl.org/hercules/asio/core#Patent> <http://www.w3.org/2004/02/skos/core#prefLabel> "Patente"@es .
+<http://purl.org/hercules/asio/core#SealOfQuality> <http://www.w3.org/2004/02/skos/core#prefLabel> "Seal of quality"@en .
+<http://xmlns.com/foaf/0.1/Organization> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Agent> .
+<http://purl.org/hercules/asio/core#hasCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/hercules/asio/core#MastersDegree> <http://www.w3.org/2004/02/skos/core#prefLabel> "Ma\u00EEtrise universitaire"@fr-fr .
+<http://purl.org/hercules/asio/core#advises> <http://www.w3.org/2000/01/rdf-schema#label> "advises"@en .
+<http://purl.org/hercules/asio/core#AcademicDegree> <http://www.w3.org/2000/01/rdf-schema#label> "Grade universitaire"@fr-ca .
+<http://purl.org/hercules/asio/core#SME> <http://www.w3.org/2000/01/rdf-schema#comment> "A company whose personnel numbers fall below certain limits."@en .
+<http://purl.org/hercules/asio/core#AdministrativeEntity> <http://www.w3.org/2004/02/skos/core#prefLabel> "Entit\u00E9s administratives"@fr .
+<http://purl.org/hercules/asio/core#personalizes> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/hercules/asio/core#Profile> .
+<http://purl.org/hercules/asio/core#student> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/hercules/asio/core#employs> <http://www.w3.org/2000/01/rdf-schema#label> "emplea"@es .
+<http://purl.org/hercules/asio/core#plays> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Agent> .
+<http://purl.org/hercules/asio/core#authorCitation> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/hercules/asio/core#QualifiedValue> .
+<http://purl.org/hercules/asio/core#authors> <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/hercules/asio/core#isAuthoredBy> .
+<http://purl.org/hercules/asio/core#BachelorsThesis> <http://www.w3.org/2004/02/skos/core#altLabel> "GALa"@eu .
+<http://purl.org/hercules/asio/core#University> <http://www.w3.org/2000/01/rdf-schema#label> "Universit\u00E9"@fr .
+<http://purl.org/hercules/asio/core#QualifiedValue> <http://www.w3.org/2000/01/rdf-schema#comment> "A class to represent a qualified value as used in Wikibase."@en .
+<http://purl.org/hercules/asio/core#employs> <http://www.w3.org/2000/01/rdf-schema#label> "employs"@en .
+<http://purl.org/hercules/asio/core#ResearchInstitute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/hercules/asio/core#University> <http://www.w3.org/2000/01/rdf-schema#label> "University"@en .
+<http://purl.org/hercules/asio/core#researchesIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Agent> .
+<http://purl.org/hercules/asio/core#SME> <http://www.w3.org/2004/02/skos/core#prefLabel> "Small and medium-sized enterprise"@en .
+<http://purl.org/hercules/asio/core#Budget> <http://www.w3.org/2004/02/skos/core#prefLabel> "Budget"@en .
+<http://purl.org/hercules/asio/core#projectBudget> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Project> .
+<http://purl.org/hercules/asio/core#AcademicDegree> <http://www.w3.org/2004/02/skos/core#prefLabel> "T\u00EDtulo acad\u00E9mico"@es-es .
+<http://purl.org/hercules/asio/core#MastersThesis> <http://www.w3.org/2000/01/rdf-schema#label> "Trabajo de fin de m\u00E1ster"@es-es .
+<http://purl.org/hercules/asio/core#AdministrativeEntity> <http://www.w3.org/2000/01/rdf-schema#label> "Entitats administratives"@ca-es .
+<http://purl.org/hercules/asio/core#NationalProject> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Project> .
+<http://purl.org/hercules/asio/core#AcademicDegree> <http://www.w3.org/2000/01/rdf-schema#label> "Grade universitaire"@fr-fr .
+<http://purl.org/hercules/asio/core#MastersDegree> <http://www.w3.org/2000/01/rdf-schema#label> "Ma\u00EEtrise universitaire"@fr-ch .
+<http://purl.org/hercules/asio/core#BacherlorsDegree> <http://www.w3.org/2000/01/rdf-schema#comment> "An undergraduate academic degree awarded by colleges and universities upon completion of a course of study lasting three to four years (depending on institution and academic discipline)."@en .
+<http://purl.org/hercules/asio/core#BachelorsThesis> <http://www.w3.org/2000/01/rdf-schema#label> "Trabayu de fin de grau"@ast .
+<http://purl.org/hercules/asio/core#Thesis> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/hercules/asio/core#AcademicPublication> .
+<http://purl.org/hercules/asio/core#> <http://purl.org/dc/elements/1.1/title> "The ASIO ontology"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://purl.org/hercules/asio/core#AdministrativeEntity> <http://www.w3.org/2000/01/rdf-schema#label> "Entit\u00E9s administratives"@fr .
+<http://purl.org/hercules/asio/core#MastersDegree> <http://www.w3.org/2004/02/skos/core#prefLabel> "M\u00E0ster universitari"@ca-es .
+<http://purl.org/hercules/asio/core#participant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/hercules/asio/core#Spinoff> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/hercules/asio/core#Company> .
+<http://purl.org/hercules/asio/core#CV> <http://www.w3.org/2000/01/rdf-schema#label> "Curriculum vitae"@eu .
+<http://purl.org/hercules/asio/core#PhDThesis> <http://www.w3.org/2004/02/skos/core#prefLabel> "Tese doctoral"@gl .
+<http://purl.org/hercules/asio/core#EuropeanProject> <http://www.w3.org/2000/01/rdf-schema#label> "European project"@en .
+<http://purl.org/hercules/asio/core#SME> <http://www.w3.org/2004/02/skos/core#prefLabel> "Petita i mitjana empresa"@ca-ad .
+<http://purl.org/hercules/asio/core#ServiceContract> <http://www.w3.org/2004/02/skos/core#prefLabel> "Contrat de service"@fr .
+<http://purl.org/hercules/asio/core#EditedPublication> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/hercules/asio/core#ScientificPublication> .
+<http://purl.org/hercules/asio/core#ScientificPublication> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/hercules/asio/core#TitularUniversidad> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/hercules/asio/core#PhDThesis> <http://www.w3.org/2004/02/skos/core#altLabel> "Tese de doutoramento"@gl .
+<http://purl.org/hercules/asio/core#hasSealOfQuality> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/hercules/asio/core#ResearchInstitute> .
+<http://purl.org/hercules/asio/core#Company> <http://www.w3.org/2004/02/skos/core#prefLabel> "Empresa"@ca-es .
+<http://purl.org/hercules/asio/core#Conference> <http://www.w3.org/2000/01/rdf-schema#label> "Conference"@en .
+<http://purl.org/hercules/asio/core#Budget> <http://www.w3.org/2004/02/skos/core#altLabel> "Presupuesto"@gl .
+<http://purl.org/hercules/asio/core#specializes> <http://www.w3.org/2000/01/rdf-schema#label> "specializes"@en .
+<http://purl.org/hercules/asio/core#Publication> <http://www.w3.org/2002/07/owl#equivalentClass> <http://vocab.deri.ie/cogs#Publication> .
+<http://purl.org/hercules/asio/core#PhDThesis> <http://www.w3.org/2002/07/owl#equivalentClass> <http://semanticscience.org/resource/SIO_000168> .
+<http://purl.org/hercules/asio/core#Patent> <http://www.w3.org/2000/01/rdf-schema#label> "Patente"@pt .
+<http://purl.org/hercules/asio/core#rejected> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://xmlns.com/foaf/0.1/Organization> <http://www.w3.org/2002/07/owl#equivalentClass> <http://purl.org/vocab/aiiso/schema#Organization> .
+<http://purl.org/hercules/asio/core#Researching> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/hercules/asio/core#Publication> <http://www.w3.org/2002/07/owl#equivalentClass> <http://id.loc.gov/ontologies/bibframe/PublicationPublication> .
+<http://purl.org/hercules/asio/core#ServiceContract> <http://www.w3.org/2000/01/rdf-schema#label> "Contrat de service"@fr .
+<http://purl.org/hercules/asio/core#hasCV> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Person> .
+<http://purl.org/hercules/asio/core#Book> <http://www.w3.org/2004/02/skos/core#prefLabel> "Livre"@fr .
+<http://purl.org/hercules/asio/core#mainResearcherParticipant> <http://www.w3.org/2000/01/rdf-schema#comment> "A person is the main researcher in a given project."@en .
+<http://purl.org/hercules/asio/core#Company> <http://www.w3.org/2000/01/rdf-schema#label> "Empresa"@ca-es .
+<http://purl.org/hercules/asio/core#codeOf> <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/hercules/asio/core#hasCode> .
+<http://purl.org/hercules/asio/core#Thesis> <http://www.w3.org/2004/02/skos/core#prefLabel> "Tesi"@eu .
+<http://purl.org/hercules/asio/core#ResearchGroup> <http://www.w3.org/2002/07/owl#equivalentClass> <http://eurocris.org/ontology/semcerif#ResearchGroup> .
+<http://purl.org/hercules/asio/core#projectStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/hercules/asio/core#ServiceContract> <http://www.w3.org/2004/02/skos/core#prefLabel> "Contrato de servi\u00E7o"@pt .
+<http://purl.org/hercules/asio/core#AcademicPublication> <http://www.w3.org/2000/01/rdf-schema#label> "Publicaci\u00F3 acad\u00E8mica"@ca-es .
+<http://purl.org/hercules/asio/core#isGrantedWith> <http://www.w3.org/2000/01/rdf-schema#comment> "A person is granted with a stipend for researching."@en .
+<http://purl.org/hercules/asio/core#DoctoralDegree> <http://www.w3.org/2004/02/skos/core#prefLabel> "Doctorat"@fr-ca .
+<http://purl.org/hercules/asio/core#NationalProject> <http://www.w3.org/2004/02/skos/core#prefLabel> "Projecte nacional"@ca-es .
+<http://purl.org/hercules/asio/core#hasORCID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/hercules/asio/core#NationalProject> <http://www.w3.org/2000/01/rdf-schema#label> "Projeto nacional"@pt .
+<http://purl.org/hercules/asio/core#AcademicDegree> <http://www.w3.org/2002/07/owl#equivalentClass> <http://vivoweb.org/ontology/core#AcademicDegree> .
+<http://purl.org/hercules/asio/core#coordinatedBy> <http://www.w3.org/2000/01/rdf-schema#label> "coordinated by"@en .
+<http://purl.org/hercules/asio/core#hasDOI> <http://www.w3.org/2000/01/rdf-schema#label> "has DOI"@en .
+<http://purl.org/hercules/asio/core#Company> <http://www.w3.org/2002/07/owl#equivalentClass> <http://dbpedia.org/ontology/Company> .
+<http://purl.org/hercules/asio/core#companyFounder> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/hercules/asio/core#Company> .
+<http://purl.org/hercules/asio/core#Patent> <http://www.w3.org/2000/01/rdf-schema#label> "Patent"@fr .
+<http://purl.org/wf4ever/ro#ResearchObject> <http://www.w3.org/2004/02/skos/core#prefLabel> "Objecte de recerca"@ca-ad .
+<http://purl.org/hercules/asio/core#University> <http://www.w3.org/2000/01/rdf-schema#comment> "A centre at which higher education and research is conducted."@en .
+<http://purl.org/hercules/asio/core#projectEndDate> <http://www.w3.org/2000/01/rdf-schema#label> "fecha final proyecto"@es .
+<http://purl.org/hercules/asio/core#ResearchInstitute> <http://www.w3.org/2004/02/skos/core#prefLabel> "Centre de recerca"@ca-ad .
+<http://purl.org/hercules/asio/core#AcademicDegree> <http://www.w3.org/2004/02/skos/core#prefLabel> "Grade universitaire"@fr-ca .
+<http://purl.org/hercules/asio/core#Company> <http://www.w3.org/2002/07/owl#equivalentClass> <http://sw-portal.deri.org/ontologies/swportal#Company> .
+<http://purl.org/hercules/asio/core#EuropeanProject> <http://www.w3.org/2004/02/skos/core#prefLabel> "European project"@en .
+<http://purl.org/cerif/frapo/FinancialEntity> <http://www.w3.org/2000/01/rdf-schema#label> "Ente financeiro"@pt .
+<http://purl.org/hercules/asio/core#AcademicDegree> <http://www.w3.org/2000/01/rdf-schema#label> "Grao acad\u00E9mico"@gl .
+<http://purl.org/hercules/asio/core#hasTRL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/hercules/asio/core#CV> <http://www.w3.org/2004/02/skos/core#altLabel> "Curriculum vit\u00E6"@fr .
+<http://purl.org/hercules/asio/core#Role> <http://www.w3.org/2000/01/rdf-schema#label> "Papel"@pt .
+<http://purl.org/hercules/asio/core#ResearchProblem> <http://www.w3.org/2004/02/skos/core#prefLabel> "Research problem"@en .
+<http://purl.org/hercules/asio/core#Book> <http://www.w3.org/2000/01/rdf-schema#label> "Livro"@pt .
+<http://purl.org/hercules/asio/core#DoctoralDegree> <http://www.w3.org/2000/01/rdf-schema#label> "Doctorat"@fr-be .
+<http://purl.org/hercules/asio/core#ResearchInstitute> <http://www.w3.org/2000/01/rdf-schema#label> "Centre de recherche"@fr .
+<http://purl.org/hercules/asio/core#Publication> <http://www.w3.org/2000/01/rdf-schema#label> "Publica\u00E7\u00E3o"@pt .
+<http://purl.org/hercules/asio/core#MastersThesis> <http://www.w3.org/2000/01/rdf-schema#label> "Tesis de maestr\u00EDa"@es-mx .
+<http://purl.org/hercules/asio/core#PhDThesis> <http://www.w3.org/2000/01/rdf-schema#label> "Tese doctoral"@gl .
+<http://purl.org/hercules/asio/core#Publication> <http://www.w3.org/2000/01/rdf-schema#label> "Publicaci\u00F3"@ca-es .
+<http://purl.org/hercules/asio/core#Company> <http://www.w3.org/2000/01/rdf-schema#label> "Empresa"@gl .
+<http://purl.org/hercules/asio/core#qualifiedvaluation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/hercules/asio/core#QualifiedValue> .
+<http://purl.org/hercules/asio/core#PASlaboral> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/hercules/asio/core#Role> .
+<http://purl.org/hercules/asio/core#CV> <http://www.w3.org/2004/02/skos/core#altLabel> "Curriculum vitae"@es .
+<http://purl.org/hercules/asio/core#projectKeyword> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/hercules/asio/core#RegionalProject> <http://www.w3.org/2004/02/skos/core#prefLabel> "Projecte regional"@ca-es .
+<http://purl.org/hercules/asio/core#patentAssignee> <http://www.w3.org/2000/01/rdf-schema#range> <http://xmlns.com/foaf/0.1/Organization> .
+<http://purl.org/hercules/asio/core#MastersThesis> <http://www.w3.org/2000/01/rdf-schema#comment> "A thesis reporting a research project undertaken as part of a second-cycle course of education to receive a master's degree."@en .
+<http://purl.org/hercules/asio/core#FundingProgramme> <http://www.w3.org/2002/07/owl#equivalentClass> <http://purl.org/cerif/frapo/FundingProgramme> .
+<http://purl.org/hercules/asio/core#MastersDegree> <http://www.w3.org/2004/02/skos/core#prefLabel> "Ma\u00EEtrise universitaire"@fr-ch .
+<http://purl.org/hercules/asio/core#AdministrativeEntity> <http://www.w3.org/2004/02/skos/core#prefLabel> "Entitats administratives"@ca-ad .
+<http://purl.org/hercules/asio/core#Publication> <http://www.w3.org/2000/01/rdf-schema#label> "Publication"@fr .
+<http://purl.org/hercules/asio/core#projectObjective> <http://www.w3.org/2000/01/rdf-schema#label> "project objective"@en .
+<http://purl.org/hercules/asio/core#Company> <http://www.w3.org/2002/07/owl#equivalentClass> <http://purl.org/cerif/frapo/Company> .
+<http://purl.org/hercules/asio/core#coauthors> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/hercules/asio/core#Publication> .
+<http://purl.org/hercules/asio/core#ResearchField> <http://www.w3.org/2000/01/rdf-schema#label> "Research field"@en .
+<http://purl.org/hercules/asio/core#isCoauthoredBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://xmlns.com/foaf/0.1/Agent> .
+<http://purl.org/hercules/asio/core#University> <http://www.w3.org/2002/07/owl#equivalentClass> <http://dbpedia.org/ontology/University> .
+<http://purl.org/hercules/asio/core#researchesIn> <http://www.w3.org/2000/01/rdf-schema#label> "researches in"@en .
+<http://purl.org/hercules/asio/core#capital> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/hercules/asio/core#BacherlorsDegree> <http://www.w3.org/2000/01/rdf-schema#label> "T\u00EDtulo de grado"@es .
+<http://purl.org/hercules/asio/core#PASfuncionario> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/hercules/asio/core#Budget> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/hercules/asio/core#ServiceContract> <http://www.w3.org/2000/01/rdf-schema#label> "Contrato de servicio"@es .
+<http://purl.org/hercules/asio/core#BacherlorsDegree> <http://www.w3.org/2004/02/skos/core#prefLabel> "T\u00EDtulo de grado"@es .
+<http://purl.org/hercules/asio/core#Country> <http://www.w3.org/2000/01/rdf-schema#label> "Pa\u00EDs"@pt .
+<http://purl.org/hercules/asio/core#Context> <http://www.w3.org/2000/01/rdf-schema#label> "Context"@en .
+<http://purl.org/hercules/asio/core#RegionalProject> <http://www.w3.org/2000/01/rdf-schema#label> "Projecte regional"@ca-es .
+<http://purl.org/hercules/asio/core#MastersDegree> <http://www.w3.org/2004/02/skos/core#prefLabel> "Mestrado"@pt-br .
+<http://purl.org/hercules/asio/core#ResearchGroup> <http://www.w3.org/2004/02/skos/core#prefLabel> "Grupo de investigaci\u00F3n"@es .
+<http://purl.org/hercules/asio/core#Contract> <http://www.w3.org/2000/01/rdf-schema#label> "Contrato"@pt .
+<http://purl.org/hercules/asio/modules#ScientificDomain> <http://www.w3.org/2004/02/skos/core#prefLabel> "Dominis cient\u00EDfics"@ca-es .
+<http://purl.org/hercules/asio/core#Company> <http://www.w3.org/2004/02/skos/core#prefLabel> "Empresa"@ca-ad .
+<http://purl.org/hercules/asio/core#DoctoralDegree> <http://www.w3.org/2000/01/rdf-schema#label> "Doutoramento"@gl .
+<http://purl.org/hercules/asio/core#MastersThesis> <http://www.w3.org/2004/02/skos/core#altLabel> "MALa"@es-eu .
+<http://purl.org/hercules/asio/core#coordinatedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://xmlns.com/foaf/0.1/Agent> .
+<http://purl.org/hercules/asio/core#Company> <http://www.w3.org/2004/02/skos/core#prefLabel> "Empresa"@pt .
+<http://purl.org/hercules/asio/core#terminated> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/hercules/asio/core#Status> .
+<http://purl.org/hercules/asio/core#projectCoordinator> <http://www.w3.org/2000/01/rdf-schema#comment> "A property to link an agent (person or organisation) with a project in the role of coordinator."@en .
+<http://purl.org/hercules/asio/core#Manual> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/hercules/asio/core#ScientificPublication> .
+<http://purl.org/hercules/asio/core#Publishes> <http://www.w3.org/2000/01/rdf-schema#label> "publishes"@en .
+<http://purl.org/hercules/asio/core#BachelorsThesis> <http://www.w3.org/2004/02/skos/core#altLabel> "TFG"@gl .
+<http://purl.org/hercules/asio/core#Contract> <http://www.w3.org/2004/02/skos/core#prefLabel> "Contracte"@ca-es .
+<http://purl.org/hercules/asio/core#EmploymentContract> <http://www.w3.org/2000/01/rdf-schema#label> "Employment contract"@en .
+<http://purl.org/hercules/asio/core#RegionalProject> <http://www.w3.org/2000/01/rdf-schema#label> "Proyecto regional"@es .
+<http://purl.org/hercules/asio/core#PASlaboral> <http://www.w3.org/2000/01/rdf-schema#label> "PAS laboral"@ca-ad .
+<http://purl.org/hercules/asio/core#University> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/hercules/asio/core#CV> <http://www.w3.org/2000/01/rdf-schema#label> "Curr\u00EDculum vitae"@gl .
+<http://purl.org/hercules/asio/core#Company> <http://www.w3.org/2004/02/skos/core#prefLabel> "Empresa"@gl .
+<http://purl.org/hercules/asio/core#UniversityDivision> <http://www.w3.org/2000/01/rdf-schema#label> "University division"@en .
+<http://purl.org/hercules/asio/core#InternationalProject> <http://www.w3.org/2000/01/rdf-schema#label> "International project"@en .
+<http://purl.org/hercules/asio/core#CV> <http://www.w3.org/2004/02/skos/core#prefLabel> "Curriculum vitae"@pt .
+<http://purl.org/hercules/asio/core#BacherlorsDegree> <http://www.w3.org/2004/02/skos/core#altLabel> "Grado"@es .
+<http://purl.org/hercules/asio/core#ResearchInstitute> <http://www.w3.org/2000/01/rdf-schema#comment> "An establishment founded for doing research."@en .
+<http://purl.org/hercules/asio/core#ResearchInstitute> <http://www.w3.org/2002/07/owl#equivalentClass> <http://vivoweb.org/ontology/core#ResearchOrganization> .
+<http://purl.org/hercules/asio/core#MastersDegree> <http://www.w3.org/2000/01/rdf-schema#label> "M\u00E0ster universitari"@ca-es .
+<http://purl.org/hercules/asio/core#Thesis> <http://www.w3.org/2000/01/rdf-schema#label> "Tesi"@ca-ad .
+<http://purl.org/cerif/frapo/FinancialEntity> <http://www.w3.org/2000/01/rdf-schema#label> "Ens financera"@ca-es .
+<http://purl.org/hercules/asio/core#signed> <http://www.w3.org/2000/01/rdf-schema#label> "Signed"@en .
+<http://purl.org/hercules/asio/core#FundingOrganization> <http://www.w3.org/2002/07/owl#equivalentClass> <http://purl.org/cerif/frapo/FundingAgency> .
+<http://purl.org/hercules/asio/core#TitularUniversidad> <http://www.w3.org/2000/01/rdf-schema#label> "Profesor titular de universidade"@gl .
+<http://purl.org/hercules/asio/core#AcademicDegree> <http://www.w3.org/2004/02/skos/core#prefLabel> "Grau acad\u00E9mico"@pt-pt .
+<http://purl.org/hercules/asio/core#University> <http://www.w3.org/2004/02/skos/core#prefLabel> "Universitat"@ca-ad .
+<http://purl.org/hercules/asio/core#i10-index> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/hercules/asio/core#ResearchMethod> <http://www.w3.org/2004/02/skos/core#prefLabel> "Research method"@en .
+<http://purl.org/hercules/asio/core#ServiceContract> <http://www.w3.org/2000/01/rdf-schema#label> "Contrato de servi\u00E7o"@pt .
+<http://purl.org/hercules/asio/core#TechnicalReport> <http://www.w3.org/2000/01/rdf-schema#label> "Technical report"@en .
+<http://purl.org/hercules/asio/core#Book> <http://www.w3.org/2000/01/rdf-schema#label> "Book"@en .
+<http://purl.org/hercules/asio/core#UniversityDivision> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/hercules/asio/core#University> .
+<http://purl.org/hercules/asio/core#SME> <http://www.w3.org/2000/01/rdf-schema#label> "Petite ou moyenne entreprise"@fr .
+<http://purl.org/hercules/asio/core#Prototype> <http://www.w3.org/2000/01/rdf-schema#label> "Prototype"@en .
+<http://purl.org/hercules/asio/core#projectBudget> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/hercules/asio/core#Country> <http://www.w3.org/2000/01/rdf-schema#label> "Pa\u00EDs"@es .
+<http://purl.org/hercules/asio/core#UndergraduateStudent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/hercules/asio/core#isMemberOf> <http://www.w3.org/2002/07/owl#inverseOf> <http://xmlns.com/foaf/0.1/member> .
+<http://purl.org/hercules/asio/core#ResearchContribution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://xmlns.com/foaf/0.1/Project> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/hercules/asio/core#PhDThesis> <http://www.w3.org/2004/02/skos/core#prefLabel> "Tese de doutoramento"@pt .
+<http://purl.org/hercules/asio/core#EmploymentContract> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/hercules/asio/core#Contract> .
+<http://purl.org/hercules/asio/core#SpainUniversityStaffing> <http://www.w3.org/2004/02/skos/core#prefLabel> "Spain's university staffing"@en .
+<http://purl.org/hercules/asio/core#rejected> <http://www.w3.org/2000/01/rdf-schema#label> "Rejected"@en .
+<http://purl.org/hercules/asio/core#CatedraticoUniversidad> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/hercules/asio/core#Role> .
+<http://purl.org/hercules/asio/core#authors> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/hercules/asio/core#UniversityDivision> <http://www.w3.org/2000/01/rdf-schema#label> "Divisi\u00F3n de universidad"@es .
+<http://purl.org/hercules/asio/core#MastersThesis> <http://www.w3.org/2004/02/skos/core#altLabel> "Trabajo de fin de master"@es-es .
+<http://purl.org/hercules/asio/core#DoctoralDegree> <http://www.w3.org/2000/01/rdf-schema#label> "Doktorego"@eu .
+<http://purl.org/hercules/asio/core#hasDOI> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://purl.org/hercules/asio/core#BachelorsThesis> <http://www.w3.org/2004/02/skos/core#altLabel> "TFG"@es .
+<http://purl.org/hercules/asio/core#patentInventor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/hercules/asio/core#Budget> <http://www.w3.org/2004/02/skos/core#prefLabel> "Aurrekontu"@eu .
+<http://purl.org/hercules/asio/core#patentDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/hercules/asio/core#atContext> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/hercules/asio/core#hasResearchLine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/hercules/asio/core#coadvises> <http://www.w3.org/2000/01/rdf-schema#comment> "A person co-advises an academic publication (bachelor thesis, master thesis or doctoral thesis)."@en .
+<http://purl.org/hercules/asio/core#MasterStudent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/hercules/asio/core#Role> .
+<http://purl.org/hercules/asio/core#RegionalProject> <http://www.w3.org/2004/02/skos/core#prefLabel> "Proyecto regional"@es .
+<http://purl.org/hercules/asio/core#BachelorsThesis> <http://www.w3.org/2002/07/owl#disjointWith> <http://purl.org/hercules/asio/core#MastersThesis> .
+<http://purl.org/hercules/asio/core#Patent> <http://www.w3.org/2000/01/rdf-schema#comment> "A form of intellectual property that gives its owner the legal right to exclude others from making, using, selling and importing an invention for a limited period of years, in exchange for publishing an enabling public disclosure of the invention."@en .
+<http://purl.org/hercules/asio/core#Contract> <http://www.w3.org/2002/07/owl#equivalentClass> <http://purl.org/cerif/frapo/Contract> .
+<http://purl.org/hercules/asio/core#h-index> <http://www.w3.org/2000/01/rdf-schema#label> "A property to express the h-index of an author."@en .
+<http://purl.org/hercules/asio/core#Publication> <http://www.w3.org/2002/07/owl#equivalentClass> <http://sw-portal.deri.org/ontologies/swportal#Publication> .
+<http://purl.org/hercules/asio/core#isCoauthoredBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/hercules/asio/core#BachelorsThesis> <http://www.w3.org/2000/01/rdf-schema#label> "Treball fi de grau"@ca-es .
+<http://purl.org/hercules/asio/core#CV> <http://www.w3.org/2000/01/rdf-schema#label> "Curr\u00EDculum vitae"@es .
+<http://purl.org/hercules/asio/core#qualifieddate> <http://www.w3.org/2000/01/rdf-schema#label> "qualified date"@en .
+<http://purl.org/hercules/asio/core#mainResearcherParticipant> <http://www.w3.org/2000/01/rdf-schema#label> "main researcher participant"@en .
+<http://purl.org/hercules/asio/core#patentCountry> <http://www.w3.org/2000/01/rdf-schema#label> "patent country"@en .
+<http://purl.org/hercules/asio/core#Publication> <http://www.w3.org/2004/02/skos/core#prefLabel> "Publicaci\u00F3n"@es .
+<http://purl.org/hercules/asio/core#CV> <http://www.w3.org/2004/02/skos/core#altLabel> "Curriculum vit\u00E6"@pt .
+<http://purl.org/hercules/asio/core#Patent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/hercules/asio/core#funded> <http://www.w3.org/2000/01/rdf-schema#label> "Funded"@en .
+<http://purl.org/hercules/asio/core#AdministrativeEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/hercules/asio/core#utilizes> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/hercules/asio/core#ResearchMaterial> .
+<http://purl.org/hercules/asio/core#Funding> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/cerif/frapo/FinancialEntity> .
+<http://purl.org/hercules/asio/core#Contract> <http://www.w3.org/2000/01/rdf-schema#label> "Contrato"@gl .
+<http://purl.org/hercules/asio/core#> <http://purl.org/dc/elements/1.1/description> "FIXME"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://purl.org/hercules/asio/core#Spinoff> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/hercules/asio/core#UniversityDivision> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/hercules/asio/core#Patent> <http://www.w3.org/2004/02/skos/core#prefLabel> "Patente"@eu .
+<http://purl.org/hercules/asio/core#Patent> <http://www.w3.org/2002/07/owl#equivalentClass> <http://semanticscience.org/resource/SIO_000153> .
+<http://purl.org/hercules/asio/core#isAwardedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://purl.org/hercules/asio/core#funds> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Agent> .
+<http://purl.org/hercules/asio/core#Patent> <http://www.w3.org/2004/02/skos/core#prefLabel> "Patente"@pt .
+<http://purl.org/hercules/asio/core#coauthors> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/hercules/asio/core#MastersThesis> <http://www.w3.org/2004/02/skos/core#prefLabel> "Tesis de maestr\u00EDa"@es-ar .
+<http://purl.org/hercules/asio/core#Publishes> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Agent> .
+<http://purl.org/hercules/asio/core#Spinoff> <http://www.w3.org/2000/01/rdf-schema#label> "Empresa derivada"@pt .
+<http://purl.org/hercules/asio/core#profiles> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Agent> .
+<http://purl.org/hercules/asio/core#PhDThesis> <http://www.w3.org/2000/01/rdf-schema#label> "Tesi doctoral"@ca-ad .
+<http://purl.org/hercules/asio/core#ResearchProblem> <http://www.w3.org/2000/01/rdf-schema#label> "Research problem"@en .
+<http://purl.org/hercules/asio/core#Book> <http://www.w3.org/2004/02/skos/core#prefLabel> "Livro"@pt .
+<http://purl.org/hercules/asio/core#MastersDegree> <http://www.w3.org/2004/02/skos/core#altLabel> "Mestratge universitari"@ca-es .
+<http://purl.org/hercules/asio/core#MastersThesis> <http://www.w3.org/2000/01/rdf-schema#label> "Treball de fi de m\u00E0ster"@ca-es .
+<http://purl.org/hercules/asio/core#EditedPublication> <http://www.w3.org/2000/01/rdf-schema#label> "Edited publication"@en .
+<http://purl.org/hercules/asio/core#ResearchMaterial> <http://www.w3.org/2002/07/owl#equivalentClass> <http://orkg.org/core#ResearchMaterial> .
+<http://purl.org/hercules/asio/core#SpainUniversityStaffing> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<http://purl.org/hercules/asio/core#hasPatent> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/hercules/asio/core#Patent> .
+<http://purl.org/hercules/asio/core#MastersDegree> <http://www.w3.org/2004/02/skos/core#prefLabel> "M\u00E0ster universitari"@ca-ad .
+<http://purl.org/hercules/asio/core#country> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/hercules/asio/core#Profile> <http://www.w3.org/2000/01/rdf-schema#comment> "A profile represents a particular person playing a given role. In the specialised literature it is also known as a \"qua-individual\". The ASIO core ontology extends the meaning of profile to capture \"person-as-role\", \"person-at-context\" and \"person-in-community\"."@en .
+<http://purl.org/hercules/asio/core#MastersThesis> <http://www.w3.org/2004/02/skos/core#prefLabel> "Tesis de maestr\u00EDa"@es-co .
+<http://purl.org/hercules/asio/core#SpainUniversityStaffing> <http://www.w3.org/2000/01/rdf-schema#label> "Spain's university staffing"@en .
+<http://purl.org/hercules/asio/core#employs> <http://www.w3.org/2002/07/owl#equivalentProperty> <http://orkg.org/core#employs> .
+<http://purl.org/hercules/asio/core#BacherlorsDegree> <http://www.w3.org/2004/02/skos/core#altLabel> "Grau"@pt .
+<http://purl.org/hercules/asio/core#BachelorsThesis> <http://www.w3.org/2004/02/skos/core#altLabel> "Honour's thesis"@en-ca .
+<http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Agent> .
+<http://purl.org/hercules/asio/core#PhDThesis> <http://www.w3.org/2004/02/skos/core#prefLabel> "Tesis doctoral"@es .
+<http://purl.org/hercules/asio/core#Article> <http://www.w3.org/2002/07/owl#equivalentClass> <http://purl.org/ontology/bibo/AcademicArticle> .
+<http://purl.org/hercules/asio/core#CV> <http://www.w3.org/2004/02/skos/core#altLabel> "R\u00E9sum\u00E9"@en .
+<http://purl.org/hercules/asio/core#projectEndDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Project> .
+<http://purl.org/hercules/asio/core#DoctoralDegree> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/hercules/asio/core#AcademicDegree> .
+<http://purl.org/hercules/asio/core#projectAcronym> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://purl.org/hercules/asio/core#publicationDate> <http://www.w3.org/2000/01/rdf-schema#label> "publication date"@en .
+<http://purl.org/hercules/asio/core#hasCode> <http://www.w3.org/2000/01/rdf-schema#label> "has Code"@en .
+<http://purl.org/hercules/asio/core#AcademicPublication> <http://www.w3.org/2004/02/skos/core#prefLabel> "Publicaci\u00F3 acad\u00E8mica"@ca-ad .
+<http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/hercules/asio/core#Thesis> <http://www.w3.org/2000/01/rdf-schema#label> "Th\u00E8se"@fr .
+<http://purl.org/hercules/asio/core#addresses> <http://www.w3.org/2000/01/rdf-schema#label> "addresses"@en .
+<http://purl.org/hercules/asio/core#ResearchGroup> <http://www.w3.org/2000/01/rdf-schema#comment> "A group of researchers often from the same centre, specialised on the same subject, working together on the issue or topic."@en .
+<http://purl.org/hercules/asio/core#hasCV> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/hercules/asio/core#CV> .
+<http://purl.org/hercules/asio/core#Profile> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/hercules/asio/core#MastersDegree> <http://www.w3.org/2004/02/skos/core#prefLabel> "Mestrado"@pt-pt .
+<http://purl.org/hercules/asio/core#employs> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/hercules/asio/core#ResearchMethod> .
+<http://purl.org/hercules/asio/core#Contract> <http://www.w3.org/2004/02/skos/core#prefLabel> "Contract"@en .
+<http://purl.org/hercules/asio/core#MastersDegree> <http://www.w3.org/2000/01/rdf-schema#label> "M\u00E1ster universitario"@gl .
+<http://purl.org/hercules/asio/core#FundingOrganization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/hercules/asio/core#BachelorsThesis> <http://www.w3.org/2004/02/skos/core#prefLabel> "Bachelor's thesis"@en .
+<http://purl.org/hercules/asio/core#AdministrativeEntity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<http://purl.org/hercules/asio/core#Book> <http://www.w3.org/2000/01/rdf-schema#label> "Llibre"@ca-ad .
+<http://purl.org/hercules/asio/core#BachelorsThesis> <http://www.w3.org/2004/02/skos/core#prefLabel> "M\u00E9moire de fin de licence"@fr .
+<http://purl.org/hercules/asio/core#EmploymentContract> <http://www.w3.org/2000/01/rdf-schema#label> "Contracte de treball"@ca-ad .
+<http://purl.org/hercules/asio/core#Budget> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/cerif/frapo/FinancialEntity> .
+<http://purl.org/hercules/asio/core#funds> <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/hercules/asio/core#isFundedBy> .
+<http://purl.org/hercules/asio/core#SealOfQuality> <http://www.w3.org/2004/02/skos/core#prefLabel> "Label qualit\u00E9"@fr .
+<http://purl.org/hercules/asio/core#Country> <http://www.w3.org/2000/01/rdf-schema#comment> "A region legally identified as a distinct entity in political geography."@en .
+<http://purl.org/hercules/asio/core#MasterStudent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/hercules/asio/core#coadvises> <http://www.w3.org/2000/01/rdf-schema#label> "co-advises"@en .
+<http://purl.org/hercules/asio/core#Role> <http://www.w3.org/2000/01/rdf-schema#comment> "A condition/status/position that can be predicated of a person. In the ASIO core ontology, roles are reified as first order individuals and relations between roles and players are expressed by means of the asio:plays property. The ASIO core ontology does not impose any subclassification of roles. The concept is open to be refined according to domain or application requirements."@en .
+<http://purl.org/hercules/asio/core#ScientificPublication> <http://www.w3.org/2000/01/rdf-schema#label> "Publicaci\u00F3 cient\u00EDfica"@ca-ad .
+<http://purl.org/hercules/asio/core#hasCode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://purl.org/hercules/asio/core#DoctoralDegree> <http://www.w3.org/2000/01/rdf-schema#label> "Doutoramento"@pt .
+<http://purl.org/hercules/asio/core#MastersThesis> <http://www.w3.org/2000/01/rdf-schema#label> "Tesis de maestr\u00EDa"@es-co .
+<http://purl.org/hercules/asio/core#BacherlorsDegree> <http://www.w3.org/2004/02/skos/core#prefLabel> "Licenciatura (p\u00F3s-Bologna)"@pt-pt .
+<http://purl.org/hercules/asio/core#Contract> <http://www.w3.org/2002/07/owl#equivalentClass> <http://purl.org/procurement/public-contracts#Contract> .
+<http://purl.org/hercules/asio/core#publicationDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
+<http://purl.org/hercules/asio/core#SealOfQuality> <http://www.w3.org/2000/01/rdf-schema#label> "Selo de qualidade"@pt .
+<http://purl.org/hercules/asio/core#authorCitation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Person> .
+<http://purl.org/hercules/asio/core#hasORCID> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Person> .
+<http://purl.org/hercules/asio/core#Grant> <http://www.w3.org/2000/01/rdf-schema#label> "Grant"@en .
+<http://purl.org/hercules/asio/core#MastersDegree> <http://www.w3.org/2004/02/skos/core#prefLabel> "Magister Scientiae"@es-ve .
+<http://purl.org/hercules/asio/core#ResearchInstitute> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Organization> .
+<http://purl.org/hercules/asio/core#Spinoff> <http://www.w3.org/2004/02/skos/core#prefLabel> "Empresa derivada"@pt .
+<http://purl.org/hercules/asio/core#ProjectBudget> <http://www.w3.org/2000/01/rdf-schema#label> "Pressupost de projecte"@ca-es .
+<http://purl.org/hercules/asio/modules#ScientificDomain> <http://www.w3.org/2000/01/rdf-schema#label> "Dominis cient\u00EDfics"@ca-ad .
+<http://purl.org/hercules/asio/core#projectStartDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
+<http://purl.org/hercules/asio/core#PhDThesis> <http://www.w3.org/2000/01/rdf-schema#label> "Tesi doctoral"@ca-es .
+<http://purl.org/hercules/asio/core#DoctoralDegree> <http://www.w3.org/2004/02/skos/core#prefLabel> "Doctorat"@fr-ch .
+<http://purl.org/hercules/asio/core#isCoauthoredBy> <http://www.w3.org/2000/01/rdf-schema#label> "is co-authored by"@en .
+<http://purl.org/hercules/asio/core#Thesis> <http://www.w3.org/2000/01/rdf-schema#label> "Tese"@pt .
+<http://purl.org/hercules/asio/core#Funding> <http://www.w3.org/2002/07/owl#equivalentClass> <http://purl.org/cerif/frapo/Funding> .
+<http://purl.org/hercules/asio/core#ResearchMaterial> <http://www.w3.org/2004/02/skos/core#prefLabel> "Research material"@en .
+<http://purl.org/hercules/asio/core#hasResearchLine> <http://www.w3.org/2000/01/rdf-schema#comment> "a property linking organizations or groups with scientific domains"@en .
+<http://purl.org/hercules/asio/core#coadvisedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/hercules/asio/core#BachelorsThesis> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/hercules/asio/core#Thesis> .
+<http://purl.org/hercules/asio/core#Budget> <http://www.w3.org/2000/01/rdf-schema#label> "Aurrekontu"@eu .
+<http://purl.org/hercules/asio/core#Article> <http://www.w3.org/2002/07/owl#equivalentClass> <http://www.ontotext.com/proton/protonext#Article> .
+<http://purl.org/hercules/asio/core#SME> <http://www.w3.org/2000/01/rdf-schema#label> "Peque\u00F1a y mediana empresa"@es .
+<http://purl.org/hercules/asio/core#hasResearchLine> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://purl.org/hercules/asio/core#h-index> <http://www.w3.org/2000/01/rdf-schema#label> "h-index"@en .
+<http://purl.org/hercules/asio/core#RegionalProject> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Project> .
+<http://purl.org/hercules/asio/core#ResearchMaterial> <http://www.w3.org/2000/01/rdf-schema#label> "Research material"@en .
+<http://purl.org/hercules/asio/core#Publication> <http://www.w3.org/2000/01/rdf-schema#label> "Publication"@en .
+<http://purl.org/hercules/asio/core#AdministrativeEntity> <http://www.w3.org/2000/01/rdf-schema#label> "Entidades administrativas"@es .
+<http://purl.org/hercules/asio/core#University> <http://www.w3.org/2000/01/rdf-schema#label> "Unibertsitate"@eu .
+<http://purl.org/hercules/asio/core#coordinatedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "inverse property of 'project coordinator'"@en .
+<http://purl.org/hercules/asio/core#Publication> <http://www.w3.org/2000/01/rdf-schema#label> "Publicaci\u00F3n"@es .
+<http://purl.org/hercules/asio/core#ScientificPublication> <http://www.w3.org/2004/02/skos/core#prefLabel> "Publica\u00E7\u00E3o cient\u00EDfica"@pt .
+<http://purl.org/hercules/asio/core#Publication> <http://www.w3.org/2002/07/owl#equivalentClass> <http://eurocris.org/ontology/semcerif#Publication> .
+<http://purl.org/hercules/asio/core#awardedWith> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/hercules/asio/core#Publication> .
+<http://purl.org/hercules/asio/core#Thesis> <http://www.w3.org/2000/01/rdf-schema#label> "Tesi"@eu .
+<http://purl.org/hercules/asio/core#ResearchGroup> <http://www.w3.org/2004/02/skos/core#prefLabel> "Group de recherche"@fr .
+<http://purl.org/hercules/asio/core#projectKeyword> <http://www.w3.org/2000/01/rdf-schema#comment> "A key word of the project."@en .
+<http://purl.org/hercules/asio/core#University> <http://www.w3.org/2004/02/skos/core#prefLabel> "Unibertsitate"@eu .
+<http://purl.org/hercules/asio/core#Article> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/hercules/asio/core#CatedraticoEscuelaUniversitaria> <http://www.w3.org/2000/01/rdf-schema#label> "Catedr\u00E1ticu d'escuela universitaria"@ast .
+<http://purl.org/hercules/asio/core#DoctoralDegree> <http://www.w3.org/2004/02/skos/core#altLabel> "Doctorate"@en .
+<http://purl.org/hercules/asio/core#EmploymentContract> <http://www.w3.org/2004/02/skos/core#prefLabel> "Contracte de treball"@ca-es .
+<http://purl.org/hercules/asio/core#EuropeanProject> <http://www.w3.org/2004/02/skos/core#prefLabel> "Proyecto europeo"@es .
+<http://purl.org/hercules/asio/core#Company> <http://www.w3.org/2000/01/rdf-schema#comment> "A corporation or business organization which makes goods (in a broad sense) in an organized manner and sells them to the public for profit."@en .
+<http://purl.org/hercules/asio/core#awardedWith> <http://www.w3.org/2000/01/rdf-schema#label> "awarded with"@en .
+<http://purl.org/hercules/asio/core#projectStartDate> <http://www.w3.org/2000/01/rdf-schema#label> "project start date"@en .
+<http://purl.org/hercules/asio/core#CV> <http://www.w3.org/2004/02/skos/core#altLabel> "Curr\u00EDculo"@pt .
+<http://purl.org/hercules/asio/core#Budget> <http://www.w3.org/2000/01/rdf-schema#label> "Pressupost"@ca-es .
+<http://purl.org/hercules/asio/core#MastersDegree> <http://www.w3.org/2004/02/skos/core#prefLabel> "Ma\u00EEtrise universitaire"@fr-be .
+<http://purl.org/hercules/asio/core#ServiceContract> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/hercules/asio/core#Contract> .
+<http://purl.org/hercules/asio/core#projectEndDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
+<http://purl.org/hercules/asio/core#CV> <http://www.w3.org/2002/07/owl#equivalentClass> <http://acm.rkbexplorer.com/ontologies/acm#K.3.2.2> .
+<http://purl.org/hercules/asio/core#CV> <http://www.w3.org/2004/02/skos/core#altLabel> "Curriculum vitae"@ca .
+<http://purl.org/hercules/asio/core#MastersThesis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/hercules/asio/core#plays> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/hercules/asio/core#PeerReviewedArticle> <http://www.w3.org/2000/01/rdf-schema#label> "Peer-reviewed article"@en .
+<http://purl.org/hercules/asio/core#DoctoralDegree> <http://www.w3.org/2004/02/skos/core#altLabel> "Doktoretza"@eu .
+<http://purl.org/hercules/asio/core#AcademicDegree> <http://www.w3.org/2000/01/rdf-schema#label> "Grau acad\u00E8mic"@ca-ad .
+<http://purl.org/hercules/asio/core#AcademicPublication> <http://www.w3.org/2000/01/rdf-schema#label> "Publicaci\u00F3n acad\u00E9mica"@es .
+<http://purl.org/hercules/asio/core#projectCoordinator> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Agent> .
+<http://purl.org/hercules/asio/core#MastersThesis> <http://www.w3.org/2000/01/rdf-schema#label> "Disserta\u00E7\u00E3o de mestrado"@pt-br .
+<http://purl.org/hercules/asio/core#Patent> <http://www.w3.org/2002/07/owl#equivalentClass> <http://purl.org/cerif/Patent> .
+<http://purl.org/hercules/asio/core#patentInventor> <http://www.w3.org/2000/01/rdf-schema#label> "patent inventor"@en .
+<http://purl.org/hercules/asio/core#projectID> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Project> .
+<http://purl.org/hercules/asio/core#Spinoff> <http://www.w3.org/2000/01/rdf-schema#comment> "A division of a company or an organization that becomes an independent business with assets, employees, intellectual property, technology, or existing products taken from the parent company."@en .
+<http://purl.org/hercules/asio/core#> <http://purl.org/dc/elements/1.1/creator> "Emilio Rubiera Azcona"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://purl.org/hercules/asio/core#hasCode> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://purl.org/hercules/asio/core#Context> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/hercules/asio/core#SealOfQuality> <http://www.w3.org/2000/01/rdf-schema#label> "Segell de qualitat"@ca-ad .
+<http://purl.org/hercules/asio/core#ResearchInstitute> <http://www.w3.org/2002/07/owl#equivalentClass> <http://sw-portal.deri.org/ontologies/swportal#ResearchInstitute> .
+<http://purl.org/hercules/asio/core#Publishes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/hercules/asio/core#CV> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/hercules/asio/core#authorCitation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/hercules/asio/core#MastersDegree> <http://www.w3.org/2004/02/skos/core#prefLabel> "M\u00E1ster universitario"@gl .
+<http://purl.org/hercules/asio/core#isFundedBy> <http://www.w3.org/2002/07/owl#equivalentProperty> <http://purl.org/cerif/frapo/isFundedBy> .
+<http://purl.org/hercules/asio/core#hasResearchField> <http://www.w3.org/2000/01/rdf-schema#label> "has research field"@en .
+<http://purl.org/hercules/asio/core#hasResearcherID> <http://www.w3.org/2000/01/rdf-schema#label> "has Researcher ID"@en .
+<http://purl.org/wf4ever/ro#ResearchObject> <http://www.w3.org/2000/01/rdf-schema#label> "Research object"@en .
+<http://purl.org/hercules/asio/core#hasTRL> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://purl.org/hercules/asio/core#AcademicDegree> <http://www.w3.org/2004/02/skos/core#prefLabel> "Grau acad\u00EAmico"@pt-br .
+<http://purl.org/hercules/asio/core#SME> <http://www.w3.org/2004/02/skos/core#prefLabel> "Pequena e m\u00E9dia empresa"@pt .
+<http://purl.org/hercules/asio/core#MastersThesis> <http://www.w3.org/2004/02/skos/core#altLabel> "Traballo de fin de mestrado"@gl .
+<http://purl.org/hercules/asio/core#Spinoff> <http://www.w3.org/2004/02/skos/core#prefLabel> "Soci\u00E9t\u00E9 scind\u00E9e"@fr .
+<http://purl.org/hercules/asio/core#Workshop> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/hercules/asio/core#isAuthoredBy> <http://www.w3.org/2000/01/rdf-schema#label> "is authored by"@en .
+<http://purl.org/hercules/asio/core#ResearchMethod> <http://www.w3.org/2002/07/owl#equivalentClass> <http://orkg.org/core#ResearchMethod> .
+<http://purl.org/hercules/asio/core#funds> <http://www.w3.org/2000/01/rdf-schema#label> "funds"@en .
+<http://purl.org/hercules/asio/core#MastersThesis> <http://www.w3.org/2002/07/owl#equivalentClass> <http://sw-portal.deri.org/ontologies/swportal#MasterThesis> .
+<http://purl.org/hercules/asio/core#PhDThesis> <http://www.w3.org/2002/07/owl#equivalentClass> <http://sw-portal.deri.org/ontologies/swportal#PhDThesis> .
+<http://purl.org/hercules/asio/core#AcademicPublication> <http://www.w3.org/2004/02/skos/core#prefLabel> "Academic publication"@en .
+<http://purl.org/hercules/asio/core#MastersThesis> <http://www.w3.org/2002/07/owl#equivalentClass> <http://swrc.ontoware.org/ontology#MasterThesis> .
+<http://purl.org/hercules/asio/core#ProjectBudget> <http://www.w3.org/2004/02/skos/core#prefLabel> "Project budget"@en .
+<http://purl.org/hercules/asio/core#RegionalProject> <http://www.w3.org/2000/01/rdf-schema#label> "Projecte regional"@ca-ad .
+<http://purl.org/hercules/asio/core#ScientificPublication> <http://www.w3.org/2004/02/skos/core#prefLabel> "Publicaci\u00F3 cient\u00EDfica"@ca-es .
+<http://purl.org/hercules/asio/core#PhDThesis> <http://www.w3.org/2004/02/skos/core#prefLabel> "Th\u00E8se doctorale"@fr .
+<http://purl.org/hercules/asio/core#Budget> <http://www.w3.org/2004/02/skos/core#prefLabel> "Or\u00E7amento"@pt .
+<http://purl.org/hercules/asio/core#AcademicDegree> <http://www.w3.org/2000/01/rdf-schema#label> "Unibertsitate-gradu"@eu .
+<http://purl.org/hercules/asio/core#University> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Organization> .
+<http://purl.org/hercules/asio/core#isGrantedWith> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Person> .
+<http://purl.org/hercules/asio/core#MastersThesis> <http://www.w3.org/2000/01/rdf-schema#label> "Tesis de maestr\u00EDa"@es-cu .
+<http://purl.org/hercules/asio/core#Thesis> <http://www.w3.org/2000/01/rdf-schema#comment> "Any kind of thesis (bachelor's, master's, PhD) produced to receive some sort of university degree."@en .
+<http://purl.org/hercules/asio/core#Contract> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/hercules/asio/core#NationalProject> <http://www.w3.org/2004/02/skos/core#prefLabel> "Projet national"@fr .
+<http://purl.org/hercules/asio/core#PhDThesis> <http://www.w3.org/2000/01/rdf-schema#label> "Th\u00E8se doctorale"@fr .
+<http://purl.org/hercules/asio/core#CatedraticoEscuelaUniversitaria> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/hercules/asio/core#Role> .
+<http://purl.org/hercules/asio/core#geoDivision> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/hercules/asio/modules#GeopoliticalEntities> .
+<http://purl.org/hercules/asio/core#Thesis> <http://www.w3.org/2004/02/skos/core#prefLabel> "Tesi"@ca-ad .
+<http://purl.org/hercules/asio/core#AcademicDegree> <http://www.w3.org/2000/01/rdf-schema#label> "Grau acad\u00E8mic"@ca-es .
+<http://purl.org/hercules/asio/core#CV> <http://www.w3.org/2004/02/skos/core#altLabel> "CV"@en .
+<http://purl.org/hercules/asio/core#awards> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/hercules/asio/core#Prototype> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/hercules/asio/core#awardedWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/hercules/asio/core#EuropeanProject> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Project> .
+<http://purl.org/hercules/asio/core#UniversityDivision> <http://www.w3.org/2000/01/rdf-schema#label> "Divisi\u00F3 d'universitat"@ca-ad .
+<http://xmlns.com/foaf/0.1/Project> <http://www.w3.org/2002/07/owl#equivalentClass> <http://usefulinc.com/ns/doap#Project> .
+<http://purl.org/hercules/asio/core#InternationalProject> <http://www.w3.org/2000/01/rdf-schema#label> "Projet international"@fr .
+<http://purl.org/hercules/asio/core#BachelorsThesis> <http://www.w3.org/2000/01/rdf-schema#label> "Treball fi de b\u00E0txelor"@ca-ad .
+<http://purl.org/hercules/asio/core#AdministrativeEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "This vertical module in ASIO models all the relevant administrative bodies (\"Administraci\u00F3n Auton\u00F3mica\") of Spain's Autonomous Communities (conserjer\u00EDas, departamentos, secretar\u00EDas) that might have a role (funding, participating) within the development of a given project. It is modeled hierarchically through the relevant administrative levels thereof."@en .
+<http://purl.org/hercules/asio/core#Company> <http://www.w3.org/2004/02/skos/core#prefLabel> "Entreprise"@fr .
+<http://purl.org/hercules/asio/core#patentDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/hercules/asio/core#Patent> .
+<http://xmlns.com/foaf/0.1/Project> <http://www.w3.org/2002/07/owl#equivalentClass> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Project> .
+<http://purl.org/hercules/asio/core#NationalProject> <http://www.w3.org/2004/02/skos/core#prefLabel> "National project"@en .
+<http://purl.org/hercules/asio/core#Status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/hercules/asio/core#Patent> <http://www.w3.org/2000/01/rdf-schema#label> "Patente"@es .
+<http://purl.org/hercules/asio/core#SpainUniversityStaffing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/hercules/asio/core#Article> <http://www.w3.org/2002/07/owl#equivalentClass> <http://purl.org/net/nknouf/ns/bibtex#Article> .
+<http://purl.org/hercules/asio/core#EmploymentContract> <http://www.w3.org/2004/02/skos/core#prefLabel> "Contrato de trabajo"@es .
+<http://purl.org/hercules/asio/core#Publishes> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/hercules/asio/core#Publication> .
+<http://purl.org/hercules/asio/core#ScientificPublication> <http://www.w3.org/2000/01/rdf-schema#label> "Publication scientifique"@fr .
+<http://purl.org/hercules/asio/core#Contract> <http://www.w3.org/2004/02/skos/core#prefLabel> "Contrato"@gl .
+<http://purl.org/hercules/asio/core#requires> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/hercules/asio/core#Role> .
+<http://purl.org/hercules/asio/core#DoctoralDegree> <http://www.w3.org/2000/01/rdf-schema#label> "Doctoral degree"@en .
+<http://purl.org/hercules/asio/core#RegionalProject> <http://www.w3.org/2004/02/skos/core#prefLabel> "Projeto regional"@pt .
+<http://purl.org/hercules/asio/core#publicationCitation> <http://www.w3.org/2000/01/rdf-schema#label> "publication citations"@en .
+<http://purl.org/hercules/asio/core#BacherlorsDegree> <http://www.w3.org/2004/02/skos/core#prefLabel> "T\u00EDtol de b\u00E0txelor"@ca-ad .
+<http://purl.org/hercules/asio/core#MastersDegree> <http://www.w3.org/2004/02/skos/core#prefLabel> "Master's degree"@en .
+<http://purl.org/hercules/asio/core#ResearchInstitute> <http://www.w3.org/2002/07/owl#equivalentClass> <http://eurocris.org/ontology/semcerif#ResearchInstitute> .
+<http://purl.org/cerif/frapo/FinancialEntity> <http://www.w3.org/2004/02/skos/core#prefLabel> "Entit\u00E9 financi\u00E8re"@fr .
+<http://purl.org/hercules/asio/core#ServiceContract> <http://www.w3.org/2000/01/rdf-schema#label> "Service contract"@en .
+<http://purl.org/hercules/asio/core#Spinoff> <http://www.w3.org/2004/02/skos/core#prefLabel> "Empresa spin-off"@es .
+<http://purl.org/hercules/asio/core#CatedraticoUniversidad> <http://www.w3.org/2000/01/rdf-schema#label> "Catedr\u00E0tic d'universitat"@ca-ad .
+<http://purl.org/hercules/asio/core#codeOf> <http://www.w3.org/2000/01/rdf-schema#comment> "A code is assigned to a concept."@en .
+<http://purl.org/hercules/asio/core#funds> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/hercules/asio/core#ProjectBudget> <http://www.w3.org/2000/01/rdf-schema#label> "Presupuesto de proyecto"@es .
+<http://purl.org/hercules/asio/core#yields> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/hercules/asio/core#ResearchResult> .
+<http://purl.org/hercules/asio/core#RegionalProject> <http://www.w3.org/2004/02/skos/core#prefLabel> "Projecte regional"@ca-ad .
+<http://purl.org/hercules/asio/core#isActive> <http://www.w3.org/2000/01/rdf-schema#comment> "This property allows to specify which is the user profile that is active,\ngiven a interaction between two applications."@en .
+<http://purl.org/hercules/asio/core#AcademicPublication> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/hercules/asio/core#Publication> .
+<http://purl.org/hercules/asio/core#RegionalProject> <http://www.w3.org/2000/01/rdf-schema#label> "Projeto regional"@pt .
+<http://purl.org/hercules/asio/core#AcademicDegree> <http://www.w3.org/2004/02/skos/core#prefLabel> "Grade universitaire"@fr-ch .
+<http://purl.org/hercules/asio/core#MastersDegree> <http://www.w3.org/2004/02/skos/core#prefLabel> "M\u00E1ster universitario"@es-es .
+<http://purl.org/hercules/asio/core#CV> <http://www.w3.org/2004/02/skos/core#altLabel> "CV"@fr .
+<http://purl.org/hercules/asio/core#patentAssistantExaminer> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/hercules/asio/core#Patent> .
+<http://purl.org/hercules/asio/core#Publication> <http://www.w3.org/2002/07/owl#equivalentClass> <http://semanticscience.org/resource/SIO_000087> .
+<http://purl.org/hercules/asio/core#MastersThesis> <http://www.w3.org/2004/02/skos/core#prefLabel> "Treball de fi de m\u00E0ster"@ca-ad .
+<http://purl.org/hercules/asio/core#InternationalProject> <http://www.w3.org/2000/01/rdf-schema#label> "Projecte internacional"@ca-es .
+<http://purl.org/hercules/asio/core#Budget> <http://www.w3.org/2000/01/rdf-schema#label> "Budget"@en .
+<http://purl.org/hercules/asio/core#CatedraticoUniversidad> <http://www.w3.org/2000/01/rdf-schema#label> "Catedr\u00E1tico de universidade"@gl .
+<http://purl.org/hercules/asio/core#isActive> <http://www.w3.org/2000/01/rdf-schema#label> "is active"@en .
+<http://purl.org/hercules/asio/core#DoctoralDegree> <http://www.w3.org/2004/02/skos/core#prefLabel> "Doutoramento"@gl .
+<http://purl.org/hercules/asio/core#MastersThesis> <http://www.w3.org/2000/01/rdf-schema#label> "M\u00E9moire de ma\u00EEtrise"@fr-ca .
+<http://purl.org/hercules/asio/core#utilizes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/hercules/asio/core#patentAssistantExaminer> <http://www.w3.org/2000/01/rdf-schema#label> "patent assistant examiner"@en .
+<http://purl.org/hercules/asio/core#BachelorsThesis> <http://www.w3.org/2004/02/skos/core#prefLabel> "Treball de fi de grau"@ca-es .
+<http://purl.org/hercules/asio/core#Publication> <http://www.w3.org/2004/02/skos/core#prefLabel> "Publication"@en .
+<http://purl.org/hercules/asio/core#Spinoff> <http://www.w3.org/2004/02/skos/core#prefLabel> "Empresa derivada"@ca-es .
+<http://purl.org/hercules/asio/core#geoDivision> <http://www.w3.org/2000/01/rdf-schema#comment> "A property to link a resource to a predefined geographical (or geopolitical) division."@en .
+<http://purl.org/hercules/asio/core#projectKeyword> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://purl.org/hercules/asio/core#projectOutcome> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Project> .
+<http://purl.org/hercules/asio/core#participant> <http://www.w3.org/2002/07/owl#equivalentProperty> <http://purl.org/vocab/bio/0.1/participant> .
+<http://purl.org/hercules/asio/core#patentAssignee> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/hercules/asio/core#Patent> .
+<http://purl.org/hercules/asio/core#CV> <http://www.w3.org/2004/02/skos/core#prefLabel> "Curriculum vitae"@fr .
+<http://purl.org/hercules/asio/core#EmploymentContract> <http://www.w3.org/2004/02/skos/core#prefLabel> "Contrato de trabalho"@pt .
+<http://purl.org/hercules/asio/core#MastersDegree> <http://www.w3.org/2000/01/rdf-schema#label> "Ma\u00EEtrise universitaire"@fr-ca .
+<http://purl.org/hercules/asio/core#spinsOffFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/hercules/asio/core#Contract> <http://www.w3.org/2004/02/skos/core#prefLabel> "Contrato"@es .
+<http://purl.org/hercules/asio/core#employs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/hercules/asio/core#Spinoff> <http://www.w3.org/2000/01/rdf-schema#label> "Corporate spin-off"@en .
+<http://purl.org/hercules/asio/core#participant> <http://www.w3.org/2000/01/rdf-schema#label> "participant"@en .
+<http://purl.org/hercules/asio/core#specializes> <http://www.w3.org/2000/01/rdf-schema#comment> "This property allows to express hierarchies of roles, through of role specialization: if role A specializes role B, and B specializes C, then role A specializes role C."@en .
+<http://purl.org/hercules/asio/core#Patent> <http://www.w3.org/2000/01/rdf-schema#label> "Patent"@ca-es .
+<http://purl.org/hercules/asio/core#cancelled> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/hercules/asio/core#ScientificPublication> <http://www.w3.org/2004/02/skos/core#prefLabel> "Publicaci\u00F3n cient\u00EDfica"@es .
+<http://purl.org/hercules/asio/core#PhDThesis> <http://www.w3.org/2000/01/rdf-schema#label> "Doctoral thesis"@en .
+<http://purl.org/hercules/asio/core#ResearchMethod> <http://www.w3.org/2000/01/rdf-schema#label> "Research method"@en .
+<http://purl.org/hercules/asio/core#SealOfQuality> <http://www.w3.org/2000/01/rdf-schema#label> "Sello de calidad"@es .
+<http://purl.org/hercules/asio/core#projectObjective> <http://www.w3.org/2000/01/rdf-schema#comment> "A defined objective of the project."@en .
+<http://xmlns.com/foaf/0.1/member> <http://www.w3.org/2000/01/rdf-schema#range> <http://xmlns.com/foaf/0.1/Agent> .
+<http://purl.org/hercules/asio/core#FundingOrganization> <http://www.w3.org/2000/01/rdf-schema#label> "Funding organization"@en .
+<http://purl.org/hercules/asio/core#Contract> <http://www.w3.org/2002/07/owl#equivalentClass> <http://purl.org/cerif/Contract> .
+<http://purl.org/hercules/asio/core#FundingOrganization> <http://www.w3.org/2002/07/owl#equivalentClass> <http://vivoweb.org/ontology/core#FundingOrganization> .
+<http://purl.org/hercules/asio/core#UniversityDivision> <http://www.w3.org/2000/01/rdf-schema#label> "Divisi\u00F3n de universidade"@gl .
+<http://purl.org/hercules/asio/core#Patent> <http://www.w3.org/2000/01/rdf-schema#label> "Patent"@ca-ad .
+<http://purl.org/hercules/asio/core#ResearchInstitute> <http://www.w3.org/2004/02/skos/core#prefLabel> "Centro de investigaci\u00F3n"@es .
+<http://purl.org/hercules/asio/core#AcademicDegree> <http://www.w3.org/2004/02/skos/core#prefLabel> "Grade universitaire"@fr-be .
+<http://purl.org/hercules/asio/core#projectKeyword> <http://www.w3.org/2000/01/rdf-schema#label> "project keyword"@en .
+<http://purl.org/hercules/asio/core#Thesis> <http://www.w3.org/2002/07/owl#equivalentClass> <http://lsdis.cs.uga.edu/projects/semdis/opus#Thesis> .
+<http://purl.org/hercules/asio/core#NationalProject> <http://www.w3.org/2000/01/rdf-schema#comment> "A project developed and funded at the national level."@en .
+<http://purl.org/hercules/asio/core#SME> <http://www.w3.org/2000/01/rdf-schema#label> "Small and medium-sized enterprise"@en .
+<http://purl.org/hercules/asio/core#qualifieddate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
+<http://purl.org/hercules/asio/core#Spinoff> <http://www.w3.org/2004/02/skos/core#prefLabel> "Spin-off enpresa"@eu .
+<http://purl.org/hercules/asio/core#Grant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/hercules/asio/core#ProjectBudget> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/hercules/asio/core#Budget> .
+<http://purl.org/hercules/asio/core#ServiceContract> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/hercules/asio/core#ResearchGroup> <http://www.w3.org/2004/02/skos/core#prefLabel> "Grup d'investigaci\u00F3"@ca-es .
+<http://purl.org/hercules/asio/core#DoctoralDegree> <http://www.w3.org/2000/01/rdf-schema#label> "Doctorat"@fr-ca .
+<http://purl.org/hercules/asio/core#Country> <http://www.w3.org/2004/02/skos/core#prefLabel> "Pa\u00EDs"@es .
+<http://purl.org/hercules/asio/core#Funding> <http://www.w3.org/2002/07/owl#equivalentClass> <http://purl.org/cerif/Funding> .
+<http://purl.org/hercules/asio/core#CatedraticoUniversidad> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/hercules/asio/modules#ScientificDomain> <http://www.w3.org/2004/02/skos/core#prefLabel> "\u00C1reas cient\u00EDficas"@pt .
+<http://purl.org/hercules/asio/core#DoctoralDegree> <http://www.w3.org/2004/02/skos/core#prefLabel> "Doctorat"@fr-fr .
+<http://purl.org/hercules/asio/core#ScientificPublication> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/hercules/asio/core#Publication> .
+<http://purl.org/hercules/asio/core#Patent> <http://www.w3.org/2000/01/rdf-schema#label> "Patente"@gl .
+<http://purl.org/hercules/asio/core#Company> <http://www.w3.org/2004/02/skos/core#prefLabel> "Empresa"@es .
+<http://purl.org/hercules/asio/core#EventOrganiser> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/hercules/asio/core#projectEndDate> <http://www.w3.org/2000/01/rdf-schema#comment> "The end date of the project."@en .
+<http://purl.org/hercules/asio/core#Company> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Organization> .
+<http://purl.org/hercules/asio/core#DoctoralDegree> <http://www.w3.org/2004/02/skos/core#prefLabel> "Doctorat"@ca-ad .
+<http://xmlns.com/foaf/0.1/Project> <http://www.w3.org/2002/07/owl#equivalentClass> <http://www.w3.org/ns/org#Project> .
+<http://purl.org/hercules/asio/core#Company> <http://www.w3.org/2000/01/rdf-schema#comment> "Una organizaci\u00F3n con personalidad jur\u00EDdica que dispone de los medios necesarios para la producci\u00F3n y se dedica a combinarlos para obtener bienes o servicios destinados al intercambio."@es .
+<http://purl.org/hercules/asio/core#MastersDegree> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/hercules/asio/core#Contract> <http://www.w3.org/2004/02/skos/core#prefLabel> "Contrat"@fr .
+<http://purl.org/hercules/asio/core#BachelorsThesis> <http://www.w3.org/2002/07/owl#equivalentClass> <http://semanticscience.org/resource/SIO_000166> .
+<http://purl.org/hercules/asio/core#hasScientificDomain> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://purl.org/hercules/asio/core#isActive> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/hercules/asio/core#FundingProgramme> <http://www.w3.org/2000/01/rdf-schema#label> "Funding programme"@en .
+<http://purl.org/hercules/asio/core#isMemberOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/hercules/asio/core#NationalProject> <http://www.w3.org/2000/01/rdf-schema#label> "Projecte nacional"@ca-es .
+<http://purl.org/hercules/asio/core#BachelorsThesis> <http://www.w3.org/2004/02/skos/core#altLabel> "TFB"@ca-ad .
+<http://purl.org/hercules/asio/core#CV> <http://www.w3.org/2004/02/skos/core#altLabel> "CV"@es .
+<http://purl.org/hercules/asio/core#CV> <http://www.w3.org/2004/02/skos/core#altLabel> "Resume"@en .
+<http://purl.org/hercules/asio/core#TechnicalReport> <http://www.w3.org/2002/07/owl#equivalentClass> <http://purl.org/spar/fabio/TechnicalReport> .
+<http://purl.org/hercules/asio/core#hasPatent> <http://www.w3.org/2000/01/rdf-schema#label> "has patent"@en .
+<http://purl.org/hercules/asio/core#country> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/hercules/asio/core#Country> .
+<http://purl.org/hercules/asio/core#SME> <http://www.w3.org/2002/07/owl#equivalentClass> <http://purl.org/cerif/frapo/SME> .
+<http://purl.org/hercules/asio/core#MastersThesis> <http://www.w3.org/2002/07/owl#equivalentClass> <http://purl.org/spar/fabio/MastersThesis> .
+<http://purl.org/hercules/asio/core#patentPrimaryExaminer> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/hercules/asio/core#Patent> .
+<http://purl.org/hercules/asio/core#Patent> <http://www.w3.org/2004/02/skos/core#prefLabel> "Patent"@fr .
+<http://purl.org/hercules/asio/core#projectOutcome> <http://www.w3.org/2000/01/rdf-schema#label> "project outcome"@en .
+<http://purl.org/hercules/asio/core#CatedraticoEscuelaUniversitaria> <http://www.w3.org/2000/01/rdf-schema#label> "Catedr\u00E1tico de escola universitaria"@gl .
+<http://purl.org/hercules/asio/core#publicationCitation> <http://www.w3.org/2000/01/rdf-schema#comment> "a property to link a given publication to the number of citations."@en .
+<http://purl.org/hercules/asio/core#Spinoff> <http://www.w3.org/2004/02/skos/core#prefLabel> "Corporate spin-off"@en .
+<http://purl.org/hercules/asio/core#BachelorsThesis> <http://www.w3.org/2004/02/skos/core#prefLabel> "Trabajo de fin de grado"@es-es .
+<http://purl.org/hercules/asio/core#BachelorsThesis> <http://www.w3.org/2004/02/skos/core#altLabel> "Honor's thesis"@en-us .
+<http://purl.org/hercules/asio/core#PeerReviewedArticle> <http://www.w3.org/2002/07/owl#equivalentClass> <http://swrc.ontoware.org/ontology#Article> .
+<http://purl.org/cerif/frapo/FinancialEntity> <http://www.w3.org/2004/02/skos/core#prefLabel> "Financial entity"@en .
+<http://purl.org/hercules/asio/core#MastersDegree> <http://www.w3.org/2000/01/rdf-schema#label> "Mestrado"@pt-br .
+<http://purl.org/hercules/asio/core#atContext> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/hercules/asio/core#Context> .
+<http://purl.org/hercules/asio/core#DoctoralDegree> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/hercules/asio/core#hasSealOfQuality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/hercules/asio/core#qualifiedvaluation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://purl.org/hercules/asio/core#projectStatus> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/hercules/asio/core#Status> .
+<http://purl.org/hercules/asio/core#hasScientificDomain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/hercules/asio/core#projectID> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://purl.org/hercules/asio/core#MastersDegree> <http://www.w3.org/2000/01/rdf-schema#label> "Master's degree"@en .
+<http://purl.org/hercules/asio/core#coadvises> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/hercules/asio/core#University> <http://www.w3.org/2000/01/rdf-schema#label> "Universitat"@ca-es .
+<http://xmlns.com/foaf/0.1/Organization> <http://www.w3.org/2002/07/owl#equivalentClass> <http://vivoweb.org/ontology/core#Organization> .
+<http://purl.org/hercules/asio/core#ResearchGroup> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Group> .
+<http://purl.org/hercules/asio/core#AcademicPublication> <http://www.w3.org/2004/02/skos/core#prefLabel> "Publication acad\u00E9mique"@fr .
+<http://purl.org/hercules/asio/core#Conference> <http://www.w3.org/2000/01/rdf-schema#comment> "A meeting for consultation or discussion. [Source: http://purl.org/ontology/bibo/Conference]"@en .
+<http://purl.org/hercules/asio/core#PASfuncionario> <http://www.w3.org/2000/01/rdf-schema#label> "PAS funcionari"@ca-ad .
+<http://purl.org/hercules/asio/core#CV> <http://www.w3.org/2000/01/rdf-schema#label> "Curr\u00EDculum vitae"@en .
+<http://purl.org/hercules/asio/core#hasResearchContribution> <http://www.w3.org/2002/07/owl#equivalentProperty> <http://orkg.org/core#hasResearchContribution> .
+<http://purl.org/hercules/asio/modules#GeopoliticalEntities> <http://www.w3.org/2000/01/rdf-schema#label> "Entidades geopol\u00EDticas"@es .
+<http://purl.org/hercules/asio/core#University> <http://www.w3.org/2002/07/owl#equivalentClass> <http://semanticscience.org/resource/SIO_000290> .
+<http://purl.org/hercules/asio/core#patentStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/hercules/asio/core#Patent> .
+<http://purl.org/hercules/asio/core#profiles> <http://www.w3.org/2000/01/rdf-schema#comment> "This property relates people and the featured profiles."@en .
+<http://purl.org/hercules/asio/core#TitularUniversidad> <http://www.w3.org/2000/01/rdf-schema#label> "Profesor titular de universidad"@es .
+<http://purl.org/hercules/asio/core#SealOfQuality> <http://www.w3.org/2000/01/rdf-schema#label> "Segell de qualitat"@ca-es .
+<http://purl.org/hercules/asio/core#coadvises> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/hercules/asio/core#AcademicPublication> .
+<http://purl.org/hercules/asio/core#Budget> <http://www.w3.org/2004/02/skos/core#prefLabel> "Orzamento"@gl .
+<http://purl.org/hercules/asio/core#patentAssignee> <http://www.w3.org/2000/01/rdf-schema#label> "patent assignee"@en .
+<http://purl.org/hercules/asio/modules#GeopoliticalEntities> <http://www.w3.org/2000/01/rdf-schema#label> "Entitats geopol\u00EDtiques"@ca-es .
+<http://purl.org/hercules/asio/core#Spinoff> <http://www.w3.org/2000/01/rdf-schema#label> "Soci\u00E9t\u00E9 scind\u00E9e"@fr .
+<http://purl.org/hercules/asio/core#hasCV> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/hercules/asio/core#projectKeyword> <http://www.w3.org/2000/01/rdf-schema#label> "palabra clave"@es .
+<http://purl.org/hercules/asio/core#projectStartDate> <http://www.w3.org/2000/01/rdf-schema#label> "fecha inicio proyecto"@es .
+<http://purl.org/hercules/asio/core#UndergraduateStudent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/hercules/asio/core#Role> .
+<http://purl.org/hercules/asio/core#PeerReviewedArticle> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/hercules/asio/core#Article> .
+<http://purl.org/hercules/asio/core#projectOutcome> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/hercules/asio/core#isAdvisedBy> <http://www.w3.org/2000/01/rdf-schema#label> "is advised by"@en .
+<http://xmlns.com/foaf/0.1/Organization> <http://www.w3.org/2002/07/owl#equivalentClass> <http://www.w3.org/ns/org#Organization> .
+<http://purl.org/hercules/asio/core#coadvisedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/hercules/asio/core#AcademicPublication> .
+<http://purl.org/hercules/asio/core#MastersThesis> <http://www.w3.org/2002/07/owl#disjointWith> <http://purl.org/hercules/asio/core#PhDThesis> .
+<http://purl.org/hercules/asio/core#projectBudget> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<http://purl.org/hercules/asio/core#ResearchGroup> <http://www.w3.org/2000/01/rdf-schema#label> "Grupo de investigaci\u00F3n"@es .
+<http://purl.org/hercules/asio/core#addresses> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/hercules/asio/core#ResearchProblem> .
+<http://purl.org/hercules/asio/core#Prototype> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/hercules/asio/core#Product> .
+<http://purl.org/hercules/asio/core#PhDStudent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/hercules/asio/core#Role> .
+<http://purl.org/hercules/asio/core#closed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/hercules/asio/core#CatedraticoEscuelaUniversitaria> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/hercules/asio/core#advises> <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/hercules/asio/core#isAdvisedBy> .
+<http://purl.org/wf4ever/ro#ResearchObject> <http://www.w3.org/2004/02/skos/core#prefLabel> "Research object"@en .
+<http://purl.org/hercules/asio/core#ProjectBudget> <http://www.w3.org/2000/01/rdf-schema#label> "Or\u00E7amento de projeto"@pt .
+<http://www.w3.org/ns/prov#wasDerivedFrom> <http://www.w3.org/2000/01/rdf-schema#label> "was derived from"@en .
+<http://purl.org/hercules/asio/core#EuropeanProject> <http://www.w3.org/2000/01/rdf-schema#label> "Projecte europeu"@ca-es .
+<http://purl.org/hercules/asio/core#Workshop> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/NET/c4dm/event.owl#Event> .
+<http://purl.org/hercules/asio/core#patentExpirationDate> <http://www.w3.org/2000/01/rdf-schema#label> "patent expiration date"@en .
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/hercules/asio/core#hasResearchContribution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/hercules/asio/core#Country> <http://www.w3.org/2000/01/rdf-schema#label> "Herrialde"@eu .
+<http://purl.org/hercules/asio/core#ResearchInstitute> <http://www.w3.org/2002/07/owl#equivalentClass> <http://purl.org/cerif/ResearchInstitute> .
+<http://purl.org/hercules/asio/core#addresses> <http://www.w3.org/2002/07/owl#equivalentProperty> <http://orkg.org/core#addresses> .
+<http://purl.org/hercules/asio/core#isCoauthoredBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/hercules/asio/core#Publication> .
+<http://purl.org/hercules/asio/core#Book> <http://www.w3.org/2000/01/rdf-schema#label> "Livre"@fr .
+<http://purl.org/hercules/asio/core#isActive> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/hercules/asio/core#Profile> .
+<http://purl.org/hercules/asio/core#projectKeyword> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Project> .
+<http://purl.org/hercules/asio/core#MastersThesis> <http://www.w3.org/2004/02/skos/core#prefLabel> "Trabajo de fin de m\u00E1ster"@es-es .
+<http://purl.org/hercules/asio/core#Company> <http://www.w3.org/2002/07/owl#equivalentClass> <http://www.ontotext.com/proton/protonext#Company> .
+<http://xmlns.com/foaf/0.1/Organization> <http://www.w3.org/2002/07/owl#equivalentClass> <http://rdfs.org/resume-rdf/cv.rdfs#Organization> .
+<http://purl.org/hercules/asio/core#MastersThesis> <http://www.w3.org/2000/01/rdf-schema#label> "Tesis de maestr\u00EDa"@es-ar .
+<http://purl.org/hercules/asio/core#RegionalProject> <http://www.w3.org/2000/01/rdf-schema#label> "Regional project"@en .
+<http://purl.org/wf4ever/ro#ResearchObject> <http://www.w3.org/2004/02/skos/core#prefLabel> "Objeto de investigaci\u00F3n"@es .
+<http://purl.org/hercules/asio/core#yields> <http://www.w3.org/2002/07/owl#equivalentProperty> <http://orkg.org/core#yields> .
+<http://purl.org/hercules/asio/core#EuropeanProject> <http://www.w3.org/2004/02/skos/core#prefLabel> "Projet europ\u00E9en"@fr .
+<http://purl.org/hercules/asio/core#specializes> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/hercules/asio/core#Role> .
+<http://purl.org/hercules/asio/core#publicationCitation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/hercules/asio/core#Spinoff> <http://www.w3.org/2000/01/rdf-schema#label> "Spin-off enpresa"@eu .
+<http://purl.org/hercules/asio/core#BachelorsThesis> <http://www.w3.org/2004/02/skos/core#altLabel> "Traballo de fin de carreira"@gl .
+<http://purl.org/hercules/asio/core#SME> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/hercules/asio/core#unfunded> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/hercules/asio/core#Status> .
+<http://purl.org/hercules/asio/core#Funding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/hercules/asio/core#Company> <http://www.w3.org/2002/07/owl#equivalentClass> <http://rdfs.org/resume-rdf/cv.rdfs#Company> .
+<http://purl.org/hercules/asio/core#SealOfQuality> <http://www.w3.org/2000/01/rdf-schema#label> "Seal of quality"@en .
+<http://purl.org/hercules/asio/core#projectAcronym> <http://www.w3.org/2000/01/rdf-schema#label> "project acronym"@en .
+<http://purl.org/hercules/asio/core#isCompetitive> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://purl.org/hercules/asio/modules#GeopoliticalEntities> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<http://purl.org/hercules/asio/modules#ScientificDomain> <http://www.w3.org/2000/01/rdf-schema#label> "\u00C1reas cient\u00EDficas"@pt .
+<http://purl.org/hercules/asio/core#Company> <http://www.w3.org/2002/07/owl#equivalentClass> <http://vocab.data.gov/def/fea#Company> .
+<http://purl.org/hercules/asio/core#Country> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/hercules/asio/modules#GeopoliticalEntities> .
+<http://purl.org/hercules/asio/core#Publication> <http://www.w3.org/2002/07/owl#equivalentClass> <http://ns.nature.com/terms/Publication> .
+<http://purl.org/hercules/asio/core#ProjectBudget> <http://www.w3.org/2004/02/skos/core#prefLabel> "Budget de projet"@fr .
+<http://purl.org/hercules/asio/core#CV> <http://www.w3.org/2004/02/skos/core#altLabel> "Curr\u00EDculo"@es .
+<http://purl.org/hercules/asio/core#AcademicDegree> <http://www.w3.org/2004/02/skos/core#prefLabel> "Grade universitaire"@fr-fr .
+<http://purl.org/wf4ever/ro#ResearchObject> <http://www.w3.org/2000/01/rdf-schema#comment> "A research object aggregates a number of resources. A resource can be a workflow, web service, document, data item, data set, workflow run, software or a research object."@en .
+<http://purl.org/hercules/asio/core#utilizes> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/hercules/asio/core#ResearchContribution> .
+<http://purl.org/hercules/asio/core#AcademicPublication> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/hercules/asio/core#ScientificPublication> <http://www.w3.org/2004/02/skos/core#prefLabel> "Publicaci\u00F3 cient\u00EDfica"@ca-ad .
+<http://www.w3.org/2004/02/skos/core#ConceptScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://xmlns.com/foaf/0.1/Group> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Agent> .
+<http://purl.org/hercules/asio/core#unfunded> <http://www.w3.org/2000/01/rdf-schema#label> "Unfunded"@en .
+<http://purl.org/hercules/asio/core#MastersThesis> <http://www.w3.org/2004/02/skos/core#altLabel> "Treball de fi de master"@ca-ad .
+<http://purl.org/hercules/asio/core#University> <http://www.w3.org/2004/02/skos/core#prefLabel> "Universitat"@ca-es .
+<http://purl.org/hercules/asio/core#hasCV> <http://www.w3.org/2000/01/rdf-schema#label> "has CV"@en .
+<http://purl.org/hercules/asio/core#MastersThesis> <http://www.w3.org/2004/02/skos/core#prefLabel> "Disserta\u00E7\u00E3o de mestrado"@pt-pt .
+<http://purl.org/hercules/asio/core#MastersThesis> <http://www.w3.org/2002/07/owl#equivalentClass> <http://lsdis.cs.uga.edu/projects/semdis/opus#Masters_Thesis> .
+<http://purl.org/hercules/asio/core#QualifiedValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/hercules/asio/core#Country> <http://www.w3.org/2000/01/rdf-schema#label> "Pays"@fr .
+<http://www.w3.org/ns/prov#wasDerivedFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/hercules/asio/core#ResearchInstitute> <http://www.w3.org/2004/02/skos/core#prefLabel> "Centre de recherche"@fr .
+<http://purl.org/cerif/frapo/FinancialEntity> <http://www.w3.org/2004/02/skos/core#prefLabel> "Ens financera"@ca-ad .
+<http://purl.org/hercules/asio/core#ResearchInstitute> <http://www.w3.org/2004/02/skos/core#prefLabel> "Research institute"@en .
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/hercules/asio/core#Budget> <http://www.w3.org/2000/01/rdf-schema#label> "Budget"@fr .
+<http://purl.org/hercules/asio/core#ProjectBudget> <http://www.w3.org/2000/01/rdf-schema#label> "Pressupost de projecte"@ca-ad .
+<http://purl.org/hercules/asio/core#funded> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/hercules/asio/core#Status> .
+<http://purl.org/hercules/asio/core#DoctoralDegree> <http://www.w3.org/2004/02/skos/core#prefLabel> "Doktorego"@eu .
+<http://purl.org/hercules/asio/core#MastersThesis> <http://www.w3.org/2000/01/rdf-schema#label> "M\u00E9moire de ma\u00EEtrise"@fr-fr .
+<http://purl.org/hercules/asio/core#participates> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://xmlns.com/foaf/0.1/Organization> <http://www.w3.org/2002/07/owl#equivalentClass> <http://usefulinc.com/ns/doap#Organization> .
+<http://xmlns.com/foaf/0.1/Project> <http://www.w3.org/2002/07/owl#equivalentClass> <http://vivoweb.org/ontology/core#Project> .
+<http://purl.org/hercules/asio/core#RegionalProject> <http://www.w3.org/2004/02/skos/core#prefLabel> "Regional project"@en .
+<http://purl.org/cerif/frapo/FinancialEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/hercules/asio/core#BacherlorsDegree> <http://www.w3.org/2000/01/rdf-schema#label> "Bachelor's degree"@en .
+<http://purl.org/hercules/asio/core#CV> <http://www.w3.org/2002/07/owl#equivalentClass> <http://purl.org/cerif/CurriculumVitae> .
+<http://purl.org/hercules/asio/core#spinsOffFrom> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/hercules/asio/core#Spinoff> .
+<http://xmlns.com/foaf/0.1/Organization> <http://www.w3.org/2002/07/owl#equivalentClass> <http://semanticscience.org/resource/SIO_000012> .
+<http://purl.org/hercules/asio/core#TechnicalReport> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/hercules/asio/core#ScientificPublication> .
+<http://purl.org/hercules/asio/core#country> <http://www.w3.org/2000/01/rdf-schema#label> "pa\u00EDs"@es .
+<http://purl.org/hercules/asio/core#funds> <http://www.w3.org/2002/07/owl#equivalentProperty> <http://purl.org/cerif/frapo/funds> .
+<http://purl.org/hercules/asio/core#researchesIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/hercules/asio/modules#ScientificDomain> .
+<http://purl.org/hercules/asio/core#projectCoordinator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/hercules/asio/core#Thesis> <http://www.w3.org/2002/07/owl#equivalentClass> <http://purl.org/spar/fabio/Thesis> .
+<http://purl.org/hercules/asio/core#University> <http://www.w3.org/2004/02/skos/core#prefLabel> "Universit\u00E9"@fr .
+<http://purl.org/hercules/asio/core#CV> <http://www.w3.org/2002/07/owl#equivalentClass> <http://dbpedia.org/ontology/Resume> .
+<http://purl.org/hercules/asio/core#yields> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/hercules/asio/core#ResearchGroup> <http://www.w3.org/2004/02/skos/core#prefLabel> "Grupo de investiga\u00E7\u00E3o"@pt .
+<http://purl.org/hercules/asio/core#Role> <http://www.w3.org/2000/01/rdf-schema#label> "Papell"@ca-es .
+<http://purl.org/hercules/asio/core#personalizes> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/hercules/asio/core#Role> .
+<http://purl.org/hercules/asio/core#ScientificPublication> <http://www.w3.org/2000/01/rdf-schema#label> "Publicaci\u00F3 cient\u00EDfica"@ca-es .
+<http://purl.org/wf4ever/ro#ResearchObject> <http://www.w3.org/2000/01/rdf-schema#label> "Objeto de investigaci\u00F3n"@es .
+<http://purl.org/hercules/asio/core#hasResearchLine> <http://www.w3.org/2000/01/rdf-schema#label> "has research line"@en .
+<http://purl.org/hercules/asio/core#geoDivision> <http://www.w3.org/2000/01/rdf-schema#label> "geodivision"@en .
+<http://purl.org/hercules/asio/core#EmploymentContract> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/hercules/asio/core#specializes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/hercules/asio/core#PASfuncionario> <http://www.w3.org/2000/01/rdf-schema#label> "PAS funcionariu"@ast .
+<http://purl.org/hercules/asio/core#Contract> <http://www.w3.org/2000/01/rdf-schema#label> "Contracte"@ca-es .
+<http://purl.org/hercules/asio/core#ResearchField> <http://www.w3.org/2002/07/owl#equivalentClass> <http://orkg.org/core#ResearchField> .
+<http://purl.org/hercules/asio/modules#GeopoliticalEntities> <http://www.w3.org/2000/01/rdf-schema#label> "Entit\u00E9s g\u00E9opolitiques"@fr .
+<http://purl.org/hercules/asio/core#Company> <http://www.w3.org/2000/01/rdf-schema#label> "Company"@en .
+<http://purl.org/hercules/asio/core#Workshop> <http://www.w3.org/2000/01/rdf-schema#label> "Workshop"@en .
+<http://purl.org/hercules/asio/core#CV> <http://www.w3.org/2002/07/owl#equivalentClass> <http://rdfs.org/resume-rdf/cv.rdfs#CV> .
+<http://purl.org/hercules/asio/core#ResearchResult> <http://www.w3.org/2004/02/skos/core#prefLabel> "Research result"@en .
+<http://purl.org/hercules/asio/core#patentAssignee> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/hercules/asio/core#plays> <http://www.w3.org/2000/01/rdf-schema#comment> "This property relates roles and their players, who can be any foaf:Agent (a person, a group, etc.)"@en .
+<http://purl.org/hercules/asio/core#utilizes> <http://www.w3.org/2002/07/owl#equivalentProperty> <http://orkg.org/core#utilizes> .
+<http://purl.org/hercules/asio/core#coadvises> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Person> .
+<http://purl.org/hercules/asio/core#BachelorsThesis> <http://www.w3.org/2004/02/skos/core#prefLabel> "Traballo de fin de grao"@gl .
+<http://purl.org/hercules/asio/core#Publication> <http://www.w3.org/2000/01/rdf-schema#label> "Publicaci\u00F3"@ca-ad .
+<http://purl.org/hercules/asio/core#funded> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/hercules/asio/core#publishedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://xmlns.com/foaf/0.1/Agent> .
+<http://purl.org/hercules/asio/core#awards> <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/hercules/asio/core#isAwardedBy> .
+<http://purl.org/hercules/asio/core#ResearchInstitute> <http://www.w3.org/2000/01/rdf-schema#label> "Centre d'investigaci\u00F3"@ca-es .
+<http://xmlns.com/foaf/0.1/Organization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://xmlns.com/foaf/0.1/Project> <http://www.w3.org/2000/01/rdf-schema#comment> "In ASIO, a temporary research endeavor undertaken to achieve defined objectives."@en .
+<http://purl.org/hercules/asio/core#EmploymentContract> <http://www.w3.org/2004/02/skos/core#prefLabel> "Employment contract"@en .
+<http://purl.org/hercules/asio/core#ScientificPublication> <http://www.w3.org/2004/02/skos/core#prefLabel> "Publication scientifique"@fr .
+<http://purl.org/hercules/asio/core#Product> <http://www.w3.org/2000/01/rdf-schema#label> "Product"@en .
+<http://purl.org/hercules/asio/core#Thesis> <http://www.w3.org/2004/02/skos/core#prefLabel> "Tesi"@ca-es .
+<http://purl.org/hercules/asio/core#UniversityDivision> <http://www.w3.org/2000/01/rdf-schema#comment> "A division within a university (school, faculty, etc.)"@en .
+<http://purl.org/hercules/asio/core#BachelorsThesis> <http://www.w3.org/2000/01/rdf-schema#label> "Bachelor's thesis"@en .
+<http://purl.org/hercules/asio/core#AcademicDegree> <http://www.w3.org/2000/01/rdf-schema#label> "Grau acad\u00E9mico"@pt-pt .
+<http://purl.org/hercules/asio/core#Budget> <http://www.w3.org/2004/02/skos/core#prefLabel> "Pressupost"@ca-ad .
+<http://purl.org/hercules/asio/core#Budget> <http://www.w3.org/2004/02/skos/core#prefLabel> "Pressupost"@ca-es .
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://purl.org/hercules/asio/core#Company> <http://www.w3.org/2002/07/owl#equivalentClass> <http://dev.poderopedia.com/vocab/Company> .
+<http://purl.org/hercules/asio/core#TechnicalSupport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/hercules/asio/core#DoctoralDegree> <http://www.w3.org/2004/02/skos/core#prefLabel> "Doctorat"@ca-es .
+<http://purl.org/hercules/asio/core#PhDThesis> <http://www.w3.org/2004/02/skos/core#prefLabel> "Doktorego tesi"@eu .
+<http://purl.org/hercules/asio/core#ResearchInstitute> <http://www.w3.org/2000/01/rdf-schema#label> "Research institute"@en .
+<http://purl.org/hercules/asio/core#BachelorsThesis> <http://www.w3.org/2004/02/skos/core#prefLabel> "Treball de fi de b\u00E0txelor"@ca-ad .
+<http://purl.org/hercules/asio/core#personalizes> <http://www.w3.org/2000/01/rdf-schema#comment> "A role is personalized by means of a profile, which wrap the role in the identity of the person behind the profile."@en .
+<http://purl.org/hercules/asio/core#CV> <http://www.w3.org/2004/02/skos/core#altLabel> "Curr\u00EDculum"@es .
+<http://purl.org/hercules/asio/core#associatedWith> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Agent> .
+<http://purl.org/hercules/asio/core#PASfuncionario> <http://www.w3.org/2000/01/rdf-schema#label> "PAS funcionario"@es .
+<http://purl.org/hercules/asio/core#hasSealOfQuality> <http://www.w3.org/2000/01/rdf-schema#label> "has seal of quality"@en .
+<http://purl.org/hercules/asio/core#isFundedBy> <http://www.w3.org/2000/01/rdf-schema#label> "is funded by"@en .
+<http://purl.org/hercules/asio/modules#GeopoliticalEntities> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/hercules/asio/core#requiredFor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/hercules/asio/core#AcademicPublication> .
+<http://purl.org/hercules/asio/core#AcademicDegree> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/hercules/asio/core#Contract> <http://www.w3.org/2000/01/rdf-schema#label> "Contrat"@fr .
+<http://purl.org/hercules/asio/core#Patent> <http://www.w3.org/2002/07/owl#equivalentClass> <http://eurocris.org/ontology/semcerif#Patent> .
+<http://purl.org/hercules/asio/core#BacherlorsDegree> <http://www.w3.org/2000/01/rdf-schema#label> "T\u00EDtol de grau"@ca-es .
+<http://purl.org/hercules/asio/core#Country> <http://www.w3.org/2004/02/skos/core#prefLabel> "Pa\u00EDs"@gl .
+<http://purl.org/hercules/asio/core#codeOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://purl.org/hercules/asio/core#Publication> <http://www.w3.org/2002/07/owl#equivalentClass> <http://ontologies.smile.deri.ie/pdo#Publication> .
+<http://purl.org/hercules/asio/core#projectCoordinator> <http://www.w3.org/2000/01/rdf-schema#label> "project coordinator"@en .
+<http://purl.org/hercules/asio/core#MastersDegree> <http://www.w3.org/2000/01/rdf-schema#label> "Ma\u00EEtrise universitaire"@fr-be .
+<http://purl.org/hercules/asio/core#AcademicDegree> <http://www.w3.org/2000/01/rdf-schema#label> "Grade universitaire"@fr .
+<http://purl.org/hercules/asio/core#Company> <http://www.w3.org/2004/02/skos/core#prefLabel> "Company"@en .
+<http://purl.org/hercules/asio/core#publicationDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/hercules/asio/core#ResearchGroup> <http://www.w3.org/2002/07/owl#equivalentClass> <http://purl.org/vocab/aiiso/schema#ResearchGroup> .
+<http://purl.org/hercules/asio/core#ScientificPublication> <http://www.w3.org/2000/01/rdf-schema#label> "Publicaci\u00F3n cient\u00EDfica"@es .
+<http://purl.org/hercules/asio/core#isAuthoredBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/hercules/asio/core#Profile> <http://www.w3.org/2000/01/rdf-schema#comment> "Profile"@en .
+<http://purl.org/hercules/asio/core#MastersThesis> <http://www.w3.org/2004/02/skos/core#altLabel> "Treball de fi de master"@ca-es .
+<http://purl.org/hercules/asio/core#AcademicDegree> <http://www.w3.org/2000/01/rdf-schema#label> "Grade universitaire"@fr-be .
+<http://purl.org/hercules/asio/core#Patent> <http://www.w3.org/2004/02/skos/core#prefLabel> "Patente"@gl .
+<http://purl.org/hercules/asio/core#MastersDegree> <http://www.w3.org/2000/01/rdf-schema#label> "Ma\u00EEtrise universitaire"@fr-fr .
+<http://purl.org/hercules/asio/core#Budget> <http://www.w3.org/2004/02/skos/core#prefLabel> "Budget"@fr .
+<http://purl.org/hercules/asio/core#Publication> <http://www.w3.org/2004/02/skos/core#prefLabel> "Publica\u00E7\u00E3o"@pt .
+<http://purl.org/hercules/asio/core#Context> <http://www.w3.org/2000/01/rdf-schema#label> "Contexto"@es .
+<http://purl.org/hercules/asio/core#Company> <http://www.w3.org/2000/01/rdf-schema#label> "Empresa"@pt .
+<http://purl.org/hercules/asio/core#hasORCID> <http://www.w3.org/2000/01/rdf-schema#label> "has ORCID"@en .
+<http://purl.org/hercules/asio/core#Context> <http://www.w3.org/2000/01/rdf-schema#comment> "Contexts are similar to situations or state of affairs providing interpretation coordinates for profiles. In the most simple case, these coordinates are just geographical/spatial or temporal coordinates. The ASIO core ontology does not impose a fixed definition of context. It is deliberately wide in order to enable third-parties the adequation of the meaning of context according to their modeling needs and requirements."@en .
+<http://purl.org/hercules/asio/core#AdministrativeEntity> <http://www.w3.org/2004/02/skos/core#prefLabel> "Entidades administrativas"@pt .
+<http://purl.org/hercules/asio/core#EmploymentContract> <http://www.w3.org/2000/01/rdf-schema#label> "Contrat de travail"@fr .
+<http://purl.org/hercules/asio/core#patentExpirationDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/hercules/asio/core#Patent> .
+<http://purl.org/hercules/asio/core#ScientificPublication> <http://www.w3.org/2000/01/rdf-schema#label> "Publica\u00E7\u00E3o cient\u00EDfica"@pt .
+<http://purl.org/hercules/asio/core#capital> <http://www.w3.org/2000/01/rdf-schema#comment> "A property to indicate that a place is the official seat of government in a political entity."@en .
+<http://purl.org/hercules/asio/core#MastersThesis> <http://www.w3.org/2004/02/skos/core#prefLabel> "Tesis de maestr\u00EDa"@es-cu .
+<http://purl.org/hercules/asio/core#addresses> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/hercules/asio/core#ResearchContribution> .
+<http://purl.org/hercules/asio/core#Contract> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/cerif/frapo/FinancialEntity> .
+<http://purl.org/hercules/asio/core#SME> <http://www.w3.org/2004/02/skos/core#prefLabel> "Peque\u00F1a y mediana empresa"@es .
+<http://purl.org/hercules/asio/modules#ScientificDomain> <http://www.w3.org/2004/02/skos/core#prefLabel> "\u00C1reas cient\u00EDficas"@es .
+<http://purl.org/hercules/asio/core#Publication> <http://www.w3.org/2000/01/rdf-schema#comment> "Content made available to the general public. In the case of ASIO, often scientific or academic contents published."@en .
+<http://purl.org/hercules/asio/core#MastersThesis> <http://www.w3.org/2000/01/rdf-schema#label> "Master's thesis"@en .
+<http://purl.org/hercules/asio/core#University> <http://www.w3.org/2004/02/skos/core#prefLabel> "University"@en .
+<http://purl.org/hercules/asio/modules#ScientificDomain> <http://www.w3.org/2000/01/rdf-schema#label> "Dominis cient\u00EDfics"@ca-es .
+<http://purl.org/hercules/asio/core#Company> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/hercules/asio/core#CV> <http://www.w3.org/2004/02/skos/core#altLabel> "CV"@ca .
+<http://purl.org/hercules/asio/core#EuropeanProject> <http://www.w3.org/2004/02/skos/core#prefLabel> "Projecte europeu"@ca-es .
+<http://purl.org/hercules/asio/core#projectObjective> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://purl.org/hercules/asio/core#capital> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://purl.org/hercules/asio/core#EuropeanProject> <http://www.w3.org/2004/02/skos/core#prefLabel> "Projecte europeu"@ca-ad .
+<http://purl.org/hercules/asio/core#rejected> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/hercules/asio/core#Status> .
+<http://purl.org/hercules/asio/core#EditedPublication> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/hercules/asio/core#SME> <http://www.w3.org/2000/01/rdf-schema#label> "Petita i mitjana empresa"@ca-es .
+<http://purl.org/hercules/asio/core#SME> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/hercules/asio/core#Company> .
+<http://purl.org/dc/elements/1.1/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/hercules/asio/core#Prototype> <http://www.w3.org/2000/01/rdf-schema#comment> "A product prototype"@en .
+<http://purl.org/hercules/asio/core#projectStartDate> <http://www.w3.org/2000/01/rdf-schema#comment> "The start date of the project."@en .
+<http://purl.org/hercules/asio/core#associatedWith> <http://www.w3.org/2000/01/rdf-schema#range> <http://xmlns.com/foaf/0.1/Agent> .
+<http://purl.org/hercules/asio/core#Country> <http://www.w3.org/2000/01/rdf-schema#label> "Pa\u00EDs"@ca-es .
+<http://purl.org/hercules/asio/core#ResearchInstitute> <http://www.w3.org/2004/02/skos/core#prefLabel> "Centre d'investigaci\u00F3"@ca-es .
+<http://xmlns.com/foaf/0.1/member> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/hercules/asio/core#MastersThesis> <http://www.w3.org/2004/02/skos/core#prefLabel> "Tese de mestrado"@pt-ao .
+<http://purl.org/hercules/asio/core#plays> <http://www.w3.org/2000/01/rdf-schema#label> "plays"@en .
+<http://purl.org/hercules/asio/core#Article> <http://www.w3.org/2002/07/owl#equivalentClass> <http://semanticscience.org/resource/SIO_000154> .
+<http://purl.org/hercules/asio/core#Article> <http://www.w3.org/2002/07/owl#equivalentClass> <http://lsdis.cs.uga.edu/projects/semdis/opus#Article> .
+<http://purl.org/hercules/asio/core#Country> <http://www.w3.org/2004/02/skos/core#prefLabel> "Pays"@fr .
+<http://purl.org/hercules/asio/core#University> <http://www.w3.org/2000/01/rdf-schema#label> "Universitat"@ca-ad .
+<http://purl.org/hercules/asio/core#MastersThesis> <http://www.w3.org/2000/01/rdf-schema#label> "Treball de fi de m\u00E0ster"@ca-ad .
+<http://purl.org/hercules/asio/core#authors> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Agent> .
+<http://purl.org/hercules/asio/core#CV> <http://www.w3.org/2004/02/skos/core#prefLabel> "Curr\u00EDculum vitae"@ca .
+<http://purl.org/hercules/asio/core#ResearchGroup> <http://www.w3.org/2000/01/rdf-schema#label> "Group de recherche"@fr .
+<http://purl.org/hercules/asio/modules#ScientificDomain> <http://www.w3.org/2000/01/rdf-schema#label> "Scientific domains"@en .
+<http://purl.org/hercules/asio/core#Publication> <http://www.w3.org/2004/02/skos/core#prefLabel> "Publicaci\u00F3"@ca-ad .
+<http://purl.org/hercules/asio/core#PhDThesis> <http://www.w3.org/2000/01/rdf-schema#comment> "A thesis reporting a research project undertaken as part of an undergraduate course of education to receive a doctoral degree."@en .
+<http://purl.org/hercules/asio/core#MastersDegree> <http://www.w3.org/2000/01/rdf-schema#label> "Mestrado"@pt-pt .
+<http://purl.org/hercules/asio/core#PhDThesis> <http://www.w3.org/2000/01/rdf-schema#label> "Tesis doctoral"@es .
+<http://purl.org/hercules/asio/core#coauthors> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Agent> .
+<http://purl.org/hercules/asio/core#Book> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/hercules/asio/core#EuropeanProject> <http://www.w3.org/2000/01/rdf-schema#label> "Projet europ\u00E9en"@fr .
+<http://purl.org/hercules/asio/core#PeerReviewedArticle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/hercules/asio/core#capital> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://purl.org/hercules/asio/core#Book> <http://www.w3.org/2000/01/rdf-schema#label> "Libro"@es .
+<http://purl.org/hercules/asio/core#Company> <http://www.w3.org/2000/01/rdf-schema#label> "Empresa"@ca-ad .
+<http://purl.org/hercules/asio/core#Thesis> <http://www.w3.org/2004/02/skos/core#prefLabel> "Th\u00E8se"@fr .
+<http://purl.org/hercules/asio/core#hasResearcherID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/hercules/asio/core#DoctoralDegree> <http://www.w3.org/2004/02/skos/core#prefLabel> "Doctorado"@es .
+<http://purl.org/hercules/asio/core#hasORCID> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://purl.org/hercules/asio/core#companyFounder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/hercules/asio/core#PhDThesis> <http://www.w3.org/2002/07/owl#equivalentClass> <http://purl.org/net/nknouf/ns/bibtex#Phdthesis> .
+<http://purl.org/hercules/asio/core#advises> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/hercules/asio/core#MastersDegree> <http://www.w3.org/2000/01/rdf-schema#label> "M\u00E0ster universitari"@ca-ad .
+<http://purl.org/hercules/asio/core#MastersThesis> <http://www.w3.org/2004/02/skos/core#prefLabel> "M\u00E9moire de ma\u00EEtrise"@fr-ca .
+<http://purl.org/hercules/asio/core#coordinatedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/hercules/asio/core#ResearchProblem> <http://www.w3.org/2002/07/owl#equivalentClass> <http://orkg.org/core#ResearchProblem> .
+<http://purl.org/hercules/asio/core#DoctoralDegree> <http://www.w3.org/2000/01/rdf-schema#label> "Doctorat"@ca-ad .
+<http://purl.org/hercules/asio/core#Article> <http://www.w3.org/2002/07/owl#equivalentClass> <http://sw-portal.deri.org/ontologies/swportal#Article> .
+<http://purl.org/hercules/asio/core#hasResearcherID> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://purl.org/hercules/asio/core#BachelorsThesis> <http://www.w3.org/2000/01/rdf-schema#label> "Trabajo de fin de grado"@es-es .
+<http://purl.org/hercules/asio/core#AcademicDegree> <http://www.w3.org/2000/01/rdf-schema#label> "Academic degree"@en .
+<http://purl.org/hercules/asio/core#Article> <http://www.w3.org/2000/01/rdf-schema#label> "Article"@en .
+<http://xmlns.com/foaf/0.1/Organization> <http://www.w3.org/2002/07/owl#equivalentClass> <http://purl.org/cerif/frapo/Organization> .
+<http://purl.org/hercules/asio/core#authors> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/hercules/asio/core#Publication> .
+<http://purl.org/hercules/asio/core#MastersThesis> <http://www.w3.org/2004/02/skos/core#altLabel> "TFM"@ca-ad .
+<http://purl.org/hercules/asio/core#associatedWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#SymmetricProperty> .
+<http://purl.org/hercules/asio/core#Patent> <http://www.w3.org/2002/07/owl#equivalentClass> <http://www.ontotext.com/proton/protonext#Patent> .
+<http://purl.org/hercules/asio/core#Conference> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/hercules/asio/core#participates> <http://www.w3.org/2000/01/rdf-schema#comment> "This property encodes the participation relation between profiles and the communities they are member of."@en .
+<http://purl.org/hercules/asio/core#geoDivision> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/hercules/asio/core#codeOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/hercules/asio/core#Book> <http://www.w3.org/2004/02/skos/core#prefLabel> "Libro"@es .
+<http://purl.org/hercules/asio/core#ProjectBudget> <http://www.w3.org/2000/01/rdf-schema#label> "Project budget"@en .
+<http://purl.org/hercules/asio/core#Contract> <http://www.w3.org/2004/02/skos/core#prefLabel> "Contrato"@pt .
+<http://purl.org/hercules/asio/core#profiles> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/hercules/asio/core#BacherlorsDegree> <http://www.w3.org/2004/02/skos/core#prefLabel> "T\u00EDtol de grau"@ca-es .
+<http://purl.org/wf4ever/ro#ResearchObject> <http://www.w3.org/2000/01/rdf-schema#label> "Objet de recherche"@fr .
+<http://purl.org/hercules/asio/core#AcademicDegree> <http://www.w3.org/2000/01/rdf-schema#label> "Grade universitaire"@fr-ch .
+<http://purl.org/hercules/asio/core#MastersDegree> <http://www.w3.org/2000/01/rdf-schema#label> "M\u00E1ster universitario"@es-es .
+<http://purl.org/hercules/asio/core#geoDivision> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://purl.org/hercules/asio/core#patentPrimaryExaminer> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Person> .
+<http://purl.org/hercules/asio/core#Thesis> <http://www.w3.org/2004/02/skos/core#prefLabel> "Tese"@pt .
+<http://purl.org/cerif/frapo/FinancialEntity> <http://www.w3.org/2004/02/skos/core#prefLabel> "Ens financera"@ca-es .
+<http://purl.org/hercules/asio/core#AdministrativeEntity> <http://www.w3.org/2004/02/skos/core#prefLabel> "Entitats administratives"@ca-es .
+<http://purl.org/hercules/asio/core#MastersThesis> <http://www.w3.org/2000/01/rdf-schema#label> "Disserta\u00E7\u00E3o de mestrado"@pt-pt .
+<http://purl.org/hercules/asio/core#Contract> <http://www.w3.org/2000/01/rdf-schema#label> "Contracte"@ca-ad .
+<http://purl.org/hercules/asio/core#NationalProject> <http://www.w3.org/2004/02/skos/core#prefLabel> "Projeto nacional"@pt .
+<http://purl.org/hercules/asio/core#NationalProject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/hercules/asio/core#BachelorsThesis> <http://www.w3.org/2004/02/skos/core#prefLabel> "Trabayu de fin de grau"@ast .
+<http://purl.org/hercules/asio/core#PASfuncionario> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/hercules/asio/core#Role> .
+<http://purl.org/hercules/asio/core#publishedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/hercules/asio/core#Publication> .
+<http://purl.org/hercules/asio/core#BachelorsThesis> <http://www.w3.org/2004/02/skos/core#altLabel> "Trabajo de fin de carrera"@es .
+<http://purl.org/hercules/asio/core#SealOfQuality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/hercules/asio/core#BachelorsThesis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/hercules/asio/core#ProjectBudget> <http://www.w3.org/2004/02/skos/core#prefLabel> "Presupuesto de proyecto"@es .
+<http://purl.org/hercules/asio/core#AcademicDegree> <http://www.w3.org/2004/02/skos/core#prefLabel> "Grao acad\u00E9mico"@gl .
+<http://purl.org/hercules/asio/core#PeerReviewedArticle> <http://www.w3.org/2002/07/owl#equivalentClass> <http://semanticscience.org/resource/SIO_000102> .
+<http://purl.org/hercules/asio/core#BacherlorsDegree> <http://www.w3.org/2004/02/skos/core#altLabel> "Grau"@ca-es .
+<http://purl.org/hercules/asio/modules#ScientificDomain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/hercules/asio/core#SealOfQuality> <http://www.w3.org/2000/01/rdf-schema#label> "Label qualit\u00E9"@fr .
+<http://purl.org/hercules/asio/core#accepted> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/hercules/asio/core#MastersThesis> <http://www.w3.org/2004/02/skos/core#prefLabel> "M\u00E9moire de ma\u00EEtrise"@fr-fr .
+<http://purl.org/hercules/asio/core#personalizes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/cerif/frapo/FinancialEntity> <http://www.w3.org/2000/01/rdf-schema#label> "Ens financera"@ca-ad .
+<http://purl.org/hercules/asio/core#projectID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/hercules/asio/core#Budget> <http://www.w3.org/2000/01/rdf-schema#comment> "A financial plan for a defined period that may also include planned sales volumes and revenues, resource quantities, costs and expenses, assets, liabilities and cash flows."@en .
+<http://purl.org/hercules/asio/core#hasPatent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/hercules/asio/core#patentCountry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/hercules/asio/core#CV> <http://www.w3.org/2004/02/skos/core#altLabel> "CV"@gl .
+<http://xmlns.com/foaf/0.1/Project> <http://www.w3.org/2002/07/owl#equivalentClass> <http://dbpedia.org/ontology/Project> .
+<http://purl.org/hercules/asio/core#MastersThesis> <http://www.w3.org/2004/02/skos/core#prefLabel> "Tesis de maestr\u00EDa"@es-mx .
+<http://purl.org/hercules/asio/core#PhDThesis> <http://www.w3.org/2000/01/rdf-schema#label> "Doktore tesi"@eu .
+<http://purl.org/hercules/asio/core#InternationalProject> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Project> .
+<http://purl.org/hercules/asio/core#CV> <http://www.w3.org/2002/07/owl#equivalentClass> <http://eurocris.org/ontology/semcerif#CurriculumVitae> .
+<http://purl.org/hercules/asio/core#Article> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/hercules/asio/core#ScientificPublication> .
+<http://purl.org/hercules/asio/core#ResearchMaterial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/hercules/asio/core#isFundedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/hercules/asio/core#Manual> <http://www.w3.org/2004/02/skos/core#prefLabel> "Manual"@en .
+<http://xmlns.com/foaf/0.1/Project> <http://www.w3.org/2002/07/owl#equivalentClass> <http://purl.org/cerif/frapo/Project> .
+<http://purl.org/hercules/asio/modules#GeopoliticalEntities> <http://www.w3.org/2000/01/rdf-schema#label> "Geopolitical entities"@en .
+<http://purl.org/hercules/asio/core#AdministrativeEntity> <http://www.w3.org/2000/01/rdf-schema#label> "Entitats administratives"@ca-ad .
+<http://purl.org/hercules/asio/modules#ScientificDomain> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<http://purl.org/hercules/asio/core#i10-index> <http://www.w3.org/2000/01/rdf-schema#label> "i10-index"@en .
+<http://purl.org/hercules/asio/core#FundingProgramme> <http://www.w3.org/2000/01/rdf-schema#comment> "A programme of related funded projects, typically established by a funding organization."@en .
+<http://purl.org/hercules/asio/core#Patent> <http://www.w3.org/2000/01/rdf-schema#label> "Patent"@en .
+<http://purl.org/NET/c4dm/event.owl#Event> <http://www.w3.org/2000/01/rdf-schema#label> "Event"@en .
+<http://purl.org/hercules/asio/core#BacherlorsDegree> <http://www.w3.org/2004/02/skos/core#altLabel> "Gradu"@eu .
+<http://purl.org/hercules/asio/core#SME> <http://www.w3.org/2002/07/owl#equivalentClass> <http://purl.org/cerif/SME> .
+<http://purl.org/hercules/asio/core#InternationalProject> <http://www.w3.org/2000/01/rdf-schema#label> "Proyecto internacional"@es .
+<http://purl.org/hercules/asio/core#hasCode> <http://www.w3.org/2000/01/rdf-schema#comment> "A concept can be asigned a code."@en .
+<http://purl.org/hercules/asio/core#Patent> <http://www.w3.org/2002/07/owl#equivalentClass> <http://vivoweb.org/ontology/core#Patent> .
+<http://purl.org/hercules/asio/core#ResearchInstitute> <http://www.w3.org/2000/01/rdf-schema#label> "Centro de investiga\u00E7\u00E3o"@pt .
+<http://purl.org/hercules/asio/core#patentStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/hercules/asio/core#FundingOrganization> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Organization> .
+<http://purl.org/hercules/asio/core#MastersThesis> <http://www.w3.org/2004/02/skos/core#prefLabel> "Master Amaierako Lana"@eu .
+<http://purl.org/hercules/asio/core#CV> <http://www.w3.org/2000/01/rdf-schema#comment> "A document used and created by a person to present their background, skills and accomplishments."@en .
+<http://purl.org/hercules/asio/core#projectID> <http://www.w3.org/2000/01/rdf-schema#label> "project ID"@en .
+<http://purl.org/hercules/asio/core#NationalProject> <http://www.w3.org/2000/01/rdf-schema#label> "Proyecto nacional"@es .
+<http://purl.org/hercules/asio/core#Country> <http://www.w3.org/2004/02/skos/core#prefLabel> "Pa\u00EDs"@ca-ad .
+<http://purl.org/wf4ever/ro#ResearchObject> <http://www.w3.org/2004/02/skos/core#prefLabel> "Objecte de recerca"@ca-es .
+<http://purl.org/cerif/frapo/FinancialEntity> <http://www.w3.org/2000/01/rdf-schema#label> "Entit\u00E9 financi\u00E8re"@fr .
+<http://purl.org/hercules/asio/core#closed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/hercules/asio/core#Status> .
+<http://purl.org/hercules/asio/core#Company> <http://www.w3.org/2000/01/rdf-schema#comment> "Uma organiza\u00E7\u00E3o com personalidade jur\u00EDdica, a qual disp\u00F5e dos m\u00E9dios necess\u00E1rios para a produ\u00E7\u00E3o e obten\u00E7\u00E3o de bens ou servi\u00E7os destinados ao interc\u00E2mbio."@pt .
+<http://purl.org/hercules/asio/core#AcademicDegree> <http://www.w3.org/2000/01/rdf-schema#label> "T\u00EDtulo acad\u00E9mico"@es-es .
+<http://purl.org/hercules/asio/core#Budget> <http://www.w3.org/2000/01/rdf-schema#label> "Or\u00E7amento"@pt .
+<http://purl.org/hercules/asio/core#Researching> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/hercules/asio/core#Role> .
+<http://purl.org/hercules/asio/core#MastersThesis> <http://www.w3.org/2004/02/skos/core#altLabel> "TFM"@es-es .
+<http://purl.org/hercules/asio/core#Thesis> <http://www.w3.org/2002/07/owl#equivalentClass> <http://semanticscience.org/resource/SIO_000165> .
+<http://purl.org/hercules/asio/core#researchesIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/hercules/asio/core#BacherlorsDegree> <http://www.w3.org/2004/02/skos/core#altLabel> "B\u00E0txelor"@ca-ad .
+<http://purl.org/hercules/asio/core#awards> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> .
+<http://purl.org/hercules/asio/core#Article> <http://www.w3.org/2002/07/owl#equivalentClass> <http://purl.org/spar/fabio/Article> .
+<http://purl.org/hercules/asio/core#Thesis> <http://www.w3.org/2004/02/skos/core#prefLabel> "Tesis"@es .
+<http://purl.org/hercules/asio/modules#GeopoliticalEntities> <http://www.w3.org/2000/01/rdf-schema#label> "Entidades geopol\u00EDticas"@pt .
+<http://purl.org/hercules/asio/core#MastersDegree> <http://www.w3.org/2004/02/skos/core#prefLabel> "Ma\u00EEtrise universitaire"@fr-ca .
+<http://purl.org/hercules/asio/core#Patent> <http://www.w3.org/2004/02/skos/core#prefLabel> "Patent"@en .
+<http://purl.org/hercules/asio/core#ResearchResult> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/hercules/asio/core#TitularUniversidad> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/hercules/asio/core#Role> .
+<http://purl.org/hercules/asio/core#specializes> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/hercules/asio/core#Role> .
+<http://purl.org/hercules/asio/core#projectObjective> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Project> .
+<http://purl.org/hercules/asio/core#hasResearchField> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/hercules/asio/core#SpainUniversityStaffing> <http://www.w3.org/2000/01/rdf-schema#comment> "This ASIO vertical module defines Spain's University staffing model encompassing all its specificities."@en .
+<http://purl.org/hercules/asio/core#Patent> <http://www.w3.org/2002/07/owl#equivalentClass> <http://purl.org/ontology/bibo/Patent> .
+<http://purl.org/hercules/asio/core#Company> <http://www.w3.org/2002/07/owl#equivalentClass> <http://purl.org/cerif/Company> .
+<http://purl.org/hercules/asio/core#Role> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/hercules/asio/core#Role> <http://www.w3.org/2000/01/rdf-schema#label> "Role"@en .
+<http://purl.org/hercules/asio/core#CatedraticoEscuelaUniversitaria> <http://www.w3.org/2000/01/rdf-schema#label> "Catedr\u00E1tico de escuela universitaria"@es .
+<http://purl.org/hercules/asio/core#ResearchInstitute> <http://www.w3.org/2000/01/rdf-schema#label> "Centro de investigaci\u00F3n"@es .
+<http://purl.org/hercules/asio/core#patentStatus> <http://www.w3.org/2000/01/rdf-schema#label> "patent status"@en .
+<http://purl.org/hercules/asio/core#PhDThesis> <http://www.w3.org/2004/02/skos/core#prefLabel> "Tesi doctoral"@ca-es .
+<http://purl.org/hercules/asio/core#BachelorsThesis> <http://www.w3.org/2000/01/rdf-schema#label> "M\u00E9moire de fin de licence"@fr .
+<http://purl.org/hercules/asio/core#h-index> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/hercules/asio/core#i10-index> <http://www.w3.org/2000/01/rdf-schema#comment> "A property to express the i10-index of an author."@en .
+<http://purl.org/hercules/asio/core#associatedWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/hercules/asio/core#isGrantedWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/hercules/asio/core#profiles> <http://www.w3.org/2000/01/rdf-schema#label> "profiles"@en .
+<http://purl.org/hercules/asio/core#requires> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/hercules/asio/core#Role> .
+<http://www.w3.org/2004/02/skos/core#altLabel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/hercules/asio/core#PhDThesis> <http://www.w3.org/2000/01/rdf-schema#label> "Tese de doutoramento"@pt .
+<http://purl.org/hercules/asio/core#TechnicalReport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/hercules/asio/core#AcademicDegree> <http://www.w3.org/2004/02/skos/core#prefLabel> "Academic degree"@en .
+<http://purl.org/hercules/asio/core#BacherlorsDegree> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/hercules/asio/core#AcademicDegree> .
+<http://purl.org/hercules/asio/core#isActive> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://purl.org/hercules/asio/core#EuropeanProject> <http://www.w3.org/2000/01/rdf-schema#label> "Projeto europeu"@pt .
+<http://purl.org/hercules/asio/core#MastersThesis> <http://www.w3.org/2002/07/owl#equivalentClass> <http://purl.org/net/nknouf/ns/bibtex#Mastersthesis> .
+<http://purl.org/hercules/asio/core#Company> <http://www.w3.org/2002/07/owl#equivalentClass> <http://eurocris.org/ontology/semcerif#Company> .
+<http://purl.org/hercules/asio/core#EuropeanProject> <http://www.w3.org/2000/01/rdf-schema#comment> "A project developed and funded at the European level."@en .
+<http://purl.org/hercules/asio/core#cancelled> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/hercules/asio/core#Status> .
+<http://purl.org/hercules/asio/core#qualifieddate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/hercules/asio/core#patentPrimaryExaminer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/hercules/asio/core#EventOrganiser> <http://www.w3.org/2000/01/rdf-schema#comment> "A role of organising cientific events, such as conferences, workshops, etc."@en .
+<http://purl.org/hercules/asio/core#Country> <http://www.w3.org/2000/01/rdf-schema#label> "Country"@en .
+<http://purl.org/hercules/asio/core#Patent> <http://www.w3.org/2000/01/rdf-schema#label> "Patente"@eu .
+<http://purl.org/hercules/asio/core#BacherlorsDegree> <http://www.w3.org/2004/02/skos/core#altLabel> "Grao"@gl .
+<http://purl.org/hercules/asio/core#participates> <http://www.w3.org/2000/01/rdf-schema#label> "participates"@en .
+<http://purl.org/hercules/asio/core#signed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/hercules/asio/core#AcademicDegree> <http://www.w3.org/2004/02/skos/core#prefLabel> "Grade universitaire"@fr .
+<http://purl.org/hercules/asio/core#FundingAgency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/hercules/asio/core#CatedraticoEscuelaUniversitaria> <http://www.w3.org/2000/01/rdf-schema#label> "Catedr\u00E0tic d'escola universit\u00E0ria"@ca-ad .
+<http://purl.org/hercules/asio/core#Patent> <http://www.w3.org/2002/07/owl#equivalentClass> <http://sw-portal.deri.org/ontologies/swportal#Patent> .
+<http://purl.org/hercules/asio/core#projectObjective> <http://www.w3.org/2000/01/rdf-schema#label> "objetivo de proyecto"@es .
+<http://purl.org/hercules/asio/core#isGrantedWith> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/hercules/asio/core#Grant> .
+<http://purl.org/hercules/asio/core#SME> <http://www.w3.org/2002/07/owl#equivalentClass> <http://eurocris.org/ontology/semcerif#SME> .
+<http://purl.org/hercules/asio/core#PhDThesis> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/hercules/asio/core#Thesis> .
+<http://purl.org/hercules/asio/core#ResearchInstitute> <http://www.w3.org/2000/01/rdf-schema#label> "Centre de recerca"@ca-ad .
+<http://purl.org/hercules/asio/core#CV> <http://www.w3.org/2004/02/skos/core#altLabel> "Curr\u00EDculum"@ca .
+<http://purl.org/hercules/asio/core#Thesis> <http://www.w3.org/2004/02/skos/core#prefLabel> "Tese"@gl .
+<http://purl.org/hercules/asio/core#EmploymentContract> <http://www.w3.org/2004/02/skos/core#prefLabel> "Contracte de treball"@ca-ad .
+<http://purl.org/hercules/asio/core#ResearchGroup> <http://www.w3.org/2004/02/skos/core#prefLabel> "Grup de recerca"@ca-ad .
+<http://purl.org/hercules/asio/core#Publication> <http://www.w3.org/2002/07/owl#equivalentClass> <http://purl.org/cerif/Publication> .
+<http://purl.org/hercules/asio/core#publicationCitation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/hercules/asio/core#Publication> .
+<http://purl.org/hercules/asio/core#Grant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/hercules/asio/core#Funding> .
+<http://purl.org/hercules/asio/core#Thesis> <http://www.w3.org/2002/07/owl#equivalentClass> <http://sw-portal.deri.org/ontologies/swportal#Thesis> .
+<http://purl.org/hercules/asio/core#Spinoff> <http://www.w3.org/2000/01/rdf-schema#label> "Empresa spin-off"@es .
+<http://purl.org/hercules/asio/core#authorCitation> <http://www.w3.org/2000/01/rdf-schema#comment> "A property to link the number of citations to a given author."@en .
+<http://purl.org/hercules/asio/core#> <http://www.w3.org/2002/07/owl#versionInfo> "0.0.1"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://purl.org/hercules/asio/core#NationalProject> <http://www.w3.org/2004/02/skos/core#prefLabel> "Proyecto nacional"@es .
+<http://purl.org/hercules/asio/core#PASlaboral> <http://www.w3.org/2000/01/rdf-schema#label> "PAS laboral"@es .
+<http://purl.org/hercules/asio/core#EmploymentContract> <http://www.w3.org/2000/01/rdf-schema#label> "Contrato de trabajo"@es .
+<http://purl.org/hercules/asio/core#projectStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Project> .
+<http://purl.org/hercules/asio/core#DoctoralDegree> <http://www.w3.org/2004/02/skos/core#prefLabel> "Doctoral degree"@en .
+<http://purl.org/hercules/asio/core#Thesis> <http://www.w3.org/2000/01/rdf-schema#label> "Tesi"@ca-es .
+<http://purl.org/hercules/asio/core#projectStatus> <http://www.w3.org/2000/01/rdf-schema#label> "project status"@en .
+<http://purl.org/hercules/asio/core#Budget> <http://www.w3.org/2000/01/rdf-schema#label> "Pressupost"@ca-ad .
+<http://purl.org/hercules/asio/core#Patent> <http://www.w3.org/2004/02/skos/core#prefLabel> "Patent"@ca .
+<http://purl.org/hercules/asio/core#PASlaboral> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/hercules/asio/core#MastersThesis> <http://www.w3.org/2004/02/skos/core#prefLabel> "Master's thesis"@en .
+<http://purl.org/hercules/asio/core#Country> <http://www.w3.org/2004/02/skos/core#prefLabel> "Herrialde"@eu .
+<http://purl.org/hercules/asio/core#MastersThesis> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/hercules/asio/core#Thesis> .
+<http://purl.org/hercules/asio/core#capital> <http://www.w3.org/2000/01/rdf-schema#label> "capital"@en .
+<http://purl.org/hercules/asio/core#Company> <http://www.w3.org/2000/01/rdf-schema#comment> "Una organitzaci\u00F3 amb personalitat jur\u00EDdica, la qual disposa dels mitjans necessaris per a la producci\u00F3 i es dedica a combinar-los per obtenir b\u00E9ns o serveis destinats a l'intercanvi."@ca .
+<http://purl.org/hercules/asio/core#MastersThesis> <http://www.w3.org/2004/02/skos/core#altLabel> "Treball de fi de mestratge"@ca-es .
+<http://purl.org/hercules/asio/core#Publication> <http://www.w3.org/2004/02/skos/core#prefLabel> "Publicaci\u00F3"@ca-es .
+<http://purl.org/hercules/asio/core#i10-index> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/hercules/asio/core#QualifiedValue> .
+<http://purl.org/hercules/asio/core#ResearchGroup> <http://www.w3.org/2002/07/owl#equivalentClass> <http://purl.org/cerif/ResearchGroup> .
+<http://purl.org/hercules/asio/core#RegionalProject> <http://www.w3.org/2004/02/skos/core#prefLabel> "Projet r\u00E9gional"@fr .
+<http://purl.org/hercules/asio/core#CV> <http://www.w3.org/2004/02/skos/core#altLabel> "Curr\u00EDculo"@gl .
+<http://purl.org/hercules/asio/core#utilizes> <http://www.w3.org/2000/01/rdf-schema#label> "utilizes"@en .
+<http://purl.org/wf4ever/ro#ResearchObject> <http://www.w3.org/2000/01/rdf-schema#label> "Objeto de investiga\u00E7\u00E3o"@pt .
+<http://purl.org/hercules/asio/core#ResearchContribution> <http://www.w3.org/2002/07/owl#equivalentClass> <http://orkg.org/core#ResearchContribution> .
+<http://purl.org/hercules/asio/core#Budget> <http://www.w3.org/2004/02/skos/core#prefLabel> "Presupuesto"@es .
+<http://purl.org/hercules/asio/core#student> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/hercules/asio/core#University> .
+<http://purl.org/hercules/asio/modules#GeopoliticalEntities> <http://www.w3.org/2000/01/rdf-schema#label> "Entitats geopol\u00EDtiques"@ca-ad .
+<http://purl.org/hercules/asio/core#AcademicPublication> <http://www.w3.org/2004/02/skos/core#prefLabel> "Publicaci\u00F3n acad\u00E9mica"@gl .
+<http://purl.org/hercules/asio/core#hasDOI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/hercules/asio/core#requires> <http://www.w3.org/2000/01/rdf-schema#comment> "This property relates roles and their requisites, i.e. other roles."@en .
+<http://purl.org/hercules/asio/core#ProjectBudget> <http://www.w3.org/2000/01/rdf-schema#comment> "The budget established or devoted to a project."@en .
+<http://purl.org/hercules/asio/core#Book> <http://www.w3.org/2004/02/skos/core#prefLabel> "Llibre"@ca .
+<http://purl.org/hercules/asio/modules#ScientificDomain> <http://www.w3.org/2004/02/skos/core#prefLabel> "Dominis cient\u00EDfics"@ca-ad .
+<http://purl.org/hercules/asio/core#PhDThesis> <http://www.w3.org/2004/02/skos/core#prefLabel> "Tesi doctoral"@ca-ad .
+<http://purl.org/hercules/asio/core#AcademicPublication> <http://www.w3.org/2004/02/skos/core#prefLabel> "Publica\u00E7\u00E3o acad\u00EAmica"@pt .
+<http://purl.org/hercules/asio/core#terminated> <http://www.w3.org/2000/01/rdf-schema#label> "Terminated"@en .
+<http://purl.org/hercules/asio/core#patentDate> <http://www.w3.org/2000/01/rdf-schema#label> "date of patent"@en .
+<http://xmlns.com/foaf/0.1/Project> <http://www.w3.org/2002/07/owl#equivalentClass> <http://purl.org/cerif/Project> .
+<http://purl.org/hercules/asio/core#profiles> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/hercules/asio/core#Profile> .
+<http://purl.org/hercules/asio/core#projectEndDate> <http://www.w3.org/2000/01/rdf-schema#label> "project end date"@en .
+<http://purl.org/hercules/asio/core#BachelorsThesis> <http://www.w3.org/2004/02/skos/core#altLabel> "Honour's thesis"@en-gb .
+<http://purl.org/hercules/asio/core#BacherlorsDegree> <http://www.w3.org/2004/02/skos/core#prefLabel> "Bachelor's degree"@en .
+<http://purl.org/hercules/asio/core#SealOfQuality> <http://www.w3.org/2004/02/skos/core#prefLabel> "Selo de qualidade"@pt .
+<http://purl.org/hercules/asio/core#MastersThesis> <http://www.w3.org/2000/01/rdf-schema#label> "Traballo de fin de m\u00E1ster"@gl .
+<http://purl.org/hercules/asio/core#EventOrganiser> <http://www.w3.org/2000/01/rdf-schema#label> "Event organiser"@en .
+<http://purl.org/hercules/asio/core#closed> <http://www.w3.org/2000/01/rdf-schema#label> "Closed"@en .
+<http://purl.org/hercules/asio/core#ProjectBudget> <http://www.w3.org/2004/02/skos/core#prefLabel> "Pressupost de projecte"@ca-es .
+<http://purl.org/hercules/asio/core#MastersDegree> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/hercules/asio/core#AcademicDegree> .
+<http://purl.org/hercules/asio/core#CV> <http://www.w3.org/2004/02/skos/core#prefLabel> "Curriculum vitae"@en .
+<http://purl.org/hercules/asio/core#PhDThesis> <http://www.w3.org/2002/07/owl#equivalentClass> <http://lsdis.cs.uga.edu/projects/semdis/opus#Doctoral_Dissertation> .
+<http://purl.org/hercules/asio/core#AcademicPublication> <http://www.w3.org/2004/02/skos/core#prefLabel> "Publicaci\u00F3 acad\u00E8mica"@ca-es .
+<http://purl.org/hercules/asio/core#CatedraticoUniversidad> <http://www.w3.org/2000/01/rdf-schema#label> "Catedr\u00E1tico de universidad"@es .
+<http://purl.org/hercules/asio/core#InternalProject> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Project> .
+<http://purl.org/hercules/asio/core#ResearchField> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/hercules/asio/core#EuropeanProject> <http://www.w3.org/2000/01/rdf-schema#label> "Proyecto europeo"@es .
+<http://purl.org/hercules/asio/core#projectOutcome> <http://www.w3.org/2000/01/rdf-schema#comment> "a property to link a project to any outcome obtained within its endeavour, including publications, patents, products, prototypes, etc. The domain of this property is obviously the class foaf:Project but the range is left open so to encompass unforeseen project outcomes."@en .
+<http://purl.org/hercules/asio/core#University> <http://www.w3.org/2002/07/owl#equivalentClass> <http://vivoweb.org/ontology/core#University> .
+<http://purl.org/hercules/asio/core#awards> <http://www.w3.org/2000/01/rdf-schema#label> "awards"@en .
+<http://purl.org/hercules/asio/core#coauthors> <http://www.w3.org/2000/01/rdf-schema#label> "co-authors"@en .
+<http://purl.org/hercules/asio/core#requiredFor> <http://www.w3.org/2000/01/rdf-schema#label> "required for"@en .
+<http://purl.org/hercules/asio/core#CV> <http://www.w3.org/2000/01/rdf-schema#label> "Curr\u00EDculum vitae"@ca-es .
+<http://purl.org/hercules/asio/core#Article> <http://www.w3.org/2004/02/skos/core#prefLabel> "Article"@en .
+<http://purl.org/hercules/asio/core#Context> <http://www.w3.org/2000/01/rdf-schema#label> "Contexto"@pt .
+<http://purl.org/hercules/asio/core#BachelorsThesis> <http://www.w3.org/2004/02/skos/core#altLabel> "Treball de fi de carrera"@ca-es .
+<http://purl.org/hercules/asio/core#Publication> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/hercules/asio/core#PhDThesis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/hercules/asio/core#EventOrganiser> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/hercules/asio/core#Role> .
+<http://purl.org/hercules/asio/core#codeOf> <http://www.w3.org/2000/01/rdf-schema#label> "code of"@en .
+<http://purl.org/hercules/asio/core#Publishes> <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/hercules/asio/core#publishedBy> .
+<http://purl.org/hercules/asio/core#requiredFor> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/hercules/asio/core#AcademicDegree> .
+<http://purl.org/hercules/asio/core#qualifiedvaluation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/hercules/asio/core#SME> <http://www.w3.org/2004/02/skos/core#prefLabel> "Petita i mitjana empresa"@ca-es .
+<http://purl.org/hercules/asio/core#RegionalProject> <http://www.w3.org/2000/01/rdf-schema#label> "Projet r\u00E9gional"@fr .
+<http://purl.org/hercules/asio/core#SME> <http://www.w3.org/2000/01/rdf-schema#label> "Petita i mitjana empresa"@ca-ad .
+<http://purl.org/hercules/asio/core#patentCountry> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/hercules/asio/core#Patent> .
+<http://purl.org/hercules/asio/core#University> <http://www.w3.org/2004/02/skos/core#prefLabel> "Universidade"@gl .
+<http://xmlns.com/foaf/0.1/Group> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/hercules/asio/core#Context> <http://www.w3.org/2000/01/rdf-schema#label> "Context"@ca-es .
+<http://purl.org/hercules/asio/core#requires> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/hercules/asio/core#AcademicPublication> <http://www.w3.org/2004/02/skos/core#prefLabel> "Publicaci\u00F3n acad\u00E9mica"@es .
+<http://purl.org/hercules/asio/core#ResearchGroup> <http://www.w3.org/2000/01/rdf-schema#label> "Grup d'investigaci\u00F3"@ca-es .
+<http://www.w3.org/ns/prov#wasDerivedFrom> <http://www.w3.org/2000/01/rdf-schema#comment> "A derivation is a transformation of an entity into another, an update of an entity resulting in a new one, or the construction of a new entity based on a pre-existing entity."@en .
+<http://purl.org/hercules/asio/core#BachelorsThesis> <http://www.w3.org/2000/01/rdf-schema#comment> "A thesis reporting a research project undertaken as part of an undergraduate course of education to receive a bachelor's degree."@en .
+<http://purl.org/hercules/asio/core#hasSealOfQuality> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Agent> .
+<http://purl.org/hercules/asio/core#projectAcronym> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Project> .
+<http://purl.org/hercules/asio/core#SealOfQuality> <http://www.w3.org/2004/02/skos/core#prefLabel> "Segell de qualitat"@ca-ad .
+<http://purl.org/hercules/asio/core#EmploymentContract> <http://www.w3.org/2000/01/rdf-schema#label> "Contracte de treball"@ca-es .
+<http://purl.org/hercules/asio/core#CV> <http://www.w3.org/2000/01/rdf-schema#label> "Curriculum vitae"@pt .
+<http://purl.org/hercules/asio/core#requires> <http://www.w3.org/2000/01/rdf-schema#label> "requires"@en .
+<http://purl.org/hercules/asio/core#Spinoff> <http://www.w3.org/2000/01/rdf-schema#label> "Empresa derivada"@ca-ad .
+<http://purl.org/hercules/asio/core#hasDOI> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/hercules/asio/core#Publication> .
+<http://purl.org/hercules/asio/core#University> <http://www.w3.org/2000/01/rdf-schema#label> "Universidade"@gl .
+<http://purl.org/hercules/asio/core#ScientificPublication> <http://www.w3.org/2004/02/skos/core#prefLabel> "Scientific publication"@en .
+<http://purl.org/hercules/asio/core#isCompetitive> <http://www.w3.org/2000/01/rdf-schema#label> "is competitive"@en .
+<http://purl.org/hercules/asio/core#MastersDegree> <http://www.w3.org/2004/02/skos/core#altLabel> "Mestrado universitario"@gl .
+<http://purl.org/hercules/asio/core#AcademicPublication> <http://www.w3.org/2000/01/rdf-schema#label> "Publicaci\u00F3n acad\u00E9mica"@gl .
+<http://purl.org/hercules/asio/core#Profile> <http://www.w3.org/2000/01/rdf-schema#comment> "Perfil"@ca-es .
+<http://purl.org/hercules/asio/core#EmploymentContract> <http://www.w3.org/2000/01/rdf-schema#label> "Contrato de trabalho"@pt .
+<http://purl.org/hercules/asio/core#Contract> <http://www.w3.org/2004/02/skos/core#prefLabel> "Contracte"@ca-ad .
+<http://xmlns.com/foaf/0.1/member> <http://www.w3.org/2000/01/rdf-schema#label> "member"@en .
+<http://purl.org/hercules/asio/core#BachelorsThesis> <http://www.w3.org/2002/07/owl#equivalentClass> <http://purl.org/spar/fabio/BachelorsThesis> .
+<http://purl.org/hercules/asio/modules#ScientificDomain> <http://www.w3.org/2000/01/rdf-schema#comment> "This ASIO vertical module organizes hierarchically the scientific domains related to research projects as established by Spain's Agencia Estatal de Investigaci\u00F3n, depending from the Ministerio de Econom\u00EDa y Competitividad."@en .
+<http://purl.org/hercules/asio/core#coadvisedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://xmlns.com/foaf/0.1/Person> .
+<http://purl.org/hercules/asio/core#hasScientificDomain> <http://www.w3.org/2000/01/rdf-schema#label> "has scientific domain"@en .
+<http://purl.org/hercules/asio/core#isAwardedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://xmlns.com/foaf/0.1/Agent> .
+<http://purl.org/hercules/asio/core#student> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Person> .
+<http://purl.org/hercules/asio/core#personalizes> <http://www.w3.org/2000/01/rdf-schema#label> "personalizes"@en .
+<http://purl.org/hercules/asio/core#ResearchMethod> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/hercules/asio/core#DoctoralDegree> <http://www.w3.org/2000/01/rdf-schema#label> "Doctorado"@es .
+<http://purl.org/wf4ever/ro#ResearchObject> <http://www.w3.org/2004/02/skos/core#prefLabel> "Objet de recherche"@fr .
+<http://purl.org/hercules/asio/core#Publication> <http://www.w3.org/2004/02/skos/core#prefLabel> "Publicaci\u00F3n"@gl .
+<http://purl.org/hercules/asio/core#associatedWith> <http://www.w3.org/2000/01/rdf-schema#comment> "an organisation (i.e. university) is associated with another organsiation (i.e. research institute)."@en .
+<http://purl.org/hercules/asio/core#patentStatus> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/hercules/asio/core#Status> .
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/hercules/asio/core#BachelorsThesis> <http://www.w3.org/2004/02/skos/core#altLabel> "TFG"@ast .
+<http://purl.org/hercules/asio/core#Conference> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/NET/c4dm/event.owl#Event> .
+<http://purl.org/hercules/asio/core#companyFounder> <http://www.w3.org/2000/01/rdf-schema#label> "company founder"@en .
+<http://purl.org/hercules/asio/core#Budget> <http://www.w3.org/2000/01/rdf-schema#label> "Presupuesto"@es .
+<http://purl.org/hercules/asio/core#AcademicPublication> <http://www.w3.org/2000/01/rdf-schema#label> "Publicaci\u00F3 acad\u00E8mica"@ca-ad .
+<http://purl.org/hercules/asio/core#patentCountry> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/hercules/asio/core#Country> .
+<http://purl.org/hercules/asio/core#CV> <http://www.w3.org/2004/02/skos/core#altLabel> "CV"@eu .
+<http://purl.org/hercules/asio/core#yields> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/hercules/asio/core#ResearchContribution> .
+<http://purl.org/hercules/asio/core#AcademicDegree> <http://www.w3.org/2000/01/rdf-schema#label> "Grau acad\u00EAmico"@pt-br .
+<http://purl.org/hercules/asio/core#ResearchGroup> <http://www.w3.org/2000/01/rdf-schema#label> "Grup de recerca"@ca-ad .
+<http://purl.org/hercules/asio/core#patentInventor> <http://www.w3.org/2000/01/rdf-schema#range> <http://xmlns.com/foaf/0.1/Person> .
+<http://purl.org/NET/c4dm/event.owl#Event> <http://www.w3.org/2000/01/rdf-schema#comment> "An arbitrary classification of a space/time region, by a\ncognitive agent. An event may have actively participating agents,\npassive factors, products, and a location in space/time."@en .
+<http://purl.org/hercules/asio/core#Teaching> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/hercules/asio/core#projectEndDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/hercules/asio/core#AcademicPublication> <http://www.w3.org/2000/01/rdf-schema#label> "Publication acad\u00E9mique"@fr .
+<http://purl.org/hercules/asio/core#isAwardedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/hercules/asio/core#i10-index> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Person> .
+<http://purl.org/hercules/asio/core#awards> <http://www.w3.org/2000/01/rdf-schema#comment> "An object property linking an agent to something the agent awards, for example linking a funding agency to a grant, a university to a degree, or an organization to a prize. [source: cerif/frapo]"@en .
+<http://purl.org/hercules/asio/core#signed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/hercules/asio/core#Status> .
+<http://purl.org/hercules/asio/core#AdministrativeEntity> <http://www.w3.org/2000/01/rdf-schema#label> "Entidades administrativas"@pt .
+<http://purl.org/hercules/asio/core#Company> <http://www.w3.org/2000/01/rdf-schema#label> "Entreprise"@fr .
+<http://purl.org/wf4ever/ro#ResearchObject> <http://www.w3.org/2004/02/skos/core#prefLabel> "Objeto de investiga\u00E7\u00E3o"@pt .
+<http://purl.org/hercules/asio/core#Article> <http://www.w3.org/2002/07/owl#equivalentClass> <http://ns.nature.com/terms/Article> .
+<http://purl.org/hercules/asio/modules#ScientificDomain> <http://www.w3.org/2000/01/rdf-schema#label> "\u00C1reas cient\u00EDficas"@es .
+<http://purl.org/hercules/asio/core#Product> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/hercules/asio/core#MastersDegree> <http://www.w3.org/2004/02/skos/core#altLabel> "Mestratge universitari"@ca-ad .
+<http://purl.org/hercules/asio/core#> <http://purl.org/dc/terms/license> <https://creativecommons.org/publicdomain/zero/1.0/> .
+<http://purl.org/hercules/asio/core#NationalProject> <http://www.w3.org/2004/02/skos/core#prefLabel> "Projecte nacional"@ca-ad .
+<http://xmlns.com/foaf/0.1/member> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Group> .
+<http://purl.org/hercules/asio/core#patentAssistantExaminer> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Person> .
+<http://purl.org/hercules/asio/core#requires> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/hercules/asio/core#AcademicDegree> .
+<http://purl.org/hercules/asio/core#InternationalProject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/hercules/asio/core#requires> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/hercules/asio/core#AcademicPublication> .
+<http://purl.org/hercules/asio/core#Manual> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/wf4ever/ro#ResearchObject> <http://www.w3.org/2000/01/rdf-schema#label> "Objecte de recerca"@ca-es .
+<http://purl.org/hercules/asio/core#country> <http://www.w3.org/2000/01/rdf-schema#comment> "This property indicates the nationality of a resource. The domain is not set so unpredicted resources within the ontology could be attached to countries."@en .
+<http://purl.org/hercules/asio/core#MastersThesis> <http://www.w3.org/2004/02/skos/core#altLabel> "Treball de fi de mestratge"@ca-ad .
+<http://purl.org/hercules/asio/core#qualifieddate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/hercules/asio/core#QualifiedValue> .
+<http://purl.org/hercules/asio/core#Country> <http://www.w3.org/2004/02/skos/core#prefLabel> "Country"@en .
+<http://purl.org/hercules/asio/core#RegionalProject> <http://www.w3.org/2000/01/rdf-schema#comment> "A project developed and funded at the regional level."@en .
+<http://purl.org/hercules/asio/core#Funding> <http://www.w3.org/2002/07/owl#equivalentClass> <http://eurocris.org/ontology/semcerif#Funding> .
+<http://purl.org/hercules/asio/core#country> <http://www.w3.org/2000/01/rdf-schema#label> "country"@en .
+<http://purl.org/hercules/asio/core#projectStartDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Project> .
+<http://purl.org/hercules/asio/core#atContext> <http://www.w3.org/2000/01/rdf-schema#comment> "This property enables to relate a profile with a given context (geographical, temporal, spatial, social, etc.)."@en .
+<http://purl.org/hercules/asio/core#Contract> <http://www.w3.org/2002/07/owl#equivalentClass> <http://eurocris.org/ontology/semcerif#Contract> .
+<http://purl.org/hercules/asio/core#DoctoralDegree> <http://www.w3.org/2004/02/skos/core#prefLabel> "Doctorat"@fr-be .
+<http://purl.org/hercules/asio/core#Administrative> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/hercules/asio/core#Role> .
+<http://purl.org/hercules/asio/core#DoctoralDegree> <http://www.w3.org/2000/01/rdf-schema#label> "Doctorat"@fr-ch .
+<http://purl.org/hercules/asio/core#ScientificPublication> <http://www.w3.org/2000/01/rdf-schema#label> "Scientific publication"@en .
+<http://purl.org/hercules/asio/core#publishedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/hercules/asio/core#ServiceContract> <http://www.w3.org/2000/01/rdf-schema#label> "Contracte de servei"@ca-es .
+<http://purl.org/hercules/asio/core#NationalProject> <http://www.w3.org/2000/01/rdf-schema#label> "National project"@en .
+<http://purl.org/hercules/asio/core#PASfuncionario> <http://www.w3.org/2000/01/rdf-schema#label> "PAS funcionario"@gl .
+<http://purl.org/cerif/frapo/FinancialEntity> <http://www.w3.org/2004/02/skos/core#prefLabel> "Ente financiero"@es .
+<http://purl.org/hercules/asio/core#Workshop> <http://www.w3.org/2000/01/rdf-schema#comment> "A seminar, discussion group, or the like, that emphasizes zxchange of ideas and the demonstration and application of techniques, skills, etc. [Source: http://purl.org/ontology/bibo/Workshop]"@en .
+<http://purl.org/hercules/asio/core#Publication> <http://www.w3.org/2000/01/rdf-schema#label> "Publicaci\u00F3n"@gl .
+<http://purl.org/hercules/asio/core#patentAssistantExaminer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/hercules/asio/core#Article> <http://www.w3.org/2002/07/owl#equivalentClass> <http://purl.org/ontology/bibo/Article> .
+<http://purl.org/hercules/asio/core#MastersThesis> <http://www.w3.org/2000/01/rdf-schema#label> "Tese de mestrado"@pt-ao .
+<http://purl.org/hercules/asio/core#participant> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Agent> .
+<http://purl.org/hercules/asio/core#yields> <http://www.w3.org/2000/01/rdf-schema#label> "yields"@en .
+<http://purl.org/hercules/asio/core#ResearchGroup> <http://www.w3.org/2004/02/skos/core#prefLabel> "Research group"@en .
+<http://purl.org/hercules/asio/core#Thesis> <http://www.w3.org/2004/02/skos/core#prefLabel> "Thesis"@en .
+<http://purl.org/hercules/asio/core#ResearchInstitute> <http://www.w3.org/2004/02/skos/core#prefLabel> "Centro de investiga\u00E7\u00E3o"@pt .
+<http://purl.org/hercules/asio/core#ServiceContract> <http://www.w3.org/2004/02/skos/core#prefLabel> "Contracte de servei"@ca-es .
+<http://purl.org/hercules/asio/core#SealOfQuality> <http://www.w3.org/2004/02/skos/core#prefLabel> "Segell de qualitat"@ca-es .
+<http://purl.org/hercules/asio/core#AcademicDegree> <http://www.w3.org/2004/02/skos/core#prefLabel> "Unibertsitate-gradu"@eu .
+<http://purl.org/hercules/asio/core#University> <http://www.w3.org/2000/01/rdf-schema#label> "Universidade"@pt .
+<http://purl.org/hercules/asio/core#FundingProgramme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/hercules/asio/core#University> <http://www.w3.org/2002/07/owl#equivalentClass> <http://semanticscience.org/resource/University> .
+<http://purl.org/NET/c4dm/event.owl#Event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/hercules/asio/core#CV> <http://www.w3.org/2004/02/skos/core#altLabel> "CV"@pt .
+<http://purl.org/hercules/asio/core#DoctoralDegree> <http://www.w3.org/2004/02/skos/core#prefLabel> "Doutoramento"@pt .
+<http://purl.org/hercules/asio/core#isMemberOf> <http://www.w3.org/2000/01/rdf-schema#label> "is member of"@en .
+<http://purl.org/hercules/asio/core#MastersThesis> <http://www.w3.org/2004/02/skos/core#prefLabel> "Disserta\u00E7\u00E3o de mestrado"@pt-br .
+<http://purl.org/hercules/asio/core#h-index> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Person> .
+<http://purl.org/hercules/asio/core#MastersThesis> <http://www.w3.org/2004/02/skos/core#prefLabel> "Treball de fi de m\u00E0ster"@ca-es .
+<http://purl.org/hercules/asio/core#mainResearcherParticipant> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Person> .
+<http://purl.org/hercules/asio/core#coordinatedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Project> .
+<http://purl.org/hercules/asio/core#AcademicDegree> <http://www.w3.org/2004/02/skos/core#prefLabel> "Grau acad\u00E8mic"@ca-es .
+<http://purl.org/hercules/asio/core#InternationalProject> <http://www.w3.org/2000/01/rdf-schema#comment> "A consortium project integrated by partners from diverse countries beyond the scope of the European Union."@en .
+<http://purl.org/hercules/asio/core#QualifiedValue> <http://www.w3.org/2000/01/rdf-schema#label> "Qualified value"@en .
+<http://purl.org/hercules/asio/core#isGrantedWith> <http://www.w3.org/2000/01/rdf-schema#label> "is granted with"@en .
+<http://purl.org/hercules/asio/core#RegionalProject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/hercules/asio/core#UniversityDivision> <http://www.w3.org/2000/01/rdf-schema#label> "Divis\u00E3o de universidade"@pt .
+<http://purl.org/cerif/frapo/FinancialEntity> <http://www.w3.org/2000/01/rdf-schema#label> "Ente financiero"@es .
+<http://purl.org/hercules/asio/core#SME> <http://www.w3.org/2004/02/skos/core#prefLabel> "Petite ou moyenne entreprise"@fr .
+<http://purl.org/hercules/asio/core#MastersThesis> <http://www.w3.org/2004/02/skos/core#altLabel> "TFM"@gl .
+<http://purl.org/hercules/asio/core#Publication> <http://www.w3.org/2002/07/owl#equivalentClass> <http://linkedscience.org/lsc/ns#Publication> .
+<http://purl.org/hercules/asio/core#DoctoralDegree> <http://www.w3.org/2000/01/rdf-schema#label> "Doctorat"@ca-es .
+<http://purl.org/hercules/asio/core#mainResearcherParticipant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/hercules/asio/core#coordinatedBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/hercules/asio/core#projectCoordinator> .
+<http://purl.org/hercules/asio/core#student> <http://www.w3.org/2000/01/rdf-schema#comment> "A person studies or studied in a university."@en .
+<http://purl.org/hercules/asio/modules#ScientificDomain> <http://www.w3.org/2004/02/skos/core#prefLabel> "Domaines scientifiques"@fr .
+<http://purl.org/hercules/asio/core#ResearchInstitute> <http://www.w3.org/2002/07/owl#equivalentClass> <http://purl.org/cerif/frapo/ResearchInstitute> .
+<http://purl.org/hercules/asio/core#hasCV> <http://www.w3.org/2002/07/owl#equivalentProperty> <http://purl.org/cerif/frapo/hasCurriculumVitae> .
+<http://purl.org/hercules/asio/core#projectObjective> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/hercules/asio/core#Spinoff> <http://www.w3.org/2004/02/skos/core#prefLabel> "Empresa derivada"@ca-ad .
+<http://purl.org/hercules/asio/core#BacherlorsDegree> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/hercules/asio/core#Book> <http://www.w3.org/2000/01/rdf-schema#label> "Llibre"@ca-es .
+<http://purl.org/hercules/asio/core#Contract> <http://www.w3.org/2000/01/rdf-schema#label> "Contrato"@es .
+<http://purl.org/hercules/asio/core#mainResearcherParticipant> <http://www.w3.org/2000/01/rdf-schema#range> <http://xmlns.com/foaf/0.1/Project> .
+<http://purl.org/hercules/asio/core#Role> <http://www.w3.org/2000/01/rdf-schema#label> "Papel"@es .
+<http://purl.org/hercules/asio/core#Spinoff> <http://www.w3.org/2000/01/rdf-schema#label> "Empresa derivada"@ca-es .
+<http://purl.org/hercules/asio/core#ProjectBudget> <http://www.w3.org/2000/01/rdf-schema#label> "Budget de projet"@fr .
+<http://purl.org/hercules/asio/core#Thesis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/hercules/asio/core#University> <http://www.w3.org/2004/02/skos/core#prefLabel> "Universidade"@pt .
+<http://purl.org/hercules/asio/core#Contract> <http://www.w3.org/2000/01/rdf-schema#label> "Contract"@en .
+<http://purl.org/hercules/asio/core#MastersDegree> <http://www.w3.org/2000/01/rdf-schema#label> "Magister Scientiae"@es-ve .
+<http://purl.org/hercules/asio/core#TechnicalReport> <http://www.w3.org/2004/02/skos/core#prefLabel> "Technical report"@en .
+<http://purl.org/hercules/asio/core#Thesis> <http://www.w3.org/2000/01/rdf-schema#label> "Tesis"@es .
+<http://purl.org/hercules/asio/core#Country> <http://www.w3.org/2004/02/skos/core#prefLabel> "Pa\u00EDs"@pt .
+<http://purl.org/hercules/asio/core#PhDStudent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/hercules/asio/core#BachelorsThesis> <http://www.w3.org/2004/02/skos/core#prefLabel> "Gradu Amaierako Lana"@eu .
+<http://purl.org/hercules/asio/core#ProjectBudget> <http://www.w3.org/2004/02/skos/core#prefLabel> "Or\u00E7amento de projeto"@pt .
+<http://purl.org/hercules/asio/core#patentExpirationDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/hercules/asio/core#student> <http://www.w3.org/2000/01/rdf-schema#label> "student"@en .
+<http://purl.org/hercules/asio/core#SealOfQuality> <http://www.w3.org/2004/02/skos/core#prefLabel> "Sello de calidad"@es .
+<http://purl.org/hercules/asio/core#> <http://purl.org/dc/elements/1.1/contributor> "Jos\u00E9 Emilio Labra Gayo"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://purl.org/hercules/asio/core#CV> <http://www.w3.org/2000/01/rdf-schema#label> "Curr\u00EDculum vitae"@ca-ad .
+<http://purl.org/hercules/asio/core#MastersThesis> <http://www.w3.org/2004/02/skos/core#prefLabel> "Traballo de fin de m\u00E1ster"@gl .
+<http://purl.org/hercules/asio/modules#GeopoliticalEntities> <http://www.w3.org/2000/01/rdf-schema#comment> "This vertical module in ASIO models all the geopolitical/administrative levels (from municipalities, to provinces, regions, countries and European-level entities) that might have a role in the ontological architecture of the project. It is modeled hierarchically though relevant administrative levels potentially funding projects. In the Asio project the proof of concept is carried out with the whole administrative levels of Spain, Portugal, Andorra and France, in addition to the relevant European administrative entities."@en .
+<http://purl.org/hercules/asio/core#ProjectBudget> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/hercules/asio/core#Article> <http://www.w3.org/2002/07/owl#equivalentClass> <http://orkg.org/core#Paper> .
+<http://purl.org/hercules/asio/core#hasResearchField> <http://www.w3.org/2002/07/owl#equivalentProperty> <http://orkg.org/core#hasResearchField> .
+<http://purl.org/hercules/asio/core#TitularUniversidad> <http://www.w3.org/2000/01/rdf-schema#label> "Profesor titular d'universid\u00E1"@ast .
+<http://purl.org/hercules/asio/core#atContext> <http://www.w3.org/2000/01/rdf-schema#label> "at context"@en .
+<http://purl.org/hercules/asio/core#CatedraticoUniversidad> <http://www.w3.org/2000/01/rdf-schema#label> "Catedr\u00E1ticu d'universid\u00E1"@ast .
+<http://purl.org/hercules/asio/core#Manual> <http://www.w3.org/2004/02/skos/core#altLabel> "Handbook"@en .
+<https://www.w3.org/TR/prov-o/#wasDerivedFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/hercules/asio/core#employs> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/hercules/asio/core#ResearchContribution> .
+<http://purl.org/hercules/asio/core#requiredFor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/hercules/asio/core#Country> <http://www.w3.org/2004/02/skos/core#prefLabel> "Pa\u00EDs"@ca-es .
+<http://purl.org/hercules/asio/core#cancelled> <http://www.w3.org/2000/01/rdf-schema#label> "Cancelled"@en .
+<http://purl.org/hercules/asio/core#MastersThesis> <http://www.w3.org/2002/07/owl#equivalentClass> <http://semanticscience.org/resource/SIO_000167> .
+<http://purl.org/hercules/asio/core#TechnicalReport> <http://www.w3.org/2002/07/owl#equivalentClass> <http://semanticscience.org/resource/TechnicalReport> .
+<http://purl.org/hercules/asio/core#advises> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Person> .
+<http://purl.org/hercules/asio/core#isCompetitive> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/hercules/asio/core#ProjectBudget> <http://www.w3.org/2004/02/skos/core#prefLabel> "Pressupost de projecte"@ca-ad .
+<http://purl.org/hercules/asio/core#ServiceContract> <http://www.w3.org/2004/02/skos/core#prefLabel> "Service contract"@en .
+<http://purl.org/hercules/asio/core#publicationCitation> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/hercules/asio/core#QualifiedValue> .
+<http://purl.org/cerif/frapo/FinancialEntity> <http://www.w3.org/2000/01/rdf-schema#label> "Financial entity"@en .
+<http://purl.org/hercules/asio/core#Grant> <http://www.w3.org/2000/01/rdf-schema#comment> "A financial award provided by a funding organisation for a particular project or purpose, usually awarded on the basis of a competitive application."@en .
+<http://purl.org/hercules/asio/core#AdministrativeEntity> <http://www.w3.org/2004/02/skos/core#prefLabel> "Entidades administrativas"@es .
+<http://purl.org/hercules/asio/core#Thesis> <http://www.w3.org/2002/07/owl#equivalentClass> <http://purl.org/ontology/bibo/Thesis> .
+<http://purl.org/hercules/asio/core#ResearchGroup> <http://www.w3.org/2000/01/rdf-schema#label> "Research group"@en .
+<http://purl.org/hercules/asio/core#AcademicDegree> <http://www.w3.org/2004/02/skos/core#prefLabel> "Grau acad\u00E8mic"@ca-ad .
+<http://purl.org/hercules/asio/core#ResearchGroup> <http://www.w3.org/2002/07/owl#equivalentClass> <http://purl.org/cerif/frapo/ResearchGroup> .
+
